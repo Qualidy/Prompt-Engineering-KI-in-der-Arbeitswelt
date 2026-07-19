@@ -613,36 +613,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#91-daten-als-rohstoff-der-ki" class="md-nav__link">
+  <a href="#91-daten-der-rohstoff-der-ki" class="md-nav__link">
     <span class="md-ellipsis">
-      9.1 Daten als Rohstoff der KI
+      9.1 Daten – der Rohstoff der KI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#92-datenquellen" class="md-nav__link">
+  <a href="#92-datenarten-strukturiert-semistrukturiert-unstrukturiert" class="md-nav__link">
     <span class="md-ellipsis">
-      9.2 Datenquellen
+      9.2 Datenarten: strukturiert, semistrukturiert, unstrukturiert
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#93-datenqualitat-die-v-und-gutekriterien" class="md-nav__link">
+  <a href="#93-datenquellen-im-unternehmen" class="md-nav__link">
     <span class="md-ellipsis">
-      9.3 Datenqualität: die „V" und Gütekriterien
+      9.3 Datenquellen im Unternehmen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#94-rechtliche-leitplanken" class="md-nav__link">
+  <a href="#94-rechtliche-und-ethische-grenzen" class="md-nav__link">
     <span class="md-ellipsis">
-      9.4 Rechtliche Leitplanken
+      9.4 Rechtliche und ethische Grenzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-wie-copilot-auf-deine-daten-zugreift" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5 Wie Copilot auf deine Daten zugreift
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1119,111 +1137,154 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Warum Daten der <strong>Rohstoff</strong> jeder KI sind</li>
-<li>Welche <strong>Datenquellen</strong> es gibt und wie du sie erschließt</li>
-<li>Was <strong>Datenqualität</strong> ausmacht (die „5 V" und Gütekriterien)</li>
-<li>Welche <strong>rechtlichen</strong> Punkte du bei der Beschaffung beachten musst</li>
+<li>Warum <strong>Daten der Rohstoff</strong> jeder KI sind und welche <strong>Arten</strong> es gibt</li>
+<li>Welche <strong>Datenquellen</strong> Unternehmen zur Verfügung stehen (intern und extern)</li>
+<li>Was <strong>strukturierte, semistrukturierte und unstrukturierte</strong> Daten unterscheidet</li>
+<li>Welche <strong>rechtlichen und ethischen</strong> Grenzen die Datenbeschaffung hat</li>
+<li>Wie <strong>Copilot</strong> auf deine Daten zugreift – und wo die Grenzen liegen</li>
 </ul>
 </div>
 <hr />
-<h2 id="91-daten-als-rohstoff-der-ki">9.1 Daten als Rohstoff der KI<a class="headerlink" href="#91-daten-als-rohstoff-der-ki" title="Permanent link">&para;</a></h2>
-<p>KI lernt aus Daten. Ohne passende Daten gibt es keine gute KI – <em>„garbage in, garbage out"</em>. Die Datenbeschaffung ist deshalb oft der <strong>aufwendigste</strong> Teil eines KI-Projekts.</p>
+<h2 id="91-daten-der-rohstoff-der-ki">9.1 Daten – der Rohstoff der KI<a class="headerlink" href="#91-daten-der-rohstoff-der-ki" title="Permanent link">&para;</a></h2>
+<p>KI lernt aus Daten. Ohne passende Daten gibt es kein sinnvolles Modell – und selbst ein fertiges Werkzeug wie Copilot liefert nur dann gute unternehmensspezifische Antworten, wenn es auf <strong>gute Daten</strong> zugreifen kann.</p>
+<div class="admonition info">
+<p class="admonition-title">Menge UND Qualität</p>
+<p>Ein verbreiteter Irrtum: „Viele Daten = gute KI". Richtig ist: Es braucht <strong>genug</strong> Daten <strong>und</strong> die <strong>richtige Qualität</strong>. 10.000 saubere, korrekt beschriftete Beispiele sind mehr wert als 1 Million widersprüchliche. Mehr dazu in Kapitel 10.</p>
+</div>
 <hr />
-<h2 id="92-datenquellen">9.2 Datenquellen<a class="headerlink" href="#92-datenquellen" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TD
-    A([Datenquellen]) --&gt; B([Interne Daten])
-    A --&gt; C([Externe Daten])
-    B --&gt; B1([CRM, ERP, Logs])
-    B --&gt; B2([Dokumente, E-Mails])
-    C --&gt; C1([Open Data, Statistikämter])
-    C --&gt; C2([Gekaufte Daten, APIs])</code></pre>
+<h2 id="92-datenarten-strukturiert-semistrukturiert-unstrukturiert">9.2 Datenarten: strukturiert, semistrukturiert, unstrukturiert<a class="headerlink" href="#92-datenarten-strukturiert-semistrukturiert-unstrukturiert" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Art</th>
+<th>Merkmal</th>
+<th>Beispiel</th>
+<th>Maschinell nutzbar?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strukturiert</strong></td>
+<td>feste Tabellenform, klare Felder</td>
+<td>Datenbank, Excel, ERP</td>
+<td>sehr gut</td>
+</tr>
+<tr>
+<td><strong>Semistrukturiert</strong></td>
+<td>teils geordnet, mit Markierungen</td>
+<td>JSON, XML, E-Mails mit Feldern</td>
+<td>gut</td>
+</tr>
+<tr>
+<td><strong>Unstrukturiert</strong></td>
+<td>keine feste Form</td>
+<td>Fließtext, Bilder, Audio, PDFs</td>
+<td>schwieriger, aber wertvoll</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Warum das wichtig ist</p>
+<p>Der <strong>größte Teil</strong> der Unternehmensdaten ist <strong>unstrukturiert</strong> – E-Mails, Verträge, Protokolle, Präsentationen. Genau hier glänzt generative KI: Sprachmodelle wie hinter <strong>Copilot</strong> können unstrukturierten Text lesen, zusammenfassen und durchsuchbar machen, wofür früher aufwendige Spezialsysteme nötig waren.</p>
+</div>
+<hr />
+<h2 id="93-datenquellen-im-unternehmen">9.3 Datenquellen im Unternehmen<a class="headerlink" href="#93-datenquellen-im-unternehmen" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Interne Quellen]) --&gt; C([Datenbestand])
+    B([Externe Quellen]) --&gt; C
+    C --&gt; D([Nutzung für KI / Analysen])</code></pre>
+<p><strong>Interne Quellen:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Quelle</th>
+<th>Beispiel-Inhalte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERP-/CRM-Systeme</td>
+<td>Aufträge, Kunden, Rechnungen</td>
+</tr>
+<tr>
+<td>E-Mail &amp; Dokumente</td>
+<td>Korrespondenz, Verträge, Berichte</td>
+</tr>
+<tr>
+<td>Maschinen/Sensoren</td>
+<td>Messwerte, Laufzeiten (IoT)</td>
+</tr>
+<tr>
+<td>Web-/Shop-Systeme</td>
+<td>Klicks, Käufe, Verweildauer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Externe Quellen:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Quelle</th>
 <th>Beispiel</th>
-<th>Hinweis</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Interne Systeme</td>
-<td>CRM, ERP, Warenwirtschaft</td>
-<td>oft ungenutzter Schatz</td>
-</tr>
-<tr>
-<td>Dokumente</td>
-<td>Verträge, Berichte, E-Mails</td>
-<td>unstrukturiert, aber wertvoll</td>
-</tr>
 <tr>
 <td>Öffentliche Daten</td>
-<td>Statistikämter, Open Data</td>
-<td>kostenlos, gut zum Anreichern</td>
+<td>Wetter, Statistik, Geodaten</td>
 </tr>
 <tr>
-<td>APIs / Dienste</td>
-<td>Wetter, Geodaten</td>
-<td>aktuell, oft kostenpflichtig</td>
+<td>Eingekaufte Daten</td>
+<td>Markt-/Branchendaten</td>
 </tr>
 <tr>
-<td>Sensoren (IoT)</td>
-<td>Maschinendaten</td>
-<td>Basis für Predictive Maintenance</td>
+<td>Web-Daten</td>
+<td>öffentliche Websites (mit Vorsicht!)</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="93-datenqualitat-die-v-und-gutekriterien">9.3 Datenqualität: die „V" und Gütekriterien<a class="headerlink" href="#93-datenqualitat-die-v-und-gutekriterien" title="Permanent link">&para;</a></h2>
-<p><strong>Gütekriterien</strong> guter Daten:</p>
-<table>
-<thead>
-<tr>
-<th>Kriterium</th>
-<th>Frage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vollständigkeit</td>
-<td>Fehlen Werte?</td>
-</tr>
-<tr>
-<td>Korrektheit</td>
-<td>Sind die Werte richtig?</td>
-</tr>
-<tr>
-<td>Aktualität</td>
-<td>Sind die Daten aktuell genug?</td>
-</tr>
-<tr>
-<td>Konsistenz</td>
-<td>Widersprechen sich Daten?</td>
-</tr>
-<tr>
-<td>Relevanz</td>
-<td>Passen die Daten zum Ziel?</td>
-</tr>
-</tbody>
-</table>
+<h2 id="94-rechtliche-und-ethische-grenzen">9.4 Rechtliche und ethische Grenzen<a class="headerlink" href="#94-rechtliche-und-ethische-grenzen" title="Permanent link">&para;</a></h2>
+<p>Daten dürfen <strong>nicht einfach beliebig</strong> gesammelt und genutzt werden.</p>
 <div class="admonition warning">
-<p class="admonition-title">Menge ist nicht Qualität</p>
-<p>Viele Daten (Volume) helfen nur, wenn sie <strong>korrekt, relevant und aktuell</strong> sind. Schlechte Daten führen zu schlechten KI-Ergebnissen – egal wie modern das Modell ist.</p>
-</div>
-<hr />
-<h2 id="94-rechtliche-leitplanken">9.4 Rechtliche Leitplanken<a class="headerlink" href="#94-rechtliche-leitplanken" title="Permanent link">&para;</a></h2>
+<p class="admonition-title">Wichtige Grenzen</p>
 <ul>
-<li><strong>Personenbezogene Daten</strong> unterliegen der <strong>DSGVO</strong> (siehe Kapitel 33).</li>
-<li><strong>Urheber-/Nutzungsrechte</strong> bei externen Daten prüfen.</li>
-<li><strong>Zweckbindung:</strong> Daten nur für den vereinbarten Zweck nutzen.</li>
+<li><strong>Personenbezogene Daten</strong> unterliegen der <strong>DSGVO</strong> – nur mit Rechtsgrundlage nutzen (Kapitel 33).</li>
+<li><strong>Urheberrecht/Lizenzen</strong> beachten – nicht alles, was öffentlich ist, darf man verwenden.</li>
+<li><strong>Zweckbindung</strong>: Daten, die für Zweck A erhoben wurden, dürfen nicht ohne Weiteres für Zweck B (KI-Training) genutzt werden.</li>
+<li><strong>Betriebsvereinbarungen</strong> und Mitbestimmung beachten, wenn Mitarbeiterdaten betroffen sind.</li>
 </ul>
+</div>
+<p>Diese Grenzen sind kein „Papierkram", sondern echtes Projektrisiko: Ein Datenschutzverstoß kann ein Vorhaben stoppen und teuer werden. Der rechtliche Rahmen wird in <strong>Block 4</strong> vertieft.</p>
+<hr />
+<h2 id="95-wie-copilot-auf-deine-daten-zugreift">9.5 Wie Copilot auf deine Daten zugreift<a class="headerlink" href="#95-wie-copilot-auf-deine-daten-zugreift" title="Permanent link">&para;</a></h2>
+<p><strong>Microsoft 365 Copilot</strong> greift über den <strong>Microsoft Graph</strong> auf die Inhalte zu, auf die <strong>du</strong> ohnehin Zugriff hast: deine Mails, Dokumente, Teams-Chats, Kalender.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Dein Prompt]) --&gt; B([Microsoft Graph findet relevante Inhalte])
+    B --&gt; C([Inhalte + Prompt an das Sprachmodell])
+    C --&gt; D([Antwort mit Bezug auf deine Daten])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Das Berechtigungsprinzip</p>
+<p>Copilot sieht <strong>nur</strong> Daten, für die dein Konto Leserechte hat – es umgeht <strong>keine</strong> Berechtigungen. Fragst du nach einem Dokument, auf das du keinen Zugriff hast, kann Copilot es nicht verwenden. Das ist eine zentrale Sicherheitszusage von Microsoft 365 Copilot.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Datenqualität bleibt entscheidend</p>
+<p>Copilot ist nur so gut wie die Daten, die es findet. Sind eure Dokumente veraltet, widersprüchlich oder chaotisch abgelegt, liefert auch Copilot schwache oder falsche Bezüge. <strong>Ordnung in den Daten</strong> ist damit direkte Voraussetzung für gute Ergebnisse.</p>
+</div>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich möchte für den Use Case &quot;[Use Case]&quot; Daten beschaffen. Erstelle eine
-Checkliste: mögliche interne und externe Datenquellen, Qualitätskriterien und
-rechtliche Punkte, die ich prüfen muss.
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse die wichtigsten Punkte aus meinen E-Mails der letzten Woche zum Projekt
+[Projektname] zusammen und liste offene Aufgaben mit Verantwortlichen auf.
 </code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Daten sind der <strong>Rohstoff</strong> der KI – Menge <strong>und</strong> Qualität zählen.</li>
+<li>Man unterscheidet <strong>strukturierte, semistrukturierte und unstrukturierte</strong> Daten; der Großteil im Unternehmen ist unstrukturiert.</li>
+<li>Datenquellen gibt es intern (ERP, Mails, Sensoren) und extern (öffentliche, gekaufte, Web-Daten).</li>
+<li><strong>Rechtliche/ethische Grenzen</strong> (DSGVO, Urheberrecht, Zweckbindung) sind Pflicht, kein Beiwerk.</li>
+<li><strong>Copilot</strong> nutzt via Microsoft Graph nur Daten, für die du <strong>berechtigt</strong> bist – Ordnung in den Daten ist entscheidend.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

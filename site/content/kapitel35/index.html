@@ -793,9 +793,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#351-was-ki-projekte-besonders-macht" class="md-nav__link">
+  <a href="#351-warum-ki-projekte-anders-sind" class="md-nav__link">
     <span class="md-ellipsis">
-      35.1 Was KI-Projekte besonders macht
+      35.1 Warum KI-Projekte anders sind
     </span>
   </a>
   
@@ -811,18 +811,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#353-rollen-im-ki-projekt" class="md-nav__link">
+  <a href="#353-iterativ-und-experimentell-arbeiten" class="md-nav__link">
     <span class="md-ellipsis">
-      35.3 Rollen im KI-Projekt
+      35.3 Iterativ und experimentell arbeiten
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#354-risiken-fruh-adressieren" class="md-nav__link">
+  <a href="#354-team-und-rollen" class="md-nav__link">
     <span class="md-ellipsis">
-      35.4 Risiken früh adressieren
+      35.4 Team und Rollen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#355-copilot-als-projekthelfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      35.5 Copilot als Projekthelfer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1005,13 +1023,15 @@
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Warum KI-Projekte <strong>anders</strong> sind als klassische IT-Projekte</li>
-<li>Typische <strong>Gründe für Scheitern</strong></li>
-<li>Wichtige <strong>Rollen</strong> in KI-Projekten</li>
-<li>Wie du Risiken früh adressierst</li>
+<li>Die häufigsten <strong>Gründe für das Scheitern</strong> – und wie man sie vermeidet</li>
+<li>Warum KI-Projekte <strong>iterativ und experimentell</strong> sein müssen</li>
+<li>Die Rolle von <strong>interdisziplinären Teams</strong> und klaren <strong>Rollen</strong></li>
+<li>Wie <strong>Copilot</strong> bei Planung, Doku und Kommunikation im Projekt hilft</li>
 </ul>
 </div>
 <hr />
-<h2 id="351-was-ki-projekte-besonders-macht">35.1 Was KI-Projekte besonders macht<a class="headerlink" href="#351-was-ki-projekte-besonders-macht" title="Permanent link">&para;</a></h2>
+<h2 id="351-warum-ki-projekte-anders-sind">35.1 Warum KI-Projekte anders sind<a class="headerlink" href="#351-warum-ki-projekte-anders-sind" title="Permanent link">&para;</a></h2>
+<p>Ein klassisches IT-Projekt hat meist ein klar definierbares Ergebnis („die Software macht X"). KI-Projekte sind <strong>unsicherer</strong>: Ob ein Modell die gewünschte Qualität erreicht, weiß man oft erst <strong>nach</strong> dem Ausprobieren mit echten Daten.</p>
 <table>
 <thead>
 <tr>
@@ -1021,114 +1041,171 @@
 </thead>
 <tbody>
 <tr>
-<td>Anforderungen früh klar</td>
+<td>Ergebnis vorab spezifizierbar</td>
 <td>Ergebnis <strong>datenabhängig</strong>, unsicher</td>
 </tr>
 <tr>
-<td>Erfolg gut planbar</td>
-<td>Erfolg erst nach Experimenten sichtbar</td>
+<td>linear planbar</td>
+<td><strong>iterativ, experimentell</strong></td>
 </tr>
 <tr>
-<td>Test = „funktioniert es?"</td>
-<td>Test = „ist es <strong>gut genug</strong>?"</td>
+<td>Erfolg = Spezifikation erfüllt</td>
+<td>Erfolg = KPI/Qualität erreicht (statistisch)</td>
 </tr>
 <tr>
-<td>Einmal fertig</td>
-<td>Modell muss <strong>gepflegt</strong> werden (Drift)</td>
+<td>Daten oft Nebensache</td>
+<td><strong>Daten sind zentral</strong></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
-<p class="admonition-title">Experimentell statt deterministisch</p>
-<p>Ob ein KI-Modell gut genug wird, weiß man oft erst nach dem Ausprobieren. KI-Projekte brauchen daher <strong>iteratives</strong> Vorgehen und Puffer für Unsicherheit.</p>
+<p class="admonition-title">Der Kern des Unterschieds</p>
+<p>Man „bestellt" keine KI-Lösung wie ein fertiges Möbelstück. Man <strong>erforscht</strong>, ob und wie gut sie funktioniert. Das erfordert eine andere Denkweise: <strong>Hypothesen testen</strong> statt „Auftrag abarbeiten". Wer KI-Projekte wie Bauprojekte plant (fixer Umfang, fixer Termin, fixe Qualität), scheitert oft.</p>
 </div>
 <hr />
 <h2 id="352-warum-ki-projekte-scheitern">35.2 Warum KI-Projekte scheitern<a class="headerlink" href="#352-warum-ki-projekte-scheitern" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TD
-    A([Häufige Scheiterngründe]) --&gt; B([schlechte/zu wenig Daten])
-    A --&gt; C([unklares Geschäftsziel])
-    A --&gt; D([kein Weg in den Betrieb])
-    A --&gt; E([fehlende Akzeptanz])
-    A --&gt; F([überzogene Erwartungen])</code></pre>
+<p>Studien nennen seit Jahren ähnliche Gründe:</p>
 <table>
 <thead>
 <tr>
 <th>Grund</th>
-<th>Gegenmaßnahme</th>
+<th>Ursache</th>
+<th>Gegenmittel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Datenprobleme</td>
-<td>früh Datenlage prüfen (Kapitel 9/10)</td>
+<td><strong>Kein klares Problem</strong></td>
+<td>„KI um der KI willen"</td>
+<td>vom Problem aus starten (Kap. 4)</td>
 </tr>
 <tr>
-<td>unklares Ziel</td>
-<td>messbaren Nutzen definieren</td>
+<td><strong>Schlechte Daten</strong></td>
+<td>Menge/Qualität unzureichend</td>
+<td>Datenrealität früh prüfen (Kap. 9/10)</td>
 </tr>
 <tr>
-<td>„Prototyp-Falle"</td>
-<td>Betrieb von Anfang an mitdenken (Kapitel 11)</td>
+<td><strong>Kein messbarer Nutzen</strong></td>
+<td>KPI fehlt</td>
+<td>KPI vorab definieren</td>
 </tr>
 <tr>
-<td>fehlende Akzeptanz</td>
-<td>Change Management (Kapitel 37)</td>
+<td><strong>Fehlende Akzeptanz</strong></td>
+<td>Belegschaft zieht nicht mit</td>
+<td>Change Management (Kap. 37)</td>
 </tr>
 <tr>
-<td>Übererwartung</td>
-<td>realistisch kommunizieren</td>
+<td><strong>Überzogene Erwartung</strong></td>
+<td>Hype statt Realismus</td>
+<td>MVP, klein starten</td>
+</tr>
+<tr>
+<td><strong>Keine Operationalisierung</strong></td>
+<td>Pilot geht nie in Betrieb</td>
+<td>von Anfang an Betrieb mitdenken (Kap. 11)</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition warning">
+<p class="admonition-title">Der 'Pilot-Friedhof'</p>
+<p>Ein sehr häufiges Muster: Es gibt viele beeindruckende <strong>Piloten</strong>, aber kaum etwas geht in den <strong>Regelbetrieb</strong>. Gründe sind fehlende Integration, unklare Zuständigkeit und mangelnde Akzeptanz. Ein Pilot ist erst dann ein Erfolg, wenn geklärt ist, <strong>wie er skaliert und wer ihn betreibt</strong>.</p>
+</div>
 <hr />
-<h2 id="353-rollen-im-ki-projekt">35.3 Rollen im KI-Projekt<a class="headerlink" href="#353-rollen-im-ki-projekt" title="Permanent link">&para;</a></h2>
+<h2 id="353-iterativ-und-experimentell-arbeiten">35.3 Iterativ und experimentell arbeiten<a class="headerlink" href="#353-iterativ-und-experimentell-arbeiten" title="Permanent link">&para;</a></h2>
+<p>KI-Projekte folgen einem <strong>Lernzyklus</strong>, nicht einem starren Plan:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Hypothese]) --&gt; B([kleines Experiment / MVP])
+    B --&gt; C([messen an KPI])
+    C --&gt; D{lohnt sich?}
+    D --&gt;|ja| E([ausbauen])
+    D --&gt;|nein| F([anpassen oder stoppen])
+    F --&gt; A</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Das Recht zu scheitern – schnell und günstig</p>
+<p>Nicht jedes Experiment gelingt – das ist <strong>normal</strong>. Wichtig ist, <strong>schnell und günstig</strong> zu scheitern (kleiner Pilot statt Großprojekt) und daraus zu lernen. Ein früh gestopptes aussichtsloses Projekt ist ein <strong>Erfolg</strong>, kein Versagen.</p>
+</div>
+<hr />
+<h2 id="354-team-und-rollen">35.4 Team und Rollen<a class="headerlink" href="#354-team-und-rollen" title="Permanent link">&para;</a></h2>
+<p>KI-Projekte brauchen <strong>verschiedene Kompetenzen</strong> an einem Tisch:</p>
 <table>
 <thead>
 <tr>
 <th>Rolle</th>
-<th>Aufgabe</th>
+<th>Beitrag</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Auftraggeber / Fachbereich</td>
-<td>Ziel und Nutzen definieren</td>
+<td><strong>Fachbereich</strong></td>
+<td>kennt Problem, Prozess, Daten (unverzichtbar!)</td>
 </tr>
 <tr>
-<td>Data Scientist / KI-Fachkraft</td>
-<td>Modell entwickeln</td>
+<td><strong>Daten/IT</strong></td>
+<td>Datenzugang, Technik, Integration</td>
 </tr>
 <tr>
-<td>Data Engineer</td>
-<td>Datenpipelines bauen</td>
+<td><strong>Data Science</strong> (bei Eigenentwicklung)</td>
+<td>Modelle, Methodik</td>
 </tr>
 <tr>
-<td>Projektleitung</td>
-<td>Planung, Kommunikation, Risiken</td>
+<td><strong>Management</strong></td>
+<td>Ziele, Budget, Rückendeckung</td>
 </tr>
 <tr>
-<td>Datenschutz/Recht</td>
-<td>Compliance sichern</td>
-</tr>
-<tr>
-<td>Nutzer</td>
-<td>Feedback, Akzeptanz</td>
+<td><strong>Datenschutz/Recht</strong></td>
+<td>Compliance (Block 4)</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">Der Fachbereich ist der Schlüssel</p>
+<p>Der häufigste Fehler ist, KI-Projekte rein als „IT-Sache" zu behandeln. Ohne das <strong>Fachwissen</strong> derer, die den Prozess täglich leben, fehlen Problemverständnis, Datenwissen und spätere Akzeptanz. Für Copilot-Einführungen gilt das besonders: Die besten Use Cases kommen aus dem Fachbereich selbst.</p>
+</div>
 <hr />
-<h2 id="354-risiken-fruh-adressieren">35.4 Risiken früh adressieren<a class="headerlink" href="#354-risiken-fruh-adressieren" title="Permanent link">&para;</a></h2>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="355-copilot-als-projekthelfer">35.5 Copilot als Projekthelfer<a class="headerlink" href="#355-copilot-als-projekthelfer" title="Permanent link">&para;</a></h2>
+<p>Auch die <strong>Projektarbeit selbst</strong> lässt sich mit Copilot beschleunigen:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Projektstruktur</td>
+<td>„Erstelle eine grobe Projektstruktur für die Einführung von Copilot im Vertrieb."</td>
+</tr>
+<tr>
+<td>Risiken</td>
+<td>„Nenne die 8 größten Risiken dieses KI-Projekts und je eine Gegenmaßnahme."</td>
+</tr>
+<tr>
+<td>Statusbericht</td>
+<td>„Fasse diese Projektnotizen zu einem knappen Statusbericht zusammen."</td>
+</tr>
+<tr>
+<td>Kommunikation</td>
+<td>„Formuliere eine Info an die Belegschaft zum Start des Pilotprojekts."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle eine Risiko-Checkliste für ein KI-Projekt mit den Kategorien Daten,
-Ziel, Betrieb, Akzeptanz und Recht. Formuliere je Kategorie 2 Prüffragen und
-eine typische Gegenmaßnahme.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich plane ein KI-Pilotprojekt zur automatischen Zusammenfassung von
+Kundenanfragen. Erstelle einen Plan mit Zielen, einem messbaren KPI, den
+größten Risiken und den Rollen, die ich im Team brauche.
 </code></pre></div></td></tr></table></div>
-<div class="admonition tip">
-<p class="admonition-title">Klein anfangen</p>
-<p>Starte mit einem klar abgegrenzten <strong>Pilotprojekt</strong> mit messbarem Ziel. Erfolg schafft Vertrauen für größere Vorhaben.</p>
-</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI-Projekte sind <strong>unsicherer</strong> und <strong>datenabhängiger</strong> als klassische IT-Projekte – iterativ statt linear.</li>
+<li>Häufige Scheiterngründe: <strong>kein klares Problem, schlechte Daten, kein KPI, fehlende Akzeptanz, kein Betrieb</strong>.</li>
+<li>Arbeite in <strong>Lernzyklen</strong> (MVP → messen → anpassen); schnelles, günstiges Scheitern ist erlaubt.</li>
+<li><strong>Interdisziplinäre Teams</strong> mit starkem <strong>Fachbereich</strong> sind entscheidend.</li>
+<li><strong>Copilot</strong> hilft bei Struktur, Risiken, Statusberichten und Kommunikation.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

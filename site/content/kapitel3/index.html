@@ -552,27 +552,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#32-einsatzfelder-entlang-der-wertschopfungskette" class="md-nav__link">
+  <a href="#32-die-drei-wirkhebel-von-ki" class="md-nav__link">
     <span class="md-ellipsis">
-      3.2 Einsatzfelder entlang der Wertschöpfungskette
+      3.2 Die drei Wirkhebel von KI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#33-copilot-im-arbeitsalltag" class="md-nav__link">
+  <a href="#33-einsatzfelder-entlang-der-wertschopfungskette" class="md-nav__link">
     <span class="md-ellipsis">
-      3.3 Copilot im Arbeitsalltag
+      3.3 Einsatzfelder entlang der Wertschöpfungskette
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#34-realistische-erwartungen" class="md-nav__link">
+  <a href="#34-copilot-im-arbeitsalltag-konkret" class="md-nav__link">
     <span class="md-ellipsis">
-      3.4 Realistische Erwartungen
+      3.4 Copilot im Arbeitsalltag – konkret
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Copilot im Arbeitsalltag – konkret">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ein-durchgespieltes-beispiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ein durchgespieltes Beispiel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-realistische-erwartungen-und-stolpersteine" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Realistische Erwartungen und Stolpersteine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1006,8 +1039,9 @@
 <ul>
 <li>Warum Unternehmen KI einsetzen und welchen <strong>Nutzen</strong> sie sich davon versprechen</li>
 <li>In welchen <strong>Einsatzfeldern</strong> entlang der Wertschöpfungskette KI wirkt</li>
-<li>Wie du <strong>Microsoft Copilot</strong> konkret im Arbeitsalltag nutzt</li>
-<li>Welche typischen <strong>Fehlerwartungen</strong> es gibt</li>
+<li>Die drei <strong>Wirkhebel</strong> von KI: Automatisieren, Assistieren, Analysieren</li>
+<li>Wie du <strong>Microsoft Copilot</strong> konkret im Arbeitsalltag nutzt – mit Beispielen je Office-Anwendung</li>
+<li>Welche typischen <strong>Fehlerwartungen</strong> und Stolpersteine es gibt</li>
 </ul>
 </div>
 <hr />
@@ -1018,33 +1052,81 @@
 <tr>
 <th>Ziel</th>
 <th>Beispiel</th>
+<th>Messgröße</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Effizienz</strong> steigern</td>
 <td>Routineaufgaben automatisieren, schneller arbeiten</td>
+<td>Bearbeitungszeit je Vorgang</td>
 </tr>
 <tr>
 <td><strong>Qualität</strong> verbessern</td>
 <td>Fehler früher erkennen, gleichbleibende Ergebnisse</td>
+<td>Fehlerquote, Reklamationen</td>
 </tr>
 <tr>
 <td><strong>Kosten</strong> senken</td>
 <td>Weniger Nacharbeit, bessere Ressourcennutzung</td>
+<td>Kosten je Einheit</td>
 </tr>
 <tr>
 <td><strong>Neue Angebote</strong> schaffen</td>
 <td>KI-gestützte Produkte und Services</td>
+<td>Umsatz mit neuen Angeboten</td>
 </tr>
 <tr>
 <td><strong>Entscheidungen</strong> stützen</td>
 <td>Prognosen und Auswertungen als Grundlage</td>
+<td>Prognosegenauigkeit</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Immer den Nutzen messbar machen</p>
+<p>Ein KI-Vorhaben ohne <strong>Messgröße</strong> ist schwer zu rechtfertigen. Frage früh: „Woran erkennen wir in Zahlen, dass es funktioniert hat?" Das ist auch die Grundlage für Business Cases (Kapitel 26) und Strategie (Kapitel 39).</p>
+</div>
 <hr />
-<h2 id="32-einsatzfelder-entlang-der-wertschopfungskette">3.2 Einsatzfelder entlang der Wertschöpfungskette<a class="headerlink" href="#32-einsatzfelder-entlang-der-wertschopfungskette" title="Permanent link">&para;</a></h2>
+<h2 id="32-die-drei-wirkhebel-von-ki">3.2 Die drei Wirkhebel von KI<a class="headerlink" href="#32-die-drei-wirkhebel-von-ki" title="Permanent link">&para;</a></h2>
+<p>Bevor man an einzelne Anwendungen denkt, hilft ein Raster, <strong>wie</strong> KI überhaupt Wert schafft:</p>
+<pre class="mermaid"><code>flowchart TD
+    A([KI schafft Wert durch ...]) --&gt; B([Automatisieren: Aufgaben ganz übernehmen])
+    A --&gt; C([Assistieren: Menschen unterstützen])
+    A --&gt; D([Analysieren: aus Daten Erkenntnisse gewinnen])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Hebel</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+<th>Copilot?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatisieren</td>
+<td>KI erledigt Aufgabe selbst</td>
+<td>Rechnung automatisch verbuchen</td>
+<td>teilweise</td>
+</tr>
+<tr>
+<td>Assistieren</td>
+<td>KI liefert Vorschlag, Mensch entscheidet</td>
+<td>Antwortentwurf für E-Mail</td>
+<td><strong>Kernfall</strong></td>
+</tr>
+<tr>
+<td>Analysieren</td>
+<td>KI findet Muster/Prognosen</td>
+<td>Absatz vorhersagen</td>
+<td>teilweise (Excel)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Copilot</strong> ist vor allem ein <strong>Assistenz-Werkzeug</strong>: Es beschleunigt Menschen, ersetzt sie aber nicht. Das ist wichtig für realistische Erwartungen.</p>
+<hr />
+<h2 id="33-einsatzfelder-entlang-der-wertschopfungskette">3.3 Einsatzfelder entlang der Wertschöpfungskette<a class="headerlink" href="#33-einsatzfelder-entlang-der-wertschopfungskette" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
     A([Einkauf]) --&gt; B([Produktion])
     B --&gt; C([Marketing &amp; Vertrieb])
@@ -1055,82 +1137,148 @@
 <tr>
 <th>Bereich</th>
 <th>Typischer KI-Einsatz</th>
+<th>Wirkhebel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Einkauf</td>
 <td>Bedarfsprognosen, Lieferantenanalyse</td>
+<td>Analysieren</td>
 </tr>
 <tr>
 <td>Produktion</td>
 <td>Qualitätsprüfung, vorausschauende Wartung</td>
+<td>Automatisieren/Analysieren</td>
 </tr>
 <tr>
 <td>Marketing &amp; Vertrieb</td>
 <td>Personalisierung, Textgenerierung, Lead-Scoring</td>
+<td>Assistieren/Analysieren</td>
 </tr>
 <tr>
 <td>Kundenservice</td>
 <td>Chatbots, automatische Ticket-Vorschläge</td>
+<td>Assistieren/Automatisieren</td>
 </tr>
 <tr>
 <td>Verwaltung</td>
 <td>Dokumentenverarbeitung, Zusammenfassungen, Berichte</td>
+<td>Assistieren</td>
 </tr>
 </tbody>
 </table>
-<p>Diese Felder vertiefen wir in <strong>Block 3 (Use Cases)</strong>.</p>
+<p>Diese Felder vertiefen wir in <strong>Block 3 (Use Cases)</strong> – jeweils mit Praxisbeispielen.</p>
 <hr />
-<h2 id="33-copilot-im-arbeitsalltag">3.3 Copilot im Arbeitsalltag<a class="headerlink" href="#33-copilot-im-arbeitsalltag" title="Permanent link">&para;</a></h2>
+<h2 id="34-copilot-im-arbeitsalltag-konkret">3.4 Copilot im Arbeitsalltag – konkret<a class="headerlink" href="#34-copilot-im-arbeitsalltag-konkret" title="Permanent link">&para;</a></h2>
 <p><strong>Microsoft Copilot</strong> ist in viele Office-Anwendungen integriert und übernimmt Aufgaben, die viel Zeit kosten:</p>
 <table>
 <thead>
 <tr>
 <th>Anwendung</th>
 <th>Was Copilot kann</th>
+<th>Beispiel-Prompt (Kurzform)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Word</td>
-<td>Entwürfe schreiben, Texte umformulieren, zusammenfassen</td>
+<td>Entwürfe schreiben, umformulieren, zusammenfassen</td>
+<td>„Schreibe einen Entwurf für …"</td>
 </tr>
 <tr>
 <td>Outlook</td>
 <td>E-Mails entwerfen, Threads zusammenfassen</td>
+<td>„Fasse diesen Verlauf zusammen"</td>
 </tr>
 <tr>
 <td>Excel</td>
 <td>Formeln erklären, Daten analysieren, Trends benennen</td>
+<td>„Welche Trends zeigt diese Tabelle?"</td>
 </tr>
 <tr>
 <td>Teams</td>
 <td>Meetings zusammenfassen, To-dos ableiten</td>
+<td>„Liste die Beschlüsse und Aufgaben"</td>
 </tr>
 <tr>
 <td>PowerPoint</td>
 <td>Präsentationen aus Text erzeugen</td>
+<td>„Erstelle 6 Folien zu …"</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h3 id="ein-durchgespieltes-beispiel">Ein durchgespieltes Beispiel<a class="headerlink" href="#ein-durchgespieltes-beispiel" title="Permanent link">&para;</a></h3>
+<p>Ausgangslage: Du hast einen langen E-Mail-Verlauf und wenig Zeit.</p>
+<p><strong>Schritt 1 – Überblick verschaffen:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse die folgende E-Mail in 3 Stichpunkten zusammen und schlage eine höfliche
-Antwort vor, die um einen Termin nächste Woche bittet:
-[E-Mail hier einfügen]
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse den folgenden E-Mail-Verlauf in maximal 4 Stichpunkten zusammen und liste
+alle offenen Aufgaben mit Verantwortlichem auf: [Verlauf einfügen]
 </code></pre></div></td></tr></table></div>
+<p><strong>Schritt 2 – Handeln:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere eine höfliche Antwort (Sie-Form, max. 120 Wörter), die einen Termin
+für nächste Woche vorschlägt und die offene Frage zur Lieferzeit aufgreift.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">Zeitersparnis – realistisch eingeschätzt</p>
+<p>Statt 10 Minuten Lesen + 10 Minuten Schreiben brauchst du vielleicht 5 Minuten inklusive <strong>Prüfung</strong>. Der Gewinn ist real – aber nur, wenn du das Ergebnis gegenliest. Verlässt du dich blind, riskierst du falsche Termine oder unpassenden Ton.</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Grundregel</p>
 <p>Je klarer dein <strong>Auftrag</strong> (Rolle, Ziel, Format, Kontext), desto besser die Ausgabe. Das lernst du systematisch in <strong>Kapitel 14 – Prompt Engineering</strong>.</p>
 </div>
 <hr />
-<h2 id="34-realistische-erwartungen">3.4 Realistische Erwartungen<a class="headerlink" href="#34-realistische-erwartungen" title="Permanent link">&para;</a></h2>
+<h2 id="35-realistische-erwartungen-und-stolpersteine">3.5 Realistische Erwartungen und Stolpersteine<a class="headerlink" href="#35-realistische-erwartungen-und-stolpersteine" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">KI ersetzt nicht das Denken</p>
 <p>Copilot liefert <strong>Entwürfe</strong>, keine geprüften Endergebnisse. Du bleibst verantwortlich für <strong>Fakten, Ton und Freigabe</strong>. KI ist ein <strong>Assistent</strong>, kein Ersatz für Fachwissen.</p>
 </div>
+<p><strong>Typische Stolpersteine beim Einstieg:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stolperstein</th>
+<th>Folge</th>
+<th>Gegenmittel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„KI löst alles von selbst"</td>
+<td>Enttäuschung</td>
+<td>klein starten, Nutzen messen</td>
+</tr>
+<tr>
+<td>vage Prompts</td>
+<td>schwache Ergebnisse</td>
+<td>Prompt Engineering (Kap. 14)</td>
+</tr>
+<tr>
+<td>Ergebnisse ungeprüft nutzen</td>
+<td>Fehler, Fehlinformation</td>
+<td>immer gegenlesen</td>
+</tr>
+<tr>
+<td>vertrauliche Daten eingeben</td>
+<td>Datenschutzverstoß</td>
+<td>Regeln beachten (Kap. 33)</td>
+</tr>
+<tr>
+<td>kein klares Ziel</td>
+<td>Wildwuchs an Experimenten</td>
+<td>Use Cases priorisieren (Kap. 4)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI dient konkreten Zielen (Effizienz, Qualität, Kosten, neue Angebote, bessere Entscheidungen) – am besten <strong>messbar</strong>.</li>
+<li>Sie wirkt über drei Hebel: <strong>Automatisieren, Assistieren, Analysieren</strong>; Copilot ist vor allem <strong>Assistenz</strong>.</li>
+<li>Einsatzfelder ziehen sich durch die gesamte <strong>Wertschöpfungskette</strong>.</li>
+<li>Der Nutzen ist real, aber an <strong>Prüfung, klare Aufträge und Datenschutz</strong> gebunden.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

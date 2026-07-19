@@ -5,63 +5,102 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Warum **Ethik** beim KI-Einsatz wichtig ist
-- Was **Bias** (Verzerrung) ist und wie er entsteht
-- Zentrale Prinzipien **verantwortungsvoller KI**
-- Wie du im Alltag mit Copilot verantwortungsbewusst umgehst
+- Warum **Ethik** bei KI kein „Beiwerk", sondern geschäftskritisch ist
+- Was **Bias (Verzerrung)** ist, wie er entsteht und welche Folgen er hat
+- Zentrale ethische Prinzipien: **Fairness, Transparenz, Verantwortung, Nicht-Schaden**
+- Die Auswirkungen von KI auf **Arbeit und Gesellschaft**
+- Wie du im Alltag – auch mit **Copilot** – verantwortungsvoll handelst
 </div>
 
 ---
 
-## 31.1 Warum KI-Ethik?
+## 31.1 Warum KI-Ethik geschäftskritisch ist
 
-KI trifft oder beeinflusst Entscheidungen, die Menschen betreffen – bei Bewerbungen, Krediten, Diagnosen. Fehler oder Verzerrungen können **reale Nachteile** verursachen. Ethik sorgt dafür, dass KI **fair, transparent und im Sinne der Menschen** eingesetzt wird.
+KI-Systeme treffen oder beeinflussen Entscheidungen, die **Menschen betreffen**: wer einen Kredit bekommt, wer zum Vorstellungsgespräch eingeladen wird, welche Diagnose vorgeschlagen wird. Fehler oder Verzerrungen haben hier **reale Folgen**.
+
+!!! info "Nicht nur 'nice to have'"
+    Ethik ist bei KI nicht bloß eine moralische Frage, sondern **geschäftskritisch**: Diskriminierende oder intransparente KI führt zu **Rechtsstreit, Bußgeldern (EU AI Act, Kap. 32), Reputationsschäden** und Vertrauensverlust. Verantwortungsvolle KI ist damit auch ein **wirtschaftliches** Gebot.
 
 ---
 
-## 31.2 Bias: Verzerrungen in KI
+## 31.2 Bias: die verzerrte KI
 
-**Bias** entsteht, wenn Trainingsdaten die Realität einseitig abbilden. Das Modell übernimmt und verstärkt diese Verzerrung.
+**Bias** (Verzerrung) bedeutet, dass ein KI-System bestimmte Gruppen systematisch **benachteiligt** oder ein schiefes Weltbild widerspiegelt. Die Hauptursache: **verzerrte Trainingsdaten**.
 
 ```mermaid
 flowchart LR
-    A([verzerrte Trainingsdaten]) --> B([Modell lernt Verzerrung])
-    B --> C([unfaire Entscheidungen])
+    A([verzerrte Trainingsdaten]) --> B([Modell lernt die Verzerrung])
+    B --> C([verzerrte Entscheidungen])
+    C --> D([Benachteiligung realer Menschen])
 ```
 
-!!! warning "Beispiel"
-    Wird ein Bewerbungs-Tool überwiegend mit Lebensläufen einer bestimmten Gruppe trainiert, benachteiligt es systematisch andere – ohne böse Absicht, allein durch die Datenlage.
+!!! example "Der klassische Fall"
+    Ein Unternehmen trainiert eine Bewerbungs-KI mit den Einstellungsdaten der letzten 10 Jahre. Wurden damals überwiegend Männer eingestellt, „lernt" die KI, männliche Bewerber zu bevorzugen – nicht aus Absicht, sondern weil sie das **Muster der Vergangenheit** reproduziert. Genau das ist mehreren realen Unternehmen passiert. Die KI ist dabei nur ein **Spiegel** der Daten.
 
-**Bias-Quellen:** einseitige Daten, historische Ungleichheiten, unausgewogene Beispiele, verzerrte Bewertungen.
+!!! warning "Auch Copilot ist nicht neutral"
+    Sprachmodelle lernen aus riesigen Textmengen aus dem Internet – inklusive der darin enthaltenen **Vorurteile und Einseitigkeiten**. Antworten können daher stereotype oder einseitige Sichtweisen enthalten. Man muss aktiv gegensteuern (z. B. um ausgewogene Darstellung bitten) und Ergebnisse **kritisch prüfen**.
 
 ---
 
-## 31.3 Prinzipien verantwortungsvoller KI
+## 31.3 Ethische Grundprinzipien
 
-| Prinzip | Bedeutung |
+| Prinzip | Bedeutung | Praktische Frage |
+|---|---|---|
+| **Fairness** | keine Diskriminierung | Werden Gruppen benachteiligt? |
+| **Transparenz** | nachvollziehbar, offengelegt | Weiß der Mensch, dass/wie KI beteiligt ist? |
+| **Verantwortung** | jemand haftet | Wer verantwortet die Entscheidung? |
+| **Nicht-Schaden** | kein Schaden für Menschen | Welche negativen Folgen sind möglich? |
+| **Selbstbestimmung** | Mensch behält Kontrolle | Kann der Mensch widersprechen/eingreifen? |
+
+Diese Prinzipien finden sich auch in offiziellen Leitlinien (z. B. der EU) und im **EU AI Act** wieder (Kap. 32).
+
+---
+
+## 31.4 KI, Arbeit und Gesellschaft
+
+KI verändert die Arbeitswelt – das wirft ehrliche Fragen auf:
+
+| Chance | Sorge |
 |---|---|
-| Fairness | keine systematische Benachteiligung |
-| Transparenz | Entscheidungen nachvollziehbar (Kapitel 34) |
-| Verantwortlichkeit | ein Mensch bleibt verantwortlich |
-| Datenschutz | Schutz personenbezogener Daten (Kapitel 33) |
-| Sicherheit | zuverlässig und robust |
-| Menschliche Aufsicht | Mensch kann eingreifen/übersteuern |
+| Entlastung von Routine | Wegfall von Tätigkeiten |
+| neue Berufsbilder (z. B. Prompt-Kompetenz) | Qualifikationsdruck |
+| höhere Produktivität | Überwachung/Kontrolle am Arbeitsplatz |
+| bessere Entscheidungen | Verantwortungsdiffusion („die KI war's") |
+
+!!! info "Realistische Einordnung"
+    Die Erfahrung zeigt: KI ersetzt meist **Aufgaben**, nicht ganze **Menschen**. Berufe verändern sich – repetitive Anteile fallen weg, dafür kommen Steuerung, Prüfung und Kommunikation hinzu. Deshalb ist **Weiterbildung** (wie dieser Kurs) die beste Antwort auf die Sorgen. Verantwortungsvolle Unternehmen nehmen die Belegschaft aktiv mit (Change Management, Kap. 37).
 
 ---
 
-## 31.4 Verantwortungsvoll mit Copilot arbeiten
+## 31.5 Verantwortungsvoll handeln mit Copilot
+
+Konkrete Leitplanken für den Alltag:
+
+- **Prüfen statt vertrauen:** Ergebnisse auf Fakten, Fairness und Ton kontrollieren.
+- **Transparenz:** offenlegen, wenn Inhalte KI-gestützt entstanden sind (wo relevant).
+- **Keine heiklen Entscheidungen delegieren:** über Menschen (Personal, Bewertung) entscheiden Menschen.
+- **Bias aktiv entgegenwirken:** ausgewogene Perspektiven anfordern.
 
 **Copilot-Prompt zum Ausprobieren:**
 
 ```text
-Ich setze KI für [Anwendung] ein. Nenne mögliche ethische Risiken (z. B. Bias,
-Diskriminierung, fehlende Transparenz) und je Risiko eine konkrete Gegenmaßnahme.
+Ich habe folgenden Text über eine Berufsgruppe verfasst: [Text]. Prüfe ihn auf
+mögliche Stereotype oder einseitige Formulierungen und schlage neutralere,
+ausgewogene Alternativen vor.
 ```
 
-!!! info "Faustregeln"
-    - KI-Ausgaben **kritisch prüfen**, nicht blind übernehmen.
-    - Bei Entscheidungen über Menschen besonders vorsichtig sein.
-    - Verantwortung bleibt **immer beim Menschen**.
+!!! tip "Ethik ist eine Haltung, kein Häkchen"
+    Verantwortungsvolle KI-Nutzung entsteht nicht durch ein einmaliges Regelwerk, sondern durch eine **wache Grundhaltung** bei jeder Anwendung: „Wen betrifft das? Kann das ungerecht wirken? Muss ich das offenlegen?"
+
+---
+
+## Zusammenfassung
+
+- KI-Ethik ist **geschäftskritisch** – wegen Recht, Bußgeldern, Reputation und Vertrauen.
+- **Bias** entsteht aus verzerrten Daten; KI ist ein **Spiegel** – auch Copilot ist nicht neutral.
+- Leitprinzipien: **Fairness, Transparenz, Verantwortung, Nicht-Schaden, Selbstbestimmung**.
+- KI ersetzt meist **Aufgaben**, nicht Menschen – **Weiterbildung** und Mitnahme der Belegschaft sind zentral.
+- Im Alltag: prüfen, offenlegen, heikle Entscheidungen beim Menschen lassen, Bias entgegenwirken.
 
 ---
 

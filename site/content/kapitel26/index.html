@@ -834,27 +834,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#262-wie-funktioniert-das" class="md-nav__link">
+  <a href="#262-wie-die-vorhersage-funktioniert" class="md-nav__link">
     <span class="md-ellipsis">
-      26.2 Wie funktioniert das?
+      26.2 Wie die Vorhersage funktioniert
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#263-voraussetzungen-und-grenzen" class="md-nav__link">
+  <a href="#263-der-wirtschaftliche-nutzen" class="md-nav__link">
     <span class="md-ellipsis">
-      26.3 Voraussetzungen und Grenzen
+      26.3 Der wirtschaftliche Nutzen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#264-praxisbeispiel-pumpenuberwachung" class="md-nav__link">
+  <a href="#264-voraussetzungen-und-grenzen" class="md-nav__link">
     <span class="md-ellipsis">
-      26.4 Praxisbeispiel: Pumpenüberwachung
+      26.4 Voraussetzungen und Grenzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#265-wo-copilot-unterstutzt" class="md-nav__link">
+    <span class="md-ellipsis">
+      26.5 Wo Copilot unterstützt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1165,77 +1183,150 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>vorausschauende Wartung</strong> ist und warum sie sich lohnt</li>
+<li>Was <strong>Predictive Maintenance (vorausschauende Wartung)</strong> ist</li>
 <li>Der Unterschied zu <strong>reaktiver</strong> und <strong>präventiver</strong> Wartung</li>
-<li>Welche <strong>Daten</strong> dafür nötig sind</li>
-<li>Ein <strong>Praxisbeispiel</strong> aus dem Anlagenbetrieb</li>
+<li>Wie die <strong>Vorhersage von Ausfällen</strong> technisch grob funktioniert</li>
+<li>Wie man den <strong>wirtschaftlichen Nutzen</strong> (Business Case) berechnet</li>
+<li>Wie <strong>Copilot</strong> bei Wartungsdoku, Analyse und Kommunikation hilft</li>
 </ul>
 </div>
 <hr />
 <h2 id="261-drei-wartungsstrategien">26.1 Drei Wartungsstrategien<a class="headerlink" href="#261-drei-wartungsstrategien" title="Permanent link">&para;</a></h2>
+<p>Wartung lässt sich auf drei Arten organisieren – vorausschauende Wartung ist die modernste:</p>
 <table>
 <thead>
 <tr>
 <th>Strategie</th>
 <th>Prinzip</th>
-<th>Nachteil</th>
+<th>Problem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Reaktiv</strong></td>
 <td>reparieren, wenn kaputt</td>
-<td>ungeplante Ausfälle</td>
+<td>teurer Stillstand, Folgeschäden</td>
 </tr>
 <tr>
 <td><strong>Präventiv</strong></td>
-<td>feste Intervalle</td>
-<td>Wartung zu früh/zu spät</td>
+<td>nach festem Plan (z. B. alle 6 Monate)</td>
+<td>wartet zu früh (Verschwendung) oder zu spät</td>
 </tr>
 <tr>
 <td><strong>Vorausschauend</strong></td>
-<td>warten, wenn Daten es nahelegen</td>
+<td>wartet <strong>genau dann</strong>, wenn Daten es nahelegen</td>
 <td>braucht Daten &amp; Modelle</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Predictive Maintenance</strong> sagt anhand von Sensordaten voraus, <strong>wann</strong> ein Ausfall droht – und ermöglicht Wartung genau zum richtigen Zeitpunkt.</p>
-<hr />
-<h2 id="262-wie-funktioniert-das">26.2 Wie funktioniert das?<a class="headerlink" href="#262-wie-funktioniert-das" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
-    A([Sensordaten: Temperatur, Vibration, ...]) --&gt; B([KI-Modell])
-    B --&gt; C([Zustand &amp; Restlebensdauer schätzen])
-    C --&gt; D([Wartung rechtzeitig planen])</code></pre>
-<p><strong>Benötigte Daten:</strong></p>
-<ul>
-<li>Sensordaten (Vibration, Temperatur, Druck, Strom …)</li>
-<li>historische <strong>Ausfalldaten</strong> (wann ist was kaputtgegangen?)</li>
-<li>Wartungshistorie</li>
-</ul>
+    A([Reaktiv: nach Ausfall]) --&gt; B([hoher Stillstand])
+    C([Präventiv: fester Plan]) --&gt; D([oft unnötig oder zu spät])
+    E([Vorausschauend: datenbasiert]) --&gt; F([Wartung zur richtigen Zeit])</code></pre>
 <div class="admonition info">
-<p class="admonition-title">Nutzen</p>
-<p>Weniger ungeplante Stillstände, längere Maschinenlebensdauer, geplante Ersatzteilbeschaffung, niedrigere Kosten.</p>
+<p class="admonition-title">Warum vorausschauend gewinnt</p>
+<p>Präventive Wartung nach starrem Kalender tauscht Teile oft aus, die noch funktionieren (Verschwendung) – oder zu spät (Ausfall). <strong>Predictive Maintenance</strong> nutzt den <strong>tatsächlichen Zustand</strong> der Maschine und wartet <strong>im optimalen Moment</strong>: spät genug, um die Lebensdauer auszunutzen, früh genug, um den Ausfall zu verhindern.</p>
 </div>
 <hr />
-<h2 id="263-voraussetzungen-und-grenzen">26.3 Voraussetzungen und Grenzen<a class="headerlink" href="#263-voraussetzungen-und-grenzen" title="Permanent link">&para;</a></h2>
+<h2 id="262-wie-die-vorhersage-funktioniert">26.2 Wie die Vorhersage funktioniert<a class="headerlink" href="#262-wie-die-vorhersage-funktioniert" title="Permanent link">&para;</a></h2>
+<p>Sensoren messen laufend den Zustand (Vibration, Temperatur, Geräusch, Stromaufnahme). Ein Modell hat aus <strong>historischen Daten</strong> gelernt, welche Muster einem Ausfall <strong>vorausgehen</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Sensordaten laufend]) --&gt; B([Modell erkennt Verschleißmuster])
+    B --&gt; C([Restlebensdauer / Ausfallrisiko schätzen])
+    C --&gt; D([Wartung rechtzeitig einplanen])</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Das Prinzip anschaulich</p>
+<p>Ein Lager, das bald ausfällt, vibriert oft schon Wochen vorher anders – zu leicht, als dass ein Mensch es bemerkt. Das Modell hat aus vielen früheren Ausfällen gelernt, dieses <strong>Frühwarnmuster</strong> zu erkennen, und meldet: „Lager an Maschine 3 wird in ca. 12 Tagen kritisch." Die Instandhaltung plant die Reparatur in die nächste ohnehin geplante Pause.</p>
+</div>
+<hr />
+<h2 id="263-der-wirtschaftliche-nutzen">26.3 Der wirtschaftliche Nutzen<a class="headerlink" href="#263-der-wirtschaftliche-nutzen" title="Permanent link">&para;</a></h2>
+<p>Predictive Maintenance ist ein Paradebeispiel für einen rechenbaren <strong>Business Case</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Faktor</th>
+<th>Wirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Weniger ungeplante Stillstände</td>
+<td>höhere Verfügbarkeit</td>
+</tr>
+<tr>
+<td>Weniger Folgeschäden</td>
+<td>geringere Reparaturkosten</td>
+</tr>
+<tr>
+<td>Bessere Ersatzteilplanung</td>
+<td>weniger Lagerkosten, keine Hektik</td>
+</tr>
+<tr>
+<td>Längere Maschinenlebensdauer</td>
+<td>Investitionen später nötig</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Rechnung als Argument</p>
+<p>Kostet eine Stunde ungeplanter Stillstand z. B. 5.000 € und verhindert Predictive Maintenance im Jahr 20 solcher Stunden, sind das <strong>100.000 €</strong> vermiedene Kosten. Dem stehen die Kosten für Sensorik und System gegenüber. Genau so baut man einen Business Case – die Methodik gilt für viele KI-Projekte (Kap. 4, 38).</p>
+</div>
+<hr />
+<h2 id="264-voraussetzungen-und-grenzen">26.4 Voraussetzungen und Grenzen<a class="headerlink" href="#264-voraussetzungen-und-grenzen" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">Ohne Ausfalldaten schwierig</p>
-<p>Um Ausfälle vorherzusagen, braucht das Modell <strong>Beispiele für Ausfälle</strong>. Bei sehr zuverlässigen Maschinen gibt es davon wenige – dann ist die Prognose schwieriger und man arbeitet mit Anomalieerkennung.</p>
+<p class="admonition-title">Kein Selbstläufer</p>
+<ul>
+<li>Man braucht <strong>genügend historische Daten</strong> – idealerweise auch echte Ausfalldaten (die selten und wertvoll sind).</li>
+<li><strong>Sensorik</strong> muss vorhanden oder nachrüstbar sein.</li>
+<li>Für <strong>seltene</strong> Ausfälle ist es schwer, verlässlich zu lernen (wenig Beispiele).</li>
+<li>Vorhersagen sind <strong>Wahrscheinlichkeiten</strong>, keine Gewissheiten – Fehlalarme und verpasste Fälle bleiben möglich.</li>
+</ul>
 </div>
 <hr />
-<h2 id="264-praxisbeispiel-pumpenuberwachung">26.4 Praxisbeispiel: Pumpenüberwachung<a class="headerlink" href="#264-praxisbeispiel-pumpenuberwachung" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Fallbeispiel</p>
-<p>Ein Betreiber überwacht Pumpen mit Vibrations- und Temperatursensoren. Ein Modell erkennt frühzeitig ungewöhnliche Muster und meldet drohende Lagerschäden <strong>Tage vorher</strong>.</p>
-<p><strong>Ergebnis:</strong> planbare Wartung, keine teuren Notabschaltungen.</p>
-</div>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="265-wo-copilot-unterstutzt">26.5 Wo Copilot unterstützt<a class="headerlink" href="#265-wo-copilot-unterstutzt" title="Permanent link">&para;</a></h2>
+<p>Die Vorhersage selbst leistet ein Spezialsystem. <strong>Copilot</strong> hilft rundherum – bei Doku, Auswertung und Kommunikation:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wartungsberichte</td>
+<td>„Fasse diese Wartungshistorie zu den häufigsten Ausfallursachen zusammen."</td>
+</tr>
+<tr>
+<td>Business Case</td>
+<td>„Hilf mir, den Nutzen von Predictive Maintenance für Maschine X zu berechnen."</td>
+</tr>
+<tr>
+<td>Kommunikation</td>
+<td>„Formuliere eine verständliche Info an die Produktion zur geplanten Wartung."</td>
+</tr>
+<tr>
+<td>Analyse</td>
+<td>„Welche Muster zeigt diese Ausfallstatistik (Excel)?"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre Predictive Maintenance an einer Pumpe. Welche Sensordaten sind sinnvoll,
-welche historischen Daten braucht das Modell und wie unterscheidet sich der Ansatz
-von präventiver Wartung?
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre mir den Unterschied zwischen reaktiver, präventiver und vorausschauender
+Wartung an einem Beispiel aus einem produzierenden Betrieb. Erstelle dann eine
+einfache Beispielrechnung, die den möglichen Nutzen vorausschauender Wartung zeigt.
 </code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Drei Strategien: <strong>reaktiv, präventiv, vorausschauend</strong> – Predictive Maintenance wartet <strong>datenbasiert</strong> im optimalen Moment.</li>
+<li>Modelle erkennen aus <strong>Sensordaten</strong> frühe <strong>Verschleißmuster</strong> und schätzen das Ausfallrisiko.</li>
+<li>Der Nutzen (weniger Stillstand/Folgeschäden) ist gut als <strong>Business Case</strong> rechenbar.</li>
+<li>Voraussetzungen: genug <strong>Daten und Sensorik</strong>; Vorhersagen bleiben <strong>Wahrscheinlichkeiten</strong>.</li>
+<li><strong>Copilot</strong> unterstützt bei Doku, Business Case und Kommunikation – nicht bei der Vorhersage selbst.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

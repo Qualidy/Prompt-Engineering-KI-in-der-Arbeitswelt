@@ -871,27 +871,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#281-warum-dokumentenverarbeitung" class="md-nav__link">
+  <a href="#281-warum-dokumente-ein-idealer-ki-fall-sind" class="md-nav__link">
     <span class="md-ellipsis">
-      28.1 Warum Dokumentenverarbeitung?
+      28.1 Warum Dokumente ein idealer KI-Fall sind
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#282-copilot-fur-dokumente" class="md-nav__link">
+  <a href="#282-die-verarbeitungskette" class="md-nav__link">
     <span class="md-ellipsis">
-      28.2 Copilot für Dokumente
+      28.2 Die Verarbeitungskette
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="28.2 Die Verarbeitungskette">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ocr-extraktion-klassifikation-kurz-erklart" class="md-nav__link">
+    <span class="md-ellipsis">
+      OCR, Extraktion, Klassifikation kurz erklärt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#283-dokumentenarbeit-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      28.3 Dokumentenarbeit mit Copilot
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#283-vertraulichkeit-und-prufung" class="md-nav__link">
+  <a href="#284-fehlerrisiken-und-absicherung" class="md-nav__link">
     <span class="md-ellipsis">
-      28.3 Vertraulichkeit und Prüfung
+      28.4 Fehlerrisiken und Absicherung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1156,76 +1189,142 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Wie KI <strong>Dokumente</strong> automatisch verarbeitet</li>
-<li>Die Schritte: <strong>Erfassen (OCR) → Extrahieren → Klassifizieren → Weiterverarbeiten</strong></li>
-<li>Wie <strong>Copilot</strong> bei Dokumenten im Arbeitsalltag hilft</li>
-<li>Worauf du bei Vertraulichkeit achten musst</li>
+<li>Warum <strong>Dokumentenverarbeitung</strong> eines der stärksten KI-Einsatzfelder im Büro ist</li>
+<li>Die typische <strong>Verarbeitungskette</strong>: erfassen, extrahieren, klassifizieren, prüfen, weiterleiten</li>
+<li>Was <strong>OCR, Extraktion und Klassifikation</strong> bedeuten</li>
+<li>Wie <strong>Copilot</strong> Dokumente zusammenfasst, durchsucht und Daten herauszieht</li>
+<li>Welche <strong>Fehlerrisiken</strong> bestehen und wie du sie absicherst</li>
 </ul>
 </div>
 <hr />
-<h2 id="281-warum-dokumentenverarbeitung">28.1 Warum Dokumentenverarbeitung?<a class="headerlink" href="#281-warum-dokumentenverarbeitung" title="Permanent link">&para;</a></h2>
-<p>Unternehmen ertrinken in Dokumenten: Rechnungen, Verträge, Formulare, E-Mails. <strong>Intelligente Dokumentenverarbeitung (IDP)</strong> automatisiert das Auslesen und Einordnen.</p>
+<h2 id="281-warum-dokumente-ein-idealer-ki-fall-sind">28.1 Warum Dokumente ein idealer KI-Fall sind<a class="headerlink" href="#281-warum-dokumente-ein-idealer-ki-fall-sind" title="Permanent link">&para;</a></h2>
+<p>Unternehmen ertrinken in Dokumenten: Rechnungen, Verträge, Berichte, E-Mails, Formulare, Protokolle. Vieles davon ist <strong>unstrukturierter Text</strong> (Kap. 9) – genau das, was moderne Sprach-KI besonders gut verarbeitet.</p>
+<div class="admonition info">
+<p class="admonition-title">Der Hebel</p>
+<p>Dokumentenarbeit ist oft <strong>zeitraubend, repetitiv und fehleranfällig</strong>: lesen, verstehen, wichtige Daten heraussuchen, ablegen. Genau diese Kette kann KI stark beschleunigen. Deshalb gehört Dokumentenverarbeitung zu den <strong>schnellsten und lohnendsten</strong> Einsatzfeldern – ein klassischer Quick Win (Kap. 4).</p>
+</div>
+<hr />
+<h2 id="282-die-verarbeitungskette">28.2 Die Verarbeitungskette<a class="headerlink" href="#282-die-verarbeitungskette" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
-    A([Dokument]) --&gt; B([OCR: Text erkennen])
-    B --&gt; C([Daten extrahieren])
-    C --&gt; D([Klassifizieren])
-    D --&gt; E([ins System / Workflow])</code></pre>
+    A([Erfassen: Scan/Datei]) --&gt; B([OCR: Text lesbar machen])
+    B --&gt; C([Klassifizieren: welcher Dokumenttyp?])
+    C --&gt; D([Extrahieren: relevante Daten])
+    D --&gt; E([Prüfen: plausibel/vollständig?])
+    E --&gt; F([Weiterleiten/Ablegen])</code></pre>
 <table>
 <thead>
 <tr>
 <th>Schritt</th>
-<th>Aufgabe</th>
+<th>Was passiert</th>
+<th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>OCR</td>
-<td>Bild/Scan in Text umwandeln</td>
+<td><strong>Erfassen</strong></td>
+<td>Dokument digitalisieren</td>
+<td>Rechnung scannen</td>
 </tr>
 <tr>
-<td>Extraktion</td>
-<td>relevante Felder herausziehen (Betrag, Datum …)</td>
+<td><strong>OCR</strong></td>
+<td>Bild → maschinenlesbarer Text</td>
+<td>gescanntes PDF wird durchsuchbar</td>
 </tr>
 <tr>
-<td>Klassifikation</td>
-<td>Dokumenttyp erkennen (Rechnung, Vertrag …)</td>
+<td><strong>Klassifizieren</strong></td>
+<td>Dokumententyp bestimmen</td>
+<td>„das ist eine Rechnung"</td>
 </tr>
 <tr>
-<td>Weiterverarbeitung</td>
-<td>Daten ins Zielsystem/Workflow geben</td>
+<td><strong>Extrahieren</strong></td>
+<td>Kernangaben herausziehen</td>
+<td>Betrag, Datum, Lieferant</td>
+</tr>
+<tr>
+<td><strong>Prüfen</strong></td>
+<td>Plausibilität/Vollständigkeit</td>
+<td>„Betrag fehlt?"</td>
+</tr>
+<tr>
+<td><strong>Weiterleiten</strong></td>
+<td>ins Zielsystem/an Zuständige</td>
+<td>Buchhaltung</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="282-copilot-fur-dokumente">28.2 Copilot für Dokumente<a class="headerlink" href="#282-copilot-fur-dokumente" title="Permanent link">&para;</a></h2>
-<p>Copilot glänzt bei <strong>textbasierten</strong> Dokumentenaufgaben:</p>
+<h3 id="ocr-extraktion-klassifikation-kurz-erklart">OCR, Extraktion, Klassifikation kurz erklärt<a class="headerlink" href="#ocr-extraktion-klassifikation-kurz-erklart" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Zusammenfassen</strong> langer Dokumente</li>
-<li><strong>Extrahieren</strong> von Kernpunkten und Fristen</li>
-<li><strong>Vergleichen</strong> von Versionen</li>
-<li><strong>Beantworten</strong> von Fragen zu einem Dokument</li>
+<li><strong>OCR (Texterkennung):</strong> wandelt ein <strong>Bild</strong> von Text (Scan, Foto) in <strong>echten Text</strong> um, mit dem man arbeiten kann.</li>
+<li><strong>Klassifikation:</strong> ordnet ein Dokument einer <strong>Kategorie</strong> zu (Rechnung, Angebot, Mahnung …).</li>
+<li><strong>Extraktion:</strong> zieht <strong>gezielt Datenfelder</strong> heraus (Rechnungsnummer, Betrag, Datum).</li>
 </ul>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<hr />
+<h2 id="283-dokumentenarbeit-mit-copilot">28.3 Dokumentenarbeit mit Copilot<a class="headerlink" href="#283-dokumentenarbeit-mit-copilot" title="Permanent link">&para;</a></h2>
+<p><strong>Copilot</strong> ist im Büroalltag extrem stark bei Text-Dokumenten:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zusammenfassen</td>
+<td>„Fasse dieses 12-seitige Dokument in 7 Kernpunkten zusammen."</td>
+</tr>
+<tr>
+<td>Gezielt fragen</td>
+<td>„Was steht in diesem Vertrag zur Kündigungsfrist?"</td>
+</tr>
+<tr>
+<td>Daten extrahieren</td>
+<td>„Zieh aus dieser Rechnung Nummer, Datum, Betrag, Lieferant als Tabelle."</td>
+</tr>
+<tr>
+<td>Vergleichen</td>
+<td>„Was hat sich zwischen diesen zwei Vertragsversionen geändert?"</td>
+</tr>
+<tr>
+<td>Umformen</td>
+<td>„Mach aus diesem Protokoll eine To-do-Liste mit Verantwortlichen."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse diesen Vertrag in 5 Stichpunkten zusammen, liste alle Fristen und
-Kündigungsregelungen auf und markiere mögliche Risiken:
-[Vertragstext einfügen]
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere den folgenden Vertragstext. Erstelle eine Tabelle mit:
+Vertragspartner, Laufzeit, Kündigungsfrist, monatliche Kosten, besondere
+Klauseln. Markiere alle Angaben, die im Text nicht eindeutig zu finden sind.
 </code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Der 'markiere Unsicheres'-Trick</p>
+<p>Die Anweisung, <strong>unsichere oder fehlende Angaben ausdrücklich zu markieren</strong>, ist Gold wert: So siehst du sofort, wo du nachprüfen musst, statt einer scheinbar vollständigen Tabelle blind zu vertrauen.</p>
+</div>
 <hr />
-<h2 id="283-vertraulichkeit-und-prufung">28.3 Vertraulichkeit und Prüfung<a class="headerlink" href="#283-vertraulichkeit-und-prufung" title="Permanent link">&para;</a></h2>
+<h2 id="284-fehlerrisiken-und-absicherung">28.4 Fehlerrisiken und Absicherung<a class="headerlink" href="#284-fehlerrisiken-und-absicherung" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">Sensible Dokumente schützen</p>
+<p class="admonition-title">Wo es schiefgehen kann</p>
 <ul>
-<li>Prüfe, ob du <strong>vertrauliche/personenbezogene</strong> Dokumente in ein KI-Werkzeug geben darfst (Unternehmensrichtlinie, DSGVO – Kapitel 33).</li>
-<li>Nutze die im Unternehmen <strong>freigegebene</strong> Copilot-Umgebung.</li>
-<li>KI-Ergebnisse (z. B. extrahierte Beträge) <strong>immer prüfen</strong>, bevor sie weiterverarbeitet werden.</li>
+<li><strong>Zahlendreher/Extraktionsfehler:</strong> Ein falsch gelesener Betrag in der Buchhaltung ist teuer – kritische Werte gegen das Original prüfen.</li>
+<li><strong>Halluzinierte Inhalte:</strong> Bei fehlenden Angaben kann das Modell etwas „Plausibles" erfinden (Kap. 15).</li>
+<li><strong>Vertraulichkeit:</strong> Verträge und personenbezogene Dokumente nur in der <strong>freigegebenen</strong> M365-Umgebung verarbeiten (Kap. 33).</li>
+<li><strong>Vollautomatik ohne Kontrolle:</strong> Bei rechts-/geldrelevanten Dokumenten sollte ein Mensch prüfen (Human-in-the-Loop).</li>
 </ul>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Menschliche Freigabe</p>
-<p>Bei rechtlich oder finanziell relevanten Dokumenten bleibt eine <strong>menschliche Kontrolle</strong> vor der Verbuchung/Unterzeichnung Pflicht.</p>
+<p class="admonition-title">Automatisierung mit Augenmaß</p>
+<p>Ein bewährtes Muster: KI verarbeitet und schlägt vor, ein Mensch <strong>prüft die kritischen Fälle</strong> (z. B. hohe Beträge, unklare Extraktionen). So bekommt man Tempo <strong>und</strong> Sicherheit. Für große Volumina gibt es spezialisierte Systeme (z. B. Azure AI Document Intelligence); für den Alltag genügt oft Copilot.</p>
 </div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Dokumentenverarbeitung ist ein <strong>Top-Einsatzfeld</strong> – viel unstrukturierter Text, viel Routine.</li>
+<li>Die Kette: <strong>Erfassen → OCR → Klassifizieren → Extrahieren → Prüfen → Weiterleiten</strong>.</li>
+<li><strong>Copilot</strong> ist stark beim Zusammenfassen, Durchsuchen, Extrahieren und Vergleichen von Dokumenten.</li>
+<li>Absicherung: <strong>kritische Werte prüfen</strong>, Unsicheres markieren lassen, Vertraulichkeit wahren, Human-in-the-Loop.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

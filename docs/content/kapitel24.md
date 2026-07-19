@@ -5,59 +5,95 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Was **Industrie 4.0** und die **Smart Factory** bedeuten
-- Welche Rolle KI in der modernen Produktion spielt
-- Zentrale Einsatzfelder: Planung, Steuerung, Qualität, Wartung
-- Welche Voraussetzungen (Daten, Vernetzung) nötig sind
+- Wie KI in der **Produktion / Industrie 4.0** eingesetzt wird
+- Die Rolle von **Sensoren, IoT und Echtzeitdaten**
+- Konkrete Anwendungen: **Qualitätskontrolle, Steuerung, Planung, Wartung**
+- Was ein **digitaler Zwilling** ist
+- Wo **Copilot** in der Produktionsumgebung sinnvoll unterstützt – und wo nicht
 </div>
 
 ---
 
-## 24.1 Industrie 4.0 und Smart Factory
+## 24.1 KI und Industrie 4.0
 
-**Industrie 4.0** steht für die Vernetzung von Maschinen, Produkten und Systemen. In der **Smart Factory** kommunizieren Anlagen über Sensoren und liefern kontinuierlich Daten – die Grundlage für KI.
+**Industrie 4.0** steht für die Vernetzung von Maschinen, Produkten und Systemen über das Internet. KI ist ihr „Gehirn": Sie wertet die anfallenden Datenmengen aus und trifft oder unterstützt Entscheidungen – oft in **Echtzeit**.
 
 ```mermaid
 flowchart LR
-    A([Sensoren / Maschinen]) --> B([Daten sammeln])
-    B --> C([KI analysiert])
-    C --> D([Optimieren & Steuern])
-    D --> A
+    A([Sensoren an Maschinen]) --> B([Datenerfassung / IoT])
+    B --> C([KI-Analyse in Echtzeit])
+    C --> D([Entscheidung / Steuerung])
+    D --> E([Aktion an der Maschine])
+    E --> A
 ```
 
+Der Kreislauf ist entscheidend: Maschinen erzeugen laufend Daten, KI wertet sie aus, und das Ergebnis wirkt sofort auf die Produktion zurück.
+
 ---
 
-## 24.2 Einsatzfelder von KI in der Produktion
+## 24.2 Sensoren, IoT und Echtzeitdaten
 
-| Feld | KI-Nutzen |
+Grundlage jeder Produktions-KI sind **Daten aus der Anlage**: Temperatur, Vibration, Druck, Stückzahlen, Bildaufnahmen. Diese liefern **Sensoren**, vernetzt über das **Internet of Things (IoT)**.
+
+!!! info "Warum Echtzeit den Unterschied macht"
+    In der Verwaltung darf eine Analyse Stunden dauern. In der Produktion zählt oft die **Millisekunde**: Erkennt die KI einen Fehler erst nach 1.000 produzierten Teilen, ist der Ausschuss teuer. Deshalb laufen viele Produktions-KIs **direkt an der Maschine** (Edge/On-Device, Kap. 5), nicht in einer fernen Cloud.
+
+---
+
+## 24.3 Konkrete Anwendungen
+
+| Anwendung | Was KI tut | Nutzen |
+|---|---|---|
+| **Optische Qualitätskontrolle** | Kamera + KI erkennt Defekte | weniger Ausschuss, weniger Reklamationen |
+| **Prozesssteuerung** | passt Parameter automatisch an | gleichbleibende Qualität |
+| **Produktionsplanung** | optimiert Reihenfolge/Auslastung | kürzere Durchlaufzeiten |
+| **Vorausschauende Wartung** | sagt Ausfälle voraus | weniger Stillstand (Kap. 26) |
+| **Materialfluss/Logistik** | steuert Transporte im Werk | weniger Wartezeit |
+
+!!! example "Optische Qualitätskontrolle in der Praxis"
+    Eine Kamera fotografiert jedes Teil am Band; ein Bilderkennungsmodell (Computer Vision, Kap. 1) vergleicht es mit „gut"-Beispielen und sortiert fehlerhafte Teile in Millisekunden aus. Das ist schneller, gleichmäßiger und ermüdungsfrei im Vergleich zur Sichtprüfung durch Menschen – die dafür schwierige Grenzfälle beurteilen.
+
+---
+
+## 24.4 Der digitale Zwilling
+
+Ein **digitaler Zwilling** ist ein virtuelles Abbild einer realen Maschine oder Anlage, gespeist mit deren Echtzeitdaten. Man kann daran **testen und simulieren**, ohne die echte Produktion zu stören.
+
+!!! example "Nutzen"
+    „Was passiert, wenn wir die Taktrate um 10 % erhöhen?" – statt es riskant an der echten Anlage auszuprobieren, simuliert man es am digitalen Zwilling. KI hilft, aus den Daten realistische Vorhersagen zu treffen und Optimierungen zu finden.
+
+---
+
+## 24.5 Wo Copilot in der Produktion passt – und wo nicht
+
+Wichtig zur Einordnung: **Copilot ist kein Maschinensteuerungs-System.** Die eigentliche Produktions-KI (Bilderkennung, Steuerung, Predictive Maintenance) sind Spezialsysteme. Copilot hilft am **Rand** – bei Wissen, Kommunikation und Auswertung:
+
+| Aufgabe | Beispiel-Prompt |
 |---|---|
-| Produktionsplanung | Bedarf und Kapazitäten prognostizieren |
-| Prozesssteuerung | Parameter automatisch optimieren |
-| Qualitätssicherung | Fehler per Bilderkennung erkennen (Kapitel 25) |
-| Instandhaltung | Ausfälle vorhersagen (Kapitel 26) |
-| Logistik | Bestände und Wege optimieren |
+| Schichtberichte | „Fasse diese Schichtprotokolle zu den wichtigsten Vorfällen zusammen." |
+| Störungsanalyse | „Erkläre mögliche Ursachen für Fehlercode X und Prüfschritte." |
+| Doku & Anleitungen | „Erstelle eine verständliche Kurzanleitung aus diesem Handbuchauszug." |
+| Auswertung | „Welche Auffälligkeiten zeigt diese Ausschuss-Statistik (Excel)?" |
 
-!!! info "Datenbasis entscheidet"
-    Produktions-KI lebt von **Sensor- und Maschinendaten**. Ohne verlässliche Datenerfassung (siehe Big Data, Kapitel 11) bleibt der Nutzen begrenzt.
-
----
-
-## 24.3 Voraussetzungen und Grenzen
-
-- **Vernetzung:** Maschinen müssen Daten liefern (nicht überall gegeben)
-- **Datenqualität:** verlässliche, kontinuierliche Messwerte
-- **Integration:** KI-Ergebnisse müssen in Steuerung/Abläufe zurückfließen
-- **Sicherheit:** Produktionssysteme brauchen besonderen Schutz
-
-**Copilot-Prompt zum Ausprobieren:**
+**Beispiel-Prompt zum Ausprobieren:**
 
 ```text
-Erkläre am Beispiel einer Smart Factory, welche Daten für KI in der Produktion
-nötig sind und nenne 4 konkrete KI-Anwendungen mit ihrem jeweiligen Nutzen.
+Hier sind die Schichtprotokolle der letzten Woche: [Text]. Fasse die häufigsten
+Störungen zusammen, ordne sie nach Häufigkeit und schlage vor, welche zuerst
+untersucht werden sollten.
 ```
 
-!!! warning "Copilot ist nicht die Maschinensteuerung"
-    Werkzeuge wie Copilot helfen bei **Planung, Auswertung und Dokumentation**. Die **Echtzeit-Steuerung** von Anlagen übernehmen spezialisierte Industrie-KI-Systeme.
+!!! warning "Klare Grenze"
+    Sicherheitskritische Steuerungsentscheidungen trifft **kein** Sprachmodell. Copilot unterstützt bei **Information und Kommunikation**, nicht bei der Echtzeit-Maschinensteuerung. Diese Trennung ist für die Anlagensicherheit essenziell.
+
+---
+
+## Zusammenfassung
+
+- In der Produktion ist KI das „Gehirn" von **Industrie 4.0** – oft in **Echtzeit** direkt an der Maschine.
+- Grundlage sind **Sensoren/IoT-Daten**; Anwendungen reichen von **Qualitätskontrolle** bis **Planung**.
+- Der **digitale Zwilling** erlaubt gefahrloses Simulieren und Optimieren.
+- **Copilot** unterstützt am Rand (Berichte, Doku, Auswertung) – **nicht** die sicherheitskritische Steuerung.
 
 ---
 

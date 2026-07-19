@@ -5,62 +5,92 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Wie KI zu **Nachhaltigkeit** und **Ressourceneffizienz** beiträgt
-- Konkrete Einsatzfelder: Energie, Material, Logistik, Kreislaufwirtschaft
-- Den **Zielkonflikt**: KI spart Ressourcen, verbraucht aber selbst welche
-- Wie Copilot bei Nachhaltigkeitsaufgaben unterstützt
+- Wie KI zu **Nachhaltigkeit** und **Ressourceneffizienz** beitragen kann
+- Konkrete Anwendungen: **Energie, Material, Logistik, Kreislaufwirtschaft**
+- Das **Spannungsfeld**: KI spart Ressourcen – verbraucht aber selbst welche
+- Was **ESG-Berichterstattung** ist und wie KI dabei hilft
+- Wie **Copilot** bei Analyse und Nachhaltigkeitsdokumentation unterstützt
 </div>
 
 ---
 
-## 29.1 KI als Nachhaltigkeitshebel
+## 29.1 KI als Werkzeug für Nachhaltigkeit
 
-KI kann helfen, **Ressourcen zu sparen** – durch bessere Vorhersagen und Optimierung:
-
-| Feld | KI-Beitrag |
-|---|---|
-| Energie | Verbrauch vorhersagen, Lastspitzen glätten |
-| Material | Ausschuss senken (Qualitäts-KI), Design optimieren |
-| Logistik | Routen und Auslastung optimieren |
-| Gebäude | Heizung/Kühlung bedarfsgerecht steuern |
-| Kreislaufwirtschaft | Sortierung/Recycling verbessern |
-
----
-
-## 29.2 Beispiele
-
-- **Energiemanagement:** Prognose von Verbrauch und Erzeugung (z. B. Solar) → weniger Verschwendung
-- **Predictive Maintenance:** längere Lebensdauer von Anlagen → weniger Neuproduktion
-- **Routenoptimierung:** weniger Kilometer → weniger Emissionen
+Nachhaltigkeit heißt, mit **Ressourcen** (Energie, Material, Zeit) sparsam umzugehen. KI ist dafür gut geeignet, weil sie in großen Datenmengen **Einsparpotenziale** findet, die Menschen übersehen, und Prozesse **feiner optimiert**.
 
 ```mermaid
 flowchart LR
-    A([Daten]) --> B([KI-Prognose/Optimierung])
-    B --> C([weniger Energie/Material/Wege])
-    C --> D([geringere Kosten & Emissionen])
+    A([Daten: Energie, Material, Prozesse]) --> B([KI findet Muster & Optima])
+    B --> C([Empfehlung/Steuerung])
+    C --> D([weniger Verbrauch / weniger Abfall])
 ```
 
 ---
 
-## 29.3 Der Zielkonflikt: KI kostet selbst Ressourcen
+## 29.2 Konkrete Anwendungen
 
-!!! warning "Green AI vs. AI's Footprint"
-    Das Training und der Betrieb großer KI-Modelle verbrauchen **Energie und Wasser** (siehe Kapitel 36). Nachhaltiger KI-Einsatz bedeutet: den **Netto-Nutzen** betrachten – spart die Anwendung mehr, als sie kostet?
+| Bereich | KI-Anwendung | Effekt |
+|---|---|---|
+| **Energie** | Verbrauch vorhersagen, Anlagen effizient regeln | weniger Strom/Wärme |
+| **Material** | Ausschuss senken, Zuschnitt optimieren | weniger Abfall |
+| **Logistik** | Routen und Auslastung optimieren | weniger Leerfahrten/CO₂ |
+| **Landwirtschaft** | Wasser/Dünger präzise dosieren | Ressourcen schonen |
+| **Kreislaufwirtschaft** | Materialien sortieren/wiederverwerten | Recyclingquote steigt |
+| **Gebäude** | Heizung/Kühlung bedarfsgerecht (Kap. 27) | Energie sparen |
+
+!!! example "Präzision spart Ressourcen"
+    Statt ein ganzes Feld gleichmäßig zu düngen, ermittelt KI aus Sensordaten, **welche Teilfläche wie viel** braucht (Precision Farming). Ergebnis: gleicher Ertrag mit weniger Dünger und Wasser. Dasselbe Prinzip – „genau so viel wie nötig" – wirkt auch bei Energie und Material.
 
 ---
 
-## 29.4 Nachhaltigkeit mit Copilot angehen
+## 29.3 Das Spannungsfeld: KI verbraucht selbst Ressourcen
 
-**Copilot-Prompt zum Ausprobieren:**
+!!! warning "Ehrliche Bilanz nötig"
+    KI ist **kein reiner Umweltretter**. Das **Training** großer Modelle und ihr laufender Betrieb verbrauchen viel **Strom und Wasser** (Kühlung der Rechenzentren) – mehr dazu in Kapitel 36. Eine seriöse Bewertung fragt: Spart der KI-Einsatz **mehr** Ressourcen, als er selbst verbraucht? Nur dann ist er auch ökologisch sinnvoll.
+
+Für **Nutzer:innen von Copilot** ist der eigene Verbrauch pro Anfrage klein, summiert sich aber über Millionen Anfragen. Bewusster Einsatz (keine sinnlosen Massen-Prompts) ist Teil verantwortungsvoller Nutzung.
+
+---
+
+## 29.4 KI und ESG-Berichterstattung
+
+Unternehmen müssen zunehmend über **Nachhaltigkeit berichten** – Stichwort **ESG** (Environmental, Social, Governance) und EU-Vorgaben (z. B. CSRD). Das bedeutet viel **Datensammlung und Textarbeit** – ein gutes Feld für Copilot.
+
+| Aufgabe | Wie KI hilft |
+|---|---|
+| Daten zusammentragen | verstreute Angaben bündeln |
+| Kennzahlen erklären | komplexe Werte verständlich aufbereiten |
+| Berichte entwerfen | Textbausteine, Struktur, Zusammenfassungen |
+| Lücken finden | „Welche Angaben fehlen für Standard X?" |
+
+---
+
+## 29.5 Nachhaltigkeitsarbeit mit Copilot
+
+**Beispiel-Prompts:**
 
 ```text
-Wir wollen in unserem Betrieb Ressourcen sparen. Schlage 6 Ansätze vor, bei denen
-KI helfen kann (Energie, Material, Logistik). Bewerte je Ansatz Nutzen und Aufwand
-und weise auf den Eigen-Ressourcenverbrauch der KI hin.
+Analysiere diese monatlichen Stromverbrauchsdaten (Excel): Nenne Trends,
+Auffälligkeiten und drei konkrete Ansatzpunkte, um Energie einzusparen.
 ```
 
-!!! info "Nachhaltigkeit braucht Daten"
-    Um Einsparungen zu belegen, braucht es **Messwerte vorher/nachher**. Ohne Daten bleibt der Nutzen Behauptung.
+```text
+Erstelle das Gliederungsgerüst für einen Nachhaltigkeitsbericht eines
+mittelständischen Produktionsbetriebs entlang der ESG-Dimensionen. Markiere
+je Abschnitt, welche Daten ich dafür beschaffen muss.
+```
+
+!!! tip "Von der Idee zur Maßnahme"
+    Copilot ist gut darin, aus Daten **Einsparideen** und aus Vorgaben **Berichtsstrukturen** zu erzeugen. Die **Umsetzung und Verifikation** (stimmen die Zahlen? ist die Maßnahme realistisch?) bleibt beim Team. Achte bei Berichtsangaben besonders auf Faktenprüfung – Nachhaltigkeitszahlen sind zunehmend prüfungsrelevant.
+
+---
+
+## Zusammenfassung
+
+- KI findet **Einsparpotenziale** bei Energie, Material, Logistik, Landwirtschaft und im Kreislauf.
+- Das Prinzip ist **Präzision**: „genau so viel wie nötig" statt pauschal.
+- **Spannungsfeld:** KI verbraucht selbst Ressourcen (Kap. 36) – der Nettoeffekt muss positiv sein.
+- Bei **ESG-Berichten** hilft Copilot beim Bündeln, Erklären und Entwerfen – Zahlen bleiben prüfpflichtig.
 
 ---
 

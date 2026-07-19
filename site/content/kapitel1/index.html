@@ -512,30 +512,87 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1.1 Was ist Künstliche Intelligenz?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-entscheidende-unterschied-regeln-vs-lernen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Der entscheidende Unterschied: Regeln vs. Lernen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warum-es-keine-eindeutige-definition-gibt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Warum es keine eindeutige Definition gibt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-die-teilgebiete-der-ki" class="md-nav__link">
+  <a href="#12-das-paradigma-daten-statt-regeln-durchgerechnet" class="md-nav__link">
     <span class="md-ellipsis">
-      1.2 Die Teilgebiete der KI
+      1.2 Das Paradigma „Daten statt Regeln" – durchgerechnet
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#13-schwache-vs-starke-ki" class="md-nav__link">
+  <a href="#13-die-teilgebiete-der-ki" class="md-nav__link">
     <span class="md-ellipsis">
-      1.3 Schwache vs. starke KI
+      1.3 Die Teilgebiete der KI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#14-wo-dir-ki-im-arbeitsalltag-begegnet" class="md-nav__link">
+  <a href="#14-schwache-vs-starke-ki" class="md-nav__link">
     <span class="md-ellipsis">
-      1.4 Wo dir KI im Arbeitsalltag begegnet
+      1.4 Schwache vs. starke KI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-wo-dir-ki-im-arbeitsalltag-begegnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Wo dir KI im Arbeitsalltag begegnet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5 Wo dir KI im Arbeitsalltag begegnet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erste-praktische-erfahrung-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erste praktische Erfahrung mit Copilot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1014,8 +1071,10 @@
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Was mit <strong>Künstlicher Intelligenz (KI)</strong> gemeint ist und wie sie sich von klassischer Software unterscheidet</li>
-<li>Welche <strong>Teilgebiete</strong> die KI hat (Machine Learning, Deep Learning, NLP, Computer Vision …)</li>
-<li>Der Unterschied zwischen <strong>schwacher</strong> und <strong>starker</strong> KI – und wo wir heute stehen</li>
+<li>Warum es <strong>keine</strong> einheitliche Definition gibt und was der „KI-Effekt" damit zu tun hat</li>
+<li>Welche <strong>Teilgebiete</strong> die KI hat (Machine Learning, Deep Learning, NLP, Computer Vision …) und wie sie zusammenhängen</li>
+<li>Der Unterschied zwischen <strong>schwacher</strong> und <strong>starker</strong> KI – und wo wir heute realistisch stehen</li>
+<li>Wie das <strong>Paradigma „Daten statt Regeln"</strong> funktioniert – an einem durchgerechneten Beispiel</li>
 <li>Wo dir KI im Arbeitsalltag begegnet und was <strong>Microsoft Copilot</strong> in diese Landschaft einordnet</li>
 </ul>
 </div>
@@ -1029,7 +1088,8 @@
 <hr />
 <h2 id="11-was-ist-kunstliche-intelligenz">1.1 Was ist Künstliche Intelligenz?<a class="headerlink" href="#11-was-ist-kunstliche-intelligenz" title="Permanent link">&para;</a></h2>
 <p><strong>Künstliche Intelligenz</strong> ist ein Teilgebiet der Informatik, das sich mit Systemen beschäftigt, die Aufgaben lösen, für die man normalerweise <strong>menschliche Intelligenz</strong> voraussetzt: Sprache verstehen, Muster erkennen, Entscheidungen treffen, aus Erfahrung lernen.</p>
-<p>Der entscheidende Unterschied zu klassischer Software:</p>
+<p>Wichtig ist die Betonung auf <strong>„für die man menschliche Intelligenz voraussetzt"</strong>. KI muss nicht denken wie ein Mensch – sie muss nur ein Ergebnis liefern, das wir sonst nur von intelligenten Menschen erwarten würden. Ein Taschenrechner rechnet schneller als jeder Mensch, gilt aber nicht als KI, weil das Vorgehen fest vorgegeben ist. Ein System, das aus tausenden E-Mails <strong>selbst lernt</strong>, welche Spam sind, gilt als KI.</p>
+<h3 id="der-entscheidende-unterschied-regeln-vs-lernen">Der entscheidende Unterschied: Regeln vs. Lernen<a class="headerlink" href="#der-entscheidende-unterschied-regeln-vs-lernen" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1051,6 +1111,10 @@
 <td>Entwickler stellt <strong>Daten</strong> und ein Lernverfahren bereit</td>
 </tr>
 <tr>
+<td>Fehler = Programmierfehler (Bug)</td>
+<td>Fehler = ungünstige Daten oder Grenzfall</td>
+</tr>
+<tr>
 <td>Beispiel: Taschenrechner, Buchhaltungssoftware</td>
 <td>Beispiel: Spam-Filter, Sprachassistent, Copilot</td>
 </tr>
@@ -1060,13 +1124,43 @@
 <p class="admonition-title">Merksatz</p>
 <p>Klassische Software wird <strong>programmiert</strong>, KI wird <strong>trainiert</strong>. Statt „Sag dem Computer genau, was er tun soll" heißt es bei KI „Zeig dem Computer viele Beispiele, damit er das Muster selbst findet".</p>
 </div>
+<h3 id="warum-es-keine-eindeutige-definition-gibt">Warum es keine eindeutige Definition gibt<a class="headerlink" href="#warum-es-keine-eindeutige-definition-gibt" title="Permanent link">&para;</a></h3>
+<p>„Künstliche Intelligenz" ist ein <strong>bewegliches Ziel</strong>. Sobald ein Problem gelöst ist, wirkt es plötzlich nicht mehr wie „echte" Intelligenz – dieses Phänomen nennt man den <strong>KI-Effekt</strong>: <em>„KI ist alles, was noch nicht funktioniert."</em></p>
+<div class="admonition example">
+<p class="admonition-title">Der KI-Effekt in der Praxis</p>
+<ul>
+<li>In den 1990ern galt „ein Computer schlägt den Schachweltmeister" als Beweis für Intelligenz. Heute sagt man: „Das ist doch nur Rechenleistung."</li>
+<li>Spracherkennung, Gesichtserkennung, Übersetzung – alles galt einmal als „KI-Meilenstein" und wird heute als selbstverständliche Funktion wahrgenommen.</li>
+</ul>
+<p>Für die Praxis ist die genaue Definition zweitrangig. Entscheidend ist: <strong>Lernt das System aus Daten, oder folgt es festen Regeln?</strong></p>
+</div>
 <hr />
-<h2 id="12-die-teilgebiete-der-ki">1.2 Die Teilgebiete der KI<a class="headerlink" href="#12-die-teilgebiete-der-ki" title="Permanent link">&para;</a></h2>
+<h2 id="12-das-paradigma-daten-statt-regeln-durchgerechnet">1.2 Das Paradigma „Daten statt Regeln" – durchgerechnet<a class="headerlink" href="#12-das-paradigma-daten-statt-regeln-durchgerechnet" title="Permanent link">&para;</a></h2>
+<p>Um den Unterschied wirklich zu verstehen, betrachten wir dieselbe Aufgabe zweimal: <strong>Erkenne, ob eine E-Mail Spam ist.</strong></p>
+<p><strong>Ansatz 1 – klassische Regeln (von Hand programmiert):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>WENN Betreff enthält &quot;Gewinn&quot; ODER &quot;gratis&quot; ODER &quot;!!!&quot;
+   DANN markiere als Spam
+</code></pre></div></td></tr></table></div>
+<p>Das Problem: Spammer schreiben „G-r-a-t-i-s" oder „Gew1nn". Für jede neue Masche muss ein Mensch eine neue Regel ergänzen. Das Regelwerk wird unübersichtlich und ist immer einen Schritt hinterher.</p>
+<p><strong>Ansatz 2 – KI (aus Daten gelernt):</strong></p>
+<p>Man gibt dem System <strong>10.000 E-Mails</strong>, jeweils markiert mit „Spam" oder „kein Spam". Das Verfahren zählt, welche Merkmale bei Spam häufiger vorkommen, und leitet daraus <strong>Wahrscheinlichkeiten</strong> ab. Trifft eine neue E-Mail ein, berechnet es: „Mit 92 % Wahrscheinlichkeit Spam."</p>
+<pre class="mermaid"><code>flowchart LR
+    A([10.000 markierte E-Mails]) --&gt; B([Lernverfahren zählt Muster])
+    B --&gt; C([Modell])
+    D([Neue E-Mail]) --&gt; C
+    C --&gt; E([92% Spam-Wahrscheinlichkeit])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Warum das mächtiger ist</p>
+<p>Taucht eine neue Spam-Masche auf, muss niemand eine Regel schreiben – man ergänzt einfach neue <strong>Beispiele</strong> und trainiert nach. Das System passt sich an, statt starr zu bleiben. Genau dieser Wechsel von „Regeln von Hand" zu „Muster aus Daten" ist der Kern moderner KI.</p>
+</div>
+<hr />
+<h2 id="13-die-teilgebiete-der-ki">1.3 Die Teilgebiete der KI<a class="headerlink" href="#13-die-teilgebiete-der-ki" title="Permanent link">&para;</a></h2>
 <p>KI ist ein Oberbegriff. Darunter liegen mehrere ineinander verschachtelte Teilgebiete:</p>
 <pre class="mermaid"><code>flowchart TD
     A([Künstliche Intelligenz]) --&gt; B([Machine Learning])
-    B --&gt; C([Deep Learning])
     A --&gt; D([Wissensbasierte Systeme / Expertensysteme])
+    B --&gt; C([Deep Learning])
     C --&gt; E([Natural Language Processing])
     C --&gt; F([Computer Vision])
     C --&gt; G([Generative KI / LLMs])</code></pre>
@@ -1076,6 +1170,7 @@
 <th>Teilgebiet</th>
 <th>Worum es geht</th>
 <th>Beispiel</th>
+<th>Bezug zu Copilot</th>
 </tr>
 </thead>
 <tbody>
@@ -1083,87 +1178,153 @@
 <td>Machine Learning (ML)</td>
 <td>Systeme lernen Muster aus Daten</td>
 <td>Kreditwürdigkeit einschätzen</td>
+<td>Grundlage</td>
 </tr>
 <tr>
 <td>Deep Learning</td>
 <td>ML mit tiefen neuronalen Netzen</td>
 <td>Bilderkennung, Sprachmodelle</td>
+<td>direkt</td>
 </tr>
 <tr>
 <td>Natural Language Processing (NLP)</td>
 <td>Verarbeitung natürlicher Sprache</td>
 <td>Übersetzung, Chatbots</td>
+<td>Kernstück</td>
 </tr>
 <tr>
 <td>Computer Vision</td>
 <td>Verstehen von Bildern und Videos</td>
 <td>Qualitätsprüfung, Gesichtserkennung</td>
+<td>teilweise (Bild-Upload)</td>
 </tr>
 <tr>
 <td>Generative KI</td>
 <td>Erzeugen neuer Inhalte</td>
 <td>Text, Bild, Code (Copilot, ChatGPT)</td>
+<td>genau hier</td>
 </tr>
 </tbody>
 </table>
+<p>Wichtig ist die <strong>Verschachtelung</strong>: Deep Learning ist ein Teil von Machine Learning, Machine Learning ist ein Teil von KI. NLP und Computer Vision sind <strong>Anwendungsfelder</strong>, die heute meist mit Deep Learning umgesetzt werden. Ganz früher (bis in die 1980er) dominierten dagegen <strong>Expertensysteme</strong>, die auf handgeschriebenen Regeln beruhten – ohne Lernen.</p>
 <div class="admonition tip">
 <p class="admonition-title">Einordnung von Copilot</p>
-<p><strong>Microsoft Copilot</strong> basiert auf <strong>großen Sprachmodellen (LLMs)</strong> und gehört damit zur <strong>generativen KI</strong> – also ganz unten rechts in der Grafik. Es erzeugt Texte, Zusammenfassungen, Code und Bilder auf Basis deiner Eingaben (Prompts).</p>
+<p><strong>Microsoft Copilot</strong> basiert auf <strong>großen Sprachmodellen (LLMs)</strong> und gehört damit zur <strong>generativen KI</strong> – also ganz unten rechts in der Grafik. Es erzeugt Texte, Zusammenfassungen, Code und Bilder auf Basis deiner Eingaben (Prompts). Unter der Haube stecken Deep Learning und NLP; das gesamte Fundament vertiefst du in <strong>Block 2</strong>.</p>
 </div>
 <hr />
-<h2 id="13-schwache-vs-starke-ki">1.3 Schwache vs. starke KI<a class="headerlink" href="#13-schwache-vs-starke-ki" title="Permanent link">&para;</a></h2>
+<h2 id="14-schwache-vs-starke-ki">1.4 Schwache vs. starke KI<a class="headerlink" href="#14-schwache-vs-starke-ki" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Merkmal</th>
 <th>Schwache KI (Narrow AI)</th>
-<th>Starke KI (General AI)</th>
+<th>Starke KI (General AI / AGI)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fähigkeit</td>
-<td>Löst <strong>eine</strong> konkrete Aufgabe</td>
+<td>Löst <strong>eine</strong> (Klasse von) Aufgaben</td>
 <td>Beliebige Aufgaben wie ein Mensch</td>
 </tr>
 <tr>
 <td>Beispiel</td>
-<td>Übersetzer, Copilot, Navi</td>
+<td>Übersetzer, Copilot, Navi, Schach-KI</td>
 <td>(existiert <strong>nicht</strong>, Forschung/Vision)</td>
+</tr>
+<tr>
+<td>Übertragbarkeit</td>
+<td>kann Gelerntes kaum auf Fremdes übertragen</td>
+<td>flexibel wie menschliche Intelligenz</td>
 </tr>
 <tr>
 <td>Bewusstsein</td>
 <td>Nein</td>
-<td>Hypothetisch</td>
+<td>hypothetisch</td>
 </tr>
 <tr>
 <td>Stand heute</td>
 <td><strong>Alle</strong> heutigen Systeme</td>
-<td>Nicht erreicht</td>
+<td>nicht erreicht</td>
 </tr>
 </tbody>
 </table>
+<p>Zwischen beiden gibt es keine „graduelle" Skala, die man einfach hochzählt. Auch ein sehr fähiges System wie Copilot ist <strong>schwache KI</strong> – es ist erstaunlich breit einsetzbar (Text, Code, Zusammenfassung), aber es „versteht" nicht im menschlichen Sinn und kann sich kein eigenes Ziel setzen.</p>
 <div class="admonition warning">
 <p class="admonition-title">Häufiges Missverständnis</p>
-<p>Auch beeindruckende Systeme wie Copilot sind <strong>schwache KI</strong>: Sie sind extrem gut in Sprachaufgaben, „verstehen" aber nicht im menschlichen Sinn und haben kein Bewusstsein. Sie berechnen das <strong>wahrscheinlich passende nächste Wort</strong>.</p>
+<p>Dass Copilot flüssig und „klug" antwortet, verleitet zur Annahme, es „denke". Tatsächlich berechnet es das <strong>wahrscheinlich passende nächste Wort</strong> auf Basis riesiger Textmengen (Details in Kapitel 15). Es hat kein Bewusstsein, keine Absichten und kein echtes Weltverständnis. Diese Einordnung ist entscheidend, um Ergebnisse <strong>richtig einzuschätzen und zu prüfen</strong>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Und die 'Superintelligenz'?</p>
+<p>In den Medien ist oft von „Superintelligenz" die Rede – einer KI, die den Menschen in <strong>allen</strong> Bereichen übertrifft. Das ist eine <strong>hypothetische</strong> Stufe jenseits der starken KI und gehört in die Zukunfts-/Risikodebatte, nicht in die heutige betriebliche Praxis.</p>
 </div>
 <hr />
-<h2 id="14-wo-dir-ki-im-arbeitsalltag-begegnet">1.4 Wo dir KI im Arbeitsalltag begegnet<a class="headerlink" href="#14-wo-dir-ki-im-arbeitsalltag-begegnet" title="Permanent link">&para;</a></h2>
+<h2 id="15-wo-dir-ki-im-arbeitsalltag-begegnet">1.5 Wo dir KI im Arbeitsalltag begegnet<a class="headerlink" href="#15-wo-dir-ki-im-arbeitsalltag-begegnet" title="Permanent link">&para;</a></h2>
 <p>KI steckt heute in vielen Werkzeugen, oft unsichtbar:</p>
-<ul>
-<li><strong>Suche &amp; Empfehlungen:</strong> Suchmaschinen, Produktvorschläge</li>
-<li><strong>Kommunikation:</strong> Spam-Filter, automatische Antwortvorschläge, Übersetzung</li>
-<li><strong>Office &amp; Produktivität:</strong> Zusammenfassungen, Textentwürfe, Formeln – hier setzt <strong>Microsoft Copilot</strong> in Word, Excel, Outlook und Teams an</li>
-<li><strong>Analyse:</strong> Prognosen, Auffälligkeiten in Daten</li>
-</ul>
-<p><strong>Copilot-Prompt zum Ausprobieren</strong> – öffne Copilot und gib ein:</p>
+<table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>Sichtbare Funktion</th>
+<th>Dahinterliegendes KI-Feld</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suche &amp; Empfehlungen</td>
+<td>Produktvorschläge, Auto-Vervollständigung</td>
+<td>ML, NLP</td>
+</tr>
+<tr>
+<td>Kommunikation</td>
+<td>Spam-Filter, Antwortvorschläge, Übersetzung</td>
+<td>NLP</td>
+</tr>
+<tr>
+<td>Office &amp; Produktivität</td>
+<td>Zusammenfassungen, Textentwürfe, Formeln</td>
+<td>generative KI (<strong>Copilot</strong>)</td>
+</tr>
+<tr>
+<td>Analyse</td>
+<td>Prognosen, Anomalie-Erkennung</td>
+<td>ML</td>
+</tr>
+<tr>
+<td>Medien</td>
+<td>Untertitel, Bildbearbeitung, Sprachausgabe</td>
+<td>Deep Learning</td>
+</tr>
+</tbody>
+</table>
+<h3 id="erste-praktische-erfahrung-mit-copilot">Erste praktische Erfahrung mit Copilot<a class="headerlink" href="#erste-praktische-erfahrung-mit-copilot" title="Permanent link">&para;</a></h3>
+<p>Öffne Copilot und gib ein:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre einer Kollegin ohne IT-Hintergrund in 5 Sätzen, was Künstliche
 Intelligenz ist und wie sie sich von normaler Software unterscheidet.
 Nutze ein Alltagsbeispiel.
 </code></pre></div></td></tr></table></div>
-<p>Beobachte, wie Copilot den Auftrag interpretiert. Genau dieses gezielte Formulieren von Aufträgen ist <strong>Prompt Engineering</strong> – der rote Faden dieses Kurses.</p>
+<p>Beobachte die Antwort – und schärfe dann nach:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Kürze auf 3 Sätze und ersetze das Beispiel durch eines aus dem Kundenservice.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">Was du dabei lernst</p>
+<p>Zwei Dinge werden sofort sichtbar: (1) Copilot liefert <strong>sprachlich sauberen</strong> Text – aber ob Beispiel und Ton passen, entscheidest <strong>du</strong>. (2) Der <strong>zweite, präzisere Auftrag</strong> verbessert das Ergebnis gezielt. Genau dieses schrittweise Steuern von Aufträgen ist <strong>Prompt Engineering</strong> – der rote Faden dieses Kurses (systematisch in Kapitel 14).</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Verantwortung von Anfang an</p>
+<p>KI liefert <strong>Entwürfe und Vorschläge</strong>, keine geprüften Wahrheiten. Fakten, Ton und Freigabe bleiben immer beim Menschen. Diese Haltung begleitet dich durch den ganzen Kurs (vertieft in Block 4).</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI löst Aufgaben, die man sonst menschlicher Intelligenz zuschreibt – der Kern ist <strong>Lernen aus Daten statt fester Regeln</strong>.</li>
+<li>Eine feste Definition gibt es nicht (<strong>KI-Effekt</strong>); die praktische Leitfrage lautet: lernt das System aus Daten?</li>
+<li>Teilgebiete sind verschachtelt: <strong>Deep Learning ⊂ Machine Learning ⊂ KI</strong>; Copilot ist <strong>generative KI</strong>.</li>
+<li>Alle heutigen Systeme sind <strong>schwache KI</strong> – auch Copilot berechnet Wahrscheinlichkeiten, es „denkt" nicht.</li>
+<li>KI ist im Arbeitsalltag allgegenwärtig; der bewusste, prüfende Umgang ist entscheidend.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

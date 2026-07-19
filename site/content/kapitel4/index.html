@@ -575,9 +575,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-ein-vorgehensmodell-fur-ki-projekte" class="md-nav__link">
+  <a href="#42-ein-vorgehensmodell-fur-ki-projekte-crisp-dm" class="md-nav__link">
     <span class="md-ellipsis">
-      4.2 Ein Vorgehensmodell für KI-Projekte
+      4.2 Ein Vorgehensmodell für KI-Projekte: CRISP-DM
     </span>
   </a>
   
@@ -593,9 +593,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#44-copilot-beim-konzipieren-nutzen" class="md-nav__link">
+  <a href="#44-make-or-buy-fertig-nutzen-oder-selbst-bauen" class="md-nav__link">
     <span class="md-ellipsis">
-      4.4 Copilot beim Konzipieren nutzen
+      4.4 Make or Buy: fertig nutzen oder selbst bauen?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-mvp-pilot-und-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 MVP, Pilot und KPIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1005,23 +1023,53 @@
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Wie aus einer <strong>Idee</strong> ein tragfähiger <strong>KI-Use-Case</strong> wird</li>
-<li>Ein bewährtes <strong>Vorgehensmodell</strong> für KI-Projekte</li>
-<li>Wie du Ideen nach <strong>Machbarkeit</strong> und <strong>Wert</strong> priorisierst</li>
-<li>Wie <strong>Copilot</strong> dich beim Konzipieren unterstützt</li>
+<li>Ein bewährtes <strong>Vorgehensmodell</strong> (CRISP-DM) im Detail</li>
+<li>Wie du Ideen nach <strong>Nutzen</strong> und <strong>Machbarkeit</strong> priorisierst</li>
+<li>Die <strong>Make-or-Buy</strong>-Frage: fertige Werkzeuge (Copilot) vs. Eigenentwicklung</li>
+<li>Warum ein <strong>MVP / Pilot</strong> und klare <strong>KPIs</strong> über Erfolg entscheiden</li>
 </ul>
 </div>
 <hr />
 <h2 id="41-von-der-idee-zum-use-case">4.1 Von der Idee zum Use Case<a class="headerlink" href="#41-von-der-idee-zum-use-case" title="Permanent link">&para;</a></h2>
-<p>Nicht jede Idee ist ein guter KI-Use-Case. Ein tragfähiger Use Case beantwortet klar:</p>
-<ul>
-<li><strong>Problem:</strong> Welches konkrete Problem lösen wir?</li>
-<li><strong>Daten:</strong> Welche Daten stehen zur Verfügung – in welcher Qualität?</li>
-<li><strong>Nutzen:</strong> Was ist der messbare Vorteil (Zeit, Geld, Qualität)?</li>
-<li><strong>Machbarkeit:</strong> Ist es technisch und organisatorisch umsetzbar?</li>
-</ul>
+<p>Nicht jede Idee ist ein guter KI-Use-Case. Ein tragfähiger Use Case beantwortet vier Kernfragen klar:</p>
+<table>
+<thead>
+<tr>
+<th>Frage</th>
+<th>Worum es geht</th>
+<th>Warnsignal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Problem</strong></td>
+<td>Welches konkrete Problem lösen wir?</td>
+<td>„KI wäre cool" ohne Problem</td>
+</tr>
+<tr>
+<td><strong>Daten</strong></td>
+<td>Welche Daten gibt es – in welcher Qualität?</td>
+<td>„Daten haben wir schon irgendwo"</td>
+</tr>
+<tr>
+<td><strong>Nutzen</strong></td>
+<td>Was ist der messbare Vorteil (Zeit, Geld, Qualität)?</td>
+<td>Nutzen nicht bezifferbar</td>
+</tr>
+<tr>
+<td><strong>Machbarkeit</strong></td>
+<td>Technisch und organisatorisch umsetzbar?</td>
+<td>niemand fühlt sich zuständig</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Der Problem-zuerst-Ansatz</p>
+<p>Erfolgreiche Vorhaben starten beim <strong>Problem</strong>, nicht bei der Technik. „Wir wollen KI einsetzen" ist kein Ziel. „Wir wollen die Bearbeitungszeit für Angebote um 30 % senken" ist eines – KI ist dann nur eines von mehreren möglichen Mitteln.</p>
+</div>
 <hr />
-<h2 id="42-ein-vorgehensmodell-fur-ki-projekte">4.2 Ein Vorgehensmodell für KI-Projekte<a class="headerlink" href="#42-ein-vorgehensmodell-fur-ki-projekte" title="Permanent link">&para;</a></h2>
-<p>Viele KI-Projekte folgen einem iterativen Ablauf, angelehnt an das bekannte Modell <strong>CRISP-DM</strong>:</p>
+<h2 id="42-ein-vorgehensmodell-fur-ki-projekte-crisp-dm">4.2 Ein Vorgehensmodell für KI-Projekte: CRISP-DM<a class="headerlink" href="#42-ein-vorgehensmodell-fur-ki-projekte-crisp-dm" title="Permanent link">&para;</a></h2>
+<p>Viele Datenprojekte folgen dem etablierten Modell <strong>CRISP-DM</strong> (<em>Cross-Industry Standard Process for Data Mining</em>):</p>
 <pre class="mermaid"><code>flowchart LR
     A([Geschäftsverständnis]) --&gt; B([Datenverständnis])
     B --&gt; C([Datenaufbereitung])
@@ -1034,42 +1082,49 @@
 <tr>
 <th>Phase</th>
 <th>Leitfrage</th>
+<th>Typische Tätigkeit</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Geschäftsverständnis</td>
 <td>Welches Ziel verfolgen wir?</td>
+<td>Nutzen und KPI definieren</td>
 </tr>
 <tr>
 <td>Datenverständnis</td>
 <td>Welche Daten haben wir?</td>
+<td>Datenquellen sichten, Qualität prüfen</td>
 </tr>
 <tr>
 <td>Datenaufbereitung</td>
 <td>Sind die Daten sauber und nutzbar?</td>
+<td>bereinigen, transformieren (Kap. 10)</td>
 </tr>
 <tr>
 <td>Modellierung</td>
 <td>Welches Verfahren/Werkzeug passt?</td>
+<td>Modell/Tool wählen und einstellen</td>
 </tr>
 <tr>
 <td>Evaluation</td>
 <td>Erfüllt das Ergebnis die Ziele?</td>
+<td>an KPI messen, mit Fachbereich prüfen</td>
 </tr>
 <tr>
 <td>Einsatz</td>
 <td>Wie bringen wir es in den Betrieb?</td>
+<td>integrieren, überwachen (Kap. 11)</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
 <p class="admonition-title">Iterativ statt linear</p>
-<p>KI-Projekte laufen selten geradlinig. Oft muss man zu früheren Phasen zurückkehren – z. B. weil die Datenqualität nicht reicht.</p>
+<p>KI-Projekte laufen selten geradlinig. Häufig muss man zurück – z. B. weil in der Evaluation auffällt, dass die Datenqualität nicht reicht. Diese Schleifen sind <strong>normal</strong>, kein Zeichen von Scheitern.</p>
 </div>
 <hr />
 <h2 id="43-ideen-priorisieren-nutzen-vs-machbarkeit">4.3 Ideen priorisieren: Nutzen vs. Machbarkeit<a class="headerlink" href="#43-ideen-priorisieren-nutzen-vs-machbarkeit" title="Permanent link">&para;</a></h2>
-<p>Nicht alles gleichzeitig umsetzen. Eine einfache <strong>Nutzen-Machbarkeit-Matrix</strong> hilft:</p>
+<p>Nicht alles gleichzeitig umsetzen. Eine <strong>Nutzen-Machbarkeit-Matrix</strong> schafft Klarheit:</p>
 <table>
 <thead>
 <tr>
@@ -1082,29 +1137,92 @@
 <tr>
 <td><strong>Hoher Nutzen</strong></td>
 <td>✅ Quick Win – zuerst!</td>
-<td>Strategisches Projekt</td>
+<td>Strategisches Projekt (planen)</td>
 </tr>
 <tr>
 <td><strong>Geringer Nutzen</strong></td>
-<td>Nice-to-have</td>
+<td>Nice-to-have (nebenbei)</td>
 <td>❌ vermeiden</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Quick Wins</strong> sind oft text- und dokumentenlastige Aufgaben, die sich sofort mit <strong>Copilot</strong> angehen lassen – ohne eigene Modelle, ohne Data-Science-Team. Sie schaffen schnelle Erfolge und Akzeptanz (wichtig fürs Change Management, Kap. 37).</p>
 <hr />
-<h2 id="44-copilot-beim-konzipieren-nutzen">4.4 Copilot beim Konzipieren nutzen<a class="headerlink" href="#44-copilot-beim-konzipieren-nutzen" title="Permanent link">&para;</a></h2>
-<p>Copilot eignet sich hervorragend, um Konzepte zu <strong>strukturieren</strong> und <strong>Lücken</strong> zu finden.</p>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="44-make-or-buy-fertig-nutzen-oder-selbst-bauen">4.4 Make or Buy: fertig nutzen oder selbst bauen?<a class="headerlink" href="#44-make-or-buy-fertig-nutzen-oder-selbst-bauen" title="Permanent link">&para;</a></h2>
+<p>Eine der wichtigsten Weichenstellungen:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Fertige Werkzeuge (z. B. Copilot)</th>
+<th>Eigenentwicklung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zeit bis Nutzen</td>
+<td>sofort</td>
+<td>Monate</td>
+</tr>
+<tr>
+<td>Kosten</td>
+<td>Lizenz</td>
+<td>Entwicklung + Betrieb</td>
+</tr>
+<tr>
+<td>Anpassbarkeit</td>
+<td>begrenzt</td>
+<td>hoch</td>
+</tr>
+<tr>
+<td>Nötiges Know-how</td>
+<td>Bedienung/Prompting</td>
+<td>Data Science, Engineering</td>
+</tr>
+<tr>
+<td>Geeignet für</td>
+<td>Standardaufgaben, Text, Office</td>
+<td>Spezialfälle, Wettbewerbsvorteil</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Faustregel</p>
+<p><strong>Standardaufgaben</strong> (Texte, Zusammenfassungen, Analysen) mit <strong>fertigen Werkzeugen</strong> lösen. Nur wo ein echter <strong>Wettbewerbsvorteil</strong> oder eine sehr spezielle Anforderung besteht, lohnt Eigenentwicklung. Für die meisten Unternehmen ist der Copilot-Weg der schnellste Einstieg.</p>
+</div>
+<hr />
+<h2 id="45-mvp-pilot-und-kpis">4.5 MVP, Pilot und KPIs<a class="headerlink" href="#45-mvp-pilot-und-kpis" title="Permanent link">&para;</a></h2>
+<p>Statt „großer Wurf" gilt: klein und messbar starten.</p>
+<ul>
+<li><strong>MVP (Minimum Viable Product):</strong> die kleinste Version, die einen echten Nutzen zeigt.</li>
+<li><strong>Pilot:</strong> begrenzter Einsatz mit wenigen Nutzern, um zu lernen.</li>
+<li><strong>KPI (Kennzahl):</strong> vorab festlegen, woran Erfolg gemessen wird (z. B. „Bearbeitungszeit −30 %").</li>
+</ul>
+<pre class="mermaid"><code>flowchart LR
+    A([Idee]) --&gt; B([MVP / Pilot])
+    B --&gt; C{KPI erreicht?}
+    C --&gt;|ja| D([ausweiten])
+    C --&gt;|nein| E([anpassen oder stoppen])</code></pre>
+<p><strong>Copilot beim Konzipieren nutzen:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich möchte einen KI-Use-Case für [Prozess] konzipieren. Stelle mir strukturiert
-die 6 wichtigsten Fragen, die ich vorher klären muss, und erkläre kurz, warum
-jede Frage wichtig ist.
+die 6 wichtigsten Fragen, die ich vorher klären muss, definiere einen sinnvollen
+KPI und nenne ein Risiko, das ich leicht übersehe.
 </code></pre></div></td></tr></table></div>
 <div class="admonition tip">
-<p class="admonition-title">Copilot als Sparringspartner</p>
-<p>Lass dir Konzepte nicht abnehmen, sondern <strong>hinterfragen</strong>: „Welche Risiken übersehe ich?", „Welche Daten brauche ich mindestens?". So nutzt du KI als Denkwerkzeug.</p>
+<p class="admonition-title">Copilot als kritischer Sparringspartner</p>
+<p>Lass dir Konzepte nicht abnehmen, sondern <strong>hinterfragen</strong>: „Welche Annahmen mache ich?", „Welche Daten brauche ich mindestens?", „Woran würde das Projekt scheitern?". So nutzt du KI als Denkwerkzeug, nicht als Ausrede fürs Nachdenken.</p>
 </div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Guter Use Case = klares <strong>Problem + Daten + messbarer Nutzen + Machbarkeit</strong>.</li>
+<li><strong>CRISP-DM</strong> strukturiert den Weg – iterativ, mit Rücksprüngen.</li>
+<li>Ideen mit der <strong>Nutzen-Machbarkeit-Matrix</strong> priorisieren; Quick Wins zuerst.</li>
+<li><strong>Make-or-Buy</strong> bewusst entscheiden – Standard mit Copilot, Spezielles ggf. selbst.</li>
+<li>Klein starten (<strong>MVP/Pilot</strong>) und an vorab definierten <strong>KPIs</strong> messen.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

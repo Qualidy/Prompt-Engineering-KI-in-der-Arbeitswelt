@@ -5,69 +5,98 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Wie KI die **Qualitätssicherung** unterstützt
-- Was **automatische optische Inspektion** (Computer Vision) leistet
-- Die Begriffe **Fehler 1. und 2. Art** (falsch-positiv/falsch-negativ)
-- Ein **Praxisbeispiel** aus der Fertigung
+- Welche Rolle KI im **Qualitätsmanagement (QM)** spielt
+- Der Unterschied zwischen **reaktivem** Prüfen und **vorausschauender** Qualitätssicherung
+- Konkrete Anwendungen: **Fehlererkennung, Ursachenanalyse, Dokumentation**
+- Wie KI bei **Reklamationen und dem 8D-/Ursache-Wirkungs-Denken** hilft
+- Wie **Copilot** QM-Dokumente, Analysen und Audits unterstützt
 </div>
 
 ---
 
-## 25.1 KI in der Qualitätssicherung
+## 25.1 Qualitätsmanagement und KI
 
-Klassische Qualitätsprüfung ist oft manuell, langsam und ermüdend. **KI-gestützte Bildprüfung** erkennt Fehler automatisch, gleichbleibend und rund um die Uhr.
+**Qualitätsmanagement** sorgt dafür, dass Produkte und Prozesse **verlässlich** den Anforderungen entsprechen. KI verändert QM in zwei Richtungen: Sie macht das **Prüfen** besser (Fehler früher/genauer erkennen) und ermöglicht **vorausschauende** Qualitätssicherung (Fehler verhindern, bevor sie entstehen).
 
-| Aufgabe | KI-Ansatz |
+| Klassisches QM | KI-gestütztes QM |
 |---|---|
-| Kratzer/Risse erkennen | Computer Vision |
-| Vollständigkeit prüfen | Objekterkennung |
-| Maßabweichungen | Bild-/Sensoranalyse |
-| Auffälligkeiten finden | Anomalieerkennung |
+| Stichprobenprüfung | 100 %-Prüfung möglich (z. B. Kamera) |
+| reaktiv (Fehler feststellen) | vorausschauend (Fehler vermeiden) |
+| erfahrungsbasierte Ursachensuche | datenbasierte Mustererkennung |
+| manuelle Doku | automatisierte Berichte |
 
 ---
 
-## 25.2 Automatische optische Inspektion
+## 25.2 Reaktiv vs. vorausschauend
 
 ```mermaid
 flowchart LR
-    A([Kamera nimmt Bild auf]) --> B([KI-Modell klassifiziert])
-    B --> C{Fehler?}
-    C -->|ja| D([Ausschleusen / melden])
-    C -->|nein| E([weiter in Produktion])
+    A([Reaktiv: Fehler ist passiert]) --> B([prüfen, aussortieren, reklamieren])
+    C([Vorausschauend: Muster deuten auf Fehler hin]) --> D([Prozess anpassen, bevor Ausschuss entsteht])
 ```
 
-!!! info "Training mit Beispielbildern"
-    Das Modell lernt aus vielen **markierten Beispielbildern** (gut/fehlerhaft). Je besser und ausgewogener diese Beispiele, desto zuverlässiger die Erkennung.
+!!! info "Der Wertsprung"
+    Reaktives QM findet Fehler, **nachdem** sie entstanden sind – das kostet Material, Zeit und Reklamationen. Vorausschauendes QM erkennt aus Daten **frühe Warnsignale** (z. B. leicht steigende Maßabweichungen) und greift ein, **bevor** Ausschuss entsteht. Das ist deutlich günstiger – der Grundgedanke ist verwandt mit Predictive Maintenance (Kap. 26).
 
 ---
 
-## 25.3 Fehler 1. und 2. Art
+## 25.3 Konkrete Anwendungen
 
-| Fehlertyp | Bedeutung | Folge |
-|---|---|---|
-| Falsch-positiv (Fehler 1. Art) | gutes Teil als „fehlerhaft" | unnötiger Ausschuss |
-| Falsch-negativ (Fehler 2. Art) | schlechtes Teil als „gut" | fehlerhafte Ware beim Kunden |
-
-!!! warning "Schwellwert bewusst wählen"
-    Je nach Anwendung ist ein Fehlertyp schlimmer. Bei sicherheitskritischen Teilen wiegt ein **falsch-negativ** schwerer – lieber ein gutes Teil zu viel aussortieren.
+| Anwendung | Was KI leistet |
+|---|---|
+| **Automatische Fehlererkennung** | Bild-KI findet Kratzer, Risse, Maßfehler |
+| **Ursachenanalyse** | Muster in Prozessdaten aufdecken |
+| **Prognose von Qualitätsproblemen** | Trend zu Abweichungen früh erkennen |
+| **Dokumentation & Audits** | Berichte, Prüfprotokolle, Nachweise erstellen |
+| **Reklamationsbearbeitung** | Beschwerden clustern, Antworten entwerfen |
 
 ---
 
-## 25.4 Praxisbeispiel: Sichtprüfung von Bauteilen
+## 25.4 KI beim Ursache-Wirkungs-Denken
 
-!!! info "Fallbeispiel Elektronikfertigung"
-    Ein Hersteller prüft Leiterplatten per KI-Kamera auf fehlende Bauteile und Lötfehler.
+Ein Kern des QM ist die **systematische Ursachensuche** (z. B. mit dem Ishikawa-/Fischgräten-Diagramm oder der 5-Why-Methode). Hier ist Copilot ein starker **Denkpartner**:
 
-    **Nutzen:** höhere Prüfgeschwindigkeit, konstante Qualität, Entlastung der Mitarbeitenden.
-    **Grenze:** neue Fehlerarten müssen nachtrainiert werden; Grenzfälle prüft weiterhin ein Mensch.
+!!! example "5-Why mit Copilot"
+    Problem: „Das Bauteil hat Maßabweichungen." Copilot kann helfen, systematisch nachzuhaken:
+    ```text
+    Wende die 5-Why-Methode auf folgendes Qualitätsproblem an: [Problem].
+    Stelle bei jedem Schritt eine plausible "Warum"-Frage und mögliche Antworten,
+    bis du bei wahrscheinlichen Grundursachen ankommst.
+    ```
+    Copilot liefert **Hypothesen** und Struktur – die Verifikation an den echten Daten und Prozessen bleibt beim QM-Team.
 
-**Copilot-Prompt zum Ausprobieren:**
+---
+
+## 25.5 QM-Dokumentation mit Copilot
+
+Ein großer Teil des QM ist **Dokumentation** – aufwendig, aber pflichtgemäß. Genau hier spart Copilot Zeit:
+
+| Aufgabe | Beispiel-Prompt |
+|---|---|
+| Reklamationen bündeln | „Clustere diese 20 Reklamationen nach Fehlerart und Häufigkeit." |
+| 8D-Report entwerfen | „Erstelle ein Gerüst für einen 8D-Report zu diesem Fehler." |
+| Prüfanweisung | „Formuliere eine klare Prüfanweisung aus diesen Stichpunkten." |
+| Audit-Vorbereitung | „Erstelle eine Checkliste für ein internes ISO-9001-Audit im Bereich X." |
+
+**Beispiel-Prompt zum Ausprobieren:**
 
 ```text
-Erkläre, wie eine KI-gestützte Sichtprüfung in der Fertigung funktioniert.
-Gehe auf Trainingsdaten, falsch-positiv/falsch-negativ und die Rolle des
-Menschen bei Grenzfällen ein.
+Hier sind Kundenreklamationen der letzten Wochen: [Text]. Gruppiere sie nach
+Fehlerart, nenne die drei häufigsten Probleme und schlage je ein sinnvolles
+erstes Untersuchungsfeld für die Ursachenanalyse vor.
 ```
+
+!!! warning "Nachweise müssen stimmen"
+    QM-Dokumente sind oft **prüf- und haftungsrelevant** (Audits, Zertifizierungen, Kundenanforderungen). Copilot-Entwürfe sind eine **Arbeitserleichterung**, keine fertigen Nachweise – Inhalte müssen fachlich geprüft und freigegeben werden. Faktenfehler in einem Prüfprotokoll können teuer werden.
+
+---
+
+## Zusammenfassung
+
+- KI hebt QM von **reaktivem Prüfen** zu **vorausschauender** Qualitätssicherung.
+- Anwendungen: **Fehlererkennung (Bild-KI), Ursachenanalyse, Prognose, Doku, Reklamationen**.
+- Copilot ist ein starker **Denkpartner** bei der Ursachensuche (5-Why, Ishikawa) und spart Doku-Zeit.
+- QM-Dokumente sind **haftungsrelevant** – Copilot-Entwürfe immer fachlich prüfen und freigeben.
 
 ---
 

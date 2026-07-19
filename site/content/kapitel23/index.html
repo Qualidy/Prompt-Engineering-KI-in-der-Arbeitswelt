@@ -756,9 +756,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#231-ki-im-engineering" class="md-nav__link">
+  <a href="#231-ki-in-der-konstruktion-ein-uberblick" class="md-nav__link">
     <span class="md-ellipsis">
-      23.1 KI im Engineering
+      23.1 KI in der Konstruktion – ein Überblick
     </span>
   </a>
   
@@ -774,9 +774,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#233-praxisbeispiel-halterung-optimieren" class="md-nav__link">
+  <a href="#233-wo-copilot-konstrukteurinnen-hilft" class="md-nav__link">
     <span class="md-ellipsis">
-      23.3 Praxisbeispiel: Halterung optimieren
+      23.3 Wo Copilot Konstrukteur:innen hilft
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#234-grenzen-und-verantwortung" class="md-nav__link">
+    <span class="md-ellipsis">
+      23.4 Grenzen und Verantwortung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1156,68 +1174,125 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Wie KI in <strong>Konstruktion und Engineering</strong> eingesetzt wird</li>
-<li>Was <strong>generatives Design</strong> ist</li>
-<li>Wie KI den <strong>Entwicklungsprozess</strong> beschleunigt</li>
-<li>Ein <strong>Praxisbeispiel</strong> aus der Produktentwicklung</li>
+<li>Wie KI in <strong>Konstruktion und Produktentwicklung</strong> (CAD/Engineering) eingesetzt wird</li>
+<li>Was <strong>generatives Design</strong> ist und wie es sich vom klassischen Konstruieren unterscheidet</li>
+<li>Wie KI bei <strong>Simulation, Varianten und Dokumentation</strong> hilft</li>
+<li>Wo <strong>Copilot</strong> Konstrukteur:innen im Alltag unterstützt (Doku, Recherche, Kommunikation)</li>
+<li>Welche <strong>Grenzen</strong> (Sicherheit, Haftung, Prüfung) unbedingt gelten</li>
 </ul>
 </div>
 <hr />
-<h2 id="231-ki-im-engineering">23.1 KI im Engineering<a class="headerlink" href="#231-ki-im-engineering" title="Permanent link">&para;</a></h2>
-<p>In der <strong>Konstruktion</strong> (CAD/CAE) unterstützt KI bei Entwurf, Simulation und Dokumentation:</p>
+<h2 id="231-ki-in-der-konstruktion-ein-uberblick">23.1 KI in der Konstruktion – ein Überblick<a class="headerlink" href="#231-ki-in-der-konstruktion-ein-uberblick" title="Permanent link">&para;</a></h2>
+<p>Konstruktion und Produktentwicklung sind stark <strong>wissens- und rechenintensiv</strong>. KI setzt hier an mehreren Stellen an:</p>
 <table>
 <thead>
 <tr>
-<th>Einsatz</th>
-<th>Nutzen</th>
+<th>Einsatzfeld</th>
+<th>Was KI leistet</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Generatives Design</td>
-<td>viele Entwurfsvarianten automatisch erzeugen</td>
+<td><strong>Generatives Design</strong></td>
+<td>erzeugt selbst Bauteil-Varianten nach Vorgaben</td>
 </tr>
 <tr>
-<td>Simulation beschleunigen</td>
-<td>Ergebnisse schneller abschätzen</td>
+<td><strong>Simulation</strong></td>
+<td>schätzt Verhalten (Belastung, Strömung) schneller ab</td>
 </tr>
 <tr>
-<td>Wissenszugriff</td>
-<td>Normen, Datenblätter, frühere Projekte durchsuchen</td>
+<td><strong>Varianten/Konfiguration</strong></td>
+<td>passt Designs an Kundenanforderungen an</td>
 </tr>
 <tr>
-<td>Dokumentation</td>
-<td>Berichte, Stücklisten, Anleitungen erstellen</td>
+<td><strong>Dokumentation</strong></td>
+<td>erstellt Stücklisten, Berichte, Beschreibungen</td>
+</tr>
+<tr>
+<td><strong>Wissenszugriff</strong></td>
+<td>findet Normen, frühere Projekte, Bauteildaten</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="232-generatives-design">23.2 Generatives Design<a class="headerlink" href="#232-generatives-design" title="Permanent link">&para;</a></h2>
-<p>Beim <strong>generativen Design</strong> gibst du <strong>Ziele und Randbedingungen</strong> vor (z. B. „so leicht wie möglich, muss 500 N tragen, aus Aluminium"). Die KI erzeugt daraus zahlreiche optimierte Entwürfe.</p>
+<p>Beim <strong>generativen Design</strong> gibt der Mensch nur die <strong>Ziele und Randbedingungen</strong> vor – Material, Gewicht, Belastung, Bauraum – und die KI erzeugt daraus <strong>automatisch viele mögliche Formen</strong>, oft organisch anmutende, optimierte Strukturen.</p>
 <pre class="mermaid"><code>flowchart LR
-    A([Ziele &amp; Randbedingungen]) --&gt; B([KI erzeugt Varianten])
-    B --&gt; C([Ingenieur bewertet &amp; wählt])
-    C --&gt; D([Feinkonstruktion])</code></pre>
+    A([Vorgaben: Last, Material, Bauraum, Gewicht]) --&gt; B([Algorithmus erzeugt Varianten])
+    B --&gt; C([Bewertung: Festigkeit, Gewicht, Kosten])
+    C --&gt; D([beste Varianten zur Auswahl])
+    D --&gt; E([Ingenieur:in wählt &amp; prüft])</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Klassisch vs. generativ</p>
+<p><strong>Klassisch:</strong> Der Ingenieur entwirft ein Bauteil und prüft, ob es hält. <strong>Generativ:</strong> Er definiert die Anforderungen, und die Software liefert <strong>hunderte</strong> optimierte Vorschläge – oft leichter und materialsparender, als ein Mensch sie entwerfen würde. Der Mensch wird vom <strong>Zeichner</strong> zum <strong>Entscheider und Prüfer</strong>.</p>
+</div>
 <div class="admonition info">
-<p class="admonition-title">Mensch bleibt Entscheider</p>
-<p>Die KI liefert <strong>Optionen</strong> – Auswahl, Prüfung und Verantwortung liegen bei den Fachleuten. KI erweitert den Lösungsraum, ersetzt aber kein Ingenieurwissen.</p>
+<p class="admonition-title">Wichtig</p>
+<p>Generatives Design ist ein <strong>Spezialwerkzeug</strong> in CAD-Systemen (z. B. in Fusion, Siemens NX), nicht Teil von Copilot. Copilot ergänzt drumherum – bei Recherche, Doku und Kommunikation.</p>
 </div>
 <hr />
-<h2 id="233-praxisbeispiel-halterung-optimieren">23.3 Praxisbeispiel: Halterung optimieren<a class="headerlink" href="#233-praxisbeispiel-halterung-optimieren" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Fallbeispiel Maschinenbau</p>
-<p>Ein Hersteller lässt für eine Bauteil-Halterung per generativem Design Varianten erzeugen.</p>
-<p><strong>Ergebnis:</strong> ~30 % Gewichtsersparnis bei gleicher Festigkeit, weniger Materialverbrauch.
-<strong>Grenze:</strong> Fertigbarkeit (z. B. nur mit 3D-Druck) und Kosten müssen geprüft werden.</p>
-</div>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="233-wo-copilot-konstrukteurinnen-hilft">23.3 Wo Copilot Konstrukteur:innen hilft<a class="headerlink" href="#233-wo-copilot-konstrukteurinnen-hilft" title="Permanent link">&para;</a></h2>
+<p>Auch ohne CAD-Funktion entlastet <strong>Copilot</strong> die Konstruktionsarbeit erheblich – überall dort, wo <strong>Text und Wissen</strong> im Spiel sind:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anforderungen strukturieren</td>
+<td>„Fasse dieses Lastenheft in klare, prüfbare Anforderungen."</td>
+</tr>
+<tr>
+<td>Normen/Recherche</td>
+<td>„Erkläre die Kernpunkte der Norm X in einfachen Worten."</td>
+</tr>
+<tr>
+<td>Dokumentation</td>
+<td>„Erstelle aus diesen Stichpunkten eine technische Beschreibung."</td>
+</tr>
+<tr>
+<td>Kommunikation</td>
+<td>„Formuliere eine verständliche Änderungsmitteilung an den Kunden."</td>
+</tr>
+<tr>
+<td>Fehlersuche im Denken</td>
+<td>„Welche Risiken übersehe ich bei dieser Konstruktionsentscheidung?"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich konstruiere eine Halterung. Erstelle eine strukturierte Anforderungsliste
-(Lasten, Material, Bauraum, Fertigungsverfahren, Normen), die ich vor einem
-generativen Design klären muss.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich habe folgende Kundenanforderungen an ein Bauteil: [Anforderungen].
+Strukturiere sie in funktionale und nicht-funktionale Anforderungen, markiere
+Widersprüche oder fehlende Angaben und formuliere 5 Rückfragen an den Kunden.
 </code></pre></div></td></tr></table></div>
-<p>Copilot ist hier vor allem für <strong>Anforderungsklärung, Recherche und Dokumentation</strong> stark – die eigentliche Geometrie erzeugen spezialisierte CAD-Werkzeuge.</p>
+<hr />
+<h2 id="234-grenzen-und-verantwortung">23.4 Grenzen und Verantwortung<a class="headerlink" href="#234-grenzen-und-verantwortung" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Sicherheit geht vor</p>
+<ul>
+<li><strong>Technische Berechnungen und Festigkeitsnachweise</strong> dürfen <strong>niemals</strong> ungeprüft aus KI übernommen werden – hier haften Menschen und Unternehmen.</li>
+<li>Copilot kann bei <strong>Normen und Formeln halluzinieren</strong> (Kap. 15) – immer gegen die Originalquelle prüfen.</li>
+<li><strong>Geistiges Eigentum:</strong> Konstruktionsdaten sind oft hochsensibel; nur in freigegebener, geschützter Umgebung verarbeiten.</li>
+<li>KI liefert <strong>Vorschläge und Entwürfe</strong> – die technische Verantwortung bleibt bei den Fachleuten.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Sinnvolle Arbeitsteilung</p>
+<p>KI übernimmt das <strong>Zeit- und Wissensmanagement</strong> (Recherche, Struktur, Doku, Varianten), der Mensch die <strong>fachliche und sicherheitsrelevante Entscheidung</strong>. So gewinnt man Tempo, ohne die Verantwortung abzugeben.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In der Konstruktion wirkt KI bei <strong>generativem Design, Simulation, Varianten, Doku und Wissenszugriff</strong>.</li>
+<li><strong>Generatives Design</strong> kehrt die Arbeit um: Vorgaben rein, viele optimierte Varianten raus – Mensch entscheidet.</li>
+<li><strong>Copilot</strong> entlastet vor allem bei text- und wissensbasierten Aufgaben rund um die Konstruktion.</li>
+<li><strong>Sicherheitsrelevante Berechnungen</strong> und geistiges Eigentum erfordern strenge Prüfung und Schutz.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

@@ -733,27 +733,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#221-ki-im-geschaftsprozessmanagement" class="md-nav__link">
+  <a href="#221-vom-prinzip-zur-praxis" class="md-nav__link">
     <span class="md-ellipsis">
-      22.1 KI im Geschäftsprozessmanagement
+      22.1 Vom Prinzip zur Praxis
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#222-process-mining-kurz-erklart" class="md-nav__link">
+  <a href="#222-das-fallbeispiel-angebot-bis-rechnung" class="md-nav__link">
     <span class="md-ellipsis">
-      22.2 Process Mining kurz erklärt
+      22.2 Das Fallbeispiel: Angebot bis Rechnung
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#223-praxisbeispiel-rechnungseingang-in-der-verwaltung" class="md-nav__link">
+  <a href="#223-copilot-in-jedem-schritt" class="md-nav__link">
     <span class="md-ellipsis">
-      22.3 Praxisbeispiel: Rechnungseingang in der Verwaltung
+      22.3 Copilot in jedem Schritt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-erfolg-messen" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.4 Erfolg messen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-stolpersteine-in-der-praxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.5 Stolpersteine in der Praxis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1156,69 +1183,153 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Wie <strong>KI konkret</strong> in der Geschäftsprozessoptimierung (BPM) wirkt</li>
-<li>Was <strong>Process Mining</strong> ist</li>
-<li>Wie <strong>RPA</strong> (Software-Roboter) und KI zusammenspielen</li>
-<li>Ein durchgängiges <strong>Praxisbeispiel</strong> aus der Verwaltung</li>
+<li>Wie du KI <strong>praktisch</strong> in einen konkreten Geschäftsprozess einbindest</li>
+<li>Ein durchgängiges <strong>Fallbeispiel</strong>: der Angebots-/Bestellprozess</li>
+<li>Wie du Schritte in <strong>Mensch</strong> und <strong>KI/Automatik</strong> aufteilst</li>
+<li>Wie <strong>Copilot</strong> in verschiedenen Prozessschritten konkret hilft</li>
+<li>Wie du den Erfolg mit <strong>Kennzahlen</strong> misst</li>
 </ul>
 </div>
 <hr />
-<h2 id="221-ki-im-geschaftsprozessmanagement">22.1 KI im Geschäftsprozessmanagement<a class="headerlink" href="#221-ki-im-geschaftsprozessmanagement" title="Permanent link">&para;</a></h2>
-<p><strong>Geschäftsprozessmanagement (BPM)</strong> kümmert sich um das systematische Gestalten und Verbessern von Prozessen. KI setzt an drei Stellen an:</p>
+<h2 id="221-vom-prinzip-zur-praxis">22.1 Vom Prinzip zur Praxis<a class="headerlink" href="#221-vom-prinzip-zur-praxis" title="Permanent link">&para;</a></h2>
+<p>In Kapitel 21 ging es um die <strong>Prinzipien</strong> der Prozessoptimierung. Jetzt spielen wir sie an einem <strong>durchgängigen Beispiel</strong> durch: dem Weg von der Kundenanfrage bis zur Rechnung. Ziel ist, zu zeigen, <strong>wo genau</strong> KI im Alltag ansetzt – Schritt für Schritt.</p>
+<hr />
+<h2 id="222-das-fallbeispiel-angebot-bis-rechnung">22.2 Das Fallbeispiel: Angebot bis Rechnung<a class="headerlink" href="#222-das-fallbeispiel-angebot-bis-rechnung" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Anfrage eingeht]) --&gt; B([Anfrage verstehen])
+    B --&gt; C([Angebot erstellen])
+    C --&gt; D([Nachfassen])
+    D --&gt; E([Auftrag &amp; Bestätigung])
+    E --&gt; F([Rechnung &amp; Ablage])</code></pre>
+<p>Für jeden Schritt fragen wir: Was ist <strong>Routine</strong> (KI-tauglich) und was braucht <strong>menschliche Entscheidung</strong>?</p>
 <table>
 <thead>
 <tr>
-<th>Ansatz</th>
-<th>Was passiert</th>
+<th>Schritt</th>
+<th>Routineanteil</th>
+<th>Menschliche Entscheidung</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Process Mining</strong></td>
-<td>Prozesse aus IT-Logdaten automatisch rekonstruieren und analysieren</td>
+<td>Anfrage verstehen</td>
+<td>Kernpunkte extrahieren</td>
+<td>fachliche Machbarkeit</td>
 </tr>
 <tr>
-<td><strong>RPA + KI</strong></td>
-<td>Software-Roboter erledigen Routine, KI trifft „weiche" Entscheidungen</td>
+<td>Angebot erstellen</td>
+<td>Textbausteine, Formulierung</td>
+<td>Preis, Konditionen</td>
 </tr>
 <tr>
-<td><strong>Assistenz</strong></td>
-<td>Copilot unterstützt bei Dokumentation, Kommunikation, Auswertung</td>
+<td>Nachfassen</td>
+<td>Erinnerungsmail entwerfen</td>
+<td>Timing, Beziehung</td>
+</tr>
+<tr>
+<td>Bestätigung</td>
+<td>Standardmail</td>
+<td>Sonderfälle</td>
+</tr>
+<tr>
+<td>Rechnung &amp; Ablage</td>
+<td>Zusammenfassung, Ablagevorschlag</td>
+<td>Freigabe</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="222-process-mining-kurz-erklart">22.2 Process Mining kurz erklärt<a class="headerlink" href="#222-process-mining-kurz-erklart" title="Permanent link">&para;</a></h2>
-<p>Jede Aktion in ERP/CRM hinterlässt Spuren (Logs). <strong>Process Mining</strong> liest diese Spuren und zeigt, <strong>wie der Prozess wirklich läuft</strong> – oft anders als gedacht.</p>
-<pre class="mermaid"><code>flowchart LR
-    A([IT-Logdaten]) --&gt; B([Prozess rekonstruieren])
-    B --&gt; C([Abweichungen &amp; Engpässe sichtbar])
-    C --&gt; D([gezielt verbessern])</code></pre>
-<div class="admonition info">
-<p class="admonition-title">RPA vs. KI</p>
-<p><strong>RPA</strong> (Robotic Process Automation) automatisiert <strong>feste, regelbasierte</strong> Klickabläufe. <strong>KI</strong> ergänzt dort, wo Verstehen oder Entscheiden nötig ist (z. B. unstrukturierte E-Mails einordnen).</p>
+<h2 id="223-copilot-in-jedem-schritt">22.3 Copilot in jedem Schritt<a class="headerlink" href="#223-copilot-in-jedem-schritt" title="Permanent link">&para;</a></h2>
+<p><strong>Schritt 1 – Anfrage verstehen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse diese Kundenanfrage in Stichpunkten zusammen: Was genau wird gewünscht,
+welche Mengen/Termine werden genannt, und welche Angaben fehlen noch, um ein
+Angebot zu erstellen? [Anfrage einfügen]
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 2 – Angebot entwerfen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Entwirf ein Angebotsschreiben (Sie-Form, freundlich, max. 200 Wörter) auf Basis
+dieser Eckdaten: [Produkt, Menge, Preis, Lieferzeit]. Lasse den Endpreis als
+Platzhalter [PREIS], den ich selbst einsetze.
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 3 – Nachfassen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Der Kunde hat auf mein Angebot vom [Datum] noch nicht reagiert. Formuliere eine
+höfliche, kurze Erinnerung, die nicht aufdringlich wirkt und eine konkrete
+Rückfrage enthält.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Der Mensch bleibt am Steuer</p>
+<p>Beachte: Preise, Konditionen und Freigaben bleiben in den Beispielen <strong>beim Menschen</strong> (Platzhalter [PREIS]). Copilot übernimmt die <strong>zeitraubende Formulierungsarbeit</strong>, nicht die <strong>Entscheidung</strong>. Genau diese Aufteilung macht den Einsatz sicher und akzeptiert.</p>
 </div>
 <hr />
-<h2 id="223-praxisbeispiel-rechnungseingang-in-der-verwaltung">22.3 Praxisbeispiel: Rechnungseingang in der Verwaltung<a class="headerlink" href="#223-praxisbeispiel-rechnungseingang-in-der-verwaltung" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Fallbeispiel</p>
-<p>Eine Verwaltung optimiert den <strong>Rechnungseingang</strong>:</p>
-<ol>
-<li>Rechnung kommt per E-Mail/Papier</li>
-<li>KI liest Daten aus (Lieferant, Betrag, Datum)</li>
-<li>RPA legt den Vorgang im System an</li>
-<li>Copilot formuliert Rückfragen bei Unstimmigkeiten</li>
-<li>Ein Mensch gibt frei</li>
-</ol>
-<p><strong>Nutzen:</strong> schnellere Durchlaufzeit, weniger Tippfehler, klare Nachverfolgung.</p>
+<h2 id="224-erfolg-messen">22.4 Erfolg messen<a class="headerlink" href="#224-erfolg-messen" title="Permanent link">&para;</a></h2>
+<p>Ohne Kennzahlen weiß niemand, ob die Optimierung gewirkt hat. Lege <strong>vorher</strong> fest, was du misst:</p>
+<table>
+<thead>
+<tr>
+<th>Kennzahl</th>
+<th>Vorher</th>
+<th>Ziel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Durchlaufzeit je Angebot</td>
+<td>z. B. 45 min</td>
+<td>−40 %</td>
+</tr>
+<tr>
+<td>Zahl der Angebote pro Tag</td>
+<td>z. B. 6</td>
+<td>+50 %</td>
+</tr>
+<tr>
+<td>Fehler-/Nacharbeitsquote</td>
+<td>z. B. 12 %</td>
+<td>&lt; 5 %</td>
+</tr>
+<tr>
+<td>Reaktionszeit auf Anfragen</td>
+<td>z. B. 2 Tage</td>
+<td>&lt; 1 Tag</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Realistischer Effekt</p>
+<p>Angenommen, das Formulieren eines Angebots dauert statt 45 nur 25 Minuten – bei 6 Angeboten pro Tag sind das <strong>2 Stunden</strong> gewonnene Zeit täglich, die in Beratung oder Nachfassen fließen kann. Solche Rechnungen machen den Nutzen greifbar und rechtfertigen die Einführung (Business Case, Kap. 26/38).</p>
+</div>
+<hr />
+<h2 id="225-stolpersteine-in-der-praxis">22.5 Stolpersteine in der Praxis<a class="headerlink" href="#225-stolpersteine-in-der-praxis" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Worauf du achten musst</p>
+<ul>
+<li><strong>Vertrauliche Kundendaten</strong> nur in der freigegebenen M365-Umgebung verarbeiten (Kap. 33).</li>
+<li><strong>Copilot-Entwürfe immer gegenlesen</strong> – falscher Ton oder falsche Zahl fällt sonst dem Kunden auf.</li>
+<li><strong>Nicht alles automatisieren wollen:</strong> Beziehungspflege und Sonderfälle bleiben menschlich.</li>
+<li><strong>Team mitnehmen:</strong> Wenn Kolleg:innen den Nutzen nicht sehen, wird das Werkzeug nicht genutzt (Change, Kap. 37).</li>
+</ul>
 </div>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Beschreibe für den Prozess &quot;Rechnungseingang&quot; (E-Mail bis Freigabe), an welchen
-Schritten KI, RPA und menschliche Kontrolle jeweils sinnvoll sind. Nenne je
-Schritt ein Risiko.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere unseren Angebotsprozess (Anfrage bis Rechnung). Schlage für jeden
+Schritt vor, ob und wie KI helfen kann, und markiere klar, welche Schritte
+zwingend eine menschliche Entscheidung brauchen.
 </code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI-Prozessoptimierung wird konkret, wenn man einen realen Prozess <strong>Schritt für Schritt</strong> durchgeht.</li>
+<li>Jeden Schritt in <strong>Routine</strong> (KI) und <strong>Entscheidung</strong> (Mensch) aufteilen – Preise/Freigaben bleiben menschlich.</li>
+<li><strong>Copilot</strong> übernimmt die zeitraubende Formulierungs- und Zusammenfassungsarbeit.</li>
+<li>Erfolg mit <strong>Kennzahlen</strong> (Durchlaufzeit, Menge, Fehlerquote) messbar machen.</li>
+<li>Stolpersteine: Datenschutz, ungeprüfte Entwürfe, Über-Automatisierung, fehlende Akzeptanz.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

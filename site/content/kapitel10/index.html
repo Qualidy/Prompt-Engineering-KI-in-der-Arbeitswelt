@@ -636,29 +636,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#101-warum-aufbereiten" class="md-nav__link">
+  <a href="#101-warum-datenaufbereitung-so-wichtig-ist" class="md-nav__link">
     <span class="md-ellipsis">
-      10.1 Warum aufbereiten?
+      10.1 Warum Datenaufbereitung so wichtig ist
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#102-die-schritte-der-datenaufbereitung" class="md-nav__link">
+  <a href="#102-der-grundsatz-garbage-in-garbage-out" class="md-nav__link">
     <span class="md-ellipsis">
-      10.2 Die Schritte der Datenaufbereitung
+      10.2 Der Grundsatz: Garbage in, garbage out
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#103-typische-probleme-und-losungen" class="md-nav__link">
+  <a href="#103-die-schritte-der-datenaufbereitung" class="md-nav__link">
     <span class="md-ellipsis">
-      10.3 Typische Probleme und Lösungen
+      10.3 Die Schritte der Datenaufbereitung
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="10.3 Die Schritte der Datenaufbereitung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typische-datenprobleme-im-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typische Datenprobleme im Detail
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -666,6 +681,15 @@
   <a href="#104-datenaufbereitung-mit-copilot-in-excel" class="md-nav__link">
     <span class="md-ellipsis">
       10.4 Datenaufbereitung mit Copilot in Excel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1119,94 +1143,157 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Warum Rohdaten fast nie direkt nutzbar sind</li>
-<li>Die typischen Schritte der <strong>Datenaufbereitung</strong> (Cleaning, Transformation, Feature Engineering)</li>
-<li>Was eine <strong>Datenpipeline</strong> ist</li>
-<li>Wie <strong>Copilot</strong> in Excel bei der Aufbereitung hilft</li>
+<li>Warum <strong>Datenaufbereitung</strong> oft 60–80 % der Projektzeit kostet</li>
+<li>Die typischen <strong>Schritte</strong> der Aufbereitung: bereinigen, transformieren, anreichern</li>
+<li>Häufige <strong>Datenprobleme</strong> und wie man sie erkennt</li>
+<li>Was <strong>„Garbage in, garbage out"</strong> praktisch bedeutet</li>
+<li>Wie <strong>Copilot in Excel</strong> bei der Datenaufbereitung hilft – und wo Grenzen sind</li>
 </ul>
 </div>
 <hr />
-<h2 id="101-warum-aufbereiten">10.1 Warum aufbereiten?<a class="headerlink" href="#101-warum-aufbereiten" title="Permanent link">&para;</a></h2>
-<p>Rohdaten sind meist unvollständig, uneinheitlich oder fehlerhaft. Die <strong>Datenaufbereitung</strong> macht sie erst analyse- und trainierbar. Faustregel: In vielen Projekten fließen <strong>60–80 %</strong> des Aufwands in diesen Schritt.</p>
+<h2 id="101-warum-datenaufbereitung-so-wichtig-ist">10.1 Warum Datenaufbereitung so wichtig ist<a class="headerlink" href="#101-warum-datenaufbereitung-so-wichtig-ist" title="Permanent link">&para;</a></h2>
+<p>Rohdaten sind fast nie direkt nutzbar. Sie sind unvollständig, uneinheitlich, fehlerhaft oder doppelt. Bevor KI oder Analysen sinnvolle Ergebnisse liefern, müssen die Daten <strong>aufbereitet</strong> werden.</p>
+<div class="admonition info">
+<p class="admonition-title">Die 80-Prozent-Regel</p>
+<p>In vielen Datenprojekten entfallen <strong>60–80 % der Zeit</strong> auf Beschaffung und Aufbereitung – und nur ein kleiner Teil auf die eigentliche „KI". Das ist unspektakulär, aber der Hebel für Qualität. Wer hier schludert, bekommt es später doppelt zurück.</p>
+</div>
 <hr />
-<h2 id="102-die-schritte-der-datenaufbereitung">10.2 Die Schritte der Datenaufbereitung<a class="headerlink" href="#102-die-schritte-der-datenaufbereitung" title="Permanent link">&para;</a></h2>
+<h2 id="102-der-grundsatz-garbage-in-garbage-out">10.2 Der Grundsatz: Garbage in, garbage out<a class="headerlink" href="#102-der-grundsatz-garbage-in-garbage-out" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
-    A([Rohdaten]) --&gt; B([Bereinigen])
-    B --&gt; C([Transformieren])
-    C --&gt; D([Anreichern / Feature Engineering])
-    D --&gt; E([Analysebereite Daten])</code></pre>
+    A([schlechte Daten]) --&gt; B([Modell / Analyse]) --&gt; C([schlechte Ergebnisse])
+    D([gute Daten]) --&gt; E([Modell / Analyse]) --&gt; F([verlässliche Ergebnisse])</code></pre>
+<p>Egal wie modern der Algorithmus: Sind die Eingangsdaten fehlerhaft, sind es auch die Ergebnisse. Ein Prognosemodell, das mit falschen Verkaufszahlen gefüttert wird, liefert falsche Prognosen – überzeugend formatiert, aber wertlos. Dasselbe gilt für Copilot: Fasst es ein fehlerhaftes Dokument zusammen, ist die Zusammenfassung ebenfalls fehlerhaft.</p>
+<hr />
+<h2 id="103-die-schritte-der-datenaufbereitung">10.3 Die Schritte der Datenaufbereitung<a class="headerlink" href="#103-die-schritte-der-datenaufbereitung" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Schritt</th>
-<th>Was passiert</th>
+<th>Ziel</th>
+<th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Bereinigen (Cleaning)</td>
-<td>Dubletten entfernen, fehlende Werte behandeln, Fehler korrigieren</td>
+<td><strong>Bereinigen</strong></td>
+<td>Fehler und Lücken beheben</td>
+<td>fehlende Werte, Tippfehler, Ausreißer</td>
 </tr>
 <tr>
-<td>Transformieren</td>
-<td>Formate vereinheitlichen, skalieren, kodieren</td>
+<td><strong>Vereinheitlichen</strong></td>
+<td>einheitliches Format</td>
+<td>Datum, Einheiten, Schreibweisen</td>
 </tr>
 <tr>
-<td>Anreichern</td>
-<td>zusätzliche Merkmale bilden (Feature Engineering)</td>
+<td><strong>Entdoppeln</strong></td>
+<td>Dubletten entfernen</td>
+<td>derselbe Kunde mehrfach</td>
 </tr>
 <tr>
-<td>Zusammenführen</td>
-<td>Daten aus mehreren Quellen verbinden</td>
+<td><strong>Transformieren</strong></td>
+<td>Form für die Nutzung bringen</td>
+<td>Text → Kategorien, Werte skalieren</td>
+</tr>
+<tr>
+<td><strong>Anreichern</strong></td>
+<td>zusätzliche Infos ergänzen</td>
+<td>Postleitzahl → Region</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="103-typische-probleme-und-losungen">10.3 Typische Probleme und Lösungen<a class="headerlink" href="#103-typische-probleme-und-losungen" title="Permanent link">&para;</a></h2>
+<h3 id="typische-datenprobleme-im-detail">Typische Datenprobleme im Detail<a class="headerlink" href="#typische-datenprobleme-im-detail" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>Problem</th>
-<th>Lösung</th>
+<th>Beispiel</th>
+<th>Folge, wenn ignoriert</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fehlende Werte</td>
-<td>löschen, ersetzen (Mittelwert), markieren</td>
-</tr>
-<tr>
-<td>Dubletten</td>
-<td>erkennen und zusammenführen</td>
+<td>Feld „Umsatz" ist leer</td>
+<td>verzerrte Summen/Durchschnitte</td>
 </tr>
 <tr>
 <td>Uneinheitliche Formate</td>
-<td>Standardisieren (z. B. Datumsformat)</td>
+<td>„01.02.2026" vs. „2026-02-01"</td>
+<td>Fehler beim Sortieren/Rechnen</td>
+</tr>
+<tr>
+<td>Dubletten</td>
+<td>Kunde „Müller GmbH" doppelt</td>
+<td>Kunde wird doppelt gezählt</td>
 </tr>
 <tr>
 <td>Ausreißer</td>
-<td>prüfen, ob Fehler oder echte Werte</td>
+<td>Alter „199"</td>
+<td>verfälscht Statistiken</td>
+</tr>
+<tr>
+<td>Inkonsistenzen</td>
+<td>„DE" vs. „Deutschland"</td>
+<td>Gruppierung schlägt fehl</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">Feature Engineering</p>
-<p>Ein <strong>Feature</strong> ist ein Merkmal, das dem Modell hilft. Beispiel: Aus einem Kaufdatum lässt sich das Merkmal „Wochentag" ableiten – das kann für eine Prognose entscheidend sein.</p>
+<div class="admonition tip">
+<p class="admonition-title">Erst verstehen, dann bereinigen</p>
+<p>Bevor du Daten „reparierst", frage: <strong>Warum</strong> fehlt der Wert? Ein fehlender Umsatz kann „0 €" bedeuten – oder „nicht erfasst". Das ist ein großer Unterschied. Blindes Auffüllen mit Nullen kann Ergebnisse stärker verfälschen als die Lücke selbst.</p>
 </div>
 <hr />
 <h2 id="104-datenaufbereitung-mit-copilot-in-excel">10.4 Datenaufbereitung mit Copilot in Excel<a class="headerlink" href="#104-datenaufbereitung-mit-copilot-in-excel" title="Permanent link">&para;</a></h2>
-<p>Copilot kann in <strong>Excel</strong> viele Aufbereitungsschritte erklären und ausführen.</p>
-<p><strong>Copilot-Prompt zum Ausprobieren (in Excel):</strong></p>
+<p><strong>Copilot in Excel</strong> unterstützt viele Aufbereitungsschritte per Sprachbefehl – ideal für alle, die keine Formel-Profis sind.</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Probleme finden</td>
+<td>„Prüfe diese Tabelle auf fehlende Werte und Auffälligkeiten."</td>
+</tr>
+<tr>
+<td>Formate erklären/ändern</td>
+<td>„Wandle die Datumsspalte in das Format JJJJ-MM-TT um."</td>
+</tr>
+<tr>
+<td>Formeln erzeugen</td>
+<td>„Erstelle eine Formel, die Dubletten in Spalte A markiert."</td>
+</tr>
+<tr>
+<td>Analysieren</td>
+<td>„Welche Trends und Ausreißer zeigt diese Tabelle?"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere diese Tabelle auf Datenqualität: Nenne Spalten mit fehlenden Werten,
-mögliche Dubletten und uneinheitliche Formate. Schlage konkrete Schritte zur
-Bereinigung vor.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere die markierte Tabelle: Nenne fehlende Werte je Spalte, mögliche
+Dubletten und Ausreißer. Schlage für jedes Problem einen konkreten
+Bereinigungsschritt vor.
 </code></pre></div></td></tr></table></div>
 <div class="admonition warning">
-<p class="admonition-title">Ergebnisse prüfen</p>
-<p>Copilot macht Vorschläge – die <strong>fachliche Prüfung</strong> bleibt bei dir. Gerade beim Ersetzen fehlender Werte kann eine falsche Methode das Ergebnis verzerren.</p>
+<p class="admonition-title">Copilot ersetzt keine Prüfung</p>
+<p>Copilot <strong>schlägt</strong> Bereinigungen vor – die Entscheidung triffst du. Prüfe jeden Vorschlag: Ist ein „Ausreißer" ein Fehler oder ein echter Sonderfall? Werden beim Entdoppeln vielleicht berechtigte Einträge gelöscht? Gerade bei Daten kann eine falsche Automatik still und leise Schaden anrichten.</p>
 </div>
+<div class="admonition info">
+<p class="admonition-title">Sensible Daten</p>
+<p>Lade keine vertraulichen oder personenbezogenen Daten in Werkzeuge, für die es keine Freigabe gibt. Innerhalb der freigegebenen Microsoft-365-Umgebung bewegst du dich im geschützten Rahmen – außerhalb nicht (Kapitel 33).</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Datenaufbereitung ist der <strong>zeitintensivste</strong> und qualitätsentscheidende Teil (60–80 %).</li>
+<li><strong>„Garbage in, garbage out"</strong>: schlechte Daten → schlechte Ergebnisse, egal wie gut der Algorithmus.</li>
+<li>Kernschritte: <strong>bereinigen, vereinheitlichen, entdoppeln, transformieren, anreichern</strong>.</li>
+<li><strong>Copilot in Excel</strong> hilft beim Finden und Beheben von Problemen – die fachliche Prüfung bleibt bei dir.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

@@ -696,27 +696,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#202-methoden-des-data-mining" class="md-nav__link">
+  <a href="#202-die-zentralen-analysemuster" class="md-nav__link">
     <span class="md-ellipsis">
-      20.2 Methoden des Data-Mining
+      20.2 Die zentralen Analysemuster
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#203-daten-erkunden-mit-copilot" class="md-nav__link">
+  <a href="#203-beispiel-die-warenkorbanalyse" class="md-nav__link">
     <span class="md-ellipsis">
-      20.3 Daten erkunden mit Copilot
+      20.3 Beispiel: die Warenkorbanalyse
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#204-praxisbeispiel-ki-im-marketing" class="md-nav__link">
+  <a href="#204-korrelation-kausalitat" class="md-nav__link">
     <span class="md-ellipsis">
-      20.4 Praxisbeispiel: KI im Marketing
+      20.4 Korrelation ≠ Kausalität
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#205-data-mining-light-mit-copilot-in-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      20.5 Data-Mining light mit Copilot in Excel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1165,82 +1183,126 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>Data-Mining</strong> ist und welche Aufgaben es löst</li>
-<li>Zentrale Methoden: <strong>Klassifikation, Clustering, Assoziation, Prognose</strong></li>
-<li>Wie du mit Copilot in Excel Daten erkundest</li>
-<li><strong>Praxisbeispiel:</strong> KI im Marketing</li>
+<li>Was <strong>Data-Mining</strong> ist und wie es sich von einfacher Statistik unterscheidet</li>
+<li>Die zentralen <strong>Analysemuster</strong>: Klassifikation, Clustering, Assoziation, Ausreißer, Prognose</li>
+<li>Ein anschauliches Beispiel: die <strong>Warenkorbanalyse</strong></li>
+<li>Der Unterschied zwischen <strong>Korrelation und Kausalität</strong></li>
+<li>Wie <strong>Copilot in Excel</strong> einfache Data-Mining-Fragen beantwortet – und wo Grenzen sind</li>
 </ul>
 </div>
 <hr />
 <h2 id="201-was-ist-data-mining">20.1 Was ist Data-Mining?<a class="headerlink" href="#201-was-ist-data-mining" title="Permanent link">&para;</a></h2>
-<p><strong>Data-Mining</strong> bedeutet, in großen Datenmengen <strong>verborgene Muster und Zusammenhänge</strong> zu finden, die geschäftlich nützlich sind – z. B. „Welche Kunden kündigen bald?".</p>
+<p><strong>Data-Mining</strong> bedeutet, in großen Datenmengen nach <strong>verborgenen Mustern, Zusammenhängen und Regeln</strong> zu „graben", die man vorher nicht kannte. Es geht nicht darum, eine bekannte Zahl abzulesen, sondern <strong>Neues zu entdecken</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Abfrage vs. Entdeckung</p>
+<p>„Wie viel Umsatz hatten wir im März?" ist eine <strong>Abfrage</strong> – die Antwort steht in den Daten. „Welche Kundengruppen kaufen zusammen welche Produkte und warum?" ist <strong>Data-Mining</strong> – hier sucht man Muster, die niemand vorgegeben hat. Data-Mining ist damit ein Kern der Analyse-Rolle von KI (Kap. 3).</p>
+</div>
 <hr />
-<h2 id="202-methoden-des-data-mining">20.2 Methoden des Data-Mining<a class="headerlink" href="#202-methoden-des-data-mining" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TD
-    A([Data-Mining]) --&gt; B([Klassifikation])
-    A --&gt; C([Clustering])
-    A --&gt; D([Assoziation])
-    A --&gt; E([Prognose])</code></pre>
+<h2 id="202-die-zentralen-analysemuster">20.2 Die zentralen Analysemuster<a class="headerlink" href="#202-die-zentralen-analysemuster" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Methode</th>
+<th>Muster</th>
 <th>Frage</th>
 <th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Klassifikation</td>
-<td>In welche Kategorie?</td>
-<td>Kunde kündigt: ja/nein</td>
+<td><strong>Klassifikation</strong></td>
+<td>In welche Kategorie gehört das?</td>
+<td>Kunde: kündigt / bleibt</td>
 </tr>
 <tr>
-<td>Clustering</td>
-<td>Welche Gruppen?</td>
-<td>Kundensegmente</td>
+<td><strong>Clustering</strong></td>
+<td>Welche Gruppen gibt es?</td>
+<td>Kundensegmente entdecken</td>
 </tr>
 <tr>
-<td>Assoziation</td>
+<td><strong>Assoziation</strong></td>
 <td>Was tritt gemeinsam auf?</td>
 <td>„Wer A kauft, kauft auch B"</td>
 </tr>
 <tr>
-<td>Prognose</td>
-<td>Wie entwickelt sich X?</td>
-<td>Umsatz nächsten Monat</td>
+<td><strong>Ausreißererkennung</strong></td>
+<td>Was ist auffällig?</td>
+<td>Betrug, Fehlbuchung</td>
+</tr>
+<tr>
+<td><strong>Prognose</strong></td>
+<td>Wie geht es weiter?</td>
+<td>Absatz nächsten Monat</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">Warenkorbanalyse</p>
-<p>Der Klassiker der Assoziationsanalyse: Supermärkte erkennen, welche Produkte oft zusammen gekauft werden, und platzieren sie clever oder bündeln Angebote.</p>
+<p>Diese Muster bauen auf den ML-Grundlagen aus Kapitel 12 auf (überwacht/unüberwacht).</p>
+<hr />
+<h2 id="203-beispiel-die-warenkorbanalyse">20.3 Beispiel: die Warenkorbanalyse<a class="headerlink" href="#203-beispiel-die-warenkorbanalyse" title="Permanent link">&para;</a></h2>
+<p>Das klassische Data-Mining-Beispiel ist die <strong>Assoziationsanalyse</strong> (Warenkorbanalyse): Welche Produkte werden häufig <strong>zusammen</strong> gekauft?</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Millionen Kassenbons]) --&gt; B([Muster suchen: was liegt zusammen im Korb?])
+    B --&gt; C([Regel: Windeln -&gt; auch Bier])
+    C --&gt; D([Aktion: Platzierung, Angebote, Empfehlungen])</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Der berühmte 'Windeln-und-Bier'-Fall</p>
+<p>Eine – oft erzählte – Analyse ergab, dass abends häufig <strong>Windeln und Bier</strong> zusammen gekauft wurden (vermutlich junge Väter). Ob die Geschichte exakt so stimmt, ist zweitrangig: Sie zeigt die Idee. <strong>Handlungsfolge:</strong> Produkte klug platzieren, Kombi-Angebote schnüren, Empfehlungen aussprechen („Kunden kauften auch …"). Genau dieses Prinzip steckt hinter Empfehlungssystemen im Online-Handel.</p>
 </div>
 <hr />
-<h2 id="203-daten-erkunden-mit-copilot">20.3 Daten erkunden mit Copilot<a class="headerlink" href="#203-daten-erkunden-mit-copilot" title="Permanent link">&para;</a></h2>
-<p>Copilot in Excel hilft, erste Muster zu finden – auch ohne Statistikkenntnisse.</p>
-<p><strong>Copilot-Prompt (Excel):</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere diese Verkaufsdaten: Nenne die 3 auffälligsten Muster oder Trends,
-identifiziere die umsatzstärkste Kundengruppe und schlage eine weiterführende
-Auswertung vor.
-</code></pre></div></td></tr></table></div>
-<hr />
-<h2 id="204-praxisbeispiel-ki-im-marketing">20.4 Praxisbeispiel: KI im Marketing<a class="headerlink" href="#204-praxisbeispiel-ki-im-marketing" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Fallbeispiel Onlinehandel</p>
-<p>Ein Onlinehändler nutzt Data-Mining, um Kunden in <strong>Segmente</strong> zu clustern und <strong>abwanderungsgefährdete</strong> Kunden (Churn) frühzeitig zu erkennen.</p>
-<p><strong>Nutzen:</strong> gezielte Kampagnen, höhere Conversion, weniger Streuverlust.
-<strong>Voraussetzung:</strong> saubere Daten und Beachtung des Datenschutzes (Kapitel 33).</p>
+<h2 id="204-korrelation-kausalitat">20.4 Korrelation ≠ Kausalität<a class="headerlink" href="#204-korrelation-kausalitat" title="Permanent link">&para;</a></h2>
+<p>Der wichtigste Denkfehler beim Data-Mining: aus einem <strong>Zusammenhang</strong> voreilig eine <strong>Ursache</strong> zu schließen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Der klassische Trugschluss</p>
+<p>Im Sommer steigen sowohl der <strong>Speiseeis-Verkauf</strong> als auch die Zahl der <strong>Sonnenbrände</strong>. Beide <strong>korrelieren</strong> – aber Eis verursacht keinen Sonnenbrand. Die gemeinsame Ursache ist das <strong>warme Wetter</strong>. Data-Mining findet <strong>Korrelationen</strong>; ob dahinter eine echte <strong>Ursache-Wirkung</strong> steckt, muss fachlich geprüft werden. Wer das verwechselt, trifft teure Fehlentscheidungen.</p>
 </div>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<hr />
+<h2 id="205-data-mining-light-mit-copilot-in-excel">20.5 Data-Mining light mit Copilot in Excel<a class="headerlink" href="#205-data-mining-light-mit-copilot-in-excel" title="Permanent link">&para;</a></h2>
+<p>Für einfache Fragen brauchst du kein Data-Science-Team – <strong>Copilot in Excel</strong> liefert erste Erkenntnisse per Sprache:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trends erkennen</td>
+<td>„Welche Trends zeigt diese Verkaufstabelle über 12 Monate?"</td>
+</tr>
+<tr>
+<td>Gruppen bilden</td>
+<td>„Fasse die Kunden nach Umsatzhöhe in 3 Gruppen zusammen."</td>
+</tr>
+<tr>
+<td>Auffälligkeiten</td>
+<td>„Welche Werte sind ungewöhnlich hoch oder niedrig?"</td>
+</tr>
+<tr>
+<td>Zusammenhänge</td>
+<td>„Gibt es einen Zusammenhang zwischen Rabatt und Absatzmenge?"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich habe Kundendaten mit Kaufhäufigkeit, letztem Kauf und Umsatz. Erkläre, wie
-ich damit eine einfache Kundensegmentierung (z. B. RFM-Analyse) durchführe und
-welche Marketingmaßnahme je Segment sinnvoll ist.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere die markierte Verkaufstabelle: Nenne die drei auffälligsten Muster,
+eine mögliche Erklärung je Muster und weise ausdrücklich darauf hin, wo es sich
+nur um eine Korrelation und nicht um eine belegte Ursache handelt.
 </code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Copilot als Einstieg, nicht als Endpunkt</p>
+<p>Copilot ist stark darin, <strong>erste Hypothesen</strong> zu liefern und dich auf interessante Stellen zu stoßen. Für belastbare, statistisch abgesicherte Aussagen (Signifikanz, echte Kausalität) braucht es echte Analyseverfahren und Fachwissen. Nutze Copilot, um <strong>die richtigen Fragen</strong> zu finden.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Data-Mining</strong> entdeckt <strong>unbekannte Muster</strong> in großen Daten – mehr als bloßes Abfragen.</li>
+<li>Zentrale Muster: <strong>Klassifikation, Clustering, Assoziation, Ausreißer, Prognose</strong>.</li>
+<li>Die <strong>Warenkorbanalyse</strong> zeigt, wie aus Mustern konkrete Geschäftsaktionen werden.</li>
+<li><strong>Korrelation ist nicht Kausalität</strong> – der wichtigste Denkfehler, den es zu vermeiden gilt.</li>
+<li><strong>Copilot in Excel</strong> liefert schnelle Hypothesen; für belastbare Aussagen braucht es Fachverfahren.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

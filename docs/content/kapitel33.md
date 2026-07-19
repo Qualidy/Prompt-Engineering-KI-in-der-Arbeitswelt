@@ -5,66 +5,99 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Was **personenbezogene Daten** sind
-- Die wichtigsten **DSGVO-Grundsätze**
-- Worauf du bei **Copilot & KI-Tools** datenschutzrechtlich achten musst
-- Praktische Regeln für den Alltag
+- Was **personenbezogene Daten** sind und warum sie besonders geschützt sind
+- Die **Grundprinzipien der DSGVO**, die für KI besonders relevant sind
+- Warum das Prinzip **„keine sensiblen Daten in offene Tools"** so wichtig ist
+- Wie **Microsoft 365 Copilot** Datenschutz technisch adressiert
+- Konkrete **Verhaltensregeln** für den KI-Alltag
 </div>
 
 ---
 
 ## 33.1 Personenbezogene Daten
 
-**Personenbezogene Daten** sind alle Informationen, die sich auf eine **identifizierbare Person** beziehen: Name, E-Mail, Telefonnummer, Standort, aber auch Kundennummer oder IP-Adresse.
+**Personenbezogene Daten** sind alle Informationen, die sich auf eine **identifizierbare Person** beziehen: Name, E-Mail, Telefonnummer, Personalnummer, aber auch IP-Adressen oder Kombinationen, die eine Person erkennbar machen.
 
-!!! info "Besonders geschützt"
-    **Besondere Kategorien** (Gesundheit, Religion, Herkunft, Gewerkschaft …) unterliegen noch strengeren Regeln.
-
----
-
-## 33.2 DSGVO-Grundsätze
-
-| Grundsatz | Bedeutung |
-|---|---|
-| Rechtmäßigkeit | Es braucht eine Rechtsgrundlage (z. B. Einwilligung) |
-| Zweckbindung | Daten nur für den festgelegten Zweck |
-| Datenminimierung | nur so viele Daten wie nötig |
-| Richtigkeit | Daten aktuell und korrekt halten |
-| Speicherbegrenzung | nicht länger speichern als nötig |
-| Transparenz | Betroffene informieren |
+!!! info "Besonders sensible Daten"
+    Einige Kategorien sind **besonders geschützt**: Gesundheit, Religion, ethnische Herkunft, politische Meinung, Gewerkschaftszugehörigkeit, sexuelle Orientierung. Deren Verarbeitung ist nur unter strengen Voraussetzungen erlaubt. Gerade solche Daten dürfen **niemals** unbedacht in ein KI-Tool gelangen.
 
 ---
 
-## 33.3 Datenschutz bei Copilot & KI-Tools
+## 33.2 DSGVO-Prinzipien, die für KI zählen
+
+Die **Datenschutz-Grundverordnung (DSGVO)** gilt EU-weit. Für KI besonders relevant:
+
+| Prinzip | Bedeutung | KI-Bezug |
+|---|---|---|
+| **Rechtsgrundlage** | Verarbeitung braucht einen legitimen Grund | Darf ich diese Daten für KI nutzen? |
+| **Zweckbindung** | Daten nur für den erhobenen Zweck | Trainingsdaten ≠ beliebiger Zweitzweck |
+| **Datenminimierung** | so wenig Daten wie möglich | nur nötige Daten in Prompts |
+| **Transparenz** | Betroffene informieren | Wissen Kunden von der KI-Nutzung? |
+| **Betroffenenrechte** | Auskunft, Löschung etc. | auch bei KI-Daten umsetzbar? |
+| **Keine reine Automatik** | kein Alleinentscheid der KI bei wichtigen Dingen | Human in the Loop (Kap. 32) |
 
 ```mermaid
 flowchart LR
-    A([Eingabe in KI-Tool]) --> B{personenbezogen / vertraulich?}
-    B -->|ja| C([nur in freigegebener Umgebung, ggf. anonymisieren])
-    B -->|nein| D([unkritischer]) 
+    A([Personenbezogene Daten]) --> B{Rechtsgrundlage + Zweck?}
+    B -->|ja| C([verarbeiten - minimal & transparent])
+    B -->|nein| D([nicht verwenden])
 ```
-
-!!! warning "Wichtige Regeln"
-    - Gib **keine** personenbezogenen oder vertraulichen Daten in **nicht freigegebene** KI-Tools ein.
-    - Nutze die vom Unternehmen **freigegebene Copilot-Umgebung** (mit entsprechenden Datenschutzzusagen).
-    - **Anonymisiere** oder pseudonymisiere Daten, wo möglich.
-    - Beachte, was mit den Eingaben passiert (Training? Speicherung?).
 
 ---
 
-## 33.4 Praktische Faustregeln
+## 33.3 Die goldene Regel: keine sensiblen Daten in offene Tools
 
-- **Im Zweifel weglassen:** keine Klarnamen, Ausweis-, Gesundheits- oder Kontodaten in Prompts.
-- **Zweck prüfen:** Wofür brauche ich die Daten wirklich?
-- **Rollen beachten:** Datenschutzbeauftragte einbeziehen.
+!!! warning "Der häufigste Datenschutz-Fehler"
+    Der klassische Fehler: Mitarbeitende geben **vertrauliche oder personenbezogene Daten** in ein **frei zugängliches** KI-Tool ein (z. B. eine private ChatGPT-Nutzung mit echten Kundendaten). Damit verlassen die Daten möglicherweise das Unternehmen und können – je nach Anbieter und Einstellung – zu Trainingszwecken verwendet oder gespeichert werden. Das ist oft ein **klarer DSGVO-Verstoß**.
+
+**Merksatz:** Behandle jede Eingabe in ein offenes KI-Tool so, als würdest du sie **öffentlich ins Internet stellen**. Was so nicht raus darf, gehört auch nicht in ein solches Tool.
+
+---
+
+## 33.4 Wie Microsoft 365 Copilot Datenschutz adressiert
+
+Ein wichtiger Grund, **die freigegebene Unternehmensversion** zu nutzen: Microsoft 365 Copilot ist auf betriebliche Datenschutzanforderungen ausgelegt.
+
+| Aspekt | Microsoft 365 Copilot |
+|---|---|
+| Datenverarbeitung | innerhalb des Microsoft-365-Mandanten (Tenant) |
+| Nutzung als Trainingsdaten | Unternehmensdaten werden **nicht** zum Training der Basismodelle verwendet |
+| Berechtigungen | Copilot sieht nur Daten, für die du **berechtigt** bist (Kap. 9) |
+| Datenschutz-Compliance | vertraglich (u. a. Auftragsverarbeitung) abgesichert |
+
+!!! info "Warum der Unterschied so wichtig ist"
+    Die **private/kostenlose** Nutzung eines KI-Chatbots und die **unternehmensweit freigegebene** Microsoft-365-Version sind datenschutzrechtlich **völlig verschieden**. Für betriebliche Daten ist nur die freigegebene, vertraglich abgesicherte Umgebung zulässig. Kläre im Zweifel mit IT/Datenschutz, **welches** Tool freigegeben ist.
+
+---
+
+## 33.5 Verhaltensregeln für den Alltag
+
+- **Nur freigegebene Tools** für betriebliche Daten nutzen.
+- **Datenminimierung:** anonymisieren/pseudonymisieren, wo möglich (Platzhalter statt echter Namen).
+- **Keine besonders sensiblen Daten** ohne ausdrückliche Rechtsgrundlage.
+- **Interne Richtlinie & Datenschutzbeauftragte:n** einbeziehen.
+- **Transparenz** gegenüber Betroffenen, wo erforderlich.
 
 **Copilot-Prompt zum Ausprobieren:**
 
 ```text
-Ich möchte Kundendaten mit einem KI-Tool auswerten. Erstelle eine
-Datenschutz-Checkliste nach DSGVO: Rechtsgrundlage, Zweckbindung,
-Datenminimierung, Anonymisierung und Betroffenenrechte.
+Erstelle eine kompakte Checkliste (max. 8 Punkte) mit Datenschutzregeln für
+Mitarbeitende, die im Arbeitsalltag KI-Werkzeuge nutzen. Formuliere sie klar
+und verständlich, ohne Juristendeutsch.
 ```
+
+!!! tip "Anonymisieren als einfacher Schutz"
+    Oft brauchst du für eine gute KI-Antwort gar keine echten Namen. Ersetze „Kunde Herr Meier, Personalnr. 4711" durch „Kunde A". Das Ergebnis ist genauso brauchbar – aber ohne Personenbezug.
+
+---
+
+## Zusammenfassung
+
+- **Personenbezogene Daten** sind geschützt; **besonders sensible** Kategorien noch strenger.
+- Die **DSGVO** verlangt u. a. **Rechtsgrundlage, Zweckbindung, Datenminimierung, Transparenz** und Betroffenenrechte.
+- **Goldene Regel:** keine vertraulichen/personenbezogenen Daten in **offene** KI-Tools.
+- **Microsoft 365 Copilot** verarbeitet Daten im Tenant, nutzt sie **nicht** fürs Modelltraining und wahrt Berechtigungen.
+- Alltag: freigegebene Tools, **anonymisieren**, Richtlinien und Datenschutzbeauftragte einbeziehen.
 
 ---
 

@@ -779,27 +779,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#241-industrie-40-und-smart-factory" class="md-nav__link">
+  <a href="#241-ki-und-industrie-40" class="md-nav__link">
     <span class="md-ellipsis">
-      24.1 Industrie 4.0 und Smart Factory
+      24.1 KI und Industrie 4.0
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#242-einsatzfelder-von-ki-in-der-produktion" class="md-nav__link">
+  <a href="#242-sensoren-iot-und-echtzeitdaten" class="md-nav__link">
     <span class="md-ellipsis">
-      24.2 Einsatzfelder von KI in der Produktion
+      24.2 Sensoren, IoT und Echtzeitdaten
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#243-voraussetzungen-und-grenzen" class="md-nav__link">
+  <a href="#243-konkrete-anwendungen" class="md-nav__link">
     <span class="md-ellipsis">
-      24.3 Voraussetzungen und Grenzen
+      24.3 Konkrete Anwendungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#244-der-digitale-zwilling" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.4 Der digitale Zwilling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#245-wo-copilot-in-der-produktion-passt-und-wo-nicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      24.5 Wo Copilot in der Produktion passt – und wo nicht
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1156,73 +1183,127 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>Industrie 4.0</strong> und die <strong>Smart Factory</strong> bedeuten</li>
-<li>Welche Rolle KI in der modernen Produktion spielt</li>
-<li>Zentrale Einsatzfelder: Planung, Steuerung, Qualität, Wartung</li>
-<li>Welche Voraussetzungen (Daten, Vernetzung) nötig sind</li>
+<li>Wie KI in der <strong>Produktion / Industrie 4.0</strong> eingesetzt wird</li>
+<li>Die Rolle von <strong>Sensoren, IoT und Echtzeitdaten</strong></li>
+<li>Konkrete Anwendungen: <strong>Qualitätskontrolle, Steuerung, Planung, Wartung</strong></li>
+<li>Was ein <strong>digitaler Zwilling</strong> ist</li>
+<li>Wo <strong>Copilot</strong> in der Produktionsumgebung sinnvoll unterstützt – und wo nicht</li>
 </ul>
 </div>
 <hr />
-<h2 id="241-industrie-40-und-smart-factory">24.1 Industrie 4.0 und Smart Factory<a class="headerlink" href="#241-industrie-40-und-smart-factory" title="Permanent link">&para;</a></h2>
-<p><strong>Industrie 4.0</strong> steht für die Vernetzung von Maschinen, Produkten und Systemen. In der <strong>Smart Factory</strong> kommunizieren Anlagen über Sensoren und liefern kontinuierlich Daten – die Grundlage für KI.</p>
+<h2 id="241-ki-und-industrie-40">24.1 KI und Industrie 4.0<a class="headerlink" href="#241-ki-und-industrie-40" title="Permanent link">&para;</a></h2>
+<p><strong>Industrie 4.0</strong> steht für die Vernetzung von Maschinen, Produkten und Systemen über das Internet. KI ist ihr „Gehirn": Sie wertet die anfallenden Datenmengen aus und trifft oder unterstützt Entscheidungen – oft in <strong>Echtzeit</strong>.</p>
 <pre class="mermaid"><code>flowchart LR
-    A([Sensoren / Maschinen]) --&gt; B([Daten sammeln])
-    B --&gt; C([KI analysiert])
-    C --&gt; D([Optimieren &amp; Steuern])
-    D --&gt; A</code></pre>
+    A([Sensoren an Maschinen]) --&gt; B([Datenerfassung / IoT])
+    B --&gt; C([KI-Analyse in Echtzeit])
+    C --&gt; D([Entscheidung / Steuerung])
+    D --&gt; E([Aktion an der Maschine])
+    E --&gt; A</code></pre>
+<p>Der Kreislauf ist entscheidend: Maschinen erzeugen laufend Daten, KI wertet sie aus, und das Ergebnis wirkt sofort auf die Produktion zurück.</p>
 <hr />
-<h2 id="242-einsatzfelder-von-ki-in-der-produktion">24.2 Einsatzfelder von KI in der Produktion<a class="headerlink" href="#242-einsatzfelder-von-ki-in-der-produktion" title="Permanent link">&para;</a></h2>
+<h2 id="242-sensoren-iot-und-echtzeitdaten">24.2 Sensoren, IoT und Echtzeitdaten<a class="headerlink" href="#242-sensoren-iot-und-echtzeitdaten" title="Permanent link">&para;</a></h2>
+<p>Grundlage jeder Produktions-KI sind <strong>Daten aus der Anlage</strong>: Temperatur, Vibration, Druck, Stückzahlen, Bildaufnahmen. Diese liefern <strong>Sensoren</strong>, vernetzt über das <strong>Internet of Things (IoT)</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Warum Echtzeit den Unterschied macht</p>
+<p>In der Verwaltung darf eine Analyse Stunden dauern. In der Produktion zählt oft die <strong>Millisekunde</strong>: Erkennt die KI einen Fehler erst nach 1.000 produzierten Teilen, ist der Ausschuss teuer. Deshalb laufen viele Produktions-KIs <strong>direkt an der Maschine</strong> (Edge/On-Device, Kap. 5), nicht in einer fernen Cloud.</p>
+</div>
+<hr />
+<h2 id="243-konkrete-anwendungen">24.3 Konkrete Anwendungen<a class="headerlink" href="#243-konkrete-anwendungen" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Feld</th>
-<th>KI-Nutzen</th>
+<th>Anwendung</th>
+<th>Was KI tut</th>
+<th>Nutzen</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Produktionsplanung</td>
-<td>Bedarf und Kapazitäten prognostizieren</td>
+<td><strong>Optische Qualitätskontrolle</strong></td>
+<td>Kamera + KI erkennt Defekte</td>
+<td>weniger Ausschuss, weniger Reklamationen</td>
 </tr>
 <tr>
-<td>Prozesssteuerung</td>
-<td>Parameter automatisch optimieren</td>
+<td><strong>Prozesssteuerung</strong></td>
+<td>passt Parameter automatisch an</td>
+<td>gleichbleibende Qualität</td>
 </tr>
 <tr>
-<td>Qualitätssicherung</td>
-<td>Fehler per Bilderkennung erkennen (Kapitel 25)</td>
+<td><strong>Produktionsplanung</strong></td>
+<td>optimiert Reihenfolge/Auslastung</td>
+<td>kürzere Durchlaufzeiten</td>
 </tr>
 <tr>
-<td>Instandhaltung</td>
-<td>Ausfälle vorhersagen (Kapitel 26)</td>
+<td><strong>Vorausschauende Wartung</strong></td>
+<td>sagt Ausfälle voraus</td>
+<td>weniger Stillstand (Kap. 26)</td>
 </tr>
 <tr>
-<td>Logistik</td>
-<td>Bestände und Wege optimieren</td>
+<td><strong>Materialfluss/Logistik</strong></td>
+<td>steuert Transporte im Werk</td>
+<td>weniger Wartezeit</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">Datenbasis entscheidet</p>
-<p>Produktions-KI lebt von <strong>Sensor- und Maschinendaten</strong>. Ohne verlässliche Datenerfassung (siehe Big Data, Kapitel 11) bleibt der Nutzen begrenzt.</p>
+<div class="admonition example">
+<p class="admonition-title">Optische Qualitätskontrolle in der Praxis</p>
+<p>Eine Kamera fotografiert jedes Teil am Band; ein Bilderkennungsmodell (Computer Vision, Kap. 1) vergleicht es mit „gut"-Beispielen und sortiert fehlerhafte Teile in Millisekunden aus. Das ist schneller, gleichmäßiger und ermüdungsfrei im Vergleich zur Sichtprüfung durch Menschen – die dafür schwierige Grenzfälle beurteilen.</p>
 </div>
 <hr />
-<h2 id="243-voraussetzungen-und-grenzen">24.3 Voraussetzungen und Grenzen<a class="headerlink" href="#243-voraussetzungen-und-grenzen" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Vernetzung:</strong> Maschinen müssen Daten liefern (nicht überall gegeben)</li>
-<li><strong>Datenqualität:</strong> verlässliche, kontinuierliche Messwerte</li>
-<li><strong>Integration:</strong> KI-Ergebnisse müssen in Steuerung/Abläufe zurückfließen</li>
-<li><strong>Sicherheit:</strong> Produktionssysteme brauchen besonderen Schutz</li>
-</ul>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="244-der-digitale-zwilling">24.4 Der digitale Zwilling<a class="headerlink" href="#244-der-digitale-zwilling" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>digitaler Zwilling</strong> ist ein virtuelles Abbild einer realen Maschine oder Anlage, gespeist mit deren Echtzeitdaten. Man kann daran <strong>testen und simulieren</strong>, ohne die echte Produktion zu stören.</p>
+<div class="admonition example">
+<p class="admonition-title">Nutzen</p>
+<p>„Was passiert, wenn wir die Taktrate um 10 % erhöhen?" – statt es riskant an der echten Anlage auszuprobieren, simuliert man es am digitalen Zwilling. KI hilft, aus den Daten realistische Vorhersagen zu treffen und Optimierungen zu finden.</p>
+</div>
+<hr />
+<h2 id="245-wo-copilot-in-der-produktion-passt-und-wo-nicht">24.5 Wo Copilot in der Produktion passt – und wo nicht<a class="headerlink" href="#245-wo-copilot-in-der-produktion-passt-und-wo-nicht" title="Permanent link">&para;</a></h2>
+<p>Wichtig zur Einordnung: <strong>Copilot ist kein Maschinensteuerungs-System.</strong> Die eigentliche Produktions-KI (Bilderkennung, Steuerung, Predictive Maintenance) sind Spezialsysteme. Copilot hilft am <strong>Rand</strong> – bei Wissen, Kommunikation und Auswertung:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schichtberichte</td>
+<td>„Fasse diese Schichtprotokolle zu den wichtigsten Vorfällen zusammen."</td>
+</tr>
+<tr>
+<td>Störungsanalyse</td>
+<td>„Erkläre mögliche Ursachen für Fehlercode X und Prüfschritte."</td>
+</tr>
+<tr>
+<td>Doku &amp; Anleitungen</td>
+<td>„Erstelle eine verständliche Kurzanleitung aus diesem Handbuchauszug."</td>
+</tr>
+<tr>
+<td>Auswertung</td>
+<td>„Welche Auffälligkeiten zeigt diese Ausschuss-Statistik (Excel)?"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre am Beispiel einer Smart Factory, welche Daten für KI in der Produktion
-nötig sind und nenne 4 konkrete KI-Anwendungen mit ihrem jeweiligen Nutzen.
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier sind die Schichtprotokolle der letzten Woche: [Text]. Fasse die häufigsten
+Störungen zusammen, ordne sie nach Häufigkeit und schlage vor, welche zuerst
+untersucht werden sollten.
 </code></pre></div></td></tr></table></div>
 <div class="admonition warning">
-<p class="admonition-title">Copilot ist nicht die Maschinensteuerung</p>
-<p>Werkzeuge wie Copilot helfen bei <strong>Planung, Auswertung und Dokumentation</strong>. Die <strong>Echtzeit-Steuerung</strong> von Anlagen übernehmen spezialisierte Industrie-KI-Systeme.</p>
+<p class="admonition-title">Klare Grenze</p>
+<p>Sicherheitskritische Steuerungsentscheidungen trifft <strong>kein</strong> Sprachmodell. Copilot unterstützt bei <strong>Information und Kommunikation</strong>, nicht bei der Echtzeit-Maschinensteuerung. Diese Trennung ist für die Anlagensicherheit essenziell.</p>
 </div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In der Produktion ist KI das „Gehirn" von <strong>Industrie 4.0</strong> – oft in <strong>Echtzeit</strong> direkt an der Maschine.</li>
+<li>Grundlage sind <strong>Sensoren/IoT-Daten</strong>; Anwendungen reichen von <strong>Qualitätskontrolle</strong> bis <strong>Planung</strong>.</li>
+<li>Der <strong>digitale Zwilling</strong> erlaubt gefahrloses Simulieren und Optimieren.</li>
+<li><strong>Copilot</strong> unterstützt am Rand (Berichte, Doku, Auswertung) – <strong>nicht</strong> die sicherheitskritische Steuerung.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

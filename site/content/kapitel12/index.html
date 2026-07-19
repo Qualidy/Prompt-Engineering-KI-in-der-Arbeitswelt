@@ -697,21 +697,72 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="12.2 Die drei Lernarten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uberwachtes-lernen-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Überwachtes Lernen (Supervised Learning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unuberwachtes-lernen-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unüberwachtes Lernen (Unsupervised Learning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bestarkendes-lernen-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bestärkendes Lernen (Reinforcement Learning)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#123-training-test-und-overfitting" class="md-nav__link">
+  <a href="#123-grundbegriffe-features-labels-training" class="md-nav__link">
     <span class="md-ellipsis">
-      12.3 Training, Test und Overfitting
+      12.3 Grundbegriffe: Features, Labels, Training
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#124-bezug-zu-copilot" class="md-nav__link">
+  <a href="#124-overfitting-auswendig-lernen-statt-verstehen" class="md-nav__link">
     <span class="md-ellipsis">
-      12.4 Bezug zu Copilot
+      12.4 Overfitting: auswendig lernen statt verstehen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-ml-in-der-praxis-und-in-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.5 ML in der Praxis und in Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1120,73 +1171,176 @@
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Was <strong>Machine Learning (ML)</strong> ist und wie es sich vom klassischen Programmieren unterscheidet</li>
-<li>Die drei <strong>Lernarten</strong>: überwacht, unüberwacht, verstärkend</li>
-<li>Wie <strong>Training, Test und Overfitting</strong> zusammenhängen</li>
-<li>Warum ML die Grundlage für Copilot &amp; Co. ist</li>
+<li>Die drei <strong>Lernarten</strong>: überwachtes, unüberwachtes und bestärkendes Lernen</li>
+<li>Wie ein Modell <strong>trainiert, getestet</strong> und bewertet wird – mit dem Begriff <strong>Overfitting</strong></li>
+<li>Was <strong>Features, Labels, Training/Test-Split</strong> bedeuten</li>
+<li>Wo ML in Copilot steckt und wo die Grenzen der „Blackbox" liegen</li>
 </ul>
 </div>
 <hr />
 <h2 id="121-was-ist-machine-learning">12.1 Was ist Machine Learning?<a class="headerlink" href="#121-was-ist-machine-learning" title="Permanent link">&para;</a></h2>
-<p><strong>Machine Learning</strong> ist der Teil der KI, bei dem Systeme aus <strong>Beispielen</strong> lernen, statt fest programmiert zu werden. Das Modell erkennt <strong>Muster</strong> in Trainingsdaten und wendet sie auf neue Fälle an.</p>
+<p><strong>Machine Learning</strong> ist das Herzstück moderner KI: Statt Regeln vorzugeben, lernt das System <strong>Muster aus Beispielen</strong>. Man zeigt dem Computer viele Daten, und er leitet selbst eine Regel ab.</p>
 <pre class="mermaid"><code>flowchart LR
-    A([Trainingsdaten]) --&gt; B([Lernverfahren])
-    B --&gt; C([Modell])
-    D([Neue Daten]) --&gt; C
+    A([Beispieldaten]) --&gt; B([Lernalgorithmus])
+    B --&gt; C([Modell = gelernte Regel])
+    D([neue Daten]) --&gt; C
     C --&gt; E([Vorhersage])</code></pre>
-<hr />
-<h2 id="122-die-drei-lernarten">12.2 Die drei Lernarten<a class="headerlink" href="#122-die-drei-lernarten" title="Permanent link">&para;</a></h2>
+<p><strong>Vergleich mit klassischem Programmieren:</strong></p>
 <table>
 <thead>
 <tr>
-<th>Lernart</th>
-<th>Prinzip</th>
-<th>Beispiel</th>
+<th></th>
+<th>Klassisch</th>
+<th>Machine Learning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Überwacht</strong> (supervised)</td>
-<td>Lernen mit „richtigen Antworten" (Labels)</td>
-<td>Spam / kein Spam</td>
+<td>Eingabe</td>
+<td>Regeln + Daten</td>
+<td>Daten + gewünschte Ergebnisse</td>
 </tr>
 <tr>
-<td><strong>Unüberwacht</strong> (unsupervised)</td>
-<td>Muster ohne Vorgaben finden</td>
-<td>Kundensegmente bilden</td>
+<td>Der Mensch liefert</td>
+<td>die Regel</td>
+<td>die Beispiele</td>
 </tr>
 <tr>
-<td><strong>Verstärkend</strong> (reinforcement)</td>
-<td>Lernen durch Belohnung/Bestrafung</td>
-<td>Spiel- und Steuerungsaufgaben</td>
+<td>Ergebnis</td>
+<td>Ausgabe</td>
+<td>die <strong>Regel</strong> (das Modell)</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
-<p class="admonition-title">Klassifikation vs. Regression</p>
-<p>Beim überwachten Lernen unterscheidet man <strong>Klassifikation</strong> (Kategorie vorhersagen, z. B. „Spam") und <strong>Regression</strong> (Zahl vorhersagen, z. B. „Umsatz nächsten Monat").</p>
+<p class="admonition-title">Der Perspektivwechsel</p>
+<p>Beim klassischen Programmieren schreibt der Mensch die Regel und der Computer wendet sie an. Beim ML liefert der Mensch <strong>Beispiele mit Ergebnis</strong>, und der Computer <strong>findet die Regel selbst</strong>. Genau deshalb kann ML Aufgaben lösen, für die niemand eine explizite Regel formulieren könnte (z. B. „Ist auf diesem Foto eine Katze?").</p>
 </div>
 <hr />
-<h2 id="123-training-test-und-overfitting">12.3 Training, Test und Overfitting<a class="headerlink" href="#123-training-test-und-overfitting" title="Permanent link">&para;</a></h2>
-<p>Daten werden aufgeteilt:</p>
+<h2 id="122-die-drei-lernarten">12.2 Die drei Lernarten<a class="headerlink" href="#122-die-drei-lernarten" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A([Machine Learning]) --&gt; B([Überwachtes Lernen])
+    A --&gt; C([Unüberwachtes Lernen])
+    A --&gt; D([Bestärkendes Lernen])</code></pre>
+<h3 id="uberwachtes-lernen-supervised-learning">Überwachtes Lernen (Supervised Learning)<a class="headerlink" href="#uberwachtes-lernen-supervised-learning" title="Permanent link">&para;</a></h3>
+<p>Das System lernt aus Beispielen <strong>mit bekannter Antwort</strong> (Label). Ziel: die richtige Antwort für <strong>neue</strong> Fälle vorhersagen.</p>
 <ul>
-<li><strong>Trainingsdaten</strong> – das Modell lernt daraus</li>
-<li><strong>Testdaten</strong> – prüfen, ob das Modell auch auf <strong>neue</strong> Daten passt</li>
+<li><strong>Klassifikation:</strong> Kategorie vorhersagen („Spam / kein Spam", „Kunde kündigt / bleibt")</li>
+<li><strong>Regression:</strong> Zahl vorhersagen (Umsatz, Preis, Temperatur)</li>
+<li>Beispiel: 10.000 als Spam/kein Spam markierte Mails → Modell erkennt neue Spam-Mails</li>
 </ul>
-<pre class="mermaid"><code>flowchart LR
-    A([Alle Daten]) --&gt; B([Trainingsdaten ~80%])
-    A --&gt; C([Testdaten ~20%])</code></pre>
-<div class="admonition warning">
-<p class="admonition-title">Overfitting</p>
-<p><strong>Overfitting</strong> heißt: Das Modell „lernt die Trainingsdaten auswendig" und versagt bei neuen Daten. Man erkennt es daran, dass es im Training top, im Test aber schlecht abschneidet.</p>
+<h3 id="unuberwachtes-lernen-unsupervised-learning">Unüberwachtes Lernen (Unsupervised Learning)<a class="headerlink" href="#unuberwachtes-lernen-unsupervised-learning" title="Permanent link">&para;</a></h3>
+<p>Das System bekommt Daten <strong>ohne</strong> vorgegebene Antworten und sucht selbst <strong>Strukturen</strong>.</p>
+<ul>
+<li><strong>Clustering:</strong> ähnliche Gruppen finden (z. B. Kundensegmente)</li>
+<li><strong>Ausreißererkennung:</strong> Auffälligkeiten finden (z. B. Betrug)</li>
+<li>Beispiel: Kunden nach Kaufverhalten automatisch in Gruppen einteilen</li>
+</ul>
+<h3 id="bestarkendes-lernen-reinforcement-learning">Bestärkendes Lernen (Reinforcement Learning)<a class="headerlink" href="#bestarkendes-lernen-reinforcement-learning" title="Permanent link">&para;</a></h3>
+<p>Das System lernt durch <strong>Ausprobieren und Belohnung</strong> – Details in Kapitel 17.</p>
+<table>
+<thead>
+<tr>
+<th>Lernart</th>
+<th>Braucht Labels?</th>
+<th>Typische Aufgabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Überwacht</td>
+<td>ja</td>
+<td>Vorhersagen (Klassifikation/Regression)</td>
+</tr>
+<tr>
+<td>Unüberwacht</td>
+<td>nein</td>
+<td>Strukturen/Gruppen finden</td>
+</tr>
+<tr>
+<td>Bestärkend</td>
+<td>Belohnungssignal</td>
+<td>Verhalten/Strategie lernen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="123-grundbegriffe-features-labels-training">12.3 Grundbegriffe: Features, Labels, Training<a class="headerlink" href="#123-grundbegriffe-features-labels-training" title="Permanent link">&para;</a></h2>
+<p>Ein einfaches Beispiel: <strong>Wird ein Kunde kündigen?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Bedeutung</th>
+<th>Im Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Feature</strong> (Merkmal)</td>
+<td>Eingabegröße</td>
+<td>Vertragsdauer, Nutzung, Reklamationen</td>
+</tr>
+<tr>
+<td><strong>Label</strong> (Zielwert)</td>
+<td>gewünschte Antwort</td>
+<td>„gekündigt: ja/nein"</td>
+</tr>
+<tr>
+<td><strong>Trainingsdaten</strong></td>
+<td>Beispiele zum Lernen</td>
+<td>8.000 alte Kundenfälle</td>
+</tr>
+<tr>
+<td><strong>Testdaten</strong></td>
+<td>Beispiele zum Prüfen</td>
+<td>2.000 zurückgehaltene Fälle</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Warum Training UND Test getrennt sein müssen</p>
+<p>Man teilt die Daten auf: Mit den <strong>Trainingsdaten</strong> lernt das Modell, mit den <strong>zurückgehaltenen Testdaten</strong> prüft man, ob es auch bei <strong>unbekannten</strong> Fällen funktioniert. Würde man mit denselben Daten lernen und testen, wäre das wie eine Prüfung, deren Lösungen man vorher gesehen hat – das Ergebnis wäre wertlos.</p>
 </div>
 <hr />
-<h2 id="124-bezug-zu-copilot">12.4 Bezug zu Copilot<a class="headerlink" href="#124-bezug-zu-copilot" title="Permanent link">&para;</a></h2>
-<p>Copilot beruht auf einem <strong>großen, vortrainierten</strong> ML-Modell (einem LLM). Du trainierst es nicht selbst – du <strong>nutzt</strong> es über Prompts. Das Verständnis von ML hilft dir, seine Stärken und Grenzen einzuschätzen.</p>
+<h2 id="124-overfitting-auswendig-lernen-statt-verstehen">12.4 Overfitting: auswendig lernen statt verstehen<a class="headerlink" href="#124-overfitting-auswendig-lernen-statt-verstehen" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Modell zu einfach]) --&gt; B([Underfitting: erkennt Muster kaum])
+    C([Modell genau richtig]) --&gt; D([lernt echtes Muster])
+    E([Modell zu komplex]) --&gt; F([Overfitting: lernt Zufall auswendig])</code></pre>
+<p><strong>Overfitting</strong> ist der häufigste Fehler: Das Modell lernt die Trainingsdaten <em>zu gut</em> – inklusive Zufälligkeiten und Rauschen. Es glänzt beim Training, versagt aber bei neuen Daten.</p>
+<div class="admonition example">
+<p class="admonition-title">Analogie</p>
+<p>Ein Schüler, der die Lösungen der Übungsklausur <strong>auswendig</strong> lernt, besteht die Übung glänzend – fällt aber durch die echte Klausur mit neuen Fragen. Genau das ist Overfitting. Deshalb ist die Prüfung an <strong>Testdaten</strong> so wichtig.</p>
+</div>
+<hr />
+<h2 id="125-ml-in-der-praxis-und-in-copilot">12.5 ML in der Praxis und in Copilot<a class="headerlink" href="#125-ml-in-der-praxis-und-in-copilot" title="Permanent link">&para;</a></h2>
+<p>Als Copilot-Nutzer:in trainierst du keine eigenen ML-Modelle – aber das Verständnis hilft dir, Ergebnisse einzuordnen:</p>
+<ul>
+<li><strong>Copilot beruht auf ML</strong> (genauer: Deep Learning, Kap. 15). Es hat aus riesigen Textmengen Muster gelernt.</li>
+<li><strong>Es ist eine Blackbox:</strong> Warum genau eine bestimmte Antwort kommt, ist von außen nicht nachvollziehbar (Erklärbarkeit, Kap. 34).</li>
+<li><strong>Es rät auf Basis von Wahrscheinlichkeiten</strong> – daher können Antworten überzeugend klingen und trotzdem falsch sein.</li>
+</ul>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den Unterschied zwischen überwachtem und unüberwachtem Lernen an je
-einem Beispiel aus dem Vertrieb. Nenne, welche Daten man jeweils braucht.
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den Unterschied zwischen überwachtem und unüberwachtem Lernen an einem
+Beispiel aus dem Marketing. Nenne für beide je eine konkrete Geschäftsfrage,
+die sich damit beantworten lässt.
 </code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Merke</p>
+<p>ML ist der Grund, warum Copilot flexibel wirkt – und zugleich der Grund, warum es <strong>irren</strong> kann. Wer versteht, dass ein Modell nur <strong>Wahrscheinlichkeiten</strong> aus Mustern zieht, prüft Ergebnisse selbstverständlicher.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Machine Learning</strong> lernt Regeln aus Beispielen, statt sie vorzugeben.</li>
+<li>Drei Lernarten: <strong>überwacht</strong> (mit Labels), <strong>unüberwacht</strong> (Strukturen finden), <strong>bestärkend</strong> (Belohnung).</li>
+<li>Zentrale Begriffe: <strong>Features, Labels, Training-/Test-Split</strong>; getestet wird an <strong>unbekannten</strong> Daten.</li>
+<li><strong>Overfitting</strong> = auswendig lernen statt verstehen – der häufigste Fehler.</li>
+<li>Copilot beruht auf ML, ist eine <strong>Blackbox</strong> und rät nach <strong>Wahrscheinlichkeit</strong> – deshalb prüfen.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

@@ -917,36 +917,69 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#301-was-ist-low-codeno-code" class="md-nav__link">
+  <a href="#301-was-ist-low-code-no-code" class="md-nav__link">
     <span class="md-ellipsis">
-      30.1 Was ist Low-Code/No-Code?
+      30.1 Was ist Low-Code / No-Code?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#302-citizen-development" class="md-nav__link">
+  <a href="#302-der-citizen-developer" class="md-nav__link">
     <span class="md-ellipsis">
-      30.2 Citizen Development
+      30.2 Der Citizen Developer
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#303-ki-low-code-microsoft-power-platform" class="md-nav__link">
+  <a href="#303-die-microsoft-power-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      30.3 KI + Low-Code: Microsoft Power Platform
+      30.3 Die Microsoft Power Platform
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="30.3 Die Microsoft Power Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copilot-studio-eigene-ki-assistenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot Studio: eigene KI-Assistenten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#304-ki-low-code-starke-kombination" class="md-nav__link">
+    <span class="md-ellipsis">
+      30.4 KI + Low-Code = starke Kombination
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#304-chancen-und-risiken" class="md-nav__link">
+  <a href="#305-chancen-und-risiken-governance" class="md-nav__link">
     <span class="md-ellipsis">
-      30.4 Chancen und Risiken
+      30.5 Chancen und Risiken (Governance)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1165,15 +1198,16 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>Low-Code/No-Code</strong> bedeutet</li>
-<li>Wer ein <strong>Citizen Developer</strong> ist</li>
-<li>Wie <strong>KI</strong> und Low-Code zusammenspielen (z. B. Microsoft Power Platform)</li>
-<li>Chancen und Risiken für Unternehmen</li>
+<li>Was <strong>Low-Code / No-Code</strong> bedeutet und wer damit arbeitet</li>
+<li>Das Konzept des <strong>Citizen Developers</strong> (Fachanwender ohne Programmierausbildung)</li>
+<li>Wie KI und Low-Code zusammenwirken – bis hin zu <strong>eigenen Copilot-Agenten</strong></li>
+<li>Ein Überblick über die <strong>Microsoft Power Platform</strong> und <strong>Copilot Studio</strong></li>
+<li>Welche <strong>Chancen und Risiken (Governance)</strong> damit verbunden sind</li>
 </ul>
 </div>
 <hr />
-<h2 id="301-was-ist-low-codeno-code">30.1 Was ist Low-Code/No-Code?<a class="headerlink" href="#301-was-ist-low-codeno-code" title="Permanent link">&para;</a></h2>
-<p><strong>Low-Code</strong>- und <strong>No-Code</strong>-Plattformen ermöglichen es, Anwendungen weitgehend <strong>ohne</strong> klassisches Programmieren zu erstellen – per Baukasten, Drag-and-drop und Vorlagen.</p>
+<h2 id="301-was-ist-low-code-no-code">30.1 Was ist Low-Code / No-Code?<a class="headerlink" href="#301-was-ist-low-code-no-code" title="Permanent link">&para;</a></h2>
+<p><strong>Low-Code</strong>- und <strong>No-Code</strong>-Plattformen erlauben es, Anwendungen und Automatisierungen <strong>überwiegend visuell</strong> zu erstellen – per Baukasten, statt Zeile für Zeile zu programmieren.</p>
 <table>
 <thead>
 <tr>
@@ -1183,68 +1217,121 @@
 </thead>
 <tbody>
 <tr>
-<td>No-Code</td>
-<td>ganz ohne Code, rein visuell</td>
+<td><strong>No-Code</strong></td>
+<td>ganz ohne Programmierung, rein visuell</td>
 </tr>
 <tr>
-<td>Low-Code</td>
-<td>überwiegend visuell, wenig Code für Sonderfälle</td>
+<td><strong>Low-Code</strong></td>
+<td>wenig Code, meist visuell + optionale Anpassungen</td>
+</tr>
+<tr>
+<td><strong>Pro-Code</strong></td>
+<td>klassische Programmierung</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="302-citizen-development">30.2 Citizen Development<a class="headerlink" href="#302-citizen-development" title="Permanent link">&para;</a></h2>
-<p>Ein <strong>Citizen Developer</strong> ist eine Fachkraft <strong>ohne</strong> Informatikausbildung, die mit Low-Code eigene Lösungen baut – z. B. eine App zur Urlaubsverwaltung oder einen automatisierten Genehmigungs-Workflow.</p>
-<pre class="mermaid"><code>flowchart LR
-    A([Fachkraft mit Problem]) --&gt; B([Low-Code-Plattform])
-    B --&gt; C([eigene App/Automatisierung])
-    C --&gt; D([Problem im Team gelöst])</code></pre>
 <div class="admonition info">
-<p class="admonition-title">Warum das boomt</p>
-<p>Fachbereiche kennen ihre Probleme am besten. Low-Code erlaubt es ihnen, kleine Lösungen <strong>selbst</strong> zu bauen – schnell und ohne lange IT-Warteschlange.</p>
+<p class="admonition-title">Warum das wichtig ist</p>
+<p>Klassische Softwareentwicklung ist knapp und teuer – IT-Abteilungen kommen mit Anfragen nicht hinterher. Low-Code verschiebt einfache Automatisierungen zu den <strong>Fachbereichen</strong>, die ihre Probleme am besten kennen. Zusammen mit KI (die z. B. aus einer Beschreibung eine App-Idee erzeugt) senkt das die Hürde noch weiter.</p>
 </div>
 <hr />
-<h2 id="303-ki-low-code-microsoft-power-platform">30.3 KI + Low-Code: Microsoft Power Platform<a class="headerlink" href="#303-ki-low-code-microsoft-power-platform" title="Permanent link">&para;</a></h2>
-<p>Microsofts <strong>Power Platform</strong> (Power Apps, Power Automate, Copilot Studio) verbindet Low-Code mit KI:</p>
-<ul>
-<li><strong>Power Apps:</strong> Apps per Baukasten</li>
-<li><strong>Power Automate:</strong> Abläufe automatisieren</li>
-<li><strong>Copilot Studio:</strong> eigene Chatbots/Agenten ohne tiefes Coding</li>
-<li><strong>Copilot-Beschreibung:</strong> App/Flow per <strong>natürlicher Sprache</strong> erzeugen lassen</li>
-</ul>
-<p><strong>Copilot-Prompt-Idee (in Power Platform):</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle eine App, mit der Mitarbeitende Urlaubsanträge einreichen und
-Vorgesetzte sie genehmigen können. Speichere die Anträge in einer Liste.
-</code></pre></div></td></tr></table></div>
+<h2 id="302-der-citizen-developer">30.2 Der Citizen Developer<a class="headerlink" href="#302-der-citizen-developer" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>Citizen Developer</strong> ist ein <strong>Fachanwender ohne Programmierausbildung</strong>, der mit Low-Code-Werkzeugen eigene Lösungen baut – z. B. eine Sachbearbeiterin, die einen Genehmigungs-Workflow automatisiert.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Fachbereich kennt das Problem]) --&gt; B([baut Lösung per Low-Code])
+    B --&gt; C([schnelle Automatisierung ohne IT-Stau])
+    C --&gt; D([IT sorgt für Rahmen &amp; Sicherheit])</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Typisches Beispiel</p>
+<p>Statt monatelang auf eine IT-Lösung zu warten, baut die Einkaufsabteilung selbst ein kleines Genehmigungsformular: Antrag ausfüllen → automatische Weiterleitung an die Führungskraft → bei Freigabe Eintrag in eine Liste + Benachrichtigung. Früher ein IT-Projekt, heute eine Nachmittagsaufgabe – mit den richtigen Werkzeugen und <strong>Leitplanken</strong>.</p>
+</div>
 <hr />
-<h2 id="304-chancen-und-risiken">30.4 Chancen und Risiken<a class="headerlink" href="#304-chancen-und-risiken" title="Permanent link">&para;</a></h2>
+<h2 id="303-die-microsoft-power-platform">30.3 Die Microsoft Power Platform<a class="headerlink" href="#303-die-microsoft-power-platform" title="Permanent link">&para;</a></h2>
+<p>Microsofts Low-Code-Baukasten, eng mit Copilot verzahnt:</p>
 <table>
 <thead>
 <tr>
-<th>Chancen</th>
-<th>Risiken</th>
+<th>Werkzeug</th>
+<th>Wofür</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>schnelle Lösungen</td>
-<td>Wildwuchs („Schatten-IT")</td>
+<td><strong>Power Apps</strong></td>
+<td>eigene Apps ohne (viel) Code bauen</td>
+</tr>
+<tr>
+<td><strong>Power Automate</strong></td>
+<td>Abläufe automatisieren (Workflows)</td>
+</tr>
+<tr>
+<td><strong>Power BI</strong></td>
+<td>Daten auswerten und visualisieren</td>
+</tr>
+<tr>
+<td><strong>Copilot Studio</strong></td>
+<td>eigene KI-Assistenten/Chatbots bauen</td>
+</tr>
+</tbody>
+</table>
+<h3 id="copilot-studio-eigene-ki-assistenten">Copilot Studio: eigene KI-Assistenten<a class="headerlink" href="#copilot-studio-eigene-ki-assistenten" title="Permanent link">&para;</a></h3>
+<p>Mit <strong>Copilot Studio</strong> kann man – weitgehend ohne Programmierung – <strong>eigene Copilot-Agenten</strong> erstellen: z. B. einen Assistenten, der Fragen zum internen Urlaubsprozess beantwortet, indem er auf die Personalrichtlinien zugreift (RAG, Kap. 5). Man definiert Rolle, Wissensquellen und erlaubte Aktionen – der Bogen zu den KI-Agenten aus Kapitel 5.</p>
+<hr />
+<h2 id="304-ki-low-code-starke-kombination">30.4 KI + Low-Code = starke Kombination<a class="headerlink" href="#304-ki-low-code-starke-kombination" title="Permanent link">&para;</a></h2>
+<p>KI verstärkt Low-Code auf zwei Ebenen:</p>
+<ol>
+<li><strong>KI beim Bauen:</strong> Man beschreibt in Worten, was man will, und die Plattform erzeugt einen ersten Entwurf der App/des Workflows.</li>
+<li><strong>KI in der Lösung:</strong> Die gebaute Anwendung nutzt selbst KI (z. B. ein Chatbot, eine automatische Klassifikation von Anfragen).</li>
+</ol>
+<p><strong>Beispiel-Prompt (Konzept mit Copilot vorbereiten):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich möchte einen einfachen Genehmigungsprozess für Urlaubsanträge
+automatisieren. Beschreibe Schritt für Schritt, wie ich das mit Power Automate
+umsetzen könnte, welche Auslöser und Aktionen ich brauche und worauf ich beim
+Datenschutz achten muss.
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="305-chancen-und-risiken-governance">30.5 Chancen und Risiken (Governance)<a class="headerlink" href="#305-chancen-und-risiken-governance" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Chance</th>
+<th>Risiko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>schnelle Lösungen aus dem Fachbereich</td>
+<td>Wildwuchs unkontrollierter Apps</td>
 </tr>
 <tr>
 <td>Entlastung der IT</td>
 <td>Sicherheits-/Datenschutzlücken</td>
 </tr>
 <tr>
-<td>Innovation im Fachbereich</td>
-<td>fehlende Wartung/Dokumentation</td>
+<td>mehr Innovation an der Basis</td>
+<td>„Schatten-IT" ohne Wartung</td>
+</tr>
+<tr>
+<td>KI senkt Einstiegshürde weiter</td>
+<td>schlecht gebaute, fehleranfällige Lösungen</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition warning">
-<p class="admonition-title">Governance nötig</p>
-<p>Citizen Development braucht <strong>Leitplanken</strong>: Wer darf was bauen? Wo liegen Daten? Wer betreut die Lösung? Ohne Regeln entstehen Sicherheits- und Wartungsprobleme.</p>
+<p class="admonition-title">Ohne Governance wird Low-Code zum Risiko</p>
+<p>Wenn jeder unkontrolliert Apps baut, entstehen Sicherheitslücken, doppelte Lösungen und „Schatten-IT", die niemand wartet. Erfolgreiche Unternehmen geben Citizen Developers <strong>klare Leitplanken</strong>: Welche Daten dürfen genutzt werden? Wer prüft und betreibt die Lösung? Das ist Teil der <strong>Data Governance</strong> (Kap. 11) und des verantwortungsvollen KI-Einsatzes (Block 4).</p>
 </div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Low-Code/No-Code</strong> erlaubt Anwendungen per Baukasten – <strong>Citizen Developers</strong> lösen eigene Probleme.</li>
+<li>Die <strong>Power Platform</strong> (Power Apps, Automate, BI) und <strong>Copilot Studio</strong> sind Microsofts Werkzeuge dafür.</li>
+<li>KI wirkt doppelt: sie hilft <strong>beim Bauen</strong> und steckt <strong>in der Lösung</strong> (z. B. eigene Copilot-Agenten).</li>
+<li>Ohne <strong>Governance</strong> droht Wildwuchs und Schatten-IT – Leitplanken sind Pflicht.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

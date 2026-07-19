@@ -848,27 +848,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#271-steuerung-vs-regelung" class="md-nav__link">
+  <a href="#271-was-ist-prozessregulierung" class="md-nav__link">
     <span class="md-ellipsis">
-      27.1 Steuerung vs. Regelung
+      27.1 Was ist Prozessregulierung?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#272-wie-ki-die-regelung-erganzt" class="md-nav__link">
+  <a href="#272-wie-ki-die-regelung-verbessert" class="md-nav__link">
     <span class="md-ellipsis">
-      27.2 Wie KI die Regelung ergänzt
+      27.2 Wie KI die Regelung verbessert
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#273-praxisbeispiel-energieoptimierte-prozessfuhrung" class="md-nav__link">
+  <a href="#273-beispiele-aus-der-praxis" class="md-nav__link">
     <span class="md-ellipsis">
-      27.3 Praxisbeispiel: Energieoptimierte Prozessführung
+      27.3 Beispiele aus der Praxis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#274-grenzen-und-sicherheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.4 Grenzen und Sicherheit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#275-wo-copilot-hilft" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.5 Wo Copilot hilft
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1156,72 +1183,153 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>Prozessregulierung</strong> (Regelung/Steuerung) bedeutet</li>
-<li>Wie KI klassische Regelungstechnik ergänzt</li>
-<li>Der Unterschied zwischen <strong>Steuerung</strong> und <strong>Regelung</strong></li>
-<li>Ein <strong>Praxisbeispiel</strong> aus der Verfahrenstechnik</li>
+<li>Was mit <strong>Prozessregulierung / Regelung</strong> gemeint ist (Prozesse in einem Sollzustand halten)</li>
+<li>Der Unterschied zwischen <strong>Steuerung</strong> und <strong>Regelung</strong> (offener vs. geschlossener Regelkreis)</li>
+<li>Wie KI klassische Regelungen <strong>verbessert</strong> (adaptiv, vorausschauend)</li>
+<li>Beispiele aus <strong>Fertigung, Energie und Gebäudetechnik</strong></li>
+<li>Wo <strong>Copilot</strong> bei Analyse, Dokumentation und Compliance hilft</li>
 </ul>
 </div>
 <hr />
-<h2 id="271-steuerung-vs-regelung">27.1 Steuerung vs. Regelung<a class="headerlink" href="#271-steuerung-vs-regelung" title="Permanent link">&para;</a></h2>
+<h2 id="271-was-ist-prozessregulierung">27.1 Was ist Prozessregulierung?<a class="headerlink" href="#271-was-ist-prozessregulierung" title="Permanent link">&para;</a></h2>
+<p><strong>Prozessregulierung</strong> (Prozessregelung) bedeutet, einen Prozess automatisch in einem gewünschten <strong>Sollzustand</strong> zu halten – trotz Störungen von außen. Klassisches Beispiel: ein <strong>Thermostat</strong>, das eine Temperatur konstant hält.</p>
+<div class="admonition info">
+<p class="admonition-title">Steuerung vs. Regelung</p>
+<ul>
+<li><strong>Steuerung (offener Regelkreis):</strong> wirkt „blind" nach Plan, ohne das Ergebnis zurückzumelden. Beispiel: Heizung läuft feste 2 Stunden – egal wie warm es wird.</li>
+<li><strong>Regelung (geschlossener Regelkreis):</strong> misst das Ergebnis <strong>und korrigiert</strong> laufend. Beispiel: Thermostat misst die Temperatur und passt die Heizleistung an.</li>
+</ul>
+<p>Der <strong>Rückkopplung (Feedback)</strong> ist der Kern jeder Regelung.</p>
+</div>
+<pre class="mermaid"><code>flowchart LR
+    A([Sollwert]) --&gt; B([Regler])
+    B --&gt; C([Stellgröße an Prozess])
+    C --&gt; D([Prozess])
+    D --&gt; E([Istwert messen])
+    E --&gt; B</code></pre>
+<hr />
+<h2 id="272-wie-ki-die-regelung-verbessert">27.2 Wie KI die Regelung verbessert<a class="headerlink" href="#272-wie-ki-die-regelung-verbessert" title="Permanent link">&para;</a></h2>
+<p>Klassische Regler (z. B. PID-Regler) arbeiten mit festen Formeln und funktionieren gut bei einfachen, stabilen Prozessen. KI-gestützte Regelung geht darüber hinaus:</p>
 <table>
 <thead>
 <tr>
-<th>Begriff</th>
-<th>Prinzip</th>
-<th>Beispiel</th>
+<th>Klassische Regelung</th>
+<th>KI-gestützte Regelung</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Steuerung</strong></td>
-<td>fester Ablauf ohne Rückmeldung</td>
-<td>Heizung läuft nach Zeitplan</td>
+<td>feste Parameter</td>
+<td><strong>passt sich an</strong> (adaptiv)</td>
 </tr>
 <tr>
-<td><strong>Regelung</strong></td>
-<td>misst Ist-Wert, korrigiert laufend</td>
-<td>Thermostat hält 21 °C</td>
+<td>reagiert auf Ist-Abweichung</td>
+<td>kann <strong>vorausschauend</strong> eingreifen</td>
+</tr>
+<tr>
+<td>ein klar modellierbarer Prozess</td>
+<td>auch <strong>komplexe</strong>, schwer modellierbare Prozesse</td>
+</tr>
+<tr>
+<td>Mensch stellt Parameter ein</td>
+<td>lernt optimale Strategie (RL, Kap. 17)</td>
 </tr>
 </tbody>
 </table>
-<p>Eine <strong>Regelung</strong> vergleicht ständig Soll- und Ist-Wert und gleicht Abweichungen aus.</p>
-<pre class="mermaid"><code>flowchart LR
-    A([Sollwert]) --&gt; B([Regler])
-    B --&gt; C([Prozess/Anlage])
-    C --&gt; D([Istwert messen])
-    D --&gt; B</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Adaptiv statt starr</p>
+<p>Eine Klimaanlage mit klassischem Regler reagiert erst, <strong>wenn</strong> es zu warm ist. Eine KI-Regelung kann <strong>Wetterprognose, Belegung und Tageszeit</strong> einbeziehen und die Kühlung <strong>vorausschauend</strong> anpassen – das spart Energie und hält die Temperatur stabiler. Solche Ansätze nutzen oft <strong>Reinforcement Learning</strong> (Kap. 17).</p>
+</div>
 <hr />
-<h2 id="272-wie-ki-die-regelung-erganzt">27.2 Wie KI die Regelung ergänzt<a class="headerlink" href="#272-wie-ki-die-regelung-erganzt" title="Permanent link">&para;</a></h2>
-<p>Klassische Regler funktionieren gut bei klaren Zusammenhängen. Bei <strong>komplexen, nichtlinearen</strong> Prozessen mit vielen Einflussgrößen hilft KI:</p>
+<h2 id="273-beispiele-aus-der-praxis">27.3 Beispiele aus der Praxis<a class="headerlink" href="#273-beispiele-aus-der-praxis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>KI-Regelung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fertigung</td>
+<td>Prozessparameter (Druck, Temperatur) automatisch optimal halten</td>
+</tr>
+<tr>
+<td>Energie</td>
+<td>Stromnetze und Speicher ausbalancieren</td>
+</tr>
+<tr>
+<td>Gebäudetechnik</td>
+<td>Heizung/Kühlung/Licht bedarfsgerecht regeln</td>
+</tr>
+<tr>
+<td>Wasser/Chemie</td>
+<td>Dosierung präzise steuern</td>
+</tr>
+<tr>
+<td>Rechenzentren</td>
+<td>Kühlung energieoptimal regeln</td>
+</tr>
+</tbody>
+</table>
+<p>Der gemeinsame Nenner: ein <strong>kontinuierlicher Prozess</strong>, der stabil und effizient gehalten werden soll – und in dem viele Einflussgrößen zusammenwirken.</p>
+<hr />
+<h2 id="274-grenzen-und-sicherheit">27.4 Grenzen und Sicherheit<a class="headerlink" href="#274-grenzen-und-sicherheit" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Regelung ist sicherheitskritisch</p>
+<p>Reguliert eine KI einen physischen Prozess, sind Fehler potenziell <strong>gefährlich</strong> (Überhitzung, Überdruck). Deshalb gelten strenge Prinzipien:</p>
 <ul>
-<li>lernt Zusammenhänge aus Prozessdaten</li>
-<li>optimiert mehrere Ziele gleichzeitig (z. B. Qualität <strong>und</strong> Energie)</li>
-<li>reagiert auf Muster, die klassische Regler nicht erfassen</li>
+<li><strong>Grenzwerte/Notabschaltungen</strong> unabhängig von der KI absichern.</li>
+<li>Verhalten muss <strong>nachvollziehbar</strong> genug sein (Erklärbarkeit, Kap. 34).</li>
+<li>Ein Mensch (oder ein sicheres Basissystem) muss <strong>eingreifen</strong> können.</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Reinforcement Learning trifft Regelung</p>
-<p>Für Optimierungsaufgaben kommt oft <strong>Reinforcement Learning</strong> (Kapitel 17) zum Einsatz: Der Agent lernt, Stellgrößen so zu setzen, dass die Belohnung (z. B. Qualität pro Energieeinheit) maximal wird.</p>
+<p>Eine „Blackbox", die sicherheitsrelevante Ventile ungeprüft steuert, ist nicht akzeptabel.</p>
 </div>
 <hr />
-<h2 id="273-praxisbeispiel-energieoptimierte-prozessfuhrung">27.3 Praxisbeispiel: Energieoptimierte Prozessführung<a class="headerlink" href="#273-praxisbeispiel-energieoptimierte-prozessfuhrung" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Fallbeispiel Verfahrenstechnik</p>
-<p>In einer Anlage regelt eine KI Temperatur und Durchfluss so, dass die Produktqualität gehalten und <strong>Energie gespart</strong> wird.</p>
-<p><strong>Ergebnis:</strong> stabile Qualität bei geringerem Verbrauch.
-<strong>Grenze:</strong> Sicherheit hat Vorrang – kritische Grenzwerte überwacht weiterhin eine klassische, geprüfte Sicherheitssteuerung.</p>
-</div>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="275-wo-copilot-hilft">27.5 Wo Copilot hilft<a class="headerlink" href="#275-wo-copilot-hilft" title="Permanent link">&para;</a></h2>
+<p>Die eigentliche Regelung übernehmen <strong>Automatisierungs-/Steuerungssysteme</strong>, nicht Copilot. Copilot unterstützt bei den <strong>begleitenden</strong> Aufgaben:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Konzepte verstehen</td>
+<td>„Erkläre den Unterschied zwischen Steuerung und Regelung mit Beispiel."</td>
+</tr>
+<tr>
+<td>Datenauswertung</td>
+<td>„Welche Auffälligkeiten zeigen diese Prozess-Messwerte (Excel)?"</td>
+</tr>
+<tr>
+<td>Dokumentation</td>
+<td>„Erstelle aus diesen Stichpunkten eine Beschreibung des Regelkreises."</td>
+</tr>
+<tr>
+<td>Compliance</td>
+<td>„Fasse zusammen, welche Sicherheitsanforderungen ich beachten muss."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den Unterschied zwischen Steuerung und Regelung an einem Alltagsbeispiel.
-Beschreibe dann, wie KI eine Regelung bei einem komplexen Prozess verbessern kann
-und wo die Grenzen aus Sicherheitsgründen liegen.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre an einem Beispiel aus der Gebäudetechnik den Unterschied zwischen einer
+klassischen und einer KI-gestützten, vorausschauenden Regelung. Nenne je zwei
+Vorteile der KI-Variante und ein Sicherheitsrisiko, das ich absichern muss.
 </code></pre></div></td></tr></table></div>
-<div class="admonition warning">
-<p class="admonition-title">Sicherheit zuerst</p>
-<p>KI-Regelungen dürfen sicherheitskritische Grenzen <strong>nicht</strong> allein verantworten. Bewährte Sicherheitssysteme bleiben als Rückfallebene bestehen.</p>
-</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Prozessregulierung</strong> hält Prozesse per <strong>Rückkopplung</strong> im Sollzustand (Regelung = geschlossener Regelkreis).</li>
+<li>KI macht Regelungen <strong>adaptiv</strong> und <strong>vorausschauend</strong> – auch für komplexe Prozesse (oft mit RL).</li>
+<li>Anwendungen in <strong>Fertigung, Energie, Gebäudetechnik, Chemie, Rechenzentren</strong>.</li>
+<li>Regelung ist <strong>sicherheitskritisch</strong>: unabhängige Grenzwerte, Nachvollziehbarkeit, menschlicher Eingriff.</li>
+<li><strong>Copilot</strong> hilft bei Verständnis, Auswertung, Doku und Compliance – nicht bei der Echtzeit-Regelung.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

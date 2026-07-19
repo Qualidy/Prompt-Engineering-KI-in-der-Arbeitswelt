@@ -751,36 +751,78 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#151-was-ist-ein-llm" class="md-nav__link">
+  <a href="#151-was-ist-ein-large-language-model" class="md-nav__link">
     <span class="md-ellipsis">
-      15.1 Was ist ein LLM?
+      15.1 Was ist ein Large Language Model?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#152-das-grundprinzip-nachstes-wort-vorhersagen" class="md-nav__link">
+  <a href="#152-das-kernprinzip-das-nachste-wort-vorhersagen" class="md-nav__link">
     <span class="md-ellipsis">
-      15.2 Das Grundprinzip: nächstes Wort vorhersagen
+      15.2 Das Kernprinzip: das nächste Wort vorhersagen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#153-wichtige-begriffe" class="md-nav__link">
+  <a href="#153-wichtige-begriffe-verstehen" class="md-nav__link">
     <span class="md-ellipsis">
-      15.3 Wichtige Begriffe
+      15.3 Wichtige Begriffe verstehen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15.3 Wichtige Begriffe verstehen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#das-kontextfenster-eine-wichtige-grenze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Das Kontextfenster – eine wichtige Grenze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wissensstichtag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wissensstichtag
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#154-warum-llms-halluzinieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      15.4 Warum LLMs halluzinieren
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#154-wie-man-llms-programmiert" class="md-nav__link">
+  <a href="#155-llms-programmieren-mit-sprache" class="md-nav__link">
     <span class="md-ellipsis">
-      15.4 Wie man LLMs „programmiert"
+      15.5 LLMs „programmieren" – mit Sprache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1119,103 +1161,131 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was ein <strong>Large Language Model (LLM)</strong> ist</li>
-<li>Das Grundprinzip: <strong>Vorhersage des nächsten Wortes</strong></li>
-<li>Wichtige Begriffe: <strong>Kontextfenster</strong>, <strong>Temperatur</strong>, <strong>System-Prompt</strong></li>
-<li>Wie man LLMs „programmiert" – über Anweisungen statt klassischem Code</li>
+<li>Was ein <strong>Large Language Model (LLM)</strong> ist und wie es im Kern funktioniert</li>
+<li>Warum ein LLM „nur das nächste Wort vorhersagt" – und wieso das so mächtig ist</li>
+<li>Was <strong>Parameter, Kontextfenster, Tokens und Temperatur</strong> bedeuten</li>
+<li>Warum LLMs <strong>halluzinieren</strong> und was das für die Praxis heißt</li>
+<li>Wie man LLMs „programmiert" – nämlich mit <strong>Sprache (Prompts)</strong> statt Code</li>
 </ul>
 </div>
 <hr />
-<h2 id="151-was-ist-ein-llm">15.1 Was ist ein LLM?<a class="headerlink" href="#151-was-ist-ein-llm" title="Permanent link">&para;</a></h2>
-<p>Ein <strong>Large Language Model</strong> ist ein sehr großes, mit riesigen Textmengen trainiertes KI-Modell. Es kann Sprache verstehen und erzeugen. <strong>Copilot</strong>, ChatGPT und Gemini basieren auf LLMs.</p>
-<p>„Large" bezieht sich auf die <strong>Anzahl der Parameter</strong> (interne Stellschrauben) – oft viele Milliarden.</p>
+<h2 id="151-was-ist-ein-large-language-model">15.1 Was ist ein Large Language Model?<a class="headerlink" href="#151-was-ist-ein-large-language-model" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>Large Language Model</strong> ist ein sehr großes, mit riesigen Textmengen trainiertes neuronales Netz, das menschliche Sprache verstehen und erzeugen kann. „Large" bezieht sich auf die enorme Zahl an <strong>Parametern</strong> (Milliarden interner Stellschrauben) und die gewaltigen <strong>Trainingsdaten</strong> (großer Teil des öffentlichen Internets, Bücher, Code …).</p>
+<p>Die Modelle hinter <strong>Microsoft Copilot</strong> (aus der GPT-Familie, Kap. 16) sind solche LLMs.</p>
 <hr />
-<h2 id="152-das-grundprinzip-nachstes-wort-vorhersagen">15.2 Das Grundprinzip: nächstes Wort vorhersagen<a class="headerlink" href="#152-das-grundprinzip-nachstes-wort-vorhersagen" title="Permanent link">&para;</a></h2>
-<p>Ein LLM macht im Kern <strong>eine</strong> Sache extrem gut: Es sagt das <strong>wahrscheinlich nächste Wort</strong> (Token) voraus – und wiederholt das Wort für Wort.</p>
+<h2 id="152-das-kernprinzip-das-nachste-wort-vorhersagen">15.2 Das Kernprinzip: das nächste Wort vorhersagen<a class="headerlink" href="#152-das-kernprinzip-das-nachste-wort-vorhersagen" title="Permanent link">&para;</a></h2>
+<p>So verblüffend die Ergebnisse wirken – im Kern macht ein LLM <strong>eine</strong> Sache: Es sagt das <strong>wahrscheinlichste nächste Wort</strong> (genauer: Token) voraus, immer und immer wieder.</p>
 <pre class="mermaid"><code>flowchart LR
-    A(["Der Kunde bestellt eine ..."]) --&gt; B([LLM])
-    B --&gt; C(["... Rechnung? Pizza? Software?"])
-    C --&gt; D([wählt wahrscheinlichstes Wort])</code></pre>
+    A([Der Himmel ist ...]) --&gt; B([Modell berechnet Wahrscheinlichkeiten])
+    B --&gt; C([blau: 71% · bewölkt: 12% · hoch: 4% ...])
+    C --&gt; D([wählt Wort]) --&gt; E([hängt es an, wiederholt])</code></pre>
+<p>Das Modell erzeugt Text <strong>Wort für Wort</strong>: Es nimmt den bisherigen Text, berechnet für alle möglichen nächsten Wörter eine Wahrscheinlichkeit, wählt eines aus, hängt es an – und beginnt von vorn.</p>
 <div class="admonition info">
-<p class="admonition-title">Erstaunlich mächtig</p>
-<p>Aus diesem einfachen Prinzip entstehen zusammenhängende Texte, Übersetzungen und Code – weil das Modell dabei enorm viel Sprach- und Weltwissen aus dem Training nutzt.</p>
+<p class="admonition-title">Warum das ausreicht für 'Intelligenz'</p>
+<p>Man könnte meinen, „nur das nächste Wort raten" sei trivial. Aber um verlässlich das <em>richtige</em> nächste Wort zu wählen, muss das Modell Grammatik, Fakten, Logik und Stil <strong>implizit</strong> aus den Trainingsdaten gelernt haben. Aus dieser einen einfachen Aufgabe – konsequent im Riesenmaßstab – entstehen die erstaunlichen Fähigkeiten. Es ist <strong>statistische Mustervorhersage</strong>, kein Denken.</p>
 </div>
 <hr />
-<h2 id="153-wichtige-begriffe">15.3 Wichtige Begriffe<a class="headerlink" href="#153-wichtige-begriffe" title="Permanent link">&para;</a></h2>
+<h2 id="153-wichtige-begriffe-verstehen">15.3 Wichtige Begriffe verstehen<a class="headerlink" href="#153-wichtige-begriffe-verstehen" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Begriff</th>
 <th>Bedeutung</th>
-<th>Praxis</th>
+<th>Praktische Auswirkung</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><strong>Token</strong></td>
+<td>Wortbaustein (ca. 0,75 Wörter)</td>
+<td>Länge/Kosten werden in Tokens gemessen</td>
+</tr>
+<tr>
+<td><strong>Parameter</strong></td>
+<td>gelernte interne Stellschrauben</td>
+<td>mehr = i. d. R. leistungsfähiger</td>
+</tr>
+<tr>
 <td><strong>Kontextfenster</strong></td>
-<td>wie viel Text das Modell „gleichzeitig sehen" kann</td>
-<td>zu lange Eingaben werden abgeschnitten</td>
+<td>wie viel Text das Modell „gleichzeitig sieht"</td>
+<td>begrenzt, wie viel du eingeben kannst</td>
 </tr>
 <tr>
 <td><strong>Temperatur</strong></td>
-<td>wie „kreativ"/zufällig die Ausgabe ist</td>
-<td>niedrig = sachlich, hoch = kreativer</td>
+<td>Grad an Zufall/Kreativität</td>
+<td>niedrig = präzise, hoch = kreativ</td>
 </tr>
 <tr>
-<td><strong>System-Prompt</strong></td>
-<td>Grundanweisung, die das Verhalten festlegt</td>
-<td>z. B. „Antworte immer förmlich auf Deutsch"</td>
-</tr>
-<tr>
-<td><strong>Token</strong></td>
-<td>Text-Baustein (siehe Kapitel 13)</td>
-<td>Abrechnung/Limits erfolgen in Tokens</td>
+<td><strong>Training</strong></td>
+<td>einmaliges Lernen aus Daten</td>
+<td>danach ist Wissen „eingefroren"</td>
 </tr>
 </tbody>
 </table>
+<h3 id="das-kontextfenster-eine-wichtige-grenze">Das Kontextfenster – eine wichtige Grenze<a class="headerlink" href="#das-kontextfenster-eine-wichtige-grenze" title="Permanent link">&para;</a></h3>
+<p>Ein LLM kann nur eine <strong>begrenzte Menge Text</strong> auf einmal berücksichtigen (das Kontextfenster). Alles, was darüber hinausgeht, „vergisst" es.</p>
+<div class="admonition example">
+<p class="admonition-title">Praktische Folge</p>
+<p>Gibst du Copilot ein sehr langes Dokument, kann es sein, dass frühe Passagen weniger Gewicht bekommen. Abhilfe: in <strong>Abschnitte</strong> aufteilen, gezielt fragen, oder erst zusammenfassen lassen und dann auf der Zusammenfassung weiterarbeiten.</p>
+</div>
+<h3 id="wissensstichtag">Wissensstichtag<a class="headerlink" href="#wissensstichtag" title="Permanent link">&para;</a></h3>
+<p>Das Wissen eines LLM ist zum Zeitpunkt des Trainings <strong>eingefroren</strong>. Neuere Ereignisse kennt es nur, wenn es (wie Copilot per Websuche oder RAG, Kap. 5) zusätzliche, aktuelle Quellen bekommt.</p>
 <hr />
-<h2 id="154-wie-man-llms-programmiert">15.4 Wie man LLMs „programmiert"<a class="headerlink" href="#154-wie-man-llms-programmiert" title="Permanent link">&para;</a></h2>
-<p>Der große Unterschied zur klassischen Software: Du steuerst ein LLM überwiegend durch <strong>Sprache</strong>, nicht durch Code.</p>
+<h2 id="154-warum-llms-halluzinieren">15.4 Warum LLMs halluzinieren<a class="headerlink" href="#154-warum-llms-halluzinieren" title="Permanent link">&para;</a></h2>
+<p>Weil ein LLM immer das <strong>plausibelste</strong> nächste Wort wählt, kann es Inhalte erzeugen, die <strong>flüssig und überzeugend</strong> klingen, aber <strong>sachlich falsch</strong> sind. Das nennt man <strong>Halluzination</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Der zentrale Merksatz</p>
+<p>Ein LLM optimiert auf <strong>Plausibilität</strong>, nicht auf <strong>Wahrheit</strong>. Es „weiß" nicht, ob etwas stimmt – es erzeugt, was statistisch am besten passt. Erfundene Quellen, falsche Zahlen oder nicht existierende Paragraphen sind typische Halluzinationen. Deshalb gilt ausnahmslos: <strong>Fakten prüfen.</strong></p>
+</div>
+<p>Halluzinationen werden wahrscheinlicher, wenn:</p>
+<ul>
+<li>nach sehr spezifischen Fakten/Zahlen gefragt wird, die selten im Training vorkamen,</li>
+<li>die Frage außerhalb des Trainingswissens liegt (zu neu, zu speziell),</li>
+<li>der Prompt vage ist und das Modell „auffüllen" muss.</li>
+</ul>
+<p>Gegenmittel: <strong>Quellen mitgeben</strong> (RAG/Dokument-Upload), um <strong>Belege bitten</strong>, Ergebnisse <strong>gegenprüfen</strong>.</p>
+<hr />
+<h2 id="155-llms-programmieren-mit-sprache">15.5 LLMs „programmieren" – mit Sprache<a class="headerlink" href="#155-llms-programmieren-mit-sprache" title="Permanent link">&para;</a></h2>
+<p>Der große Bruch: Man steuert LLMs nicht mit Programmcode, sondern mit <strong>natürlicher Sprache</strong>. Der Prompt <strong>ist</strong> das Programm.</p>
 <table>
 <thead>
 <tr>
-<th>Weg</th>
-<th>Beschreibung</th>
-<th>Für wen</th>
+<th>Klassische Programmierung</th>
+<th>LLM „programmieren"</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Prompting</strong></td>
-<td>Anweisungen in natürlicher Sprache</td>
-<td>alle Anwender (Copilot)</td>
+<td>Code in einer Programmiersprache</td>
+<td>Anweisung in natürlicher Sprache</td>
 </tr>
 <tr>
-<td><strong>System-Prompt</strong></td>
-<td>dauerhafte Verhaltensregeln</td>
-<td>Power-User, Admins</td>
+<td>exakte, feste Logik</td>
+<td>flexible, statistische Antwort</td>
 </tr>
 <tr>
-<td><strong>API</strong></td>
-<td>LLM aus eigenen Programmen aufrufen</td>
-<td>Entwickler</td>
-</tr>
-<tr>
-<td><strong>Fine-Tuning</strong></td>
-<td>Modell mit eigenen Daten nachtrainieren</td>
-<td>Spezialfälle</td>
+<td>Entwickler:innen nötig</td>
+<td>jede:r kann es</td>
 </tr>
 </tbody>
 </table>
+<p>Genau deshalb ist <strong>Prompt Engineering</strong> (Kap. 14) die entscheidende Fähigkeit: Es ist die „Programmiersprache" der LLMs.</p>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre mir den Unterschied zwischen einem normalen Prompt und einem
-System-Prompt an einem Beispiel. Wann sollte ich welchen einsetzen?
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre in einfachen Worten, warum ein Sprachmodell manchmal falsche, aber
+überzeugend klingende Antworten gibt. Nenne anschließend drei konkrete
+Maßnahmen, mit denen ich als Nutzer:in dieses Risiko verringere.
 </code></pre></div></td></tr></table></div>
-<div class="admonition warning">
-<p class="admonition-title">Grenzen kennen</p>
-<p>Ein LLM „weiß" nichts sicher – es erzeugt <strong>wahrscheinliche</strong> Texte. Es kann überzeugend klingende, aber falsche Antworten geben (<strong>Halluzinationen</strong>). Prüfen bleibt Pflicht.</p>
-</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein <strong>LLM</strong> ist ein riesiges, aus Textmengen trainiertes Netz; Copilot beruht auf GPT-LLMs.</li>
+<li>Es sagt im Kern nur das <strong>nächste Wort</strong> voraus – daraus entstehen im Großmaßstab erstaunliche Fähigkeiten.</li>
+<li>Wichtige Begriffe: <strong>Token, Parameter, Kontextfenster, Temperatur</strong>; Wissen ist zum Training <strong>eingefroren</strong>.</li>
+<li>LLMs <strong>halluzinieren</strong>, weil sie auf <strong>Plausibilität statt Wahrheit</strong> optimieren – deshalb prüfen.</li>
+<li>Man „programmiert" LLMs mit <strong>Sprache</strong> – deshalb ist Prompt Engineering die Schlüsselkompetenz.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

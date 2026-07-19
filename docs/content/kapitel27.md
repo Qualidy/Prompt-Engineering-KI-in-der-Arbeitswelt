@@ -5,64 +5,107 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Was **Prozessregulierung** (Regelung/Steuerung) bedeutet
-- Wie KI klassische Regelungstechnik ergänzt
-- Der Unterschied zwischen **Steuerung** und **Regelung**
-- Ein **Praxisbeispiel** aus der Verfahrenstechnik
+- Was mit **Prozessregulierung / Regelung** gemeint ist (Prozesse in einem Sollzustand halten)
+- Der Unterschied zwischen **Steuerung** und **Regelung** (offener vs. geschlossener Regelkreis)
+- Wie KI klassische Regelungen **verbessert** (adaptiv, vorausschauend)
+- Beispiele aus **Fertigung, Energie und Gebäudetechnik**
+- Wo **Copilot** bei Analyse, Dokumentation und Compliance hilft
 </div>
 
 ---
 
-## 27.1 Steuerung vs. Regelung
+## 27.1 Was ist Prozessregulierung?
 
-| Begriff | Prinzip | Beispiel |
-|---|---|---|
-| **Steuerung** | fester Ablauf ohne Rückmeldung | Heizung läuft nach Zeitplan |
-| **Regelung** | misst Ist-Wert, korrigiert laufend | Thermostat hält 21 °C |
+**Prozessregulierung** (Prozessregelung) bedeutet, einen Prozess automatisch in einem gewünschten **Sollzustand** zu halten – trotz Störungen von außen. Klassisches Beispiel: ein **Thermostat**, das eine Temperatur konstant hält.
 
-Eine **Regelung** vergleicht ständig Soll- und Ist-Wert und gleicht Abweichungen aus.
+!!! info "Steuerung vs. Regelung"
+    - **Steuerung (offener Regelkreis):** wirkt „blind" nach Plan, ohne das Ergebnis zurückzumelden. Beispiel: Heizung läuft feste 2 Stunden – egal wie warm es wird.
+    - **Regelung (geschlossener Regelkreis):** misst das Ergebnis **und korrigiert** laufend. Beispiel: Thermostat misst die Temperatur und passt die Heizleistung an.
+
+    Der **Rückkopplung (Feedback)** ist der Kern jeder Regelung.
 
 ```mermaid
 flowchart LR
     A([Sollwert]) --> B([Regler])
-    B --> C([Prozess/Anlage])
-    C --> D([Istwert messen])
-    D --> B
+    B --> C([Stellgröße an Prozess])
+    C --> D([Prozess])
+    D --> E([Istwert messen])
+    E --> B
 ```
 
 ---
 
-## 27.2 Wie KI die Regelung ergänzt
+## 27.2 Wie KI die Regelung verbessert
 
-Klassische Regler funktionieren gut bei klaren Zusammenhängen. Bei **komplexen, nichtlinearen** Prozessen mit vielen Einflussgrößen hilft KI:
+Klassische Regler (z. B. PID-Regler) arbeiten mit festen Formeln und funktionieren gut bei einfachen, stabilen Prozessen. KI-gestützte Regelung geht darüber hinaus:
 
-- lernt Zusammenhänge aus Prozessdaten
-- optimiert mehrere Ziele gleichzeitig (z. B. Qualität **und** Energie)
-- reagiert auf Muster, die klassische Regler nicht erfassen
+| Klassische Regelung | KI-gestützte Regelung |
+|---|---|
+| feste Parameter | **passt sich an** (adaptiv) |
+| reagiert auf Ist-Abweichung | kann **vorausschauend** eingreifen |
+| ein klar modellierbarer Prozess | auch **komplexe**, schwer modellierbare Prozesse |
+| Mensch stellt Parameter ein | lernt optimale Strategie (RL, Kap. 17) |
 
-!!! info "Reinforcement Learning trifft Regelung"
-    Für Optimierungsaufgaben kommt oft **Reinforcement Learning** (Kapitel 17) zum Einsatz: Der Agent lernt, Stellgrößen so zu setzen, dass die Belohnung (z. B. Qualität pro Energieeinheit) maximal wird.
+!!! example "Adaptiv statt starr"
+    Eine Klimaanlage mit klassischem Regler reagiert erst, **wenn** es zu warm ist. Eine KI-Regelung kann **Wetterprognose, Belegung und Tageszeit** einbeziehen und die Kühlung **vorausschauend** anpassen – das spart Energie und hält die Temperatur stabiler. Solche Ansätze nutzen oft **Reinforcement Learning** (Kap. 17).
 
 ---
 
-## 27.3 Praxisbeispiel: Energieoptimierte Prozessführung
+## 27.3 Beispiele aus der Praxis
 
-!!! info "Fallbeispiel Verfahrenstechnik"
-    In einer Anlage regelt eine KI Temperatur und Durchfluss so, dass die Produktqualität gehalten und **Energie gespart** wird.
+| Bereich | KI-Regelung |
+|---|---|
+| Fertigung | Prozessparameter (Druck, Temperatur) automatisch optimal halten |
+| Energie | Stromnetze und Speicher ausbalancieren |
+| Gebäudetechnik | Heizung/Kühlung/Licht bedarfsgerecht regeln |
+| Wasser/Chemie | Dosierung präzise steuern |
+| Rechenzentren | Kühlung energieoptimal regeln |
 
-    **Ergebnis:** stabile Qualität bei geringerem Verbrauch.
-    **Grenze:** Sicherheit hat Vorrang – kritische Grenzwerte überwacht weiterhin eine klassische, geprüfte Sicherheitssteuerung.
+Der gemeinsame Nenner: ein **kontinuierlicher Prozess**, der stabil und effizient gehalten werden soll – und in dem viele Einflussgrößen zusammenwirken.
 
-**Copilot-Prompt zum Ausprobieren:**
+---
+
+## 27.4 Grenzen und Sicherheit
+
+!!! warning "Regelung ist sicherheitskritisch"
+    Reguliert eine KI einen physischen Prozess, sind Fehler potenziell **gefährlich** (Überhitzung, Überdruck). Deshalb gelten strenge Prinzipien:
+    
+    - **Grenzwerte/Notabschaltungen** unabhängig von der KI absichern.
+    - Verhalten muss **nachvollziehbar** genug sein (Erklärbarkeit, Kap. 34).
+    - Ein Mensch (oder ein sicheres Basissystem) muss **eingreifen** können.
+    
+    Eine „Blackbox", die sicherheitsrelevante Ventile ungeprüft steuert, ist nicht akzeptabel.
+
+---
+
+## 27.5 Wo Copilot hilft
+
+Die eigentliche Regelung übernehmen **Automatisierungs-/Steuerungssysteme**, nicht Copilot. Copilot unterstützt bei den **begleitenden** Aufgaben:
+
+| Aufgabe | Beispiel-Prompt |
+|---|---|
+| Konzepte verstehen | „Erkläre den Unterschied zwischen Steuerung und Regelung mit Beispiel." |
+| Datenauswertung | „Welche Auffälligkeiten zeigen diese Prozess-Messwerte (Excel)?" |
+| Dokumentation | „Erstelle aus diesen Stichpunkten eine Beschreibung des Regelkreises." |
+| Compliance | „Fasse zusammen, welche Sicherheitsanforderungen ich beachten muss." |
+
+**Beispiel-Prompt zum Ausprobieren:**
 
 ```text
-Erkläre den Unterschied zwischen Steuerung und Regelung an einem Alltagsbeispiel.
-Beschreibe dann, wie KI eine Regelung bei einem komplexen Prozess verbessern kann
-und wo die Grenzen aus Sicherheitsgründen liegen.
+Erkläre an einem Beispiel aus der Gebäudetechnik den Unterschied zwischen einer
+klassischen und einer KI-gestützten, vorausschauenden Regelung. Nenne je zwei
+Vorteile der KI-Variante und ein Sicherheitsrisiko, das ich absichern muss.
 ```
 
-!!! warning "Sicherheit zuerst"
-    KI-Regelungen dürfen sicherheitskritische Grenzen **nicht** allein verantworten. Bewährte Sicherheitssysteme bleiben als Rückfallebene bestehen.
+---
+
+## Zusammenfassung
+
+- **Prozessregulierung** hält Prozesse per **Rückkopplung** im Sollzustand (Regelung = geschlossener Regelkreis).
+- KI macht Regelungen **adaptiv** und **vorausschauend** – auch für komplexe Prozesse (oft mit RL).
+- Anwendungen in **Fertigung, Energie, Gebäudetechnik, Chemie, Rechenzentren**.
+- Regelung ist **sicherheitskritisch**: unabhängige Grenzwerte, Nachvollziehbarkeit, menschlicher Eingriff.
+- **Copilot** hilft bei Verständnis, Auswertung, Doku und Compliance – nicht bei der Echtzeit-Regelung.
 
 ---
 

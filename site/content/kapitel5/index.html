@@ -616,9 +616,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#54-weitere-trends-im-blick" class="md-nav__link">
+  <a href="#54-rag-ki-mit-zugriff-auf-eigenes-wissen" class="md-nav__link">
     <span class="md-ellipsis">
-      5.4 Weitere Trends im Blick
+      5.4 RAG: KI mit Zugriff auf eigenes Wissen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-weitere-trends-im-blick" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 Weitere Trends im Blick
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1005,17 +1023,19 @@
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Die wichtigsten <strong>aktuellen Trends</strong> der KI und was sie praktisch bedeuten</li>
-<li>Was <strong>generative KI</strong>, <strong>KI-Agenten</strong> und <strong>Multimodalität</strong> sind</li>
+<li>Was <strong>generative KI</strong>, <strong>KI-Agenten</strong> und <strong>Multimodalität</strong> genau sind – mit Funktionsweise</li>
+<li>Was <strong>RAG</strong> (Retrieval-Augmented Generation) ist und warum es für Unternehmen zentral ist</li>
 <li>Wohin sich Werkzeuge wie <strong>Microsoft Copilot</strong> entwickeln</li>
-<li>Wie du Trends kritisch einordnest, statt jedem Hype zu folgen</li>
+<li>Wie du Trends <strong>kritisch einordnest</strong>, statt jedem Hype zu folgen</li>
 </ul>
 </div>
 <hr />
 <h2 id="51-generative-ki">5.1 Generative KI<a class="headerlink" href="#51-generative-ki" title="Permanent link">&para;</a></h2>
 <p><strong>Generative KI</strong> erzeugt neue Inhalte – Text, Bilder, Audio, Code – auf Basis von Eingaben. Sie ist der Trend, der KI 2022/2023 in den Alltag gebracht hat.</p>
+<p><strong>Warum das ein Bruch war:</strong> Frühere KI hat vor allem <strong>erkannt und klassifiziert</strong> („ist das Spam?"). Generative KI <strong>erschafft</strong> etwas Neues. Und sie ist über <strong>natürliche Sprache</strong> bedienbar – man braucht keine Programmierkenntnisse mehr. Das öffnet KI für praktisch jeden Beruf.</p>
 <ul>
 <li>Beispiele: Copilot, ChatGPT, Bildgeneratoren</li>
-<li>Für Unternehmen relevant, weil sie <strong>ohne Programmierung</strong> über Sprache bedienbar ist</li>
+<li>Für Unternehmen relevant, weil sie <strong>breit einsetzbar</strong> und <strong>niedrigschwellig</strong> ist</li>
 </ul>
 <hr />
 <h2 id="52-ki-agenten">5.2 KI-Agenten<a class="headerlink" href="#52-ki-agenten" title="Permanent link">&para;</a></h2>
@@ -1026,10 +1046,15 @@
     C --&gt; D([Ergebnis prüfen])
     D --&gt;|nicht fertig| B
     D --&gt;|fertig| E([Ergebnis])</code></pre>
-<p>Beispiel: Ein Agent, der eigenständig Termine recherchiert, Vorschläge macht und eine E-Mail entwirft. Microsoft entwickelt Copilot in diese Richtung weiter (<strong>Copilot Agents</strong>).</p>
+<p><strong>Unterschied zum normalen Chatbot:</strong> Ein Chatbot antwortet auf <strong>eine</strong> Frage. Ein Agent kann eine Aufgabe wie „Recherchiere drei Anbieter, vergleiche Preise und entwirf eine Empfehlung" in <strong>Teilschritte zerlegen</strong>, Werkzeuge (Websuche, Kalender, E-Mail) nutzen und Zwischenergebnisse selbst bewerten.</p>
+<p>Microsoft entwickelt Copilot in diese Richtung weiter (<strong>Copilot Agents / Copilot Studio</strong>, Kapitel 30).</p>
+<div class="admonition warning">
+<p class="admonition-title">Mehr Autonomie = mehr Kontrolle nötig</p>
+<p>Je selbstständiger ein Agent handelt, desto wichtiger sind <strong>Leitplanken</strong>: Was darf er automatisch tun, wo braucht es eine menschliche Freigabe? Ein Agent, der eigenständig E-Mails verschickt oder Bestellungen auslöst, birgt reale Risiken.</p>
+</div>
 <hr />
 <h2 id="53-multimodalitat">5.3 Multimodalität<a class="headerlink" href="#53-multimodalitat" title="Permanent link">&para;</a></h2>
-<p><strong>Multimodale</strong> KI verarbeitet mehrere Datenarten gleichzeitig – Text, Bild, Ton. Du kannst Copilot z. B. ein Bild zeigen und eine Frage dazu stellen.</p>
+<p><strong>Multimodale</strong> KI verarbeitet mehrere Datenarten gleichzeitig – Text, Bild, Ton. Du kannst Copilot z. B. ein Foto oder ein Diagramm zeigen und eine Frage dazu stellen.</p>
 <table>
 <thead>
 <tr>
@@ -1040,40 +1065,87 @@
 <tbody>
 <tr>
 <td>Text</td>
-<td>Zusammenfassen, übersetzen</td>
+<td>Zusammenfassen, übersetzen, entwerfen</td>
 </tr>
 <tr>
 <td>Bild</td>
-<td>Diagramm erklären, Foto beschreiben</td>
+<td>Diagramm erklären, Foto beschreiben, Skizze deuten</td>
 </tr>
 <tr>
 <td>Audio</td>
-<td>Meeting transkribieren</td>
+<td>Meeting transkribieren, Sprache verstehen</td>
 </tr>
 <tr>
 <td>Kombination</td>
-<td>Aus Skizze + Text einen Entwurf erstellen</td>
+<td>Aus Foto einer Fehlermeldung eine Lösung ableiten</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Praktischer Nutzen:</strong> Ein Mitarbeiter fotografiert eine defekte Maschine samt Typenschild, und Copilot ordnet das Modell zu und schlägt Prüfschritte vor. Früher brauchte das mehrere getrennte Werkzeuge.</p>
 <hr />
-<h2 id="54-weitere-trends-im-blick">5.4 Weitere Trends im Blick<a class="headerlink" href="#54-weitere-trends-im-blick" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Kleine, spezialisierte Modelle (SLMs):</strong> effizienter, teils lokal auf dem Gerät</li>
-<li><strong>KI-Regulierung:</strong> der EU AI Act setzt Leitplanken (siehe Kapitel 32)</li>
-<li><strong>Individualisierung:</strong> Modelle werden an Unternehmensdaten angepasst</li>
-</ul>
+<h2 id="54-rag-ki-mit-zugriff-auf-eigenes-wissen">5.4 RAG: KI mit Zugriff auf eigenes Wissen<a class="headerlink" href="#54-rag-ki-mit-zugriff-auf-eigenes-wissen" title="Permanent link">&para;</a></h2>
+<p>Ein besonders wichtiger Trend für Unternehmen ist <strong>RAG (Retrieval-Augmented Generation)</strong>. Die Idee: Ein Sprachmodell „weiß" nur, was in seinem Training war – <strong>nicht</strong> eure internen Dokumente. RAG verbindet das Modell mit einer <strong>Wissensquelle</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Frage]) --&gt; B([relevante Dokumente suchen])
+    B --&gt; C([gefundene Inhalte + Frage an das LLM])
+    C --&gt; D([Antwort mit Bezug auf eure Dokumente])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Warum das so wichtig ist</p>
+<p>RAG ist der Grund, warum <strong>Microsoft 365 Copilot</strong> auf eure Mails, Dokumente und Teams-Inhalte Bezug nehmen kann: Es sucht passende Inhalte und gibt sie dem Modell als Kontext mit. So werden Antworten <strong>aktuell und unternehmensspezifisch</strong> – statt nur allgemeines Trainingswissen wiederzugeben. RAG reduziert außerdem Halluzinationen, weil die Antwort auf echten Quellen fußt.</p>
+</div>
+<hr />
+<h2 id="55-weitere-trends-im-blick">5.5 Weitere Trends im Blick<a class="headerlink" href="#55-weitere-trends-im-blick" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Trend</th>
+<th>Was dahintersteckt</th>
+<th>Praktische Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kleine Modelle (SLMs)</strong></td>
+<td>spezialisierte, effiziente Modelle</td>
+<td>günstiger, teils lokal auf dem Gerät</td>
+</tr>
+<tr>
+<td><strong>On-Device-KI</strong></td>
+<td>KI direkt auf Laptop/Handy</td>
+<td>Datenschutz, keine Cloud nötig</td>
+</tr>
+<tr>
+<td><strong>KI-Regulierung</strong></td>
+<td>EU AI Act setzt Leitplanken</td>
+<td>Pflichten je nach Risiko (Kap. 32)</td>
+</tr>
+<tr>
+<td><strong>Individualisierung</strong></td>
+<td>Modelle an Unternehmensdaten anpassen</td>
+<td>passgenauere Ergebnisse</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Nenne die drei wichtigsten KI-Trends für kleine und mittlere Unternehmen in
-diesem Jahr. Erkläre je Trend in 2 Sätzen die praktische Bedeutung und nenne
-ein konkretes Beispiel.
+diesem Jahr. Erkläre je Trend in 2 Sätzen die praktische Bedeutung, nenne ein
+konkretes Beispiel und einen möglichen Nachteil.
 </code></pre></div></td></tr></table></div>
 <div class="admonition warning">
 <p class="admonition-title">Trend ≠ Pflicht</p>
-<p>Nicht jeder Trend passt zu jedem Unternehmen. Frage immer: Löst dieser Trend ein <strong>echtes Problem</strong> bei uns?</p>
+<p>Nicht jeder Trend passt zu jedem Unternehmen. Frage immer: Löst dieser Trend ein <strong>echtes Problem</strong> bei uns? Ein Trend-Radar (siehe Workshop) hilft, zwischen „jetzt relevant" und „nur beobachten" zu unterscheiden.</p>
 </div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Generative KI</strong> erschafft Inhalte und ist per Sprache bedienbar – der eigentliche Durchbruch.</li>
+<li><strong>KI-Agenten</strong> verfolgen Ziele über mehrere Schritte – mehr Autonomie erfordert mehr Kontrolle.</li>
+<li><strong>Multimodalität</strong> verbindet Text, Bild und Ton in einem Werkzeug.</li>
+<li><strong>RAG</strong> verbindet Sprachmodelle mit eurem eigenen Wissen – Basis von Microsoft 365 Copilot.</li>
+<li>Trends kritisch prüfen: Was löst ein echtes Problem?</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

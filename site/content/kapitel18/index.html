@@ -641,36 +641,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#181-was-ist-ein-chatbot" class="md-nav__link">
+  <a href="#181-wie-chatbots-funktionieren" class="md-nav__link">
     <span class="md-ellipsis">
-      18.1 Was ist ein Chatbot?
+      18.1 Wie Chatbots funktionieren
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#182-gutes-dialogdesign" class="md-nav__link">
+  <a href="#182-was-einen-guten-dialog-ausmacht" class="md-nav__link">
     <span class="md-ellipsis">
-      18.2 Gutes Dialogdesign
+      18.2 Was einen guten Dialog ausmacht
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#183-einen-chatbot-per-prompt-definieren" class="md-nav__link">
+  <a href="#183-der-system-prompt-konsistentes-verhalten" class="md-nav__link">
     <span class="md-ellipsis">
-      18.3 Einen Chatbot per Prompt definieren
+      18.3 Der System-Prompt: konsistentes Verhalten
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#184-praxisbeispiel-chatbot-in-der-kundenkommunikation" class="md-nav__link">
+  <a href="#184-mehrstufige-gesprache-fuhren" class="md-nav__link">
     <span class="md-ellipsis">
-      18.4 Praxisbeispiel: Chatbot in der Kundenkommunikation
+      18.4 Mehrstufige Gespräche führen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#185-grenzen-von-chatbots-im-kundenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.5 Grenzen von Chatbots im Kundenservice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1165,79 +1183,157 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Wie moderne <strong>Chatbots</strong> funktionieren und wo sie eingesetzt werden</li>
-<li>Was gutes <strong>Dialogdesign</strong> ausmacht</li>
-<li>Wie du mit <strong>Prompt Engineering</strong> einen Chatbot-Charakter definierst</li>
-<li><strong>Praxisbeispiel:</strong> KI-Chatbot in der Kundenkommunikation</li>
+<li>Wie <strong>Chatbots</strong> funktionieren und wie sich regelbasierte von KI-Chatbots unterscheiden</li>
+<li>Was einen <strong>guten Dialog</strong> ausmacht und wie du Copilot als Gesprächspartner steuerst</li>
+<li>Die Rolle des <strong>System-Prompts / der Rolle</strong> für konsistentes Verhalten</li>
+<li>Wie du <strong>mehrstufige Gespräche</strong> führst und Kontext aufbaust</li>
+<li>Wo Chatbots im Kundenservice <strong>Grenzen</strong> haben</li>
 </ul>
 </div>
 <hr />
-<h2 id="181-was-ist-ein-chatbot">18.1 Was ist ein Chatbot?<a class="headerlink" href="#181-was-ist-ein-chatbot" title="Permanent link">&para;</a></h2>
-<p>Ein <strong>Chatbot</strong> führt einen textbasierten Dialog mit Menschen. Man unterscheidet:</p>
+<h2 id="181-wie-chatbots-funktionieren">18.1 Wie Chatbots funktionieren<a class="headerlink" href="#181-wie-chatbots-funktionieren" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>Chatbot</strong> ist ein Programm, das in natürlicher Sprache mit Menschen kommuniziert. Es gibt zwei grundlegend verschiedene Generationen:</p>
 <table>
 <thead>
 <tr>
-<th>Typ</th>
-<th>Prinzip</th>
-<th>Eigenschaft</th>
+<th></th>
+<th>Regelbasierter Chatbot</th>
+<th>KI-Chatbot (LLM)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Regelbasiert</td>
-<td>feste Entscheidungsbäume</td>
-<td>vorhersehbar, aber starr</td>
+<td>Grundlage</td>
+<td>feste Skripte, Schlüsselwörter</td>
+<td>Sprachmodell (Kap. 15)</td>
 </tr>
 <tr>
-<td>KI-basiert (LLM)</td>
-<td>versteht freie Sprache</td>
-<td>flexibel, natürlich</td>
+<td>Flexibilität</td>
+<td>gering – nur vorgesehene Wege</td>
+<td>hoch – versteht freie Formulierungen</td>
+</tr>
+<tr>
+<td>Pflege</td>
+<td>jede Antwort von Hand</td>
+<td>lernt aus Sprache, per Prompt steuerbar</td>
+</tr>
+<tr>
+<td>Fehlerbild</td>
+<td>„Das habe ich nicht verstanden"</td>
+<td>flüssig, aber ggf. falsch</td>
+</tr>
+<tr>
+<td>Beispiel</td>
+<td>Telefon-Menü, FAQ-Bot</td>
+<td>Copilot, ChatGPT</td>
 </tr>
 </tbody>
 </table>
-<p>Heutige Chatbots (z. B. auf Copilot-Basis) sind <strong>LLM-gestützt</strong> und verstehen Anliegen auch, wenn sie frei formuliert sind.</p>
+<div class="admonition info">
+<p class="admonition-title">Der Sprung</p>
+<p>Regelbasierte Bots scheitern, sobald der Nutzer „vom Skript abweicht". KI-Chatbots verstehen auch ungewöhnliche Formulierungen – dafür können sie <strong>überzeugend falsch</strong> liegen. Der Fehler verlagert sich von „versteht nicht" zu „versteht, aber erfindet". Das verändert, worauf man achten muss.</p>
+</div>
 <hr />
-<h2 id="182-gutes-dialogdesign">18.2 Gutes Dialogdesign<a class="headerlink" href="#182-gutes-dialogdesign" title="Permanent link">&para;</a></h2>
+<h2 id="182-was-einen-guten-dialog-ausmacht">18.2 Was einen guten Dialog ausmacht<a class="headerlink" href="#182-was-einen-guten-dialog-ausmacht" title="Permanent link">&para;</a></h2>
+<p>Ein Gespräch mit Copilot ist kein einmaliger Befehl, sondern ein <strong>Dialog</strong>, den du aktiv führst:</p>
 <pre class="mermaid"><code>flowchart LR
-    A([Begrüßung &amp; Zweck]) --&gt; B([Anliegen verstehen])
-    B --&gt; C([Lösung / Rückfrage])
-    C --&gt; D([Bestätigung])
-    D --&gt; E([Abschluss / Übergabe an Mensch])</code></pre>
-<p><strong>Prinzipien:</strong></p>
-<ul>
-<li><strong>Klarheit:</strong> Was kann der Bot, was nicht?</li>
-<li><strong>Rückfragen:</strong> bei Unklarheit nachfragen statt raten</li>
-<li><strong>Eskalation:</strong> rechtzeitig an einen Menschen übergeben</li>
-<li><strong>Ton:</strong> zur Marke passend, freundlich, knapp</li>
-</ul>
+    A([Rolle &amp; Ziel setzen]) --&gt; B([Frage/Auftrag]) --&gt; C([Antwort])
+    C --&gt; D([nachschärfen / vertiefen]) --&gt; C
+    D --&gt; E([Ergebnis übernehmen &amp; prüfen])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Prinzip</th>
+<th>Umsetzung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rolle klären</td>
+<td>„Du bist Support-Mitarbeiter:in für Software X."</td>
+</tr>
+<tr>
+<td>schrittweise vertiefen</td>
+<td>erst grob, dann Details nachfragen</td>
+</tr>
+<tr>
+<td>Kontext aufbauen</td>
+<td>Copilot merkt sich den bisherigen Verlauf</td>
+</tr>
+<tr>
+<td>korrigieren</td>
+<td>„Das war zu technisch, formuliere es einfacher."</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="183-einen-chatbot-per-prompt-definieren">18.3 Einen Chatbot per Prompt definieren<a class="headerlink" href="#183-einen-chatbot-per-prompt-definieren" title="Permanent link">&para;</a></h2>
-<p>Mit einem <strong>System-Prompt</strong> legst du Rolle, Wissen, Ton und Grenzen fest.</p>
+<h2 id="183-der-system-prompt-konsistentes-verhalten">18.3 Der System-Prompt: konsistentes Verhalten<a class="headerlink" href="#183-der-system-prompt-konsistentes-verhalten" title="Permanent link">&para;</a></h2>
+<p>Damit ein Chatbot <strong>durchgängig</strong> eine bestimmte Rolle und Regeln einhält, gibt man ihm zu Beginn eine feste Anweisung – den <strong>System-Prompt</strong>. Er legt Persönlichkeit, Tonfall und Grenzen fest.</p>
+<div class="admonition example">
+<p class="admonition-title">Beispiel eines System-Prompts</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist der Kundenservice-Assistent der Firma Mustertech. Antworte immer
+freundlich, in der Sie-Form und in maximal 5 Sätzen. Wenn du eine Antwort
+nicht sicher weißt, sage das ehrlich und verweise an support@mustertech.de.
+Gib niemals Rabatte oder Zusagen zu Lieferterminen.
+</code></pre></div></td></tr></table></div>
+Solche Leitplanken verhindern, dass der Bot Dinge zusagt, die er nicht darf – ein häufiges Praxisproblem. In <strong>Copilot Studio</strong> (Kap. 30) lassen sich solche Assistenten ohne Programmierung bauen.</p>
+</div>
+<hr />
+<h2 id="184-mehrstufige-gesprache-fuhren">18.4 Mehrstufige Gespräche führen<a class="headerlink" href="#184-mehrstufige-gesprache-fuhren" title="Permanent link">&para;</a></h2>
+<p>Der große Vorteil von KI-Chatbots: Sie <strong>behalten den Kontext</strong> des Gesprächs. Du kannst aufeinander aufbauen, ohne alles zu wiederholen.</p>
+<p><strong>Beispiel-Dialog (Kundenservice-Entwurf mit Copilot):</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist der Kundenservice-Assistent der Firma Musterstrom. Du beantwortest Fragen
-zu Tarifen, Rechnungen und Zählerständen. Regeln:
-- Antworte höflich, in der Sie-Form, in maximal 4 Sätzen.
-- Wenn du etwas nicht sicher weißt, biete die Weiterleitung an einen Mitarbeiter an.
-- Frage bei fehlenden Angaben (z. B. Kundennummer) freundlich nach.
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>1) Du bist Kundenservice-Profi. Ein Kunde beschwert sich, dass seine
+   Lieferung 5 Tage zu spät ist. Entwirf eine erste, empathische Antwort.
+
+2) Gut. Der Kunde ist Stammkunde – ergänze eine Wertschätzung dafür.
+
+3) Biete als Entschädigung einen 10%-Gutschein an und formuliere höflich,
+   dass wir das Problem intern prüfen.
 </code></pre></div></td></tr></table></div>
-<hr />
-<h2 id="184-praxisbeispiel-chatbot-in-der-kundenkommunikation">18.4 Praxisbeispiel: Chatbot in der Kundenkommunikation<a class="headerlink" href="#184-praxisbeispiel-chatbot-in-der-kundenkommunikation" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Fallbeispiel Energieversorger</p>
-<p>Ein Energieversorger führt einen KI-Chatbot ein, der Standardfragen (Zählerstand, Tarifwechsel, Rechnungserklärung) rund um die Uhr beantwortet.</p>
-<p><strong>Nutzen:</strong> kürzere Wartezeiten, Entlastung der Hotline, 24/7-Erreichbarkeit.
-<strong>Grenzen:</strong> komplexe Beschwerden gehen an Menschen; Datenschutz bei Kundendaten beachten.</p>
+<p>Jeder Schritt verfeinert das Ergebnis. Du musst den Sachverhalt nur <strong>einmal</strong> schildern.</p>
+<div class="admonition tip">
+<p class="admonition-title">Kontext gezielt zurücksetzen</p>
+<p>Wenn du das Thema wechselst, beginne bewusst neu („Vergiss den vorherigen Fall. Neue Aufgabe: …") – sonst vermischt der Bot alten und neuen Kontext.</p>
 </div>
+<hr />
+<h2 id="185-grenzen-von-chatbots-im-kundenservice">18.5 Grenzen von Chatbots im Kundenservice<a class="headerlink" href="#185-grenzen-von-chatbots-im-kundenservice" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Wo Menschen unverzichtbar bleiben</p>
+<ul>
+<li><strong>Verbindliche Zusagen</strong> (Preise, Fristen, Verträge) gehören zum Menschen.</li>
+<li><strong>Emotionale Eskalationen</strong> (verärgerte Kunden, Beschwerden) brauchen Fingerspitzengefühl und Entscheidungsspielraum.</li>
+<li><strong>Rechtlich relevante Auskünfte</strong> dürfen nicht dem Bot überlassen werden.</li>
+<li><strong>Halluzinationen</strong> (Kap. 15): Ein Bot kann falsche Auskünfte selbstbewusst geben – im Kundenkontakt heikel.</li>
+</ul>
+</div>
+<p>Gutes Design nutzt deshalb ein <strong>Eskalationsprinzip</strong>: Der Bot erledigt Standardfälle und <strong>übergibt</strong> klar an einen Menschen, sobald es kritisch wird.</p>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Entwirf einen Beispiel-Dialog (5 Nachrichten) zwischen einem Kunden und einem
-Service-Chatbot eines Energieversorgers zum Thema &quot;Rechnung zu hoch&quot;. Zeige, wo
-der Bot nachfragt und wann er an einen Mitarbeiter übergibt.
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere einen System-Prompt für einen Chatbot, der Terminanfragen für eine
+Zahnarztpraxis entgegennimmt. Er soll freundlich sein, nach Name und Wunschtermin
+fragen, keine medizinischen Auskünfte geben und bei Notfällen sofort auf die
+Notfallnummer verweisen.
 </code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>KI-Chatbots</strong> verstehen freie Sprache (anders als regelbasierte), können aber überzeugend <strong>falsch</strong> liegen.</li>
+<li>Gute Dialoge führst du aktiv: <strong>Rolle setzen, schrittweise vertiefen, korrigieren</strong>.</li>
+<li>Der <strong>System-Prompt</strong> legt Rolle, Ton und Leitplanken fest – wichtig für konsistentes Verhalten.</li>
+<li>KI-Chatbots <strong>behalten Kontext</strong> – nutze das für mehrstufige Gespräche, setze bei Themenwechsel bewusst zurück.</li>
+<li>Grenzen: verbindliche Zusagen, Eskalationen und rechtliche Auskünfte gehören zum <strong>Menschen</strong>.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

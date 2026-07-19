@@ -719,27 +719,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#212-prozesse-analysieren" class="md-nav__link">
+  <a href="#212-prozesse-analysieren-und-engpasse-finden" class="md-nav__link">
     <span class="md-ellipsis">
-      21.2 Prozesse analysieren
+      21.2 Prozesse analysieren und Engpässe finden
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#213-automatisierungsgrade" class="md-nav__link">
+  <a href="#213-ki-hebel-in-prozessen" class="md-nav__link">
     <span class="md-ellipsis">
-      21.3 Automatisierungsgrade
+      21.3 KI-Hebel in Prozessen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#214-prozessanalyse-mit-copilot" class="md-nav__link">
+  <a href="#214-process-mining-prozesse-aus-daten-sichtbar-machen" class="md-nav__link">
     <span class="md-ellipsis">
-      21.4 Prozessanalyse mit Copilot
+      21.4 Process Mining: Prozesse aus Daten sichtbar machen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#215-prozessarbeit-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.5 Prozessarbeit mit Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1165,70 +1183,131 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>Prozessoptimierung</strong> ist und wie KI dabei hilft</li>
-<li>Wie man einen Prozess <strong>analysiert</strong> und Schwachstellen findet</li>
-<li>Der Unterschied zwischen <strong>Assistenz</strong>, <strong>Teil-</strong> und <strong>Vollautomatisierung</strong></li>
-<li>Wie Copilot bei der Prozessanalyse unterstützt</li>
+<li>Was <strong>Prozessoptimierung</strong> bedeutet und warum sie ein Top-Einsatzfeld für KI ist</li>
+<li>Wie du einen Prozess <strong>analysierst</strong> und <strong>Engpässe</strong> findest</li>
+<li>Welche <strong>Hebel</strong> KI bietet: automatisieren, beschleunigen, Fehler senken</li>
+<li>Was <strong>Process Mining</strong> ist – Prozesse aus Daten sichtbar machen</li>
+<li>Wie du mit <strong>Copilot</strong> Prozesse dokumentierst, analysierst und verbesserst</li>
 </ul>
 </div>
 <hr />
 <h2 id="211-was-ist-prozessoptimierung">21.1 Was ist Prozessoptimierung?<a class="headerlink" href="#211-was-ist-prozessoptimierung" title="Permanent link">&para;</a></h2>
-<p>Ein <strong>Prozess</strong> ist eine Abfolge von Schritten, die aus einem Input einen Output macht (z. B. „Bestellung → Lieferung"). <strong>Optimierung</strong> bedeutet: schneller, günstiger, fehlerärmer oder kundenfreundlicher werden.</p>
-<hr />
-<h2 id="212-prozesse-analysieren">21.2 Prozesse analysieren<a class="headerlink" href="#212-prozesse-analysieren" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    A([Prozess aufnehmen]) --&gt; B([Schwachstellen finden])
-    B --&gt; C([Verbesserung entwerfen])
-    C --&gt; D([Umsetzen &amp; messen])
-    D --&gt;|erneut prüfen| A</code></pre>
-<p><strong>Typische Schwachstellen:</strong> Wartezeiten, Medienbrüche (z. B. Papier ↔ digital), Doppelarbeit, manuelle Routineschritte.</p>
+<p>Ein <strong>Prozess</strong> ist eine wiederkehrende Abfolge von Tätigkeiten mit einem Ergebnis (z. B. „Angebot erstellen", „Rechnung bearbeiten"). <strong>Prozessoptimierung</strong> macht solche Abläufe <strong>schneller, günstiger, fehlerärmer oder angenehmer</strong>.</p>
 <div class="admonition info">
-<p class="admonition-title">Erst verstehen, dann automatisieren</p>
-<p>Ein schlechter Prozess wird durch Automatisierung nur <strong>schneller schlecht</strong>. Deshalb zuerst analysieren und vereinfachen, dann KI/Automatisierung einsetzen.</p>
+<p class="admonition-title">Warum gerade hier KI wirkt</p>
+<p>Viele Prozesse enthalten <strong>repetitive, textlastige Schritte</strong>: Daten übertragen, Dokumente lesen, Standardmails schreiben, zusammenfassen. Genau das kann KI (und speziell Copilot) übernehmen oder beschleunigen. Prozessoptimierung ist deshalb eines der <strong>wirkungsvollsten und schnellsten</strong> KI-Einsatzfelder – oft ein Quick Win (Kap. 4).</p>
 </div>
 <hr />
-<h2 id="213-automatisierungsgrade">21.3 Automatisierungsgrade<a class="headerlink" href="#213-automatisierungsgrade" title="Permanent link">&para;</a></h2>
+<h2 id="212-prozesse-analysieren-und-engpasse-finden">21.2 Prozesse analysieren und Engpässe finden<a class="headerlink" href="#212-prozesse-analysieren-und-engpasse-finden" title="Permanent link">&para;</a></h2>
+<p>Bevor man optimiert, muss man den Prozess <strong>verstehen</strong>. Ein einfaches Vorgehen:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Prozess aufnehmen]) --&gt; B([Schritte &amp; Zeiten messen]) --&gt; C([Engpässe finden]) --&gt; D([Verbessern]) --&gt; E([Wirkung prüfen])
+    E --&gt; A</code></pre>
 <table>
 <thead>
 <tr>
-<th>Grad</th>
-<th>Beschreibung</th>
-<th>Beispiel mit KI</th>
+<th>Frage</th>
+<th>Ziel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Assistenz</td>
-<td>Mensch entscheidet, KI unterstützt</td>
-<td>Copilot schlägt Antwort vor</td>
+<td>Welche Schritte gibt es?</td>
+<td>Überblick schaffen</td>
 </tr>
 <tr>
-<td>Teilautomatisierung</td>
-<td>KI übernimmt Teilschritte</td>
-<td>Rechnung wird ausgelesen, Mensch prüft</td>
+<td>Wo dauert es lange / staut es sich?</td>
+<td><strong>Engpass (Bottleneck)</strong> finden</td>
 </tr>
 <tr>
-<td>Vollautomatisierung</td>
-<td>KI übernimmt Ende-zu-Ende</td>
-<td>Standardbestellung ohne Eingriff</td>
+<td>Wo entstehen Fehler / Nacharbeit?</td>
+<td>Qualitätsprobleme finden</td>
+</tr>
+<tr>
+<td>Welche Schritte sind reine Routine?</td>
+<td>Automatisierungskandidaten finden</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Am Engpass ansetzen</p>
+<p>Eine Kette ist nur so schnell wie ihr langsamstes Glied. Es bringt wenig, einen Schritt zu beschleunigen, der gar nicht der Engpass ist. Finde zuerst den <strong>echten Flaschenhals</strong> – oft ist es ein manueller, textlastiger Schritt, den KI entlasten kann.</p>
+</div>
+<hr />
+<h2 id="213-ki-hebel-in-prozessen">21.3 KI-Hebel in Prozessen<a class="headerlink" href="#213-ki-hebel-in-prozessen" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Hebel</th>
+<th>Was passiert</th>
+<th>Beispiel mit Copilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automatisieren</strong></td>
+<td>Routineschritt ganz übernehmen</td>
+<td>Standardantworten entwerfen</td>
+</tr>
+<tr>
+<td><strong>Beschleunigen</strong></td>
+<td>Menschen schneller machen</td>
+<td>Zusammenfassungen, Vorlagen</td>
+</tr>
+<tr>
+<td><strong>Fehler senken</strong></td>
+<td>Prüfen, Vollständigkeit sichern</td>
+<td>„Fehlt in diesem Antrag etwas?"</td>
+</tr>
+<tr>
+<td><strong>Wissen bereitstellen</strong></td>
+<td>schneller die richtige Info finden</td>
+<td>interne Doku durchsuchen (RAG)</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="214-prozessanalyse-mit-copilot">21.4 Prozessanalyse mit Copilot<a class="headerlink" href="#214-prozessanalyse-mit-copilot" title="Permanent link">&para;</a></h2>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="214-process-mining-prozesse-aus-daten-sichtbar-machen">21.4 Process Mining: Prozesse aus Daten sichtbar machen<a class="headerlink" href="#214-process-mining-prozesse-aus-daten-sichtbar-machen" title="Permanent link">&para;</a></h2>
+<p><strong>Process Mining</strong> rekonstruiert den <strong>tatsächlichen</strong> Prozessablauf aus den digitalen Spuren in IT-Systemen (z. B. Zeitstempel im ERP). So sieht man, wie ein Prozess <strong>wirklich</strong> läuft – nicht wie er im Handbuch stehen sollte.</p>
+<div class="admonition example">
+<p class="admonition-title">Soll vs. Ist</p>
+<p>Im Handbuch: „Bestellung → Freigabe → Versand." In den echten Daten zeigt Process Mining vielleicht: In 30 % der Fälle geht es „Bestellung → Versand → nachträgliche Freigabe" – ein Kontrollrisiko, das vorher niemand sah. Solche Abweichungen (<strong>Varianten</strong>) sind der Startpunkt für Verbesserungen.</p>
+</div>
+<p>Process Mining ist meist Aufgabe spezialisierter Tools; Copilot hilft bei der <strong>Interpretation</strong> und <strong>Dokumentation</strong> der Ergebnisse.</p>
+<hr />
+<h2 id="215-prozessarbeit-mit-copilot">21.5 Prozessarbeit mit Copilot<a class="headerlink" href="#215-prozessarbeit-mit-copilot" title="Permanent link">&para;</a></h2>
+<p><strong>Prozess dokumentieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich beschreibe dir einen Arbeitsprozess. Identifiziere Schwachstellen
-(Wartezeiten, Medienbrüche, Doppelarbeit) und schlage 3 Verbesserungen vor,
-davon mindestens eine mit KI-Unterstützung.
-Prozess: [Schritte auflisten]
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich beschreibe dir unseren Angebotsprozess in Stichworten: [Stichworte].
+Erstelle daraus eine klare, nummerierte Prozessbeschreibung und markiere
+Schritte, die reine Routine sind und sich automatisieren ließen.
+</code></pre></div></td></tr></table></div>
+<p><strong>Engpässe und Ideen finden:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ist unser Prozess zur Rechnungsbearbeitung: [Beschreibung].
+Analysiere ihn: Wo liegen wahrscheinlich Engpässe und Fehlerquellen?
+Schlage 5 konkrete Verbesserungen vor und ordne sie nach Aufwand/Nutzen.
+</code></pre></div></td></tr></table></div>
+<p><strong>Prozess visualisieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Wandle diese Prozessbeschreibung in eine übersichtliche Schritt-für-Schritt-
+Liste mit Verantwortlichkeiten (Rolle je Schritt) um.
 </code></pre></div></td></tr></table></div>
 <div class="admonition warning">
-<p class="admonition-title">Menschen mitnehmen</p>
-<p>Prozessänderungen betreffen Menschen und ihre Arbeit. Ohne Einbindung der Betroffenen scheitert die Umsetzung oft (siehe Change Management, Kapitel 37).</p>
+<p class="admonition-title">Copilot kennt euren Prozess nicht von allein</p>
+<p>Copilot kann nur mit den Informationen arbeiten, die du ihm gibst (oder die es via M365-Daten findet). Beschreibe den Prozess <strong>konkret</strong> – je genauer die Eingabe, desto brauchbarer die Analyse. Und: Vorschläge sind Ideen, keine geprüften Maßnahmen. Die fachliche Bewertung bleibt bei dir und den Beteiligten.</p>
 </div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Prozessoptimierung</strong> macht wiederkehrende Abläufe besser – ein Top-Einsatzfeld für KI/Copilot.</li>
+<li>Erst <strong>analysieren</strong> und <strong>Engpässe</strong> finden, dann gezielt am Flaschenhals ansetzen.</li>
+<li>KI-Hebel: <strong>automatisieren, beschleunigen, Fehler senken, Wissen bereitstellen</strong>.</li>
+<li><strong>Process Mining</strong> zeigt den <strong>tatsächlichen</strong> Ablauf aus Daten (Soll vs. Ist).</li>
+<li><strong>Copilot</strong> hilft beim Dokumentieren, Analysieren und Ideenfinden – konkrete Eingaben sind entscheidend.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

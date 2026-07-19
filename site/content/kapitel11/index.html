@@ -668,27 +668,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#112-big-data-architektur" class="md-nav__link">
+  <a href="#112-die-datenpipeline" class="md-nav__link">
     <span class="md-ellipsis">
-      11.2 Big-Data-Architektur
+      11.2 Die Datenpipeline
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#113-operationalisierung" class="md-nav__link">
+  <a href="#113-operationalisierung-von-der-idee-in-den-betrieb" class="md-nav__link">
     <span class="md-ellipsis">
-      11.3 Operationalisierung
+      11.3 Operationalisierung: von der Idee in den Betrieb
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#114-big-data-und-copilot" class="md-nav__link">
+  <a href="#114-data-governance" class="md-nav__link">
     <span class="md-ellipsis">
-      11.4 Big Data und Copilot
+      11.4 Data Governance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115-einordnung-copilot-im-groen-datenbild" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.5 Einordnung: Copilot im großen Datenbild
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1119,97 +1137,172 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>Big Data</strong> ausmacht (die „V")</li>
-<li>Wie eine typische <strong>Big-Data-Architektur</strong> aufgebaut ist</li>
-<li>Was <strong>Operationalisierung</strong> bedeutet – vom Datensee zum laufenden Prozess</li>
-<li>Wie Big Data und generative KI (Copilot) zusammenspielen</li>
+<li>Was <strong>Big Data</strong> ausmacht – die <strong>„V's"</strong> (Volume, Velocity, Variety, Veracity, Value)</li>
+<li>Wie eine <strong>Datenpipeline</strong> vom Rohdatum bis zur Nutzung aussieht</li>
+<li>Was <strong>Operationalisierung</strong> bedeutet: von der Idee in den laufenden Betrieb</li>
+<li>Warum <strong>Datenqualität, Governance und Monitoring</strong> im Dauerbetrieb entscheidend sind</li>
+<li>Wie sich der <strong>Copilot-Alltag</strong> in dieses größere Datenbild einordnet</li>
 </ul>
 </div>
 <hr />
 <h2 id="111-was-ist-big-data">11.1 Was ist Big Data?<a class="headerlink" href="#111-was-ist-big-data" title="Permanent link">&para;</a></h2>
-<p><strong>Big Data</strong> bezeichnet Datenmengen, die mit klassischen Mitteln nicht mehr sinnvoll verarbeitet werden können. Charakterisiert durch die <strong>„V"</strong>:</p>
+<p><strong>Big Data</strong> meint Datenmengen, die so <strong>groß, schnell und vielfältig</strong> sind, dass klassische Werkzeuge (eine einzelne Excel-Tabelle, eine kleine Datenbank) an ihre Grenzen stoßen. Charakterisiert wird Big Data über die <strong>„V's"</strong>:</p>
 <table>
 <thead>
 <tr>
 <th>V</th>
 <th>Bedeutung</th>
+<th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Volume</td>
-<td>schiere Menge</td>
+<td><strong>Volume</strong> (Menge)</td>
+<td>sehr große Datenmengen</td>
+<td>Millionen Sensormesswerte täglich</td>
 </tr>
 <tr>
-<td>Velocity</td>
-<td>Geschwindigkeit (Echtzeit)</td>
+<td><strong>Velocity</strong> (Geschwindigkeit)</td>
+<td>Daten entstehen in Echtzeit</td>
+<td>Klickströme, Maschinendaten</td>
 </tr>
 <tr>
-<td>Variety</td>
-<td>Vielfalt (strukturiert/unstrukturiert)</td>
+<td><strong>Variety</strong> (Vielfalt)</td>
+<td>verschiedene Formate</td>
+<td>Text, Bild, Tabellen, Logs</td>
 </tr>
 <tr>
-<td>Veracity</td>
-<td>Verlässlichkeit/Qualität</td>
+<td><strong>Veracity</strong> (Verlässlichkeit)</td>
+<td>Datenqualität schwankt</td>
+<td>fehlerhafte/fehlende Werte</td>
 </tr>
 <tr>
-<td>Value</td>
-<td>der geschäftliche Wert</td>
+<td><strong>Value</strong> (Wert)</td>
+<td>erst Auswertung schafft Nutzen</td>
+<td>Prognosen, Einsparungen</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">Nicht nur 'viel'</p>
+<p>Big Data ist mehr als „viele Daten". Entscheidend ist das <strong>Zusammenspiel</strong> der V's: schnell <strong>und</strong> vielfältig <strong>und</strong> in schwankender Qualität. Der letzte, wichtigste Punkt ist <strong>Value</strong>: Daten allein sind wertlos – erst die richtige Auswertung macht sie zum Vorteil.</p>
+</div>
 <hr />
-<h2 id="112-big-data-architektur">11.2 Big-Data-Architektur<a class="headerlink" href="#112-big-data-architektur" title="Permanent link">&para;</a></h2>
+<h2 id="112-die-datenpipeline">11.2 Die Datenpipeline<a class="headerlink" href="#112-die-datenpipeline" title="Permanent link">&para;</a></h2>
+<p>Damit Daten nutzbar werden, durchlaufen sie einen wiederkehrenden Weg – die <strong>Datenpipeline</strong>:</p>
 <pre class="mermaid"><code>flowchart LR
-    A([Quellen]) --&gt; B([Ingestion / Erfassung])
-    B --&gt; C([Speicherung: Data Lake / Warehouse])
-    C --&gt; D([Verarbeitung &amp; Analyse])
-    D --&gt; E([Bereitstellung: Dashboards, KI, Apps])</code></pre>
+    A([Erfassen]) --&gt; B([Speichern]) --&gt; C([Aufbereiten]) --&gt; D([Analysieren / Modell]) --&gt; E([Nutzen / Handeln])
+    E --&gt;|neue Daten| A</code></pre>
 <table>
 <thead>
 <tr>
-<th>Baustein</th>
+<th>Stufe</th>
 <th>Aufgabe</th>
+<th>Beispiel-Werkzeug</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Ingestion</td>
-<td>Daten aus vielen Quellen einsammeln</td>
+<td>Erfassen</td>
+<td>Daten sammeln</td>
+<td>Sensoren, APIs, Formulare</td>
 </tr>
 <tr>
-<td>Data Lake</td>
-<td>große Mengen roher Daten speichern</td>
+<td>Speichern</td>
+<td>dauerhaft ablegen</td>
+<td>Datenbank, Data Lake, Cloud</td>
 </tr>
 <tr>
-<td>Data Warehouse</td>
-<td>strukturierte, ausgewertete Daten</td>
+<td>Aufbereiten</td>
+<td>bereinigen/transformieren</td>
+<td>ETL-Prozesse (Kap. 10)</td>
 </tr>
 <tr>
-<td>Verarbeitung</td>
-<td>bereinigen, aggregieren, analysieren</td>
+<td>Analysieren</td>
+<td>Muster/Prognosen finden</td>
+<td>ML-Modelle, BI-Tools</td>
 </tr>
 <tr>
-<td>Bereitstellung</td>
-<td>Dashboards, KI-Modelle, Anwendungen</td>
+<td>Nutzen</td>
+<td>Entscheidungen/Aktionen ableiten</td>
+<td>Dashboards, Copilot, Alerts</td>
 </tr>
 </tbody>
 </table>
+<p>Die Pipeline ist ein <strong>Kreislauf</strong>: Ergebnisse und neue Ereignisse erzeugen wieder Daten. Deshalb ist Datenarbeit keine einmalige Aktion, sondern ein <strong>Dauerbetrieb</strong>.</p>
 <hr />
-<h2 id="113-operationalisierung">11.3 Operationalisierung<a class="headerlink" href="#113-operationalisierung" title="Permanent link">&para;</a></h2>
-<p><strong>Operationalisierung</strong> heißt: aus einer einmaligen Analyse einen <strong>dauerhaft laufenden Prozess</strong> machen. Daten fließen automatisiert, werden regelmäßig ausgewertet, Ergebnisse landen dort, wo Entscheidungen fallen.</p>
-<div class="admonition info">
-<p class="admonition-title">Von Projekt zu Betrieb</p>
-<p>Viele KI-Vorhaben scheitern nicht am Prototyp, sondern am Schritt in den <strong>Regelbetrieb</strong>: Wer pflegt die Daten? Wer überwacht die Qualität? Wer aktualisiert das Modell?</p>
+<h2 id="113-operationalisierung-von-der-idee-in-den-betrieb">11.3 Operationalisierung: von der Idee in den Betrieb<a class="headerlink" href="#113-operationalisierung-von-der-idee-in-den-betrieb" title="Permanent link">&para;</a></h2>
+<p>Ein Modell im Labor ist wertlos, solange es nicht <strong>im Alltag</strong> läuft. <strong>Operationalisierung</strong> bedeutet, eine KI-/Datenlösung stabil in bestehende Prozesse und Systeme einzubetten.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Prototyp / Pilot]) --&gt; B([Integration in Systeme])
+    B --&gt; C([Automatisierter Betrieb])
+    C --&gt; D([Monitoring])
+    D --&gt;|Qualität sinkt| E([nachtrainieren / anpassen])
+    E --&gt; C</code></pre>
+<p><strong>Was dazugehört:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspekt</th>
+<th>Frage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integration</td>
+<td>Läuft die Lösung in unseren Systemen (ERP, M365)?</td>
+</tr>
+<tr>
+<td>Automatisierung</td>
+<td>Werden Daten automatisch verarbeitet?</td>
+</tr>
+<tr>
+<td>Rollen</td>
+<td>Wer betreibt und verantwortet die Lösung?</td>
+</tr>
+<tr>
+<td>Monitoring</td>
+<td>Wie merken wir, wenn die Qualität nachlässt?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Model Drift – das stille Nachlassen</p>
+<p>Ein Modell, das heute gut funktioniert, kann morgen schlechter werden, weil sich die <strong>Realität ändert</strong> (neue Produkte, neues Kundenverhalten). Das nennt man <strong>Model Drift</strong>. Deshalb braucht jede produktive KI-Lösung <strong>Überwachung</strong> und regelmäßiges Nachjustieren – „einmal bauen und vergessen" funktioniert nicht.</p>
 </div>
 <hr />
-<h2 id="114-big-data-und-copilot">11.4 Big Data und Copilot<a class="headerlink" href="#114-big-data-und-copilot" title="Permanent link">&para;</a></h2>
-<p>Copilot arbeitet nicht direkt auf riesigen Datenmengen, hilft aber, <strong>Ergebnisse verständlich</strong> zu machen.</p>
+<h2 id="114-data-governance">11.4 Data Governance<a class="headerlink" href="#114-data-governance" title="Permanent link">&para;</a></h2>
+<p>Bei großen Datenmengen braucht es klare <strong>Regeln und Zuständigkeiten</strong> – <strong>Data Governance</strong>:</p>
+<ul>
+<li><strong>Wem gehören</strong> welche Daten? Wer darf sie nutzen?</li>
+<li><strong>Qualitätsstandards</strong>: Wie stellen wir saubere Daten sicher?</li>
+<li><strong>Zugriffsrechte &amp; Datenschutz</strong>: Wer sieht was? (Kap. 33)</li>
+<li><strong>Nachvollziehbarkeit</strong>: Woher stammt ein Wert (Data Lineage)?</li>
+</ul>
+<p>Ohne Governance entstehen „Datensilos", widersprüchliche Zahlen und Datenschutzrisiken. Governance ist die organisatorische Voraussetzung dafür, dass Werkzeuge wie Copilot auf <strong>verlässliche</strong> Daten zugreifen.</p>
+<hr />
+<h2 id="115-einordnung-copilot-im-groen-datenbild">11.5 Einordnung: Copilot im großen Datenbild<a class="headerlink" href="#115-einordnung-copilot-im-groen-datenbild" title="Permanent link">&para;</a></h2>
+<p>Als Copilot-Nutzer:in arbeitest du meist am <strong>Ende</strong> der Pipeline – beim <strong>Nutzen</strong> der Daten: zusammenfassen, auswerten, Berichte erstellen. Die Stufen davor (Erfassen, Speichern, Aufbereiten, Governance) sind die Arbeit von IT- und Datenteams, aber sie bestimmen, wie gut deine Copilot-Ergebnisse sein können.</p>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre die 5 V von Big Data an einem Beispiel aus dem Onlinehandel. Nenne je V
-eine konkrete Herausforderung und eine mögliche Lösung.
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre die fünf V&#39;s von Big Data mit je einem Beispiel aus einem
+produzierenden Unternehmen. Nenne anschließend, welche zwei V&#39;s in der
+Praxis am häufigsten unterschätzt werden und warum.
 </code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Merke</p>
+<p>Copilot ist ein starkes Werkzeug am Ende der Kette. Seine Qualität hängt aber direkt an dem, was <strong>davor</strong> passiert – gute Erfassung, Aufbereitung und Governance. Datenkompetenz im Team zahlt sich damit doppelt aus.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Big Data</strong> wird über die <strong>V's</strong> beschrieben – entscheidend ist am Ende der <strong>Value</strong>.</li>
+<li>Daten durchlaufen eine <strong>Pipeline</strong> (Erfassen → Speichern → Aufbereiten → Analysieren → Nutzen) als Kreislauf.</li>
+<li><strong>Operationalisierung</strong> bringt Lösungen stabil in den Betrieb – inkl. <strong>Monitoring</strong> gegen Model Drift.</li>
+<li><strong>Data Governance</strong> schafft Regeln, Qualität und Nachvollziehbarkeit.</li>
+<li><strong>Copilot</strong> arbeitet am Ende der Kette; seine Qualität hängt an den vorgelagerten Stufen.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

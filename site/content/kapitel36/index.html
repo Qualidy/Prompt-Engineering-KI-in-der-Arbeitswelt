@@ -816,27 +816,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#361-wo-ki-ressourcen-verbraucht" class="md-nav__link">
+  <a href="#361-ki-ist-nicht-immateriell" class="md-nav__link">
     <span class="md-ellipsis">
-      36.1 Wo KI Ressourcen verbraucht
+      36.1 KI ist nicht „immateriell"
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#362-green-ai" class="md-nav__link">
+  <a href="#362-training-vs-nutzung" class="md-nav__link">
     <span class="md-ellipsis">
-      36.2 Green AI
+      36.2 Training vs. Nutzung
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#363-der-ehrliche-blick-netto-nutzen" class="md-nav__link">
+  <a href="#363-groenordnungen-einordnen" class="md-nav__link">
     <span class="md-ellipsis">
-      36.3 Der ehrliche Blick: Netto-Nutzen
+      36.3 Größenordnungen einordnen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#364-den-fuabdruck-senken" class="md-nav__link">
+    <span class="md-ellipsis">
+      36.4 Den Fußabdruck senken
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#365-bewusste-nutzung-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      36.5 Bewusste Nutzung mit Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -995,70 +1022,147 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Warum KI <strong>Energie und Ressourcen</strong> verbraucht</li>
-<li>Der Unterschied zwischen <strong>Training</strong> und <strong>Inferenz</strong></li>
-<li>Was <strong>Green AI</strong> bedeutet</li>
-<li>Wie du KI <strong>ressourcenbewusst</strong> einsetzt</li>
+<li>Warum KI <strong>Energie, Wasser und Rohstoffe</strong> verbraucht – und wo genau</li>
+<li>Der Unterschied im Verbrauch zwischen <strong>Training</strong> und <strong>Nutzung (Inferenz)</strong></li>
+<li>Größenordnungen: Was kostet eine KI-Anfrage die Umwelt (grob)?</li>
+<li>Wie Anbieter und Nutzer den <strong>Fußabdruck senken</strong> können</li>
+<li>Wie du als <strong>Copilot-Nutzer:in</strong> bewusst und effizient umgehst</li>
 </ul>
 </div>
 <hr />
-<h2 id="361-wo-ki-ressourcen-verbraucht">36.1 Wo KI Ressourcen verbraucht<a class="headerlink" href="#361-wo-ki-ressourcen-verbraucht" title="Permanent link">&para;</a></h2>
+<h2 id="361-ki-ist-nicht-immateriell">36.1 KI ist nicht „immateriell"<a class="headerlink" href="#361-ki-ist-nicht-immateriell" title="Permanent link">&para;</a></h2>
+<p>KI wirkt körperlos – doch dahinter stehen <strong>riesige Rechenzentren</strong> mit hohem Verbrauch an:</p>
+<table>
+<thead>
+<tr>
+<th>Ressource</th>
+<th>Wofür</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strom</strong></td>
+<td>Rechenleistung (v. a. GPUs) für Training und Nutzung</td>
+</tr>
+<tr>
+<td><strong>Wasser</strong></td>
+<td>Kühlung der Rechenzentren</td>
+</tr>
+<tr>
+<td><strong>Rohstoffe</strong></td>
+<td>Hardware (Chips, seltene Metalle)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Die unsichtbaren Kosten</p>
+<p>Jede Copilot-Antwort läuft auf physischer Hardware, die Strom zieht und gekühlt werden muss. Einzeln ist der Verbrauch klein, in der <strong>Masse</strong> aber erheblich. Nachhaltige KI-Nutzung (Kap. 29) setzt voraus, diese Seite ehrlich mitzudenken – sonst „spart" man an einer Stelle und verbraucht an anderer mehr.</p>
+</div>
+<hr />
+<h2 id="362-training-vs-nutzung">36.2 Training vs. Nutzung<a class="headerlink" href="#362-training-vs-nutzung" title="Permanent link">&para;</a></h2>
+<p>Der Verbrauch verteilt sich auf zwei sehr unterschiedliche Phasen:</p>
 <pre class="mermaid"><code>flowchart LR
-    A([Training des Modells]) --&gt; C([Energie &amp; Wasser])
-    B([Inferenz: jede Nutzung]) --&gt; C
-    C --&gt; D([CO2-Fußabdruck])</code></pre>
+    A([Training: einmalig, sehr energieintensiv]) --&gt; B([fertiges Modell])
+    B --&gt; C([Nutzung/Inferenz: pro Anfrage klein])
+    C --&gt; D([summiert über Milliarden Anfragen: sehr groß])</code></pre>
 <table>
 <thead>
 <tr>
 <th>Phase</th>
-<th>Beschreibung</th>
 <th>Verbrauch</th>
+<th>Charakter</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Training</strong></td>
-<td>Modell wird einmalig gelernt</td>
-<td>sehr hoch, aber einmalig</td>
+<td>sehr hoch, aber <strong>einmalig</strong></td>
+<td>wie ein großer Bau</td>
 </tr>
 <tr>
-<td><strong>Inferenz</strong></td>
-<td>jede einzelne Nutzung/Anfrage</td>
-<td>pro Anfrage klein, in Summe groß</td>
+<td><strong>Nutzung (Inferenz)</strong></td>
+<td>pro Anfrage klein</td>
+<td>aber <strong>milliardenfach</strong> täglich</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">Rechenzentren</p>
-<p>KI läuft in Rechenzentren, die <strong>Strom</strong> für Rechenleistung und <strong>Wasser/Energie</strong> für Kühlung benötigen. Bei Millionen Nutzern summiert sich die Inferenz erheblich.</p>
+<div class="admonition example">
+<p class="admonition-title">Warum beides zählt</p>
+<p>Das <strong>Training</strong> eines sehr großen Modells kann so viel Energie verbrauchen wie hunderte Haushalte in einem Jahr – aber es passiert nur einmal. Die <strong>Nutzung</strong> kostet pro Prompt wenig, doch bei <strong>weltweit Milliarden</strong> Anfragen täglich summiert sich das zu einem enormen Dauerverbrauch. Beide Phasen sind daher relevant.</p>
 </div>
 <hr />
-<h2 id="362-green-ai">36.2 Green AI<a class="headerlink" href="#362-green-ai" title="Permanent link">&para;</a></h2>
-<p><strong>Green AI</strong> verfolgt das Ziel, KI <strong>effizienter und ressourcenschonender</strong> zu machen:</p>
+<h2 id="363-groenordnungen-einordnen">36.3 Größenordnungen einordnen<a class="headerlink" href="#363-groenordnungen-einordnen" title="Permanent link">&para;</a></h2>
+<p>Genaue Zahlen schwanken je nach Modell und Rechenzentrum stark und werden selten offengelegt. Wichtiger als exakte Werte ist das <strong>Größengefühl</strong>:</p>
 <ul>
-<li><strong>Kleinere, spezialisierte Modelle</strong> statt immer größerer</li>
-<li><strong>Effiziente Hardware</strong> und grüner Strom</li>
-<li><strong>Sinnvoller Einsatz:</strong> nicht jede Aufgabe braucht das größte Modell</li>
+<li>Eine KI-Textanfrage verbraucht deutlich <strong>mehr</strong> Energie als eine klassische Websuche.</li>
+<li>Bild- und Videogenerierung ist <strong>energieintensiver</strong> als reine Textausgabe.</li>
+<li>Der Wasserverbrauch für Kühlung ist real und in wasserarmen Regionen ein Thema.</li>
 </ul>
-<hr />
-<h2 id="363-der-ehrliche-blick-netto-nutzen">36.3 Der ehrliche Blick: Netto-Nutzen<a class="headerlink" href="#363-der-ehrliche-blick-netto-nutzen" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">Verbrauch gegen Nutzen abwägen</p>
-<p>KI kann Ressourcen sparen (Kapitel 29) – verbraucht aber selbst welche. Verantwortungsvoll ist, den <strong>Netto-Effekt</strong> zu betrachten: Spart die Anwendung mehr, als sie kostet?</p>
+<p class="admonition-title">Vorsicht bei kursierenden Zahlen</p>
+<p>Im Netz kursieren viele konkrete Verbrauchszahlen („X Liter Wasser pro Anfrage") – sie sind oft <strong>Schätzungen</strong> mit großen Unsicherheiten oder veraltet. Nutze sie zur <strong>Sensibilisierung</strong>, nicht als exakte Fakten, und prüfe die Quelle (Anwendung von Kap. 15: nicht jeder plausiblen Zahl trauen).</p>
 </div>
-<p><strong>Ressourcenbewusster Einsatz:</strong></p>
+<hr />
+<h2 id="364-den-fuabdruck-senken">36.4 Den Fußabdruck senken<a class="headerlink" href="#364-den-fuabdruck-senken" title="Permanent link">&para;</a></h2>
+<p><strong>Was Anbieter tun (können):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Hebel</th>
+<th>Wirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Erneuerbare Energie für Rechenzentren</td>
+<td>geringerer CO₂-Fußabdruck</td>
+</tr>
+<tr>
+<td>Effizientere Hardware und Kühlung</td>
+<td>weniger Strom/Wasser</td>
+</tr>
+<tr>
+<td><strong>Kleinere, spezialisierte Modelle</strong> (SLMs)</td>
+<td>weniger Verbrauch pro Aufgabe (Kap. 5)</td>
+</tr>
+<tr>
+<td>Standortwahl (Klima, grüner Strom)</td>
+<td>weniger Kühlbedarf</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Was Nutzer:innen tun können:</strong></p>
 <ul>
-<li>passendes (nicht das größte) Modell wählen</li>
-<li>unnötige Wiederholungen vermeiden</li>
-<li>Aufgaben bündeln statt zerstückeln</li>
+<li><strong>Bewusst prompten:</strong> klare Prompts statt endloser Trial-and-Error-Serien.</li>
+<li><strong>Das richtige Werkzeug</strong> für die Aufgabe – nicht für jede Kleinigkeit ein großes Modell.</li>
+<li><strong>Massenhafte, sinnlose Generierung vermeiden</strong> (z. B. „mach mir mal 500 Varianten zum Spaß").</li>
 </ul>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Effizientes Prompten ist auch grünes Prompten</p>
+<p>Gutes Prompt Engineering (Kap. 14) spart nicht nur <strong>deine Zeit</strong>, sondern auch <strong>Energie</strong>: Wer sein Ziel in 1–2 präzisen Prompts erreicht statt in 15 vagen Versuchen, verursacht weniger Rechenlast. Qualität und Nachhaltigkeit gehen hier Hand in Hand.</p>
+</div>
+<hr />
+<h2 id="365-bewusste-nutzung-mit-copilot">36.5 Bewusste Nutzung mit Copilot<a class="headerlink" href="#365-bewusste-nutzung-mit-copilot" title="Permanent link">&para;</a></h2>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den Unterschied zwischen Training und Inferenz beim Energieverbrauch von
-KI. Nenne 4 konkrete Maßnahmen, mit denen ein Unternehmen KI ressourcenschonender
-einsetzen kann.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den Unterschied im Energieverbrauch zwischen dem Training und der
+Nutzung eines KI-Modells. Nenne anschließend drei konkrete Verhaltensweisen,
+mit denen ich als Nutzer:in den Ressourcenverbrauch gering halte.
 </code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">Abwägung statt Verzicht</p>
+<p>Es geht nicht darum, KI aus Umweltgründen zu meiden – sie kann ja selbst viel Ressourcen sparen (Kap. 29). Es geht um eine <strong>ehrliche Abwägung</strong> und <strong>bewusste Nutzung</strong>: KI dort einsetzen, wo sie echten Mehrwert schafft, und dabei effizient vorgehen.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI verbraucht real <strong>Strom, Wasser und Rohstoffe</strong> – über die Rechenzentren dahinter.</li>
+<li><strong>Training</strong> ist einmalig sehr intensiv; <strong>Nutzung</strong> ist pro Anfrage klein, aber milliardenfach.</li>
+<li>Konkrete Verbrauchszahlen sind unsicher – zur <strong>Sensibilisierung</strong> nutzen, nicht als harte Fakten.</li>
+<li>Fußabdruck senken: grüne Energie, effiziente/kleine Modelle – und <strong>bewusstes, effizientes Prompten</strong>.</li>
+<li><strong>Effizientes Prompten</strong> spart Zeit <strong>und</strong> Ressourcen; entscheidend ist die ehrliche Nutzen-Abwägung.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

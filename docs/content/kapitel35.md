@@ -6,73 +6,112 @@
 <h3>Was du in diesem Kapitel lernst</h3>
 
 - Warum KI-Projekte **anders** sind als klassische IT-Projekte
-- Typische **Gründe für Scheitern**
-- Wichtige **Rollen** in KI-Projekten
-- Wie du Risiken früh adressierst
+- Die häufigsten **Gründe für das Scheitern** – und wie man sie vermeidet
+- Warum KI-Projekte **iterativ und experimentell** sein müssen
+- Die Rolle von **interdisziplinären Teams** und klaren **Rollen**
+- Wie **Copilot** bei Planung, Doku und Kommunikation im Projekt hilft
 </div>
 
 ---
 
-## 35.1 Was KI-Projekte besonders macht
+## 35.1 Warum KI-Projekte anders sind
+
+Ein klassisches IT-Projekt hat meist ein klar definierbares Ergebnis („die Software macht X"). KI-Projekte sind **unsicherer**: Ob ein Modell die gewünschte Qualität erreicht, weiß man oft erst **nach** dem Ausprobieren mit echten Daten.
 
 | Klassisches IT-Projekt | KI-Projekt |
 |---|---|
-| Anforderungen früh klar | Ergebnis **datenabhängig**, unsicher |
-| Erfolg gut planbar | Erfolg erst nach Experimenten sichtbar |
-| Test = „funktioniert es?" | Test = „ist es **gut genug**?" |
-| Einmal fertig | Modell muss **gepflegt** werden (Drift) |
+| Ergebnis vorab spezifizierbar | Ergebnis **datenabhängig**, unsicher |
+| linear planbar | **iterativ, experimentell** |
+| Erfolg = Spezifikation erfüllt | Erfolg = KPI/Qualität erreicht (statistisch) |
+| Daten oft Nebensache | **Daten sind zentral** |
 
-!!! info "Experimentell statt deterministisch"
-    Ob ein KI-Modell gut genug wird, weiß man oft erst nach dem Ausprobieren. KI-Projekte brauchen daher **iteratives** Vorgehen und Puffer für Unsicherheit.
+!!! info "Der Kern des Unterschieds"
+    Man „bestellt" keine KI-Lösung wie ein fertiges Möbelstück. Man **erforscht**, ob und wie gut sie funktioniert. Das erfordert eine andere Denkweise: **Hypothesen testen** statt „Auftrag abarbeiten". Wer KI-Projekte wie Bauprojekte plant (fixer Umfang, fixer Termin, fixe Qualität), scheitert oft.
 
 ---
 
 ## 35.2 Warum KI-Projekte scheitern
 
+Studien nennen seit Jahren ähnliche Gründe:
+
+| Grund | Ursache | Gegenmittel |
+|---|---|---|
+| **Kein klares Problem** | „KI um der KI willen" | vom Problem aus starten (Kap. 4) |
+| **Schlechte Daten** | Menge/Qualität unzureichend | Datenrealität früh prüfen (Kap. 9/10) |
+| **Kein messbarer Nutzen** | KPI fehlt | KPI vorab definieren |
+| **Fehlende Akzeptanz** | Belegschaft zieht nicht mit | Change Management (Kap. 37) |
+| **Überzogene Erwartung** | Hype statt Realismus | MVP, klein starten |
+| **Keine Operationalisierung** | Pilot geht nie in Betrieb | von Anfang an Betrieb mitdenken (Kap. 11) |
+
+!!! warning "Der 'Pilot-Friedhof'"
+    Ein sehr häufiges Muster: Es gibt viele beeindruckende **Piloten**, aber kaum etwas geht in den **Regelbetrieb**. Gründe sind fehlende Integration, unklare Zuständigkeit und mangelnde Akzeptanz. Ein Pilot ist erst dann ein Erfolg, wenn geklärt ist, **wie er skaliert und wer ihn betreibt**.
+
+---
+
+## 35.3 Iterativ und experimentell arbeiten
+
+KI-Projekte folgen einem **Lernzyklus**, nicht einem starren Plan:
+
 ```mermaid
-flowchart TD
-    A([Häufige Scheiterngründe]) --> B([schlechte/zu wenig Daten])
-    A --> C([unklares Geschäftsziel])
-    A --> D([kein Weg in den Betrieb])
-    A --> E([fehlende Akzeptanz])
-    A --> F([überzogene Erwartungen])
+flowchart LR
+    A([Hypothese]) --> B([kleines Experiment / MVP])
+    B --> C([messen an KPI])
+    C --> D{lohnt sich?}
+    D -->|ja| E([ausbauen])
+    D -->|nein| F([anpassen oder stoppen])
+    F --> A
 ```
 
-| Grund | Gegenmaßnahme |
-|---|---|
-| Datenprobleme | früh Datenlage prüfen (Kapitel 9/10) |
-| unklares Ziel | messbaren Nutzen definieren |
-| „Prototyp-Falle" | Betrieb von Anfang an mitdenken (Kapitel 11) |
-| fehlende Akzeptanz | Change Management (Kapitel 37) |
-| Übererwartung | realistisch kommunizieren |
+!!! tip "Das Recht zu scheitern – schnell und günstig"
+    Nicht jedes Experiment gelingt – das ist **normal**. Wichtig ist, **schnell und günstig** zu scheitern (kleiner Pilot statt Großprojekt) und daraus zu lernen. Ein früh gestopptes aussichtsloses Projekt ist ein **Erfolg**, kein Versagen.
 
 ---
 
-## 35.3 Rollen im KI-Projekt
+## 35.4 Team und Rollen
 
-| Rolle | Aufgabe |
+KI-Projekte brauchen **verschiedene Kompetenzen** an einem Tisch:
+
+| Rolle | Beitrag |
 |---|---|
-| Auftraggeber / Fachbereich | Ziel und Nutzen definieren |
-| Data Scientist / KI-Fachkraft | Modell entwickeln |
-| Data Engineer | Datenpipelines bauen |
-| Projektleitung | Planung, Kommunikation, Risiken |
-| Datenschutz/Recht | Compliance sichern |
-| Nutzer | Feedback, Akzeptanz |
+| **Fachbereich** | kennt Problem, Prozess, Daten (unverzichtbar!) |
+| **Daten/IT** | Datenzugang, Technik, Integration |
+| **Data Science** (bei Eigenentwicklung) | Modelle, Methodik |
+| **Management** | Ziele, Budget, Rückendeckung |
+| **Datenschutz/Recht** | Compliance (Block 4) |
+
+!!! info "Der Fachbereich ist der Schlüssel"
+    Der häufigste Fehler ist, KI-Projekte rein als „IT-Sache" zu behandeln. Ohne das **Fachwissen** derer, die den Prozess täglich leben, fehlen Problemverständnis, Datenwissen und spätere Akzeptanz. Für Copilot-Einführungen gilt das besonders: Die besten Use Cases kommen aus dem Fachbereich selbst.
 
 ---
 
-## 35.4 Risiken früh adressieren
+## 35.5 Copilot als Projekthelfer
 
-**Copilot-Prompt zum Ausprobieren:**
+Auch die **Projektarbeit selbst** lässt sich mit Copilot beschleunigen:
+
+| Aufgabe | Beispiel-Prompt |
+|---|---|
+| Projektstruktur | „Erstelle eine grobe Projektstruktur für die Einführung von Copilot im Vertrieb." |
+| Risiken | „Nenne die 8 größten Risiken dieses KI-Projekts und je eine Gegenmaßnahme." |
+| Statusbericht | „Fasse diese Projektnotizen zu einem knappen Statusbericht zusammen." |
+| Kommunikation | „Formuliere eine Info an die Belegschaft zum Start des Pilotprojekts." |
+
+**Beispiel-Prompt zum Ausprobieren:**
 
 ```text
-Erstelle eine Risiko-Checkliste für ein KI-Projekt mit den Kategorien Daten,
-Ziel, Betrieb, Akzeptanz und Recht. Formuliere je Kategorie 2 Prüffragen und
-eine typische Gegenmaßnahme.
+Ich plane ein KI-Pilotprojekt zur automatischen Zusammenfassung von
+Kundenanfragen. Erstelle einen Plan mit Zielen, einem messbaren KPI, den
+größten Risiken und den Rollen, die ich im Team brauche.
 ```
 
-!!! tip "Klein anfangen"
-    Starte mit einem klar abgegrenzten **Pilotprojekt** mit messbarem Ziel. Erfolg schafft Vertrauen für größere Vorhaben.
+---
+
+## Zusammenfassung
+
+- KI-Projekte sind **unsicherer** und **datenabhängiger** als klassische IT-Projekte – iterativ statt linear.
+- Häufige Scheiterngründe: **kein klares Problem, schlechte Daten, kein KPI, fehlende Akzeptanz, kein Betrieb**.
+- Arbeite in **Lernzyklen** (MVP → messen → anpassen); schnelles, günstiges Scheitern ist erlaubt.
+- **Interdisziplinäre Teams** mit starkem **Fachbereich** sind entscheidend.
+- **Copilot** hilft bei Struktur, Risiken, Statusberichten und Kommunikation.
 
 ---
 

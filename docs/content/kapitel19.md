@@ -5,72 +5,128 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Welche **Medien** KI heute erzeugen kann (Text, Bild, Präsentation, Audio)
-- Wie du Copilot für **Textentwürfe** und PowerPoint nutzt
-- Worauf du bei **Bildgenerierung** und Urheberrecht achtest
-- **Praxisbeispiel:** KI in der Beratung
+- Welche **Medienarten** KI heute erzeugen kann: Text, Bild, Audio, Video, Präsentationen
+- Wie **Bildgeneratoren** grundsätzlich funktionieren und wie man sie promptet
+- Wie du mit **Copilot** Präsentationen, Texte und Bildideen erstellst
+- Welche **rechtlichen Fragen** (Urheberrecht, Kennzeichnung) zu beachten sind
+- Wie du KI-Medien **qualitätssicher** und verantwortungsvoll einsetzt
 </div>
 
 ---
 
-## 19.1 Was KI erzeugen kann
+## 19.1 Was KI heute erzeugen kann
 
-**Generative KI** erstellt Inhalte in vielen Formaten:
+**Generative KI** beschränkt sich längst nicht auf Text. Sie erstellt Inhalte in vielen Formaten:
 
-| Medium | Werkzeug (Beispiel) | Anwendung |
+| Medienart | Beispiel | Werkzeug (Beispiel) |
 |---|---|---|
-| Text | Copilot in Word | Entwürfe, Berichte, Zusammenfassungen |
-| Präsentation | Copilot in PowerPoint | Foliensätze aus Text |
-| Bild | Copilot / Designer | Illustrationen, Entwürfe |
-| Audio/Sprache | TTS-Dienste | Vertonung, Untertitel |
+| Text | Berichte, E-Mails, Slogans | Copilot, ChatGPT |
+| Bild | Illustrationen, Konzeptgrafiken | Copilot/Designer (DALL·E) |
+| Präsentation | Foliensätze aus Text | Copilot in PowerPoint |
+| Audio | Sprachausgabe, Musik | spezialisierte Tools |
+| Video | Clips, Avatare | spezialisierte Tools |
+
+Für den Büroalltag am relevantesten sind **Text, Präsentationen und Bilder** – alle direkt über Copilot bzw. den Microsoft Designer erreichbar.
 
 ---
 
-## 19.2 Text und Präsentationen mit Copilot
+## 19.2 Wie Bildgeneratoren funktionieren
 
-Copilot beschleunigt die Medienerstellung enorm – vom leeren Blatt zum Entwurf in Sekunden.
+Bild-KI (z. B. DALL·E, das in Microsoft-Produkten steckt) erzeugt Bilder aus einer **Textbeschreibung**. Vereinfacht: Das Modell hat aus Millionen **Bild-Text-Paaren** gelernt, wie Beschreibungen und Bildinhalte zusammenhängen, und setzt aus einem „Rauschen" schrittweise ein passendes Bild zusammen.
 
-**Copilot-Prompt (Word):**
-
-```text
-Erstelle den Entwurf eines einseitigen Infoblatts über unsere neue
-Cloud-Backup-Lösung. Zielgruppe: kleine Unternehmen ohne IT-Abteilung.
-Struktur: Nutzen, Funktionen, Preise-Platzhalter, Kontakt. Ton: klar, vertrauensvoll.
+```mermaid
+flowchart LR
+    A([Textbeschreibung / Prompt]) --> B([Modell mit gelernten Bild-Text-Mustern])
+    B --> C([erzeugtes Bild])
+    C --> D([verfeinern durch präziseren Prompt])
+    D --> B
 ```
 
-**Copilot-Prompt (PowerPoint):**
+**Ein guter Bild-Prompt beschreibt:**
+
+| Element | Beispiel |
+|---|---|
+| Motiv | „ein moderner Büroarbeitsplatz" |
+| Stil | „fotorealistisch" / „Flat-Illustration" |
+| Stimmung/Licht | „hell, freundlich, Morgenlicht" |
+| Perspektive | „Vogelperspektive", „Nahaufnahme" |
+| Format | „Querformat, viel Freiraum links für Text" |
+
+!!! example "Vom vagen zum präzisen Bild-Prompt"
+    **Vage:** „ein Büro"
+    **Präzise:** „Ein moderner, heller Büroarbeitsplatz mit Laptop und Pflanze, fotorealistisch, Morgenlicht, Querformat, ruhige Farben, viel Freiraum oben für eine Überschrift."
+    Je konkreter Motiv, Stil und Bildaufbau, desto brauchbarer das Ergebnis.
+
+---
+
+## 19.3 Medien erstellen mit Copilot
+
+**Präsentation aus Text (PowerPoint):**
 
 ```text
-Erstelle eine 6-Folien-Präsentation zum Thema "KI im Kundenservice" mit
-Titelfolie, 4 Inhaltsfolien und einer Abschlussfolie mit Handlungsaufruf.
+Erstelle eine Präsentation mit 7 Folien zum Thema "KI im Kundenservice".
+Struktur: Titel, Problem, Lösung, 3 Vorteile, Beispiel, Fazit.
+Pro Folie max. 4 Stichpunkte und ein Vorschlag für ein passendes Bildmotiv.
 ```
 
+**Text mit passendem Stil:**
+
+```text
+Schreibe einen LinkedIn-Post (max. 120 Wörter), der unser neues KI-Projekt
+vorstellt. Ton: professionell, aber begeistert. Ende mit einer Frage an die
+Leser:innen.
+```
+
+**Bildidee entwickeln:**
+
+```text
+Ich brauche ein Titelbild für eine Schulung über Prompt Engineering.
+Beschreibe 3 verschiedene Bildkonzepte, die ich in einem Bildgenerator
+verwenden könnte – jeweils mit Stil, Motiv und Stimmung.
+```
+
+!!! tip "KI liefert den Rohentwurf, du den Feinschliff"
+    KI-Medien sind selten sofort perfekt. Nutze sie als **schnellen ersten Entwurf** (Struktur der Folien, Bildidee, Textgerüst) und verfeinere gezielt. Das spart die mühsame „weiße Blatt"-Phase.
+
 ---
 
-## 19.3 Bildgenerierung und Recht
+## 19.4 Recht und Kennzeichnung
 
-!!! warning "Urheberrecht und Kennzeichnung"
-    - Kläre die **Nutzungsrechte** an KI-generierten Bildern (je nach Dienst unterschiedlich).
-    - Erzeuge **keine** geschützten Marken/Personen ohne Erlaubnis.
-    - In vielen Kontexten ist eine **Kennzeichnung** „KI-generiert" sinnvoll oder nötig.
+!!! warning "Wichtige rechtliche Punkte"
+    - **Urheberrecht der Eingaben:** Lade keine fremden, geschützten Bilder/Texte hoch, um sie „nachmachen" zu lassen.
+    - **Rechte an den Ausgaben:** Die Rechtslage zu KI-generierten Werken ist teils ungeklärt und je nach Land unterschiedlich – für kommerzielle Nutzung genau prüfen.
+    - **Kennzeichnungspflicht:** Der **EU AI Act** verlangt zunehmend, KI-generierte oder -manipulierte Inhalte **zu kennzeichnen** (Kap. 32).
+    - **Persönlichkeitsrechte:** Keine realen Personen ohne Einwilligung darstellen (Deepfake-Problematik).
 
 ---
 
-## 19.4 Praxisbeispiel: KI in der Beratung
+## 19.5 Qualität und Verantwortung
 
-!!! info "Fallbeispiel Unternehmensberatung"
-    Eine Beratung nutzt Copilot, um aus Workshop-Notizen **Ergebnispräsentationen**, **Management-Summaries** und **Angebotsentwürfe** zu erstellen.
+Bei KI-Medien sind typische Fehlerquellen zu beachten:
 
-    **Nutzen:** deutlich schnellere Dokumentation, mehr Zeit für Inhalte.
-    **Grenze:** fachliche Richtigkeit und Vertraulichkeit müssen die Beratenden verantworten.
+| Risiko | Beispiel | Gegenmittel |
+|---|---|---|
+| faktische Fehler im Text | falsche Zahl in Folie | gegenprüfen |
+| unrealistische Bilddetails | „sechs Finger", falsche Logos | genau anschauen |
+| Verzerrungen (Bias) | einseitige Darstellungen | bewusst gegensteuern (Kap. 31) |
+| Marken-/Stilklau | fremder Look nachgeahmt | eigene Vorgaben nutzen |
 
 **Copilot-Prompt zum Ausprobieren:**
 
 ```text
-Fasse die folgenden Workshop-Notizen zu einer strukturierten Management-Summary
-(max. 1 Seite) mit Ausgangslage, Erkenntnissen und 3 Empfehlungen zusammen:
-[Notizen einfügen]
+Erstelle die Gliederung (8 Folien) für eine Kundenpräsentation zu unserem
+neuen Service. Markiere je Folie, welche Angabe ich unbedingt selbst auf
+Richtigkeit prüfen muss.
 ```
+
+---
+
+## Zusammenfassung
+
+- Generative KI erstellt **Text, Bild, Präsentation, Audio, Video** – im Büro v. a. Text, Folien, Bilder.
+- **Bildgeneratoren** brauchen präzise Prompts (Motiv, Stil, Stimmung, Perspektive, Format).
+- **Copilot** liefert schnelle Rohentwürfe – der Feinschliff und die Faktenprüfung bleiben bei dir.
+- Beachte **Urheberrecht, Kennzeichnungspflicht (EU AI Act) und Persönlichkeitsrechte**.
 
 ---
 

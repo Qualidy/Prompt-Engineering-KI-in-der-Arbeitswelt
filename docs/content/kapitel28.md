@@ -5,63 +5,96 @@
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Wie KI **Dokumente** automatisch verarbeitet
-- Die Schritte: **Erfassen (OCR) → Extrahieren → Klassifizieren → Weiterverarbeiten**
-- Wie **Copilot** bei Dokumenten im Arbeitsalltag hilft
-- Worauf du bei Vertraulichkeit achten musst
+- Warum **Dokumentenverarbeitung** eines der stärksten KI-Einsatzfelder im Büro ist
+- Die typische **Verarbeitungskette**: erfassen, extrahieren, klassifizieren, prüfen, weiterleiten
+- Was **OCR, Extraktion und Klassifikation** bedeuten
+- Wie **Copilot** Dokumente zusammenfasst, durchsucht und Daten herauszieht
+- Welche **Fehlerrisiken** bestehen und wie du sie absicherst
 </div>
 
 ---
 
-## 28.1 Warum Dokumentenverarbeitung?
+## 28.1 Warum Dokumente ein idealer KI-Fall sind
 
-Unternehmen ertrinken in Dokumenten: Rechnungen, Verträge, Formulare, E-Mails. **Intelligente Dokumentenverarbeitung (IDP)** automatisiert das Auslesen und Einordnen.
+Unternehmen ertrinken in Dokumenten: Rechnungen, Verträge, Berichte, E-Mails, Formulare, Protokolle. Vieles davon ist **unstrukturierter Text** (Kap. 9) – genau das, was moderne Sprach-KI besonders gut verarbeitet.
+
+!!! info "Der Hebel"
+    Dokumentenarbeit ist oft **zeitraubend, repetitiv und fehleranfällig**: lesen, verstehen, wichtige Daten heraussuchen, ablegen. Genau diese Kette kann KI stark beschleunigen. Deshalb gehört Dokumentenverarbeitung zu den **schnellsten und lohnendsten** Einsatzfeldern – ein klassischer Quick Win (Kap. 4).
+
+---
+
+## 28.2 Die Verarbeitungskette
 
 ```mermaid
 flowchart LR
-    A([Dokument]) --> B([OCR: Text erkennen])
-    B --> C([Daten extrahieren])
-    C --> D([Klassifizieren])
-    D --> E([ins System / Workflow])
+    A([Erfassen: Scan/Datei]) --> B([OCR: Text lesbar machen])
+    B --> C([Klassifizieren: welcher Dokumenttyp?])
+    C --> D([Extrahieren: relevante Daten])
+    D --> E([Prüfen: plausibel/vollständig?])
+    E --> F([Weiterleiten/Ablegen])
 ```
 
-| Schritt | Aufgabe |
-|---|---|
-| OCR | Bild/Scan in Text umwandeln |
-| Extraktion | relevante Felder herausziehen (Betrag, Datum …) |
-| Klassifikation | Dokumenttyp erkennen (Rechnung, Vertrag …) |
-| Weiterverarbeitung | Daten ins Zielsystem/Workflow geben |
+| Schritt | Was passiert | Beispiel |
+|---|---|---|
+| **Erfassen** | Dokument digitalisieren | Rechnung scannen |
+| **OCR** | Bild → maschinenlesbarer Text | gescanntes PDF wird durchsuchbar |
+| **Klassifizieren** | Dokumententyp bestimmen | „das ist eine Rechnung" |
+| **Extrahieren** | Kernangaben herausziehen | Betrag, Datum, Lieferant |
+| **Prüfen** | Plausibilität/Vollständigkeit | „Betrag fehlt?" |
+| **Weiterleiten** | ins Zielsystem/an Zuständige | Buchhaltung |
+
+### OCR, Extraktion, Klassifikation kurz erklärt
+
+- **OCR (Texterkennung):** wandelt ein **Bild** von Text (Scan, Foto) in **echten Text** um, mit dem man arbeiten kann.
+- **Klassifikation:** ordnet ein Dokument einer **Kategorie** zu (Rechnung, Angebot, Mahnung …).
+- **Extraktion:** zieht **gezielt Datenfelder** heraus (Rechnungsnummer, Betrag, Datum).
 
 ---
 
-## 28.2 Copilot für Dokumente
+## 28.3 Dokumentenarbeit mit Copilot
 
-Copilot glänzt bei **textbasierten** Dokumentenaufgaben:
+**Copilot** ist im Büroalltag extrem stark bei Text-Dokumenten:
 
-- **Zusammenfassen** langer Dokumente
-- **Extrahieren** von Kernpunkten und Fristen
-- **Vergleichen** von Versionen
-- **Beantworten** von Fragen zu einem Dokument
+| Aufgabe | Beispiel-Prompt |
+|---|---|
+| Zusammenfassen | „Fasse dieses 12-seitige Dokument in 7 Kernpunkten zusammen." |
+| Gezielt fragen | „Was steht in diesem Vertrag zur Kündigungsfrist?" |
+| Daten extrahieren | „Zieh aus dieser Rechnung Nummer, Datum, Betrag, Lieferant als Tabelle." |
+| Vergleichen | „Was hat sich zwischen diesen zwei Vertragsversionen geändert?" |
+| Umformen | „Mach aus diesem Protokoll eine To-do-Liste mit Verantwortlichen." |
 
-**Copilot-Prompt zum Ausprobieren:**
+**Beispiel-Prompt zum Ausprobieren:**
 
 ```text
-Fasse diesen Vertrag in 5 Stichpunkten zusammen, liste alle Fristen und
-Kündigungsregelungen auf und markiere mögliche Risiken:
-[Vertragstext einfügen]
+Analysiere den folgenden Vertragstext. Erstelle eine Tabelle mit:
+Vertragspartner, Laufzeit, Kündigungsfrist, monatliche Kosten, besondere
+Klauseln. Markiere alle Angaben, die im Text nicht eindeutig zu finden sind.
 ```
+
+!!! tip "Der 'markiere Unsicheres'-Trick"
+    Die Anweisung, **unsichere oder fehlende Angaben ausdrücklich zu markieren**, ist Gold wert: So siehst du sofort, wo du nachprüfen musst, statt einer scheinbar vollständigen Tabelle blind zu vertrauen.
 
 ---
 
-## 28.3 Vertraulichkeit und Prüfung
+## 28.4 Fehlerrisiken und Absicherung
 
-!!! warning "Sensible Dokumente schützen"
-    - Prüfe, ob du **vertrauliche/personenbezogene** Dokumente in ein KI-Werkzeug geben darfst (Unternehmensrichtlinie, DSGVO – Kapitel 33).
-    - Nutze die im Unternehmen **freigegebene** Copilot-Umgebung.
-    - KI-Ergebnisse (z. B. extrahierte Beträge) **immer prüfen**, bevor sie weiterverarbeitet werden.
+!!! warning "Wo es schiefgehen kann"
+    - **Zahlendreher/Extraktionsfehler:** Ein falsch gelesener Betrag in der Buchhaltung ist teuer – kritische Werte gegen das Original prüfen.
+    - **Halluzinierte Inhalte:** Bei fehlenden Angaben kann das Modell etwas „Plausibles" erfinden (Kap. 15).
+    - **Vertraulichkeit:** Verträge und personenbezogene Dokumente nur in der **freigegebenen** M365-Umgebung verarbeiten (Kap. 33).
+    - **Vollautomatik ohne Kontrolle:** Bei rechts-/geldrelevanten Dokumenten sollte ein Mensch prüfen (Human-in-the-Loop).
 
-!!! info "Menschliche Freigabe"
-    Bei rechtlich oder finanziell relevanten Dokumenten bleibt eine **menschliche Kontrolle** vor der Verbuchung/Unterzeichnung Pflicht.
+!!! info "Automatisierung mit Augenmaß"
+    Ein bewährtes Muster: KI verarbeitet und schlägt vor, ein Mensch **prüft die kritischen Fälle** (z. B. hohe Beträge, unklare Extraktionen). So bekommt man Tempo **und** Sicherheit. Für große Volumina gibt es spezialisierte Systeme (z. B. Azure AI Document Intelligence); für den Alltag genügt oft Copilot.
+
+---
+
+## Zusammenfassung
+
+- Dokumentenverarbeitung ist ein **Top-Einsatzfeld** – viel unstrukturierter Text, viel Routine.
+- Die Kette: **Erfassen → OCR → Klassifizieren → Extrahieren → Prüfen → Weiterleiten**.
+- **Copilot** ist stark beim Zusammenfassen, Durchsuchen, Extrahieren und Vergleichen von Dokumenten.
+- Absicherung: **kritische Werte prüfen**, Unsicheres markieren lassen, Vertraulichkeit wahren, Human-in-the-Loop.
 
 ---
 

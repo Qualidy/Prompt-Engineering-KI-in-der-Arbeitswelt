@@ -797,36 +797,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#171-das-grundprinzip" class="md-nav__link">
+  <a href="#171-was-ist-reinforcement-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      17.1 Das Grundprinzip
+      17.1 Was ist Reinforcement Learning?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#172-typische-anwendungen" class="md-nav__link">
+  <a href="#172-die-grundelemente" class="md-nav__link">
     <span class="md-ellipsis">
-      17.2 Typische Anwendungen
+      17.2 Die Grundelemente
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#173-rlhf-der-feinschliff-fur-sprachmodelle" class="md-nav__link">
+  <a href="#173-exploration-vs-exploitation" class="md-nav__link">
     <span class="md-ellipsis">
-      17.3 RLHF: der Feinschliff für Sprachmodelle
+      17.3 Exploration vs. Exploitation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#174-grenzen" class="md-nav__link">
+  <a href="#174-anwendungen-von-rl" class="md-nav__link">
     <span class="md-ellipsis">
-      17.4 Grenzen
+      17.4 Anwendungen von RL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#175-rlhf-rl-hinter-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      17.5 RLHF: RL hinter Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1119,80 +1137,153 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Das Grundprinzip des <strong>verstärkenden Lernens</strong> (Reinforcement Learning, RL)</li>
-<li>Die Begriffe <strong>Agent, Umgebung, Aktion, Belohnung</strong></li>
-<li>Typische Anwendungen von RL</li>
-<li>Was <strong>RLHF</strong> ist – und warum es Copilot &amp; ChatGPT hilfreich macht</li>
+<li>Was <strong>Reinforcement Learning (RL)</strong> – bestärkendes Lernen – ist</li>
+<li>Die zentralen Begriffe: <strong>Agent, Umgebung, Aktion, Belohnung, Strategie</strong></li>
+<li>Der Unterschied zwischen <strong>Exploration</strong> (Ausprobieren) und <strong>Exploitation</strong> (Ausnutzen)</li>
+<li>Wo RL in der Praxis eingesetzt wird – und wie es hinter Copilot steckt (<strong>RLHF</strong>)</li>
+<li>Welche <strong>Grenzen und Risiken</strong> RL hat</li>
 </ul>
 </div>
 <hr />
-<h2 id="171-das-grundprinzip">17.1 Das Grundprinzip<a class="headerlink" href="#171-das-grundprinzip" title="Permanent link">&para;</a></h2>
-<p>Beim <strong>Reinforcement Learning</strong> lernt ein <strong>Agent</strong> durch <strong>Ausprobieren</strong>: Für gute Aktionen gibt es <strong>Belohnung</strong>, für schlechte nicht (oder Bestrafung). Über viele Versuche entwickelt der Agent eine <strong>Strategie (Policy)</strong>.</p>
+<h2 id="171-was-ist-reinforcement-learning">17.1 Was ist Reinforcement Learning?<a class="headerlink" href="#171-was-ist-reinforcement-learning" title="Permanent link">&para;</a></h2>
+<p><strong>Reinforcement Learning</strong> ist die dritte große Lernart (neben überwachtem und unüberwachtem Lernen, Kap. 12). Hier lernt ein System durch <strong>Ausprobieren und Rückmeldung</strong>: Gute Aktionen werden <strong>belohnt</strong>, schlechte <strong>bestraft</strong>. Über viele Versuche entwickelt es eine <strong>Strategie</strong>, die die Belohnung maximiert.</p>
+<div class="admonition example">
+<p class="admonition-title">Wie beim Dressieren – oder Videospielen</p>
+<p>Ein Kind lernt Fahrradfahren nicht durch eine Regel, sondern durch <strong>Versuch und Irrtum</strong>: Stürzt es, war die Aktion schlecht; hält es die Balance, war sie gut. Genauso lernt ein RL-System – nur millionenfach schneller und in einer simulierten Umgebung.</p>
+</div>
+<hr />
+<h2 id="172-die-grundelemente">17.2 Die Grundelemente<a class="headerlink" href="#172-die-grundelemente" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
     A([Agent]) --&gt;|Aktion| B([Umgebung])
-    B --&gt;|neuer Zustand + Belohnung| A</code></pre>
+    B --&gt;|neuer Zustand + Belohnung| A
+    A --&gt; C([verbessert Strategie])</code></pre>
 <table>
 <thead>
 <tr>
 <th>Begriff</th>
 <th>Bedeutung</th>
+<th>Beispiel (selbstfahrendes Lager-Roboter)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Agent</td>
-<td>der Lernende (Programm)</td>
+<td><strong>Agent</strong></td>
+<td>der Lernende</td>
+<td>der Roboter</td>
 </tr>
 <tr>
-<td>Umgebung</td>
+<td><strong>Umgebung</strong></td>
 <td>die Welt, in der er handelt</td>
+<td>das Lager</td>
 </tr>
 <tr>
-<td>Aktion</td>
-<td>ein möglicher Zug/Schritt</td>
+<td><strong>Zustand</strong></td>
+<td>aktuelle Lage</td>
+<td>Position, Hindernisse</td>
 </tr>
 <tr>
-<td>Belohnung</td>
-<td>Rückmeldung über Erfolg</td>
+<td><strong>Aktion</strong></td>
+<td>mögliche Handlung</td>
+<td>vor, zurück, drehen</td>
 </tr>
 <tr>
-<td>Policy</td>
-<td>die gelernte Strategie</td>
+<td><strong>Belohnung</strong></td>
+<td>Bewertung der Aktion</td>
+<td>+1 Ziel erreicht, −1 Kollision</td>
+</tr>
+<tr>
+<td><strong>Strategie (Policy)</strong></td>
+<td>gelernte Handlungsregel</td>
+<td>„in Situation X tue Y"</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="172-typische-anwendungen">17.2 Typische Anwendungen<a class="headerlink" href="#172-typische-anwendungen" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Spiele:</strong> Schach, Go (AlphaGo)</li>
-<li><strong>Robotik:</strong> Bewegungen lernen</li>
-<li><strong>Steuerung:</strong> Energie-, Verkehrs-, Lageroptimierung</li>
-<li><strong>Empfehlungen:</strong> Reihenfolgen optimieren</li>
-</ul>
+<p>Der Kreislauf: Der Agent führt eine <strong>Aktion</strong> aus, die <strong>Umgebung</strong> antwortet mit neuem Zustand und <strong>Belohnung</strong>, der Agent passt seine <strong>Strategie</strong> an – und das millionenfach.</p>
 <div class="admonition info">
-<p class="admonition-title">Warum RL besonders ist</p>
-<p>Anders als beim überwachten Lernen gibt es <strong>keine</strong> vorgegebenen „richtigen Antworten". Der Agent lernt allein aus den <strong>Folgen</strong> seiner Handlungen – ähnlich wie ein Mensch durch Erfahrung.</p>
+<p class="admonition-title">Der Unterschied zum überwachten Lernen</p>
+<p>Beim überwachten Lernen sagt man dem System bei <strong>jedem</strong> Beispiel die richtige Antwort. Bei RL gibt es <strong>keine</strong> vorgegebene richtige Aktion – nur eine <strong>Belohnung</strong> als Feedback. Das System muss selbst herausfinden, welche Handlungsfolge langfristig die meiste Belohnung bringt. Das ist schwieriger, aber sehr mächtig für <strong>Entscheidungsketten</strong>.</p>
 </div>
 <hr />
-<h2 id="173-rlhf-der-feinschliff-fur-sprachmodelle">17.3 RLHF: der Feinschliff für Sprachmodelle<a class="headerlink" href="#173-rlhf-der-feinschliff-fur-sprachmodelle" title="Permanent link">&para;</a></h2>
-<p><strong>RLHF</strong> = <em>Reinforcement Learning from Human Feedback</em>. Menschen bewerten Antworten des Modells; das Modell lernt, <strong>bevorzugte</strong> Antworten zu geben.</p>
-<pre class="mermaid"><code>flowchart LR
-    A([Modell erzeugt Antworten]) --&gt; B([Menschen bewerten])
-    B --&gt; C([Belohnungssignal])
-    C --&gt; D([Modell wird angepasst])
-    D --&gt; A</code></pre>
-<p>Genau dieser Schritt macht aus einem reinen „Textvorhersager" einen <strong>hilfreichen, höflichen Assistenten</strong> wie Copilot.</p>
+<h2 id="173-exploration-vs-exploitation">17.3 Exploration vs. Exploitation<a class="headerlink" href="#173-exploration-vs-exploitation" title="Permanent link">&para;</a></h2>
+<p>Ein RL-Agent steht vor einem Dilemma:</p>
+<ul>
+<li><strong>Exploitation (Ausnutzen):</strong> das tun, was bisher am besten funktioniert hat.</li>
+<li><strong>Exploration (Erkunden):</strong> Neues ausprobieren, das vielleicht noch besser ist.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Das Restaurant-Dilemma</p>
+<p>Gehst du immer in dein <strong>Lieblingsrestaurant</strong> (Exploitation) oder probierst du ein <strong>neues</strong> (Exploration), das eventuell besser ist? Zu viel Exploitation → du verpasst Besseres. Zu viel Exploration → du landest oft bei Schlechtem. Ein gutes RL-System <strong>balanciert</strong> beides.</p>
+</div>
+<p>Diese Balance ist eine Kernherausforderung von RL: Ohne Erkundung bleibt der Agent in mittelmäßigen Lösungen stecken; mit zu viel Erkundung lernt er nie eine stabile Strategie.</p>
 <hr />
-<h2 id="174-grenzen">17.4 Grenzen<a class="headerlink" href="#174-grenzen" title="Permanent link">&para;</a></h2>
+<h2 id="174-anwendungen-von-rl">17.4 Anwendungen von RL<a class="headerlink" href="#174-anwendungen-von-rl" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>Anwendung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spiele</td>
+<td>AlphaGo, Schach, Videospiele (übermenschlich)</td>
+</tr>
+<tr>
+<td>Robotik</td>
+<td>Greifen, Laufen, Navigation</td>
+</tr>
+<tr>
+<td>Logistik</td>
+<td>Routen- und Lageroptimierung</td>
+</tr>
+<tr>
+<td>Energie</td>
+<td>Steuerung von Kühlung/Netzen</td>
+</tr>
+<tr>
+<td>Finanzen</td>
+<td>Handelsstrategien (mit Vorsicht)</td>
+</tr>
+<tr>
+<td><strong>Sprach-KI</strong></td>
+<td><strong>RLHF</strong> – siehe unten</td>
+</tr>
+</tbody>
+</table>
+<p>RL glänzt überall dort, wo eine <strong>Folge von Entscheidungen</strong> über den Erfolg entscheidet und man einen klaren Belohnungsbegriff definieren kann.</p>
+<hr />
+<h2 id="175-rlhf-rl-hinter-copilot">17.5 RLHF: RL hinter Copilot<a class="headerlink" href="#175-rlhf-rl-hinter-copilot" title="Permanent link">&para;</a></h2>
+<p>Der für uns wichtigste RL-Einsatz ist <strong>RLHF</strong> (<em>Reinforcement Learning from Human Feedback</em>) – die Methode, mit der Sprachmodelle wie hinter Copilot „höflich und hilfreich" gemacht werden (Kap. 16).</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Modell erzeugt mehrere Antworten]) --&gt; B([Menschen bewerten: welche ist besser?])
+    B --&gt; C([Belohnungsmodell lernt Präferenzen])
+    C --&gt; D([Modell wird auf bevorzugte Antworten optimiert])</code></pre>
+<p>Hier ist die <strong>Belohnung</strong> die <strong>menschliche Bewertung</strong>: Menschen sagen, welche von mehreren Antworten sie besser finden, und das Modell lernt, solche Antworten häufiger zu geben. So wird aus einem rohen Sprachvorhersager ein nützlicher Assistent.</p>
 <div class="admonition warning">
-<p class="admonition-title">Nicht für alles geeignet</p>
-<p>RL braucht viele Versuche und eine gut definierte <strong>Belohnung</strong>. Eine schlecht gewählte Belohnung führt zu unerwünschtem Verhalten („belohnt wird das Falsche"). In der Praxis ist RL aufwendig und wird gezielt eingesetzt.</p>
+<p class="admonition-title">Grenzen und Risiken von RL</p>
+<ul>
+<li><strong>Belohnungsdesign ist heikel:</strong> Ein schlecht gewähltes Belohnungssignal führt zu unerwünschtem Verhalten („Reward Hacking" – der Agent findet einen Schummelweg zur Belohnung).</li>
+<li><strong>RLHF spiegelt menschliche Bewertungen</strong> – inklusive deren Verzerrungen (Bias, Kap. 31).</li>
+<li>RL braucht <strong>sehr viele</strong> Versuche; in der echten Welt (statt Simulation) ist das oft teuer oder gefährlich.</li>
+</ul>
 </div>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre Reinforcement Learning mit dem Beispiel, wie ein Hund ein Kunststück lernt.
-Ordne die Begriffe Agent, Umgebung, Aktion und Belohnung dem Beispiel zu.
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre Reinforcement Learning an einem Alltagsbeispiel und beschreibe dann,
+was Exploration und Exploitation bedeuten. Nenne einen Fall, in dem eine
+schlecht gewählte Belohnung zu unerwünschtem Verhalten führen könnte.
 </code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Reinforcement Learning</strong> lernt durch <strong>Ausprobieren und Belohnung</strong> – ohne vorgegebene richtige Antworten.</li>
+<li>Grundelemente: <strong>Agent, Umgebung, Zustand, Aktion, Belohnung, Strategie</strong>.</li>
+<li>Kernabwägung: <strong>Exploration</strong> (Neues erkunden) vs. <strong>Exploitation</strong> (Bewährtes nutzen).</li>
+<li><strong>RLHF</strong> macht Sprachmodelle wie Copilot hilfreich und sicher – die „Belohnung" ist menschliches Feedback.</li>
+<li>Risiken: schwieriges <strong>Belohnungsdesign</strong>, übernommene <strong>Verzerrungen</strong>, hoher Versuchsaufwand.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

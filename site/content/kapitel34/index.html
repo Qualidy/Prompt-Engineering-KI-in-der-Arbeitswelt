@@ -770,9 +770,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#341-das-black-box-problem" class="md-nav__link">
+  <a href="#341-das-blackbox-problem" class="md-nav__link">
     <span class="md-ellipsis">
-      34.1 Das Black-Box-Problem
+      34.1 Das Blackbox-Problem
     </span>
   </a>
   
@@ -788,18 +788,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#343-wege-zur-erklarbarkeit" class="md-nav__link">
+  <a href="#343-nachvollziehbarkeit-vertrauen" class="md-nav__link">
     <span class="md-ellipsis">
-      34.3 Wege zur Erklärbarkeit
+      34.3 Nachvollziehbarkeit ≠ Vertrauen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#344-copilot-nach-begrundungen-fragen" class="md-nav__link">
+  <a href="#344-wege-zu-mehr-erklarbarkeit" class="md-nav__link">
     <span class="md-ellipsis">
-      34.4 Copilot nach Begründungen fragen
+      34.4 Wege zu mehr Erklärbarkeit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#345-transparenz-bei-copilot-einfordern" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.5 Transparenz bei Copilot einfordern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1004,75 +1022,150 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was das <strong>Black-Box-Problem</strong> ist</li>
-<li>Warum <strong>Erklärbarkeit (Explainable AI, XAI)</strong> wichtig ist</li>
-<li>Der Unterschied zwischen <strong>interpretierbaren</strong> und <strong>erklärenden</strong> Verfahren</li>
-<li>Wie du Copilot nach <strong>Begründungen</strong> fragst</li>
+<li>Was das <strong>Blackbox-Problem</strong> ist und warum es entsteht</li>
+<li>Was <strong>Explainable AI (XAI)</strong> bedeutet und warum sie wichtig ist</li>
+<li>Der Unterschied zwischen <strong>Nachvollziehbarkeit</strong> und <strong>Vertrauen</strong></li>
+<li>Welche Wege es gibt, KI-Entscheidungen <strong>erklärbarer</strong> zu machen</li>
+<li>Wie du bei <strong>Copilot</strong> mehr Transparenz einforderst (Quellen, Begründung)</li>
 </ul>
 </div>
 <hr />
-<h2 id="341-das-black-box-problem">34.1 Das Black-Box-Problem<a class="headerlink" href="#341-das-black-box-problem" title="Permanent link">&para;</a></h2>
-<p>Viele leistungsstarke KI-Modelle (v. a. tiefe neuronale Netze) sind <strong>Black Boxes</strong>: Sie liefern ein Ergebnis, aber <strong>warum</strong>, ist von außen schwer nachvollziehbar.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warum das problematisch ist</p>
-<p>Ohne Erklärung fehlt <strong>Vertrauen</strong>, und Fehler bleiben unentdeckt. Bei Entscheidungen über Menschen (Kredit, Bewerbung) ist Nachvollziehbarkeit oft sogar <strong>rechtlich gefordert</strong>.</p>
+<h2 id="341-das-blackbox-problem">34.1 Das Blackbox-Problem<a class="headerlink" href="#341-das-blackbox-problem" title="Permanent link">&para;</a></h2>
+<p>Moderne KI-Modelle – besonders tiefe neuronale Netze und LLMs – haben Millionen bis Milliarden interner Parameter. <strong>Warum</strong> genau ein Modell zu einer bestimmten Ausgabe kommt, lässt sich von außen kaum nachvollziehen. Das nennt man das <strong>Blackbox-Problem</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Eingabe]) --&gt; B([Blackbox: Millionen Parameter])
+    B --&gt; C([Ausgabe])
+    B -.-&gt;|Warum genau so?| D([kaum nachvollziehbar])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Warum das entsteht</p>
+<p>Bei klassischer Software kann man die Regel im Code nachlesen. Ein neuronales Netz hat <strong>keine lesbaren Regeln</strong> – sein „Wissen" steckt in unzähligen Zahlenwerten, die gemeinsam wirken. Es gibt keine einzelne Stelle, die man aufschlagen und lesen könnte. Das macht Erklärbarkeit technisch schwierig.</p>
 </div>
 <hr />
 <h2 id="342-warum-erklarbarkeit-wichtig-ist">34.2 Warum Erklärbarkeit wichtig ist<a class="headerlink" href="#342-warum-erklarbarkeit-wichtig-ist" title="Permanent link">&para;</a></h2>
+<p><strong>Explainable AI (XAI)</strong> umfasst Methoden, die KI-Entscheidungen <strong>nachvollziehbar</strong> machen. Das ist aus mehreren Gründen zentral:</p>
 <table>
 <thead>
 <tr>
 <th>Grund</th>
-<th>Bedeutung</th>
+<th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Vertrauen</td>
-<td>Nutzer akzeptieren, was sie verstehen</td>
+<td><strong>Vertrauen</strong></td>
+<td>Menschen nutzen nur, was sie verstehen</td>
 </tr>
 <tr>
-<td>Fehlersuche</td>
-<td>falsche Begründungen aufdecken</td>
+<td><strong>Fehlersuche</strong></td>
+<td>Warum lag das Modell falsch?</td>
 </tr>
 <tr>
-<td>Fairness</td>
-<td>Bias erkennen (Kapitel 31)</td>
+<td><strong>Fairness</strong></td>
+<td>War die Entscheidung diskriminierend? (Kap. 31)</td>
 </tr>
 <tr>
-<td>Recht</td>
-<td>Auskunfts-/Begründungspflichten</td>
+<td><strong>Recht</strong></td>
+<td>Betroffene haben teils ein Recht auf Erklärung (Kap. 32/33)</td>
+</tr>
+<tr>
+<td><strong>Verantwortung</strong></td>
+<td>Wer entscheidet, muss begründen können</td>
 </tr>
 </tbody>
 </table>
-<pre class="mermaid"><code>flowchart LR
-    A([Eingabe]) --&gt; B([KI-Modell])
-    B --&gt; C([Ergebnis])
-    B --&gt; D([Erklärung: welche Faktoren waren ausschlaggebend?])</code></pre>
-<hr />
-<h2 id="343-wege-zur-erklarbarkeit">34.3 Wege zur Erklärbarkeit<a class="headerlink" href="#343-wege-zur-erklarbarkeit" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Interpretierbare Modelle:</strong> von Haus aus verständlich (z. B. Entscheidungsbäume)</li>
-<li><strong>Erklärungsmethoden (nachträglich):</strong> zeigen, welche Merkmale ein Ergebnis beeinflusst haben (z. B. „Der Antrag wurde v. a. wegen X und Y abgelehnt")</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Trade-off</p>
-<p>Oft gilt: Je leistungsfähiger das Modell, desto schwerer erklärbar. Man wägt zwischen <strong>Genauigkeit</strong> und <strong>Nachvollziehbarkeit</strong> ab – je nach Anwendung.</p>
+<div class="admonition warning">
+<p class="admonition-title">Besonders bei Hochrisiko-Anwendungen</p>
+<p>Bei einer abgelehnten Kreditanfrage oder einer aussortierten Bewerbung reicht „die KI hat entschieden" <strong>nicht</strong> – weder rechtlich noch ethisch. Betroffene müssen eine nachvollziehbare Begründung erhalten. Der EU AI Act verlangt für Hochrisiko-KI deshalb ausdrücklich <strong>Transparenz und Nachvollziehbarkeit</strong>.</p>
 </div>
 <hr />
-<h2 id="344-copilot-nach-begrundungen-fragen">34.4 Copilot nach Begründungen fragen<a class="headerlink" href="#344-copilot-nach-begrundungen-fragen" title="Permanent link">&para;</a></h2>
-<p>Auch bei Copilot kannst du <strong>Nachvollziehbarkeit</strong> einfordern.</p>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<h2 id="343-nachvollziehbarkeit-vertrauen">34.3 Nachvollziehbarkeit ≠ Vertrauen<a class="headerlink" href="#343-nachvollziehbarkeit-vertrauen" title="Permanent link">&para;</a></h2>
+<p>Ein wichtiger Unterschied: Eine <strong>flüssige Erklärung</strong> ist nicht automatisch eine <strong>korrekte</strong> Erklärung.</p>
+<div class="admonition warning">
+<p class="admonition-title">Die 'plausible Begründung'-Falle</p>
+<p>Fragst du Copilot „Warum hast du das so beantwortet?", liefert es eine <strong>plausibel klingende</strong> Begründung. Aber Achtung: Das Modell rekonstruiert diese Erklärung im Nachhinein – sie muss <strong>nicht</strong> der tatsächliche innere „Rechenweg" sein. Eine überzeugende Erklärung ist also kein Beweis für Richtigkeit. Vertrauen sollte auf <strong>Prüfung</strong> basieren, nicht auf der Eloquenz der Begründung.</p>
+</div>
+<hr />
+<h2 id="344-wege-zu-mehr-erklarbarkeit">34.4 Wege zu mehr Erklärbarkeit<a class="headerlink" href="#344-wege-zu-mehr-erklarbarkeit" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ansatz</th>
+<th>Idee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Einfachere Modelle</strong></td>
+<td>wo möglich erklärbare Verfahren (z. B. Entscheidungsbäume) statt Blackbox nutzen</td>
+</tr>
+<tr>
+<td><strong>Erklärmethoden (z. B. SHAP)</strong></td>
+<td>zeigen, welche Eingabemerkmale die Entscheidung beeinflusst haben</td>
+</tr>
+<tr>
+<td><strong>Quellenangaben</strong></td>
+<td>Antworten mit Belegen versehen (RAG, Kap. 5)</td>
+</tr>
+<tr>
+<td><strong>Human in the Loop</strong></td>
+<td>Mensch prüft und verantwortet (Kap. 32)</td>
+</tr>
+<tr>
+<td><strong>Dokumentation</strong></td>
+<td>nachhalten, wie ein System funktioniert und getestet wurde</td>
+</tr>
+</tbody>
+</table>
+<p>Bei generativer KI ist der praktikabelste Hebel oft, <strong>Quellen und Belege</strong> zu verlangen und die Aussagen <strong>selbst zu verifizieren</strong>.</p>
+<hr />
+<h2 id="345-transparenz-bei-copilot-einfordern">34.5 Transparenz bei Copilot einfordern<a class="headerlink" href="#345-transparenz-bei-copilot-einfordern" title="Permanent link">&para;</a></h2>
+<p>Du kannst Copilot aktiv zu mehr Nachvollziehbarkeit bringen:</p>
+<table>
+<thead>
+<tr>
+<th>Ziel</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quellen nennen</td>
+<td>„Nenne für jede Aussage die Quelle bzw. das Dokument."</td>
+</tr>
+<tr>
+<td>Annahmen offenlegen</td>
+<td>„Welche Annahmen hast du bei dieser Antwort getroffen?"</td>
+</tr>
+<tr>
+<td>Unsicherheit zeigen</td>
+<td>„Wie sicher bist du? Was könnte falsch sein?"</td>
+</tr>
+<tr>
+<td>Schritte zeigen</td>
+<td>„Erkläre deinen Gedankengang Schritt für Schritt."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Bewerte diese drei Angebote und empfiehl eines. Begründe deine Empfehlung
-Schritt für Schritt und nenne, welche Kriterien am stärksten gewichtet wurden.
-[Angebote einfügen]
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Beantworte meine Frage und nenne anschließend: (1) welche Annahmen du getroffen
+hast, (2) wie sicher du dir bist, und (3) welche Angaben ich unbedingt selbst
+überprüfen sollte. Frage: [deine Frage]
 </code></pre></div></td></tr></table></div>
 <div class="admonition tip">
-<p class="admonition-title">Begründung anfordern</p>
-<p>Formulierungen wie „Begründe Schritt für Schritt", „Nenne deine Annahmen" oder „Woran machst du das fest?" erhöhen die Nachvollziehbarkeit der Antwort – prüfen musst du sie trotzdem.</p>
+<p class="admonition-title">Merke</p>
+<p>Erklärbarkeit ist bei generativer KI (noch) begrenzt. Umso wichtiger ist deine <strong>prüfende Rolle</strong>: Quellen verlangen, Unsicherheiten sichtbar machen, kritische Aussagen selbst verifizieren. Transparenz ersetzt nicht die Kontrolle – sie erleichtert sie.</p>
 </div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Das <strong>Blackbox-Problem</strong>: Bei komplexen Modellen ist das „Warum" von außen kaum nachvollziehbar.</li>
+<li><strong>Explainable AI (XAI)</strong> schafft Nachvollziehbarkeit – wichtig für Vertrauen, Fehlersuche, Fairness und Recht.</li>
+<li><strong>Nachvollziehbarkeit ≠ Vertrauen:</strong> eine plausible Erklärung ist nicht automatisch korrekt.</li>
+<li>Hebel: einfachere Modelle, Erklärmethoden, <strong>Quellenangaben</strong>, Human in the Loop, Doku.</li>
+<li>Bei <strong>Copilot</strong> aktiv Quellen, Annahmen und Unsicherheiten einfordern – und selbst verifizieren.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

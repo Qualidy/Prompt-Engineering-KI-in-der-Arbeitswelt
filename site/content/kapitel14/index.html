@@ -737,36 +737,102 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#142-die-anatomie-eines-guten-prompts" class="md-nav__link">
+  <a href="#142-die-funf-bausteine-eines-guten-prompts" class="md-nav__link">
     <span class="md-ellipsis">
-      14.2 Die Anatomie eines guten Prompts
+      14.2 Die fünf Bausteine eines guten Prompts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.2 Die fünf Bausteine eines guten Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vom-schwachen-zum-starken-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vom schwachen zum starken Prompt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-bewahrte-techniken" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3 Bewährte Techniken
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.3 Bewährte Techniken">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zero-shot-vs-few-shot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero-Shot vs. Few-Shot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-thought-denk-in-schritten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chain-of-Thought: „Denk in Schritten"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rollen-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rollen-Prompting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteratives-nachscharfen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteratives Nachschärfen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-haufige-fehler" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4 Häufige Fehler
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#143-bewahrte-prompt-muster" class="md-nav__link">
+  <a href="#145-ein-wiederverwendbares-prompt-gerust" class="md-nav__link">
     <span class="md-ellipsis">
-      14.3 Bewährte Prompt-Muster
+      14.5 Ein wiederverwendbares Prompt-Gerüst
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#144-prompts-iterativ-verbessern" class="md-nav__link">
+  <a href="#zusammenfassung" class="md-nav__link">
     <span class="md-ellipsis">
-      14.4 Prompts iterativ verbessern
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#145-haufige-fehler" class="md-nav__link">
-    <span class="md-ellipsis">
-      14.5 Häufige Fehler
+      Zusammenfassung
     </span>
   </a>
   
@@ -1128,125 +1194,213 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was <strong>Prompt Engineering</strong> ist und warum es die Schlüsselkompetenz dieses Kurses ist</li>
-<li>Die <strong>Anatomie</strong> eines guten Prompts (Rolle, Aufgabe, Kontext, Format)</li>
-<li>Bewährte <strong>Prompt-Muster</strong>: Rollen-Prompt, Few-Shot, Schritt-für-Schritt, Format-Vorgabe</li>
-<li>Wie du Prompts <strong>iterativ</strong> verbesserst – und häufige Fehler vermeidest</li>
+<li>Was <strong>Prompt Engineering</strong> ist und warum es die <strong>Schlüsselkompetenz</strong> dieses Kurses ist</li>
+<li>Die <strong>fünf Bausteine</strong> eines guten Prompts (Rolle, Aufgabe, Kontext, Format, Beispiele)</li>
+<li>Bewährte <strong>Techniken</strong>: Zero-/Few-Shot, Chain-of-Thought, Rollen-Prompting, iteratives Nachschärfen</li>
+<li>Häufige <strong>Fehler</strong> und wie du sie vermeidest</li>
+<li>Wie du Prompts <strong>systematisch verbesserst</strong>, statt zu raten</li>
 </ul>
 </div>
 <hr />
 <h2 id="141-was-ist-prompt-engineering">14.1 Was ist Prompt Engineering?<a class="headerlink" href="#141-was-ist-prompt-engineering" title="Permanent link">&para;</a></h2>
-<p>Ein <strong>Prompt</strong> ist die Eingabe, mit der du ein Sprachmodell wie <strong>Copilot</strong> steuerst. <strong>Prompt Engineering</strong> ist die Kunst, diese Eingaben so zu formulieren, dass du <strong>zuverlässig gute</strong> Ergebnisse bekommst.</p>
+<p>Ein <strong>Prompt</strong> ist die Eingabe, mit der du eine KI wie Copilot steuerst. <strong>Prompt Engineering</strong> ist die Kunst und Technik, Prompts so zu formulieren, dass <strong>verlässlich gute Ergebnisse</strong> entstehen.</p>
 <div class="admonition info">
-<p class="admonition-title">Warum das wichtig ist</p>
-<p>Dasselbe Modell liefert bei einem vagen Prompt mittelmäßige und bei einem präzisen Prompt hervorragende Ergebnisse. Der Unterschied liegt <strong>nicht</strong> am Modell, sondern an deiner Eingabe.</p>
+<p class="admonition-title">Warum das eine echte Kompetenz ist</p>
+<p>Dasselbe Sprachmodell liefert – je nach Prompt – ein brillantes oder ein unbrauchbares Ergebnis. Der Unterschied liegt nicht am Modell, sondern an <strong>dir</strong>. Prompt Engineering ist damit die <strong>Bedienkompetenz</strong> für generative KI – vergleichbar damit, eine gute Suchanfrage oder eine präzise Arbeitsanweisung zu formulieren.</p>
 </div>
+<p>Die Kernidee: KI kann Gedanken <strong>nicht lesen</strong>. Je klarer du sagst, <strong>wer</strong> etwas <strong>für wen</strong>, <strong>wie</strong> und <strong>in welcher Form</strong> tun soll, desto besser das Ergebnis.</p>
 <hr />
-<h2 id="142-die-anatomie-eines-guten-prompts">14.2 Die Anatomie eines guten Prompts<a class="headerlink" href="#142-die-anatomie-eines-guten-prompts" title="Permanent link">&para;</a></h2>
-<p>Ein starker Prompt beantwortet vier Fragen:</p>
+<h2 id="142-die-funf-bausteine-eines-guten-prompts">14.2 Die fünf Bausteine eines guten Prompts<a class="headerlink" href="#142-die-funf-bausteine-eines-guten-prompts" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
-    A([Rolle: Wer bist du?]) --&gt; B([Aufgabe: Was tun?])
-    B --&gt; C([Kontext: Welche Infos?])
-    C --&gt; D([Format: Wie ausgeben?])</code></pre>
+    A([Rolle]) --&gt; B([Aufgabe]) --&gt; C([Kontext]) --&gt; D([Format]) --&gt; E([Beispiele])</code></pre>
 <table>
 <thead>
 <tr>
 <th>Baustein</th>
+<th>Frage</th>
 <th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Rolle</strong></td>
-<td>„Du bist ein erfahrener Vertriebsassistent."</td>
+<td>Wer soll die KI sein?</td>
+<td>„Du bist eine erfahrene Vertriebsassistenz."</td>
 </tr>
 <tr>
 <td><strong>Aufgabe</strong></td>
+<td>Was genau soll getan werden?</td>
 <td>„Schreibe eine Angebots-E-Mail."</td>
 </tr>
 <tr>
 <td><strong>Kontext</strong></td>
-<td>„Kunde X interessiert sich für Produkt Y, Budget Z."</td>
+<td>Was muss die KI wissen?</td>
+<td>„Kunde X, Budget knapp, langjährige Beziehung."</td>
 </tr>
 <tr>
 <td><strong>Format</strong></td>
-<td>„Max. 150 Wörter, förmlich, mit Betreffzeile."</td>
+<td>Wie soll das Ergebnis aussehen?</td>
+<td>„Max. 150 Wörter, Sie-Form, mit Betreff."</td>
+</tr>
+<tr>
+<td><strong>Beispiele</strong></td>
+<td>Wie sieht ein gutes Ergebnis aus?</td>
+<td>ein Muster mitliefern (optional)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Beispiel eines vollständigen Prompts:</strong></p>
+<h3 id="vom-schwachen-zum-starken-prompt">Vom schwachen zum starken Prompt<a class="headerlink" href="#vom-schwachen-zum-starken-prompt" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Schlecht → Gut</p>
+<p><strong>Schwach:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreib eine E-Mail an den Kunden.
+</code></pre></div></td></tr></table></div>
+<strong>Stark:</strong>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist ein erfahrener Vertriebsassistent. Schreibe eine Angebots-E-Mail an einen
-Geschäftskunden, der sich für unsere Buchhaltungssoftware interessiert.
-Kontext: Das Unternehmen hat 50 Mitarbeitende und nutzt bisher Excel.
-Format: max. 150 Wörter, höflich-professionell (Sie-Form), mit Betreffzeile und
-einem klaren Handlungsaufruf (Terminvorschlag).
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist eine erfahrene Vertriebsassistenz. Schreibe eine freundliche
+Angebots-E-Mail an einen langjährigen Kunden, der auf den Preis achtet.
+Betone unsere Zuverlässigkeit, biete ein Gespräch nächste Woche an.
+Format: Sie-Form, max. 150 Wörter, mit Betreffzeile.
 </code></pre></div></td></tr></table></div>
+Der starke Prompt enthält <strong>Rolle, Aufgabe, Kontext und Format</strong> – und liefert ein sofort brauchbares Ergebnis, während der schwache Prompt raten lässt.</p>
+</div>
 <hr />
-<h2 id="143-bewahrte-prompt-muster">14.3 Bewährte Prompt-Muster<a class="headerlink" href="#143-bewahrte-prompt-muster" title="Permanent link">&para;</a></h2>
+<h2 id="143-bewahrte-techniken">14.3 Bewährte Techniken<a class="headerlink" href="#143-bewahrte-techniken" title="Permanent link">&para;</a></h2>
+<h3 id="zero-shot-vs-few-shot">Zero-Shot vs. Few-Shot<a class="headerlink" href="#zero-shot-vs-few-shot" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Zero-Shot:</strong> Du gibst nur die Aufgabe, ohne Beispiel. Gut für einfache Aufgaben.</li>
+<li><strong>Few-Shot:</strong> Du gibst <strong>1–3 Beispiele</strong> für das gewünschte Ergebnis mit. Ideal, wenn Ton, Stil oder Format genau stimmen müssen.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Few-Shot in Aktion</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere Produktnamen in knackige Slogans. Beispiele:
+- Kaffeemaschine → „Dein Morgen, perfekt gebrüht.&quot;
+- Bürostuhl → „Sitz gut. Arbeite besser.&quot;
+Jetzt: Schreibtischlampe →
+</code></pre></div></td></tr></table></div>
+Die Beispiele zeigen dem Modell den gewünschten Stil viel wirksamer als jede Beschreibung.</p>
+</div>
+<h3 id="chain-of-thought-denk-in-schritten">Chain-of-Thought: „Denk in Schritten"<a class="headerlink" href="#chain-of-thought-denk-in-schritten" title="Permanent link">&para;</a></h3>
+<p>Bei komplexen Aufgaben hilft die Aufforderung, <strong>schrittweise</strong> vorzugehen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Löse folgende Aufgabe Schritt für Schritt und zeige deinen Rechenweg,
+bevor du das Endergebnis nennst: [Aufgabe]
+</code></pre></div></td></tr></table></div>
+<p>Das reduziert Flüchtigkeitsfehler, weil das Modell die Teilschritte „ausformuliert", statt sofort zu raten.</p>
+<h3 id="rollen-prompting">Rollen-Prompting<a class="headerlink" href="#rollen-prompting" title="Permanent link">&para;</a></h3>
+<p>Eine <strong>Rolle</strong> verändert Ton, Tiefe und Perspektive spürbar:</p>
 <table>
 <thead>
 <tr>
-<th>Muster</th>
-<th>Idee</th>
-<th>Wann nutzen</th>
+<th>Rolle</th>
+<th>Wirkung</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Rollen-Prompt</strong></td>
-<td>Perspektive/Expertise vorgeben</td>
-<td>fast immer sinnvoll</td>
+<td>„Erkläre wie einem Kind"</td>
+<td>einfache Sprache</td>
 </tr>
 <tr>
-<td><strong>Few-Shot</strong></td>
-<td>1–3 Beispiele mitgeben</td>
-<td>für konsistentes Format/Stil</td>
+<td>„Du bist Steuerberater:in"</td>
+<td>fachlich, vorsichtig</td>
 </tr>
 <tr>
-<td><strong>Schritt für Schritt</strong></td>
-<td>„Denke Schritt für Schritt"</td>
-<td>bei komplexen Aufgaben</td>
-</tr>
-<tr>
-<td><strong>Format-Vorgabe</strong></td>
-<td>Tabelle, Liste, JSON verlangen</td>
-<td>für weiterverarbeitbare Ausgaben</td>
-</tr>
-<tr>
-<td><strong>Zerlegen</strong></td>
-<td>große Aufgabe in Teilprompts</td>
-<td>bei langen Vorhaben</td>
+<td>„Du bist kritischer Reviewer"</td>
+<td>findet Schwachstellen</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">Few-Shot in der Praxis</p>
-<p>„Formuliere Produkttexte in diesem Stil. Beispiel 1: … Beispiel 2: … Schreibe nun einen Text für Produkt Z." Beispiele wirken oft stärker als lange Beschreibungen.</p>
-</div>
-<hr />
-<h2 id="144-prompts-iterativ-verbessern">14.4 Prompts iterativ verbessern<a class="headerlink" href="#144-prompts-iterativ-verbessern" title="Permanent link">&para;</a></h2>
-<p>Der erste Prompt ist selten perfekt. Verbessere gezielt:</p>
+<h3 id="iteratives-nachscharfen">Iteratives Nachschärfen<a class="headerlink" href="#iteratives-nachscharfen" title="Permanent link">&para;</a></h3>
+<p>Der wichtigste Trick: <strong>den ersten Wurf verbessern</strong>, statt neu anzufangen.</p>
 <pre class="mermaid"><code>flowchart LR
-    A([Prompt schreiben]) --&gt; B([Ergebnis prüfen])
-    B --&gt; C([Schwäche identifizieren])
-    C --&gt; D([Prompt anpassen])
-    D --&gt; B</code></pre>
-<p><strong>Häufige Verbesserungen:</strong> klarere Rolle, konkreteres Format, Beispiele ergänzen, Umfang begrenzen, Zielgruppe nennen.</p>
+    A([Prompt]) --&gt; B([Ergebnis]) --&gt; C{Gut genug?}
+    C --&gt;|nein| D([präziser nachfragen]) --&gt; B
+    C --&gt;|ja| E([übernehmen &amp; prüfen])</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Guter Anfang. Mach es 30 % kürzer, verwende die Sie-Form und ergänze
+einen konkreten Terminvorschlag für nächste Woche.
+</code></pre></div></td></tr></table></div>
 <hr />
-<h2 id="145-haufige-fehler">14.5 Häufige Fehler<a class="headerlink" href="#145-haufige-fehler" title="Permanent link">&para;</a></h2>
+<h2 id="144-haufige-fehler">14.4 Häufige Fehler<a class="headerlink" href="#144-haufige-fehler" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Fehler</th>
+<th>Folge</th>
+<th>Besser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zu vage („mach was Gutes")</td>
+<td>beliebiges Ergebnis</td>
+<td>Ziel + Format klar benennen</td>
+</tr>
+<tr>
+<td>Zu viel auf einmal</td>
+<td>verwirrtes Ergebnis</td>
+<td>in Teilschritte zerlegen</td>
+</tr>
+<tr>
+<td>Kein Kontext</td>
+<td>generischer Text</td>
+<td>relevante Fakten mitgeben</td>
+</tr>
+<tr>
+<td>Kein Format</td>
+<td>falsche Länge/Form</td>
+<td>Länge, Ton, Struktur vorgeben</td>
+</tr>
+<tr>
+<td>Erste Antwort blind übernehmen</td>
+<td>Fehler bleiben</td>
+<td>prüfen + nachschärfen</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition warning">
-<p class="admonition-title">Diese Fehler kosten Qualität</p>
-<ul>
-<li><strong>Zu vage:</strong> „Schreib was über KI." → Ziel, Länge, Zielgruppe fehlen.</li>
-<li><strong>Zu viel auf einmal:</strong> fünf Aufgaben in einem Prompt.</li>
-<li><strong>Kein Format:</strong> Ergebnis lässt sich nicht weiterverwenden.</li>
-<li><strong>Keine Prüfung:</strong> Ausgaben ungeprüft übernehmen (Gefahr von Fehlern/„Halluzinationen").</li>
-</ul>
+<p class="admonition-title">Der teuerste Fehler</p>
+<p>Der gefährlichste Fehler ist <strong>nicht</strong> ein schlechter Prompt – den merkt man sofort. Es ist die <strong>ungeprüfte Übernahme</strong> einer gut klingenden, aber falschen Antwort. Prompt Engineering endet nie beim Ergebnis, sondern bei deiner <strong>Prüfung</strong>.</p>
 </div>
+<hr />
+<h2 id="145-ein-wiederverwendbares-prompt-gerust">14.5 Ein wiederverwendbares Prompt-Gerüst<a class="headerlink" href="#145-ein-wiederverwendbares-prompt-gerust" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Rolle: Du bist [Rolle/Expertise].
+Aufgabe: [Was genau soll erledigt werden?]
+Kontext: [Relevante Fakten, Zielgruppe, Rahmenbedingungen]
+Format: [Länge, Ton, Struktur, Sprache]
+Wenn dir Informationen fehlen, frage nach, bevor du beginnst.
+</code></pre></div></td></tr></table></div>
+<p>Der letzte Satz ist mächtig: Er bringt Copilot dazu, <strong>Rückfragen</strong> zu stellen, statt auf Basis fehlender Infos zu raten.</p>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Kommunikationsprofi. Formuliere eine Absage an einen Bewerber,
+wertschätzend und kurz (max. 120 Wörter, Sie-Form). Wenn dir Angaben zur
+Position oder zum Grund fehlen, frage zuerst nach.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Prompt-Bibliothek anlegen</p>
+<p>Sammle deine besten Prompts (z. B. in OneNote), passe sie an und teile sie im Team. So wird Prompt Engineering vom Einzelkönnen zur <strong>organisationalen Fähigkeit</strong> – der Bogen zu Kapitel 40.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Prompt Engineering</strong> ist die Bedienkompetenz für generative KI – der rote Faden dieses Kurses.</li>
+<li>Gute Prompts enthalten <strong>Rolle, Aufgabe, Kontext, Format</strong> (und bei Bedarf <strong>Beispiele</strong>).</li>
+<li>Techniken: <strong>Few-Shot, Chain-of-Thought, Rollen-Prompting, iteratives Nachschärfen</strong>.</li>
+<li>Häufige Fehler sind Vagheit und Überfrachtung – der teuerste ist die <strong>ungeprüfte Übernahme</strong>.</li>
+<li>Ein festes <strong>Prompt-Gerüst</strong> und eine <strong>Prompt-Bibliothek</strong> machen dich schnell und konsistent.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

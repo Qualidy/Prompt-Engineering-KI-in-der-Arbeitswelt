@@ -774,9 +774,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#161-was-bedeutet-gpt" class="md-nav__link">
+  <a href="#161-gpt-entschlusselt" class="md-nav__link">
     <span class="md-ellipsis">
-      16.1 Was bedeutet GPT?
+      16.1 GPT entschlüsselt
     </span>
   </a>
   
@@ -792,18 +792,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#163-pretraining-und-fine-tuning" class="md-nav__link">
+  <a href="#163-attention-das-herzstuck" class="md-nav__link">
     <span class="md-ellipsis">
-      16.3 Pretraining und Fine-Tuning
+      16.3 „Attention" – das Herzstück
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#164-grenzen-von-gpt-modellen" class="md-nav__link">
+  <a href="#164-zwei-trainingsphasen" class="md-nav__link">
     <span class="md-ellipsis">
-      16.4 Grenzen von GPT-Modellen
+      16.4 Zwei Trainingsphasen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16.4 Zwei Trainingsphasen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-pre-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Pre-Training
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-fine-tuning-und-rlhf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Fine-Tuning und RLHF
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#165-gpt-als-basis-von-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.5 GPT als Basis von Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1119,93 +1161,110 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Was die Abkürzung <strong>GPT</strong> bedeutet</li>
-<li>Was die <strong>Transformer-Architektur</strong> besonders macht (Stichwort <em>Attention</em>)</li>
-<li>Der Unterschied zwischen <strong>Pretraining</strong> und <strong>Fine-Tuning</strong></li>
-<li>Welche Grenzen GPT-Modelle haben</li>
+<li>Was die drei Buchstaben <strong>GPT</strong> bedeuten – <strong>G</strong>enerative, <strong>P</strong>re-trained, <strong>T</strong>ransformer</li>
+<li>Was die <strong>Transformer-Architektur</strong> ausmacht und warum sie den Durchbruch brachte</li>
+<li>Wie das Prinzip <strong>„Attention"</strong> (Aufmerksamkeit) funktioniert – anschaulich</li>
+<li>Die zwei Trainingsphasen: <strong>Pre-Training</strong> und <strong>Fine-Tuning / RLHF</strong></li>
+<li>Wie GPT-Modelle die Basis von <strong>Microsoft Copilot</strong> bilden</li>
 </ul>
 </div>
 <hr />
-<h2 id="161-was-bedeutet-gpt">16.1 Was bedeutet GPT?<a class="headerlink" href="#161-was-bedeutet-gpt" title="Permanent link">&para;</a></h2>
-<p><strong>GPT</strong> steht für <strong>Generative Pre-trained Transformer</strong>:</p>
+<h2 id="161-gpt-entschlusselt">16.1 GPT entschlüsselt<a class="headerlink" href="#161-gpt-entschlusselt" title="Permanent link">&para;</a></h2>
+<p><strong>GPT</strong> steht für <strong>G</strong>enerative <strong>P</strong>re-trained <strong>T</strong>ransformer. Jeder Teil beschreibt eine Eigenschaft:</p>
 <table>
 <thead>
 <tr>
-<th>Teil</th>
+<th>Buchstabe</th>
 <th>Bedeutung</th>
+<th>Was es heißt</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Generative</strong></td>
-<td>erzeugt neue Inhalte (Text)</td>
+<td>erzeugend</td>
+<td>erschafft neuen Text, statt nur zu wählen</td>
 </tr>
 <tr>
 <td><strong>Pre-trained</strong></td>
-<td>vorab auf riesigen Textmengen trainiert</td>
+<td>vortrainiert</td>
+<td>hat vorab aus riesigen Textmengen gelernt</td>
 </tr>
 <tr>
 <td><strong>Transformer</strong></td>
-<td>die zugrunde liegende Netzwerk-Architektur</td>
+<td>die Architektur</td>
+<td>das neuronale Netz-Design dahinter</td>
 </tr>
 </tbody>
 </table>
-<p>Copilot nutzt GPT-Modelle von OpenAI.</p>
+<p>Die Modelle hinter <strong>Copilot</strong> und <strong>ChatGPT</strong> gehören zu dieser Familie.</p>
 <hr />
 <h2 id="162-die-transformer-architektur">16.2 Die Transformer-Architektur<a class="headerlink" href="#162-die-transformer-architektur" title="Permanent link">&para;</a></h2>
-<p>Die <strong>Transformer</strong>-Architektur (2017) war der Durchbruch für moderne Sprachmodelle. Ihr Kernstück ist der <strong>Attention-Mechanismus</strong>:</p>
+<p>Der <strong>Transformer</strong> (vorgestellt 2017 im Aufsatz <em>„Attention Is All You Need"</em>) ist die technische Grundlage aller heutigen Sprachmodelle. Er löste ein zentrales Problem älterer Ansätze: Diese lasen Text <strong>Wort für Wort nacheinander</strong> und verloren dabei den Bezug zu weit entfernten Wörtern.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Eingabetext als Tokens]) --&gt; B([Attention: bewertet Wortbezüge])
+    B --&gt; C([verarbeitet alle Wörter parallel])
+    C --&gt; D([sagt nächstes Token vorher])</code></pre>
+<p><strong>Zwei Neuerungen machten den Unterschied:</strong></p>
+<ol>
+<li><strong>Parallele Verarbeitung:</strong> Der Transformer betrachtet <strong>alle Wörter gleichzeitig</strong> statt nacheinander. Das machte das Training auf riesigen Datenmengen überhaupt erst praktikabel (nutzt GPUs effizient).</li>
+<li><strong>Attention</strong> – siehe nächster Abschnitt.</li>
+</ol>
+<hr />
+<h2 id="163-attention-das-herzstuck">16.3 „Attention" – das Herzstück<a class="headerlink" href="#163-attention-das-herzstuck" title="Permanent link">&para;</a></h2>
+<p><strong>Attention</strong> (Aufmerksamkeit) erlaubt dem Modell, für jedes Wort zu bewerten, <strong>welche anderen Wörter im Satz wichtig sind</strong>, um es zu verstehen.</p>
+<div class="admonition example">
+<p class="admonition-title">Attention an einem Beispiel</p>
+<p>Satz: <em>„Der Anwalt gab dem Mandanten seine Akte, weil </em><em>er</em><em> sie brauchte."</em></p>
+<p>Worauf bezieht sich „er" – Anwalt oder Mandant? Und „sie" – die Akte? Attention berechnet genau diese <strong>Bezüge</strong>: Das Modell „richtet seine Aufmerksamkeit" auf die relevanten Wörter und gewichtet sie stärker. So versteht es Zusammenhänge auch über größere Entfernung im Text.</p>
+</div>
 <div class="admonition info">
-<p class="admonition-title">Attention – einfach erklärt</p>
-<p>„Attention" (Aufmerksamkeit) erlaubt dem Modell, bei jedem Wort zu gewichten, <strong>welche anderen Wörter im Satz wichtig</strong> sind. So versteht es Bezüge: In „Die Katze jagt die Maus, weil <strong>sie</strong> hungrig ist" erkennt das Modell, dass „sie" die Katze meint.</p>
+<p class="admonition-title">Warum das den Durchbruch brachte</p>
+<p>Ältere Modelle „vergaßen" den Satzanfang, wenn der Satz lang wurde. Attention hält <strong>alle</strong> Bezüge gleichzeitig verfügbar und gewichtet sie flexibel. Das ist der Grund, warum LLMs so kohärente, zusammenhängende Texte erzeugen – und warum die Architektur „Transformer" heißt: Sie <em>transformiert</em> Eingabetext unter Berücksichtigung aller inneren Bezüge in eine sinnvolle Fortsetzung.</p>
 </div>
-<pre class="mermaid"><code>flowchart LR
-    A([Eingabetext]) --&gt; B([Attention: wichtige Bezüge gewichten])
-    B --&gt; C([mehrere Verarbeitungsschichten])
-    C --&gt; D([Vorhersage nächstes Wort])</code></pre>
-<p>Vorteil gegenüber älteren Ansätzen: Transformer verarbeiten Text <strong>parallel</strong> und erfassen auch <strong>weit entfernte</strong> Bezüge – das macht sie schnell und leistungsstark.</p>
 <hr />
-<h2 id="163-pretraining-und-fine-tuning">16.3 Pretraining und Fine-Tuning<a class="headerlink" href="#163-pretraining-und-fine-tuning" title="Permanent link">&para;</a></h2>
+<h2 id="164-zwei-trainingsphasen">16.4 Zwei Trainingsphasen<a class="headerlink" href="#164-zwei-trainingsphasen" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
-    A([Pretraining: riesige Textmengen]) --&gt; B([Basismodell])
-    B --&gt; C([Fine-Tuning: Spezialaufgabe/Verhalten])
-    C --&gt; D([einsatzbereites Modell])</code></pre>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>Was passiert</th>
-<th>Beispiel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Pretraining</td>
-<td>allgemeines Sprachwissen aus dem Internet</td>
-<td>„Weltwissen", Grammatik</td>
-</tr>
-<tr>
-<td>Fine-Tuning</td>
-<td>Feinschliff für Aufgaben/Verhalten</td>
-<td>hilfreiches, sicheres Antworten</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="164-grenzen-von-gpt-modellen">16.4 Grenzen von GPT-Modellen<a class="headerlink" href="#164-grenzen-von-gpt-modellen" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Wichtige Grenzen</p>
+    A([Pre-Training: riesige Textmengen]) --&gt; B([Basismodell: kann Sprache])
+    B --&gt; C([Fine-Tuning + RLHF: menschliches Feedback])
+    C --&gt; D([hilfreiches, sicheres Modell wie Copilot])</code></pre>
+<h3 id="phase-1-pre-training">Phase 1: Pre-Training<a class="headerlink" href="#phase-1-pre-training" title="Permanent link">&para;</a></h3>
+<p>Das Modell lernt aus enormen Textmengen <strong>allgemeine Sprache und Weltwissen</strong> – indem es millionenfach übt, das nächste Wort vorherzusagen. Ergebnis: ein „Basismodell", das viel weiß, aber noch nicht gut auf Anweisungen reagiert.</p>
+<h3 id="phase-2-fine-tuning-und-rlhf">Phase 2: Fine-Tuning und RLHF<a class="headerlink" href="#phase-2-fine-tuning-und-rlhf" title="Permanent link">&para;</a></h3>
+<p>Danach wird das Modell <strong>nachjustiert</strong>, damit es hilfreich, höflich und sicher antwortet:</p>
 <ul>
-<li><strong>Wissensstand:</strong> Das Modell kennt nur, was bis zum Trainingsende bekannt war (sofern es nicht auf aktuelle Daten zugreift).</li>
-<li><strong>Halluzinationen:</strong> überzeugend formulierte, aber falsche Aussagen.</li>
-<li><strong>Kein echtes Verständnis:</strong> es rechnet Wahrscheinlichkeiten, „denkt" nicht.</li>
-<li><strong>Bias:</strong> Verzerrungen aus den Trainingsdaten können sich fortsetzen (siehe Kapitel 31).</li>
+<li><strong>Fine-Tuning:</strong> Training auf sorgfältig ausgewählten Beispielen guter Antworten.</li>
+<li><strong>RLHF</strong> (<em>Reinforcement Learning from Human Feedback</em>): Menschen bewerten Antworten, das Modell lernt, <strong>bevorzugte</strong> Antworten zu geben (Bezug zu Kap. 17).</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Warum RLHF entscheidend ist</p>
+<p>Das reine Basismodell könnte auch beleidigende oder gefährliche Texte fortsetzen – es hat ja nur „typischen Text" gelernt. Erst RLHF macht aus einem rohen Sprachvorhersager einen <strong>nützlichen, kontrollierten Assistenten</strong> wie Copilot. Ein Großteil dessen, was sich „gut angeleitet" anfühlt, stammt aus dieser Phase.</p>
 </div>
+<hr />
+<h2 id="165-gpt-als-basis-von-copilot">16.5 GPT als Basis von Copilot<a class="headerlink" href="#165-gpt-als-basis-von-copilot" title="Permanent link">&para;</a></h2>
+<p><strong>Microsoft Copilot</strong> nutzt GPT-Modelle (in Zusammenarbeit mit OpenAI), kombiniert sie aber mit:</p>
+<ul>
+<li><strong>deinen Unternehmensdaten</strong> über RAG/Microsoft Graph (Kap. 5, 9),</li>
+<li><strong>Sicherheits- und Datenschutzschichten</strong> der Microsoft-365-Umgebung,</li>
+<li><strong>Integrationen</strong> in Word, Excel, Teams etc.</li>
+</ul>
+<p>Das erklärt, warum Copilot einerseits so sprachgewandt (GPT) und andererseits <strong>unternehmensspezifisch</strong> ist.</p>
 <p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre in einfachen Worten, was der Attention-Mechanismus in einem Transformer
-macht. Nutze ein Beispiel mit einem mehrdeutigen Satz.
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre die Abkürzung GPT und beschreibe in je einem Satz, was &quot;generative&quot;,
+&quot;pre-trained&quot; und &quot;Transformer&quot; bedeuten. Nutze eine Alltagsanalogie für
+das Prinzip &quot;Attention&quot;.
 </code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>GPT</strong> = <strong>G</strong>enerative, <strong>P</strong>re-trained, <strong>T</strong>ransformer – erzeugend, vortrainiert, Transformer-Architektur.</li>
+<li>Der <strong>Transformer</strong> verarbeitet Wörter <strong>parallel</strong> und nutzt <strong>Attention</strong>, um Wortbezüge zu gewichten.</li>
+<li><strong>Attention</strong> ermöglicht kohärente Texte über größere Distanzen – das war der eigentliche Durchbruch.</li>
+<li>Training in zwei Phasen: <strong>Pre-Training</strong> (Sprache lernen) + <strong>Fine-Tuning/RLHF</strong> (hilfreich &amp; sicher machen).</li>
+<li><strong>Copilot</strong> kombiniert GPT-Modelle mit deinen Daten, Datenschutz und Office-Integration.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">

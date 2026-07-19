@@ -802,36 +802,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#251-ki-in-der-qualitatssicherung" class="md-nav__link">
+  <a href="#251-qualitatsmanagement-und-ki" class="md-nav__link">
     <span class="md-ellipsis">
-      25.1 KI in der Qualitätssicherung
+      25.1 Qualitätsmanagement und KI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#252-automatische-optische-inspektion" class="md-nav__link">
+  <a href="#252-reaktiv-vs-vorausschauend" class="md-nav__link">
     <span class="md-ellipsis">
-      25.2 Automatische optische Inspektion
+      25.2 Reaktiv vs. vorausschauend
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#253-fehler-1-und-2-art" class="md-nav__link">
+  <a href="#253-konkrete-anwendungen" class="md-nav__link">
     <span class="md-ellipsis">
-      25.3 Fehler 1. und 2. Art
+      25.3 Konkrete Anwendungen
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#254-praxisbeispiel-sichtprufung-von-bauteilen" class="md-nav__link">
+  <a href="#254-ki-beim-ursache-wirkungs-denken" class="md-nav__link">
     <span class="md-ellipsis">
-      25.4 Praxisbeispiel: Sichtprüfung von Bauteilen
+      25.4 KI beim Ursache-Wirkungs-Denken
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#255-qm-dokumentation-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      25.5 QM-Dokumentation mit Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
     </span>
   </a>
   
@@ -1165,94 +1183,145 @@
 <div class="lernziele">
 <h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Wie KI die <strong>Qualitätssicherung</strong> unterstützt</li>
-<li>Was <strong>automatische optische Inspektion</strong> (Computer Vision) leistet</li>
-<li>Die Begriffe <strong>Fehler 1. und 2. Art</strong> (falsch-positiv/falsch-negativ)</li>
-<li>Ein <strong>Praxisbeispiel</strong> aus der Fertigung</li>
+<li>Welche Rolle KI im <strong>Qualitätsmanagement (QM)</strong> spielt</li>
+<li>Der Unterschied zwischen <strong>reaktivem</strong> Prüfen und <strong>vorausschauender</strong> Qualitätssicherung</li>
+<li>Konkrete Anwendungen: <strong>Fehlererkennung, Ursachenanalyse, Dokumentation</strong></li>
+<li>Wie KI bei <strong>Reklamationen und dem 8D-/Ursache-Wirkungs-Denken</strong> hilft</li>
+<li>Wie <strong>Copilot</strong> QM-Dokumente, Analysen und Audits unterstützt</li>
 </ul>
 </div>
 <hr />
-<h2 id="251-ki-in-der-qualitatssicherung">25.1 KI in der Qualitätssicherung<a class="headerlink" href="#251-ki-in-der-qualitatssicherung" title="Permanent link">&para;</a></h2>
-<p>Klassische Qualitätsprüfung ist oft manuell, langsam und ermüdend. <strong>KI-gestützte Bildprüfung</strong> erkennt Fehler automatisch, gleichbleibend und rund um die Uhr.</p>
+<h2 id="251-qualitatsmanagement-und-ki">25.1 Qualitätsmanagement und KI<a class="headerlink" href="#251-qualitatsmanagement-und-ki" title="Permanent link">&para;</a></h2>
+<p><strong>Qualitätsmanagement</strong> sorgt dafür, dass Produkte und Prozesse <strong>verlässlich</strong> den Anforderungen entsprechen. KI verändert QM in zwei Richtungen: Sie macht das <strong>Prüfen</strong> besser (Fehler früher/genauer erkennen) und ermöglicht <strong>vorausschauende</strong> Qualitätssicherung (Fehler verhindern, bevor sie entstehen).</p>
+<table>
+<thead>
+<tr>
+<th>Klassisches QM</th>
+<th>KI-gestütztes QM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stichprobenprüfung</td>
+<td>100 %-Prüfung möglich (z. B. Kamera)</td>
+</tr>
+<tr>
+<td>reaktiv (Fehler feststellen)</td>
+<td>vorausschauend (Fehler vermeiden)</td>
+</tr>
+<tr>
+<td>erfahrungsbasierte Ursachensuche</td>
+<td>datenbasierte Mustererkennung</td>
+</tr>
+<tr>
+<td>manuelle Doku</td>
+<td>automatisierte Berichte</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="252-reaktiv-vs-vorausschauend">25.2 Reaktiv vs. vorausschauend<a class="headerlink" href="#252-reaktiv-vs-vorausschauend" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Reaktiv: Fehler ist passiert]) --&gt; B([prüfen, aussortieren, reklamieren])
+    C([Vorausschauend: Muster deuten auf Fehler hin]) --&gt; D([Prozess anpassen, bevor Ausschuss entsteht])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Der Wertsprung</p>
+<p>Reaktives QM findet Fehler, <strong>nachdem</strong> sie entstanden sind – das kostet Material, Zeit und Reklamationen. Vorausschauendes QM erkennt aus Daten <strong>frühe Warnsignale</strong> (z. B. leicht steigende Maßabweichungen) und greift ein, <strong>bevor</strong> Ausschuss entsteht. Das ist deutlich günstiger – der Grundgedanke ist verwandt mit Predictive Maintenance (Kap. 26).</p>
+</div>
+<hr />
+<h2 id="253-konkrete-anwendungen">25.3 Konkrete Anwendungen<a class="headerlink" href="#253-konkrete-anwendungen" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Anwendung</th>
+<th>Was KI leistet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automatische Fehlererkennung</strong></td>
+<td>Bild-KI findet Kratzer, Risse, Maßfehler</td>
+</tr>
+<tr>
+<td><strong>Ursachenanalyse</strong></td>
+<td>Muster in Prozessdaten aufdecken</td>
+</tr>
+<tr>
+<td><strong>Prognose von Qualitätsproblemen</strong></td>
+<td>Trend zu Abweichungen früh erkennen</td>
+</tr>
+<tr>
+<td><strong>Dokumentation &amp; Audits</strong></td>
+<td>Berichte, Prüfprotokolle, Nachweise erstellen</td>
+</tr>
+<tr>
+<td><strong>Reklamationsbearbeitung</strong></td>
+<td>Beschwerden clustern, Antworten entwerfen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="254-ki-beim-ursache-wirkungs-denken">25.4 KI beim Ursache-Wirkungs-Denken<a class="headerlink" href="#254-ki-beim-ursache-wirkungs-denken" title="Permanent link">&para;</a></h2>
+<p>Ein Kern des QM ist die <strong>systematische Ursachensuche</strong> (z. B. mit dem Ishikawa-/Fischgräten-Diagramm oder der 5-Why-Methode). Hier ist Copilot ein starker <strong>Denkpartner</strong>:</p>
+<div class="admonition example">
+<p class="admonition-title">5-Why mit Copilot</p>
+<p>Problem: „Das Bauteil hat Maßabweichungen." Copilot kann helfen, systematisch nachzuhaken:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Wende die 5-Why-Methode auf folgendes Qualitätsproblem an: [Problem].
+Stelle bei jedem Schritt eine plausible &quot;Warum&quot;-Frage und mögliche Antworten,
+bis du bei wahrscheinlichen Grundursachen ankommst.
+</code></pre></div></td></tr></table></div>
+Copilot liefert <strong>Hypothesen</strong> und Struktur – die Verifikation an den echten Daten und Prozessen bleibt beim QM-Team.</p>
+</div>
+<hr />
+<h2 id="255-qm-dokumentation-mit-copilot">25.5 QM-Dokumentation mit Copilot<a class="headerlink" href="#255-qm-dokumentation-mit-copilot" title="Permanent link">&para;</a></h2>
+<p>Ein großer Teil des QM ist <strong>Dokumentation</strong> – aufwendig, aber pflichtgemäß. Genau hier spart Copilot Zeit:</p>
 <table>
 <thead>
 <tr>
 <th>Aufgabe</th>
-<th>KI-Ansatz</th>
+<th>Beispiel-Prompt</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Kratzer/Risse erkennen</td>
-<td>Computer Vision</td>
+<td>Reklamationen bündeln</td>
+<td>„Clustere diese 20 Reklamationen nach Fehlerart und Häufigkeit."</td>
 </tr>
 <tr>
-<td>Vollständigkeit prüfen</td>
-<td>Objekterkennung</td>
+<td>8D-Report entwerfen</td>
+<td>„Erstelle ein Gerüst für einen 8D-Report zu diesem Fehler."</td>
 </tr>
 <tr>
-<td>Maßabweichungen</td>
-<td>Bild-/Sensoranalyse</td>
+<td>Prüfanweisung</td>
+<td>„Formuliere eine klare Prüfanweisung aus diesen Stichpunkten."</td>
 </tr>
 <tr>
-<td>Auffälligkeiten finden</td>
-<td>Anomalieerkennung</td>
+<td>Audit-Vorbereitung</td>
+<td>„Erstelle eine Checkliste für ein internes ISO-9001-Audit im Bereich X."</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="252-automatische-optische-inspektion">25.2 Automatische optische Inspektion<a class="headerlink" href="#252-automatische-optische-inspektion" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    A([Kamera nimmt Bild auf]) --&gt; B([KI-Modell klassifiziert])
-    B --&gt; C{Fehler?}
-    C --&gt;|ja| D([Ausschleusen / melden])
-    C --&gt;|nein| E([weiter in Produktion])</code></pre>
-<div class="admonition info">
-<p class="admonition-title">Training mit Beispielbildern</p>
-<p>Das Modell lernt aus vielen <strong>markierten Beispielbildern</strong> (gut/fehlerhaft). Je besser und ausgewogener diese Beispiele, desto zuverlässiger die Erkennung.</p>
-</div>
-<hr />
-<h2 id="253-fehler-1-und-2-art">25.3 Fehler 1. und 2. Art<a class="headerlink" href="#253-fehler-1-und-2-art" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Fehlertyp</th>
-<th>Bedeutung</th>
-<th>Folge</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Falsch-positiv (Fehler 1. Art)</td>
-<td>gutes Teil als „fehlerhaft"</td>
-<td>unnötiger Ausschuss</td>
-</tr>
-<tr>
-<td>Falsch-negativ (Fehler 2. Art)</td>
-<td>schlechtes Teil als „gut"</td>
-<td>fehlerhafte Ware beim Kunden</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition warning">
-<p class="admonition-title">Schwellwert bewusst wählen</p>
-<p>Je nach Anwendung ist ein Fehlertyp schlimmer. Bei sicherheitskritischen Teilen wiegt ein <strong>falsch-negativ</strong> schwerer – lieber ein gutes Teil zu viel aussortieren.</p>
-</div>
-<hr />
-<h2 id="254-praxisbeispiel-sichtprufung-von-bauteilen">25.4 Praxisbeispiel: Sichtprüfung von Bauteilen<a class="headerlink" href="#254-praxisbeispiel-sichtprufung-von-bauteilen" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Fallbeispiel Elektronikfertigung</p>
-<p>Ein Hersteller prüft Leiterplatten per KI-Kamera auf fehlende Bauteile und Lötfehler.</p>
-<p><strong>Nutzen:</strong> höhere Prüfgeschwindigkeit, konstante Qualität, Entlastung der Mitarbeitenden.
-<strong>Grenze:</strong> neue Fehlerarten müssen nachtrainiert werden; Grenzfälle prüft weiterhin ein Mensch.</p>
-</div>
-<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre, wie eine KI-gestützte Sichtprüfung in der Fertigung funktioniert.
-Gehe auf Trainingsdaten, falsch-positiv/falsch-negativ und die Rolle des
-Menschen bei Grenzfällen ein.
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier sind Kundenreklamationen der letzten Wochen: [Text]. Gruppiere sie nach
+Fehlerart, nenne die drei häufigsten Probleme und schlage je ein sinnvolles
+erstes Untersuchungsfeld für die Ursachenanalyse vor.
 </code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Nachweise müssen stimmen</p>
+<p>QM-Dokumente sind oft <strong>prüf- und haftungsrelevant</strong> (Audits, Zertifizierungen, Kundenanforderungen). Copilot-Entwürfe sind eine <strong>Arbeitserleichterung</strong>, keine fertigen Nachweise – Inhalte müssen fachlich geprüft und freigegeben werden. Faktenfehler in einem Prüfprotokoll können teuer werden.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI hebt QM von <strong>reaktivem Prüfen</strong> zu <strong>vorausschauender</strong> Qualitätssicherung.</li>
+<li>Anwendungen: <strong>Fehlererkennung (Bild-KI), Ursachenanalyse, Prognose, Doku, Reklamationen</strong>.</li>
+<li>Copilot ist ein starker <strong>Denkpartner</strong> bei der Ursachensuche (5-Why, Ishikawa) und spart Doku-Zeit.</li>
+<li>QM-Dokumente sind <strong>haftungsrelevant</strong> – Copilot-Entwürfe immer fachlich prüfen und freigeben.</li>
+</ul>
 <hr />
 <h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
 <details class="question">
