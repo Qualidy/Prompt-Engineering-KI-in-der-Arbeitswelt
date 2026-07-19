@@ -1,0 +1,14 @@
+title: Lernart bestimmen
+difficulty: 1
+question: |
+  Welche Lernart passt? (überwacht, unüberwacht, verstärkend)
+
+  1. Aus 10.000 mit „Betrug/kein Betrug" markierten Transaktionen lernt ein Modell, Betrug zu erkennen.
+  2. Kunden werden ohne Vorgaben in ähnliche Gruppen eingeteilt.
+  3. Ein Programm lernt durch Belohnung, ein Lager optimal einzuräumen.
+tip: |
+  Gibt es vorgegebene „richtige Antworten" (Labels)?
+solution: |
+  1. Überwachtes Lernen (Labels vorhanden)
+  2. Unüberwachtes Lernen (keine Vorgaben)
+  3. Verstärkendes Lernen (Belohnung)

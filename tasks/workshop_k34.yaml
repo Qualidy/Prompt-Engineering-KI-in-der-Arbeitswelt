@@ -1,0 +1,22 @@
+title: Erklärbarkeit für eine KI-Entscheidung sicherstellen
+difficulty: 4
+question: |
+  **Szenario:** Eine KI trifft in eurem Bereich eine Vorentscheidung über Menschen (z. B. Bewerbervorauswahl,
+  Priorisierung von Anträgen). Ihr müsst Nachvollziehbarkeit sicherstellen.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Beschreibt die Entscheidung und die Betroffenen.
+  2. Legt fest, **welche Erklärungen** die Betroffenen und die Prüfer erhalten sollen.
+  3. Definiert, wie eine **menschliche Überprüfung** und ein **Widerspruch** ablaufen.
+  4. Bewertet den **Trade-off** Genauigkeit vs. Erklärbarkeit für diesen Fall.
+  5. Nutzt **Copilot**, um Begründungstexte/Prozesse zu entwerfen; prüft kritisch.
+
+  **Deliverables:** Entscheidungsbeschreibung + Erklärkonzept + Überprüfungs-/Widerspruchsprozess + Trade-off-Bewertung.
+tip: |
+  Menschen müssen nicht nur ein Ergebnis, sondern auch das „Warum" und einen Widerspruchsweg erhalten.
+solution: |
+  Bewertungskriterien: klar beschriebene Entscheidung; verständliches Erklärkonzept; funktionierender Überprüfungs-/
+  Widerspruchsprozess; bewusste Abwägung Genauigkeit vs. Erklärbarkeit.

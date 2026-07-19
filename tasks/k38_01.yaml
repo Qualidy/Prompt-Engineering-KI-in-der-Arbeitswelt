@@ -1,0 +1,14 @@
+title: Geschäftsmodell-Muster erkennen
+difficulty: 1
+question: |
+  Welches KI-Geschäftsmodell-Muster liegt vor?
+
+  1. Ein Anbieter stellt eine Bilderkennungs-API bereit, die pro Aufruf abgerechnet wird.
+  2. Ein Maschinenhersteller bietet „Wartung als Service" auf Basis von Sensordaten an.
+  3. Ein Fotoprogramm erhält eine neue KI-Retusche-Funktion.
+tip: |
+  As-a-Service, datenbasierter Service oder Produkt + KI-Feature?
+solution: |
+  1. KI-as-a-Service
+  2. Datenbasierter Service
+  3. Produkt + KI-Feature

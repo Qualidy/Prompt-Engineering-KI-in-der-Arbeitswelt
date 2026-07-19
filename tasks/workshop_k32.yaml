@@ -1,0 +1,22 @@
+title: Rechtliche Ersteinschätzung eines KI-Vorhabens
+difficulty: 4
+question: |
+  **Szenario:** Für ein geplantes KI-Vorhaben soll eine rechtliche Ersteinschätzung (keine Rechtsberatung)
+  vorbereitet werden.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Beschreibt das KI-Vorhaben und die verarbeiteten Daten.
+  2. Ordnet es einer **EU-AI-Act-Risikoklasse** zu und begründet.
+  3. Erstellt eine **Prüf-Checkliste** zu Datenschutz, Urheberrecht, Haftung, Transparenz.
+  4. Markiert **offene Punkte**, die zwingend rechtlich geklärt werden müssen.
+  5. Nutzt **Copilot** für die Struktur; kennzeichnet, was fachlich verifiziert werden muss.
+
+  **Deliverables:** Risikoklassen-Einordnung + Prüf-Checkliste + Liste der klärungsbedürftigen Rechtsfragen.
+tip: |
+  Trennt klar: Was könnt ihr selbst einschätzen und was gehört zwingend zur Rechtsberatung?
+solution: |
+  Bewertungskriterien: nachvollziehbare Risikoklassen-Einordnung; vollständige Prüf-Checkliste; klare Kennzeichnung
+  der klärungsbedürftigen Punkte; verantwortungsvoller Umgang mit KI-Rechtsauskünften.

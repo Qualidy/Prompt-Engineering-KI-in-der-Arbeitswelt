@@ -1,0 +1,18 @@
+title: Warum kam der KI-Winter?
+difficulty: 2
+question: |
+  Nutze **Microsoft Copilot**, um die Ursachen der KI-Winter zu recherchieren und einzuordnen:
+
+  ```text
+  Erkläre, was mit den "KI-Wintern" gemeint ist. Nenne drei Gründe, warum die
+  Erwartungen an KI damals nicht erfüllt werden konnten, und vergleiche kurz mit
+  der Situation heute.
+  ```
+
+  Prüfe die Antwort: Welche der drei heutigen „Treiber" (Daten, Rechenleistung, Algorithmen) fehlten damals?
+tip: |
+  Vergleiche jeweils: Was war damals knapp – und wie ist es heute?
+solution: |
+  Erwartete Kernpunkte: Damals fehlten **große Datenmengen**, **Rechenleistung (GPUs/Cloud)** und
+  leistungsfähige **Algorithmen (z. B. Transformer)**. Übertriebener Hype führte zu Enttäuschung und
+  gestrichenen Fördergeldern. Heute sind alle drei Treiber vorhanden – deshalb der aktuelle Schub.

@@ -1,0 +1,14 @@
+title: Training oder Inferenz?
+difficulty: 1
+question: |
+  Handelt es sich um Training oder Inferenz?
+
+  1. Das Modell wird über Wochen mit riesigen Datenmengen gelernt.
+  2. Ein Nutzer stellt Copilot eine Frage und erhält eine Antwort.
+  3. Millionen täglicher Nutzeranfragen summieren sich zu hohem Verbrauch.
+tip: |
+  Training = einmal lernen; Inferenz = jede Nutzung.
+solution: |
+  1. Training
+  2. Inferenz
+  3. Inferenz (in Summe)

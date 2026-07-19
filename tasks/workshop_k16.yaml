@@ -1,0 +1,22 @@
+title: Stärken und Grenzen von GPT dokumentieren
+difficulty: 4
+question: |
+  **Szenario:** Ihr sollt eine kurze Orientierungshilfe erstellen: Wofür eignen sich GPT-Modelle
+  (wie Copilot) gut – und wovon sollte man die Finger lassen?
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Sammelt **je 5 Aufgaben**, für die GPT-Modelle gut geeignet bzw. ungeeignet sind.
+  2. Begründet jede Zuordnung mit Bezug auf die Funktionsweise (Wahrscheinlichkeit, Wissensstand, Halluzination).
+  3. Formuliert **3 Faustregeln** für den verantwortungsvollen Einsatz im Unternehmen.
+  4. Testet **zwei** der „gut geeigneten" Aufgaben tatsächlich in Copilot.
+  5. Testet bewusst **eine** „ungeeignete" Aufgabe und dokumentiert, was schiefgeht.
+
+  **Deliverables:** Eignungs-Übersicht (gut/ungeeignet mit Begründung) + 3 Faustregeln + 3 dokumentierte Tests.
+tip: |
+  „Ungeeignet" sind oft Aufgaben, die exakte, prüfbare Fakten oder Rechtssicherheit ohne Kontrolle verlangen.
+solution: |
+  Bewertungskriterien: sinnvolle Eignungszuordnung mit funktionsbezogener Begründung; praxistaugliche Faustregeln;
+  Tests bestätigen Stärken und zeigen eine reale Grenze (z. B. falsche Fakten).

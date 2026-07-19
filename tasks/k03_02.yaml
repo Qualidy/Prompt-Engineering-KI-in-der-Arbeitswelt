@@ -1,0 +1,18 @@
+title: Eine E-Mail mit Copilot bearbeiten
+difficulty: 2
+question: |
+  Nimm eine (fiktive oder anonymisierte) längere E-Mail und bearbeite sie mit **Copilot**:
+
+  ```text
+  Fasse die folgende E-Mail in maximal 4 Stichpunkten zusammen, erkenne offene
+  Aufgaben und formuliere eine freundliche, professionelle Antwort auf Deutsch.
+  E-Mail: [Text einfügen]
+  ```
+
+  Beurteile das Ergebnis: Stimmt der Ton? Fehlt etwas? Formuliere eine **verbesserte** Version des Prompts.
+tip: |
+  Achte auf konkrete Vorgaben: Länge, Tonfall (z. B. „förmlich"), Sprache und gewünschtes Format.
+solution: |
+  Bewertungskriterien: sinnvolle Zusammenfassung, korrekt erkannte Aufgaben, angemessener Ton;
+  der verbesserte Prompt ergänzt fehlende Vorgaben (z. B. „max. 120 Wörter", „Sie-Form",
+  „mit Terminvorschlag"). Kernbotschaft: Präzisere Aufträge → bessere Ergebnisse.

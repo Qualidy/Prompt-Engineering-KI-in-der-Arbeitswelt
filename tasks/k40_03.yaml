@@ -1,0 +1,15 @@
+title: Verantwortung beim Prompten
+difficulty: 3
+question: |
+  Ein Kollege übernimmt Copilot-Ausgaben ungeprüft und gibt vertrauliche Kundendaten ein.
+  Nenne **drei** konkrete Regeln, die du ihm auf Basis dieses Kurses mitgeben würdest, und begründe jede kurz.
+tip: |
+  Denke an Faktenprüfung, Datenschutz (Kapitel 33) und Verantwortlichkeit (Kapitel 31).
+solution: |
+  Beispiele:
+
+  1. **Ausgaben immer prüfen** – LLMs können falsch liegen (Halluzinationen).
+  2. **Keine vertraulichen/personenbezogenen Daten** in nicht freigegebene Tools – DSGVO/Unternehmensrichtlinie.
+  3. **Verantwortung bleibt beim Menschen** – die finale Freigabe triffst du, nicht die KI.
+
+  Bewertung: drei klare, begründete Regeln mit Bezug zu Qualität, Datenschutz und Verantwortung.

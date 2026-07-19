@@ -1,0 +1,17 @@
+title: KI-Regelung einordnen
+difficulty: 2
+question: |
+  Lass dir von **Copilot** ein Beispiel für KI-gestützte Prozessregelung erklären:
+
+  ```text
+  Nenne einen Prozess, bei dem eine KI-gestützte Regelung sinnvoll ist. Erkläre,
+  welche Größen geregelt werden, welche Ziele optimiert werden und warum eine
+  klassische Regelung hier an Grenzen stößt.
+  ```
+
+  Beurteile: Wo muss aus Sicherheitsgründen ein klassisches System die Kontrolle behalten?
+tip: |
+  Sicherheitskritische Grenzwerte gehören auf geprüfte, klassische Systeme.
+solution: |
+  Bewertungskriterien: sinnvolles Beispiel; klare Benennung von Regelgrößen und Optimierungszielen; Verständnis,
+  dass KI bei komplexen, mehrzieligen Prozessen hilft, Sicherheit aber klassisch abgesichert bleibt.

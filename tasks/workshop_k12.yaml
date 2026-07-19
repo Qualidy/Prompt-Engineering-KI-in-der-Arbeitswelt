@@ -1,0 +1,23 @@
+title: ML-Verfahren für einen Anwendungsfall wählen
+difficulty: 4
+question: |
+  **Szenario:** Für drei Aufgaben sollt ihr jeweils das passende ML-Verfahren bestimmen und begründen.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Nehmt drei Aufgaben, z. B.: (a) E-Mails als wichtig/unwichtig sortieren, (b) Kundengruppen finden,
+     (c) den Monatsumsatz vorhersagen.
+  2. Bestimmt je Aufgabe: **Lernart** (überwacht/unüberwacht/verstärkend) und – falls überwacht –
+     **Klassifikation oder Regression**.
+  3. Nennt je Aufgabe, welche **Daten** (inkl. Labels) benötigt werden.
+  4. Diskutiert je Aufgabe **ein Risiko** (z. B. Overfitting, schlechte Datenqualität, Bias).
+  5. Nutzt **Copilot** als Sparringspartner und prüft die Antworten fachlich.
+
+  **Deliverables:** Tabelle (Aufgabe · Lernart · Typ · benötigte Daten · Risiko) + kurze Begründungen.
+tip: |
+  „Kategorie vorhersagen" → Klassifikation; „Zahl vorhersagen" → Regression.
+solution: |
+  Bewertungskriterien: korrekte Lernarten und Typen; passende Datenanforderungen (Labels bei überwachtem Lernen);
+  realistische Risiken; nachvollziehbare Begründungen.

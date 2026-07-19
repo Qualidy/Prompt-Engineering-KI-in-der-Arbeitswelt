@@ -1,0 +1,15 @@
+title: Prompt-Bausteine erkennen
+difficulty: 1
+question: |
+  Markiere im folgenden Prompt die vier Bausteine (Rolle, Aufgabe, Kontext, Format):
+
+  „Du bist Personalreferentin. Formuliere eine Stellenanzeige für eine IT-Fachkraft.
+  Wir sind ein Handwerksbetrieb mit 30 Mitarbeitenden in München. Gib das Ergebnis
+  als strukturierte Anzeige mit Überschriften und maximal 200 Wörtern aus."
+tip: |
+  Ein Baustein pro Teilsatz.
+solution: |
+  - **Rolle:** „Du bist Personalreferentin."
+  - **Aufgabe:** „Formuliere eine Stellenanzeige für eine IT-Fachkraft."
+  - **Kontext:** „Wir sind ein Handwerksbetrieb mit 30 Mitarbeitenden in München."
+  - **Format:** „strukturierte Anzeige mit Überschriften, max. 200 Wörter."

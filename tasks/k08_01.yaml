@@ -1,0 +1,14 @@
+title: Fähigkeit zur Aufgabe
+difficulty: 1
+question: |
+  Welche KI-Grundfähigkeit steht im Vordergrund? (Wahrnehmen, Verstehen, Schlussfolgern, Handeln, Lernen)
+
+  1. Ein System erkennt auf Fotos, ob ein Bauteil beschädigt ist.
+  2. Ein System schlägt anhand vergangener Käufe passende Produkte vor.
+  3. Ein Roboterarm greift ein Werkstück und legt es ab.
+tip: |
+  Manche Aufgaben brauchen mehrere Fähigkeiten – nenne die wichtigste.
+solution: |
+  1. Wahrnehmen (Bilderkennung)
+  2. Schlussfolgern (Empfehlung) – gestützt durch Lernen
+  3. Handeln

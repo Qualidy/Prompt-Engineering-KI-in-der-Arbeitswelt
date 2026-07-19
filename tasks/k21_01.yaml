@@ -1,0 +1,14 @@
+title: Automatisierungsgrad bestimmen
+difficulty: 1
+question: |
+  Welcher Automatisierungsgrad liegt vor (Assistenz, Teil-, Vollautomatisierung)?
+
+  1. Copilot schlägt eine Antwort vor, der Mitarbeiter entscheidet.
+  2. Rechnungen werden automatisch ausgelesen, ein Mensch gibt sie frei.
+  3. Standardbestellungen werden komplett ohne menschlichen Eingriff bearbeitet.
+tip: |
+  Wer trifft die Entscheidung – Mensch oder System?
+solution: |
+  1. Assistenz
+  2. Teilautomatisierung
+  3. Vollautomatisierung

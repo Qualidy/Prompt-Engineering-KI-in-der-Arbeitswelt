@@ -1,0 +1,18 @@
+title: Low-Code-Idee mit Copilot planen
+difficulty: 2
+question: |
+  Denke an ein kleines Problem in deinem Arbeitsalltag, das eine App/Automatisierung lösen könnte,
+  und lass **Copilot** ein Konzept entwerfen:
+
+  ```text
+  Ich möchte mit einer Low-Code-Plattform [Problem] lösen. Beschreibe, welche
+  Funktionen die App/der Flow braucht, welche Daten gespeichert werden und welche
+  2 Risiken (Sicherheit/Datenschutz) ich beachten muss.
+  ```
+
+  Bewerte: Wäre das ein sinnvoller Citizen-Development-Fall oder eher Aufgabe der IT?
+tip: |
+  Kleine, klar abgegrenzte Probleme eignen sich gut; sicherheitskritische Systeme gehören zur IT.
+solution: |
+  Bewertungskriterien: sinnvolles, abgegrenztes Problem; nachvollziehbares Funktions-/Datenkonzept; erkannte
+  Risiken; realistische Einordnung Citizen Development vs. IT.

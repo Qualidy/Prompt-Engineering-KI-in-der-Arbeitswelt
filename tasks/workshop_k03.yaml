@@ -1,0 +1,22 @@
+title: KI-Einsatzpotenziale in deinem Unternehmen
+difficulty: 4
+question: |
+  **Szenario:** Die Geschäftsführung bittet dich um einen kurzen Vorschlag, wo KI im Unternehmen
+  sinnvoll starten könnte.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Beschreibe kurz ein reales oder fiktives Unternehmen (Branche, Größe, Hauptprozesse).
+  2. Identifiziere entlang der Wertschöpfungskette **mindestens 5 KI-Einsatzpotenziale**.
+  3. Bewerte jedes Potenzial nach **Nutzen** (hoch/mittel/gering) und **Aufwand** (hoch/mittel/gering).
+  4. Empfiehl **einen** „Quick Win" (hoher Nutzen, geringer Aufwand) und begründe die Wahl.
+  5. Nutze **Copilot** als Sparringspartner und dokumentiere einen hilfreichen Prompt.
+
+  **Deliverables:** Nutzen-Aufwand-Übersicht (Tabelle) + begründete Quick-Win-Empfehlung.
+tip: |
+  Quick Wins sind oft text- und dokumentenlastige Aufgaben, die sich sofort mit Copilot angehen lassen.
+solution: |
+  Bewertungskriterien: mindestens 5 nachvollziehbare Potenziale entlang der Wertschöpfungskette;
+  konsistente Nutzen-/Aufwand-Bewertung; **begründete** Quick-Win-Wahl; sinnvoll eingesetzter Copilot-Prompt.

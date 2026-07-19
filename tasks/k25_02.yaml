@@ -1,0 +1,17 @@
+title: Prüfkonzept mit Copilot
+difficulty: 2
+question: |
+  Wähle ein Produkt und lass **Copilot** ein KI-Prüfkonzept skizzieren:
+
+  ```text
+  Skizziere ein KI-gestütztes Sichtprüfungskonzept für [Produkt]: Welche Fehler
+  sollen erkannt werden, welche Bilddaten braucht das Training, und wie geht man
+  mit Grenzfällen um?
+  ```
+
+  Überlege: Welcher Fehlertyp (falsch-positiv/falsch-negativ) ist bei deinem Produkt kritischer?
+tip: |
+  Sicherheits- und kundenrelevante Fehler dürfen möglichst nie übersehen werden.
+solution: |
+  Bewertungskriterien: sinnvoll definierte Fehlerarten; Verständnis für Trainingsdaten (ausgewogen, markiert);
+  begründete Priorisierung des kritischeren Fehlertyps; Rolle des Menschen bei Grenzfällen.

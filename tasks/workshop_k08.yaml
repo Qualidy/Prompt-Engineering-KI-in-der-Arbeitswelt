@@ -1,0 +1,22 @@
+title: Eigenes KI-Fähigkeitsraster
+difficulty: 4
+question: |
+  **Szenario:** Ihr wollt für einen Unternehmensbereich systematisch erfassen, welche KI-Fähigkeiten
+  helfen könnten.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wählt einen Bereich und listet **6 typische Aufgaben**.
+  2. Ordnet jeder Aufgabe die benötigten **KI-Grundfähigkeiten** zu (Raster/Tabelle).
+  3. Markiert, welche Aufgaben mit **heute verfügbaren Werkzeugen** (inkl. Copilot) machbar sind.
+  4. Wählt eine Aufgabe aus und beschreibt, welches KI-Verfahren ihr einsetzen würdet und warum.
+  5. Nutzt **Copilot** zur Unterstützung und dokumentiert einen hilfreichen Prompt.
+
+  **Deliverables:** Fähigkeitsraster (6 Aufgaben × Fähigkeiten) + Machbarkeits-Markierung + 1 vertiefte Aufgabe.
+tip: |
+  „Machbar mit Copilot" gilt vor allem für Aufgaben mit Schwerpunkt Verstehen/Schlussfolgern auf Textbasis.
+solution: |
+  Bewertungskriterien: vollständiges Raster; korrekte Fähigkeitszuordnung; realistische Machbarkeitseinschätzung;
+  begründete Verfahrenswahl bei der vertieften Aufgabe.

@@ -1,0 +1,21 @@
+title: Ressourcenbewusste KI-Nutzungsrichtlinie
+difficulty: 4
+question: |
+  **Szenario:** Euer Unternehmen will KI nutzen, aber ressourcenbewusst.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Beschreibt, wofür KI im Unternehmen genutzt wird.
+  2. Identifiziert, wo **unnötiger Verbrauch** entsteht (z. B. zu große Modelle, Doppelanfragen, Spielerei).
+  3. Formuliert **Richtlinien** für ressourcenbewusste Nutzung (Modellwahl, Bündelung, Zweckprüfung).
+  4. Bewertet für **einen** KI-Use-Case den **Netto-Nutzen** (Einsparung vs. Eigenverbrauch).
+  5. Nutzt **Copilot** für Entwurf/Recherche und prüft die Angaben kritisch.
+
+  **Deliverables:** Verbrauchsanalyse + Nutzungsrichtlinie + Netto-Nutzen-Bewertung eines Use Cases.
+tip: |
+  Ressourcenbewusstsein und Kostenbewusstsein gehen oft Hand in Hand – beides spricht für „passend statt maximal".
+solution: |
+  Bewertungskriterien: erkannte Verbrauchsquellen; praxistaugliche Richtlinien; nachvollziehbare Netto-Nutzen-Bewertung;
+  kritischer Umgang mit KI-generierten Zahlen.

@@ -1,0 +1,17 @@
+title: Handlungsfelder zuordnen
+difficulty: 1
+question: |
+  Ordne die Aussagen dem passenden Handlungsfeld der KI-Readiness zu
+  (Daten, Technik, Kompetenzen, Kultur, Strategie):
+
+  1. „Unsere Daten liegen verteilt in Excel-Dateien ohne einheitliches Format."
+  2. „Viele Mitarbeitende wissen nicht, wie man einen guten Prompt schreibt."
+  3. „Es gibt keine Regeln, wofür KI eingesetzt werden darf."
+  4. „Es herrscht Angst, dass KI Arbeitsplätze ersetzt."
+tip: |
+  Jede Aussage beschreibt eine typische Schwachstelle in genau einem Feld.
+solution: |
+  1. Daten
+  2. Kompetenzen
+  3. Strategie & Governance
+  4. Kultur & Akzeptanz

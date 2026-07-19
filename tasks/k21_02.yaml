@@ -1,0 +1,17 @@
+title: Prozess-Schwachstellen mit Copilot finden
+difficulty: 2
+question: |
+  Beschreibe einen echten Arbeitsprozess in 5–8 Schritten und lass **Copilot** ihn analysieren:
+
+  ```text
+  Analysiere folgenden Prozess auf Schwachstellen (Wartezeiten, Medienbrüche,
+  Doppelarbeit) und schlage je Schwachstelle eine konkrete Verbesserung vor.
+  Prozess: [Schritte]
+  ```
+
+  Bewerte die Vorschläge: Welche sind realistisch umsetzbar, welche nicht – und warum?
+tip: |
+  Achte besonders auf Medienbrüche (z. B. ausdrucken, dann wieder abtippen).
+solution: |
+  Bewertungskriterien: sinnvoll beschriebener Prozess; erkannte reale Schwachstellen; realistische Bewertung
+  der Vorschläge; Bewusstsein, dass zuerst vereinfacht und dann automatisiert wird.

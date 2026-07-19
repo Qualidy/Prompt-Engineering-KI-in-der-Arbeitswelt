@@ -1,0 +1,22 @@
+title: Vom Ideenpool zur priorisierten Roadmap
+difficulty: 4
+question: |
+  **Szenario:** Ein Team hat in einem Workshop 8 KI-Ideen gesammelt. Du sollst daraus eine
+  begründete Umsetzungsreihenfolge ableiten.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Sammle (oder erfinde) **8 KI-Ideen** für einen Bereich deiner Wahl.
+  2. Bewerte jede Idee in einer **Nutzen-Machbarkeit-Matrix**.
+  3. Leite eine **priorisierte Roadmap** ab: Quick Wins zuerst, strategische Projekte später.
+  4. Beschreibe die **erste umzusetzende Idee** als kurzen Use-Case-Steckbrief.
+  5. Nutze **Copilot**, um Ideen zu bewerten oder den Steckbrief zu formulieren – prüfe die Vorschläge kritisch.
+
+  **Deliverables:** Matrix + priorisierte Roadmap + Steckbrief der ersten Idee.
+tip: |
+  Verteilt die Ideensammlung und einigt euch dann gemeinsam auf die Bewertung – so entstehen keine blinden Flecken.
+solution: |
+  Bewertungskriterien: nachvollziehbare Bewertung aller Ideen; Roadmap folgt sinnvoll aus der Matrix
+  (Quick Wins vorn); vollständiger Steckbrief; Copilot als Hilfsmittel, nicht als Entscheider.

@@ -1,0 +1,22 @@
+title: Leitlinie für verantwortungsvollen KI-Einsatz
+difficulty: 4
+question: |
+  **Szenario:** Euer Unternehmen braucht eine kurze, verständliche Leitlinie für den verantwortungsvollen
+  Umgang mit KI.
+
+  ---
+
+  **Aufgabe (in der Lerngruppe empfohlen):**
+
+  1. Sammelt die wichtigsten **Prinzipien** (Fairness, Transparenz, Verantwortlichkeit, Datenschutz, Aufsicht).
+  2. Formuliert je Prinzip **1–2 konkrete Verhaltensregeln** für den Arbeitsalltag mit Copilot & Co.
+  3. Ergänzt **3 „No-Gos"** (was mit KI nicht getan werden darf).
+  4. Erstellt mit **Copilot** einen ersten Entwurf und **schärft ihn kritisch** nach.
+  5. Prüft die Leitlinie an **zwei Beispielfällen** auf Praxistauglichkeit.
+
+  **Deliverables:** Leitlinie (Prinzipien + Regeln + No-Gos) + 2 durchgespielte Beispielfälle.
+tip: |
+  Formuliert Regeln als klare, überprüfbare Sätze („Wir prüfen jede KI-Ausgabe, bevor …").
+solution: |
+  Bewertungskriterien: abgedeckte Kernprinzipien; konkrete, praxistaugliche Regeln; sinnvolle No-Gos;
+  Beispielfälle zeigen, dass die Leitlinie im Alltag trägt.

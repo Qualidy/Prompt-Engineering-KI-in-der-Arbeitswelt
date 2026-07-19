@@ -1,0 +1,16 @@
+title: Anforderungsliste mit Copilot
+difficulty: 2
+question: |
+  Wähle ein einfaches Bauteil (z. B. Wandhalterung, Gehäuse) und lass **Copilot** eine Anforderungsliste erstellen:
+
+  ```text
+  Erstelle eine strukturierte Anforderungsliste für die Konstruktion von [Bauteil]:
+  Lasten, Material, Bauraum, Fertigungsverfahren, relevante Normen, Kosten.
+  ```
+
+  Ergänze mindestens eine Anforderung, die Copilot übersehen hat, und begründe sie.
+tip: |
+  Denke auch an Umgebungsbedingungen (Temperatur, Feuchte, Korrosion).
+solution: |
+  Bewertungskriterien: vollständige, sinnvoll strukturierte Anforderungsliste; fachlich passende eigene Ergänzung;
+  Verständnis, dass die Liste vor jedem (generativen) Entwurf steht.

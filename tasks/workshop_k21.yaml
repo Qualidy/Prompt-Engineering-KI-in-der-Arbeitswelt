@@ -1,0 +1,22 @@
+title: Einen Prozess neu denken
+difficulty: 4
+question: |
+  **Szenario:** Ein bekannter Prozess (z. B. Urlaubsantrag, Angebotserstellung, Onboarding neuer Mitarbeitender)
+  soll optimiert werden.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Nehmt den **Ist-Prozess** auf (Schritte, Beteiligte, Werkzeuge) – gern als Flussdiagramm.
+  2. Markiert **Schwachstellen** und schätzt deren Auswirkung (Zeit/Fehler).
+  3. Entwerft einen **Soll-Prozess** mit gezieltem KI-/Copilot-Einsatz.
+  4. Bestimmt je Schritt den sinnvollen **Automatisierungsgrad**.
+  5. Benennt **Risiken** und wie ihr die Betroffenen einbindet.
+
+  **Deliverables:** Ist-Prozess + Schwachstellenanalyse + Soll-Prozess mit Automatisierungsgraden + Risiko-/Change-Notiz.
+tip: |
+  Nutzt Copilot, um Ist- und Soll-Prozess zu strukturieren – die Bewertung bleibt eure Aufgabe.
+solution: |
+  Bewertungskriterien: vollständiger Ist-Prozess; belastbare Schwachstellenanalyse; realistischer Soll-Prozess mit
+  begründeten Automatisierungsgraden; benannte Risiken und Change-Aspekte.

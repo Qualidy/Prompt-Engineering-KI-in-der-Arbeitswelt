@@ -1,20 +1,22 @@
-title: Persönlicher Entwicklungsplan
+title: Von Rohdaten zu analysebereiten Daten
 difficulty: 4
 question: |
-  **Szenario:** Du bist in der Umschulung, Fachrichtung SI. Vorher: 10 Jahre Logistik. Ziel: IT-Security in 5 Jahren.
+  **Szenario:** Ihr erhaltet einen „schmutzigen" Beispieldatensatz (z. B. eine Kunden- oder Verkaufsliste)
+  und sollt ihn analysebereit machen.
 
   ---
 
-  **Aufgabe:**
+  **Aufgabe (allein oder in der Lerngruppe):**
 
-  1. **SWOT-Analyse** (kurz): Stärken, Schwächen, Chancen, Risiken deines Wegs.
+  1. Erstellt (oder nehmt) eine Tabelle mit typischen Problemen: fehlende Werte, Dubletten, uneinheitliche Formate.
+  2. Dokumentiert einen **Aufbereitungsplan**: Welche Schritte in welcher Reihenfolge?
+  3. Führt die Bereinigung durch (in Excel, gern mit **Copilot**-Unterstützung).
+  4. Bildet mindestens **ein sinnvolles neues Feature** (Feature Engineering) und begründet es.
+  5. Reflektiert: Welche Entscheidung war fachlich heikel und warum?
 
-  2. **Entwicklungsplan** Tabelle: Zeitrahmen (6 Mon / 1 J / 3 J / 5 J) | Ziel | Maßnahme | Nachweis.
-
-  3. **Lebenslanges Lernen:** Welche Routine (wöchentlich/monatlich) hältst du ein?
-
-  4. **Reflexion:** Wie nutzt du WISO-Kenntnisse (Arbeitsrecht, Tarif, Entgelt) auch in der IT-Karriere?
-
-  **Deliverables:** SWOT + Entwicklungsplan (1–2 Seiten)
+  **Deliverables:** Aufbereitungsplan + bereinigte Tabelle + 1 neues Feature + kurze Reflexion.
+tip: |
+  Dokumentiert jeden Schritt – Nachvollziehbarkeit ist bei Datenaufbereitung entscheidend.
 solution: |
-  SWOT berücksichtigt Vorerfahrung Logistik; Plan realistisch mit Security-Zertifikaten; Lernroutine z. B. 5 Std./Monat Security-News + Labs; WISO: Arbeitsvertrag prüfen, BR/JAV, Entgelt verstehen, Mitbestimmung bei IT-Einführungen.
+  Bewertungskriterien: sinnvolle Schrittreihenfolge; korrekt bereinigte Daten; nachvollziehbares neues Feature;
+  reflektierter Umgang mit heiklen Entscheidungen (z. B. Ersetzen fehlender Werte).

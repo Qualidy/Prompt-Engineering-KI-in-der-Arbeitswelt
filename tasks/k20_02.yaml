@@ -1,0 +1,16 @@
+title: Muster in Daten finden mit Copilot
+difficulty: 2
+question: |
+  Erstelle eine kleine Beispiel-Verkaufstabelle (oder nutze vorhandene Daten) und lass **Copilot** sie erkunden:
+
+  ```text
+  Untersuche diese Verkaufsdaten auf Muster: Welche Produkte/Kunden sind auffällig?
+  Nenne 3 Hypothesen, die man mit weiteren Daten prüfen könnte.
+  ```
+
+  Wähle eine Hypothese aus und beschreibe, wie du sie prüfen würdest.
+tip: |
+  Hypothesen sind noch keine Fakten – überlege, welche Daten die Prüfung ermöglichen.
+solution: |
+  Bewertungskriterien: nachvollziehbare Muster/Hypothesen; realistische Prüfidee (welche Daten, welcher Vergleich);
+  Bewusstsein, dass Korrelation nicht Kausalität ist.

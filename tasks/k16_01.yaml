@@ -1,0 +1,10 @@
+title: GPT entschlüsseln
+difficulty: 1
+question: |
+  Wofür stehen die drei Buchstaben in „GPT" und was bedeuten sie jeweils in einem Satz?
+tip: |
+  Generative – Pre-trained – Transformer.
+solution: |
+  - **G**enerative: erzeugt neue Inhalte (Text).
+  - **P**re-trained: vorab auf großen Textmengen trainiert.
+  - **T**ransformer: die verwendete Netzwerk-Architektur mit Attention.

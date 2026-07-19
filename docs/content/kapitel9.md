@@ -1,125 +1,87 @@
-# Kapitel 9 – Lern- und Arbeitstechniken
+# Kapitel 9 – Datenbeschaffung
 
-<div class="kurs-progress">
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step active"></div>
-  <div class="step"></div>
-</div>
+{{ progress(9) }}
 
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Welche modernen Lern- und Arbeitstechniken für die Umschulung geeignet sind
-- Wie selbstgesteuertes Lernen im Online-Unterricht funktioniert
-- Welche digitale Werkzeuge und Informationsquellen du beruflich sinnvoll nutzen kannst
+- Warum Daten der **Rohstoff** jeder KI sind
+- Welche **Datenquellen** es gibt und wie du sie erschließt
+- Was **Datenqualität** ausmacht (die „5 V" und Gütekriterien)
+- Welche **rechtlichen** Punkte du bei der Beschaffung beachten musst
 </div>
 
 ---
 
-## So gehst du vor
+## 9.1 Daten als Rohstoff der KI
 
-1. Lies die Kapitelinhalte und probiere mindestens eine neue Methode aus.
-2. Bearbeite die **Kurzübungen** der Reihe nach – von Grundlagen bis Experte.
-3. Arbeite die **Workshop-Aufgabe** durch. Sie vertieft das Gelernte an einem zusammenhängenden Szenario.
+KI lernt aus Daten. Ohne passende Daten gibt es keine gute KI – *„garbage in, garbage out"*. Die Datenbeschaffung ist deshalb oft der **aufwendigste** Teil eines KI-Projekts.
 
 ---
 
-## 9.1 Selbstgesteuertes Lernen
-
-In der **Umschulung** – besonders in der **Online-Unterrichtsphase** – trägst du die Hauptverantwortung für deinen Lernfortschritt. **Selbstgesteuertes Lernen** bedeutet:
-
-| Element | Praxis |
-|---|---|
-| Zielsetzung | Was muss ich diese Woche / diesen Monat erreichen? |
-| Planung | Lernzeiten blocken, Puffer einplanen |
-| Durchführung | Material lesen, Übungen, Videos, Peer-Learning |
-| Überwachung | Bin ich im Plan? Was fehlt noch? |
-| Anpassung | Methode oder Tempo ändern, wenn nötig |
+## 9.2 Datenquellen
 
 ```mermaid
-flowchart LR
-    Z([Ziele]) --> P([Planung])
-    P --> D([Durchführung])
-    D --> U([Überwachung])
-    U --> A([Anpassung])
-    A --> P
+flowchart TD
+    A([Datenquellen]) --> B([Interne Daten])
+    A --> C([Externe Daten])
+    B --> B1([CRM, ERP, Logs])
+    B --> B2([Dokumente, E-Mails])
+    C --> C1([Open Data, Statistikämter])
+    C --> C2([Gekaufte Daten, APIs])
 ```
 
----
-
-## 9.2 Lernmethoden für Fachinhalte und WISO
-
-| Methode | Beschreibung | Geeignet für |
+| Quelle | Beispiel | Hinweis |
 |---|---|---|
-| Pomodoro | 25 Min. fokussiert, 5 Min. Pause | Konzentriertes Lesen, Übungen |
-| Active Recall | Selbst abfragen statt nur lesen | Prüfungsvorbereitung |
-| Cornell-Methode | Notizen mit Kernfragen-Spalte | WISO, Fachtheorie |
-| Lerngruppen | Discord, Teams, Präsenz | Erklären, diskutieren, motivieren |
-| Spaced Repetition | Wiederholung in Abständen | Vokabeln, Definitionen, Paragraphen |
-| Praxisprojekte | Kleine IT-Projekte parallel | Programmierung, Netzwerk |
-
-!!! tip "Online-Unterricht"
-    Kamera an (wenn möglich), feste Lernzeiten, Ablenkungen minimieren. **Lernumgebung** wie Arbeitsplatz einrichten – nicht vom Sofa lernen.
+| Interne Systeme | CRM, ERP, Warenwirtschaft | oft ungenutzter Schatz |
+| Dokumente | Verträge, Berichte, E-Mails | unstrukturiert, aber wertvoll |
+| Öffentliche Daten | Statistikämter, Open Data | kostenlos, gut zum Anreichern |
+| APIs / Dienste | Wetter, Geodaten | aktuell, oft kostenpflichtig |
+| Sensoren (IoT) | Maschinendaten | Basis für Predictive Maintenance |
 
 ---
 
-## 9.3 Digitale Werkzeuge
+## 9.3 Datenqualität: die „V" und Gütekriterien
 
-| Kategorie | Beispiele | Nutzen |
-|---|---|---|
-| Lernplattform | Moodle, LMS des Trägers | Material, Abgaben, Tests |
-| Notizen | Notion, Obsidian, OneNote | Strukturierte Wissensbasis |
-| Kalender | Google Calendar, Outlook | Lern- und Prüfungsplanung |
-| Code & IT | GitHub, VS Code, Docker | Fachpraxis, Portfolio |
-| Kommunikation | Teams, Slack, Discord | Lerngruppe, Betrieb |
-| Zeiterfassung | Toggl, simple Listen | Selbstreflexion Lernzeit |
+**Gütekriterien** guter Daten:
 
----
-
-## 9.4 Beruflich relevante Informationsquellen
-
-| Quelle | Inhalt |
+| Kriterium | Frage |
 |---|---|
-| IHK / HWK | Ausbildung, Prüfung, Verträge |
-| BIBB | Ausbildungsordnungen, Berufsinfos |
-| Gesetze im Internet (gesetze-im-internet.de) | BBiG, ArbZG, BetrVG |
-| Stack Overflow, DevDocs | Technische Fragen |
-| Heise, Golem, t3n | IT-News, Trends |
-| Fachbücher / Open Textbooks | Tieferes Verständnis |
+| Vollständigkeit | Fehlen Werte? |
+| Korrektheit | Sind die Werte richtig? |
+| Aktualität | Sind die Daten aktuell genug? |
+| Konsistenz | Widersprechen sich Daten? |
+| Relevanz | Passen die Daten zum Ziel? |
 
-**Quellen kritisch prüfen:** Aktualität, Autorität, Zweck (Werbung vs. Information).
+!!! warning "Menge ist nicht Qualität"
+    Viele Daten (Volume) helfen nur, wenn sie **korrekt, relevant und aktuell** sind. Schlechte Daten führen zu schlechten KI-Ergebnissen – egal wie modern das Modell ist.
 
 ---
 
-## 9.5 Arbeitstechniken im Betrieb
+## 9.4 Rechtliche Leitplanken
 
-| Technik | Beschreibung |
-|---|---|
-| Ticket-Systeme | Jira, Redmine – Aufgaben strukturieren |
-| Dokumentation | Confluence, Wikis – Wissen festhalten |
-| Timeboxing | Feste Zeitfenster für Tasks |
-| Priorisierung | MoSCoW, Eisenhower-Matrix |
-| Berichtsheft digital | Apps oder Vorlagen der Kammer |
+- **Personenbezogene Daten** unterliegen der **DSGVO** (siehe Kapitel 33).
+- **Urheber-/Nutzungsrechte** bei externen Daten prüfen.
+- **Zweckbindung:** Daten nur für den vereinbarten Zweck nutzen.
+
+**Copilot-Prompt zum Ausprobieren:**
+
+```text
+Ich möchte für den Use Case "[Use Case]" Daten beschaffen. Erstelle eine
+Checkliste: mögliche interne und externe Datenquellen, Qualitätskriterien und
+rechtliche Punkte, die ich prüfen muss.
+```
 
 ---
 
 ## Kurzübungen
 
-{{ task(file="tasks/tag9_01.yaml") }}
+{{ task(file="tasks/k09_01.yaml") }}
 
-{{ task(file="tasks/tag9_02.yaml") }}
-
-{{ task(file="tasks/tag9_03.yaml") }}
+{{ task(file="tasks/k09_02.yaml") }}
 
 ---
 
 ## Workshop
 
-{{ task(file="tasks/workshop_k9.yaml") }}
+{{ task(file="tasks/workshop_k09.yaml") }}

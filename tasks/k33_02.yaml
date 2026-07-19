@@ -1,0 +1,20 @@
+title: Prompt datenschutzkonform gestalten
+difficulty: 2
+question: |
+  Du hast eine Kundenbeschwerde, die du mit Copilot beantworten willst – sie enthält aber Klarnamen
+  und Kundennummer.
+
+  Formuliere den Prompt **datenschutzkonform**: Wie bereitest du den Text vor, bevor du ihn eingibst?
+  Erstelle einen Beispiel-Prompt mit anonymisierten Platzhaltern.
+tip: |
+  Ersetze identifizierende Angaben durch Platzhalter wie [Kunde] oder [Nummer].
+solution: |
+  Beispiel:
+
+  ```text
+  Formuliere eine freundliche Antwort auf folgende Beschwerde (Sie-Form, max. 120 Wörter):
+  "[Kunde] beschwert sich, dass die Lieferung zu Vorgang [Nummer] verspätet ist."
+  ```
+
+  Bewertung: Klarnamen/Kundennummer entfernt bzw. durch Platzhalter ersetzt; nur freigegebene Umgebung nutzen;
+  Datenminimierung beachtet.

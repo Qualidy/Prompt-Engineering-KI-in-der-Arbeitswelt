@@ -1,0 +1,14 @@
+title: Steuerung oder Regelung?
+difficulty: 1
+question: |
+  Steuerung oder Regelung?
+
+  1. Die Bewässerung läuft jeden Morgen um 6 Uhr für 10 Minuten.
+  2. Ein Tempomat hält die Geschwindigkeit trotz Steigung konstant.
+  3. Ein Thermostat hält die Raumtemperatur auf 21 °C.
+tip: |
+  Gibt es eine Rückmeldung (Messung des Ist-Werts)?
+solution: |
+  1. Steuerung (fester Ablauf, keine Rückmeldung)
+  2. Regelung (Ist-Wert wird gemessen und korrigiert)
+  3. Regelung

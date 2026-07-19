@@ -1,0 +1,14 @@
+title: Nachhaltigkeits-Einsatzfeld erkennen
+difficulty: 1
+question: |
+  Welchem Feld ist der KI-Beitrag zuzuordnen (Energie, Material, Logistik)?
+
+  1. Lieferrouten werden so geplant, dass weniger Kilometer anfallen.
+  2. Weniger Ausschuss dank automatischer Qualitätsprüfung.
+  3. Lastspitzen im Stromverbrauch werden geglättet.
+tip: |
+  Wege, Material oder Strom?
+solution: |
+  1. Logistik
+  2. Material
+  3. Energie

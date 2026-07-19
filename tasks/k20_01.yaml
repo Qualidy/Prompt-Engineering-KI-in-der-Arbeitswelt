@@ -1,0 +1,14 @@
+title: Data-Mining-Methode zuordnen
+difficulty: 1
+question: |
+  Welche Data-Mining-Methode passt?
+
+  1. Kunden in ähnliche Gruppen einteilen, ohne Vorgaben.
+  2. Vorhersagen, ob ein Kunde kündigen wird (ja/nein).
+  3. Erkennen, dass Windeln und Bier oft zusammen gekauft werden.
+tip: |
+  Clustering, Klassifikation oder Assoziation?
+solution: |
+  1. Clustering
+  2. Klassifikation
+  3. Assoziation

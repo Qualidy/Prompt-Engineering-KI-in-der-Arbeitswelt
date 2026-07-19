@@ -1,0 +1,22 @@
+title: KI-Geschäftsmodell auf einer Seite
+difficulty: 4
+question: |
+  **Szenario:** Ihr entwickelt ein KI-basiertes Geschäftsmodell und stellt es kompakt dar.
+
+  ---
+
+  **Aufgabe (in der Lerngruppe empfohlen):**
+
+  1. Wählt ein Unternehmen/Startup-Idee mit Zugang zu bestimmten Daten oder Fähigkeiten.
+  2. Füllt eine **Geschäftsmodell-Übersicht** aus (Wertangebot, Kundensegment, Kanäle, Einnahmequellen,
+     Schlüsselressourcen, Kosten).
+  3. Ordnet das Modell einem **Muster** zu (as-a-Service, datenbasiert, Produkt+Feature, Plattform).
+  4. Benennt **Machbarkeit** (Daten, Recht, Kosten) und das **größte Risiko**.
+  5. Nutzt **Copilot** für Entwurf und Schärfung; prüft kritisch.
+
+  **Deliverables:** Geschäftsmodell-Übersicht (eine Seite) + Musterzuordnung + Machbarkeits-/Risikobewertung.
+tip: |
+  Ein Modell ist erst tragfähig, wenn Wertangebot, Zahlungsbereitschaft und Machbarkeit zusammenpassen.
+solution: |
+  Bewertungskriterien: vollständige, konsistente Übersicht; korrekte Musterzuordnung; ehrliche Machbarkeits-/
+  Risikobewertung; Copilot als Hilfsmittel, eigene kritische Leistung erkennbar.

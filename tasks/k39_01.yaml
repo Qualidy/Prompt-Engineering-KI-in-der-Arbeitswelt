@@ -1,0 +1,13 @@
+title: Strategie-Ebenen ordnen
+difficulty: 1
+question: |
+  Bringe die Ebenen einer KI-Strategie in die logische Reihenfolge:
+
+  Use-Case-Portfolio · Unternehmensziele · Roadmap · KI-Vision
+tip: |
+  Vom Übergeordneten zum Konkreten.
+solution: |
+  1. Unternehmensziele
+  2. KI-Vision
+  3. Use-Case-Portfolio
+  4. Roadmap

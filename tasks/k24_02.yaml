@@ -1,0 +1,17 @@
+title: Smart-Factory-Szenario mit Copilot
+difficulty: 2
+question: |
+  Lass dir von **Copilot** ein Smart-Factory-Szenario ausarbeiten:
+
+  ```text
+  Beschreibe für einen mittelständischen Fertigungsbetrieb ein realistisches
+  Smart-Factory-Szenario. Welche Sensoren/Daten braucht es, welche 3 KI-Anwendungen
+  lohnen sich zuerst und welche Voraussetzungen müssen erfüllt sein?
+  ```
+
+  Bewerte: Welche Voraussetzung ist erfahrungsgemäß am schwersten zu erfüllen?
+tip: |
+  Oft ist die durchgängige, verlässliche Datenerfassung die größte Hürde.
+solution: |
+  Bewertungskriterien: realistisches Szenario; sinnvolle Priorisierung der KI-Anwendungen; korrekte Voraussetzungen
+  (Vernetzung, Datenqualität, Integration); begründete Einschätzung der größten Hürde.

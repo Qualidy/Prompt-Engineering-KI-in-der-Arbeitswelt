@@ -1,0 +1,23 @@
+title: Prompt-Bibliothek für den Arbeitsalltag
+difficulty: 4
+question: |
+  **Szenario:** Ihr wollt für euer Team eine wiederverwendbare Sammlung erprobter Prompts anlegen.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wählt **5 wiederkehrende Aufgaben** aus dem Arbeitsalltag (z. B. E-Mail entwerfen, Meeting zusammenfassen,
+     Text kürzen, Übersetzung, Ideen sammeln).
+  2. Entwickelt zu jeder Aufgabe einen **Vorlagen-Prompt** mit den vier Bausteinen und Platzhaltern
+     (z. B. `[Kunde]`, `[Ziel]`).
+  3. Testet jeden Prompt in **Copilot** und optimiert ihn in mindestens **einer Iteration**.
+  4. Dokumentiert je Prompt: Zweck, Vorlage, Beispielausgabe, Hinweis zur Nutzung.
+  5. Haltet **Regeln zur Qualitätsprüfung** fest (was muss vor Verwendung geprüft werden?).
+
+  **Deliverables:** Prompt-Bibliothek mit 5 dokumentierten, getesteten Vorlagen + Prüf-Regeln.
+tip: |
+  Nutzt Platzhalter in eckigen Klammern, damit die Vorlagen leicht wiederverwendbar sind.
+solution: |
+  Bewertungskriterien: 5 durchdachte Vorlagen mit allen Prompt-Bausteinen und Platzhaltern; erkennbare
+  Iteration/Optimierung; saubere Dokumentation; sinnvolle Qualitäts-/Prüfregeln (Fakten, Ton, Freigabe).

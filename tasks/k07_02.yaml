@@ -1,0 +1,16 @@
+title: Readiness-Check mit Copilot
+difficulty: 2
+question: |
+  Lass dir von **Copilot** einen Readiness-Check erstellen und wende ihn auf ein Beispielunternehmen an:
+
+  ```text
+  Erstelle 8 Ja/Nein-Fragen zur KI-Readiness eines Unternehmens. Für jede Frage:
+  Was bedeutet ein "Nein" und welche erste Maßnahme wäre sinnvoll?
+  ```
+
+  Beantworte die Fragen für ein dir bekanntes (oder fiktives) Unternehmen und notiere den ungefähren Reifegrad.
+tip: |
+  Ordne die Antworten am Ende einer der vier Reifegradstufen zu.
+solution: |
+  Bewertungskriterien: sinnvolle Fragen über mehrere Handlungsfelder; nachvollziehbare Reifegrad-Einschätzung;
+  jede „Nein"-Antwort mit einer konkreten ersten Maßnahme verknüpft.

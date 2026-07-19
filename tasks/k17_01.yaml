@@ -1,0 +1,17 @@
+title: RL-Begriffe zuordnen
+difficulty: 1
+question: |
+  Ein Roboter lernt, ein Lager möglichst schnell einzuräumen. Ordne zu:
+  Agent, Umgebung, Aktion, Belohnung.
+
+  1. Der Roboter
+  2. Das Lager mit Regalen und Kisten
+  3. „Kiste in Regal 3 stellen"
+  4. Punkte für schnelles, fehlerfreies Einräumen
+tip: |
+  Wer handelt, wo, wie, mit welcher Rückmeldung?
+solution: |
+  1. Agent
+  2. Umgebung
+  3. Aktion
+  4. Belohnung

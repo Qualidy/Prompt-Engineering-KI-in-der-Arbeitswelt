@@ -1,0 +1,22 @@
+title: Belohnungsdesign für ein RL-Szenario
+difficulty: 4
+question: |
+  **Szenario:** Ein Lieferdienst will die Tourenplanung mit Reinforcement Learning optimieren.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Beschreibt das Szenario als RL-Problem: **Agent, Umgebung, mögliche Aktionen, Ziel**.
+  2. Entwerft eine **Belohnungsfunktion**: Wofür gibt es Punkte, wofür Abzüge?
+  3. Findet **mindestens ein Fehlanreiz-Risiko** (z. B. „der Agent fährt zu schnell, um Zeit zu sparen") und
+     korrigiert die Belohnung.
+  4. Diskutiert, welche **Daten/Umgebung** zum Trainieren nötig wären.
+  5. Nutzt **Copilot** als Sparringspartner und prüft die Vorschläge kritisch.
+
+  **Deliverables:** RL-Modellbeschreibung + Belohnungsfunktion + identifizierter Fehlanreiz mit Korrektur.
+tip: |
+  Gute Belohnungsfunktionen bestrafen unerwünschtes Verhalten explizit – sonst „trickst" der Agent.
+solution: |
+  Bewertungskriterien: sauber modelliertes RL-Problem; durchdachte Belohnungsfunktion; erkannter Fehlanreiz
+  mit sinnvoller Korrektur; realistische Einschätzung des Trainingsaufwands.

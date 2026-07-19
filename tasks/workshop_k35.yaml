@@ -1,0 +1,21 @@
+title: Projektskizze für ein KI-Pilotprojekt
+difficulty: 4
+question: |
+  **Szenario:** Ihr sollt ein KI-Pilotprojekt so aufsetzen, dass es realistische Erfolgschancen hat.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wählt einen abgegrenzten Use Case und definiert ein **messbares Ziel**.
+  2. Benennt die nötigen **Rollen** und die **Datenlage** (vorhanden? Qualität?).
+  3. Skizziert einen **Projektablauf** mit Meilensteinen inkl. Schritt „in den Betrieb".
+  4. Erstellt eine **Risiko-Liste** (Top 5) mit Gegenmaßnahmen.
+  5. Nutzt **Copilot** für Struktur/Checklisten und prüft die Vorschläge kritisch.
+
+  **Deliverables:** Projektskizze (Ziel, Rollen, Daten, Ablauf, Meilensteine) + Top-5-Risiken mit Gegenmaßnahmen.
+tip: |
+  Ein gutes Pilotprojekt ist klein, messbar und hat einen klaren Weg in den Regelbetrieb.
+solution: |
+  Bewertungskriterien: messbares Ziel; passende Rollen; ehrliche Dateneinschätzung; realistischer Ablauf inkl. Betrieb;
+  belastbare Risiko-Liste mit Gegenmaßnahmen.

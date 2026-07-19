@@ -1,0 +1,21 @@
+title: KI-Readiness-Assessment
+difficulty: 4
+question: |
+  **Szenario:** Ihr sollt für ein Unternehmen ein kompaktes KI-Readiness-Assessment erstellen.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Beschreibt ein Unternehmen kurz (Branche, Größe, IT-Situation).
+  2. Bewertet die **fünf Handlungsfelder** (Daten, Technik, Kompetenzen, Kultur, Strategie) je auf einer Skala 1–4.
+  3. Stellt das Ergebnis als **Profil** dar (Tabelle oder Netzdiagramm-Beschreibung) und bestimmt den Gesamtreifegrad.
+  4. Leitet **drei priorisierte Maßnahmen** ab, um die größten Lücken zu schließen.
+  5. Nutzt **Copilot** für Fragenkatalog und Maßnahmenideen – bewertet die Vorschläge kritisch.
+
+  **Deliverables:** Readiness-Profil (5 Felder bewertet) + Gesamtreifegrad + 3 priorisierte Maßnahmen.
+tip: |
+  Beginnt bei den Maßnahmen mit dem schwächsten Feld – dort ist der Hebel am größten.
+solution: |
+  Bewertungskriterien: konsistente Bewertung aller fünf Felder; plausibler Gesamtreifegrad;
+  Maßnahmen adressieren die größten Lücken und sind konkret; Copilot als Hilfsmittel eingesetzt.

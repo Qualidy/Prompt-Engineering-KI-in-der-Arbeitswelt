@@ -1,0 +1,16 @@
+title: Dokument mit Copilot auswerten
+difficulty: 2
+question: |
+  Nimm ein (anonymisiertes) längeres Dokument und lass es von **Copilot** auswerten:
+
+  ```text
+  Fasse dieses Dokument in maximal 6 Stichpunkten zusammen, liste alle Fristen und
+  Verantwortlichkeiten auf und nenne 2 offene Fragen. [Dokument einfügen]
+  ```
+
+  Prüfe die Ausgabe: Wurde eine Frist übersehen oder falsch erfasst?
+tip: |
+  Kontrolliere Zahlen und Datumsangaben besonders sorgfältig.
+solution: |
+  Bewertungskriterien: korrekte Zusammenfassung; vollständige Fristen/Verantwortlichkeiten; kritische Prüfung
+  der extrahierten Fakten; Bewusstsein für Vertraulichkeit (nur anonymisierte/freigegebene Dokumente).

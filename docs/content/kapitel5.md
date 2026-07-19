@@ -1,113 +1,84 @@
-# Kapitel 5 – Sozialversicherung und Sozialrecht
+# Kapitel 5 – Aktuelle KI-Trends
 
-<div class="kurs-progress">
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step active"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-</div>
+{{ progress(5) }}
 
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Wie das deutsche Sozialversicherungssystem aufgebaut ist und welche Versicherungen existieren
-- Welche Beiträge und Leistungen für Beschäftigte und Auszubildende relevant sind
-- Welche Besonderheiten in der Umschulung (Unterricht vs. Praktikum) zu beachten sind
+- Die wichtigsten **aktuellen Trends** der KI und was sie praktisch bedeuten
+- Was **generative KI**, **KI-Agenten** und **Multimodalität** sind
+- Wohin sich Werkzeuge wie **Microsoft Copilot** entwickeln
+- Wie du Trends kritisch einordnest, statt jedem Hype zu folgen
 </div>
 
 ---
 
-## So gehst du vor
+## 5.1 Generative KI
 
-1. Lies die Kapitelinhalte und merke dir die fünf Sozialversicherungen.
-2. Bearbeite die **Kurzübungen** der Reihe nach – von Grundlagen bis Experte.
-3. Arbeite die **Workshop-Aufgabe** durch. Sie vertieft das Gelernte an einem zusammenhängenden Szenario.
+**Generative KI** erzeugt neue Inhalte – Text, Bilder, Audio, Code – auf Basis von Eingaben. Sie ist der Trend, der KI 2022/2023 in den Alltag gebracht hat.
+
+- Beispiele: Copilot, ChatGPT, Bildgeneratoren
+- Für Unternehmen relevant, weil sie **ohne Programmierung** über Sprache bedienbar ist
 
 ---
 
-## 5.1 Das Sozialversicherungssystem
+## 5.2 KI-Agenten
 
-Deutschland hat ein **paritätisches System**: Arbeitnehmer und Arbeitgeber zahlen in der Regel **je die Hälfte** der Sozialversicherungsbeiträge. Die Beiträge werden vom **Bruttoentgelt** berechnet.
+Ein **KI-Agent** löst nicht nur eine einzelne Anfrage, sondern verfolgt ein **Ziel** über mehrere Schritte – er plant, nutzt Werkzeuge und handelt teilweise selbstständig.
 
 ```mermaid
-flowchart TD
-    B([Bruttoentgelt]) --> K[Krankenversicherung]
-    B --> P[Pflegeversicherung]
-    B --> R[Rentenversicherung]
-    B --> A[Arbeitslosenversicherung]
-    B --> U[Unfallversicherung\nnur AG-Beitrag]
+flowchart LR
+    A([Ziel]) --> B([Plan erstellen])
+    B --> C([Schritte ausführen / Tools nutzen])
+    C --> D([Ergebnis prüfen])
+    D -->|nicht fertig| B
+    D -->|fertig| E([Ergebnis])
 ```
 
----
-
-## 5.2 Die fünf Sozialversicherungen
-
-| Versicherung | Zweck | Beitrag (typisch, vereinfacht) |
-|---|---|---|
-| Krankenversicherung (KV) | Medizinische Behandlung | ca. 14,6 % + Zusatzbeitrag, geteilt |
-| Pflegeversicherung (PV) | Pflegebedürftigkeit | ca. 3,4 % (+ Zuschlag Kinderlose), geteilt |
-| Rentenversicherung (RV) | Altersrente, Erwerbsminderung | ca. 18,6 %, geteilt |
-| Arbeitslosenversicherung (AV) | Arbeitslosengeld | ca. 2,6 %, geteilt |
-| Unfallversicherung (UV) | Arbeitsunfälle, Berufskrankheiten | Nur Arbeitgeber |
-
-!!! info "Auszubildende sind eigenständig pflichtversichert"
-    Auszubildende gelten sozialversicherungsrechtlich als **Beschäftigte** und sind daher **ab dem ersten Euro eigenständig pflichtversichert** – unabhängig von der Höhe der Ausbildungsvergütung. Eine beitragsfreie **Familienversicherung** über Eltern oder Ehepartner ist während der Ausbildung deshalb **nicht** möglich. Liegt die Vergütung unter der **Geringverdienergrenze** (§ 20 SGB IV), trägt der Arbeitgeber die Beiträge allein.
+Beispiel: Ein Agent, der eigenständig Termine recherchiert, Vorschläge macht und eine E-Mail entwirft. Microsoft entwickelt Copilot in diese Richtung weiter (**Copilot Agents**).
 
 ---
 
-## 5.3 Auszubildende in der Sozialversicherung
+## 5.3 Multimodalität
 
-| Thema | Regelung |
+**Multimodale** KI verarbeitet mehrere Datenarten gleichzeitig – Text, Bild, Ton. Du kannst Copilot z. B. ein Bild zeigen und eine Frage dazu stellen.
+
+| Modalität | Beispiel-Aufgabe |
 |---|---|
-| Pflichtversicherung | Auszubildende sind als Beschäftigte in allen fünf Zweigen pflichtversichert |
-| Geringverdienergrenze | Liegt die Ausbildungsvergütung unter der Grenze (§ 20 SGB IV), trägt der Arbeitgeber die SV-Beiträge allein |
-| Berufsschule | Versicherungsschutz während der Ausbildung, auch in Berufsschulzeiten |
-| Unfallversicherung | Gilt auch in Berufsschule und auf dem Weg dorthin |
+| Text | Zusammenfassen, übersetzen |
+| Bild | Diagramm erklären, Foto beschreiben |
+| Audio | Meeting transkribieren |
+| Kombination | Aus Skizze + Text einen Entwurf erstellen |
 
 ---
 
-## 5.4 Sozialversicherung als Umschüler
+## 5.4 Weitere Trends im Blick
 
-Als **Umschüler** bist du in **beiden Phasen** – Unterricht **und** unbezahltes Betriebspraktikum – **kein** sozialversicherungspflichtig Beschäftigter. Dein Versicherungsstatus richtet sich nach der Leistung der Agentur, nicht nach einer Vergütung.
+- **Kleine, spezialisierte Modelle (SLMs):** effizienter, teils lokal auf dem Gerät
+- **KI-Regulierung:** der EU AI Act setzt Leitplanken (siehe Kapitel 32)
+- **Individualisierung:** Modelle werden an Unternehmensdaten angepasst
 
-| Situation | Versicherung / Finanzierung |
-|---|---|
-| Unterricht beim Bildungsträger | Lebensunterhalt über ALG I oder Bürgergeld, Lehrgangskosten häufig per Bildungsgutschein – kein Beschäftigungsverhältnis |
-| Unbezahltes Betriebspraktikum | Keine Ausbildungsvergütung, keine SV aus Beschäftigung; Leistungsbezug und Versicherung laufen weiter wie in der Unterrichtsphase |
-| Krankenversicherung | Bei ALG-I-Bezug eigenständige Pflichtversicherung über die Agentur (keine Familienversicherung); bei Bürgergeld gesondert klären |
+**Copilot-Prompt zum Ausprobieren:**
 
-!!! warning "Umschüler vs. Azubi"
-    Nur ein **regulärer Azubi** ist über seine **Ausbildungsvergütung** sozialversicherungspflichtig (siehe 5.3). Dein **unbezahltes Umschüler-Praktikum** löst **keine** eigene Sozialversicherung aus. Kläre deinen Status immer konkret mit Arbeitsagentur und Krankenkasse.
+```text
+Nenne die drei wichtigsten KI-Trends für kleine und mittlere Unternehmen in
+diesem Jahr. Erkläre je Trend in 2 Sätzen die praktische Bedeutung und nenne
+ein konkretes Beispiel.
+```
 
----
-
-## 5.5 Weitere Sozialleistungen (Überblick)
-
-| Leistung | Kurzbeschreibung |
-|---|---|
-| Arbeitslosengeld I | Nach Arbeitslosigkeit bei vorheriger Beschäftigung |
-| Bürgergeld | Grundsicherung bei Bedürftigkeit |
-| Kindergeld | Für Kinder, unabhängig vom Einkommen (mit Grenzen) |
-| Wohngeld | Zuschuss zu Mietkosten bei Bedürftigkeit |
+!!! warning "Trend ≠ Pflicht"
+    Nicht jeder Trend passt zu jedem Unternehmen. Frage immer: Löst dieser Trend ein **echtes Problem** bei uns?
 
 ---
 
 ## Kurzübungen
 
-{{ task(file="tasks/tag5_01.yaml") }}
+{{ task(file="tasks/k05_01.yaml") }}
 
-{{ task(file="tasks/tag5_02.yaml") }}
-
-{{ task(file="tasks/tag5_03.yaml") }}
+{{ task(file="tasks/k05_02.yaml") }}
 
 ---
 
 ## Workshop
 
-{{ task(file="tasks/workshop_k5.yaml") }}
+{{ task(file="tasks/workshop_k05.yaml") }}

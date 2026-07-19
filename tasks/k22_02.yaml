@@ -1,0 +1,16 @@
+title: Process Mining erklären lassen
+difficulty: 2
+question: |
+  Lass dir von **Copilot** Process Mining praxisnah erklären:
+
+  ```text
+  Erkläre Process Mining an einem Beispiel aus der Auftragsabwicklung. Was sind
+  Logdaten, was kann man daraus erkennen und welche typische Abweichung deckt es auf?
+  ```
+
+  Notiere: Welche Systeme in einem Unternehmen liefern solche Logdaten?
+tip: |
+  Denke an ERP-, CRM- und Ticketsysteme.
+solution: |
+  Bewertungskriterien: korrektes Verständnis (Prozess aus Logdaten rekonstruieren, Abweichungen/Engpässe finden);
+  sinnvolle Beispielsysteme (ERP, CRM, Ticketsystem).

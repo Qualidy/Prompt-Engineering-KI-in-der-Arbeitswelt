@@ -1,0 +1,18 @@
+title: Halluzination entlarven
+difficulty: 2
+question: |
+  Stelle **Copilot** bewusst eine Frage zu einem sehr speziellen, schwer prüfbaren Detail
+  (z. B. eine exakte, wenig bekannte Zahl oder Quelle). Prüfe die Antwort anschließend gegen
+  eine verlässliche Quelle.
+
+  ```text
+  Nenne mir das genaue Gründungsdatum und den ersten Umsatz von [sehr kleines/
+  unbekanntes Unternehmen]. Gib an, wie sicher du dir bist.
+  ```
+
+  Notiere: Hat Copilot auf Unsicherheit hingewiesen? War die Antwort korrekt?
+tip: |
+  Achte darauf, ob das Modell selbst Unsicherheit signalisiert – gute Prompts fragen aktiv danach.
+solution: |
+  Bewertungskriterien: Erkenntnis, dass LLMs bei seltenen Fakten „halluzinieren" können; Wert einer
+  aktiven Unsicherheitsabfrage; Bewusstsein, dass Ausgaben immer geprüft werden müssen.

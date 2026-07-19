@@ -1,0 +1,17 @@
+title: Datenbedarf mit Copilot klären
+difficulty: 2
+question: |
+  Wähle eine Maschine/Anlage und lass **Copilot** den Datenbedarf für Predictive Maintenance klären:
+
+  ```text
+  Ich möchte für [Maschine] vorausschauende Wartung einführen. Welche Sensor- und
+  historischen Daten brauche ich, welche Ausfallarten kann man vorhersagen und
+  welche Voraussetzung ist am kritischsten?
+  ```
+
+  Bewerte: Sind die nötigen Daten in einem typischen Betrieb realistisch vorhanden?
+tip: |
+  Historische Ausfalldaten sind oft die knappste Ressource.
+solution: |
+  Bewertungskriterien: sinnvolle Sensor-/Historiendaten; realistische Ausfallarten; Erkenntnis, dass historische
+  Ausfalldaten häufig der Engpass sind.

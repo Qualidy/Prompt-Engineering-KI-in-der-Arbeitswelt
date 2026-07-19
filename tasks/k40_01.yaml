@@ -1,0 +1,10 @@
+title: Bausteine der Prompt-Bibliothek
+difficulty: 1
+question: |
+  Welche Felder gehören sinnvollerweise zu einem Eintrag in einer Prompt-Bibliothek?
+  Wähle aus: Zweck, Lieblingsfarbe, Vorlage mit Platzhaltern, Beispielausgabe, Prüf-Hinweise, Wetterbericht
+tip: |
+  Was hilft anderen, den Prompt richtig wiederzuverwenden?
+solution: |
+  Sinnvoll: Zweck, Vorlage mit Platzhaltern, Beispielausgabe, Prüf-Hinweise.
+  Nicht relevant: Lieblingsfarbe, Wetterbericht.

@@ -1,0 +1,17 @@
+title: Rechtliche Risiken sammeln
+difficulty: 2
+question: |
+  Wähle eine geplante KI-Anwendung und lass **Copilot** rechtliche Risiken auflisten:
+
+  ```text
+  Nenne die wichtigsten rechtlichen Aspekte, die ich beim Einsatz von "[Anwendung]"
+  prüfen sollte (Datenschutz, Urheberrecht, Haftung, EU AI Act). Formuliere zu jedem
+  Punkt eine Prüffrage.
+  ```
+
+  Markiere, welche Punkte du **unbedingt** mit einer Rechtsabteilung/Fachperson klären würdest.
+tip: |
+  Bei Hochrisiko-Anwendungen und personenbezogenen Daten ist Fachrat besonders wichtig.
+solution: |
+  Bewertungskriterien: relevante Rechtsbereiche abgedeckt; sinnvolle Prüffragen; Bewusstsein, dass KI-Auskünfte
+  zu Recht geprüft werden müssen und Fachrat nötig ist.

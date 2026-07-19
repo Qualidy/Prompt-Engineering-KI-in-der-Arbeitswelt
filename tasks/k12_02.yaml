@@ -1,0 +1,16 @@
+title: Overfitting verstehen
+difficulty: 2
+question: |
+  Lass dir von **Copilot** Overfitting alltagstauglich erklären:
+
+  ```text
+  Erkläre "Overfitting" so, dass es eine Person ohne Statistikwissen versteht.
+  Nutze eine Analogie und nenne, wie man Overfitting erkennt und vermeidet.
+  ```
+
+  Bewerte: Ist die Analogie treffend? Formuliere selbst eine zweite Analogie.
+tip: |
+  Eine gute Analogie: „auswendig lernen" statt „verstehen".
+solution: |
+  Bewertungskriterien: verständliche Erklärung; korrekte Erkennungsmerkmale (gut im Training, schlecht im Test);
+  Vermeidung (mehr Daten, einfacheres Modell, Testdaten); eigene, tragfähige zweite Analogie.

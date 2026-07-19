@@ -1,0 +1,22 @@
+title: Automatisierte Auswertung von Freitext-Feedback
+difficulty: 4
+question: |
+  **Szenario:** Euer Unternehmen sammelt viele Freitext-Rückmeldungen (Umfragen, Bewertungen, Tickets)
+  und will sie automatisiert auswerten.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Erstellt einen Beispieldatensatz mit **mindestens 10** Freitext-Rückmeldungen.
+  2. Definiert, welche **NLP-Aufgaben** ihr braucht (z. B. Sentiment, Themen-Extraktion, Zusammenfassung).
+  3. Entwickelt einen **Copilot-Prompt**, der alle Aufgaben in einem Durchgang erledigt und als Tabelle ausgibt.
+  4. Führt die Analyse durch und **prüft die Ergebnisse** manuell auf Fehler.
+  5. Formuliert eine **Handlungsempfehlung** aus den Erkenntnissen.
+
+  **Deliverables:** Datensatz + finaler Prompt + Auswertungstabelle + geprüfte Handlungsempfehlung.
+tip: |
+  Ein guter Prompt legt Kategorien fest und fordert ein einheitliches Ausgabeformat (Tabelle mit festen Spalten).
+solution: |
+  Bewertungskriterien: sinnvoll definierte NLP-Aufgaben; präziser, wiederverwendbarer Prompt; manuelle Fehlerprüfung
+  erfolgt; datenbasierte, nachvollziehbare Handlungsempfehlung.

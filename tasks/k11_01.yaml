@@ -1,0 +1,14 @@
+title: Die V von Big Data
+difficulty: 1
+question: |
+  Welches „V" von Big Data ist gemeint?
+
+  1. Sensordaten treffen jede Sekunde tausendfach ein.
+  2. Es gibt Texte, Bilder, Tabellen und Videos gemischt.
+  3. Ein Teil der Daten ist fehlerhaft oder unsicher.
+tip: |
+  Geschwindigkeit, Vielfalt, Verlässlichkeit.
+solution: |
+  1. Velocity (Geschwindigkeit)
+  2. Variety (Vielfalt)
+  3. Veracity (Verlässlichkeit)

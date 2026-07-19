@@ -1,0 +1,16 @@
+title: Ideensturm mit Copilot
+difficulty: 2
+question: |
+  Nutze **Copilot** als Brainstorming-Partner:
+
+  ```text
+  Erzeuge 10 KI-Innovationsideen für [Bereich]. Sortiere in inkrementell und
+  disruptiv. Nenne zu jeder Idee den erwarteten Nutzen in einem Satz.
+  ```
+
+  Wähle danach die aus deiner Sicht **beste inkrementelle** und **beste disruptive** Idee aus und begründe.
+tip: |
+  Disruptive Ideen sind riskanter, aber potenziell wertvoller – bewerte beide Dimensionen.
+solution: |
+  Bewertungskriterien: zehn Ideen korrekt einsortiert; begründete Auswahl je einer inkrementellen und
+  disruptiven Idee; Nutzen realistisch eingeschätzt.

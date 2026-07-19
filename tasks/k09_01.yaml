@@ -1,0 +1,16 @@
+title: Datenquellen einordnen
+difficulty: 1
+question: |
+  Sind die folgenden Datenquellen **intern** oder **extern**?
+
+  1. Das eigene CRM-System
+  2. Wetterdaten über eine öffentliche API
+  3. Gescannte Eingangsrechnungen
+  4. Statistiken des Statistischen Bundesamts
+tip: |
+  Intern = entsteht im eigenen Unternehmen.
+solution: |
+  1. Intern
+  2. Extern
+  3. Intern
+  4. Extern

@@ -1,0 +1,21 @@
+title: Service-Chatbot konzipieren und testen
+difficulty: 4
+question: |
+  **Szenario:** Ihr sollt für ein Unternehmen einen Kundenservice-Chatbot konzipieren.
+
+  ---
+
+  **Aufgabe (in der Lerngruppe empfohlen):**
+
+  1. Wählt ein Unternehmen und definiert **Ziel und Themenumfang** des Chatbots.
+  2. Erstellt einen **System-Prompt** (Rolle, Regeln, Ton, Eskalation) mit **Copilot** und optimiert ihn.
+  3. Entwerft **3 typische Dialogverläufe** (inkl. eines Falls, der an einen Menschen übergeben wird).
+  4. Testet den Bot in Copilot mit **realistischen, auch schwierigen** Anfragen (unklar, gereizt, außerhalb des Themas).
+  5. Dokumentiert **Schwachstellen** und leitet Verbesserungen am Prompt ab.
+
+  **Deliverables:** Konzept + System-Prompt + 3 Dialogverläufe + Testprotokoll mit Verbesserungen.
+tip: |
+  Testet bewusst Grenzfälle – daran zeigt sich die Qualität des Dialogdesigns.
+solution: |
+  Bewertungskriterien: klares Konzept; robuster System-Prompt; realistische Dialoge inkl. Eskalation;
+  Tests decken Schwachstellen auf; nachvollziehbare Prompt-Verbesserungen.

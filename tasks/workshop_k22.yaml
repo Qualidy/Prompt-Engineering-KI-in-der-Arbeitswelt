@@ -1,0 +1,22 @@
+title: Optimierungskonzept für einen Verwaltungsprozess
+difficulty: 4
+question: |
+  **Szenario:** Ihr sollt einen verwaltungslastigen Prozess (z. B. Rechnungseingang, Bestellfreigabe,
+  Reisekostenabrechnung) mit KI/RPA optimieren.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Beschreibt den Ist-Prozess Schritt für Schritt.
+  2. Ordnet jedem Schritt die passende **Rolle** zu: KI, RPA oder Mensch – mit Begründung.
+  3. Schätzt den **erwarteten Nutzen** (Zeit, Fehler) grob ab.
+  4. Benennt **Risiken** (z. B. Fehlklassifikation, fehlende Kontrolle) und Gegenmaßnahmen.
+  5. Nutzt **Copilot** zur Strukturierung und für Formulierungen (z. B. Rückfrage-Texte).
+
+  **Deliverables:** Ist-Prozess + Rollenzuordnung je Schritt + Nutzenschätzung + Risiken/Gegenmaßnahmen.
+tip: |
+  Belasst die Freigabe von risikoreichen/rechtlich relevanten Schritten bewusst beim Menschen.
+solution: |
+  Bewertungskriterien: klare Rollenzuordnung mit Begründung; plausible Nutzenschätzung; realistische Risiken mit
+  Gegenmaßnahmen; menschliche Kontrolle an den richtigen Stellen.

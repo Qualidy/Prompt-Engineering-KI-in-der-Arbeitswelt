@@ -1,0 +1,16 @@
+title: Begründung von Copilot einfordern
+difficulty: 2
+question: |
+  Stelle **Copilot** eine Bewertungs-/Empfehlungsaufgabe und fordere eine nachvollziehbare Begründung:
+
+  ```text
+  Vergleiche zwei Optionen [A/B] und empfiehl eine. Begründe Schritt für Schritt,
+  nenne deine Annahmen und die drei wichtigsten Entscheidungskriterien mit Gewichtung.
+  ```
+
+  Prüfe: Ist die Begründung schlüssig? Sind versteckte Annahmen dabei, die du hinterfragen würdest?
+tip: |
+  Achte auf unausgesprochene Annahmen – dort verstecken sich oft Fehler.
+solution: |
+  Bewertungskriterien: nachvollziehbare, kriterienbasierte Begründung; erkannte Annahmen; kritische Prüfung,
+  ob die Begründung wirklich trägt (nicht nur plausibel klingt).

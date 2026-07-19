@@ -1,0 +1,21 @@
+title: Business Case für Predictive Maintenance
+difficulty: 4
+question: |
+  **Szenario:** Ihr sollt begründen, ob sich vorausschauende Wartung für eine Anlage lohnt.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wählt eine Anlage und beschreibt die heutige Wartungsstrategie und deren Probleme.
+  2. Skizziert den **Predictive-Maintenance-Ansatz**: Daten, Modellidee, Meldeweg.
+  3. Stellt einen einfachen **Business Case** auf: Kosten (Sensorik, Aufwand) vs. Nutzen (weniger Stillstand).
+  4. Benennt **Risiken** (fehlende Daten, Fehlalarme) und wie ihr damit umgeht.
+  5. Nutzt **Copilot** zur Strukturierung und für die Argumentation.
+
+  **Deliverables:** Ist-Analyse + PdM-Konzept + einfacher Business Case + Risiko-Notiz.
+tip: |
+  Rechnet grob: Was kostet eine Stunde ungeplanter Stillstand – und wie oft kommt er vor?
+solution: |
+  Bewertungskriterien: nachvollziehbare Ist-Analyse; realistisches PdM-Konzept; plausible Kosten-Nutzen-Betrachtung;
+  benannte Risiken (Datenmangel, Fehlalarme) mit Umgang.

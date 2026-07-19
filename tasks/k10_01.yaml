@@ -1,0 +1,14 @@
+title: Aufbereitungsschritt erkennen
+difficulty: 1
+question: |
+  Welcher Schritt der Datenaufbereitung ist gemeint (Bereinigen, Transformieren, Anreichern)?
+
+  1. Alle Datumsangaben werden ins Format TT.MM.JJJJ gebracht.
+  2. Doppelte Kundeneinträge werden zusammengeführt.
+  3. Aus dem Geburtsdatum wird die Spalte „Alter" berechnet.
+tip: |
+  Anreichern = neue Information hinzufügen.
+solution: |
+  1. Transformieren
+  2. Bereinigen
+  3. Anreichern (Feature Engineering)

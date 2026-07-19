@@ -1,0 +1,22 @@
+title: System-Prompt für einen Team-Assistenten
+difficulty: 4
+question: |
+  **Szenario:** Ihr wollt Copilot so „einstellen", dass es sich für euer Team einheitlich verhält
+  (Ton, Sprache, Format).
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Definiert die gewünschten **Verhaltensregeln** (z. B. Sprache, Anrede, Länge, Struktur, Umgang mit Unsicherheit).
+  2. Formuliert daraus einen **System-Prompt** (Grundanweisung), der diese Regeln festlegt.
+  3. Testet den System-Prompt mit **drei verschiedenen Aufgaben** und prüft, ob die Regeln eingehalten werden.
+  4. Verbessert den System-Prompt in mindestens **einer Iteration**.
+  5. Haltet fest, wo die Grenzen liegen (was lässt sich so **nicht** zuverlässig steuern?).
+
+  **Deliverables:** Regelkatalog + finaler System-Prompt + 3 Testergebnisse + Notiz zu Grenzen.
+tip: |
+  Formuliert Regeln als klare Anweisungen („Antworte immer …", „Weise auf Unsicherheiten hin …").
+solution: |
+  Bewertungskriterien: klarer Regelkatalog; System-Prompt setzt die Regeln um; Tests belegen Wirkung;
+  erkennbare Iteration; realistische Einschätzung der Grenzen (z. B. Faktenkorrektheit bleibt Prüfsache).

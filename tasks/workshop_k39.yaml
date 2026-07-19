@@ -1,0 +1,21 @@
+title: KI-Strategie auf einer Seite
+difficulty: 4
+question: |
+  **Szenario:** Die Geschäftsführung wünscht eine KI-Strategie „auf einer Seite".
+
+  ---
+
+  **Aufgabe (in der Lerngruppe empfohlen):**
+
+  1. Wählt ein Unternehmen und formuliert eine **KI-Vision** (1–2 Sätze), abgeleitet aus den Unternehmenszielen.
+  2. Definiert **3 Handlungsfelder** und je **2 priorisierte Use Cases** (Nutzen/Aufwand).
+  3. Skizziert eine grobe **Roadmap** (Jahr 1, 2, 3).
+  4. Legt die wichtigsten **Governance-Regeln** fest (inkl. Kompetenzaufbau/Prompting).
+  5. Nutzt **Copilot** für Struktur und Formulierung; trefft die Entscheidungen selbst.
+
+  **Deliverables:** Einseitige KI-Strategie (Vision, Handlungsfelder, Use Cases, Roadmap, Governance).
+tip: |
+  Bindet die Kompetenzentwicklung (Prompt Engineering) explizit als Governance-/Strategiebaustein ein – das ist Thema von Kapitel 40.
+solution: |
+  Bewertungskriterien: klare, ableitbare Vision; sinnvolle Handlungsfelder und priorisierte Use Cases; realistische
+  Roadmap; passende Governance-Regeln; erkennbar eigene strategische Entscheidungen.

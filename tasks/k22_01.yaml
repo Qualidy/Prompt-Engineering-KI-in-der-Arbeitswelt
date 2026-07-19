@@ -1,0 +1,14 @@
+title: KI, RPA oder Mensch?
+difficulty: 1
+question: |
+  Wer sollte den Schritt idealerweise übernehmen (KI, RPA oder Mensch)?
+
+  1. Denselben festen Klickablauf 200-mal am Tag ausführen.
+  2. Aus einer unstrukturierten E-Mail das Anliegen erkennen.
+  3. Eine Rechnung über 50.000 € final freigeben.
+tip: |
+  RPA = feste Regeln, KI = Verstehen, Mensch = Verantwortung.
+solution: |
+  1. RPA
+  2. KI
+  3. Mensch

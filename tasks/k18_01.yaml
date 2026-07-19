@@ -1,0 +1,14 @@
+title: Regelbasiert oder KI-basiert?
+difficulty: 1
+question: |
+  Handelt es sich eher um einen regelbasierten oder einen KI-basierten Chatbot?
+
+  1. Der Bot bietet feste Menü-Buttons: „Rechnung", „Tarif", „Kontakt".
+  2. Der Bot versteht den frei getippten Satz „Warum ist meine Rechnung diesmal so hoch?".
+  3. Der Bot folgt einem starren Frage-Antwort-Baum ohne Abweichung.
+tip: |
+  Freie Sprache verstehen können nur KI-basierte Bots.
+solution: |
+  1. Regelbasiert
+  2. KI-basiert
+  3. Regelbasiert

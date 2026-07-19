@@ -1,0 +1,21 @@
+title: KI-Regelung mit Sicherheitskonzept
+difficulty: 4
+question: |
+  **Szenario:** Für einen Prozess soll eine KI-gestützte Regelung eingeführt werden – sicher und nachvollziehbar.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wählt einen Prozess und beschreibt **Regelgrößen, Stellgrößen und Ziele**.
+  2. Erklärt, **warum** hier eine klassische Regelung an Grenzen stößt.
+  3. Entwerft das **Zusammenspiel** von KI-Regelung und klassischer Sicherheitssteuerung.
+  4. Definiert **Grenzwerte und Rückfallebenen** (was passiert bei Fehlfunktion?).
+  5. Nutzt **Copilot** zur Strukturierung; prüft die Vorschläge kritisch.
+
+  **Deliverables:** Prozessbeschreibung + Begründung KI-Einsatz + Sicherheitskonzept mit Rückfallebene.
+tip: |
+  Definiert klar, wann die KI übersteuert wird – Sicherheit hat immer Vorrang.
+solution: |
+  Bewertungskriterien: saubere Beschreibung von Regel-/Stellgrößen; nachvollziehbare Begründung für KI;
+  durchdachtes Sicherheitskonzept mit Grenzwerten und Rückfallebene.

@@ -1,0 +1,14 @@
+title: Falsch-positiv oder falsch-negativ?
+difficulty: 1
+question: |
+  Ordne zu (falsch-positiv / falsch-negativ):
+
+  1. Ein einwandfreies Teil wird als fehlerhaft aussortiert.
+  2. Ein defektes Teil wird als „in Ordnung" durchgelassen.
+  3. Welcher Fehler ist bei einem Bauteil für Bremsanlagen kritischer?
+tip: |
+  Falsch-negativ = der Fehler wird übersehen.
+solution: |
+  1. Falsch-positiv (Fehler 1. Art)
+  2. Falsch-negativ (Fehler 2. Art)
+  3. Falsch-negativ – ein übersehener Defekt an sicherheitskritischen Teilen ist am gefährlichsten

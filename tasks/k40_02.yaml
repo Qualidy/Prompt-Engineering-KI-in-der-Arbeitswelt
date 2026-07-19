@@ -1,0 +1,15 @@
+title: Persönlicher Übungsplan mit Copilot
+difficulty: 2
+question: |
+  Lass dir von **Copilot** einen persönlichen Plan zum Kompetenzaufbau erstellen:
+
+  ```text
+  Erstelle einen 2-Wochen-Plan, mit dem ich meine Prompt-Engineering-Fähigkeiten
+  mit Copilot verbessere. Pro Tag eine kleine, konkrete Übung aus meinem Arbeitsalltag.
+  ```
+
+  Passe den Plan an deine echten Aufgaben an und wähle die erste Übung für morgen.
+tip: |
+  Realistische, kleine tägliche Übungen wirken besser als seltene große Vorsätze.
+solution: |
+  Bewertungskriterien: konkreter, alltagsbezogener Plan; sinnvolle Anpassung an eigene Aufgaben; klare erste Übung.

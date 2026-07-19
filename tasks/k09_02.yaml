@@ -1,0 +1,17 @@
+title: Datenqualität beurteilen
+difficulty: 2
+question: |
+  Lass dir von **Copilot** helfen, einen Datensatz zu beurteilen:
+
+  ```text
+  Ich habe eine Kundenliste mit den Spalten Name, E-Mail, Kaufdatum, Umsatz.
+  Welche Qualitätsprobleme können auftreten und wie erkenne ich sie? Nenne je
+  Problem eine Prüfmethode.
+  ```
+
+  Ergänze mindestens ein Qualitätsproblem, das Copilot nicht genannt hat.
+tip: |
+  Denke an fehlende Werte, Dubletten, falsche Formate und veraltete Einträge.
+solution: |
+  Bewertungskriterien: mehrere realistische Qualitätsprobleme (fehlende Werte, Dubletten, Formatfehler,
+  veraltete Daten) mit passender Prüfmethode; eigene sinnvolle Ergänzung.

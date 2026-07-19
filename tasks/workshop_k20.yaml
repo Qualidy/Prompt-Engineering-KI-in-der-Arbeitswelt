@@ -1,0 +1,21 @@
+title: Kundensegmentierung fürs Marketing
+difficulty: 4
+question: |
+  **Szenario:** Die Marketingabteilung möchte Kunden gezielter ansprechen und braucht eine Segmentierung.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Erstellt (oder nehmt) einen Kundendatensatz mit Merkmalen wie Kaufhäufigkeit, letztem Kauf und Umsatz.
+  2. Bildet mit einer einfachen Methode (z. B. **RFM**) **3–4 Segmente** und benennt sie.
+  3. Entwickelt je Segment **eine passende Marketingmaßnahme**.
+  4. Formuliert je Segment mit **Copilot** einen **Ansprache-Text** (E-Mail/Anzeige) und verfeinert ihn.
+  5. Prüft: Welche **Datenschutzaspekte** sind bei personalisierter Ansprache zu beachten?
+
+  **Deliverables:** Segmentierung + Maßnahmen je Segment + Ansprache-Texte + Datenschutz-Notiz.
+tip: |
+  RFM = Recency (letzter Kauf), Frequency (Häufigkeit), Monetary (Umsatz).
+solution: |
+  Bewertungskriterien: sinnvolle Segmente mit klaren Kriterien; passende Maßnahmen; zielgruppengerechte, mit Copilot
+  erstellte Texte; korrekte Datenschutzhinweise (Einwilligung, Zweckbindung).

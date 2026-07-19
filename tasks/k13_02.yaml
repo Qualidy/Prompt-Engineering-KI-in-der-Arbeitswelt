@@ -1,0 +1,17 @@
+title: Feedback-Analyse mit Copilot
+difficulty: 2
+question: |
+  Sammle 5–8 (fiktive) Kundenrückmeldungen und lass **Copilot** sie analysieren:
+
+  ```text
+  Analysiere diese Rückmeldungen: Stimmung je Eintrag (positiv/neutral/negativ),
+  Hauptthema und ein Verbesserungsvorschlag. Fasse am Ende die 3 häufigsten Themen
+  zusammen. [Rückmeldungen einfügen]
+  ```
+
+  Prüfe: Sind die Stimmungseinschätzungen nachvollziehbar? Wo würdest du widersprechen?
+tip: |
+  Ironische oder gemischte Aussagen sind für die Sentiment-Analyse besonders schwierig.
+solution: |
+  Bewertungskriterien: plausible Stimmungs- und Themenerkennung; sinnvolle Zusammenfassung der Top-Themen;
+  kritische Prüfung schwieriger Fälle (Ironie, gemischte Aussagen).

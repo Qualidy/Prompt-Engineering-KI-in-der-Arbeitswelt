@@ -1,0 +1,18 @@
+title: Meilensteine ordnen
+difficulty: 1
+question: |
+  Bringe die folgenden Meilensteine der KI in die **richtige zeitliche Reihenfolge**:
+
+  - Transformer-Architektur wird vorgestellt
+  - Dartmouth-Konferenz prägt den Begriff „KI"
+  - ChatGPT wird zum Massenphänomen
+  - Deep Blue schlägt den Schachweltmeister
+  - Deep-Learning-Durchbruch in der Bilderkennung
+tip: |
+  Beginne mit den 1950er Jahren und arbeite dich zur Gegenwart vor.
+solution: |
+  1. Dartmouth-Konferenz (1956)
+  2. Deep Blue schlägt Kasparow (1997)
+  3. Deep-Learning-Durchbruch Bilderkennung (2012)
+  4. Transformer-Architektur (2017)
+  5. ChatGPT als Massenphänomen (2022)

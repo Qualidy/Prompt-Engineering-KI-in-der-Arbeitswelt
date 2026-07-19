@@ -1,0 +1,21 @@
+title: Datenschutz-Leitfaden für KI-Nutzung
+difficulty: 4
+question: |
+  **Szenario:** Euer Team nutzt zunehmend KI-Tools. Es fehlt ein einfacher Datenschutz-Leitfaden.
+
+  ---
+
+  **Aufgabe (in der Lerngruppe empfohlen):**
+
+  1. Sammelt typische **Situationen**, in denen Kolleg:innen Daten in KI-Tools eingeben (E-Mails, Dokumente, Tabellen).
+  2. Bewertet je Situation das **Datenschutzrisiko** (unkritisch / heikel / verboten).
+  3. Formuliert **klare Regeln**: Was darf rein, was nicht, wie anonymisieren, welche Umgebung nutzen.
+  4. Erstellt eine **Kurz-Checkliste** („Bevor ich etwas eingebe, prüfe ich …").
+  5. Nutzt **Copilot** für den Entwurf und **prüft** die Aussagen (keine ungeprüften Rechtsauskünfte übernehmen).
+
+  **Deliverables:** Situationsübersicht mit Risikobewertung + Regeln + Kurz-Checkliste.
+tip: |
+  Bezieht die/den Datenschutzbeauftragte:n ein – der Leitfaden ersetzt keine offizielle Freigabe.
+solution: |
+  Bewertungskriterien: realistische Situationen mit passender Risikobewertung; klare, umsetzbare Regeln;
+  praxistaugliche Checkliste; korrekter Umgang mit DSGVO-Grundsätzen (Zweckbindung, Minimierung, Anonymisierung).

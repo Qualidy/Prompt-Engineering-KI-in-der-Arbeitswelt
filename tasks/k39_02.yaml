@@ -1,0 +1,17 @@
+title: Governance-Regeln mit Copilot
+difficulty: 2
+question: |
+  Lass dir von **Copilot** Governance-Regeln vorschlagen:
+
+  ```text
+  Nenne 6 wichtige KI-Governance-Regeln für ein Unternehmen (Verantwortlichkeiten,
+  Datenschutz, Ethik, Qualität, Kompetenzaufbau, Freigaben). Formuliere jede Regel
+  als klaren Satz.
+  ```
+
+  Wähle die 3 Regeln aus, die du zuerst einführen würdest, und begründe.
+tip: |
+  Beginne mit Regeln, die Risiken (Datenschutz, Ethik) und Verantwortlichkeiten klären.
+solution: |
+  Bewertungskriterien: sinnvolle, klar formulierte Regeln über mehrere Bereiche; begründete Priorisierung der
+  ersten drei Regeln.

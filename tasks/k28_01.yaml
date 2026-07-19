@@ -1,0 +1,14 @@
+title: Verarbeitungsschritt zuordnen
+difficulty: 1
+question: |
+  Welcher Schritt der Dokumentenverarbeitung ist gemeint?
+
+  1. Ein gescanntes Papierdokument wird in bearbeitbaren Text umgewandelt.
+  2. Aus einer Rechnung werden Betrag, Datum und Lieferant herausgezogen.
+  3. Das System erkennt: „Dies ist ein Vertrag, keine Rechnung."
+tip: |
+  OCR, Extraktion oder Klassifikation?
+solution: |
+  1. OCR (Texterkennung)
+  2. Extraktion
+  3. Klassifikation

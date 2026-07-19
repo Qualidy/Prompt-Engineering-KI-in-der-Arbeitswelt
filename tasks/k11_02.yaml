@@ -1,0 +1,17 @@
+title: Architektur erklären lassen
+difficulty: 2
+question: |
+  Lass dir von **Copilot** eine Big-Data-Architektur für ein Beispiel erklären:
+
+  ```text
+  Skizziere in Worten eine einfache Big-Data-Architektur für einen Onlineshop,
+  der Klick- und Kaufdaten auswerten will. Erkläre je Baustein die Aufgabe und
+  wo die Datenqualität geprüft werden sollte.
+  ```
+
+  Markiere in der Antwort den Baustein, in dem die „Operationalisierung" am wichtigsten ist.
+tip: |
+  Operationalisierung betrifft vor allem den dauerhaften, automatisierten Datenfluss.
+solution: |
+  Bewertungskriterien: nachvollziehbare Architektur mit Ingestion, Speicherung, Verarbeitung, Bereitstellung;
+  sinnvolle Verortung der Qualitätsprüfung; Verständnis, dass Operationalisierung den laufenden Betrieb meint.

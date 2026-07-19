@@ -1,0 +1,16 @@
+title: Geschäftsmodell-Ideen mit Copilot
+difficulty: 2
+question: |
+  Beschreibe Daten/Fähigkeiten eines (fiktiven) Unternehmens und lass **Copilot** Geschäftsmodell-Ideen entwickeln:
+
+  ```text
+  Ein Unternehmen verfügt über [Daten/Fähigkeiten]. Entwickle 3 KI-basierte
+  Geschäftsmodell-Ideen mit Wertangebot, Zielgruppe, Einnahmequelle und Hauptrisiko.
+  ```
+
+  Wähle die vielversprechendste Idee und nenne die erste Hürde, die zu klären wäre.
+tip: |
+  Prüfe, ob die nötigen Daten überhaupt (rechtlich) nutzbar sind.
+solution: |
+  Bewertungskriterien: drei plausible Ideen mit vollständigen Bausteinen; begründete Auswahl; realistische erste
+  Hürde (Daten, Recht, Kosten, Nachfrage).

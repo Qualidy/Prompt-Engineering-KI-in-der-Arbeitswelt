@@ -1,0 +1,21 @@
+title: KI-Qualitätsprüfung konzipieren
+difficulty: 4
+question: |
+  **Szenario:** Ein Fertigungsbetrieb möchte die Sichtprüfung eines Produkts mit KI unterstützen.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wählt ein Produkt und definiert die zu erkennenden **Fehlerarten**.
+  2. Beschreibt, welche **Bilddaten** für das Training nötig sind (Anzahl, Vielfalt, Markierung).
+  3. Legt fest, wie mit **falsch-positiv/falsch-negativ** umgegangen wird (Schwellwert, menschliche Nachkontrolle).
+  4. Entwerft einen **Ablauf** von Bildaufnahme bis Entscheidung (Flussdiagramm).
+  5. Nutzt **Copilot** für Struktur und Formulierung; benennt Grenzen des Ansatzes.
+
+  **Deliverables:** Fehlerkatalog + Trainingsdaten-Anforderungen + Umgang mit Fehlertypen + Prüf-Ablauf.
+tip: |
+  Plant von Anfang an ein, wie neue, bisher unbekannte Fehlerarten nachtrainiert werden.
+solution: |
+  Bewertungskriterien: klarer Fehlerkatalog; realistische Trainingsdaten-Anforderungen; bewusster Umgang mit
+  Fehlertypen; nachvollziehbarer Prüf-Ablauf inkl. menschlicher Kontrolle bei Grenzfällen.

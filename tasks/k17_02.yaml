@@ -1,0 +1,17 @@
+title: RLHF verstehen
+difficulty: 2
+question: |
+  Lass dir von **Copilot** RLHF erklären:
+
+  ```text
+  Erkläre, was RLHF (Reinforcement Learning from Human Feedback) ist und warum es
+  Sprachmodelle wie Copilot hilfreicher und höflicher macht. Nenne einen möglichen
+  Nachteil dieses Verfahrens.
+  ```
+
+  Diskutiere: Warum ist menschliches Feedback hier wertvoll – und wo liegt eine Gefahr?
+tip: |
+  Denke daran: Menschen bewerten subjektiv, das kann auch Verzerrungen einbringen.
+solution: |
+  Bewertungskriterien: korrektes Verständnis von RLHF (Menschen bewerten → Belohnungssignal → Anpassung);
+  Nutzen (hilfreiches Verhalten) und Gefahr (subjektive/verzerrte Bewertungen) benannt.

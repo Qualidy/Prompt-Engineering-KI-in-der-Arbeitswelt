@@ -1,0 +1,21 @@
+title: Vom schwachen zum starken Prompt
+difficulty: 2
+question: |
+  Nimm den schwachen Prompt „Schreib eine E-Mail an einen Kunden" und verbessere ihn schrittweise,
+  indem du Rolle, Aufgabe, Kontext und Format ergänzt.
+
+  Teste **beide** Versionen in **Copilot** und vergleiche die Ergebnisse.
+tip: |
+  Ändere zunächst nur einen Baustein und beobachte die Wirkung.
+solution: |
+  Beispiel eines starken Prompts:
+
+  ```text
+  Du bist Kundenbetreuer eines Softwareanbieters. Schreibe eine freundliche
+  E-Mail an einen Bestandskunden, der eine verspätete Lieferung reklamiert hat.
+  Kontext: Verzögerung wegen Lieferengpass, Lösung in 3 Tagen.
+  Format: Sie-Form, max. 120 Wörter, mit Entschuldigung und konkretem Zeitplan.
+  ```
+
+  Bewertung: Der starke Prompt liefert eine gezieltere, direkt verwendbare Antwort. Der Unterschied
+  zeigt die Wirkung der vier Bausteine.

@@ -1,0 +1,16 @@
+title: Phasen eines KI-Projekts
+difficulty: 1
+question: |
+  Bringe die Phasen eines KI-Projekts (angelehnt an CRISP-DM) in die richtige Reihenfolge:
+
+  Modellierung · Geschäftsverständnis · Einsatz/Betrieb · Datenaufbereitung ·
+  Datenverständnis · Evaluation
+tip: |
+  Am Anfang steht immer das Ziel, am Ende der Betrieb.
+solution: |
+  1. Geschäftsverständnis
+  2. Datenverständnis
+  3. Datenaufbereitung
+  4. Modellierung
+  5. Evaluation
+  6. Einsatz/Betrieb

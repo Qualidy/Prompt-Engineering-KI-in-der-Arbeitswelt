@@ -1,0 +1,16 @@
+title: LLM-Begriffe zuordnen
+difficulty: 1
+question: |
+  Ordne die Begriffe ihrer Bedeutung zu: Kontextfenster, Temperatur, Token, System-Prompt
+
+  1. Legt fest, wie kreativ oder sachlich die Antwort ausfällt.
+  2. Grundanweisung, die das Verhalten dauerhaft steuert.
+  3. Begrenzt, wie viel Text das Modell gleichzeitig berücksichtigen kann.
+  4. Kleinster Text-Baustein, in dem gerechnet und abgerechnet wird.
+tip: |
+  Denke an „Kreativität", „Grundregel", „Gedächtnisgröße" und „Baustein".
+solution: |
+  1. Temperatur
+  2. System-Prompt
+  3. Kontextfenster
+  4. Token

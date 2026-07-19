@@ -1,0 +1,17 @@
+title: Trend-Recherche mit Copilot
+difficulty: 2
+question: |
+  Recherchiere mit **Copilot** aktuelle KI-Trends für deine Branche:
+
+  ```text
+  Nenne 5 aktuelle KI-Trends für die Branche [deine Branche]. Ordne jeden Trend
+  nach möglichem Nutzen (hoch/mittel/gering) für ein mittelständisches Unternehmen
+  und begründe kurz.
+  ```
+
+  Bewerte kritisch: Welche zwei Trends sind für dich am relevantesten – und warum?
+tip: |
+  Frage bei vagen Antworten nach konkreten Beispielen oder Zahlen.
+solution: |
+  Bewertungskriterien: fünf branchenrelevante Trends; eigene, begründete Auswahl der zwei relevantesten;
+  kritische Distanz zu allgemeinen oder übertriebenen Aussagen.

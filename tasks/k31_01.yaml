@@ -1,0 +1,14 @@
+title: Bias erkennen
+difficulty: 1
+question: |
+  In welchen Situationen droht Bias?
+
+  1. Ein Bewerbungstool wird nur mit Lebensläufen einer Berufsgruppe trainiert.
+  2. Ein Kreditmodell lernt aus Daten, in denen bestimmte Stadtteile benachteiligt wurden.
+  3. Ein Übersetzer wird mit ausgewogenen, vielfältigen Texten trainiert.
+tip: |
+  Bias entsteht durch einseitige oder historisch verzerrte Daten.
+solution: |
+  1. Ja, Bias-Gefahr (einseitige Daten)
+  2. Ja, Bias-Gefahr (historische Ungleichheit)
+  3. Geringere Gefahr (ausgewogene Daten)

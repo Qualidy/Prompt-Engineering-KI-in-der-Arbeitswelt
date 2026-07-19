@@ -1,0 +1,1482 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel13/">
+      
+      
+        <link rel="next" href="../kapitel15/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-14-prompt-engineering-grundlagen-und-best-practices" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Block 2 · Technische Grundlagen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – KI-Readiness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 8 – Das KI-Periodensystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Datenbeschaffung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Datenaufbereitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Big Data: Operationalisierung und Prozesse
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – Natural Language Processing (NLP)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141-was-ist-prompt-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.1 Was ist Prompt Engineering?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#142-die-anatomie-eines-guten-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.2 Die Anatomie eines guten Prompts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-bewahrte-prompt-muster" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.3 Bewährte Prompt-Muster
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-prompts-iterativ-verbessern" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4 Prompts iterativ verbessern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-haufige-fehler" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.5 Häufige Fehler
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Large Language Models und ihre Programmierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – Generative Pre-trained Transformers (GPT)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-14-prompt-engineering-grundlagen-und-best-practices">Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices<a class="headerlink" href="#kapitel-14-prompt-engineering-grundlagen-und-best-practices" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>Prompt Engineering</strong> ist und warum es die Schlüsselkompetenz dieses Kurses ist</li>
+<li>Die <strong>Anatomie</strong> eines guten Prompts (Rolle, Aufgabe, Kontext, Format)</li>
+<li>Bewährte <strong>Prompt-Muster</strong>: Rollen-Prompt, Few-Shot, Schritt-für-Schritt, Format-Vorgabe</li>
+<li>Wie du Prompts <strong>iterativ</strong> verbesserst – und häufige Fehler vermeidest</li>
+</ul>
+</div>
+<hr />
+<h2 id="141-was-ist-prompt-engineering">14.1 Was ist Prompt Engineering?<a class="headerlink" href="#141-was-ist-prompt-engineering" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>Prompt</strong> ist die Eingabe, mit der du ein Sprachmodell wie <strong>Copilot</strong> steuerst. <strong>Prompt Engineering</strong> ist die Kunst, diese Eingaben so zu formulieren, dass du <strong>zuverlässig gute</strong> Ergebnisse bekommst.</p>
+<div class="admonition info">
+<p class="admonition-title">Warum das wichtig ist</p>
+<p>Dasselbe Modell liefert bei einem vagen Prompt mittelmäßige und bei einem präzisen Prompt hervorragende Ergebnisse. Der Unterschied liegt <strong>nicht</strong> am Modell, sondern an deiner Eingabe.</p>
+</div>
+<hr />
+<h2 id="142-die-anatomie-eines-guten-prompts">14.2 Die Anatomie eines guten Prompts<a class="headerlink" href="#142-die-anatomie-eines-guten-prompts" title="Permanent link">&para;</a></h2>
+<p>Ein starker Prompt beantwortet vier Fragen:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Rolle: Wer bist du?]) --&gt; B([Aufgabe: Was tun?])
+    B --&gt; C([Kontext: Welche Infos?])
+    C --&gt; D([Format: Wie ausgeben?])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rolle</strong></td>
+<td>„Du bist ein erfahrener Vertriebsassistent."</td>
+</tr>
+<tr>
+<td><strong>Aufgabe</strong></td>
+<td>„Schreibe eine Angebots-E-Mail."</td>
+</tr>
+<tr>
+<td><strong>Kontext</strong></td>
+<td>„Kunde X interessiert sich für Produkt Y, Budget Z."</td>
+</tr>
+<tr>
+<td><strong>Format</strong></td>
+<td>„Max. 150 Wörter, förmlich, mit Betreffzeile."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel eines vollständigen Prompts:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist ein erfahrener Vertriebsassistent. Schreibe eine Angebots-E-Mail an einen
+Geschäftskunden, der sich für unsere Buchhaltungssoftware interessiert.
+Kontext: Das Unternehmen hat 50 Mitarbeitende und nutzt bisher Excel.
+Format: max. 150 Wörter, höflich-professionell (Sie-Form), mit Betreffzeile und
+einem klaren Handlungsaufruf (Terminvorschlag).
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="143-bewahrte-prompt-muster">14.3 Bewährte Prompt-Muster<a class="headerlink" href="#143-bewahrte-prompt-muster" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Muster</th>
+<th>Idee</th>
+<th>Wann nutzen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rollen-Prompt</strong></td>
+<td>Perspektive/Expertise vorgeben</td>
+<td>fast immer sinnvoll</td>
+</tr>
+<tr>
+<td><strong>Few-Shot</strong></td>
+<td>1–3 Beispiele mitgeben</td>
+<td>für konsistentes Format/Stil</td>
+</tr>
+<tr>
+<td><strong>Schritt für Schritt</strong></td>
+<td>„Denke Schritt für Schritt"</td>
+<td>bei komplexen Aufgaben</td>
+</tr>
+<tr>
+<td><strong>Format-Vorgabe</strong></td>
+<td>Tabelle, Liste, JSON verlangen</td>
+<td>für weiterverarbeitbare Ausgaben</td>
+</tr>
+<tr>
+<td><strong>Zerlegen</strong></td>
+<td>große Aufgabe in Teilprompts</td>
+<td>bei langen Vorhaben</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Few-Shot in der Praxis</p>
+<p>„Formuliere Produkttexte in diesem Stil. Beispiel 1: … Beispiel 2: … Schreibe nun einen Text für Produkt Z." Beispiele wirken oft stärker als lange Beschreibungen.</p>
+</div>
+<hr />
+<h2 id="144-prompts-iterativ-verbessern">14.4 Prompts iterativ verbessern<a class="headerlink" href="#144-prompts-iterativ-verbessern" title="Permanent link">&para;</a></h2>
+<p>Der erste Prompt ist selten perfekt. Verbessere gezielt:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Prompt schreiben]) --&gt; B([Ergebnis prüfen])
+    B --&gt; C([Schwäche identifizieren])
+    C --&gt; D([Prompt anpassen])
+    D --&gt; B</code></pre>
+<p><strong>Häufige Verbesserungen:</strong> klarere Rolle, konkreteres Format, Beispiele ergänzen, Umfang begrenzen, Zielgruppe nennen.</p>
+<hr />
+<h2 id="145-haufige-fehler">14.5 Häufige Fehler<a class="headerlink" href="#145-haufige-fehler" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Diese Fehler kosten Qualität</p>
+<ul>
+<li><strong>Zu vage:</strong> „Schreib was über KI." → Ziel, Länge, Zielgruppe fehlen.</li>
+<li><strong>Zu viel auf einmal:</strong> fünf Aufgaben in einem Prompt.</li>
+<li><strong>Kein Format:</strong> Ergebnis lässt sich nicht weiterverwenden.</li>
+<li><strong>Keine Prüfung:</strong> Ausgaben ungeprüft übernehmen (Gefahr von Fehlern/„Halluzinationen").</li>
+</ul>
+</div>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Prompt-Bausteine erkennen</summary>
+<p>Markiere im folgenden Prompt die vier Bausteine (Rolle, Aufgabe, Kontext, Format):</p>
+<p>„Du bist Personalreferentin. Formuliere eine Stellenanzeige für eine IT-Fachkraft.
+Wir sind ein Handwerksbetrieb mit 30 Mitarbeitenden in München. Gib das Ergebnis
+als strukturierte Anzeige mit Überschriften und maximal 200 Wörtern aus."</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein Baustein pro Teilsatz.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<ul>
+<li><strong>Rolle:</strong> „Du bist Personalreferentin."</li>
+<li><strong>Aufgabe:</strong> „Formuliere eine Stellenanzeige für eine IT-Fachkraft."</li>
+<li><strong>Kontext:</strong> „Wir sind ein Handwerksbetrieb mit 30 Mitarbeitenden in München."</li>
+<li><strong>Format:</strong> „strukturierte Anzeige mit Überschriften, max. 200 Wörter."</li>
+</ul>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Vom schwachen zum starken Prompt</summary>
+<p>Nimm den schwachen Prompt „Schreib eine E-Mail an einen Kunden" und verbessere ihn schrittweise,
+indem du Rolle, Aufgabe, Kontext und Format ergänzt.</p>
+<p>Teste <strong>beide</strong> Versionen in <strong>Copilot</strong> und vergleiche die Ergebnisse.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ändere zunächst nur einen Baustein und beobachte die Wirkung.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Beispiel eines starken Prompts:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist Kundenbetreuer eines Softwareanbieters. Schreibe eine freundliche
+E-Mail an einen Bestandskunden, der eine verspätete Lieferung reklamiert hat.
+Kontext: Verzögerung wegen Lieferengpass, Lösung in 3 Tagen.
+Format: Sie-Form, max. 120 Wörter, mit Entschuldigung und konkretem Zeitplan.
+</code></pre></div></td></tr></table></div>
+<p>Bewertung: Der starke Prompt liefert eine gezieltere, direkt verwendbare Antwort. Der Unterschied
+zeigt die Wirkung der vier Bausteine.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Few-Shot ausprobieren</summary>
+<p>Nutze das <strong>Few-Shot-Muster</strong> in Copilot: Gib zwei Beispiele für einen gewünschten Stil vor und
+lass dann einen neuen Text im selben Stil erzeugen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere kurze, freundliche Terminbestätigungen im folgenden Stil.
+Beispiel 1: &quot;Hallo Frau Meier, Ihr Termin am Di, 10 Uhr steht - wir freuen uns!&quot;
+Beispiel 2: &quot;Hallo Herr Kaya, alles klar für Do, 14 Uhr - bis dann!&quot;
+Schreibe nun eine Bestätigung für Herrn Sung, Freitag 9 Uhr.
+</code></pre></div></td></tr></table></div>
+<p>Variiere die Beispiele und beobachte, wie sich der Stil der Ausgabe ändert.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Je konsistenter deine Beispiele, desto konsistenter die Ausgabe.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: Die Ausgabe übernimmt Stil, Länge und Tonfall der Beispiele. Beobachtung: Bereits
+2 Beispiele steuern den Stil oft stärker als eine lange verbale Beschreibung.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Prompt-Bibliothek für den Arbeitsalltag</summary>
+<p><strong>Szenario:</strong> Ihr wollt für euer Team eine wiederverwendbare Sammlung erprobter Prompts anlegen.</p>
+<hr />
+<p><strong>Aufgabe (allein oder in der Lerngruppe):</strong></p>
+<ol>
+<li>Wählt <strong>5 wiederkehrende Aufgaben</strong> aus dem Arbeitsalltag (z. B. E-Mail entwerfen, Meeting zusammenfassen,
+   Text kürzen, Übersetzung, Ideen sammeln).</li>
+<li>Entwickelt zu jeder Aufgabe einen <strong>Vorlagen-Prompt</strong> mit den vier Bausteinen und Platzhaltern
+   (z. B. <code>[Kunde]</code>, <code>[Ziel]</code>).</li>
+<li>Testet jeden Prompt in <strong>Copilot</strong> und optimiert ihn in mindestens <strong>einer Iteration</strong>.</li>
+<li>Dokumentiert je Prompt: Zweck, Vorlage, Beispielausgabe, Hinweis zur Nutzung.</li>
+<li>Haltet <strong>Regeln zur Qualitätsprüfung</strong> fest (was muss vor Verwendung geprüft werden?).</li>
+</ol>
+<p><strong>Deliverables:</strong> Prompt-Bibliothek mit 5 dokumentierten, getesteten Vorlagen + Prüf-Regeln.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Nutzt Platzhalter in eckigen Klammern, damit die Vorlagen leicht wiederverwendbar sind.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: 5 durchdachte Vorlagen mit allen Prompt-Bausteinen und Platzhaltern; erkennbare
+Iteration/Optimierung; saubere Dokumentation; sinnvolle Qualitäts-/Prüfregeln (Fakten, Ton, Freigabe).</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel13/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 13 – Natural Language Processing (NLP)">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 13 – Natural Language Processing (NLP)
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel15/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 15 – Large Language Models und ihre Programmierung">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 15 – Large Language Models und ihre Programmierung
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

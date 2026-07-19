@@ -1,0 +1,14 @@
+title: Personenbezogen oder nicht?
+difficulty: 1
+question: |
+  Welche Angaben sind personenbezogene Daten?
+
+  1. „Max Mustermann, max@example.com"
+  2. Die durchschnittliche Bestellmenge aller Kunden (anonym aggregiert)
+  3. Eine Kundennummer, die einer realen Person zugeordnet werden kann
+tip: |
+  Personenbezug = auf eine identifizierbare Person rückführbar.
+solution: |
+  1. Ja (Name + E-Mail)
+  2. Nein (anonym aggregiert)
+  3. Ja (zuordenbar zu einer Person)

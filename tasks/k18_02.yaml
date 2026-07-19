@@ -1,0 +1,17 @@
+title: Chatbot-Persona per Prompt
+difficulty: 2
+question: |
+  Definiere mit **Copilot** die Persona eines Chatbots für einen Anwendungsfall deiner Wahl
+  (z. B. Buchhandlung, Fitnessstudio):
+
+  ```text
+  Formuliere einen System-Prompt für einen Kundenservice-Chatbot eines
+  [Unternehmen]. Lege Rolle, Themen, Tonfall, Antwortlänge und Eskalationsregeln fest.
+  ```
+
+  Teste den Bot anschließend mit 3 Beispielfragen und beurteile, ob er sich an die Regeln hält.
+tip: |
+  Baue eine klare Eskalationsregel ein („Bei X leite an einen Mitarbeiter weiter").
+solution: |
+  Bewertungskriterien: vollständiger System-Prompt (Rolle, Themen, Ton, Länge, Eskalation);
+  Tests zeigen regelkonformes Verhalten; sinnvolle Eskalation bei Grenzfällen.

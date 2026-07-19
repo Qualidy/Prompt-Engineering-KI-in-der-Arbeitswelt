@@ -1,0 +1,22 @@
+title: KI-gestützter Entwicklungsablauf
+difficulty: 4
+question: |
+  **Szenario:** Ihr sollt zeigen, wie KI einen Produktentwicklungsablauf sinnvoll unterstützt –
+  ohne die Ingenieurverantwortung zu ersetzen.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wählt ein einfaches Produkt/Bauteil.
+  2. Skizziert den **Entwicklungsablauf** von der Idee bis zur Dokumentation.
+  3. Markiert je Phase, **wo KI** hilft (generatives Design, Recherche, Simulation, Doku) und **wo der Mensch** entscheidet.
+  4. Erstellt mit **Copilot** zwei Artefakte, z. B. Anforderungsliste und Prüf-Checkliste.
+  5. Benennt **Risiken** (z. B. nicht fertigbare Entwürfe, ungeprüfte Normen) und Gegenmaßnahmen.
+
+  **Deliverables:** Entwicklungsablauf mit KI-/Mensch-Zuordnung + 2 Copilot-Artefakte + Risiko-Notiz.
+tip: |
+  Trennt sauber: KI erweitert Optionen und beschleunigt – die fachliche Freigabe bleibt beim Menschen.
+solution: |
+  Bewertungskriterien: nachvollziehbarer Ablauf; sinnvolle KI-/Mensch-Zuordnung; brauchbare Artefakte;
+  realistische Risiken mit Gegenmaßnahmen.

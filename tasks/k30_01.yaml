@@ -1,0 +1,14 @@
+title: Low-Code-Begriffe
+difficulty: 1
+question: |
+  Richtig oder falsch?
+
+  1. No-Code bedeutet, dass gar nicht programmiert werden muss.
+  2. Ein Citizen Developer ist immer ein ausgebildeter Informatiker.
+  3. Die Microsoft Power Platform ist ein Beispiel für Low-Code mit KI.
+tip: |
+  „Citizen" = Fachkraft ohne Informatikausbildung.
+solution: |
+  1. Richtig
+  2. Falsch – gerade Fachkräfte OHNE Informatikausbildung
+  3. Richtig

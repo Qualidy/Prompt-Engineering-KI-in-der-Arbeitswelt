@@ -1,0 +1,21 @@
+title: Datenbeschaffungsplan
+difficulty: 4
+question: |
+  **Szenario:** Für einen KI-Use-Case (z. B. Absatzprognose) müsst ihr die Datenbeschaffung planen.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Legt einen konkreten Use Case fest.
+  2. Erstellt eine **Datenlandkarte**: Welche Daten werden gebraucht, wo liegen sie (intern/extern), wer ist verantwortlich?
+  3. Bewertet je Quelle die **Qualität** und benennt Risiken (Lücken, Rechte, Aktualität).
+  4. Entwickelt einen **Beschaffungsplan** mit Schritten und rechtlichen Prüfpunkten.
+  5. Nutzt **Copilot** für Checklisten und Struktur – prüft die Vorschläge kritisch.
+
+  **Deliverables:** Datenlandkarte + Qualitäts-/Risikobewertung + Beschaffungsplan mit rechtlichen Prüfpunkten.
+tip: |
+  Klärt früh, welche Daten personenbezogen sind – das entscheidet über den DSGVO-Aufwand.
+solution: |
+  Bewertungskriterien: vollständige Datenlandkarte mit Verantwortlichkeiten; realistische Qualitäts-/Risikobewertung;
+  umsetzbarer Beschaffungsplan inkl. Rechtsprüfung; Copilot sinnvoll eingesetzt.

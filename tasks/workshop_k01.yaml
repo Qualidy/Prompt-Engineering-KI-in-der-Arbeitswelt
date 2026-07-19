@@ -1,0 +1,24 @@
+title: KI-Landkarte für deinen Arbeitsbereich
+difficulty: 4
+question: |
+  **Szenario:** Du sollst deinem Team einen kurzen Überblick geben, wo KI in eurem Arbeitsbereich
+  bereits vorkommt oder künftig helfen könnte.
+
+  ---
+
+  **Aufgabe (allein oder in der Lerngruppe):**
+
+  1. Wähle einen konkreten Arbeitsbereich (z. B. Vertrieb, Support, Buchhaltung, Produktion).
+  2. Erstelle eine **KI-Landkarte**: Liste mindestens **6 Aufgaben** aus diesem Bereich und ordne
+     jeder Aufgabe ein passendes KI-Teilgebiet zu (ML, NLP, Computer Vision, generative KI …).
+  3. Markiere, welche dieser Aufgaben du **heute schon mit Microsoft Copilot** unterstützen könntest.
+  4. Formuliere für **zwei** dieser Aufgaben je einen konkreten Copilot-Prompt und teste ihn.
+
+  **Deliverables:** Tabelle/Übersicht (KI-Landkarte) + 2 getestete Prompts mit kurzer Bewertung des Ergebnisses.
+tip: |
+  Teilt die Arbeit auf: eine Person sammelt Aufgaben, eine ordnet Teilgebiete zu, eine schreibt und testet die Prompts.
+  Für „Copilot-tauglich" gilt vor allem: text- und dokumentenbasierte Aufgaben.
+solution: |
+  Bewertungskriterien: mindestens 6 Aufgaben mit **plausibler** Teilgebiet-Zuordnung; realistische Einschätzung,
+  was Copilot heute leisten kann (Texte, Zusammenfassungen, Entwürfe, Analysen in Excel); zwei **konkrete,
+  auftragsklare** Prompts; nachvollziehbare Bewertung, ob das Ergebnis brauchbar war und wie man den Prompt schärft.

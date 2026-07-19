@@ -1,0 +1,17 @@
+title: Pretraining vs. Fine-Tuning
+difficulty: 2
+question: |
+  Lass dir von **Copilot** den Unterschied erklären und auf ein Beispiel anwenden:
+
+  ```text
+  Erkläre den Unterschied zwischen Pretraining und Fine-Tuning eines
+  Sprachmodells. Nutze die Analogie einer Ausbildung: Was entspricht der
+  Allgemeinbildung, was der Spezialisierung?
+  ```
+
+  Prüfe die Analogie und ergänze ein zweites Beispiel aus einem anderen Lebensbereich.
+tip: |
+  Pretraining = breite Grundlage, Fine-Tuning = gezielter Feinschliff.
+solution: |
+  Bewertungskriterien: korrekte Abgrenzung (breites Grundwissen vs. gezielte Spezialisierung);
+  tragfähige Analogie; sinnvolles zweites Beispiel.

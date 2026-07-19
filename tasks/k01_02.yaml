@@ -1,0 +1,23 @@
+title: Copilot erklärt KI-Teilgebiete
+difficulty: 2
+question: |
+  Öffne **Microsoft Copilot** und lass dir die Teilgebiete der KI erklären. Nutze diesen Prompt:
+
+  ```text
+  Erkläre mir die Teilgebiete Machine Learning, Deep Learning, NLP und generative KI.
+  Gib zu jedem Teilgebiet einen Satz Erklärung und ein Beispiel aus dem Berufsalltag.
+  Stelle das Ergebnis als Tabelle dar.
+  ```
+
+  Prüfe anschließend: Ist die Ausgabe korrekt? Wo würdest du nachfragen oder den Prompt verbessern?
+tip: |
+  Achte darauf, ob Copilot die Begriffe richtig ineinander schachtelt (Deep Learning ist Teil von Machine Learning).
+solution: |
+  Bewertungskriterien:
+
+  - Copilot liefert eine **Tabelle** mit vier Zeilen.
+  - Die Verschachtelung stimmt: Deep Learning ⊂ Machine Learning ⊂ KI.
+  - Die Beispiele sind nachvollziehbar (z. B. NLP → Chatbot, Computer Vision fehlt evtl.).
+  - Sinnvolle Nachfrage: „Ergänze Computer Vision und ordne generative KI korrekt ein."
+
+  Kernbeobachtung: Der **erste Prompt liefert selten das perfekte Ergebnis** – Nachschärfen gehört dazu.

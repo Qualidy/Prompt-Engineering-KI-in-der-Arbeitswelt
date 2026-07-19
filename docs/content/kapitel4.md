@@ -1,143 +1,93 @@
-# Kapitel 4 – Arbeitsrecht Grundlagen
+# Kapitel 4 – Entwicklung und Umsetzung von KI-Konzepten
 
-<div class="kurs-progress">
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step done"></div>
-  <div class="step active"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-  <div class="step"></div>
-</div>
+{{ progress(4) }}
 
 <div class="lernziele" markdown>
 <h3>Was du in diesem Kapitel lernst</h3>
 
-- Welche Grundlagen des Arbeitsrechts für Auszubildende und Umschüler relevant sind
-- Was ein Arbeitsvertrag regelt und wie er sich vom Ausbildungsvertrag unterscheidet
-- Welche Regelungen zu Kündigung, Urlaub und Jugendarbeitsschutz gelten
+- Wie aus einer **Idee** ein tragfähiger **KI-Use-Case** wird
+- Ein bewährtes **Vorgehensmodell** für KI-Projekte
+- Wie du Ideen nach **Machbarkeit** und **Wert** priorisierst
+- Wie **Copilot** dich beim Konzipieren unterstützt
 </div>
 
 ---
 
-## So gehst du vor
+## 4.1 Von der Idee zum Use Case
 
-1. Lies die Kapitelinhalte und unterscheide Ausbildungs- und Arbeitsrecht.
-2. Bearbeite die **Kurzübungen** der Reihe nach – von Grundlagen bis Experte.
-3. Arbeite die **Workshop-Aufgabe** durch. Sie vertieft das Gelernte an einem zusammenhängenden Szenario.
+Nicht jede Idee ist ein guter KI-Use-Case. Ein tragfähiger Use Case beantwortet klar:
+
+- **Problem:** Welches konkrete Problem lösen wir?
+- **Daten:** Welche Daten stehen zur Verfügung – in welcher Qualität?
+- **Nutzen:** Was ist der messbare Vorteil (Zeit, Geld, Qualität)?
+- **Machbarkeit:** Ist es technisch und organisatorisch umsetzbar?
 
 ---
 
-## 4.1 Arbeitsrecht – Überblick
+## 4.2 Ein Vorgehensmodell für KI-Projekte
 
-Das **Arbeitsrecht** regelt das Rechtsverhältnis zwischen **Arbeitgeber** und **Arbeitnehmer**. Für Auszubildende gilt zusätzlich das **Berufsbildungsgesetz (BBiG)** – es hat in Ausbildungsfragen oft Vorrang.
+Viele KI-Projekte folgen einem iterativen Ablauf, angelehnt an das bekannte Modell **CRISP-DM**:
 
-**Wichtige Gesetze:**
+```mermaid
+flowchart LR
+    A([Geschäftsverständnis]) --> B([Datenverständnis])
+    B --> C([Datenaufbereitung])
+    C --> D([Modellierung])
+    D --> E([Evaluation])
+    E --> F([Einsatz / Betrieb])
+    E -.->|nachschärfen| B
+```
 
-| Gesetz | Thema |
+| Phase | Leitfrage |
 |---|---|
-| BBiG | Berufsausbildung, Ausbildungsvertrag |
-| BGB (Buch 5) | Arbeitsvertrag, Kündigung |
-| Kündigungsschutzgesetz (KSchG) | Schutz bei Kündigung (nach Wartezeit) |
-| Bundesurlaubsgesetz (BUrlG) | Erholungsurlaub |
-| Jugendarbeitsschutzgesetz (JArbSchG) | Schutz junger Arbeitnehmer und Azubis unter 18 |
-| Arbeitsschutzgesetz (ArbSchG) | Gesundheit und Sicherheit am Arbeitsplatz |
+| Geschäftsverständnis | Welches Ziel verfolgen wir? |
+| Datenverständnis | Welche Daten haben wir? |
+| Datenaufbereitung | Sind die Daten sauber und nutzbar? |
+| Modellierung | Welches Verfahren/Werkzeug passt? |
+| Evaluation | Erfüllt das Ergebnis die Ziele? |
+| Einsatz | Wie bringen wir es in den Betrieb? |
+
+!!! info "Iterativ statt linear"
+    KI-Projekte laufen selten geradlinig. Oft muss man zu früheren Phasen zurückkehren – z. B. weil die Datenqualität nicht reicht.
 
 ---
 
-## 4.2 Arbeitsvertrag vs. Ausbildungsvertrag
+## 4.3 Ideen priorisieren: Nutzen vs. Machbarkeit
 
-| Merkmal | Ausbildungsvertrag | Arbeitsvertrag |
+Nicht alles gleichzeitig umsetzen. Eine einfache **Nutzen-Machbarkeit-Matrix** hilft:
+
+| | Geringer Aufwand | Hoher Aufwand |
 |---|---|---|
-| Zweck | Berufliche Ausbildung | Erwerbstätigkeit |
-| Rechtsgrundlage | BBiG + BGB | BGB, KSchG, weitere Gesetze |
-| Vergütung | Ausbildungsvergütung (Mindestbetrag BBiG) | Gehalt / Lohn |
-| Kündigung | Besondere BBiG-Regeln | KSchG, Vertrag, Kündigungsfristen |
-| Lernpflicht | Ja, ausdrücklich geregelt | Keine Lernpflicht (außer Weiterbildungsklauseln) |
-
-Nach erfolgreicher **Abschlussprüfung** und Übernahme wechselst du oft in ein **Arbeitsverhältnis** – dann gelten primär arbeitsrechtliche Regeln.
+| **Hoher Nutzen** | ✅ Quick Win – zuerst! | Strategisches Projekt |
+| **Geringer Nutzen** | Nice-to-have | ❌ vermeiden |
 
 ---
 
-## 4.3 Probezeit und Kündigung in der Ausbildung
+## 4.4 Copilot beim Konzipieren nutzen
 
-Das BBiG regelt **Probezeit** und **Kündigung** in § 20 und § 22.
+Copilot eignet sich hervorragend, um Konzepte zu **strukturieren** und **Lücken** zu finden.
 
-### Probezeit (§ 20 BBiG)
+**Copilot-Prompt zum Ausprobieren:**
 
-Jede Ausbildung beginnt mit einer **Probezeit**. Sie muss im Ausbildungsvertrag vereinbart werden:
+```text
+Ich möchte einen KI-Use-Case für [Prozess] konzipieren. Stelle mir strukturiert
+die 6 wichtigsten Fragen, die ich vorher klären muss, und erkläre kurz, warum
+jede Frage wichtig ist.
+```
 
-| Regel | Inhalt |
-|---|---|
-| Mindestdauer | **1 Monat** |
-| Höchstdauer | **4 Monate** |
-| Längere Vereinbarung | **Unwirksam** – z. B. eine Probezeit von 6 Monaten ist nicht zulässig |
-
-!!! warning "Prüfungstipp"
-    Die **Probezeit bei Auszubildenden** darf gesetzlich **höchstens vier Monate** betragen (§ 20 BBiG). Das unterscheidet sich von manchen **Arbeitsverträgen**, in denen längere Probezeiten vorkommen können.
-
-### Kündigung (§ 22 BBiG)
-
-| Situation | Regel (vereinfacht) |
-|---|---|
-| **Während der Probezeit** | Beide Seiten können **jederzeit ohne Kündigungsfrist** kündigen |
-| **Nach der Probezeit – Betrieb** | Nur noch aus **wichtigem Grund** (fristlos); ordentliche Kündigung durch den Betrieb ist ausgeschlossen |
-| **Nach der Probezeit – Azubi** | Mit **4 Wochen Frist** zum Monatsende oder Ausbildungsende, wenn die Ausbildung aufgegeben oder eine andere Berufsausbildung angestrebt wird |
-| **Form** | Kündigung **schriftlich** (elektronische Form ausgeschlossen) |
-
-!!! info "Wichtiger Grund"
-    Ein **wichtiger Grund** für eine Kündigung durch den Betrieb kann z. B. sein: wiederholte Verletzung von Pflichten, Diebstahl, massive Leistungsverweigerung. Der Betriebsrat ist bei Kündigungen zu beteiligen.
-
----
-
-## 4.4 Urlaub
-
-Auszubildende haben Anspruch auf **Erholungsurlaub**:
-
-- **Gesetzlicher Mindesturlaub** nach dem Bundesurlaubsgesetz: 24 Werktage bei 6-Tage-Woche (= 20 Arbeitstage bei 5-Tage-Woche); für Minderjährige gelten die höheren Sätze des JArbSchG
-- Urlaub darf nicht auf die **Berufsschulzeit** angerechnet werden
-- Resturlaub bei Vertragsende oft auszahlen oder nehmen
-
----
-
-## 4.5 Jugendarbeitsschutz
-
-Für Auszubildende **unter 18 Jahren** gelten zusätzliche Schutzvorschriften:
-
-| Bereich | Regel (Auswahl) |
-|---|---|
-| Arbeitszeit | Max. 8 Std./Tag, 40 Std./Woche |
-| Nachtarbeit | In der Regel verboten (22–6 Uhr) |
-| Pausen | Mindestpausen nach Dauer der Arbeit |
-| Gefährliche Arbeiten | Beschränkt oder verboten |
-
-Auch im **IT-Bereich** relevant: lange Schichten, Stress, ergonomische Arbeitsplätze – Arbeitsschutz gilt für alle.
-
----
-
-## 4.6 Arbeitsschutz im IT-Beruf
-
-| Thema | Beispiel |
-|---|---|
-| Bildschirmarbeit | Augen, Haltung, Pausen (Bildschirmarbeitsverordnung) |
-| Psychische Belastung | Deadline-Druck, On-Call – Gefährdungsbeurteilung |
-| Homeoffice | Regelungen zu Ausstattung, Arbeitszeiten, Datenschutz |
+!!! tip "Copilot als Sparringspartner"
+    Lass dir Konzepte nicht abnehmen, sondern **hinterfragen**: „Welche Risiken übersehe ich?", „Welche Daten brauche ich mindestens?". So nutzt du KI als Denkwerkzeug.
 
 ---
 
 ## Kurzübungen
 
-{{ task(file="tasks/tag4_01.yaml") }}
+{{ task(file="tasks/k04_01.yaml") }}
 
-{{ task(file="tasks/tag4_02.yaml") }}
-
-{{ task(file="tasks/tag4_03.yaml") }}
+{{ task(file="tasks/k04_02.yaml") }}
 
 ---
 
 ## Workshop
 
-{{ task(file="tasks/workshop_k4.yaml") }}
+{{ task(file="tasks/workshop_k04.yaml") }}

@@ -1,0 +1,19 @@
+title: Few-Shot ausprobieren
+difficulty: 3
+question: |
+  Nutze das **Few-Shot-Muster** in Copilot: Gib zwei Beispiele für einen gewünschten Stil vor und
+  lass dann einen neuen Text im selben Stil erzeugen.
+
+  ```text
+  Formuliere kurze, freundliche Terminbestätigungen im folgenden Stil.
+  Beispiel 1: "Hallo Frau Meier, Ihr Termin am Di, 10 Uhr steht - wir freuen uns!"
+  Beispiel 2: "Hallo Herr Kaya, alles klar für Do, 14 Uhr - bis dann!"
+  Schreibe nun eine Bestätigung für Herrn Sung, Freitag 9 Uhr.
+  ```
+
+  Variiere die Beispiele und beobachte, wie sich der Stil der Ausgabe ändert.
+tip: |
+  Je konsistenter deine Beispiele, desto konsistenter die Ausgabe.
+solution: |
+  Bewertungskriterien: Die Ausgabe übernimmt Stil, Länge und Tonfall der Beispiele. Beobachtung: Bereits
+  2 Beispiele steuern den Stil oft stärker als eine lange verbale Beschreibung.
