@@ -121,6 +121,8 @@ und den drei größten zu erwartenden Widerständen samt Gegenmaßnahmen.
 
 {{ task(file="tasks/k37_02.yaml") }}
 
+{{ task(file="tasks/k37_03.yaml") }}
+
 ---
 
 ## Workshop

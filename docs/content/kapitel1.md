@@ -185,6 +185,8 @@ Kürze auf 3 Sätze und ersetze das Beispiel durch eines aus dem Kundenservice.
 
 {{ task(file="tasks/k01_02.yaml") }}
 
+{{ task(file="tasks/k01_03.yaml") }}
+
 ---
 
 ## Workshop

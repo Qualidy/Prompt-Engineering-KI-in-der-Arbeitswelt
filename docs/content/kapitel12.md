@@ -145,6 +145,8 @@ die sich damit beantworten lässt.
 
 {{ task(file="tasks/k12_02.yaml") }}
 
+{{ task(file="tasks/k12_03.yaml") }}
+
 ---
 
 ## Workshop

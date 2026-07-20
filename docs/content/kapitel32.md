@@ -116,6 +116,8 @@ den passenden Risikostufen zu. Nenne je eine Pflicht, die daraus folgt.
 
 {{ task(file="tasks/k32_02.yaml") }}
 
+{{ task(file="tasks/k32_03.yaml") }}
+
 ---
 
 ## Workshop

@@ -123,6 +123,8 @@ was er konkret leistet.
 
 {{ task(file="tasks/k08_02.yaml") }}
 
+{{ task(file="tasks/k08_03.yaml") }}
+
 ---
 
 ## Workshop

@@ -1,0 +1,18 @@
+title: Halluzinationsrisiko einschätzen und absichern
+difficulty: 3
+question: |
+  Du willst Copilot für zwei Aufgaben nutzen:
+  (A) „Fasse dieses interne Protokoll zusammen."
+  (B) „Nenne die genauen gesetzlichen Fristen und Paragraphen für Thema X."
+
+  1. Bei welcher Aufgabe ist das **Halluzinationsrisiko höher** – und warum (Bezug zum Kernprinzip von LLMs)?
+  2. Nenne **drei konkrete Maßnahmen**, mit denen du das Risiko senkst.
+  3. Ein sehr langes Dokument passt nicht vollständig ins **Kontextfenster**. Wie gehst du vor?
+tip: |
+  LLMs optimieren auf Plausibilität, nicht auf Wahrheit. Besonders riskant sind spezifische Fakten/Zahlen außerhalb des Trainingswissens.
+solution: |
+  Bewertungskriterien:
+
+  - Aufgabe B ist als riskanter erkannt (spezifische Fakten/Paragraphen → Erfindungsgefahr), A ist textnah und weniger riskant.
+  - Drei sinnvolle Maßnahmen (Quellen mitgeben/RAG, um Belege bitten, gegenprüfen, präziser Prompt).
+  - Für das Kontextfenster: aufteilen, gezielt fragen oder erst zusammenfassen und darauf aufbauen.

@@ -1,0 +1,21 @@
+title: EU-AI-Act-Risikostufen zuordnen
+difficulty: 3
+question: |
+  Ordne die folgenden drei KI-Einsätze den **Risikostufen** des EU AI Act zu und nenne je eine
+  daraus folgende Pflicht:
+
+  1. Ein Spamfilter im E-Mail-Programm.
+  2. Ein Kundenservice-Chatbot auf der Website.
+  3. Eine KI, die über die Vergabe von Krediten mitentscheidet.
+
+  Erkläre anschließend, warum die Frage **„wofür wird die KI eingesetzt?"** wichtiger ist als
+  die Frage „welche Technik steckt dahinter?". Wann würdest du **Rechtsberatung** hinzuziehen?
+tip: |
+  Der EU AI Act ist risikobasiert. Derselbe Technik-Baustein kann je nach Einsatzzweck minimal oder hochriskant sein.
+solution: |
+  Bewertungskriterien:
+
+  - Spamfilter = minimal, Chatbot = begrenzt (Transparenz/Kennzeichnung), Kredit-KI = hoch (strenge Pflichten).
+  - Je eine passende Pflicht ist genannt.
+  - Es ist verstanden, dass der **Einsatzzweck** die Risikostufe bestimmt.
+  - Rechtsberatung wird bei Hochrisiko/Unsicherheit sinnvoll verortet.

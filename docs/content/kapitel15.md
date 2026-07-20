@@ -118,6 +118,8 @@ Maßnahmen, mit denen ich als Nutzer:in dieses Risiko verringere.
 
 {{ task(file="tasks/k15_02.yaml") }}
 
+{{ task(file="tasks/k15_03.yaml") }}
+
 ---
 
 ## Workshop

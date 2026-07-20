@@ -1,0 +1,16 @@
+title: Training vs. Inferenz und eine Zahl kritisch prüfen
+difficulty: 3
+question: |
+  1. Erkläre den Unterschied im Ressourcenverbrauch zwischen dem **Training** und der **Nutzung (Inferenz)**
+     eines großen KI-Modells – warum sind beide relevant?
+  2. Du liest online: „Jede KI-Anfrage verbraucht 2 Liter Wasser." Bewerte diese Aussage **kritisch**:
+     Wie gehst du mit solchen Zahlen um (Anwendung von Kapitel 15)?
+  3. Nenne **drei Verhaltensweisen**, mit denen du als Copilot-Nutzer:in effizient/ressourcenschonend arbeitest.
+tip: |
+  Training ist einmalig sehr intensiv, Inferenz pro Anfrage klein – aber milliardenfach. Kursierende Verbrauchszahlen sind oft unsichere Schätzungen.
+solution: |
+  Bewertungskriterien:
+
+  - Der Unterschied Training (einmalig, hoch) vs. Inferenz (klein, aber in Masse groß) ist klar.
+  - Die Zahl wird kritisch behandelt: Quelle prüfen, als Schätzung/Sensibilisierung einordnen, nicht als harten Fakt.
+  - Drei sinnvolle Verhaltensweisen (präzise Prompts statt Trial-and-Error, passendes Werkzeug, keine sinnlose Massengenerierung).

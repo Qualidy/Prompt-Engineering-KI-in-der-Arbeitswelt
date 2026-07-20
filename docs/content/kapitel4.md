@@ -133,6 +133,8 @@ KPI und nenne ein Risiko, das ich leicht übersehe.
 
 {{ task(file="tasks/k04_02.yaml") }}
 
+{{ task(file="tasks/k04_03.yaml") }}
+
 ---
 
 ## Workshop

@@ -102,6 +102,8 @@ nur um eine Korrelation und nicht um eine belegte Ursache handelt.
 
 {{ task(file="tasks/k20_02.yaml") }}
 
+{{ task(file="tasks/k20_03.yaml") }}
+
 ---
 
 ## Workshop

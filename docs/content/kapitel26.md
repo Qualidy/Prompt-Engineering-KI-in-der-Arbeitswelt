@@ -115,6 +115,8 @@ einfache Beispielrechnung, die den möglichen Nutzen vorausschauender Wartung ze
 
 {{ task(file="tasks/k26_02.yaml") }}
 
+{{ task(file="tasks/k26_03.yaml") }}
+
 ---
 
 ## Workshop

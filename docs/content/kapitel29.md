@@ -100,6 +100,8 @@ je Abschnitt, welche Daten ich dafür beschaffen muss.
 
 {{ task(file="tasks/k29_02.yaml") }}
 
+{{ task(file="tasks/k29_03.yaml") }}
+
 ---
 
 ## Workshop

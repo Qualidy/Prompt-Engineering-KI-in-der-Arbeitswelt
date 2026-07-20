@@ -1,0 +1,18 @@
+title: Verarbeitungskette für den Rechnungseingang
+difficulty: 3
+question: |
+  Entwirf eine KI-gestützte **Verarbeitungskette** für eingehende Rechnungen:
+
+  1. Beschreibe die Schritte von der Erfassung bis zur Weiterleitung (Erfassen, OCR, Klassifizieren, Extrahieren, Prüfen, Weiterleiten).
+  2. Markiere die **Human-in-the-Loop-Punkte**: Wo muss ein Mensch prüfen und warum?
+  3. Formuliere einen **Copilot-Prompt**, der aus einer Rechnung die Kerndaten als Tabelle zieht und Unsicheres markiert.
+  4. Nenne **zwei Fehlerrisiken** und je eine Absicherung.
+tip: |
+  Lass Unsicheres ausdrücklich markieren. Bei geld-/rechtsrelevanten Dokumenten prüft ein Mensch die kritischen Fälle.
+solution: |
+  Bewertungskriterien:
+
+  - Die Kette enthält die Kernschritte in sinnvoller Reihenfolge.
+  - Human-in-the-Loop ist an kritischen Stellen gesetzt (hohe Beträge, unklare Extraktion).
+  - Der Prompt fordert Tabelle + Markierung unsicherer/fehlender Angaben.
+  - Zwei Risiken (Zahlendreher, Halluzination, Vertraulichkeit) mit Absicherung sind genannt.

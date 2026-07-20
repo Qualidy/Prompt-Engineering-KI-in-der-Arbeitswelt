@@ -1,0 +1,17 @@
+title: Bild-Prompt plus Rechte-Checkliste
+difficulty: 3
+question: |
+  Du brauchst ein Titelbild für eine kommerzielle Broschüre deines Unternehmens.
+
+  1. Schreibe einen **detaillierten Bild-Prompt** (Motiv, Stil, Stimmung, Perspektive, Format).
+  2. Erstelle eine **Checkliste mit vier rechtlichen Punkten**, die du vor der kommerziellen
+     Nutzung eines KI-generierten Bildes prüfst.
+  3. Wo müsstest du das Bild ggf. als **KI-generiert kennzeichnen**?
+tip: |
+  Je konkreter Motiv/Stil/Aufbau, desto brauchbarer das Bild. Bei kommerzieller Nutzung sind Urheberrecht, Persönlichkeitsrechte und Kennzeichnung relevant.
+solution: |
+  Bewertungskriterien:
+
+  - Der Bild-Prompt ist präzise (mehr als „ein Büro") und beschreibt mindestens Motiv, Stil, Stimmung, Format.
+  - Die Checkliste nennt vier relevante Punkte (z. B. keine geschützten Vorlagen, unklare Rechte an Ausgaben, keine realen Personen ohne Einwilligung, Kennzeichnungspflicht/EU AI Act).
+  - Die Kennzeichnungsfrage ist korrekt eingeordnet.

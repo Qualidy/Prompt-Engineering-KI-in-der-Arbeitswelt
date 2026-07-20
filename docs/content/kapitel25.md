@@ -106,6 +106,8 @@ erstes Untersuchungsfeld für die Ursachenanalyse vor.
 
 {{ task(file="tasks/k25_02.yaml") }}
 
+{{ task(file="tasks/k25_03.yaml") }}
+
 ---
 
 ## Workshop

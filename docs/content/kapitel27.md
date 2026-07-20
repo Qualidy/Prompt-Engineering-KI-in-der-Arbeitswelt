@@ -115,6 +115,8 @@ Vorteile der KI-Variante und ein Sicherheitsrisiko, das ich absichern muss.
 
 {{ task(file="tasks/k27_02.yaml") }}
 
+{{ task(file="tasks/k27_03.yaml") }}
+
 ---
 
 ## Workshop

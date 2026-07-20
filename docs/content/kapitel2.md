@@ -136,6 +136,8 @@ Prüfe die Ausgabe kritisch: Stimmen die Jahreszahlen? LLMs verwechseln gelegent
 
 {{ task(file="tasks/k02_02.yaml") }}
 
+{{ task(file="tasks/k02_03.yaml") }}
+
 ---
 
 ## Workshop

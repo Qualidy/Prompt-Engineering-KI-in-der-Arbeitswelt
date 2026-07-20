@@ -1,0 +1,18 @@
+title: 5-Why-Ursachenanalyse mit KI-Unterstützung
+difficulty: 3
+question: |
+  Nimm ein reales oder plausibles Qualitätsproblem (z. B. „steigende Reklamationsquote bei Produkt X").
+
+  1. Wende die **5-Why-Methode** an: Frage fünfmal „Warum?" bis zu einer wahrscheinlichen Grundursache.
+  2. Markiere, an welchen Stellen **Copilot** dich sinnvoll unterstützen kann.
+  3. Markiere, welche Schritte das **QM-Team an echten Daten verifizieren** muss.
+  4. Warum darf ein KI-generierter 8D-/Prüfbericht nicht ungeprüft verwendet werden?
+tip: |
+  Copilot liefert Hypothesen und Struktur. Die Verifikation an echten Daten und Prozessen bleibt beim Menschen.
+solution: |
+  Bewertungskriterien:
+
+  - Die 5-Why-Kette ist logisch und endet bei einer plausiblen Grundursache.
+  - Copilot ist als Hypothesen-/Struktur-Helfer verortet, nicht als Beweis.
+  - Die Verifikationspunkte sind benannt (Daten prüfen, Ursache bestätigen).
+  - Es ist erkannt, dass QM-Dokumente haftungs-/prüfungsrelevant sind.

@@ -1,0 +1,19 @@
+title: Bias-Szenario analysieren
+difficulty: 3
+question: |
+  Ein Unternehmen trainiert eine Bewerbungs-KI mit den Einstellungsdaten der letzten 10 Jahre.
+  Nach kurzer Zeit bevorzugt die KI systematisch männliche Bewerber.
+
+  1. Erkläre die **Ursache** dieses Bias – wo liegt sie genau?
+  2. Warum ist die Aussage „die KI ist doch objektiv" hier **falsch**?
+  3. Nenne **drei Gegenmaßnahmen** (technisch und organisatorisch).
+  4. Welches ethische Prinzip und welche rechtliche Einordnung (EU AI Act) sind hier betroffen?
+tip: |
+  KI ist ein Spiegel der Daten. Personalauswahl ist im EU AI Act ein Hochrisiko-Bereich.
+solution: |
+  Bewertungskriterien:
+
+  - Die Ursache ist an den **verzerrten Trainingsdaten** (Muster der Vergangenheit) festgemacht.
+  - Es ist erkannt, dass „objektiv" ein Trugschluss ist – die KI reproduziert menschliche Verzerrung.
+  - Drei sinnvolle Gegenmaßnahmen (Daten prüfen/ausgleichen, Fairness-Tests, Human-in-the-Loop, Merkmale ausschließen).
+  - Fairness/Nicht-Diskriminierung und Hochrisiko-Einstufung (EU AI Act) sind benannt.

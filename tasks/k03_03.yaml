@@ -1,0 +1,18 @@
+title: Wirkhebel und KPI für einen realen Prozess
+difficulty: 3
+question: |
+  Wähle einen konkreten Prozess aus deinem Arbeitsbereich (z. B. Angebotserstellung, Reklamationsbearbeitung).
+
+  1. Ordne den passenden **Wirkhebel** zu: Automatisieren, Assistieren oder Analysieren – und begründe.
+  2. Definiere **eine messbare Kennzahl (KPI)**, an der du den Erfolg eines KI-Einsatzes ablesen würdest.
+  3. Beschreibe, welche Schritte **Copilot** übernehmen könnte und welche zwingend beim Menschen bleiben.
+  4. Nenne **ein Risiko**, das du dabei leicht übersiehst.
+tip: |
+  Copilot ist meist ein Assistenz-Werkzeug. Ein guter KPI ist konkret und zählbar (z. B. „Bearbeitungszeit je Vorgang").
+solution: |
+  Bewertungskriterien:
+
+  - Der Wirkhebel passt zum Prozess und ist begründet (Copilot = i. d. R. Assistieren).
+  - Der KPI ist messbar und zählbar, nicht vage (z. B. Durchlaufzeit, Fehlerquote, Menge/Tag).
+  - Die Mensch/KI-Aufteilung lässt Entscheidungen/Freigaben beim Menschen.
+  - Das Risiko ist realistisch (z. B. ungeprüfte Übernahme, Datenschutz, falscher Ton).

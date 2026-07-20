@@ -1,0 +1,17 @@
+title: NLP-Verarbeitungskette für Kundenfeedback
+difficulty: 3
+question: |
+  Ein Unternehmen erhält täglich hunderte Freitext-Rückmeldungen von Kunden.
+  Entwirf eine **NLP-Verarbeitungskette**, die daraus nutzbare Erkenntnisse macht:
+
+  1. Welche **NLP-Aufgaben** setzt du in welcher Reihenfolge ein (z. B. Klassifikation, Extraktion, Zusammenfassung)?
+  2. Formuliere je einen **Copilot-Prompt** für zwei dieser Schritte.
+  3. Nenne **zwei Grenzen**, an denen die NLP-Ergebnisse geprüft werden müssen (z. B. Ironie, Fachjargon).
+tip: |
+  Denke in einer Kette: erst grob sortieren (Klassifikation), dann Details ziehen (Extraktion), dann verdichten (Zusammenfassung).
+solution: |
+  Bewertungskriterien:
+
+  - Die Kette ist sinnvoll geordnet und nutzt mehrere NLP-Aufgaben.
+  - Die Prompts sind konkret und zielen auf die jeweilige Aufgabe.
+  - Mindestens zwei realistische Grenzen sind benannt (Ironie, Fachbegriffe, falsche Extraktion) mit dem Hinweis auf Prüfung.

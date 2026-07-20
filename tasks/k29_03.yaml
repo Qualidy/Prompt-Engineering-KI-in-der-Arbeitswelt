@@ -1,0 +1,18 @@
+title: Netto-Ökobilanz eines KI-Einsatzes
+difficulty: 3
+question: |
+  Ein Unternehmen will KI einsetzen, um Lieferrouten zu optimieren und so Kraftstoff zu sparen.
+
+  1. Argumentiere, warum man die **Netto-Bilanz** betrachten muss (KI spart Ressourcen, verbraucht aber selbst welche).
+  2. Nenne, welche Faktoren auf der **Verbrauchsseite** der KI stehen (Bezug zu Kapitel 36).
+  3. Skizziere, wie du diesen Use Case in einem **ESG-Bericht** darstellen würdest (2–3 Angaben).
+  4. Worauf musst du bei den Berichtszahlen besonders achten?
+tip: |
+  KI ist kein reiner Umweltretter: Training und Betrieb kosten Strom/Wasser. Nachhaltigkeitszahlen sind zunehmend prüfungsrelevant.
+solution: |
+  Bewertungskriterien:
+
+  - Die Netto-Betrachtung (Einsparung vs. Eigenverbrauch) ist verstanden.
+  - Verbrauchsfaktoren der KI sind benannt (Strom, Kühlung/Wasser, Hardware).
+  - Die ESG-Darstellung nennt konkrete Angaben (eingespartes CO2/Kraftstoff, Annahmen).
+  - Es ist erkannt, dass Zahlen belegbar/prüfbar sein müssen.

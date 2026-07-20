@@ -1,0 +1,18 @@
+title: Regelkreis mit KI und Sicherheits-Leitplanken
+difficulty: 3
+question: |
+  Wähle einen kontinuierlichen Prozess (z. B. Raumklima, Dosierung, Kühlung).
+
+  1. Skizziere den **Regelkreis**: Sollwert, Regler, Stellgröße, Prozess, Istwert-Rückmeldung.
+  2. Beschreibe, wie eine **KI-gestützte, vorausschauende** Regelung ihn verbessert (nenne 2 Vorteile).
+  3. Definiere **zwei Sicherheits-Leitplanken**, die unabhängig von der KI greifen müssen.
+  4. Warum ist bei sicherheitskritischer Regelung **Erklärbarkeit** besonders wichtig?
+tip: |
+  Rückkopplung ist der Kern der Regelung. Grenzwerte/Notabschaltungen müssen unabhängig von der KI abgesichert sein.
+solution: |
+  Bewertungskriterien:
+
+  - Der Regelkreis enthält alle Elemente inkl. Rückkopplung.
+  - Die KI-Vorteile sind sinnvoll (adaptiv, vorausschauend, energieeffizienter).
+  - Zwei unabhängige Leitplanken sind genannt (Grenzwerte, Notabschaltung, menschlicher Eingriff).
+  - Erklärbarkeit ist mit Nachvollziehbarkeit/Sicherheit verknüpft.

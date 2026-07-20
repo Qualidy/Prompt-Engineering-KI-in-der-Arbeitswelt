@@ -116,6 +116,8 @@ mit denen ich als Nutzer:in den Ressourcenverbrauch gering halte.
 
 {{ task(file="tasks/k36_02.yaml") }}
 
+{{ task(file="tasks/k36_03.yaml") }}
+
 ---
 
 ## Workshop

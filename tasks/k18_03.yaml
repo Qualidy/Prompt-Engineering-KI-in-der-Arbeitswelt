@@ -1,0 +1,20 @@
+title: System-Prompt mit Eskalationslogik entwerfen
+difficulty: 3
+question: |
+  Entwirf einen vollständigen **System-Prompt** für einen Kundenservice-Chatbot deiner Wahl.
+  Er muss enthalten:
+
+  1. **Rolle und Tonfall**
+  2. **Leitplanken** (was er niemals tun/zusagen darf)
+  3. eine klare **Eskalationsregel** (wann an einen Menschen übergeben wird)
+
+  Teste ihn anschließend gedanklich an **drei Grenzfällen** (z. B. verärgerter Kunde, rechtliche Frage,
+  unbekannte Auskunft) und beschreibe, wie der Bot reagieren sollte.
+tip: |
+  Ein guter Bot erledigt Standardfälle und übergibt sauber an Menschen, sobald es kritisch, emotional oder rechtlich wird.
+solution: |
+  Bewertungskriterien:
+
+  - Der System-Prompt enthält Rolle, Ton, konkrete Leitplanken und eine Eskalationsregel.
+  - Die drei Grenzfälle führen jeweils zu sinnvollem Verhalten (kein Zusagen von Preisen/Fristen, Weiterleitung bei Eskalation, ehrliches „weiß ich nicht").
+  - Es wird erkannt, dass verbindliche/rechtliche/emotionale Fälle zum Menschen gehören.

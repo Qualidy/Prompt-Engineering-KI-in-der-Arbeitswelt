@@ -1,0 +1,19 @@
+title: Warum ist das KI-Projekt gescheitert?
+difficulty: 3
+question: |
+  Ein Unternehmen berichtet: „Wir hatten einen tollen KI-Piloten zur automatischen
+  Angebotszusammenfassung. Nach dem Pilot ist er im Sande verlaufen – heute nutzt ihn niemand."
+
+  1. Nenne **drei wahrscheinliche Ursachen** für dieses Scheitern (Bezug zu typischen Scheiterngründen).
+  2. Erkläre das Phänomen **„Pilot-Friedhof"**.
+  3. Schlage **je eine Gegenmaßnahme** pro Ursache vor.
+  4. Welche **Rollen/Teamkompetenzen** hätten von Anfang an dabei sein müssen?
+tip: |
+  Häufige Gründe: kein KPI, keine Operationalisierung, fehlende Akzeptanz, kein starker Fachbereich. Ein Pilot ohne Betriebs-/Skalierungsplan verpufft.
+solution: |
+  Bewertungskriterien:
+
+  - Drei plausible Ursachen aus dem Kanon (kein KPI, keine Operationalisierung, fehlende Akzeptanz, unklare Zuständigkeit).
+  - Der „Pilot-Friedhof" ist korrekt erklärt.
+  - Je eine passende Gegenmaßnahme.
+  - Der starke **Fachbereich** und weitere Rollen (IT/Daten, Management, Datenschutz) sind genannt.

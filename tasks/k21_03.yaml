@@ -1,0 +1,18 @@
+title: Engpassanalyse eines realen Prozesses
+difficulty: 3
+question: |
+  Nimm einen realen Prozess aus deinem Arbeitsbereich (5–8 Schritte).
+
+  1. Liste die Schritte auf und markiere den wahrscheinlichen **Engpass (Flaschenhals)**.
+  2. Ordne jedem Schritt einen **KI-Hebel** zu (automatisieren, beschleunigen, Fehler senken, Wissen bereitstellen) – oder „kein KI-Einsatz".
+  3. Priorisiere: Welchen **einen** Schritt würdest du zuerst mit Copilot angehen und warum?
+  4. Formuliere einen Copilot-Prompt, der dich bei der Analyse dieses Prozesses unterstützt.
+tip: |
+  Eine Kette ist so schnell wie ihr langsamstes Glied. Optimiere zuerst den echten Engpass, nicht irgendeinen Schritt.
+solution: |
+  Bewertungskriterien:
+
+  - Der Prozess ist in Schritte zerlegt und ein plausibler Engpass markiert.
+  - Die KI-Hebel sind sinnvoll zugeordnet (nicht jeder Schritt braucht KI).
+  - Die Priorisierung ist begründet (hoher Nutzen, geringer Aufwand, am Engpass).
+  - Der Prompt ist konkret und gibt genug Kontext.

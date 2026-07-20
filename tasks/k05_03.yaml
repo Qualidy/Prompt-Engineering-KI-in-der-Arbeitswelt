@@ -1,0 +1,19 @@
+title: Trend-Radar für dein Unternehmen
+difficulty: 3
+question: |
+  Erstelle ein kleines **Trend-Radar** für dein Unternehmen. Ordne die vier Trends
+  (KI-Agenten, Multimodalität, RAG, kleine/lokale Modelle) je einer Kategorie zu:
+
+  - **Jetzt relevant** (löst ein echtes Problem bei uns)
+  - **Beobachten** (interessant, aber noch nicht dran)
+  - **Nicht relevant** (passt nicht zu uns)
+
+  Begründe jede Einordnung in einem Satz. Erkläre anschließend, **warum RAG** für die Nutzung
+  eigener Unternehmensdaten mit Copilot besonders wichtig ist.
+tip: |
+  Ein Trend ist keine Pflicht. Frage bei jedem: Löst er ein echtes Problem bei uns – und haben wir die Voraussetzungen?
+solution: |
+  Bewertungskriterien:
+
+  - Jede Einordnung ist an einem **echten Bedarf** festgemacht, nicht am „Hype".
+  - Die RAG-Erklärung trifft den Kern: RAG verbindet das Sprachmodell mit euren eigenen (aktuellen) Dokumenten und reduziert Halluzinationen – Grundlage von Microsoft 365 Copilot.

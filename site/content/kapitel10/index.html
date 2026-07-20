@@ -1336,6 +1336,30 @@ konkreten Bereinigungsschritt vor. Weise auf Risiken der jeweiligen Methode hin.
 zu fehlenden Werten inkl. Risikobewusstsein.</p>
 </details>
 </details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Bereinigungsplan für eine problematische Tabelle</summary>
+<p>Eine Kundentabelle hat folgende Probleme: fehlende Umsatzwerte, Datumsangaben in zwei
+verschiedenen Formaten, der Kunde „Müller GmbH" taucht dreifach auf (einmal als „Mueller GmbH"),
+und ein Alterswert lautet „199".</p>
+<ol>
+<li>Erstelle einen <strong>Bereinigungsplan</strong> mit der sinnvollen Reihenfolge der Schritte.</li>
+<li>Erkläre beim fehlenden Umsatz, warum <strong>„einfach 0 einsetzen" gefährlich</strong> sein kann.</li>
+<li>Formuliere einen <strong>Copilot-Prompt (Excel)</strong>, der dich beim Finden dieser Probleme unterstützt.</li>
+</ol>
+<details class="info">
+<summary>Tipp</summary>
+<p>Erst verstehen, dann bereinigen: „fehlt" kann „0 €" oder „nicht erfasst" bedeuten – ein großer Unterschied.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien:</p>
+<ul>
+<li>Der Plan deckt Vereinheitlichen (Datum), Entdoppeln (Müller/Mueller), Ausreißer (Alter 199) und fehlende Werte ab.</li>
+<li>Es wird erkannt, dass „0 einsetzen" Durchschnitte/Summen verfälschen kann, wenn der Wert eigentlich „unbekannt" ist.</li>
+<li>Der Copilot-Prompt ist konkret und zielt auf Prüfung/Analyse (nicht blindes Auto-Bereinigen).</li>
+</ul>
+</details>
+</details>
 <hr />
 <h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
 <details class="question">

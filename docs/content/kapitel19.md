@@ -136,6 +136,8 @@ Richtigkeit prüfen muss.
 
 {{ task(file="tasks/k19_02.yaml") }}
 
+{{ task(file="tasks/k19_03.yaml") }}
+
 ---
 
 ## Workshop

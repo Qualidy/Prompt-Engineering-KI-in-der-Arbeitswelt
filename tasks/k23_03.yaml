@@ -1,0 +1,18 @@
+title: Wo darf KI in der Konstruktion entscheiden?
+difficulty: 3
+question: |
+  In einem Konstruktionsprojekt stehen verschiedene Aufgaben an. Ordne für **fünf** davon zu,
+  ob KI (inkl. Copilot) sie übernehmen darf – und wo der Mensch zwingend entscheidet:
+
+  Beispiele: Anforderungen strukturieren · Normen recherchieren · Festigkeitsnachweis erstellen ·
+  Variantenvorschläge generieren · Kunden-Änderungsmitteilung formulieren.
+
+  Begründe jede Einordnung mit **Sicherheit und Haftung**.
+tip: |
+  Sicherheitsrelevante Berechnungen und Nachweise dürfen niemals ungeprüft aus KI übernommen werden – hier haften Menschen.
+solution: |
+  Bewertungskriterien:
+
+  - Text-/Recherche-/Strukturaufgaben werden als gut KI-geeignet erkannt (mit Prüfung).
+  - Festigkeitsnachweise/sicherheitsrelevante Berechnungen bleiben klar beim Menschen.
+  - Die Begründung bezieht sich auf Haftung, Sicherheit und Halluzinationsrisiko bei Normen.

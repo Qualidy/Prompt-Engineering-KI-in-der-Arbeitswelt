@@ -1,0 +1,18 @@
+title: Datenpipeline und Monitoring für ein Szenario
+difficulty: 3
+question: |
+  Ein Produktionsbetrieb sammelt laufend Sensordaten (Temperatur, Vibration) von 50 Maschinen.
+
+  1. Ordne dem Szenario die **fünf V's** von Big Data zu (je ein Beispiel).
+  2. Skizziere die **Datenpipeline** in Stufen (Erfassen → … → Nutzen).
+  3. Erkläre, was **Model Drift** ist und wie du ihn im laufenden Betrieb **überwachst**.
+  4. Welche Rolle übernimmt **Copilot** in diesem Szenario realistischerweise – und welche nicht?
+tip: |
+  Der wichtigste V ist „Value": Daten allein sind wertlos. Model Drift = das Modell wird schlechter, weil sich die Realität ändert.
+solution: |
+  Bewertungskriterien:
+
+  - Die V's sind sinnvoll auf das Szenario bezogen (Volume/Velocity durch viele Echtzeit-Messwerte etc.).
+  - Die Pipeline enthält die Kernstufen und wird als Kreislauf verstanden.
+  - Model Drift ist korrekt erklärt und mit Monitoring/Nachtrainieren beantwortet.
+  - Copilot wird am Ende der Kette (Auswertung/Doku) verortet, nicht als Echtzeit-Analysesystem.

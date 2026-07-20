@@ -1,0 +1,18 @@
+title: Business Case für Predictive Maintenance rechnen
+difficulty: 3
+question: |
+  Eine Maschine verursacht pro Stunde ungeplantem Stillstand Kosten von 4.000 €.
+  Erwartet werden ohne Maßnahme 25 solcher Stunden pro Jahr. Predictive Maintenance könnte
+  davon 80 % vermeiden. Das System (Sensorik + Software) kostet 45.000 € im ersten Jahr.
+
+  1. Berechne die **vermiedenen Kosten** pro Jahr und den **Netto-Nutzen** im ersten Jahr.
+  2. Lohnt sich die Investition? Begründe.
+  3. Nenne **zwei Voraussetzungen** und **eine Grenze**, die die Rechnung relativieren könnten.
+tip: |
+  Vermiedene Kosten = Stunden × Kosten/Stunde × Vermeidungsquote. Vorhersagen sind Wahrscheinlichkeiten, keine Gewissheiten.
+solution: |
+  Bewertungskriterien:
+
+  - Rechnung korrekt: 25 × 4.000 € × 0,8 = 80.000 € vermieden; Netto-Nutzen Jahr 1 = 80.000 − 45.000 = 35.000 €.
+  - Schlussfolgerung „lohnt sich" ist begründet.
+  - Voraussetzungen (genug historische/Ausfalldaten, Sensorik) und eine Grenze (Fehlalarme, seltene Ausfälle schwer lernbar) sind genannt.

@@ -107,6 +107,8 @@ und verständlich, ohne Juristendeutsch.
 
 {{ task(file="tasks/k33_02.yaml") }}
 
+{{ task(file="tasks/k33_03.yaml") }}
+
 ---
 
 ## Workshop

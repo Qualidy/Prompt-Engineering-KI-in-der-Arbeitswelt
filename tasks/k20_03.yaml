@@ -1,0 +1,17 @@
+title: Data-Mining-Muster wählen und Trugschluss vermeiden
+difficulty: 3
+question: |
+  Dein Unternehmen hat Verkaufsdaten (Produkte, Kunden, Zeit, Rabatte).
+  Formuliere **drei Geschäftsfragen** und ordne jeder das passende **Data-Mining-Muster** zu
+  (Klassifikation, Clustering, Assoziation, Ausreißer, Prognose).
+
+  Wähle anschließend **eine** deiner Fragen und beschreibe eine mögliche **Korrelation**, die man
+  fälschlich für eine **Kausalität** halten könnte – und wie du das prüfen würdest.
+tip: |
+  Data-Mining findet Zusammenhänge. Ob dahinter eine echte Ursache steckt, muss fachlich geprüft werden (Eis ≠ Sonnenbrand).
+solution: |
+  Bewertungskriterien:
+
+  - Drei sinnvolle Fragen mit korrekt zugeordneten Mustern.
+  - Ein plausibles Korrelation-vs-Kausalität-Beispiel aus dem eigenen Kontext.
+  - Ein sinnvoller Prüfansatz (weitere Variablen, gemeinsame Ursache suchen, Experiment/Zeitverlauf).

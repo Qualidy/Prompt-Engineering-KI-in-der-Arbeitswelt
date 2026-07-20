@@ -121,6 +121,8 @@ das Prinzip "Attention".
 
 {{ task(file="tasks/k16_02.yaml") }}
 
+{{ task(file="tasks/k16_03.yaml") }}
+
 ---
 
 ## Workshop

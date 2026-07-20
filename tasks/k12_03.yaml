@@ -1,0 +1,18 @@
+title: Lernart und Modellaufbau für ein Geschäftsproblem
+difficulty: 3
+question: |
+  Wähle ein Vorhersageproblem aus deinem Umfeld (z. B. „Welche Kunden kündigen wahrscheinlich?").
+
+  1. Welche **Lernart** passt (überwacht, unüberwacht, bestärkend)? Begründe.
+  2. Nenne mögliche **Features** (Eingabemerkmale) und das **Label** (Zielwert).
+  3. Erkläre, warum du Daten in **Training und Test** aufteilst.
+  4. Woran würdest du **Overfitting** erkennen – und warum ist es gefährlich?
+tip: |
+  Vorhersagen mit bekannter Antwort = überwachtes Lernen. Getestet wird immer an Daten, die das Modell nie gesehen hat.
+solution: |
+  Bewertungskriterien:
+
+  - Die Lernart passt (Kündigungsvorhersage = überwachte Klassifikation) und ist begründet.
+  - Features und Label sind sinnvoll und klar getrennt.
+  - Der Train/Test-Split ist als Schutz vor „Prüfen mit bekannten Lösungen" verstanden.
+  - Overfitting ist erklärt (gut im Training, schlecht bei neuen Daten) und als Gefahr erkannt.

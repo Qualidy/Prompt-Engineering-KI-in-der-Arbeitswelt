@@ -1,0 +1,19 @@
+title: DSGVO-Fall prüfen und Prompt anonymisieren
+difficulty: 3
+question: |
+  Ein Mitarbeiter will folgende Aufgabe erledigen: „Copilot soll eine Beschwerde-E-Mail von
+  Herrn Thomas Berger (Kundennr. 88231, wohnhaft in ...) analysieren und eine Antwort entwerfen."
+
+  1. Nenne **zwei DSGVO-Aspekte**, die hier zu beachten sind.
+  2. Warum ist entscheidend, **welches** Copilot (freigegebenes M365 vs. privates Tool) genutzt wird?
+  3. Schreibe den Prompt so um, dass er **datensparsam/anonymisiert** ist, aber trotzdem brauchbar bleibt.
+  4. Nenne die **Rechtsgrundlage-Frage**, die vorher geklärt sein muss.
+tip: |
+  Ersetze echte Namen durch Platzhalter (Kunde A). Für betriebliche Daten nur freigegebene Tools nutzen.
+solution: |
+  Bewertungskriterien:
+
+  - Zwei DSGVO-Aspekte (personenbezogene Daten, Datenminimierung, Zweckbindung) sind benannt.
+  - Der Unterschied freigegebenes M365 (Tenant, kein Training) vs. offenes Tool ist verstanden.
+  - Der umgeschriebene Prompt vermeidet echte Personendaten, bleibt aber sinnvoll.
+  - Die Rechtsgrundlage-Frage ist gestellt.

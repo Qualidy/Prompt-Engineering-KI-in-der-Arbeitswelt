@@ -1,0 +1,17 @@
+title: GPT einem Kollegen erklären
+difficulty: 3
+question: |
+  Ein Kollege fragt: „Wenn Copilot auf GPT basiert und so schlau klingt – warum liegt es
+  dann manchmal komplett falsch?"
+
+  1. Erkläre mit dem Prinzip **Attention**, warum LLMs so **zusammenhängende** Texte erzeugen.
+  2. Erkläre, warum flüssige Sprache trotzdem **kein Beweis für Richtigkeit** ist.
+  3. Welche Rolle spielt **RLHF** dabei, dass Copilot hilfreich und höflich wirkt – und was kann RLHF **nicht** leisten?
+tip: |
+  Attention gewichtet Wortbezüge → Kohärenz. RLHF macht Antworten „bevorzugt", nicht automatisch „wahr".
+solution: |
+  Bewertungskriterien:
+
+  - Attention ist verständlich erklärt (Modell gewichtet relevante Wörter/Bezüge → kohärenter Text).
+  - Es ist klar, dass Kohärenz/Flüssigkeit auf Mustervorhersage beruht, nicht auf Wahrheitsprüfung.
+  - RLHF ist als „hilfreich/sicher machen" verstanden; Grenze: es macht Antworten nicht faktisch korrekt und kann Verzerrungen übernehmen.

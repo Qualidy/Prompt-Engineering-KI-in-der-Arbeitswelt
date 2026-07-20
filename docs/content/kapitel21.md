@@ -113,6 +113,8 @@ Liste mit Verantwortlichkeiten (Rolle je Schritt) um.
 
 {{ task(file="tasks/k21_02.yaml") }}
 
+{{ task(file="tasks/k21_03.yaml") }}
+
 ---
 
 ## Workshop

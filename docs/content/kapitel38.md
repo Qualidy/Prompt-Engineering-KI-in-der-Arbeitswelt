@@ -110,6 +110,8 @@ Markiere die zwei Bausteine, die über Erfolg oder Misserfolg entscheiden.
 
 {{ task(file="tasks/k38_02.yaml") }}
 
+{{ task(file="tasks/k38_03.yaml") }}
+
 ---
 
 ## Workshop

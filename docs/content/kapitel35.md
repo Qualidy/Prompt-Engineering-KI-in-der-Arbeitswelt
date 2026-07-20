@@ -121,6 +121,8 @@ größten Risiken und den Rollen, die ich im Team brauche.
 
 {{ task(file="tasks/k35_02.yaml") }}
 
+{{ task(file="tasks/k35_03.yaml") }}
+
 ---
 
 ## Workshop

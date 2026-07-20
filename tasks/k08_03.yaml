@@ -1,0 +1,19 @@
+title: Copilot vollständig in Bausteine zerlegen
+difficulty: 3
+question: |
+  Zerlege **Microsoft Copilot** in die Bausteine des „KI-Periodensystems" und ordne jedem zu,
+  wer ihn liefert:
+
+  Daten · Algorithmen · Rechenleistung · Modell · Anwendung
+
+  1. Beschreibe je Baustein in einem Satz, was er bei Copilot konkret leistet.
+  2. Unterscheide dabei **Training** und **Nutzung (Inferenz)**.
+  3. Begründe, **warum** du als Anwender:in nur auf der Anwendungsebene arbeitest – und welchen Vorteil das hat.
+tip: |
+  Bei Copilot liefert Microsoft/OpenAI die unteren Bausteine fertig. Deine Wissensdaten kommen via RAG/Graph hinzu.
+solution: |
+  Bewertungskriterien:
+
+  - Alle fünf Bausteine sind sinnvoll auf Copilot bezogen (z. B. Modell = GPT, Anwendung = Copilot in Word/Excel).
+  - Training (einmalig, aufwendig) und Inferenz (laufend, pro Prompt) werden unterschieden.
+  - Der Vorteil der Anwendungsebene ist benannt: kein eigenes Training/Infrastruktur nötig, Fokus auf Prompting und Prüfung.

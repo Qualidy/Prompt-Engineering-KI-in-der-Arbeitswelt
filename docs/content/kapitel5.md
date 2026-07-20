@@ -116,6 +116,8 @@ konkretes Beispiel und einen möglichen Nachteil.
 
 {{ task(file="tasks/k05_02.yaml") }}
 
+{{ task(file="tasks/k05_03.yaml") }}
+
 ---
 
 ## Workshop

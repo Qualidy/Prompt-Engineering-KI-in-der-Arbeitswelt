@@ -109,6 +109,8 @@ Datenschutz achten muss.
 
 {{ task(file="tasks/k30_02.yaml") }}
 
+{{ task(file="tasks/k30_03.yaml") }}
+
 ---
 
 ## Workshop

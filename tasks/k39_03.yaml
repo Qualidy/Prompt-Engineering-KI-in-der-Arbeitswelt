@@ -1,0 +1,18 @@
+title: KI-Strategie-Skizze mit Roadmap
+difficulty: 3
+question: |
+  Erstelle eine erste **KI-Strategie-Skizze** für ein mittelständisches Unternehmen deiner Wahl:
+
+  1. Formuliere **zwei strategische Ziele**, auf die KI einzahlt (kein „wir machen KI").
+  2. Liste **vier Use Cases** und ordne sie in der **Nutzen-Machbarkeit-Matrix** ein.
+  3. Bringe sie in eine **Roadmap in drei Wellen** (Welle 1 = Quick Wins, z. B. Copilot im Office).
+  4. Nenne **zwei Governance-Punkte** und **einen Kompetenz-/Kulturaspekt**, die du von Anfang an mitplanst.
+tip: |
+  Strategie verbindet KI mit Geschäftszielen. Der häufigste Fehler: Technik/Use Cases listen, aber Menschen und Regeln vergessen.
+solution: |
+  Bewertungskriterien:
+
+  - Die Ziele sind an Geschäftszielen ausgerichtet, nicht Selbstzweck.
+  - Die Use Cases sind nach Nutzen/Aufwand eingeordnet; Welle 1 enthält sinnvolle Quick Wins (Copilot).
+  - Die Roadmap ist in Wellen strukturiert.
+  - Governance und Kompetenz/Kultur sind ausdrücklich mitgeplant.

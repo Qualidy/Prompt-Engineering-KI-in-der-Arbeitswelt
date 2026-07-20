@@ -110,6 +110,8 @@ hast, (2) wie sicher du dir bist, und (3) welche Angaben ich unbedingt selbst
 
 {{ task(file="tasks/k34_02.yaml") }}
 
+{{ task(file="tasks/k34_03.yaml") }}
+
 ---
 
 ## Workshop

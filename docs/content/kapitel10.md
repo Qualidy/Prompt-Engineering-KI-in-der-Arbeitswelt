@@ -102,6 +102,8 @@ Bereinigungsschritt vor.
 
 {{ task(file="tasks/k10_02.yaml") }}
 
+{{ task(file="tasks/k10_03.yaml") }}
+
 ---
 
 ## Workshop

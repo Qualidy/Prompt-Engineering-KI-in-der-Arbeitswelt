@@ -1,0 +1,16 @@
+title: Reinforcement Learning für ein Optimierungsproblem
+difficulty: 3
+question: |
+  Ein Lagerroboter soll lernen, Waren möglichst schnell und kollisionsfrei zu transportieren.
+
+  1. Definiere die RL-Grundelemente für diesen Fall: **Agent, Umgebung, Zustand, Aktion, Belohnung**.
+  2. Beschreibe das Dilemma **Exploration vs. Exploitation** an diesem Beispiel.
+  3. Formuliere eine **schlecht gewählte Belohnung**, die zu unerwünschtem Verhalten („Reward Hacking") führen würde – und korrigiere sie.
+tip: |
+  Die Belohnung steuert alles. Wenn du das Falsche belohnst, optimiert der Agent genau das Falsche.
+solution: |
+  Bewertungskriterien:
+
+  - Alle fünf Grundelemente sind sinnvoll auf den Roboter bezogen.
+  - Exploration/Exploitation ist am Beispiel erklärt (bekannte Route nutzen vs. neue ausprobieren).
+  - Ein plausibles Reward-Hacking-Beispiel (z. B. „nur Tempo belohnen" → riskante Fahrweise) und eine bessere Belohnung (Tempo minus Strafe für Kollisionen) sind genannt.

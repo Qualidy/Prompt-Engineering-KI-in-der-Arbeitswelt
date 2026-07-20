@@ -104,6 +104,8 @@ Klauseln. Markiere alle Angaben, die im Text nicht eindeutig zu finden sind.
 
 {{ task(file="tasks/k28_02.yaml") }}
 
+{{ task(file="tasks/k28_03.yaml") }}
+
 ---
 
 ## Workshop

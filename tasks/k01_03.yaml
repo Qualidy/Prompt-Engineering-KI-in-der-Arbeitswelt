@@ -1,0 +1,19 @@
+title: KI-System aus deinem Arbeitsalltag einordnen
+difficulty: 3
+question: |
+  Wähle **ein** System aus deinem eigenen Arbeitsumfeld, das (vermeintlich) KI nutzt.
+  Analysiere es strukturiert:
+
+  1. **Klassisch oder KI?** Lernt es aus Daten oder folgt es festen Regeln? Begründe.
+  2. **Teilgebiet:** Welchem KI-Feld ordnest du es zu (ML, NLP, Computer Vision, generativ)?
+  3. **Schwach oder stark?** Ordne es ein und begründe.
+  4. **Copilot-Bezug:** Könntest du dieselbe Aufgabe (teilweise) mit Microsoft Copilot lösen? Wo lägen Grenzen?
+tip: |
+  Achte auf den KI-Effekt: Nur weil etwas „automatisch" wirkt, ist es noch keine KI. Frage konsequent: Lernt das System aus Daten?
+solution: |
+  Bewertungskriterien:
+
+  - Die Klassisch/KI-Unterscheidung ist an „Regeln vs. Lernen aus Daten" festgemacht (nicht an „modern/automatisch").
+  - Das Teilgebiet ist plausibel begründet.
+  - Die Einordnung als schwache KI ist korrekt (alle heutigen Systeme sind schwach).
+  - Der Copilot-Bezug nennt sowohl eine sinnvolle Anwendung als auch eine realistische Grenze (z. B. keine Echtzeit-Steuerung, Prüfpflicht).

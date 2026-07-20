@@ -1,0 +1,18 @@
+title: KI-Geschäftsmodell entwerfen
+difficulty: 3
+question: |
+  Entwirf ein KI-basiertes Geschäftsmodell für ein Unternehmen deiner Wahl.
+
+  1. Ordne es einem **Muster** zu (KI-as-a-Service, Personalisierung, Ergebnis statt Produkt, Plattform, automatisierter Service).
+  2. Beschreibe die Kern-Bausteine des **Business Model Canvas**: Wertangebot, Schlüsselressource, Einnahmequelle.
+  3. Erkläre, wie ein **Datennetzwerkeffekt** hier einen Wettbewerbsvorteil schaffen könnte.
+  4. Nenne **ein rechtliches/ethisches Risiko** des Modells.
+tip: |
+  „Ergebnis statt Produkt" (z. B. garantierte Betriebszeit) ist oft schwer kopierbar. Daten sind die zentrale Ressource – aber sauber halten.
+solution: |
+  Bewertungskriterien:
+
+  - Das Modell ist einem Muster zugeordnet und plausibel.
+  - Wertangebot, Schlüsselressource (oft Daten) und Einnahmequelle sind benannt.
+  - Der Datennetzwerkeffekt (mehr Nutzer → mehr Daten → bessere KI) ist verstanden.
+  - Ein rechtliches/ethisches Risiko (Datenschutz, Zweckbindung, Fairness) ist genannt.

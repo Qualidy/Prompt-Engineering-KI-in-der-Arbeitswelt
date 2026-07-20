@@ -114,6 +114,8 @@ der Branche [Branche]. Hilf mir mit: (1) 3 möglichen strategischen Zielen,
 
 {{ task(file="tasks/k39_02.yaml") }}
 
+{{ task(file="tasks/k39_03.yaml") }}
+
 ---
 
 ## Workshop

@@ -1,0 +1,19 @@
+title: Low-Code-Automatisierung mit Governance
+difficulty: 3
+question: |
+  Ein Fachbereich möchte per Low-Code (Power Platform) einen Genehmigungsprozess automatisieren
+  (z. B. Urlaubs- oder Beschaffungsanträge).
+
+  1. Skizziere die Automatisierung: **Auslöser → Schritte → Ergebnis**.
+  2. Überlege, wo ein **eigener Copilot-Agent** (Copilot Studio) sinnvoll wäre.
+  3. Definiere **drei Governance-Leitplanken**, die verhindern, dass hier „Schatten-IT" entsteht.
+  4. Nenne ein **Datenschutz-Risiko** und wie du es adressierst.
+tip: |
+  Low-Code entlastet die IT – ohne Leitplanken entsteht aber Wildwuchs. Kläre: Welche Daten? Wer prüft/betreibt?
+solution: |
+  Bewertungskriterien:
+
+  - Die Automatisierung hat einen klaren Auslöser, sinnvolle Schritte und ein Ergebnis.
+  - Der Copilot-Agent-Einsatz ist plausibel (z. B. Fragen zum Prozess beantworten via RAG).
+  - Drei konkrete Governance-Leitplanken (Datenfreigabe, Zuständigkeit/Betrieb, Prüfung/Freigabe).
+  - Ein Datenschutz-Risiko (personenbezogene Daten) mit Gegenmaßnahme ist genannt.

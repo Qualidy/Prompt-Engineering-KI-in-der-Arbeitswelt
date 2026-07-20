@@ -1,0 +1,20 @@
+title: Copilot vs. Spezialsystem in der Produktion
+difficulty: 3
+question: |
+  In einer Fertigung gibt es vier KI-nahe Aufgaben:
+  (A) fehlerhafte Teile am Band in Millisekunden aussortieren,
+  (B) Schichtprotokolle zu einem Bericht zusammenfassen,
+  (C) Maschinenparameter in Echtzeit nachregeln,
+  (D) mögliche Ursachen zu einem Fehlercode erklären.
+
+  1. Ordne jede Aufgabe zu: **Copilot geeignet** oder **Spezialsystem nötig**? Begründe.
+  2. Erkläre, warum bei manchen Aufgaben die **Echtzeit-Anforderung** gegen Copilot spricht.
+  3. Wo liegt die klare **Sicherheitsgrenze** für ein Sprachmodell?
+tip: |
+  Copilot hilft bei Wissen, Kommunikation und Auswertung – nicht bei sicherheitskritischer Echtzeit-Steuerung.
+solution: |
+  Bewertungskriterien:
+
+  - B und D werden Copilot zugeordnet, A und C dem Spezialsystem.
+  - Die Echtzeit-/Millisekunden-Anforderung ist als Grund gegen Copilot erkannt.
+  - Die Sicherheitsgrenze ist klar: keine Steuerungsentscheidungen durch ein Sprachmodell.

@@ -103,6 +103,8 @@ untersucht werden sollten.
 
 {{ task(file="tasks/k24_02.yaml") }}
 
+{{ task(file="tasks/k24_03.yaml") }}
+
 ---
 
 ## Workshop

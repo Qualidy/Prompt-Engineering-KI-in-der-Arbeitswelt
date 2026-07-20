@@ -98,6 +98,8 @@ Widersprüche oder fehlende Angaben und formuliere 5 Rückfragen an den Kunden.
 
 {{ task(file="tasks/k23_02.yaml") }}
 
+{{ task(file="tasks/k23_03.yaml") }}
+
 ---
 
 ## Workshop

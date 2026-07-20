@@ -144,6 +144,8 @@ für nächste Woche vorschlägt und die offene Frage zur Lieferzeit aufgreift.
 
 {{ task(file="tasks/k03_02.yaml") }}
 
+{{ task(file="tasks/k03_03.yaml") }}
+
 ---
 
 ## Workshop

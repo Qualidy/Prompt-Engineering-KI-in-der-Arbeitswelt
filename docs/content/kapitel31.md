@@ -110,6 +110,8 @@ ausgewogene Alternativen vor.
 
 {{ task(file="tasks/k31_02.yaml") }}
 
+{{ task(file="tasks/k31_03.yaml") }}
+
 ---
 
 ## Workshop

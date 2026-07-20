@@ -126,6 +126,8 @@ Praxis am häufigsten unterschätzt werden und warum.
 
 {{ task(file="tasks/k11_02.yaml") }}
 
+{{ task(file="tasks/k11_03.yaml") }}
+
 ---
 
 ## Workshop

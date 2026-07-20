@@ -1,0 +1,17 @@
+title: Transparenz einfordern und kritisch bewerten
+difficulty: 3
+question: |
+  Stelle Copilot eine fachliche Frage aus deinem Bereich und fordere aktiv Transparenz:
+  Bitte um **Quellen, Annahmen und eine Selbsteinschätzung der Sicherheit**.
+
+  1. Notiere, wie die Antwort mit und ohne diese Zusatzanforderung unterscheidet.
+  2. Bewerte kritisch: Ist die gelieferte **Begründung** ein Beweis für Richtigkeit? Warum (nicht)?
+  3. Erkläre, warum das **Blackbox-Problem** bedeutet, dass Transparenz die Prüfung **erleichtert**, aber nicht **ersetzt**.
+tip: |
+  Ein LLM rekonstruiert seine „Begründung" im Nachhinein – sie muss nicht der echte innere Weg sein. Plausibel ≠ korrekt.
+solution: |
+  Bewertungskriterien:
+
+  - Der Unterschied durch die Transparenz-Anforderung ist beschrieben.
+  - Es ist erkannt, dass eine flüssige Begründung kein Korrektheitsbeweis ist.
+  - Das Blackbox-Problem ist verstanden: Transparenz hilft der Prüfung, ersetzt aber die eigene Verifikation nicht.

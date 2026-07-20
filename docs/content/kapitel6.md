@@ -118,6 +118,8 @@ und markiere die 3 vielversprechendsten Quick Wins.
 
 {{ task(file="tasks/k06_02.yaml") }}
 
+{{ task(file="tasks/k06_03.yaml") }}
+
 ---
 
 ## Workshop

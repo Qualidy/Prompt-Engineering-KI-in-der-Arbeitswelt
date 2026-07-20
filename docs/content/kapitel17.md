@@ -121,6 +121,8 @@ schlecht gewählte Belohnung zu unerwünschtem Verhalten führen könnte.
 
 {{ task(file="tasks/k17_02.yaml") }}
 
+{{ task(file="tasks/k17_03.yaml") }}
+
 ---
 
 ## Workshop

@@ -124,6 +124,8 @@ zwingend eine menschliche Entscheidung brauchen.
 
 {{ task(file="tasks/k22_02.yaml") }}
 
+{{ task(file="tasks/k22_03.yaml") }}
+
 ---
 
 ## Workshop

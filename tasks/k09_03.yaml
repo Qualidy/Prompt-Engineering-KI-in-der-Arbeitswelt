@@ -1,0 +1,18 @@
+title: Datenquellen und Grenzen für einen Use Case
+difficulty: 3
+question: |
+  Für einen KI-Use-Case deiner Wahl (z. B. „Kundenanfragen automatisch kategorisieren"):
+
+  1. Liste die benötigten **Datenquellen** (intern/extern) auf.
+  2. Klassifiziere die Daten als **strukturiert, semistrukturiert oder unstrukturiert**.
+  3. Prüfe **zwei rechtliche/ethische Grenzen** (z. B. DSGVO, Zweckbindung, Urheberrecht), die hier greifen.
+  4. Wie könnte **Copilot** (über den Microsoft Graph) auf einen Teil dieser Daten zugreifen – und wo liegt die Grenze?
+tip: |
+  Der größte Teil der Unternehmensdaten ist unstrukturiert. Copilot sieht nur Daten, für die dein Konto berechtigt ist.
+solution: |
+  Bewertungskriterien:
+
+  - Die Datenquellen passen zum Use Case und sind intern/extern eingeordnet.
+  - Die Datenarten sind korrekt klassifiziert.
+  - Mindestens zwei rechtliche/ethische Grenzen sind konkret benannt (nicht nur „Datenschutz allgemein").
+  - Der Copilot-Zugriff über den Graph und das Berechtigungsprinzip sind verstanden.

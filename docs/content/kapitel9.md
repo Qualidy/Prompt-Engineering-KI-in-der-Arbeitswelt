@@ -120,6 +120,8 @@ Fasse die wichtigsten Punkte aus meinen E-Mails der letzten Woche zum Projekt
 
 {{ task(file="tasks/k09_02.yaml") }}
 
+{{ task(file="tasks/k09_03.yaml") }}
+
 ---
 
 ## Workshop

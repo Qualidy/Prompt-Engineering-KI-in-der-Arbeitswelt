@@ -111,6 +111,8 @@ je Ergebnisbereich eine kurze Handlungsempfehlung.
 
 {{ task(file="tasks/k07_02.yaml") }}
 
+{{ task(file="tasks/k07_03.yaml") }}
+
 ---
 
 ## Workshop
