@@ -86,15 +86,23 @@ Diese Felder vertiefen wir in **Block 3 (Use Cases)** – jeweils mit Praxisbeis
 | Teams | Meetings zusammenfassen, To-dos ableiten | „Liste die Beschlüsse und Aufgaben" |
 | PowerPoint | Präsentationen aus Text erzeugen | „Erstelle 6 Folien zu …" |
 
-### Ein durchgespieltes Beispiel
+### Ein durchgespieltes Beispiel – zum Selbst-Nachmachen
 
-Ausgangslage: Du hast einen langen E-Mail-Verlauf und wenig Zeit.
+Probiere es direkt in Copilot aus. Damit du kein echtes Dokument brauchst, lässt du Copilot den E-Mail-Verlauf zuerst **selbst erzeugen**:
+
+**Schritt 0 – Beispielmaterial erzeugen:**
+
+```text
+Erfinde einen längeren, etwas unübersichtlichen E-Mail-Verlauf (3 Nachrichten)
+zwischen einem Kunden und dem Vertrieb über eine verspätete Lieferung, mit zwei
+offenen Fragen und einer Terminbitte.
+```
 
 **Schritt 1 – Überblick verschaffen:**
 
 ```text
-Fasse den folgenden E-Mail-Verlauf in maximal 4 Stichpunkten zusammen und liste
-alle offenen Aufgaben mit Verantwortlichem auf: [Verlauf einfügen]
+Fasse den eben erstellten E-Mail-Verlauf in maximal 4 Stichpunkten zusammen und
+liste alle offenen Aufgaben mit Verantwortlichem auf.
 ```
 
 **Schritt 2 – Handeln:**

@@ -1,21 +1,25 @@
-title: EU-AI-Act-Risikostufen zuordnen
+title: Rechtlicher Kurz-Check eines Use Case (Copilot)
 difficulty: 3
 question: |
-  Ordne die folgenden drei KI-Einsätze den **Risikostufen** des EU AI Act zu und nenne je eine
-  daraus folgende Pflicht:
+  Führe **in Copilot** einen rechtlichen Kurz-Check für ein selbst erzeugtes Szenario durch.
 
-  1. Ein Spamfilter im E-Mail-Programm.
-  2. Ein Kundenservice-Chatbot auf der Website.
-  3. Eine KI, die über die Vergabe von Krediten mitentscheidet.
+  **Schritt 1:**
+  ```text
+  Erfinde einen konkreten KI-Use-Case mit rechtlicher Relevanz und beschreibe ihn.
+  ```
+  **Schritt 2:**
+  ```text
+  Prüfe: Risikoklasse (EU AI Act), Datenschutzbezug, Haftungsfrage (wer haftet bei Fehlern?),
+  Kennzeichnungspflicht. Fasse als Tabelle zusammen.
+  ```
+  **Schritt 3 – Grenzen:**
+  ```text
+  Wo endet das, was du (Copilot) hier leisten kannst, und wann ist echte Rechtsberatung nötig?
+  ```
 
-  Erkläre anschließend, warum die Frage **„wofür wird die KI eingesetzt?"** wichtiger ist als
-  die Frage „welche Technik steckt dahinter?". Wann würdest du **Rechtsberatung** hinzuziehen?
+  Bewerte selbst: Welche Frage ist am heikelsten und gehört zwingend zu Fachleuten?
 tip: |
-  Der EU AI Act ist risikobasiert. Derselbe Technik-Baustein kann je nach Einsatzzweck minimal oder hochriskant sein.
+  Copilot ist keine Rechtsberatung. Es hilft beim Strukturieren der Fragen – die verbindliche Klärung machen Fachleute.
 solution: |
-  Bewertungskriterien:
-
-  - Spamfilter = minimal, Chatbot = begrenzt (Transparenz/Kennzeichnung), Kredit-KI = hoch (strenge Pflichten).
-  - Je eine passende Pflicht ist genannt.
-  - Es ist verstanden, dass der **Einsatzzweck** die Risikostufe bestimmt.
-  - Rechtsberatung wird bei Hochrisiko/Unsicherheit sinnvoll verortet.
+  Erwartetes Ergebnis: strukturierter Rechts-Check mit klarer Abgrenzung, wo Fachberatung nötig ist. Lernziel:
+  rechtliche Fragen früh erkennen und Grenzen der KI respektieren.

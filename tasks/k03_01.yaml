@@ -1,17 +1,25 @@
-title: KI-Nutzen zuordnen
+title: Copilot fasst zusammen und leitet Aufgaben ab
 difficulty: 1
 question: |
-  Ordne die folgenden KI-Anwendungen dem passenden **Unternehmensziel** zu
-  (Effizienz, Qualität, Kosten, neue Angebote, Entscheidungen):
+  Diese Übung machst du **direkt in Copilot** – ohne eigene Dokumente. Du lässt Copilot das
+  Material zuerst selbst erzeugen und arbeitest dann damit.
 
-  1. Ein Chatbot beantwortet Standardfragen rund um die Uhr
-  2. Eine Bildprüfung erkennt Kratzer auf Bauteilen
-  3. Eine Absatzprognose unterstützt die Einkaufsplanung
-  4. Ein KI-gestützter Übersetzungsservice wird als neues Produkt angeboten
+  **Schritt 1 – Material erzeugen:**
+  ```text
+  Erfinde eine fiktive, etwas unstrukturierte Meeting-Notiz (ca. 120 Wörter) aus einem
+  Team-Meeting über die Einführung eines neuen Ablageordners. Baue drei Beschlüsse und
+  zwei offene Aufgaben ein.
+  ```
+
+  **Schritt 2 – Copilot arbeiten lassen:**
+  ```text
+  Fasse die eben erstellte Notiz in maximal 4 Stichpunkten zusammen und liste alle offenen
+  Aufgaben mit einem Vorschlag für die verantwortliche Rolle in einer Tabelle auf.
+  ```
+
+  Welchen **Wirkhebel** (Automatisieren, Assistieren, Analysieren) hat Copilot hier gezeigt?
 tip: |
-  Manche Anwendungen zahlen auf mehrere Ziele ein – nenne das Hauptziel.
+  Der „Generate-then-transform"-Trick: Copilot erzeugt erst das Übungsmaterial, dann bearbeitest du es. So brauchst du nie echte Dokumente.
 solution: |
-  1. Effizienz (rund um die Uhr, entlastet Mitarbeitende)
-  2. Qualität (Fehlererkennung)
-  3. Entscheidungen (Prognose als Planungsgrundlage)
-  4. Neue Angebote (KI-Service als Produkt)
+  Erwartetes Ergebnis: Copilot erzeugt eine plausible Notiz, fasst sie korrekt zusammen und leitet die
+  Aufgaben ab. Wirkhebel = **Assistieren** (Copilot unterstützt, die Entscheidung/Freigabe bleibt beim Menschen).

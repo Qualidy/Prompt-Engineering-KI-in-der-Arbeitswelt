@@ -1,18 +1,27 @@
-title: Wirkhebel und KPI für einen realen Prozess
+title: Einen Mini-Prozess in Copilot durchspielen
 difficulty: 3
 question: |
-  Wähle einen konkreten Prozess aus deinem Arbeitsbereich (z. B. Angebotserstellung, Reklamationsbearbeitung).
+  Spiele **komplett in Copilot** den Prozess „Anfrage → Angebot → Nachfassen" durch. Alle Inhalte
+  lässt du Copilot erzeugen – du brauchst keine echten Kundendaten.
 
-  1. Ordne den passenden **Wirkhebel** zu: Automatisieren, Assistieren oder Analysieren – und begründe.
-  2. Definiere **eine messbare Kennzahl (KPI)**, an der du den Erfolg eines KI-Einsatzes ablesen würdest.
-  3. Beschreibe, welche Schritte **Copilot** übernehmen könnte und welche zwingend beim Menschen bleiben.
-  4. Nenne **ein Risiko**, das du dabei leicht übersiehst.
+  **Schritt 1:**
+  ```text
+  Erfinde eine kurze Kundenanfrage für 200 bedruckte Notizbücher mit Wunschtermin in 3 Wochen.
+  ```
+  **Schritt 2:**
+  ```text
+  Entwirf ein freundliches Angebotsschreiben dazu (Sie-Form, max. 150 Wörter). Setze den
+  Endpreis als Platzhalter [PREIS], den ich selbst einsetze.
+  ```
+  **Schritt 3:**
+  ```text
+  Formuliere eine höfliche Erinnerung, falls der Kunde nach einer Woche nicht reagiert hat.
+  ```
+
+  Notiere anschließend: Welche der drei Schritte könnte Copilot im Alltag übernehmen – und wo
+  muss zwingend ein **Mensch** entscheiden? Warum ist [PREIS] ein Platzhalter?
 tip: |
-  Copilot ist meist ein Assistenz-Werkzeug. Ein guter KPI ist konkret und zählbar (z. B. „Bearbeitungszeit je Vorgang").
+  Copilot übernimmt die Formulierungsarbeit. Preise, Konditionen und die finale Freigabe bleiben beim Menschen.
 solution: |
-  Bewertungskriterien:
-
-  - Der Wirkhebel passt zum Prozess und ist begründet (Copilot = i. d. R. Assistieren).
-  - Der KPI ist messbar und zählbar, nicht vage (z. B. Durchlaufzeit, Fehlerquote, Menge/Tag).
-  - Die Mensch/KI-Aufteilung lässt Entscheidungen/Freigaben beim Menschen.
-  - Das Risiko ist realistisch (z. B. ungeprüfte Übernahme, Datenschutz, falscher Ton).
+  Erwartetes Ergebnis: Drei brauchbare Entwürfe. Einordnung: Copilot = Formulieren (Assistieren); Mensch =
+  Preisentscheidung, Machbarkeit, Freigabe. Der Platzhalter [PREIS] verhindert, dass Copilot eine Zahl „erfindet".

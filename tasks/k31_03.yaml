@@ -1,19 +1,25 @@
-title: Bias-Szenario analysieren
+title: Ethik-Check für einen Use Case (Copilot)
 difficulty: 3
 question: |
-  Ein Unternehmen trainiert eine Bewerbungs-KI mit den Einstellungsdaten der letzten 10 Jahre.
-  Nach kurzer Zeit bevorzugt die KI systematisch männliche Bewerber.
+  Führe **in Copilot** einen strukturierten Ethik-Check für ein selbst erzeugtes Szenario durch.
 
-  1. Erkläre die **Ursache** dieses Bias – wo liegt sie genau?
-  2. Warum ist die Aussage „die KI ist doch objektiv" hier **falsch**?
-  3. Nenne **drei Gegenmaßnahmen** (technisch und organisatorisch).
-  4. Welches ethische Prinzip und welche rechtliche Einordnung (EU AI Act) sind hier betroffen?
+  **Schritt 1:**
+  ```text
+  Erfinde einen KI-Use-Case mit ethischer Sprengkraft (z. B. Verhaltensanalyse von Kunden).
+  ```
+  **Schritt 2:**
+  ```text
+  Prüfe ihn entlang von: Fairness, Transparenz, Selbstbestimmung, mögliche Schäden, Verantwortung.
+  Bewerte jeden Punkt (unkritisch/bedenklich/kritisch) mit Begründung.
+  ```
+  **Schritt 3:**
+  ```text
+  Formuliere Auflagen, unter denen der Einsatz vertretbar wäre – oder begründe, warum man es lassen sollte.
+  ```
+
+  Bewerte selbst: Würdest du diesen Use Case verantworten? Warum (nicht)?
 tip: |
-  KI ist ein Spiegel der Daten. Personalauswahl ist im EU AI Act ein Hochrisiko-Bereich.
+  „Technisch möglich" heißt nicht „ethisch vertretbar". Ein guter Check endet manchmal mit „nicht umsetzen".
 solution: |
-  Bewertungskriterien:
-
-  - Die Ursache ist an den **verzerrten Trainingsdaten** (Muster der Vergangenheit) festgemacht.
-  - Es ist erkannt, dass „objektiv" ein Trugschluss ist – die KI reproduziert menschliche Verzerrung.
-  - Drei sinnvolle Gegenmaßnahmen (Daten prüfen/ausgleichen, Fairness-Tests, Human-in-the-Loop, Merkmale ausschließen).
-  - Fairness/Nicht-Diskriminierung und Hochrisiko-Einstufung (EU AI Act) sind benannt.
+  Erwartetes Ergebnis: strukturierte Bewertung entlang der Kriterien und eine klare, begründete Haltung.
+  Lernziel: Ethik als bewusste Entscheidung statt Bauchgefühl.

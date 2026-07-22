@@ -1,17 +1,21 @@
-title: Feedback-Analyse mit Copilot
+title: Informationen extrahieren mit Copilot
 difficulty: 2
 question: |
-  Sammle 5–8 (fiktive) Kundenrückmeldungen und lass **Copilot** sie analysieren:
+  Arbeite **in Copilot** – lass den Text zuerst erzeugen, dann extrahiere Daten daraus.
 
+  **Schritt 1:**
   ```text
-  Analysiere diese Rückmeldungen: Stimmung je Eintrag (positiv/neutral/negativ),
-  Hauptthema und ein Verbesserungsvorschlag. Fasse am Ende die 3 häufigsten Themen
-  zusammen. [Rückmeldungen einfügen]
+  Erfinde einen kurzen, fiktiven Mietvertrag als Fließtext (ca. 120 Wörter) mit Vertragspartnern,
+  Laufzeit, Kündigungsfrist und monatlicher Miete.
   ```
-
-  Prüfe: Sind die Stimmungseinschätzungen nachvollziehbar? Wo würdest du widersprechen?
+  **Schritt 2:**
+  ```text
+  Extrahiere aus diesem Text folgende Angaben als Tabelle: Vertragspartner, Laufzeit,
+  Kündigungsfrist, monatliche Miete. Markiere Angaben, die im Text nicht eindeutig stehen.
+  ```
+  **Schritt 3 – prüfen:** Vergleiche die Tabelle mit dem Text. Stimmt alles? Wo hätte Copilot etwas erfinden können?
 tip: |
-  Ironische oder gemischte Aussagen sind für die Sentiment-Analyse besonders schwierig.
+  Bei Extraktion aus Verträgen/Zahlen immer gegen das Original prüfen – das Modell kann Werte plausibel, aber falsch wiedergeben.
 solution: |
-  Bewertungskriterien: plausible Stimmungs- und Themenerkennung; sinnvolle Zusammenfassung der Top-Themen;
-  kritische Prüfung schwieriger Fälle (Ironie, gemischte Aussagen).
+  Erwartetes Ergebnis: korrekte Extraktion in Tabellenform mit markierten Unsicherheiten. Lernziel: Extraktion
+  nutzen, aber immer verifizieren.

@@ -1,14 +1,17 @@
-title: Automatisierungsgrad bestimmen
+title: Einen Prozess mit Copilot zerlegen und Engpass finden
 difficulty: 1
 question: |
-  Welcher Automatisierungsgrad liegt vor (Assistenz, Teil-, Vollautomatisierung)?
-
-  1. Copilot schlägt eine Antwort vor, der Mitarbeiter entscheidet.
-  2. Rechnungen werden automatisch ausgelesen, ein Mensch gibt sie frei.
-  3. Standardbestellungen werden komplett ohne menschlichen Eingriff bearbeitet.
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde einen typischen Büroprozess (z. B. Urlaubsantrag) und zerlege ihn in 6–8 Einzelschritte.
+  Markiere den Schritt, der wahrscheinlich am längsten dauert (den Engpass).
+  ```
+  Dann:
+  ```text
+  Warum ist gerade dieser Schritt der Engpass, und was würde passieren, wenn man nur ihn beschleunigt?
+  ```
 tip: |
-  Wer trifft die Entscheidung – Mensch oder System?
+  Ein Prozess ist nur so schnell wie sein Engpass – dort lohnt Optimierung am meisten.
 solution: |
-  1. Assistenz
-  2. Teilautomatisierung
-  3. Vollautomatisierung
+  Erwartetes Ergebnis: sauber zerlegter Prozess mit plausibel begründetem Engpass. Lernziel: den entscheidenden
+  Engpass erkennen, statt überall gleichzeitig zu optimieren.

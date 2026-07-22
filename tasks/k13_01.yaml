@@ -1,14 +1,18 @@
-title: NLP-Aufgabe erkennen
+title: NLP-Aufgaben live in Copilot ausprobieren
 difficulty: 1
 question: |
-  Welche NLP-Aufgabe liegt vor?
+  Erlebe **in Copilot** verschiedene NLP-Aufgaben – Copilot erzeugt das Material selbst.
 
-  1. Aus einem Vertrag werden Vertragspartner und Laufzeit herausgezogen.
-  2. Eine Produktbewertung wird als „positiv" eingestuft.
-  3. Ein englischer Text wird ins Deutsche übertragen.
+  **Schritt 1:**
+  ```text
+  Erfinde 5 kurze Kundenbewertungen für ein Restaurant, gemischt positiv und negativ.
+  ```
+  **Schritt 2:**
+  ```text
+  Klassifiziere jede Bewertung als positiv, neutral oder negativ und begründe in einem Halbsatz.
+  ```
 tip: |
-  Extraktion, Sentiment-Analyse oder Übersetzung?
+  Stimmungsanalyse (Sentiment) ist eine klassische NLP-Aufgabe. Bei Ironie liegt die KI manchmal daneben.
 solution: |
-  1. Extraktion
-  2. Sentiment-Analyse
-  3. Übersetzung
+  Erwartetes Ergebnis: 5 Bewertungen und ihre korrekte Einordnung. Lernziel: eine typische NLP-Aufgabe
+  (Klassifikation) praktisch erleben.

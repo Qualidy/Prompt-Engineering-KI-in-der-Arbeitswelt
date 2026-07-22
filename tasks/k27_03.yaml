@@ -1,18 +1,25 @@
-title: Regelkreis mit KI und Sicherheits-Leitplanken
+title: Autonome Prozessregelung kritisch bewerten (Copilot)
 difficulty: 3
 question: |
-  Wähle einen kontinuierlichen Prozess (z. B. Raumklima, Dosierung, Kühlung).
+  Untersuche **in Copilot** ein selbst erzeugtes Szenario zur autonomen Regelung.
 
-  1. Skizziere den **Regelkreis**: Sollwert, Regler, Stellgröße, Prozess, Istwert-Rückmeldung.
-  2. Beschreibe, wie eine **KI-gestützte, vorausschauende** Regelung ihn verbessert (nenne 2 Vorteile).
-  3. Definiere **zwei Sicherheits-Leitplanken**, die unabhängig von der KI greifen müssen.
-  4. Warum ist bei sicherheitskritischer Regelung **Erklärbarkeit** besonders wichtig?
+  **Schritt 1:**
+  ```text
+  Erfinde einen Prozess, den eine KI weitgehend selbstständig regeln soll, und beschreibe die Ziele.
+  ```
+  **Schritt 2:**
+  ```text
+  Beschreibe Nutzen und die 3 größten Risiken der Autonomie (z. B. Fehlregelung, fehlende
+  Nachvollziehbarkeit, Sensorausfall).
+  ```
+  **Schritt 3 – Absicherung:**
+  ```text
+  Entwirf ein Sicherheitskonzept: Grenzen, menschliche Überwachung, Eingriffsmöglichkeit, Protokollierung.
+  ```
+
+  Bewerte selbst: Wie viel Autonomie ist hier verantwortbar?
 tip: |
-  Rückkopplung ist der Kern der Regelung. Grenzwerte/Notabschaltungen müssen unabhängig von der KI abgesichert sein.
+  Je autonomer die Regelung, desto wichtiger sind Überwachung, Nachvollziehbarkeit und ein sicherer Rückfallmodus.
 solution: |
-  Bewertungskriterien:
-
-  - Der Regelkreis enthält alle Elemente inkl. Rückkopplung.
-  - Die KI-Vorteile sind sinnvoll (adaptiv, vorausschauend, energieeffizienter).
-  - Zwei unabhängige Leitplanken sind genannt (Grenzwerte, Notabschaltung, menschlicher Eingriff).
-  - Erklärbarkeit ist mit Nachvollziehbarkeit/Sicherheit verknüpft.
+  Erwartetes Ergebnis: Nutzen/Risiken plus konkretes Sicherheitskonzept mit menschlicher Eingriffsmöglichkeit.
+  Lernziel: Autonomiegrad verantwortungsvoll festlegen.

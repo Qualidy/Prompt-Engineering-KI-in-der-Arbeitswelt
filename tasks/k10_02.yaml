@@ -1,17 +1,23 @@
-title: Bereinigungsplan mit Copilot
+title: Bereinigungsplan in Copilot entwickeln
 difficulty: 2
 question: |
-  Nutze **Copilot** (idealerweise in Excel) für eine kleine Beispieltabelle mit absichtlichen Fehlern
-  (fehlende Werte, Dubletten, uneinheitliche Schreibweisen):
+  Arbeite **in Copilot** weiter mit selbst erzeugten Daten.
 
+  **Schritt 1:**
   ```text
-  Erkenne in dieser Tabelle Qualitätsprobleme und schlage für jedes Problem einen
-  konkreten Bereinigungsschritt vor. Weise auf Risiken der jeweiligen Methode hin.
+  Erstelle eine unsaubere Beispiel-Tabelle mit Verkaufsdaten (fehlende Umsätze, „DE" vs.
+  „Deutschland", Datum in zwei Formaten).
   ```
-
-  Entscheide begründet, wie du mit den fehlenden Werten umgehst (löschen vs. ersetzen).
+  **Schritt 2:**
+  ```text
+  Schlage für jedes Problem einen konkreten Bereinigungsschritt vor und nenne die sinnvolle Reihenfolge.
+  ```
+  **Schritt 3 – nachschärfen:**
+  ```text
+  Beim fehlenden Umsatz: Warum kann „einfach 0 einsetzen" gefährlich sein? Was wäre besser?
+  ```
 tip: |
-  Bei wenigen fehlenden Werten in großen Datensätzen ist Löschen oft unkritisch – bei vielen kann Ersetzen sinnvoller sein.
+  Erst verstehen, dann bereinigen: „fehlt" kann „0 €" oder „nicht erfasst" bedeuten – ein großer Unterschied.
 solution: |
-  Bewertungskriterien: korrekte Problemerkennung; passende Bereinigungsschritte; begründete Entscheidung
-  zu fehlenden Werten inkl. Risikobewusstsein.
+  Erwartetes Ergebnis: sinnvoller Bereinigungsplan; Erkenntnis, dass blindes Auffüllen mit 0 Auswertungen verfälschen kann.
+  Lernziel: Datenbereinigung mit Verständnis statt Automatik.

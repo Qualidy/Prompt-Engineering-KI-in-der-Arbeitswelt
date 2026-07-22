@@ -1,12 +1,17 @@
-title: Infoblatt erstellen und bewerten
+title: Kreatives Briefing iterativ verfeinern
 difficulty: 2
 question: |
-  Erstelle mit **Copilot** den Entwurf eines einseitigen Infoblatts für ein Produkt/eine Leistung
-  deiner Wahl. Nutze einen Prompt mit Rolle, Zielgruppe, Struktur und Ton.
-
-  Bewerte anschließend: Was ist gut, was musst du fachlich korrigieren, was ergänzen?
+  Arbeite **in Copilot** an einem fiktiven Kampagnentext.
+  ```text
+  Erfinde ein neues Produkt und schreibe einen Werbeslogan dafür.
+  ```
+  Verfeinere dann gezielt in Varianten:
+  ```text
+  Gib mir 3 Varianten des Slogans: a) seriös, b) humorvoll, c) emotional.
+  Erkläre kurz, für welche Zielgruppe sich welche Variante eignet.
+  ```
 tip: |
-  Gib die Zielgruppe konkret an – das steuert Sprache und Detailtiefe stark.
+  Lass dir bewusst Varianten für unterschiedliche Zielgruppen/Tonlagen geben – Vergleichen schärft die Wahl.
 solution: |
-  Bewertungskriterien: strukturierter, zielgruppengerechter Entwurf; erkannte Korrektur-/Ergänzungsbedarfe;
-  Bewusstsein, dass Fakten (Preise, Zahlen) geprüft werden müssen.
+  Erwartetes Ergebnis: 3 unterschiedliche Slogan-Varianten mit Zielgruppen-Einordnung. Lernziel: kreative
+  Vielfalt erzeugen und zielgruppengerecht auswählen.

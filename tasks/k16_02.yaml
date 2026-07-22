@@ -1,17 +1,19 @@
-title: Pretraining vs. Fine-Tuning
+title: Pre-Training vs. Feintuning verstehen und anwenden
 difficulty: 2
 question: |
-  Lass dir von **Copilot** den Unterschied erklären und auf ein Beispiel anwenden:
-
+  Arbeite **in Copilot**.
   ```text
-  Erkläre den Unterschied zwischen Pretraining und Fine-Tuning eines
-  Sprachmodells. Nutze die Analogie einer Ausbildung: Was entspricht der
-  Allgemeinbildung, was der Spezialisierung?
+  Erkläre mit einer Analogie den Unterschied zwischen Pre-Training und Feintuning bei GPT-Modellen.
   ```
-
-  Prüfe die Analogie und ergänze ein zweites Beispiel aus einem anderen Lebensbereich.
+  Dann simuliere „Feintuning per Beispiel" (Few-Shot):
+  ```text
+  Ich zeige dir unseren Firmenstil für Absagen:
+  Beispiel 1: "Vielen Dank für Ihr Interesse. Leider ..."
+  Beispiel 2: "Wir freuen uns über Ihre Anfrage. Aktuell ..."
+  Schreibe im gleichen Stil eine Absage für eine Terminanfrage.
+  ```
 tip: |
-  Pretraining = breite Grundlage, Fine-Tuning = gezielter Feinschliff.
+  Pre-Training = breites Grundwissen (einmalig, teuer). Feintuning = Spezialisierung. Few-Shot imitiert Feintuning „on the fly".
 solution: |
-  Bewertungskriterien: korrekte Abgrenzung (breites Grundwissen vs. gezielte Spezialisierung);
-  tragfähige Analogie; sinnvolles zweites Beispiel.
+  Erwartetes Ergebnis: treffende Analogie und eine stilgerechte Absage nach den Beispielen. Lernziel: verstehen,
+  wie man mit Beispielen den Stil steuert, ohne echtes Feintuning.

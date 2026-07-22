@@ -81,12 +81,12 @@ Konkrete Leitplanken für den Alltag:
 - **Keine heiklen Entscheidungen delegieren:** über Menschen (Personal, Bewertung) entscheiden Menschen.
 - **Bias aktiv entgegenwirken:** ausgewogene Perspektiven anfordern.
 
-**Copilot-Prompt zum Ausprobieren:**
+**Copilot-Prompt zum Ausprobieren (selbsttragend – Copilot erzeugt den Text zuerst):**
 
 ```text
-Ich habe folgenden Text über eine Berufsgruppe verfasst: [Text]. Prüfe ihn auf
-mögliche Stereotype oder einseitige Formulierungen und schlage neutralere,
-ausgewogene Alternativen vor.
+Schreibe einen kurzen Text über eine Berufsgruppe, der unbewusst einige Stereotype
+enthält. Prüfe ihn danach auf mögliche Stereotype oder einseitige Formulierungen und
+schlage neutralere, ausgewogene Alternativen vor.
 ```
 
 !!! tip "Ethik ist eine Haltung, kein Häkchen"

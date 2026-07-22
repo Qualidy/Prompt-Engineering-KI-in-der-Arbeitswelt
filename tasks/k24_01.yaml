@@ -1,14 +1,13 @@
-title: Einsatzfeld erkennen
+title: KI-Einsatzfelder in der Produktion finden
 difficulty: 1
 question: |
-  Welchem Einsatzfeld in der Produktion ist die Anwendung zuzuordnen?
-
-  1. Eine Kamera erkennt fehlerhafte Schweißnähte.
-  2. Ein System sagt voraus, wann ein Motor gewartet werden muss.
-  3. Die benötigte Produktionsmenge für nächsten Monat wird prognostiziert.
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde eine kleine Fertigung (was wird produziert?) und nenne 5 Stellen im Produktionsablauf,
+  an denen KI helfen könnte. Ordne jeder einen Nutzen zu (Qualität, Tempo, Kosten, Sicherheit).
+  ```
 tip: |
-  Qualität, Instandhaltung, Planung?
+  KI in der Produktion heißt oft: Sensordaten auswerten, Qualität prüfen, Ausfälle vorhersagen, Abläufe planen.
 solution: |
-  1. Qualitätssicherung
-  2. Instandhaltung (Predictive Maintenance)
-  3. Produktionsplanung
+  Erwartetes Ergebnis: 5 plausible Einsatzfelder mit Nutzenzuordnung. Lernziel: den Produktionsablauf systematisch
+  nach KI-Potenzialen absuchen.

@@ -1,17 +1,17 @@
-title: Rechtliche Risiken sammeln
+title: KI-Systeme in Risikoklassen einordnen
 difficulty: 2
 question: |
-  Wähle eine geplante KI-Anwendung und lass **Copilot** rechtliche Risiken auflisten:
-
+  Arbeite **in Copilot**.
   ```text
-  Nenne die wichtigsten rechtlichen Aspekte, die ich beim Einsatz von "[Anwendung]"
-  prüfen sollte (Datenschutz, Urheberrecht, Haftung, EU AI Act). Formuliere zu jedem
-  Punkt eine Prüffrage.
+  Erfinde 5 unterschiedliche KI-Anwendungen (vom Spamfilter bis zur Bewerberauswahl).
   ```
-
-  Markiere, welche Punkte du **unbedingt** mit einer Rechtsabteilung/Fachperson klären würdest.
+  Dann:
+  ```text
+  Ordne jede einer EU-AI-Act-Risikoklasse zu und begründe. Nenne bei den „hochriskanten" je eine
+  Pflicht, die daraus folgt.
+  ```
 tip: |
-  Bei Hochrisiko-Anwendungen und personenbezogenen Daten ist Fachrat besonders wichtig.
+  Systeme, die über Menschen entscheiden (Job, Kredit, Bildung), sind meist „hochriskant" und streng reguliert.
 solution: |
-  Bewertungskriterien: relevante Rechtsbereiche abgedeckt; sinnvolle Prüffragen; Bewusstsein, dass KI-Auskünfte
-  zu Recht geprüft werden müssen und Fachrat nötig ist.
+  Erwartetes Ergebnis: begründete Einordnung und Pflichten für Hochrisiko-Systeme. Lernziel: Anwendungen rechtlich
+  einschätzen lernen.

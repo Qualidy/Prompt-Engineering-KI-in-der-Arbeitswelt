@@ -1,17 +1,26 @@
-title: Transparenz einfordern und kritisch bewerten
+title: Erklärbarkeits-Anforderungen festlegen (Copilot)
 difficulty: 3
 question: |
-  Stelle Copilot eine fachliche Frage aus deinem Bereich und fordere aktiv Transparenz:
-  Bitte um **Quellen, Annahmen und eine Selbsteinschätzung der Sicherheit**.
+  Definiere **in Copilot** Erklärbarkeits-Anforderungen für ein selbst erzeugtes Szenario.
 
-  1. Notiere, wie die Antwort mit und ohne diese Zusatzanforderung unterscheidet.
-  2. Bewerte kritisch: Ist die gelieferte **Begründung** ein Beweis für Richtigkeit? Warum (nicht)?
-  3. Erkläre, warum das **Blackbox-Problem** bedeutet, dass Transparenz die Prüfung **erleichtert**, aber nicht **ersetzt**.
+  **Schritt 1:**
+  ```text
+  Erfinde einen risikoreichen KI-Einsatz, bei dem Menschen die Entscheidungen verstehen müssen
+  (z. B. medizinische Vorsortierung).
+  ```
+  **Schritt 2:**
+  ```text
+  Wer muss hier was verstehen? Unterscheide die Bedürfnisse von Betroffenen, Fachleuten und Prüfern
+  und leite je eine Erklärbarkeits-Anforderung ab.
+  ```
+  **Schritt 3:**
+  ```text
+  Was passiert im Konflikt „hohe Genauigkeit (Black Box) vs. gute Erklärbarkeit"? Wie entscheidest du hier?
+  ```
+
+  Bewerte selbst: Wann ist ein etwas schlechteres, aber erklärbares Modell die bessere Wahl?
 tip: |
-  Ein LLM rekonstruiert seine „Begründung" im Nachhinein – sie muss nicht der echte innere Weg sein. Plausibel ≠ korrekt.
+  Verschiedene Zielgruppen brauchen verschiedene Erklärungen. Und manchmal ist Nachvollziehbarkeit wichtiger als das letzte Prozent Genauigkeit.
 solution: |
-  Bewertungskriterien:
-
-  - Der Unterschied durch die Transparenz-Anforderung ist beschrieben.
-  - Es ist erkannt, dass eine flüssige Begründung kein Korrektheitsbeweis ist.
-  - Das Blackbox-Problem ist verstanden: Transparenz hilft der Prüfung, ersetzt aber die eigene Verifikation nicht.
+  Erwartetes Ergebnis: zielgruppengerechte Erklärbarkeits-Anforderungen und eine begründete Abwägung
+  Genauigkeit vs. Erklärbarkeit. Lernziel: Erklärbarkeit als Anforderung bewusst gestalten.

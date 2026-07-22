@@ -1,17 +1,17 @@
-title: Smart-Factory-Szenario mit Copilot
+title: Konzept für KI-gestützte Produktionsplanung
 difficulty: 2
 question: |
-  Lass dir von **Copilot** ein Smart-Factory-Szenario ausarbeiten:
-
+  Arbeite **in Copilot** mit einem selbst erzeugten Szenario.
   ```text
-  Beschreibe für einen mittelständischen Fertigungsbetrieb ein realistisches
-  Smart-Factory-Szenario. Welche Sensoren/Daten braucht es, welche 3 KI-Anwendungen
-  lohnen sich zuerst und welche Voraussetzungen müssen erfüllt sein?
+  Erfinde ein Produktionsplanungs-Problem (z. B. schwankende Nachfrage, Maschinenauslastung).
   ```
-
-  Bewerte: Welche Voraussetzung ist erfahrungsgemäß am schwersten zu erfüllen?
+  Dann:
+  ```text
+  Entwirf ein Konzept, wie KI hier unterstützen könnte: Welche Daten braucht es, was sagt die KI
+  voraus, wer entscheidet am Ende?
+  ```
 tip: |
-  Oft ist die durchgängige, verlässliche Datenerfassung die größte Hürde.
+  KI liefert Prognosen und Vorschläge – die Planungsentscheidung und Verantwortung bleiben beim Menschen.
 solution: |
-  Bewertungskriterien: realistisches Szenario; sinnvolle Priorisierung der KI-Anwendungen; korrekte Voraussetzungen
-  (Vernetzung, Datenqualität, Integration); begründete Einschätzung der größten Hürde.
+  Erwartetes Ergebnis: Konzept mit Datenbedarf, KI-Aufgabe und klarer menschlicher Entscheidungsrolle. Lernziel:
+  KI als Entscheidungsunterstützung in der Produktion einordnen.

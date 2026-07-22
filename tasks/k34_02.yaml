@@ -1,16 +1,18 @@
-title: Begründung von Copilot einfordern
+title: Copilot seine eigene Antwort erklären lassen
 difficulty: 2
 question: |
-  Stelle **Copilot** eine Bewertungs-/Empfehlungsaufgabe und fordere eine nachvollziehbare Begründung:
-
+  Teste **in Copilot** Erklärbarkeit direkt.
   ```text
-  Vergleiche zwei Optionen [A/B] und empfiehl eine. Begründe Schritt für Schritt,
-  nenne deine Annahmen und die drei wichtigsten Entscheidungskriterien mit Gewichtung.
+  Bewerte diese fiktive Situation: Soll ein Team eine 4-Tage-Woche einführen? Gib eine klare Empfehlung.
   ```
-
-  Prüfe: Ist die Begründung schlüssig? Sind versteckte Annahmen dabei, die du hinterfragen würdest?
+  Dann verlange die Begründung:
+  ```text
+  Erkläre Schritt für Schritt, wie du zu dieser Empfehlung gekommen bist, welche Annahmen du
+  getroffen hast und was dein größter Unsicherheitsfaktor ist.
+  ```
+  Beurteile: Wie nachvollziehbar ist die Erklärung wirklich – oder klingt sie nur plausibel?
 tip: |
-  Achte auf unausgesprochene Annahmen – dort verstecken sich oft Fehler.
+  Vorsicht: Ein LLM kann eine überzeugende Erklärung „nachliefern", die nicht unbedingt dem echten Rechenweg entspricht.
 solution: |
-  Bewertungskriterien: nachvollziehbare, kriterienbasierte Begründung; erkannte Annahmen; kritische Prüfung,
-  ob die Begründung wirklich trägt (nicht nur plausibel klingt).
+  Erwartetes Ergebnis: eine Empfehlung mit nachgereichter Begründung und eine kritische Einschätzung ihrer
+  Verlässlichkeit. Lernziel: „plausibel klingend" ist nicht dasselbe wie „echte Erklärbarkeit".

@@ -1,14 +1,18 @@
-title: Trends erkennen
+title: Einen KI-Trend von Copilot erklären lassen
 difficulty: 1
 question: |
-  Ordne die Beschreibung dem richtigen Trend zu (generative KI, KI-Agent, Multimodalität):
+  Mach das **live in Copilot**. Gib ein:
+  ```text
+  Erkläre mir den Trend „KI-Agenten" in einfachen Worten (max. 5 Sätze), nenne ein konkretes
+  Beispiel aus einem Büroalltag und einen möglichen Nachteil.
+  ```
 
-  1. Ein System beschreibt den Inhalt eines hochgeladenen Fotos.
-  2. Ein System erstellt selbstständig einen Plan und führt mehrere Schritte aus, um ein Ziel zu erreichen.
-  3. Ein System schreibt auf Zuruf einen Werbetext.
+  Frage dann nach:
+  ```text
+  Worin unterscheidet sich ein KI-Agent von einem einfachen Chatbot? Erkläre an einem Beispiel.
+  ```
 tip: |
-  Achte darauf: eine Aufgabe vs. mehrere Schritte vs. mehrere Datenarten.
+  Ein Agent verfolgt ein Ziel über mehrere Schritte, ein Chatbot beantwortet eine einzelne Frage.
 solution: |
-  1. Multimodalität (Bild + Text)
-  2. KI-Agent (mehrschrittig, zielgerichtet)
-  3. Generative KI (Inhalt erzeugen)
+  Erwartetes Ergebnis: verständliche Erklärung mit Beispiel und Nachteil; der Unterschied Agent/Chatbot
+  (mehrstufiges, zielgerichtetes Handeln vs. Einzelantwort) wird klar.

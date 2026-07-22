@@ -1,20 +1,22 @@
-title: System-Prompt mit Eskalationslogik entwerfen
+title: FAQ-Bot spezifizieren und Härtetest in Copilot
 difficulty: 3
 question: |
-  Entwirf einen vollständigen **System-Prompt** für einen Kundenservice-Chatbot deiner Wahl.
-  Er muss enthalten:
+  Entwirf **in Copilot** einen FAQ-Bot und teste ihn unter erschwerten Bedingungen.
 
-  1. **Rolle und Tonfall**
-  2. **Leitplanken** (was er niemals tun/zusagen darf)
-  3. eine klare **Eskalationsregel** (wann an einen Menschen übergeben wird)
+  **Schritt 1 – Wissen erzeugen:**
+  ```text
+  Erfinde 6 FAQ-Einträge (Frage + Antwort) für ein Fitnessstudio.
+  ```
+  **Schritt 2 – Bot definieren:**
+  ```text
+  Verhalte dich jetzt als FAQ-Bot, der NUR auf Basis dieser 6 Einträge antwortet. Bei allem anderen
+  sagst du, dass du das nicht weißt, und verweist ans Team.
+  ```
+  **Schritt 3 – Härtetest:** Stelle a) eine abgedeckte Frage, b) eine ähnlich klingende, aber nicht abgedeckte Frage, c) eine völlig fremde Frage. Bleibt der Bot ehrlich?
 
-  Teste ihn anschließend gedanklich an **drei Grenzfällen** (z. B. verärgerter Kunde, rechtliche Frage,
-  unbekannte Auskunft) und beschreibe, wie der Bot reagieren sollte.
+  Bewerte selbst: Wo neigt der Bot dazu, Antworten zu „erfinden", statt „weiß ich nicht" zu sagen?
 tip: |
-  Ein guter Bot erledigt Standardfälle und übergibt sauber an Menschen, sobald es kritisch, emotional oder rechtlich wird.
+  Die größte Gefahr von FAQ-Bots: Sie halluzinieren Antworten, statt eine Wissenslücke zuzugeben.
 solution: |
-  Bewertungskriterien:
-
-  - Der System-Prompt enthält Rolle, Ton, konkrete Leitplanken und eine Eskalationsregel.
-  - Die drei Grenzfälle führen jeweils zu sinnvollem Verhalten (kein Zusagen von Preisen/Fristen, Weiterleitung bei Eskalation, ehrliches „weiß ich nicht").
-  - Es wird erkannt, dass verbindliche/rechtliche/emotionale Fälle zum Menschen gehören.
+  Erwartetes Ergebnis: Bot antwortet korrekt bei abgedeckten Fragen und gibt Grenzen ehrlich zu. Lernziel:
+  Bots auf „nur belegtes Wissen" einschränken und gegen Halluzination testen.

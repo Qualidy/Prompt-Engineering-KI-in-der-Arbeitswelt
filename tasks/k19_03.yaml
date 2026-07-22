@@ -1,17 +1,26 @@
-title: Bild-Prompt plus Rechte-Checkliste
+title: Content-Paket erstellen und Rechte prüfen (Copilot)
 difficulty: 3
 question: |
-  Du brauchst ein Titelbild für eine kommerzielle Broschüre deines Unternehmens.
+  Erstelle **in Copilot** ein kleines Medienpaket für eine fiktive Kampagne.
 
-  1. Schreibe einen **detaillierten Bild-Prompt** (Motiv, Stil, Stimmung, Perspektive, Format).
-  2. Erstelle eine **Checkliste mit vier rechtlichen Punkten**, die du vor der kommerziellen
-     Nutzung eines KI-generierten Bildes prüfst.
-  3. Wo müsstest du das Bild ggf. als **KI-generiert kennzeichnen**?
+  **Schritt 1:**
+  ```text
+  Erfinde ein Produkt und eine Zielgruppe für eine kleine Marketingkampagne.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle: 1 Bild-Prompt, 1 Slogan, 1 kurzen Social-Post, 1 E-Mail-Betreff. Alles konsistent im
+  gleichen Stil.
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Welche rechtlichen/ethischen Punkte muss ich bei KI-generierten Medien beachten (Urheberrecht,
+  Kennzeichnung, Persönlichkeitsrechte)? Nenne 3.
+  ```
+
+  Bewerte selbst: Ist das Paket wirklich „aus einem Guss"? Was würdest du vor Veröffentlichung prüfen?
 tip: |
-  Je konkreter Motiv/Stil/Aufbau, desto brauchbarer das Bild. Bei kommerzieller Nutzung sind Urheberrecht, Persönlichkeitsrechte und Kennzeichnung relevant.
+  KI-generierte Medien werfen Fragen zu Urheberrecht, Kennzeichnungspflicht und Persönlichkeitsrechten auf – mitdenken!
 solution: |
-  Bewertungskriterien:
-
-  - Der Bild-Prompt ist präzise (mehr als „ein Büro") und beschreibt mindestens Motiv, Stil, Stimmung, Format.
-  - Die Checkliste nennt vier relevante Punkte (z. B. keine geschützten Vorlagen, unklare Rechte an Ausgaben, keine realen Personen ohne Einwilligung, Kennzeichnungspflicht/EU AI Act).
-  - Die Kennzeichnungsfrage ist korrekt eingeordnet.
+  Erwartetes Ergebnis: stimmiges Content-Paket und 3 relevante rechtliche Punkte. Lernziel: Medien-KI produktiv,
+  aber verantwortungsbewusst einsetzen.

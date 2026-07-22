@@ -1,19 +1,25 @@
-title: Copilot vollständig in Bausteine zerlegen
+title: Aufbau eines KI-Produkts analysieren
 difficulty: 3
 question: |
-  Zerlege **Microsoft Copilot** in die Bausteine des „KI-Periodensystems" und ordne jedem zu,
-  wer ihn liefert:
+  Analysiere **in Copilot** ein KI-Produkt, das Copilot selbst erfindet.
 
-  Daten · Algorithmen · Rechenleistung · Modell · Anwendung
+  **Schritt 1:**
+  ```text
+  Erfinde ein KI-Produkt für die Landwirtschaft und beschreibe kurz, was es tut.
+  ```
+  **Schritt 2:**
+  ```text
+  Zerlege es vollständig in die Bausteine (Daten, Algorithmen, Rechenleistung, Modell, Anwendung).
+  Markiere je Baustein: fertig zukaufbar oder selbst zu entwickeln?
+  ```
+  **Schritt 3:**
+  ```text
+  Wo läge bei diesem Produkt der größte Aufwand und der größte Wettbewerbsvorteil?
+  ```
 
-  1. Beschreibe je Baustein in einem Satz, was er bei Copilot konkret leistet.
-  2. Unterscheide dabei **Training** und **Nutzung (Inferenz)**.
-  3. Begründe, **warum** du als Anwender:in nur auf der Anwendungsebene arbeitest – und welchen Vorteil das hat.
+  Bewerte selbst: Ist die „Make vs. Buy"-Einordnung der Bausteine plausibel?
 tip: |
-  Bei Copilot liefert Microsoft/OpenAI die unteren Bausteine fertig. Deine Wissensdaten kommen via RAG/Graph hinzu.
+  Der Wettbewerbsvorteil liegt oft in den eigenen Daten und dem darauf angepassten Modell – nicht in der Standard-Infrastruktur.
 solution: |
-  Bewertungskriterien:
-
-  - Alle fünf Bausteine sind sinnvoll auf Copilot bezogen (z. B. Modell = GPT, Anwendung = Copilot in Word/Excel).
-  - Training (einmalig, aufwendig) und Inferenz (laufend, pro Prompt) werden unterschieden.
-  - Der Vorteil der Anwendungsebene ist benannt: kein eigenes Training/Infrastruktur nötig, Fokus auf Prompting und Prüfung.
+  Erwartetes Ergebnis: vollständige Zerlegung mit Make/Buy-Markierung und Einschätzung zu Aufwand/Vorteil.
+  Lernziel: KI-Produkte durchschauen und einschätzen, wo Eigenentwicklung wirklich lohnt.

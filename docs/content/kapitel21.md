@@ -69,20 +69,22 @@ Process Mining ist meist Aufgabe spezialisierter Tools; Copilot hilft bei der **
 
 ## 21.5 Prozessarbeit mit Copilot
 
+Alle Prompts sind **selbsttragend** – Copilot erzeugt den Beispielprozess zuerst selbst, du brauchst keine echten Unterlagen.
+
 **Prozess dokumentieren:**
 
 ```text
-Ich beschreibe dir unseren Angebotsprozess in Stichworten: [Stichworte].
-Erstelle daraus eine klare, nummerierte Prozessbeschreibung und markiere
-Schritte, die reine Routine sind und sich automatisieren ließen.
+Erfinde einen typischen Angebotsprozess in Stichworten. Erstelle daraus eine klare,
+nummerierte Prozessbeschreibung und markiere Schritte, die reine Routine sind und
+sich automatisieren ließen.
 ```
 
 **Engpässe und Ideen finden:**
 
 ```text
-Hier ist unser Prozess zur Rechnungsbearbeitung: [Beschreibung].
-Analysiere ihn: Wo liegen wahrscheinlich Engpässe und Fehlerquellen?
-Schlage 5 konkrete Verbesserungen vor und ordne sie nach Aufwand/Nutzen.
+Erfinde einen Prozess zur Rechnungsbearbeitung mit typischen Verzögerungen.
+Analysiere ihn: Wo liegen wahrscheinlich Engpässe und Fehlerquellen? Schlage
+5 konkrete Verbesserungen vor und ordne sie nach Aufwand/Nutzen.
 ```
 
 **Prozess visualisieren:**

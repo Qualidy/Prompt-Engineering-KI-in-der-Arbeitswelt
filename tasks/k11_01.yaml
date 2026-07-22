@@ -1,14 +1,17 @@
-title: Die V von Big Data
+title: Die fünf V's mit Copilot greifbar machen
 difficulty: 1
 question: |
-  Welches „V" von Big Data ist gemeint?
+  Mach das **live in Copilot**:
+  ```text
+  Erkläre die fünf V's von Big Data (Volume, Velocity, Variety, Veracity, Value) und gib für
+  jedes ein Beispiel aus einem produzierenden Unternehmen. Als Tabelle.
+  ```
 
-  1. Sensordaten treffen jede Sekunde tausendfach ein.
-  2. Es gibt Texte, Bilder, Tabellen und Videos gemischt.
-  3. Ein Teil der Daten ist fehlerhaft oder unsicher.
+  Frage nach:
+  ```text
+  Welches der fünf V's ist am Ende das wichtigste – und warum?
+  ```
 tip: |
-  Geschwindigkeit, Vielfalt, Verlässlichkeit.
+  Daten allein sind wertlos: Erst die Auswertung schafft „Value".
 solution: |
-  1. Velocity (Geschwindigkeit)
-  2. Variety (Vielfalt)
-  3. Veracity (Verlässlichkeit)
+  Erwartetes Ergebnis: die 5 V's mit passenden Beispielen; Erkenntnis, dass „Value" das entscheidende V ist.

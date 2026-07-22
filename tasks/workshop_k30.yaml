@@ -1,21 +1,29 @@
-title: Citizen-Development-Konzept mit Leitplanken
+title: Low-Code-Lösung samt Governance in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Euer Unternehmen will Citizen Development fördern – aber sicher und geordnet.
+  Entwirf **in Copilot** eine komplette Low-Code-Lösung – selbst erzeugt.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde einen manuellen, nervigen Büroprozess, der sich per Low-Code automatisieren ließe.
+  ```
+  **Schritt 2:**
+  ```text
+  Spezifiziere die Lösung: Auslöser, Eingaben, Wenn-Dann-Logik, Ausgaben/Benachrichtigungen, beteiligte Systeme.
+  ```
+  **Schritt 3:**
+  ```text
+  Beschreibe, wo KI/Copilot in der Lösung mitwirken könnte (z. B. Texte erzeugen, Anfragen einordnen).
+  ```
+  **Schritt 4:**
+  ```text
+  Ergänze 3 Governance-Regeln (Datenschutz, Zuständigkeit/Wartung, Freigabe).
+  ```
+  **Schritt 5 – Prüfung:** Was passiert, wenn die „Erbauerin" das Unternehmen verlässt? Ist die Lösung wartbar?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Wählt einen konkreten Anwendungsfall (z. B. Urlaubsantrag, Materialbestellung, kleine Umfrage-App).
-  2. Beschreibt die geplante **Low-Code-Lösung** (Funktionen, Daten, Nutzer).
-  3. Entwerft mit **Copilot** ein Grobkonzept und verfeinert es.
-  4. Definiert **Governance-Leitplanken**: Wer darf bauen, wo liegen Daten, wer betreut/wartet, welche Freigaben?
-  5. Benennt **Risiken** (Schatten-IT, Datenschutz) und Gegenmaßnahmen.
-
-  **Deliverables:** Lösungskonzept + Governance-Regeln + Risiken/Gegenmaßnahmen.
+  **Deliverable:** Low-Code-Spezifikation + KI-Anteil + Governance-Regeln.
 tip: |
-  Gute Leitplanken ermöglichen Innovation UND verhindern Wildwuchs – beides gehört zusammen.
+  Denke an Nachhaltigkeit: Wer wartet die Lösung, wenn die Person, die sie gebaut hat, weg ist?
 solution: |
-  Bewertungskriterien: sinnvoller Anwendungsfall; brauchbares Lösungskonzept; konkrete Governance-Regeln;
-  realistische Risiken mit Gegenmaßnahmen.
+  Bewertungskriterien: umsetzbare Spezifikation, sinnvoller KI-Anteil, praktikable Governance, Wartbarkeit bedacht.
+  Lernziel: eine echte Low-Code-Lösung durchdenken – inklusive Betrieb und Absicherung.

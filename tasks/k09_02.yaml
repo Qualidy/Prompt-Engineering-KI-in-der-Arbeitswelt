@@ -1,17 +1,22 @@
-title: Datenqualität beurteilen
+title: Datenquellen und Grenzen für einen Use Case (Copilot)
 difficulty: 2
 question: |
-  Lass dir von **Copilot** helfen, einen Datensatz zu beurteilen:
+  Arbeite **in Copilot** mit einem fiktiven Use Case.
 
+  **Schritt 1:**
   ```text
-  Ich habe eine Kundenliste mit den Spalten Name, E-Mail, Kaufdatum, Umsatz.
-  Welche Qualitätsprobleme können auftreten und wie erkenne ich sie? Nenne je
-  Problem eine Prüfmethode.
+  Erfinde einen KI-Use-Case für ein Fitnessstudio (z. B. Kündigerprognose) und beschreibe ihn kurz.
   ```
-
-  Ergänze mindestens ein Qualitätsproblem, das Copilot nicht genannt hat.
+  **Schritt 2:**
+  ```text
+  Welche internen und externen Datenquellen bräuchte man dafür? Nenne je 3 und ordne die Datenart zu.
+  ```
+  **Schritt 3 – nachschärfen:**
+  ```text
+  Welche zwei rechtlichen/ethischen Grenzen (z. B. DSGVO, Zweckbindung) muss ich beachten?
+  ```
 tip: |
-  Denke an fehlende Werte, Dubletten, falsche Formate und veraltete Einträge.
+  „Öffentlich verfügbar" heißt nicht „frei nutzbar". Personenbezogene Daten brauchen eine Rechtsgrundlage.
 solution: |
-  Bewertungskriterien: mehrere realistische Qualitätsprobleme (fehlende Werte, Dubletten, Formatfehler,
-  veraltete Daten) mit passender Prüfmethode; eigene sinnvolle Ergänzung.
+  Erwartetes Ergebnis: passende Datenquellen mit Datenart und zwei konkrete rechtliche Grenzen. Lernziel:
+  Datenbeschaffung immer zusammen mit rechtlichen Grenzen denken.

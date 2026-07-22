@@ -1,14 +1,13 @@
-title: Scheiterngrund und Gegenmaßnahme
+title: KI-Projektphasen mit Copilot planen
 difficulty: 1
 question: |
-  Ordne dem Scheiterngrund die passende Gegenmaßnahme zu:
-
-  Gründe: (a) schlechte Daten, (b) unklares Ziel, (c) fehlende Akzeptanz
-
-  Maßnahmen: 1) messbaren Nutzen definieren, 2) Betroffene früh einbinden, 3) Datenlage vorab prüfen
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde ein kleines KI-Projekt und plane es in Phasen (z. B. Idee, Daten, Prototyp/MVP, Test,
+  Rollout). Nenne je Phase das wichtigste Ziel und ein typisches Risiko.
+  ```
 tip: |
-  Jede Maßnahme passt zu genau einem Grund.
+  KI-Projekte sind selten „einmal bauen, fertig" – sie sind iterativ und datengetrieben.
 solution: |
-  - a) schlechte Daten → 3) Datenlage vorab prüfen
-  - b) unklares Ziel → 1) messbaren Nutzen definieren
-  - c) fehlende Akzeptanz → 2) Betroffene früh einbinden
+  Erwartetes Ergebnis: sinnvolle Phasen mit Zielen und Risiken. Lernziel: den typischen Ablauf eines KI-Projekts
+  verstehen.

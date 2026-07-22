@@ -1,22 +1,26 @@
-title: KI-Geschäftsmodell auf einer Seite
+title: KI-Geschäftsmodell pitchen (Copilot)
 difficulty: 4
 question: |
-  **Szenario:** Ihr entwickelt ein KI-basiertes Geschäftsmodell und stellt es kompakt dar.
+  Entwickle **in Copilot** ein KI-Geschäftsmodell bis zum kurzen Pitch – selbst erzeugt.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Problem eines Kundensegments, das man mit einem KI-Angebot lösen könnte.
+  ```
+  **Schritt 2:**
+  ```text
+  Entwickle das Geschäftsmodell: Nutzenversprechen, Zielkunde, Erlösmodell, Schlüsselressourcen,
+  Wettbewerbsvorteil.
+  ```
+  **Schritt 3:**
+  ```text
+  Formuliere einen 60-Sekunden-Pitch für Investoren.
+  ```
+  **Schritt 4 – kritische Fragen:** Lass Copilot die 3 härtesten Investorenfragen stellen und beantworte sie selbst.
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
-
-  1. Wählt ein Unternehmen/Startup-Idee mit Zugang zu bestimmten Daten oder Fähigkeiten.
-  2. Füllt eine **Geschäftsmodell-Übersicht** aus (Wertangebot, Kundensegment, Kanäle, Einnahmequellen,
-     Schlüsselressourcen, Kosten).
-  3. Ordnet das Modell einem **Muster** zu (as-a-Service, datenbasiert, Produkt+Feature, Plattform).
-  4. Benennt **Machbarkeit** (Daten, Recht, Kosten) und das **größte Risiko**.
-  5. Nutzt **Copilot** für Entwurf und Schärfung; prüft kritisch.
-
-  **Deliverables:** Geschäftsmodell-Übersicht (eine Seite) + Musterzuordnung + Machbarkeits-/Risikobewertung.
+  **Deliverable:** Geschäftsmodell-Übersicht + 60-Sekunden-Pitch + Antworten auf die harten Fragen.
 tip: |
-  Ein Modell ist erst tragfähig, wenn Wertangebot, Zahlungsbereitschaft und Machbarkeit zusammenpassen.
+  Ein guter Pitch beantwortet in Sekunden: Welches Problem, für wen, warum ihr, wie verdient ihr Geld?
 solution: |
-  Bewertungskriterien: vollständige, konsistente Übersicht; korrekte Musterzuordnung; ehrliche Machbarkeits-/
-  Risikobewertung; Copilot als Hilfsmittel, eigene kritische Leistung erkennbar.
+  Bewertungskriterien: klares Nutzenversprechen, tragfähiges Erlösmodell, überzeugender Pitch, souveräner Umgang
+  mit kritischen Fragen. Lernziel: eine KI-Idee geschäftlich denken und verteidigen.

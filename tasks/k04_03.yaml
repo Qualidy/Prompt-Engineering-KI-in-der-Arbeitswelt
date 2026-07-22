@@ -1,19 +1,27 @@
-title: Use-Case-Steckbrief mit Make-or-Buy-Entscheidung
+title: Use-Case-Steckbrief plus Make-or-Buy in Copilot
 difficulty: 3
 question: |
-  Erstelle für eine eigene KI-Idee einen vollständigen **Use-Case-Steckbrief**:
+  Erstelle **in Copilot** einen vollständigen Use-Case-Steckbrief – für ein fiktives Szenario,
+  das Copilot selbst erzeugt.
 
-  1. **Problem** – welches konkrete Problem wird gelöst?
-  2. **Daten** – welche Daten sind nötig, in welcher Qualität, sind sie vorhanden?
-  3. **Nutzen** – welcher messbare Vorteil (Zeit/Geld/Qualität)?
-  4. **Machbarkeit** – technisch und organisatorisch umsetzbar?
-  5. **Make or Buy** – fertiges Werkzeug (Copilot) oder Eigenentwicklung? Begründe die Entscheidung.
+  **Schritt 1:**
+  ```text
+  Erfinde einen konkreten KI-Use-Case für ein Logistikunternehmen und beschreibe ihn in 3 Sätzen.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle dazu einen Steckbrief mit: Problem, benötigte Daten, messbarer Nutzen (mit KPI),
+  Machbarkeit. Gib anschließend eine Make-or-Buy-Empfehlung (fertiges Tool wie Copilot vs.
+  Eigenentwicklung) und begründe sie.
+  ```
+  **Schritt 3 – kritisch prüfen:**
+  ```text
+  Nenne die zwei riskantesten Annahmen in diesem Steckbrief und wie ich sie vor dem Start prüfen würde.
+  ```
+
+  Bewerte selbst: Ist die Make-or-Buy-Empfehlung überzeugend?
 tip: |
-  Standardaufgaben (Text, Zusammenfassungen) sprechen für „Buy" (Copilot). „Make" lohnt nur bei echtem Wettbewerbsvorteil oder Spezialfall.
+  Standardaufgaben (Text, Zusammenfassungen) sprechen für „Buy" (Copilot). „Make" nur bei echtem Wettbewerbsvorteil.
 solution: |
-  Bewertungskriterien:
-
-  - Der Steckbrief startet beim **Problem**, nicht bei der Technik.
-  - Die Datenfrage ist ehrlich beantwortet (nicht „haben wir schon irgendwo").
-  - Der Nutzen ist beziffert oder zumindest messbar formuliert.
-  - Die Make-or-Buy-Entscheidung ist mit Zeit/Kosten/Know-how begründet und passt zum Use Case.
+  Erwartetes Ergebnis: vollständiger Steckbrief mit messbarem KPI und begründeter Make-or-Buy-Entscheidung;
+  die kritische Prüfung deckt Annahmen (z. B. Datenverfügbarkeit) auf. Lernziel: nicht blind übernehmen, sondern hinterfragen.

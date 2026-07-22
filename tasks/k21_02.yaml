@@ -1,17 +1,17 @@
-title: Prozess-Schwachstellen mit Copilot finden
+title: Optimierungsideen und KI-Potenzial mit Copilot
 difficulty: 2
 question: |
-  Beschreibe einen echten Arbeitsprozess in 5–8 Schritten und lass **Copilot** ihn analysieren:
-
+  Arbeite **in Copilot** mit einem selbst erzeugten Prozess.
   ```text
-  Analysiere folgenden Prozess auf Schwachstellen (Wartezeiten, Medienbrüche,
-  Doppelarbeit) und schlage je Schwachstelle eine konkrete Verbesserung vor.
-  Prozess: [Schritte]
+  Erfinde einen Rechnungsfreigabe-Prozess mit 7 Schritten inkl. typischer Verzögerungen.
   ```
-
-  Bewerte die Vorschläge: Welche sind realistisch umsetzbar, welche nicht – und warum?
+  Dann:
+  ```text
+  Schlage 3 Optimierungen vor und markiere, welche davon durch KI/Copilot unterstützt werden könnten
+  und welche organisatorisch (ohne KI) gelöst werden. Begründe.
+  ```
 tip: |
-  Achte besonders auf Medienbrüche (z. B. ausdrucken, dann wieder abtippen).
+  Nicht jedes Problem braucht KI – manchmal hilft eine klarere Zuständigkeit mehr als ein Algorithmus.
 solution: |
-  Bewertungskriterien: sinnvoll beschriebener Prozess; erkannte reale Schwachstellen; realistische Bewertung
-  der Vorschläge; Bewusstsein, dass zuerst vereinfacht und dann automatisiert wird.
+  Erwartetes Ergebnis: 3 Optimierungen mit ehrlicher Trennung „KI-tauglich" vs. „organisatorisch". Lernziel:
+  KI gezielt dort einsetzen, wo sie wirklich hilft.

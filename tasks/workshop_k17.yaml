@@ -1,22 +1,24 @@
-title: Belohnungsdesign für ein RL-Szenario
+title: RLHF nachvollziehen – Copilot bewertet Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ein Lieferdienst will die Tourenplanung mit Reinforcement Learning optimieren.
+  Erlebe **in Copilot** das Prinzip hinter RLHF (Lernen aus menschlichem Feedback) im Kleinen.
 
-  ---
+  **Schritt 1 – zwei Antworten erzeugen:**
+  ```text
+  Beantworte die Frage "Wie kündige ich höflich ein Abo?" zweimal: einmal knapp und unfreundlich,
+  einmal freundlich und hilfreich.
+  ```
+  **Schritt 2 – bewerten (die menschliche Rolle):** Entscheide selbst, welche Antwort besser ist, und begründe mit 3 Kriterien.
+  **Schritt 3 – Copilot als Bewerter:**
+  ```text
+  Bewerte selbst beide Antworten nach den Kriterien Höflichkeit, Nützlichkeit und Klarheit und
+  erkläre, welche ein Mensch bevorzugen würde.
+  ```
+  **Schritt 4 – Transfer:** Erkläre in eigenen Worten, wie dieses „Menschen bewerten Antworten"-Prinzip Copilot im Training geformt hat.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Beschreibt das Szenario als RL-Problem: **Agent, Umgebung, mögliche Aktionen, Ziel**.
-  2. Entwerft eine **Belohnungsfunktion**: Wofür gibt es Punkte, wofür Abzüge?
-  3. Findet **mindestens ein Fehlanreiz-Risiko** (z. B. „der Agent fährt zu schnell, um Zeit zu sparen") und
-     korrigiert die Belohnung.
-  4. Diskutiert, welche **Daten/Umgebung** zum Trainieren nötig wären.
-  5. Nutzt **Copilot** als Sparringspartner und prüft die Vorschläge kritisch.
-
-  **Deliverables:** RL-Modellbeschreibung + Belohnungsfunktion + identifizierter Fehlanreiz mit Korrektur.
+  **Deliverable:** die zwei Antworten, deine Bewertung + eine Erklärung des RLHF-Prinzips.
 tip: |
-  Gute Belohnungsfunktionen bestrafen unerwünschtes Verhalten explizit – sonst „trickst" der Agent.
+  Genau dieses „Menschen bevorzugen Antwort A über B" wird bei RLHF millionenfach genutzt, um das Modell hilfreicher zu machen.
 solution: |
-  Bewertungskriterien: sauber modelliertes RL-Problem; durchdachte Belohnungsfunktion; erkannter Fehlanreiz
-  mit sinnvoller Korrektur; realistische Einschätzung des Trainingsaufwands.
+  Bewertungskriterien: nachvollziehbarer Vergleich, klare Bewertungskriterien, korrekte Erklärung des RLHF-Prinzips.
+  Lernziel: verstehen, warum Copilot so „menschenfreundlich" antwortet.

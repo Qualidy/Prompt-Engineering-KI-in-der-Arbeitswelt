@@ -1,16 +1,24 @@
-title: Readiness-Check mit Copilot
+title: Fünf Readiness-Dimensionen in Copilot bewerten
 difficulty: 2
 question: |
-  Lass dir von **Copilot** einen Readiness-Check erstellen und wende ihn auf ein Beispielunternehmen an:
+  Arbeite **in Copilot** mit einem fiktiven Unternehmen.
 
+  **Schritt 1:**
   ```text
-  Erstelle 8 Ja/Nein-Fragen zur KI-Readiness eines Unternehmens. Für jede Frage:
-  Was bedeutet ein "Nein" und welche erste Maßnahme wäre sinnvoll?
+  Erfinde ein mittelständisches Unternehmen und beschreibe es in 4 Sätzen (Branche, Größe,
+  Digitalisierungsgrad).
   ```
-
-  Beantworte die Fragen für ein dir bekanntes (oder fiktives) Unternehmen und notiere den ungefähren Reifegrad.
+  **Schritt 2:**
+  ```text
+  Bewerte dieses Unternehmen in den fünf KI-Readiness-Dimensionen (Strategie, Daten, Technik,
+  Kompetenzen, Kultur) auf einer Skala 1–5 und begründe jede Note kurz.
+  ```
+  **Schritt 3 – nachschärfen:**
+  ```text
+  Welche Dimension ist die schwächste, und warum begrenzt gerade sie den Erfolg?
+  ```
 tip: |
-  Ordne die Antworten am Ende einer der vier Reifegradstufen zu.
+  Die schwächste Dimension entscheidet – wie das schwächste Glied einer Kette.
 solution: |
-  Bewertungskriterien: sinnvolle Fragen über mehrere Handlungsfelder; nachvollziehbare Reifegrad-Einschätzung;
-  jede „Nein"-Antwort mit einer konkreten ersten Maßnahme verknüpft.
+  Erwartetes Ergebnis: begründete Bewertung aller 5 Dimensionen und Identifikation der schwächsten. Lernziel:
+  Reife ganzheitlich denken, nicht nur „haben wir Technik?".

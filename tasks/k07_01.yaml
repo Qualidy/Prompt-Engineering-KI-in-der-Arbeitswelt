@@ -1,17 +1,19 @@
-title: Handlungsfelder zuordnen
+title: Readiness-Selbsttest mit Copilot erstellen
 difficulty: 1
 question: |
-  Ordne die Aussagen dem passenden Handlungsfeld der KI-Readiness zu
-  (Daten, Technik, Kompetenzen, Kultur, Strategie):
+  Mach das **live in Copilot**:
+  ```text
+  Erstelle einen kurzen Selbsttest mit 5 Ja/Nein-Fragen, mit dem ein Unternehmen einschätzen
+  kann, ob es bereit für den Einsatz von Microsoft Copilot ist.
+  ```
 
-  1. „Unsere Daten liegen verteilt in Excel-Dateien ohne einheitliches Format."
-  2. „Viele Mitarbeitende wissen nicht, wie man einen guten Prompt schreibt."
-  3. „Es gibt keine Regeln, wofür KI eingesetzt werden darf."
-  4. „Es herrscht Angst, dass KI Arbeitsplätze ersetzt."
+  Beantworte die Fragen dann für ein fiktives Unternehmen (denk es dir aus) und frage Copilot:
+  ```text
+  Hier meine Antworten [Antworten nennen]. Wie schätzt du die Copilot-Readiness ein und was
+  wäre der erste Schritt?
+  ```
 tip: |
-  Jede Aussage beschreibt eine typische Schwachstelle in genau einem Feld.
+  Copilot braucht keine eigene KI-Infrastruktur – wichtiger sind Prompting-Kompetenz und verantwortungsvoller Umgang.
 solution: |
-  1. Daten
-  2. Kompetenzen
-  3. Strategie & Governance
-  4. Kultur & Akzeptanz
+  Erwartetes Ergebnis: sinnvoller Selbsttest und eine plausible Einschätzung mit erstem Schritt. Lernziel:
+  Readiness ist mehr Organisation/Kompetenz als Technik.

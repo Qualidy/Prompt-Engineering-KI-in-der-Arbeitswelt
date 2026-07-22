@@ -45,20 +45,28 @@ Für jeden Schritt fragen wir: Was ist **Routine** (KI-tauglich) und was braucht
 
 ## 22.3 Copilot in jedem Schritt
 
+Probiere die Kette direkt aus. Damit du keine echten Kundendaten brauchst, lässt du Copilot die Anfrage **zuerst selbst erfinden**:
+
+**Schritt 0 – Beispielanfrage erzeugen:**
+
+```text
+Erfinde eine realistische Kundenanfrage per E-Mail für eine Sonderanfertigung,
+in der bewusst eine wichtige Angabe (z. B. der Liefertermin) fehlt.
+```
+
 **Schritt 1 – Anfrage verstehen:**
 
 ```text
 Fasse diese Kundenanfrage in Stichpunkten zusammen: Was genau wird gewünscht,
 welche Mengen/Termine werden genannt, und welche Angaben fehlen noch, um ein
-Angebot zu erstellen? [Anfrage einfügen]
+Angebot zu erstellen?
 ```
 
 **Schritt 2 – Angebot entwerfen:**
 
 ```text
 Entwirf ein Angebotsschreiben (Sie-Form, freundlich, max. 200 Wörter) auf Basis
-dieser Eckdaten: [Produkt, Menge, Preis, Lieferzeit]. Lasse den Endpreis als
-Platzhalter [PREIS], den ich selbst einsetze.
+der Anfrage. Lasse den Endpreis als Platzhalter [PREIS], den ich selbst einsetze.
 ```
 
 **Schritt 3 – Nachfassen:**

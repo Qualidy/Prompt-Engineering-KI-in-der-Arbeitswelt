@@ -1,17 +1,18 @@
-title: KI-Regelung einordnen
+title: KI-Regelung mit Sicherheitsgrenzen entwerfen
 difficulty: 2
 question: |
-  Lass dir von **Copilot** ein Beispiel für KI-gestützte Prozessregelung erklären:
-
+  Arbeite **in Copilot** mit einem selbst erzeugten Prozess.
   ```text
-  Nenne einen Prozess, bei dem eine KI-gestützte Regelung sinnvoll ist. Erkläre,
-  welche Größen geregelt werden, welche Ziele optimiert werden und warum eine
-  klassische Regelung hier an Grenzen stößt.
+  Erfinde einen kontinuierlichen Prozess, der geregelt werden muss (z. B. Temperatur in einem
+  Gärtank). Beschreibe Sollwert und Störgrößen.
   ```
-
-  Beurteile: Wo muss aus Sicherheitsgründen ein klassisches System die Kontrolle behalten?
+  Dann:
+  ```text
+  Entwirf, wie eine KI die Stellgröße automatisch anpasst. Definiere feste Sicherheitsgrenzen, die
+  die KI niemals überschreiten darf, und was bei Grenzverletzung passiert.
+  ```
 tip: |
-  Sicherheitskritische Grenzwerte gehören auf geprüfte, klassische Systeme.
+  KI-Regelungen brauchen harte Sicherheitsgrenzen und einen Notaus – die KI darf nie „frei experimentieren".
 solution: |
-  Bewertungskriterien: sinnvolles Beispiel; klare Benennung von Regelgrößen und Optimierungszielen; Verständnis,
-  dass KI bei komplexen, mehrzieligen Prozessen hilft, Sicherheit aber klassisch abgesichert bleibt.
+  Erwartetes Ergebnis: KI-Regelungskonzept mit klaren, unverrückbaren Sicherheitsgrenzen und Notfallverhalten.
+  Lernziel: Automatisierung immer mit Sicherheitsleitplanken denken.

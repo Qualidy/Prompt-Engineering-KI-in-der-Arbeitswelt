@@ -1,16 +1,22 @@
-title: Overfitting verstehen
+title: Ein ML-Vorhaben in Copilot durchdenken
 difficulty: 2
 question: |
-  Lass dir von **Copilot** Overfitting alltagstauglich erklären:
+  Arbeite **in Copilot** mit einem fiktiven Vorhaben.
 
+  **Schritt 1:**
   ```text
-  Erkläre "Overfitting" so, dass es eine Person ohne Statistikwissen versteht.
-  Nutze eine Analogie und nenne, wie man Overfitting erkennt und vermeidet.
+  Erfinde ein Vorhersageproblem für einen Online-Shop (z. B. „welche Kunden kaufen wieder?").
   ```
-
-  Bewerte: Ist die Analogie treffend? Formuliere selbst eine zweite Analogie.
+  **Schritt 2:**
+  ```text
+  Bestimme die passende Lernart, nenne mögliche Features (Eingaben) und das Label (Zielwert).
+  ```
+  **Schritt 3 – nachschärfen:**
+  ```text
+  Erkläre, warum man Daten in Training und Test aufteilt und was Overfitting bedeutet.
+  ```
 tip: |
-  Eine gute Analogie: „auswendig lernen" statt „verstehen".
+  Getestet wird immer an Daten, die das Modell nie gesehen hat – sonst ist es wie eine Prüfung mit vorher bekannten Lösungen.
 solution: |
-  Bewertungskriterien: verständliche Erklärung; korrekte Erkennungsmerkmale (gut im Training, schlecht im Test);
-  Vermeidung (mehr Daten, einfacheres Modell, Testdaten); eigene, tragfähige zweite Analogie.
+  Erwartetes Ergebnis: passende Lernart, sinnvolle Features/Label, klare Erklärung von Train/Test-Split und Overfitting.
+  Lernziel: ML-Vorhaben grundlegend strukturieren.

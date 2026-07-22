@@ -1,18 +1,25 @@
-title: KI-Strategie-Skizze mit Roadmap
+title: KI-Strategie mit Priorisierung entwerfen (Copilot)
 difficulty: 3
 question: |
-  Erstelle eine erste **KI-Strategie-Skizze** für ein mittelständisches Unternehmen deiner Wahl:
+  Entwirf **in Copilot** eine KI-Strategie für ein selbst erzeugtes Unternehmen.
 
-  1. Formuliere **zwei strategische Ziele**, auf die KI einzahlt (kein „wir machen KI").
-  2. Liste **vier Use Cases** und ordne sie in der **Nutzen-Machbarkeit-Matrix** ein.
-  3. Bringe sie in eine **Roadmap in drei Wellen** (Welle 1 = Quick Wins, z. B. Copilot im Office).
-  4. Nenne **zwei Governance-Punkte** und **einen Kompetenz-/Kulturaspekt**, die du von Anfang an mitplanst.
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen (Branche, Ziele, Ausgangslage).
+  ```
+  **Schritt 2:**
+  ```text
+  Entwirf eine KI-Strategie mit: Vision, 3 Handlungsfeldern, je einer Make-or-Buy-Entscheidung und
+  einem Erfolgs-KPI.
+  ```
+  **Schritt 3 – priorisieren:**
+  ```text
+  Priorisiere die 3 Handlungsfelder nach strategischem Wert und Umsetzbarkeit und begründe die Reihenfolge.
+  ```
+
+  Bewerte selbst: Ist die Strategie fokussiert oder will sie „alles auf einmal"?
 tip: |
-  Strategie verbindet KI mit Geschäftszielen. Der häufigste Fehler: Technik/Use Cases listen, aber Menschen und Regeln vergessen.
+  Gute Strategie heißt Fokus: lieber wenige Handlungsfelder konsequent, als überall ein bisschen.
 solution: |
-  Bewertungskriterien:
-
-  - Die Ziele sind an Geschäftszielen ausgerichtet, nicht Selbstzweck.
-  - Die Use Cases sind nach Nutzen/Aufwand eingeordnet; Welle 1 enthält sinnvolle Quick Wins (Copilot).
-  - Die Roadmap ist in Wellen strukturiert.
-  - Governance und Kompetenz/Kultur sind ausdrücklich mitgeplant.
+  Erwartetes Ergebnis: fokussierte Strategie mit Vision, priorisierten Handlungsfeldern, Make/Buy und KPIs.
+  Lernziel: KI strategisch planen und bewusst priorisieren.

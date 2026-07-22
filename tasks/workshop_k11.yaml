@@ -1,22 +1,25 @@
-title: Vom Prototyp zum Regelbetrieb
+title: Big-Data-Konzept mit Governance in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ein KI-Prototyp (z. B. eine Absatzprognose) funktioniert. Jetzt soll er in den
-  Dauerbetrieb überführt werden.
+  Erstelle **in Copilot** ein Big-Data-Konzept inklusive Governance – selbst erarbeitet.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen mit großem Datenaufkommen und beschreibe die Datenlage.
+  ```
+  **Schritt 2:**
+  ```text
+  Entwirf die Datenpipeline (Erfassen bis Nutzen) und beschreibe je Stufe Werkzeuge/Tätigkeiten.
+  ```
+  **Schritt 3:**
+  ```text
+  Ergänze 4 Data-Governance-Regeln (Datenbesitz, Qualität, Zugriff/Datenschutz, Nachvollziehbarkeit).
+  ```
+  **Schritt 4 – Prüfung:** Prüfe: Reichen die Governance-Regeln, damit Copilot später auf verlässliche Daten zugreift? Ergänze Lücken.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Beschreibt den Prototyp und die genutzten Datenquellen kurz.
-  2. Entwerft den **Datenfluss im Regelbetrieb**: Erfassung → Speicherung → Verarbeitung → Bereitstellung.
-  3. Klärt die **Betriebsfragen**: Wer pflegt Daten? Wer überwacht Qualität? Wie oft wird aktualisiert?
-  4. Benennt **drei Risiken** der Operationalisierung und je eine Gegenmaßnahme.
-  5. Nutzt **Copilot** zur Strukturierung und prüft die Vorschläge.
-
-  **Deliverables:** Datenfluss-Diagramm/Beschreibung + Betriebsverantwortlichkeiten + 3 Risiken mit Gegenmaßnahmen.
+  **Deliverable:** Pipeline-Skizze + Governance-Regeln.
 tip: |
-  Denkt an „Datenqualität über die Zeit": Was heute sauber ist, kann morgen driften.
+  Ohne Governance entstehen Datensilos und widersprüchliche Zahlen – dann liefert auch Copilot schwache Bezüge.
 solution: |
-  Bewertungskriterien: schlüssiger Datenfluss; geklärte Verantwortlichkeiten und Aktualisierungszyklen;
-  realistische Risiken mit passenden Gegenmaßnahmen.
+  Bewertungskriterien: stimmige Pipeline, sinnvolle Governance-Regeln, kritische Prüfung auf Lücken. Lernziel:
+  Big Data braucht Technik UND Regeln.

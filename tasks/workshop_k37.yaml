@@ -1,21 +1,26 @@
-title: Change-Plan für eine Copilot-Einführung
+title: Change-Management-Plan für eine KI-Einführung
 difficulty: 4
 question: |
-  **Szenario:** In einer Abteilung soll Microsoft Copilot eingeführt werden. Ihr verantwortet den Wandel.
+  Erstelle **in Copilot** einen kompletten Change-Plan für eine fiktive Copilot-Einführung.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen und die geplante KI-/Copilot-Einführung.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle den Plan: Ziele, Stakeholder (mit Haltung), Kommunikationsmaßnahmen, Schulungskonzept,
+  Umgang mit Widerständen, Erfolgsmessung.
+  ```
+  **Schritt 3:**
+  ```text
+  Entwirf einen 90-Tage-Fahrplan mit den wichtigsten Meilensteinen.
+  ```
+  **Schritt 4 – Prüfung:** Ist der Plan realistisch und menschenzentriert – oder nur „Technik ausrollen"? Verbessere.
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
-
-  1. Beschreibt Abteilung, Ausgangslage und Ziel der Einführung.
-  2. Identifiziert die wichtigsten **Stakeholder** und ihre möglichen **Ängste/Erwartungen**.
-  3. Entwickelt einen **Change-Plan** entlang der Phasen (Bewusstsein → Wollen → Können → Anwenden → Verankern).
-  4. Plant **Kommunikation** und **Qualifizierung** (inkl. Champions und erster Quick Wins).
-  5. Nutzt **Copilot** für Entwürfe; prüft und personalisiert sie.
-
-  **Deliverables:** Stakeholder-Übersicht + Change-Plan über alle Phasen + Kommunikations-/Qualifizierungsmaßnahmen.
+  **Deliverable:** Change-Plan + 90-Tage-Fahrplan.
 tip: |
-  Ein sichtbarer Quick Win in den ersten Wochen erzeugt Rückenwind für den restlichen Wandel.
+  Technikeinführung ≠ Change Management. Der Erfolg hängt an Kommunikation, Befähigung und Vertrauen.
 solution: |
-  Bewertungskriterien: relevante Stakeholder mit Bedürfnissen; schlüssiger Change-Plan über alle Phasen; konkrete
-  Kommunikations-/Qualifizierungsmaßnahmen; realistische Quick Wins.
+  Bewertungskriterien: klare Ziele, Stakeholder-Analyse, Kommunikation/Schulung, Widerstands- und Erfolgsmanagement,
+  realistischer Fahrplan. Lernziel: eine KI-Einführung als Veränderungsprozess gestalten.

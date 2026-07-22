@@ -1,22 +1,27 @@
-title: Eigenes KI-Fähigkeitsraster
+title: Zwei KI-Systeme vergleichen (Copilot)
 difficulty: 4
 question: |
-  **Szenario:** Ihr wollt für einen Unternehmensbereich systematisch erfassen, welche KI-Fähigkeiten
-  helfen könnten.
+  Vergleiche **in Copilot** den Aufbau zweier KI-Systeme – alles selbst erarbeitet.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde zwei unterschiedliche KI-Anwendungen (z. B. eine für Bilderkennung, eine für Textarbeit)
+  und beschreibe beide kurz.
+  ```
+  **Schritt 2:**
+  ```text
+  Vergleiche beide in einer Tabelle entlang der Bausteine Daten, Algorithmen, Modell, Anwendung.
+  Wo liegen die größten Unterschiede?
+  ```
+  **Schritt 3:**
+  ```text
+  Erkläre für beide, wo ein fertiges Werkzeug wie Copilot helfen könnte und wo Spezialsysteme nötig sind.
+  ```
+  **Schritt 4 – Reflexion:** Formuliere in eigenen Worten, warum das „Bausteine-Denken" hilft, neue KI-Produkte schnell zu verstehen.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Wählt einen Bereich und listet **6 typische Aufgaben**.
-  2. Ordnet jeder Aufgabe die benötigten **KI-Grundfähigkeiten** zu (Raster/Tabelle).
-  3. Markiert, welche Aufgaben mit **heute verfügbaren Werkzeugen** (inkl. Copilot) machbar sind.
-  4. Wählt eine Aufgabe aus und beschreibt, welches KI-Verfahren ihr einsetzen würdet und warum.
-  5. Nutzt **Copilot** zur Unterstützung und dokumentiert einen hilfreichen Prompt.
-
-  **Deliverables:** Fähigkeitsraster (6 Aufgaben × Fähigkeiten) + Machbarkeits-Markierung + 1 vertiefte Aufgabe.
+  **Deliverable:** die Vergleichstabelle + deine Reflexion.
 tip: |
-  „Machbar mit Copilot" gilt vor allem für Aufgaben mit Schwerpunkt Verstehen/Schlussfolgern auf Textbasis.
+  Wer die immer gleichen Bausteine kennt, kann jedes neue KI-Produkt schnell „sezieren" und einschätzen.
 solution: |
-  Bewertungskriterien: vollständiges Raster; korrekte Fähigkeitszuordnung; realistische Machbarkeitseinschätzung;
-  begründete Verfahrenswahl bei der vertieften Aufgabe.
+  Bewertungskriterien: zwei sinnvolle Systeme, aussagekräftiger Baustein-Vergleich, richtige Einordnung Copilot vs.
+  Spezialsystem, klare Reflexion. Lernziel: Bausteine als Analyseraster souverän anwenden.

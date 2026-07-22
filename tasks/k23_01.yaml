@@ -1,14 +1,17 @@
-title: Generatives Design verstehen
+title: Anforderungen für ein Bauteil mit Copilot sammeln
 difficulty: 1
 question: |
-  Richtig oder falsch?
-
-  1. Beim generativen Design gibt der Mensch Ziele und Randbedingungen vor.
-  2. Die KI trifft am Ende allein die Entscheidung, welcher Entwurf gebaut wird.
-  3. Generatives Design kann mehrere optimierte Varianten erzeugen.
+  Mach das **live in Copilot**:
+  ```text
+  Ich will ein Bauteil neu konstruieren: eine Wandhalterung für einen Monitor. Stelle mir 8 Fragen,
+  die ich vorher klären muss (Last, Material, Maße, Umgebung, Kosten ...).
+  ```
+  Dann:
+  ```text
+  Fasse meine (erfundenen) Antworten in einer kurzen Anforderungsliste zusammen.
+  ```
 tip: |
-  Wer entscheidet über die finale Konstruktion?
+  KI im Konstruktionsumfeld beginnt selten mit dem Bauteil selbst, sondern mit klaren Anforderungen.
 solution: |
-  1. Richtig
-  2. Falsch – die Fachleute wählen und verantworten die finale Variante
-  3. Richtig
+  Erwartetes Ergebnis: sinnvolle Klärungsfragen und eine strukturierte Anforderungsliste. Lernziel: Copilot als
+  Denkhilfe in der frühen Konstruktionsphase nutzen.

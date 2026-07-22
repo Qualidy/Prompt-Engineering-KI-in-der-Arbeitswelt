@@ -1,17 +1,17 @@
-title: RL-Begriffe zuordnen
+title: Belohnungsprinzip mit Copilot durchspielen
 difficulty: 1
 question: |
-  Ein Roboter lernt, ein Lager möglichst schnell einzuräumen. Ordne zu:
-  Agent, Umgebung, Aktion, Belohnung.
-
-  1. Der Roboter
-  2. Das Lager mit Regalen und Kisten
-  3. „Kiste in Regal 3 stellen"
-  4. Punkte für schnelles, fehlerfreies Einräumen
+  Lass dir **in Copilot** Reinforcement Learning greifbar machen.
+  ```text
+  Erkläre Reinforcement Learning an einem Beispiel: Ein Roboter lernt, einen Tisch abzuräumen.
+  Was sind Zustand, Aktion und Belohnung? Nenne je ein konkretes Beispiel.
+  ```
+  Dann:
+  ```text
+  Wie hängt das mit dem "RLHF"-Training von Chatbots zusammen? Erkläre in 3 Sätzen.
+  ```
 tip: |
-  Wer handelt, wo, wie, mit welcher Rückmeldung?
+  RL = Lernen durch Ausprobieren und Belohnung. Bei Chatbots kommt die „Belohnung" aus menschlichem Feedback (RLHF).
 solution: |
-  1. Agent
-  2. Umgebung
-  3. Aktion
-  4. Belohnung
+  Erwartetes Ergebnis: klare Erklärung von Zustand/Aktion/Belohnung und der Bezug zu RLHF. Lernziel: verstehen,
+  wie Copilot durch menschliches Feedback „höflich und hilfreich" wurde.

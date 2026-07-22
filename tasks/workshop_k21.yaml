@@ -1,22 +1,29 @@
-title: Einen Prozess neu denken
+title: Prozessoptimierung mit Copilot durchführen
 difficulty: 4
 question: |
-  **Szenario:** Ein bekannter Prozess (z. B. Urlaubsantrag, Angebotserstellung, Onboarding neuer Mitarbeitender)
-  soll optimiert werden.
+  Optimiere **in Copilot** einen kompletten Prozess – selbst erzeugt, ohne echte Unterlagen.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde einen abteilungsübergreifenden Prozess (z. B. Einstellung neuer Mitarbeitender) mit 10 Schritten.
+  ```
+  **Schritt 2:**
+  ```text
+  Analysiere: Wo sind Engpässe, Doppelarbeit, Wartezeiten? Markiere sie.
+  ```
+  **Schritt 3:**
+  ```text
+  Entwirf den optimierten Prozess und markiere je Schritt, ob/wie Copilot unterstützen kann.
+  ```
+  **Schritt 4 – Business Case:**
+  ```text
+  Fasse Nutzen, Aufwand und Risiken in einer kurzen Entscheidungsvorlage zusammen.
+  ```
+  **Schritt 5 – Prüfung:** Hinterfrage: Sind die KI-Einsätze wirklich sinnvoll oder nur „nice to have"?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Nehmt den **Ist-Prozess** auf (Schritte, Beteiligte, Werkzeuge) – gern als Flussdiagramm.
-  2. Markiert **Schwachstellen** und schätzt deren Auswirkung (Zeit/Fehler).
-  3. Entwerft einen **Soll-Prozess** mit gezieltem KI-/Copilot-Einsatz.
-  4. Bestimmt je Schritt den sinnvollen **Automatisierungsgrad**.
-  5. Benennt **Risiken** und wie ihr die Betroffenen einbindet.
-
-  **Deliverables:** Ist-Prozess + Schwachstellenanalyse + Soll-Prozess mit Automatisierungsgraden + Risiko-/Change-Notiz.
+  **Deliverable:** Ist-/Soll-Prozess + Entscheidungsvorlage.
 tip: |
-  Nutzt Copilot, um Ist- und Soll-Prozess zu strukturieren – die Bewertung bleibt eure Aufgabe.
+  Automatisiere keine schlechten Prozesse – erst verbessern, dann (teilweise) automatisieren.
 solution: |
-  Bewertungskriterien: vollständiger Ist-Prozess; belastbare Schwachstellenanalyse; realistischer Soll-Prozess mit
-  begründeten Automatisierungsgraden; benannte Risiken und Change-Aspekte.
+  Bewertungskriterien: erkannte Schwachstellen, sinnvoller Soll-Prozess, ehrlicher Business Case, kritische Prüfung.
+  Lernziel: Prozessoptimierung strukturiert und entscheidungsreif aufbereiten.

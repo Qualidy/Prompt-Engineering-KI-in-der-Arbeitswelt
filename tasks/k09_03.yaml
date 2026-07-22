@@ -1,18 +1,26 @@
-title: Datenquellen und Grenzen für einen Use Case
+title: Datenkonzept für einen Use Case in Copilot
 difficulty: 3
 question: |
-  Für einen KI-Use-Case deiner Wahl (z. B. „Kundenanfragen automatisch kategorisieren"):
+  Erarbeite **in Copilot** ein kleines Datenkonzept – für ein Szenario, das Copilot erzeugt.
 
-  1. Liste die benötigten **Datenquellen** (intern/extern) auf.
-  2. Klassifiziere die Daten als **strukturiert, semistrukturiert oder unstrukturiert**.
-  3. Prüfe **zwei rechtliche/ethische Grenzen** (z. B. DSGVO, Zweckbindung, Urheberrecht), die hier greifen.
-  4. Wie könnte **Copilot** (über den Microsoft Graph) auf einen Teil dieser Daten zugreifen – und wo liegt die Grenze?
+  **Schritt 1:**
+  ```text
+  Erfinde einen KI-Use-Case für den Kundenservice und beschreibe ihn in 3 Sätzen.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle ein Datenkonzept: benötigte Datenquellen (intern/extern), Datenart, geschätzte Qualität,
+  und für jede Quelle eine rechtliche Grenze.
+  ```
+  **Schritt 3:**
+  ```text
+  Erkläre, wie Microsoft 365 Copilot über den Microsoft Graph auf einen Teil dieser Daten zugreifen
+  würde – und wo das Berechtigungsprinzip die Grenze setzt.
+  ```
+
+  Bewerte selbst: Welche Datenquelle ist am schwierigsten zu beschaffen und warum?
 tip: |
-  Der größte Teil der Unternehmensdaten ist unstrukturiert. Copilot sieht nur Daten, für die dein Konto berechtigt ist.
+  Copilot sieht nur Daten, für die dein Konto berechtigt ist – es umgeht keine Zugriffsrechte.
 solution: |
-  Bewertungskriterien:
-
-  - Die Datenquellen passen zum Use Case und sind intern/extern eingeordnet.
-  - Die Datenarten sind korrekt klassifiziert.
-  - Mindestens zwei rechtliche/ethische Grenzen sind konkret benannt (nicht nur „Datenschutz allgemein").
-  - Der Copilot-Zugriff über den Graph und das Berechtigungsprinzip sind verstanden.
+  Erwartetes Ergebnis: vollständiges Datenkonzept mit Quellen, Datenart, Qualität, rechtlichen Grenzen; korrektes
+  Verständnis des Graph-/Berechtigungsprinzips. Lernziel: Daten realistisch und rechtssicher planen.

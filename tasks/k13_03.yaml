@@ -1,17 +1,24 @@
-title: NLP-Verarbeitungskette für Kundenfeedback
+title: NLP-Pipeline für Kundenfeedback in Copilot
 difficulty: 3
 question: |
-  Ein Unternehmen erhält täglich hunderte Freitext-Rückmeldungen von Kunden.
-  Entwirf eine **NLP-Verarbeitungskette**, die daraus nutzbare Erkenntnisse macht:
+  Baue **in Copilot** eine kleine NLP-Verarbeitungskette – mit selbst erzeugtem Feedback.
 
-  1. Welche **NLP-Aufgaben** setzt du in welcher Reihenfolge ein (z. B. Klassifikation, Extraktion, Zusammenfassung)?
-  2. Formuliere je einen **Copilot-Prompt** für zwei dieser Schritte.
-  3. Nenne **zwei Grenzen**, an denen die NLP-Ergebnisse geprüft werden müssen (z. B. Ironie, Fachjargon).
+  **Schritt 1:**
+  ```text
+  Erfinde 8 kurze Kundenrückmeldungen zu einer Software, gemischt in Ton und Thema.
+  ```
+  **Schritt 2 – Klassifikation:**
+  ```text
+  Ordne jede Rückmeldung einer Kategorie zu (z. B. Lob, Fehler, Wunsch) und der Stimmung.
+  ```
+  **Schritt 3 – Zusammenfassung:**
+  ```text
+  Fasse die häufigsten 3 Themen zusammen und leite eine Handlungsempfehlung ab.
+  ```
+
+  Bewerte selbst: An welcher Stelle würdest du die Ergebnisse prüfen (z. B. Ironie, Fachbegriffe)?
 tip: |
-  Denke in einer Kette: erst grob sortieren (Klassifikation), dann Details ziehen (Extraktion), dann verdichten (Zusammenfassung).
+  Denke in einer Kette: erst sortieren (Klassifikation), dann verdichten (Zusammenfassung), dann handeln.
 solution: |
-  Bewertungskriterien:
-
-  - Die Kette ist sinnvoll geordnet und nutzt mehrere NLP-Aufgaben.
-  - Die Prompts sind konkret und zielen auf die jeweilige Aufgabe.
-  - Mindestens zwei realistische Grenzen sind benannt (Ironie, Fachbegriffe, falsche Extraktion) mit dem Hinweis auf Prüfung.
+  Erwartetes Ergebnis: sinnvolle Klassifikation, verdichtete Themen, Handlungsempfehlung; benannte Prüfstellen.
+  Lernziel: NLP-Aufgaben zu einer nutzbaren Kette verbinden.

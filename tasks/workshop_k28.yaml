@@ -1,22 +1,26 @@
-title: Automatisierter Dokumenten-Workflow
+title: Dokumenten-Verarbeitungsstrecke in Copilot bauen
 difficulty: 4
 question: |
-  **Szenario:** Ein Team ertrinkt in eingehenden Dokumenten (z. B. Rechnungen, Bewerbungen, Verträge)
-  und will den Umgang teilautomatisieren.
+  Baue **in Copilot** eine komplette Verarbeitungsstrecke – alle Dokumente selbst erzeugt.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erstelle die Texte von 6 gemischten Eingangsdokumenten eines Unternehmens.
+  ```
+  **Schritt 2:**
+  ```text
+  Klassifiziere alle, extrahiere je Typ die wichtigsten Felder und leite sie an die richtige Stelle weiter.
+  Stelle das Ergebnis als Tabelle dar.
+  ```
+  **Schritt 3:**
+  ```text
+  Definiere Prüfregeln: Wann darf automatisch verarbeitet werden, wann muss ein Mensch prüfen?
+  ```
+  **Schritt 4 – Prüfung:** Schleuse bewusst ein schwieriges Dokument (unklar/unvollständig) ein. Erkennt die Strecke, dass es geprüft werden muss?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Wählt einen Dokumententyp und beschreibt den heutigen manuellen Ablauf.
-  2. Entwerft einen **automatisierten Workflow**: OCR → Extraktion → Klassifikation → Weiterverarbeitung → Freigabe.
-  3. Legt fest, **welche Schritte** KI/Copilot übernimmt und **wo der Mensch** prüft.
-  4. Definiert **Datenschutz-/Vertraulichkeitsregeln** für den Umgang mit den Dokumenten.
-  5. Testet einen Teilschritt (z. B. Zusammenfassung/Extraktion) mit Copilot an einem Beispiel.
-
-  **Deliverables:** Ist-Ablauf + automatisierter Workflow + KI-/Mensch-Zuordnung + Datenschutzregeln + 1 Test.
+  **Deliverable:** Klassifikations-/Extraktionstabelle + Prüfregeln.
 tip: |
-  Legt eine klare Regel fest, welche Dokumente NICHT in externe Tools gegeben werden dürfen.
+  Der Wert liegt in der Ausnahmebehandlung: 90 % automatisch, 10 % gezielt zur menschlichen Prüfung.
 solution: |
-  Bewertungskriterien: schlüssiger Workflow; sinnvolle KI-/Mensch-Zuordnung; konkrete Datenschutzregeln;
-  durchgeführter Test mit kritischer Ergebnisprüfung.
+  Bewertungskriterien: korrekte Klassifikation/Extraktion/Routing, sinnvolle Prüfregeln, richtiger Umgang mit dem
+  Problemfall. Lernziel: eine praxisnahe Dokumentenstrecke mit Qualitätskontrolle entwerfen.

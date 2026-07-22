@@ -1,18 +1,26 @@
-title: Wo darf KI in der Konstruktion entscheiden?
+title: Design-Zielkonflikte mit Copilot durchdenken
 difficulty: 3
 question: |
-  In einem Konstruktionsprojekt stehen verschiedene Aufgaben an. Ordne für **fünf** davon zu,
-  ob KI (inkl. Copilot) sie übernehmen darf – und wo der Mensch zwingend entscheidet:
+  Nutze **in Copilot** ein selbst erzeugtes Konstruktionsszenario.
 
-  Beispiele: Anforderungen strukturieren · Normen recherchieren · Festigkeitsnachweis erstellen ·
-  Variantenvorschläge generieren · Kunden-Änderungsmitteilung formulieren.
+  **Schritt 1:**
+  ```text
+  Erfinde ein Bauteil, das gleichzeitig leicht, stabil und günstig sein soll, und beschreibe es.
+  ```
+  **Schritt 2:**
+  ```text
+  Erkläre die Zielkonflikte (leicht vs. stabil vs. günstig) und zeige 3 Auslegungsvarianten mit
+  ihren Vor-/Nachteilen in einer Tabelle.
+  ```
+  **Schritt 3 – Einordnung:**
+  ```text
+  Wo würde spezialisierte generative-Design-Software helfen, und wo hilft ein Werkzeug wie Copilot
+  (Ideen, Anforderungen, Doku) und wo nicht?
+  ```
 
-  Begründe jede Einordnung mit **Sicherheit und Haftung**.
+  Bewerte selbst: Welche Variante würdest du wählen und warum?
 tip: |
-  Sicherheitsrelevante Berechnungen und Nachweise dürfen niemals ungeprüft aus KI übernommen werden – hier haften Menschen.
+  Copilot ersetzt keine CAD-/Simulationssoftware, ist aber stark beim Strukturieren von Anforderungen, Varianten und Doku.
 solution: |
-  Bewertungskriterien:
-
-  - Text-/Recherche-/Strukturaufgaben werden als gut KI-geeignet erkannt (mit Prüfung).
-  - Festigkeitsnachweise/sicherheitsrelevante Berechnungen bleiben klar beim Menschen.
-  - Die Begründung bezieht sich auf Haftung, Sicherheit und Halluzinationsrisiko bei Normen.
+  Erwartetes Ergebnis: klar benannte Zielkonflikte, 3 Varianten mit Abwägung, realistische Einordnung der
+  Werkzeuge. Lernziel: KI-Rollen in der Konstruktion richtig einschätzen.

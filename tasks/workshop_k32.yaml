@@ -1,22 +1,26 @@
-title: Rechtliche Ersteinschätzung eines KI-Vorhabens
+title: Compliance-Checkliste für KI in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Für ein geplantes KI-Vorhaben soll eine rechtliche Ersteinschätzung (keine Rechtsberatung)
-  vorbereitet werden.
+  Erstelle **in Copilot** eine praktische Compliance-Checkliste – für ein fiktives Unternehmen.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen, das mehrere KI-Anwendungen einführen will.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle eine Checkliste mit den wichtigsten rechtlichen Prüfpunkten vor dem Einsatz einer
+  KI-Anwendung (Risikoklasse, Datenschutz, Transparenz, Haftung, Dokumentation).
+  ```
+  **Schritt 3:**
+  ```text
+  Formuliere jeden Punkt als Ja/Nein-Frage mit einem Hinweis, was bei „Nein" zu tun ist.
+  ```
+  **Schritt 4 – Prüfung:** Teste die Checkliste an einer Hochrisiko-Anwendung. Deckt sie das Wesentliche ab?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Beschreibt das KI-Vorhaben und die verarbeiteten Daten.
-  2. Ordnet es einer **EU-AI-Act-Risikoklasse** zu und begründet.
-  3. Erstellt eine **Prüf-Checkliste** zu Datenschutz, Urheberrecht, Haftung, Transparenz.
-  4. Markiert **offene Punkte**, die zwingend rechtlich geklärt werden müssen.
-  5. Nutzt **Copilot** für die Struktur; kennzeichnet, was fachlich verifiziert werden muss.
-
-  **Deliverables:** Risikoklassen-Einordnung + Prüf-Checkliste + Liste der klärungsbedürftigen Rechtsfragen.
+  **Deliverable:** anwendbare Compliance-Checkliste (Ja/Nein-Fragen mit Handlungshinweisen).
 tip: |
-  Trennt klar: Was könnt ihr selbst einschätzen und was gehört zwingend zur Rechtsberatung?
+  Eine gute Checkliste zwingt zum bewussten Prüfen – „Haben wir an Datenschutz gedacht?" darf nicht untergehen.
 solution: |
-  Bewertungskriterien: nachvollziehbare Risikoklassen-Einordnung; vollständige Prüf-Checkliste; klare Kennzeichnung
-  der klärungsbedürftigen Punkte; verantwortungsvoller Umgang mit KI-Rechtsauskünften.
+  Bewertungskriterien: relevante Prüfpunkte, klare Ja/Nein-Fragen mit Handlungshinweis, an einem Fall getestet.
+  Lernziel: rechtliche Sorgfalt in eine handhabbare Routine gießen.

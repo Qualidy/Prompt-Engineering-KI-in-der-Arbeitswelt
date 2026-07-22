@@ -1,22 +1,23 @@
-title: System-Prompt für einen Team-Assistenten
+title: Stärken-Schwächen-Landkarte von Copilot erstellen
 difficulty: 4
 question: |
-  **Szenario:** Ihr wollt Copilot so „einstellen", dass es sich für euer Team einheitlich verhält
-  (Ton, Sprache, Format).
+  Erstelle **in Copilot** durch systematisches Testen eine ehrliche Stärken-Schwächen-Landkarte.
 
-  ---
+  **Schritt 1 – Testreihe:** Stelle Copilot bewusst 6 unterschiedliche Aufgaben, je 2 aus den Bereichen:
+  - Sprache/Text (z. B. umformulieren)
+  - Fakten/Zahlen (z. B. eine Rechenaufgabe, eine Jahreszahl)
+  - Logik (z. B. ein kleines Rätsel)
 
-  **Aufgabe (allein oder in der Lerngruppe):**
+  **Schritt 2 – bewerten:**
+  ```text
+  Erstelle eine Tabelle: Aufgabe, Ergebnis (gut/mittel/schlecht), Grund. Sei ehrlich zu deinen eigenen Grenzen.
+  ```
 
-  1. Definiert die gewünschten **Verhaltensregeln** (z. B. Sprache, Anrede, Länge, Struktur, Umgang mit Unsicherheit).
-  2. Formuliert daraus einen **System-Prompt** (Grundanweisung), der diese Regeln festlegt.
-  3. Testet den System-Prompt mit **drei verschiedenen Aufgaben** und prüft, ob die Regeln eingehalten werden.
-  4. Verbessert den System-Prompt in mindestens **einer Iteration**.
-  5. Haltet fest, wo die Grenzen liegen (was lässt sich so **nicht** zuverlässig steuern?).
+  **Schritt 3 – Regeln ableiten:** Formuliere 5 persönliche Regeln, wofür du Copilot einsetzt und wofür nicht.
 
-  **Deliverables:** Regelkatalog + finaler System-Prompt + 3 Testergebnisse + Notiz zu Grenzen.
+  **Deliverable:** die Stärken-Schwächen-Tabelle + 5 persönliche Einsatzregeln.
 tip: |
-  Formuliert Regeln als klare Anweisungen („Antworte immer …", „Weise auf Unsicherheiten hin …").
+  Testet immer selbst: LLMs sind stark bei Sprache, oft schwach bei exakter Mathematik und aktuellen Fakten.
 solution: |
-  Bewertungskriterien: klarer Regelkatalog; System-Prompt setzt die Regeln um; Tests belegen Wirkung;
-  erkennbare Iteration; realistische Einschätzung der Grenzen (z. B. Faktenkorrektheit bleibt Prüfsache).
+  Bewertungskriterien: aussagekräftige Testreihe, ehrliche Bewertung, 5 sinnvolle Einsatzregeln. Lernziel:
+  ein realistisches Bild der LLM-Fähigkeiten entwickeln – aus eigener Erfahrung.

@@ -1,21 +1,26 @@
-title: KI-Readiness-Assessment
+title: Readiness-Check und Fahrplan in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ihr sollt für ein Unternehmen ein kompaktes KI-Readiness-Assessment erstellen.
+  Erstelle **in Copilot** einen kompletten Readiness-Check inklusive Fahrplan – selbst erarbeitet.
 
-  ---
+  **Schritt 1 – Assessment-Werkzeug:**
+  ```text
+  Erstelle einen Fragebogen mit je 2 Fragen pro Readiness-Dimension (Strategie, Daten, Technik,
+  Kompetenzen, Kultur), Skala 1–5.
+  ```
+  **Schritt 2 – Anwenden:**
+  ```text
+  Erfinde ein Unternehmen und fülle den Fragebogen plausibel aus. Berechne einen Durchschnitt je Dimension.
+  ```
+  **Schritt 3 – Fahrplan:**
+  ```text
+  Leite aus den Ergebnissen einen 6-Monats-Fahrplan ab: Was zuerst, was später, jeweils mit Begründung.
+  ```
+  **Schritt 4 – Prüfung:** Prüfe den Fahrplan kritisch – ist die Reihenfolge sinnvoll? Passe per Prompt an.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Beschreibt ein Unternehmen kurz (Branche, Größe, IT-Situation).
-  2. Bewertet die **fünf Handlungsfelder** (Daten, Technik, Kompetenzen, Kultur, Strategie) je auf einer Skala 1–4.
-  3. Stellt das Ergebnis als **Profil** dar (Tabelle oder Netzdiagramm-Beschreibung) und bestimmt den Gesamtreifegrad.
-  4. Leitet **drei priorisierte Maßnahmen** ab, um die größten Lücken zu schließen.
-  5. Nutzt **Copilot** für Fragenkatalog und Maßnahmenideen – bewertet die Vorschläge kritisch.
-
-  **Deliverables:** Readiness-Profil (5 Felder bewertet) + Gesamtreifegrad + 3 priorisierte Maßnahmen.
+  **Deliverable:** Fragebogen + ausgefülltes Ergebnis + 6-Monats-Fahrplan.
 tip: |
-  Beginnt bei den Maßnahmen mit dem schwächsten Feld – dort ist der Hebel am größten.
+  Ein guter Fahrplan startet bei der schwächsten Dimension und plant schnelle, sichtbare Erfolge ein.
 solution: |
-  Bewertungskriterien: konsistente Bewertung aller fünf Felder; plausibler Gesamtreifegrad;
-  Maßnahmen adressieren die größten Lücken und sind konkret; Copilot als Hilfsmittel eingesetzt.
+  Bewertungskriterien: vollständiger Fragebogen, plausible Auswertung, begründeter Fahrplan, kritische Prüfung.
+  Lernziel: Readiness messen und in einen priorisierten Fahrplan überführen.

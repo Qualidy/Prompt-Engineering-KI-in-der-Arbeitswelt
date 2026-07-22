@@ -1,22 +1,25 @@
-title: Automatisierte Auswertung von Freitext-Feedback
+title: Feedback-Auswertung als NLP-Projekt in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Euer Unternehmen sammelt viele Freitext-Rückmeldungen (Umfragen, Bewertungen, Tickets)
-  und will sie automatisiert auswerten.
+  Führe **in Copilot** eine komplette Feedback-Auswertung durch – alle Daten selbst erzeugt.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erzeuge 15 fiktive Kundenrückmeldungen zu einem Online-Kurs (unterschiedliche Themen und Stimmungen).
+  ```
+  **Schritt 2:**
+  ```text
+  Klassifiziere alle nach Thema und Stimmung und stelle die Verteilung als Tabelle dar.
+  ```
+  **Schritt 3:**
+  ```text
+  Erstelle eine Management-Zusammenfassung: Top-3-Stärken, Top-3-Probleme, 3 Maßnahmen.
+  ```
+  **Schritt 4 – Prüfung:** Suche 2 Rückmeldungen, bei denen die automatische Einordnung fragwürdig ist (z. B. Ironie), und korrigiere sie.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Erstellt einen Beispieldatensatz mit **mindestens 10** Freitext-Rückmeldungen.
-  2. Definiert, welche **NLP-Aufgaben** ihr braucht (z. B. Sentiment, Themen-Extraktion, Zusammenfassung).
-  3. Entwickelt einen **Copilot-Prompt**, der alle Aufgaben in einem Durchgang erledigt und als Tabelle ausgibt.
-  4. Führt die Analyse durch und **prüft die Ergebnisse** manuell auf Fehler.
-  5. Formuliert eine **Handlungsempfehlung** aus den Erkenntnissen.
-
-  **Deliverables:** Datensatz + finaler Prompt + Auswertungstabelle + geprüfte Handlungsempfehlung.
+  **Deliverable:** klassifizierte Übersicht + Management-Zusammenfassung + Korrekturnotizen.
 tip: |
-  Ein guter Prompt legt Kategorien fest und fordert ein einheitliches Ausgabeformat (Tabelle mit festen Spalten).
+  KI beschleunigt die Auswertung enorm – die Qualitätskontrolle (Ironie, Kontext) bleibt menschlich.
 solution: |
-  Bewertungskriterien: sinnvoll definierte NLP-Aufgaben; präziser, wiederverwendbarer Prompt; manuelle Fehlerprüfung
-  erfolgt; datenbasierte, nachvollziehbare Handlungsempfehlung.
+  Bewertungskriterien: plausible Daten, saubere Klassifikation, verwertbare Zusammenfassung, kritische Korrektur.
+  Lernziel: eine echte NLP-Auswertung end-to-end mit Copilot durchführen und prüfen.

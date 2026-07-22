@@ -1,14 +1,18 @@
-title: Passendes Werkzeug wählen
+title: Bild-Prompt und Social-Post mit Copilot
 difficulty: 1
 question: |
-  Welches Copilot-Werkzeug passt am besten?
-
-  1. Aus einem Textkonzept schnell einen Foliensatz machen.
-  2. Einen langen Bericht auf eine Seite zusammenfassen.
-  3. Eine Illustration für einen Flyer entwerfen.
+  Mach das **live in Copilot**:
+  ```text
+  Schreibe einen detaillierten Bildgenerierungs-Prompt für ein Werbebild einer neuen
+  Bio-Limonade: Motiv, Stil, Farben, Stimmung, Bildausschnitt.
+  ```
+  Dann:
+  ```text
+  Schreibe dazu einen kurzen Instagram-Post (max. 3 Sätze) mit 3 passenden Hashtags.
+  ```
+  (Wenn deine Copilot-Version Bilder erzeugen kann, teste den Bild-Prompt direkt.)
 tip: |
-  Denke an Word, PowerPoint und Bildgenerierung.
+  Ein guter Bild-Prompt beschreibt Motiv, Stil, Farben, Stimmung und Perspektive – je konkreter, desto besser.
 solution: |
-  1. Copilot in PowerPoint
-  2. Copilot in Word
-  3. Bildgenerierung (Copilot/Designer)
+  Erwartetes Ergebnis: ein präziser Bild-Prompt und ein passender Social-Post. Lernziel: KI für Medien- und
+  Content-Erstellung gezielt ansteuern.

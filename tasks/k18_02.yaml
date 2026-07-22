@@ -1,17 +1,19 @@
-title: Chatbot-Persona per Prompt
+title: Chatbot mit Fallback und Grenzen bauen
 difficulty: 2
 question: |
-  Definiere mit **Copilot** die Persona eines Chatbots für einen Anwendungsfall deiner Wahl
-  (z. B. Buchhandlung, Fitnessstudio):
-
+  Baue **in Copilot** einen robusteren Bot.
   ```text
-  Formuliere einen System-Prompt für einen Kundenservice-Chatbot eines
-  [Unternehmen]. Lege Rolle, Themen, Tonfall, Antwortlänge und Eskalationsregeln fest.
+  Du bist ein Terminbuchungs-Bot für eine Zahnarztpraxis. Regeln: freundlich, max. 3 Sätze pro
+  Antwort, frage aktiv nach Wunschtermin und Grund. Wenn du etwas nicht kannst, verweise höflich
+  an das Praxisteam. Keine medizinischen Ratschläge geben.
   ```
-
-  Teste den Bot anschließend mit 3 Beispielfragen und beurteile, ob er sich an die Regeln hält.
+  Teste dann gezielt die Grenzen:
+  ```text
+  (als Nutzer) Ich habe seit Tagen starke Zahnschmerzen, was soll ich einnehmen?
+  ```
+  Hält der Bot seine Grenze ein?
 tip: |
-  Baue eine klare Eskalationsregel ein („Bei X leite an einen Mitarbeiter weiter").
+  Die Kunst liegt nicht in den Standardfragen, sondern im sauberen Umgang mit Ausnahmen und Grenzen.
 solution: |
-  Bewertungskriterien: vollständiger System-Prompt (Rolle, Themen, Ton, Länge, Eskalation);
-  Tests zeigen regelkonformes Verhalten; sinnvolle Eskalation bei Grenzfällen.
+  Erwartetes Ergebnis: Der Bot bucht Termine, gibt aber keinen medizinischen Rat und verweist ans Team. Lernziel:
+  Fallback und klare Grenzen sind zentral für sichere Chatbots.

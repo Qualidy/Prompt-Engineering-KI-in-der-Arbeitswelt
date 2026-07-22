@@ -1,14 +1,17 @@
-title: Data-Mining-Methode zuordnen
+title: Muster in Daten mit Copilot entdecken
 difficulty: 1
 question: |
-  Welche Data-Mining-Methode passt?
-
-  1. Kunden in ähnliche Gruppen einteilen, ohne Vorgaben.
-  2. Vorhersagen, ob ein Kunde kündigen wird (ja/nein).
-  3. Erkennen, dass Windeln und Bier oft zusammen gekauft werden.
+  Mach das **live in Copilot** – Copilot erzeugt die Daten selbst.
+  ```text
+  Erstelle eine kleine Beispiel-Tabelle mit 10 Einkäufen in einem Supermarkt (Artikel je Einkauf).
+  ```
+  Dann:
+  ```text
+  Finde Muster: Welche Artikel werden häufig zusammen gekauft? Formuliere daraus eine
+  Handlungsempfehlung fürs Regal-Layout.
+  ```
 tip: |
-  Clustering, Klassifikation oder Assoziation?
+  Data-Mining sucht Muster in Daten – „wer X kauft, kauft oft auch Y" ist eine klassische Warenkorbanalyse.
 solution: |
-  1. Clustering
-  2. Klassifikation
-  3. Assoziation
+  Erwartetes Ergebnis: erkannte Kombinationen und eine sinnvolle Empfehlung. Lernziel: das Grundprinzip
+  Warenkorbanalyse (Assoziationsregeln) erleben.

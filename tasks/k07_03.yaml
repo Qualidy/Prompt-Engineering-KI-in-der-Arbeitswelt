@@ -1,21 +1,24 @@
-title: KI-Readiness-Analyse deines Unternehmens
+title: Readiness-Analyse mit Maßnahmenplan in Copilot
 difficulty: 3
 question: |
-  Bewerte dein Unternehmen (oder deine Abteilung) in den **fünf Dimensionen** der KI-Readiness
-  auf einer Skala von 1–5:
+  Erarbeite **in Copilot** eine vollständige Readiness-Analyse für ein fiktives Unternehmen.
 
-  Strategie · Daten · Technik · Kompetenzen · Kultur
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen und bewerte es in den fünf Readiness-Dimensionen (1–5) mit Begründung.
+  ```
+  **Schritt 2:**
+  ```text
+  Ordne das Unternehmen einer Reifegradstufe 1–5 zu und begründe.
+  ```
+  **Schritt 3:**
+  ```text
+  Schlage für die zwei schwächsten Dimensionen je eine konkrete, umsetzbare Maßnahme vor.
+  ```
 
-  1. Vergib je Dimension einen Wert und begründe ihn kurz.
-  2. Identifiziere die **schwächste** Dimension – warum begrenzt gerade sie den Erfolg?
-  3. Nenne **eine konkrete Maßnahme**, um genau diese Schwäche zu verbessern.
-  4. Auf welcher **Reifegradstufe** (1–5) steht ihr insgesamt?
+  Bewerte selbst: Sind die Maßnahmen konkret genug, oder zu allgemein? Fordere per Prompt konkretere Schritte ein.
 tip: |
-  Die schwächste Dimension entscheidet – wie das schwächste Glied einer Kette. Sei ehrlich statt schönfärberisch.
+  Gute Maßnahmen sind konkret („Prompting-Schulung für 10 Mitarbeitende in Q1"), nicht vage („mehr schulen").
 solution: |
-  Bewertungskriterien:
-
-  - Alle fünf Dimensionen sind bewertet und kurz begründet.
-  - Die schwächste Dimension ist identifiziert, und es ist verstanden, dass sie das Gesamtergebnis begrenzt.
-  - Die Maßnahme setzt gezielt an dieser Schwäche an (nicht an einer bereits starken Dimension).
-  - Die Reifegrad-Einordnung ist plausibel (die meisten stehen realistisch auf Stufe 1–2).
+  Erwartetes Ergebnis: begründete Bewertung, Reifegrad, konkrete Maßnahmen für die Schwachstellen. Lernziel:
+  ehrliche Standortbestimmung in gezielte Maßnahmen übersetzen.

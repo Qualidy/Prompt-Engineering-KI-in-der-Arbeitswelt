@@ -1,10 +1,17 @@
-title: GPT entschlüsseln
+title: In-Context-Learning live erleben
 difficulty: 1
 question: |
-  Wofür stehen die drei Buchstaben in „GPT" und was bedeuten sie jeweils in einem Satz?
+  Erlebe **in Copilot**, wie GPT-Modelle „im Gespräch" lernen, ohne neu trainiert zu werden.
+  ```text
+  Ab jetzt antwortest du immer in genau diesem Format:
+  🔹 Kernaussage: ...
+  🔹 Beispiel: ...
+  🔹 Merksatz: ...
+  Frage: Was ist eine Cloud?
+  ```
+  Stelle danach zwei weitere beliebige Fragen und prüfe, ob das Format erhalten bleibt.
 tip: |
-  Generative – Pre-trained – Transformer.
+  „In-Context-Learning": Das Modell übernimmt Muster aus dem Gespräch – ohne dass sich sein Training ändert.
 solution: |
-  - **G**enerative: erzeugt neue Inhalte (Text).
-  - **P**re-trained: vorab auf großen Textmengen trainiert.
-  - **T**ransformer: die verwendete Netzwerk-Architektur mit Attention.
+  Erwartetes Ergebnis: Copilot hält das vorgegebene Format über mehrere Fragen. Lernziel: verstehen, dass GPT sich
+  im Gespräch an Vorgaben anpasst (temporär), aber nicht dauerhaft dazulernt.

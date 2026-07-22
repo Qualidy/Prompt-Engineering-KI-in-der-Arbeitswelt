@@ -1,21 +1,26 @@
-title: Datenschutz-Leitfaden für KI-Nutzung
+title: Datenschutz-Leitfaden für Copilot-Nutzung
 difficulty: 4
 question: |
-  **Szenario:** Euer Team nutzt zunehmend KI-Tools. Es fehlt ein einfacher Datenschutz-Leitfaden.
+  Erstelle **in Copilot** einen praxisnahen Datenschutz-Leitfaden für die tägliche KI-Nutzung.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen, das Copilot breit einführen will, und beschreibe typische Nutzungssituationen.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle eine Ampel-Übersicht: Welche Daten dürfen (grün), nur mit Vorsicht (gelb) oder nie (rot)
+  in Copilot eingegeben werden? Mit Beispielen.
+  ```
+  **Schritt 3:**
+  ```text
+  Formuliere 6 kurze Verhaltensregeln und 2 typische Fehler, die man vermeiden muss.
+  ```
+  **Schritt 4 – Prüfung:** Teste den Leitfaden an 3 Alltagssituationen. Ist immer klar, was erlaubt ist?
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
-
-  1. Sammelt typische **Situationen**, in denen Kolleg:innen Daten in KI-Tools eingeben (E-Mails, Dokumente, Tabellen).
-  2. Bewertet je Situation das **Datenschutzrisiko** (unkritisch / heikel / verboten).
-  3. Formuliert **klare Regeln**: Was darf rein, was nicht, wie anonymisieren, welche Umgebung nutzen.
-  4. Erstellt eine **Kurz-Checkliste** („Bevor ich etwas eingebe, prüfe ich …").
-  5. Nutzt **Copilot** für den Entwurf und **prüft** die Aussagen (keine ungeprüften Rechtsauskünfte übernehmen).
-
-  **Deliverables:** Situationsübersicht mit Risikobewertung + Regeln + Kurz-Checkliste.
+  **Deliverable:** Ampel-Übersicht + Verhaltensregeln, an 3 Fällen erprobt.
 tip: |
-  Bezieht die/den Datenschutzbeauftragte:n ein – der Leitfaden ersetzt keine offizielle Freigabe.
+  Ampel-Systeme (grün/gelb/rot) sind im Alltag leichter zu befolgen als lange Paragraphen.
 solution: |
-  Bewertungskriterien: realistische Situationen mit passender Risikobewertung; klare, umsetzbare Regeln;
-  praxistaugliche Checkliste; korrekter Umgang mit DSGVO-Grundsätzen (Zweckbindung, Minimierung, Anonymisierung).
+  Bewertungskriterien: klare Ampel-Logik, praktikable Regeln, an Fällen bewährt. Lernziel: Datenschutz für die
+  KI-Nutzung alltagstauglich machen.

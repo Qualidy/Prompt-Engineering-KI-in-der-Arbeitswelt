@@ -1,18 +1,25 @@
-title: Lernart und Modellaufbau für ein Geschäftsproblem
+title: ML-Steckbrief erstellen und prüfen (Copilot)
 difficulty: 3
 question: |
-  Wähle ein Vorhersageproblem aus deinem Umfeld (z. B. „Welche Kunden kündigen wahrscheinlich?").
+  Erstelle **in Copilot** einen ML-Steckbrief für ein Problem, das Copilot selbst erfindet.
 
-  1. Welche **Lernart** passt (überwacht, unüberwacht, bestärkend)? Begründe.
-  2. Nenne mögliche **Features** (Eingabemerkmale) und das **Label** (Zielwert).
-  3. Erkläre, warum du Daten in **Training und Test** aufteilst.
-  4. Woran würdest du **Overfitting** erkennen – und warum ist es gefährlich?
+  **Schritt 1:**
+  ```text
+  Erfinde ein konkretes Vorhersageproblem in der Personalabteilung und beschreibe es.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle einen Steckbrief mit: Lernart (+ Begründung), Features, Label, Train/Test-Aufteilung,
+  Overfitting-Risiko und wie man es erkennt.
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Welche der genannten Features könnten zu Diskriminierung führen und sollten weggelassen werden?
+  ```
+
+  Bewerte selbst: Ist die Lernart wirklich passend gewählt?
 tip: |
-  Vorhersagen mit bekannter Antwort = überwachtes Lernen. Getestet wird immer an Daten, die das Modell nie gesehen hat.
+  Merkmale wie Geschlecht, Alter oder Herkunft können zu unfairer Diskriminierung führen (Verbindung zu Kapitel 31).
 solution: |
-  Bewertungskriterien:
-
-  - Die Lernart passt (Kündigungsvorhersage = überwachte Klassifikation) und ist begründet.
-  - Features und Label sind sinnvoll und klar getrennt.
-  - Der Train/Test-Split ist als Schutz vor „Prüfen mit bekannten Lösungen" verstanden.
-  - Overfitting ist erklärt (gut im Training, schlecht bei neuen Daten) und als Gefahr erkannt.
+  Erwartetes Ergebnis: vollständiger, begründeter Steckbrief; kritische Reflexion über problematische Features.
+  Lernziel: ML methodisch UND ethisch durchdenken.

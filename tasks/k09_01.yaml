@@ -1,16 +1,18 @@
-title: Datenquellen einordnen
+title: Datenarten mit Copilot unterscheiden
 difficulty: 1
 question: |
-  Sind die folgenden Datenquellen **intern** oder **extern**?
+  Mach das **live in Copilot**:
+  ```text
+  Nenne 6 Beispiele für Daten in einem Unternehmen und ordne jedes als strukturiert,
+  semistrukturiert oder unstrukturiert ein. Stelle es als Tabelle dar.
+  ```
 
-  1. Das eigene CRM-System
-  2. Wetterdaten über eine öffentliche API
-  3. Gescannte Eingangsrechnungen
-  4. Statistiken des Statistischen Bundesamts
+  Frage nach:
+  ```text
+  Welche dieser Datenarten kann ein Sprachmodell wie Copilot besonders gut verarbeiten – und warum?
+  ```
 tip: |
-  Intern = entsteht im eigenen Unternehmen.
+  Der größte Teil der Unternehmensdaten ist unstrukturiert (Texte, Mails, Verträge) – genau hier glänzt generative KI.
 solution: |
-  1. Intern
-  2. Extern
-  3. Intern
-  4. Extern
+  Erwartetes Ergebnis: korrekte Zuordnung der Datenarten; Erkenntnis, dass Copilot besonders bei unstrukturiertem
+  Text stark ist.

@@ -1,17 +1,17 @@
-title: Prüfkonzept mit Copilot
+title: Fehlerdaten auswerten (Pareto) mit Copilot
 difficulty: 2
 question: |
-  Wähle ein Produkt und lass **Copilot** ein KI-Prüfkonzept skizzieren:
-
+  Arbeite **in Copilot** mit selbst erzeugten Daten.
   ```text
-  Skizziere ein KI-gestütztes Sichtprüfungskonzept für [Produkt]: Welche Fehler
-  sollen erkannt werden, welche Bilddaten braucht das Training, und wie geht man
-  mit Grenzfällen um?
+  Erstelle eine Tabelle mit 8 Fehlerarten und ihrer Häufigkeit (fiktive Zahlen) für einen Monat.
   ```
-
-  Überlege: Welcher Fehlertyp (falsch-positiv/falsch-negativ) ist bei deinem Produkt kritischer?
+  Dann:
+  ```text
+  Führe eine Pareto-Analyse durch: Welche wenigen Fehlerarten verursachen die meisten Fälle?
+  Formuliere, worauf man sich zuerst konzentrieren sollte.
+  ```
 tip: |
-  Sicherheits- und kundenrelevante Fehler dürfen möglichst nie übersehen werden.
+  Pareto-Prinzip: Oft verursachen ~20 % der Fehlerarten ~80 % der Probleme. Dort ansetzen.
 solution: |
-  Bewertungskriterien: sinnvoll definierte Fehlerarten; Verständnis für Trainingsdaten (ausgewogen, markiert);
-  begründete Priorisierung des kritischeren Fehlertyps; Rolle des Menschen bei Grenzfällen.
+  Erwartetes Ergebnis: Pareto-Auswertung mit klarer Priorisierung der wichtigsten Fehlerarten. Lernziel:
+  Qualitätsdaten auswerten und Verbesserung fokussieren.

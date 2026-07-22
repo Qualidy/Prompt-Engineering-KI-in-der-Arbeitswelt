@@ -1,16 +1,18 @@
-title: Einsparpotenziale mit Copilot
+title: Energiedaten mit Copilot auswerten
 difficulty: 2
 question: |
-  Lass dir von **Copilot** Einsparpotenziale für einen Betrieb erarbeiten:
-
+  Arbeite **in Copilot** mit selbst erzeugten Daten.
   ```text
-  Für einen [Betriebstyp]: Nenne 5 konkrete Ansätze, wie KI Energie oder Material
-  spart. Gib je Ansatz an, welche Daten man zum Nachweis der Einsparung braucht.
+  Erstelle eine Tabelle mit dem monatlichen Stromverbrauch (12 Monate) einer fiktiven Produktion,
+  inkl. einiger auffälliger Ausschläge.
   ```
-
-  Wähle einen Ansatz und überlege: Wie belegst du die Einsparung messbar?
+  Dann:
+  ```text
+  Analysiere die Daten: Wann ist der Verbrauch auffällig hoch? Nenne 3 mögliche Ursachen und
+  3 konkrete Einsparmaßnahmen.
+  ```
 tip: |
-  Ohne Vorher-/Nachher-Messung lässt sich keine Einsparung beweisen.
+  Auffällige Ausschläge sind oft der schnellste Hebel – erst verstehen, warum, dann handeln.
 solution: |
-  Bewertungskriterien: konkrete Ansätze; jeweils passende Nachweisdaten; Verständnis, dass Einsparungen mit
-  Messwerten belegt werden müssen; ggf. Hinweis auf Eigenverbrauch der KI.
+  Erwartetes Ergebnis: erkannte Auffälligkeiten, plausible Ursachen und konkrete Maßnahmen. Lernziel: Verbrauchsdaten
+  auswerten und in Einsparungen übersetzen.

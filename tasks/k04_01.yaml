@@ -1,16 +1,20 @@
-title: Phasen eines KI-Projekts
+title: Eine KI-Idee mit Copilot schärfen
 difficulty: 1
 question: |
-  Bringe die Phasen eines KI-Projekts (angelehnt an CRISP-DM) in die richtige Reihenfolge:
+  Mach diese Übung **live in Copilot**. Nutze diese fiktive, absichtlich vage Idee:
 
-  Modellierung · Geschäftsverständnis · Einsatz/Betrieb · Datenaufbereitung ·
-  Datenverständnis · Evaluation
+  > „Wir wollen irgendwas mit KI im Kundenservice machen."
+
+  Gib in Copilot ein:
+  ```text
+  Ich habe diese vage Idee: „Wir wollen irgendwas mit KI im Kundenservice machen."
+  Stelle mir die 4 wichtigsten Fragen, die ich klären muss, um daraus einen konkreten
+  Use Case zu machen: Problem, Daten, Nutzen, Machbarkeit.
+  ```
+
+  Beantworte anschließend die Fragen selbst (fiktiv) und lass Copilot deinen Entwurf bewerten.
 tip: |
-  Am Anfang steht immer das Ziel, am Ende der Betrieb.
+  Guter Use Case = Problem + Daten + messbarer Nutzen + Machbarkeit. Starte beim Problem, nicht bei der Technik.
 solution: |
-  1. Geschäftsverständnis
-  2. Datenverständnis
-  3. Datenaufbereitung
-  4. Modellierung
-  5. Evaluation
-  6. Einsatz/Betrieb
+  Erwartetes Ergebnis: Copilot liefert klärende Fragen entlang der vier Dimensionen. Die Übung zeigt, wie aus
+  „irgendwas mit KI" ein konkreter, prüfbarer Use Case wird.

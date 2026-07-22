@@ -75,12 +75,12 @@ Wichtig zur Einordnung: **Copilot ist kein Maschinensteuerungs-System.** Die eig
 | Doku & Anleitungen | „Erstelle eine verständliche Kurzanleitung aus diesem Handbuchauszug." |
 | Auswertung | „Welche Auffälligkeiten zeigt diese Ausschuss-Statistik (Excel)?" |
 
-**Beispiel-Prompt zum Ausprobieren:**
+**Beispiel-Prompt zum Ausprobieren (selbsttragend – Copilot erzeugt die Daten zuerst):**
 
 ```text
-Hier sind die Schichtprotokolle der letzten Woche: [Text]. Fasse die häufigsten
-Störungen zusammen, ordne sie nach Häufigkeit und schlage vor, welche zuerst
-untersucht werden sollten.
+Erfinde die Schichtprotokolle einer Woche mit mehreren wiederkehrenden Störungen.
+Fasse danach die häufigsten Störungen zusammen, ordne sie nach Häufigkeit und
+schlage vor, welche zuerst untersucht werden sollten.
 ```
 
 !!! warning "Klare Grenze"

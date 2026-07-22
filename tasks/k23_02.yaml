@@ -1,16 +1,17 @@
-title: Anforderungsliste mit Copilot
+title: Kurz-Lastenheft mit Copilot erstellen
 difficulty: 2
 question: |
-  Wähle ein einfaches Bauteil (z. B. Wandhalterung, Gehäuse) und lass **Copilot** eine Anforderungsliste erstellen:
-
+  Arbeite **in Copilot**.
   ```text
-  Erstelle eine strukturierte Anforderungsliste für die Konstruktion von [Bauteil]:
-  Lasten, Material, Bauraum, Fertigungsverfahren, relevante Normen, Kosten.
+  Erfinde ein technisches Produkt (z. B. ein Transportgestell) und erstelle ein kurzes Lastenheft:
+  Zweck, Muss-Anforderungen, Kann-Anforderungen, Randbedingungen.
   ```
-
-  Ergänze mindestens eine Anforderung, die Copilot übersehen hat, und begründe sie.
+  Verfeinere dann:
+  ```text
+  Formuliere jede Muss-Anforderung überprüfbar (messbar), z. B. „trägt mindestens 50 kg" statt „ist stabil".
+  ```
 tip: |
-  Denke auch an Umgebungsbedingungen (Temperatur, Feuchte, Korrosion).
+  Gute Anforderungen sind messbar und prüfbar – „stabil" ist Auslegungssache, „trägt 50 kg" nicht.
 solution: |
-  Bewertungskriterien: vollständige, sinnvoll strukturierte Anforderungsliste; fachlich passende eigene Ergänzung;
-  Verständnis, dass die Liste vor jedem (generativen) Entwurf steht.
+  Erwartetes Ergebnis: strukturiertes Lastenheft mit messbaren Muss-Anforderungen. Lernziel: Anforderungen präzise
+  und prüfbar formulieren – die Basis für (generatives) Design.

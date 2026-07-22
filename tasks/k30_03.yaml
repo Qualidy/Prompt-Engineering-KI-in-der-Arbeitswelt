@@ -1,19 +1,25 @@
-title: Low-Code-Automatisierung mit Governance
+title: Citizen Development mit Governance (Copilot)
 difficulty: 3
 question: |
-  Ein Fachbereich möchte per Low-Code (Power Platform) einen Genehmigungsprozess automatisieren
-  (z. B. Urlaubs- oder Beschaffungsanträge).
+  Durchdenke **in Copilot** ein Citizen-Development-Szenario, das Copilot selbst erzeugt.
 
-  1. Skizziere die Automatisierung: **Auslöser → Schritte → Ergebnis**.
-  2. Überlege, wo ein **eigener Copilot-Agent** (Copilot Studio) sinnvoll wäre.
-  3. Definiere **drei Governance-Leitplanken**, die verhindern, dass hier „Schatten-IT" entsteht.
-  4. Nenne ein **Datenschutz-Risiko** und wie du es adressierst.
+  **Schritt 1:**
+  ```text
+  Erfinde eine Situation, in der Fachabteilungen selbst kleine Apps/Automatisierungen bauen
+  (Citizen Development). Beschreibe den Nutzen.
+  ```
+  **Schritt 2:**
+  ```text
+  Nenne die 3 größten Risiken (z. B. Schatten-IT, Datenschutz, keine Wartung) mit je einem Beispiel.
+  ```
+  **Schritt 3:**
+  ```text
+  Entwirf 5 einfache Governance-Regeln, die den Nutzen erhalten, aber die Risiken begrenzen.
+  ```
+
+  Bewerte selbst: Sind deine Regeln praktikabel oder ersticken sie die Eigeninitiative?
 tip: |
-  Low-Code entlastet die IT – ohne Leitplanken entsteht aber Wildwuchs. Kläre: Welche Daten? Wer prüft/betreibt?
+  Governance soll ermöglichen, nicht verbieten: klare Leitplanken statt kompletter Kontrolle.
 solution: |
-  Bewertungskriterien:
-
-  - Die Automatisierung hat einen klaren Auslöser, sinnvolle Schritte und ein Ergebnis.
-  - Der Copilot-Agent-Einsatz ist plausibel (z. B. Fragen zum Prozess beantworten via RAG).
-  - Drei konkrete Governance-Leitplanken (Datenfreigabe, Zuständigkeit/Betrieb, Prüfung/Freigabe).
-  - Ein Datenschutz-Risiko (personenbezogene Daten) mit Gegenmaßnahme ist genannt.
+  Erwartetes Ergebnis: Nutzen, konkrete Risiken und 5 praktikable Governance-Regeln. Lernziel: Citizen Development
+  fördern und gleichzeitig absichern.

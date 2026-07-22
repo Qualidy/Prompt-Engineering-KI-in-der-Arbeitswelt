@@ -1,14 +1,18 @@
-title: Innovationsarten unterscheiden
+title: Ideen-Sprint mit Copilot
 difficulty: 1
 question: |
-  Ordne zu: Produkt-, Prozess- oder Geschäftsmodell-Innovation?
+  Erlebe **in Copilot**, wie stark KI beim Ideenfinden ist (Divergenz). Gib ein:
+  ```text
+  Generiere 10 Ideen, wie ein Café durch KI besser werden könnte. Sei kreativ und kurz –
+  je Idee ein Satz.
+  ```
 
-  1. Ein Hersteller bietet Maschinen nicht mehr zum Kauf, sondern gegen Nutzungsgebühr an.
-  2. Die Buchhaltung prüft Rechnungen jetzt automatisch statt manuell.
-  3. Ein Unternehmen bringt eine App mit KI-Sprachsteuerung auf den Markt.
+  Wähle danach selbst deine 3 Favoriten und lass Copilot sie bewerten:
+  ```text
+  Bewerte diese 3 Ideen [deine Auswahl nennen] nach Aufwand (niedrig/mittel/hoch) und Nutzen.
+  ```
 tip: |
-  Frage: Ändert sich das Angebot, die Arbeitsweise oder die Art, Geld zu verdienen?
+  KI ist stark im Erzeugen vieler Ideen. Die Auswahl (Konvergenz) triffst du.
 solution: |
-  1. Geschäftsmodell-Innovation
-  2. Prozessinnovation
-  3. Produktinnovation
+  Erwartetes Ergebnis: 10 Ideen, davon eigene Auswahl und Bewertung. Lernziel: KI für die Ideenbreite nutzen,
+  die Entscheidung aber selbst treffen.

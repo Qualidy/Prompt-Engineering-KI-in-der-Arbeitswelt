@@ -1,18 +1,26 @@
-title: Bereinigungsplan für eine problematische Tabelle
+title: Knifflige Datenbereinigung in Copilot lösen
 difficulty: 3
 question: |
-  Eine Kundentabelle hat folgende Probleme: fehlende Umsatzwerte, Datumsangaben in zwei
-  verschiedenen Formaten, der Kunde „Müller GmbH" taucht dreifach auf (einmal als „Mueller GmbH"),
-  und ein Alterswert lautet „199".
+  Nutze **in Copilot** diese fiktive Problemtabelle (kopiere den Text in Copilot):
 
-  1. Erstelle einen **Bereinigungsplan** mit der sinnvollen Reihenfolge der Schritte.
-  2. Erkläre beim fehlenden Umsatz, warum **„einfach 0 einsetzen" gefährlich** sein kann.
-  3. Formuliere einen **Copilot-Prompt (Excel)**, der dich beim Finden dieser Probleme unterstützt.
+  ```text
+  Name; Umsatz; Datum; Alter
+  Müller GmbH; 1200; 01.02.2026; 45
+  Mueller GmbH; ; 2026-02-01; 45
+  Schmidt AG; 800; 03.02.2026; 199
+  Weber KG; 950; 04/02/2026;
+  ```
+
+  Gib Copilot den Auftrag:
+  ```text
+  Analysiere diese Tabelle: Nenne alle Datenprobleme (Dubletten, fehlende Werte, uneinheitliche
+  Formate, Ausreißer), schlage je einen Bereinigungsschritt vor und markiere, wo ich fachlich
+  entscheiden muss, statt automatisch zu bereinigen.
+  ```
+
+  Bewerte selbst: Wo würde eine blinde Automatik Schaden anrichten?
 tip: |
-  Erst verstehen, dann bereinigen: „fehlt" kann „0 €" oder „nicht erfasst" bedeuten – ein großer Unterschied.
+  „Müller GmbH" und „Mueller GmbH" sind wahrscheinlich dieselbe Firma. Alter 199 ist ein klarer Ausreißer/Fehler.
 solution: |
-  Bewertungskriterien:
-
-  - Der Plan deckt Vereinheitlichen (Datum), Entdoppeln (Müller/Mueller), Ausreißer (Alter 199) und fehlende Werte ab.
-  - Es wird erkannt, dass „0 einsetzen" Durchschnitte/Summen verfälschen kann, wenn der Wert eigentlich „unbekannt" ist.
-  - Der Copilot-Prompt ist konkret und zielt auf Prüfung/Analyse (nicht blindes Auto-Bereinigen).
+  Erwartetes Ergebnis: Dublette (Müller/Mueller), fehlender Umsatz, fehlendes Alter, drei Datumsformate, Ausreißer 199.
+  Wichtig: Entdoppeln und Auffüllen erfordern fachliche Entscheidung, keine blinde Automatik.

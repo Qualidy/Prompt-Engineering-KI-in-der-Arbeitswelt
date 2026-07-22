@@ -1,21 +1,26 @@
-title: KI-Strategie auf einer Seite
+title: Einseitige KI-Strategie in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Die Geschäftsführung wünscht eine KI-Strategie „auf einer Seite".
+  Erstelle **in Copilot** eine einseitige KI-Strategie („One-Pager") für ein fiktives Unternehmen.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen und beschreibe Geschäftsziele und Ausgangslage.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle den Strategie-One-Pager: Vision, 3 Handlungsfelder mit Maßnahmen, benötigte Ressourcen/
+  Kompetenzen, Zeithorizont, Erfolgs-KPIs, Top-Risiken.
+  ```
+  **Schritt 3:**
+  ```text
+  Formuliere einen einprägsamen Leitsatz, der die KI-Strategie auf den Punkt bringt.
+  ```
+  **Schritt 4 – Prüfung:** Zahlt jedes Handlungsfeld klar auf ein Geschäftsziel ein? Streiche, was nur „nice to have" ist.
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
-
-  1. Wählt ein Unternehmen und formuliert eine **KI-Vision** (1–2 Sätze), abgeleitet aus den Unternehmenszielen.
-  2. Definiert **3 Handlungsfelder** und je **2 priorisierte Use Cases** (Nutzen/Aufwand).
-  3. Skizziert eine grobe **Roadmap** (Jahr 1, 2, 3).
-  4. Legt die wichtigsten **Governance-Regeln** fest (inkl. Kompetenzaufbau/Prompting).
-  5. Nutzt **Copilot** für Struktur und Formulierung; trefft die Entscheidungen selbst.
-
-  **Deliverables:** Einseitige KI-Strategie (Vision, Handlungsfelder, Use Cases, Roadmap, Governance).
+  **Deliverable:** KI-Strategie-One-Pager mit Leitsatz.
 tip: |
-  Bindet die Kompetenzentwicklung (Prompt Engineering) explizit als Governance-/Strategiebaustein ein – das ist Thema von Kapitel 40.
+  Eine Strategie, die auf eine Seite passt, ist meist klarer und wird eher umgesetzt als ein 50-Seiten-Papier.
 solution: |
-  Bewertungskriterien: klare, ableitbare Vision; sinnvolle Handlungsfelder und priorisierte Use Cases; realistische
-  Roadmap; passende Governance-Regeln; erkennbar eigene strategische Entscheidungen.
+  Bewertungskriterien: klare Vision, fokussierte Handlungsfelder mit Geschäftsbezug, KPIs/Risiken, prägnanter
+  Leitsatz. Lernziel: eine kommunizierbare, fokussierte KI-Strategie formulieren.

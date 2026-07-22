@@ -1,21 +1,25 @@
-title: Service-Chatbot konzipieren und testen
+title: Service-Chatbot end-to-end in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ihr sollt für ein Unternehmen einen Kundenservice-Chatbot konzipieren.
+  Entwickle und teste **in Copilot** einen kompletten Service-Chatbot – ohne echte Daten.
 
-  ---
+  **Schritt 1 – Szenario:** Denk dir ein Unternehmen und einen Anwendungsfall aus (z. B. Bestell-Support).
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
+  **Schritt 2 – Wissen erzeugen:**
+  ```text
+  Erfinde die 8 wichtigsten Infos/FAQs, die dieser Bot kennen muss.
+  ```
+  **Schritt 3 – Bot-Prompt:** Schreibe einen vollständigen System-Prompt: Rolle, Ton, Gesprächsführung,
+  Grenzen, Eskalation an Menschen.
 
-  1. Wählt ein Unternehmen und definiert **Ziel und Themenumfang** des Chatbots.
-  2. Erstellt einen **System-Prompt** (Rolle, Regeln, Ton, Eskalation) mit **Copilot** und optimiert ihn.
-  3. Entwerft **3 typische Dialogverläufe** (inkl. eines Falls, der an einen Menschen übergeben wird).
-  4. Testet den Bot in Copilot mit **realistischen, auch schwierigen** Anfragen (unklar, gereizt, außerhalb des Themas).
-  5. Dokumentiert **Schwachstellen** und leitet Verbesserungen am Prompt ab.
+  **Schritt 4 – Testgespräche:** Spiele 3 Dialoge durch: eine einfache Anfrage, eine unzufriedene Kundin,
+  eine Frage außerhalb des Wissens.
 
-  **Deliverables:** Konzept + System-Prompt + 3 Dialogverläufe + Testprotokoll mit Verbesserungen.
+  **Schritt 5 – verbessern:** Überarbeite den Prompt nach den Tests.
+
+  **Deliverable:** System-Prompt + 3 Testdialoge + Verbesserungsnotizen.
 tip: |
-  Testet bewusst Grenzfälle – daran zeigt sich die Qualität des Dialogdesigns.
+  Ein guter Bot weiß, wann er an einen Menschen übergeben muss – definiere klare Eskalationsregeln.
 solution: |
-  Bewertungskriterien: klares Konzept; robuster System-Prompt; realistische Dialoge inkl. Eskalation;
-  Tests decken Schwachstellen auf; nachvollziehbare Prompt-Verbesserungen.
+  Bewertungskriterien: vollständiger System-Prompt, realistische Testdialoge inkl. Eskalation, sichtbare
+  Verbesserung. Lernziel: einen einsatzreifen Chatbot-Prompt gestalten und iterativ härten.

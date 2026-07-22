@@ -1,14 +1,17 @@
-title: Low-Code-Begriffe
+title: Automatisierbaren Ablauf mit Copilot planen
 difficulty: 1
 question: |
-  Richtig oder falsch?
-
-  1. No-Code bedeutet, dass gar nicht programmiert werden muss.
-  2. Ein Citizen Developer ist immer ein ausgebildeter Informatiker.
-  3. Die Microsoft Power Platform ist ein Beispiel für Low-Code mit KI.
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde eine kleine, wiederkehrende Aufgabe im Büro (z. B. „neue Anfrage kommt per Formular →
+  Bestätigungsmail → Eintrag in Liste"). Beschreibe sie als Wenn-Dann-Ablauf in nummerierten Schritten.
+  ```
+  Dann:
+  ```text
+  Welche dieser Schritte könnte man mit einem Low-Code-Tool (ohne Programmierung) automatisieren?
+  ```
 tip: |
-  „Citizen" = Fachkraft ohne Informatikausbildung.
+  Low-Code baut Abläufe per Baukasten (Wenn-Dann) zusammen – ideal für einfache, wiederkehrende Aufgaben.
 solution: |
-  1. Richtig
-  2. Falsch – gerade Fachkräfte OHNE Informatikausbildung
-  3. Richtig
+  Erwartetes Ergebnis: klarer Wenn-Dann-Ablauf und Einschätzung der Automatisierbarkeit. Lernziel: Automatisierungs-
+  logik in Schritten denken.

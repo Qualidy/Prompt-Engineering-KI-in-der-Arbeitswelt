@@ -1,18 +1,24 @@
-title: Use-Case-Steckbrief mit Copilot
+title: Nutzen-Machbarkeit-Matrix in Copilot bauen
 difficulty: 2
 question: |
-  Wähle eine KI-Idee (z. B. „Automatische Angebotserstellung"). Lass dir von **Copilot** einen
-  Steckbrief strukturieren:
+  Arbeite **in Copilot**. Lass es zuerst Ideen erzeugen, dann bewerten.
 
+  **Schritt 1:**
   ```text
-  Erstelle einen Use-Case-Steckbrief für die Idee "[deine Idee]" mit den Feldern
-  Problem, benötigte Daten, erwarteter Nutzen, Risiken und Machbarkeit.
-  Fasse dich je Feld auf 1-2 Sätze.
+  Erfinde 6 mögliche KI-Ideen für ein Steuerberatungsbüro.
   ```
-
-  Ergänze anschließend, was Copilot fehlt oder unrealistisch einschätzt.
+  **Schritt 2:**
+  ```text
+  Ordne diese 6 Ideen in eine Nutzen-Machbarkeit-Matrix ein (Tabelle mit Spalten Nutzen und
+  Aufwand, je hoch/mittel/gering) und markiere die Quick Wins.
+  ```
+  **Schritt 3 – nachschärfen:**
+  ```text
+  Erkläre bei den zwei Quick Wins jeweils in einem Satz, warum sie „hoher Nutzen, geringer
+  Aufwand" sind, und welche Annahme dahintersteckt.
+  ```
 tip: |
-  Prüfe besonders das Feld „benötigte Daten" – hier unterschätzen viele Konzepte den Aufwand.
+  Quick Wins sind oft text-/dokumentenlastige Aufgaben, die man sofort mit Copilot angehen kann – ganz ohne eigene Modelle.
 solution: |
-  Bewertungskriterien: vollständiger Steckbrief mit allen fünf Feldern; realistische Einschätzung
-  bei Daten und Machbarkeit; erkennbare eigene Ergänzung/Korrektur der Copilot-Ausgabe.
+  Erwartetes Ergebnis: eine plausible Matrix und begründete Quick Wins. Lernziel: Priorisieren nach Nutzen und
+  Aufwand, statt „alles gleichzeitig" zu versuchen.

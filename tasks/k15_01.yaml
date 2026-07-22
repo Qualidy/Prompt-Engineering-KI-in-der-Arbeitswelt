@@ -1,16 +1,18 @@
-title: LLM-Begriffe zuordnen
+title: Nächstes-Wort-Prinzip live erleben
 difficulty: 1
 question: |
-  Ordne die Begriffe ihrer Bedeutung zu: Kontextfenster, Temperatur, Token, System-Prompt
+  Erlebe **in Copilot**, wie ein Sprachmodell arbeitet.
+  ```text
+  Vervollständige diesen Satz auf 5 verschiedene Arten: „Am Montagmorgen im Büro ..."
+  ```
+  Dann:
+  ```text
+  Erkläre mir in einfachen Worten: Wie „entscheidest" du eigentlich, welches Wort als Nächstes kommt?
+  ```
 
-  1. Legt fest, wie kreativ oder sachlich die Antwort ausfällt.
-  2. Grundanweisung, die das Verhalten dauerhaft steuert.
-  3. Begrenzt, wie viel Text das Modell gleichzeitig berücksichtigen kann.
-  4. Kleinster Text-Baustein, in dem gerechnet und abgerechnet wird.
+  Überlege: Warum können bei gleicher Eingabe unterschiedliche Antworten entstehen?
 tip: |
-  Denke an „Kreativität", „Grundregel", „Gedächtnisgröße" und „Baustein".
+  Ein LLM berechnet Wahrscheinlichkeiten für das nächste Wort – es „weiß" nichts, es rechnet.
 solution: |
-  1. Temperatur
-  2. System-Prompt
-  3. Kontextfenster
-  4. Token
+  Erwartetes Ergebnis: 5 Varianten und eine verständliche Erklärung des Wahrscheinlichkeitsprinzips. Lernziel:
+  LLMs erzeugen Text durch statistische Vorhersage, nicht durch „Verstehen".

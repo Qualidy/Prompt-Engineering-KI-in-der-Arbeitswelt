@@ -1,16 +1,18 @@
-title: Process Mining erklären lassen
+title: Standardarbeitsanweisung mit Copilot erstellen
 difficulty: 2
 question: |
-  Lass dir von **Copilot** Process Mining praxisnah erklären:
-
+  Arbeite **in Copilot**.
   ```text
-  Erkläre Process Mining an einem Beispiel aus der Auftragsabwicklung. Was sind
-  Logdaten, was kann man daraus erkennen und welche typische Abweichung deckt es auf?
+  Erfinde einen Kundenbeschwerde-Prozess und erstelle daraus eine klare Standardarbeitsanweisung
+  (SOP): nummerierte Schritte, Verantwortliche, Zeitvorgaben, Eskalationsregel.
   ```
-
-  Notiere: Welche Systeme in einem Unternehmen liefern solche Logdaten?
+  Dann verfeinere:
+  ```text
+  Ergänze zu jedem Schritt einen passenden Copilot-Prompt, den ein Mitarbeiter direkt nutzen könnte
+  (z. B. für die Antwort-E-Mail).
+  ```
 tip: |
-  Denke an ERP-, CRM- und Ticketsysteme.
+  Eine gute SOP ist so klar, dass jede neue Person sie ohne Rückfragen ausführen kann.
 solution: |
-  Bewertungskriterien: korrektes Verständnis (Prozess aus Logdaten rekonstruieren, Abweichungen/Engpässe finden);
-  sinnvolle Beispielsysteme (ERP, CRM, Ticketsystem).
+  Erwartetes Ergebnis: strukturierte SOP mit einsatzbereiten Copilot-Prompts je Schritt. Lernziel: Prozesse
+  standardisieren und direkt mit KI-Unterstützung verzahnen.

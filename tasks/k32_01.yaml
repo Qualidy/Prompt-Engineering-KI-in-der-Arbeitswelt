@@ -1,14 +1,13 @@
-title: Risikoklasse zuordnen
+title: Risikoklassen des EU AI Act mit Copilot
 difficulty: 1
 question: |
-  Ordne die Anwendung einer EU-AI-Act-Risikoklasse zu (verboten, hoch, begrenzt, minimal):
-
-  1. KI zur Vorauswahl von Bewerbungen.
-  2. Ein Chatbot auf einer Website.
-  3. Ein Spamfilter im E-Mail-Programm.
+  Mach das **live in Copilot**:
+  ```text
+  Erkläre die vier Risikoklassen des EU AI Act (verboten, hoch, begrenzt, minimal) mit je einem
+  Beispiel aus der Arbeitswelt. Als Tabelle.
+  ```
 tip: |
-  Je stärker Menschen betroffen sind, desto höher das Risiko.
+  Je höher das Risiko für Menschen, desto strenger die Pflichten – von „erlaubt" bis „verboten".
 solution: |
-  1. Hochrisiko
-  2. Begrenztes Risiko (Transparenz-/Kennzeichnungspflicht)
-  3. Minimales Risiko
+  Erwartetes Ergebnis: die 4 Risikoklassen mit passenden Beispielen. Lernziel: den risikobasierten Ansatz der
+  KI-Regulierung verstehen.

@@ -1,22 +1,26 @@
-title: Erklärbarkeit für eine KI-Entscheidung sicherstellen
+title: Erklärbarkeits-Konzept mit Copilot
 difficulty: 4
 question: |
-  **Szenario:** Eine KI trifft in eurem Bereich eine Vorentscheidung über Menschen (z. B. Bewerbervorauswahl,
-  Priorisierung von Anträgen). Ihr müsst Nachvollziehbarkeit sicherstellen.
+  Entwirf **in Copilot** ein Erklärbarkeits-Konzept für ein fiktives KI-System.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein KI-System, das automatisch Entscheidungen über Menschen trifft, und beschreibe es.
+  ```
+  **Schritt 2:**
+  ```text
+  Definiere, welche Erklärung jede betroffene Gruppe erhält (Kunde, Sachbearbeiter, Aufsicht) und
+  in welcher Form (Klartext, Faktorenliste, Protokoll).
+  ```
+  **Schritt 3:**
+  ```text
+  Beschreibe, wie eine Person Widerspruch einlegen und eine menschliche Prüfung verlangen kann.
+  ```
+  **Schritt 4 – Prüfung:** Reicht das, damit sich niemand einer „unerklärlichen Maschine" ausgeliefert fühlt? Ergänze Lücken.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Beschreibt die Entscheidung und die Betroffenen.
-  2. Legt fest, **welche Erklärungen** die Betroffenen und die Prüfer erhalten sollen.
-  3. Definiert, wie eine **menschliche Überprüfung** und ein **Widerspruch** ablaufen.
-  4. Bewertet den **Trade-off** Genauigkeit vs. Erklärbarkeit für diesen Fall.
-  5. Nutzt **Copilot**, um Begründungstexte/Prozesse zu entwerfen; prüft kritisch.
-
-  **Deliverables:** Entscheidungsbeschreibung + Erklärkonzept + Überprüfungs-/Widerspruchsprozess + Trade-off-Bewertung.
+  **Deliverable:** Erklärbarkeits-Konzept (Zielgruppen, Erklärformen, Widerspruchsweg).
 tip: |
-  Menschen müssen nicht nur ein Ergebnis, sondern auch das „Warum" und einen Widerspruchsweg erhalten.
+  Erklärbarkeit schafft Vertrauen und ist bei Hochrisiko-KI oft gesetzlich verlangt – inkl. Recht auf menschliche Prüfung.
 solution: |
-  Bewertungskriterien: klar beschriebene Entscheidung; verständliches Erklärkonzept; funktionierender Überprüfungs-/
-  Widerspruchsprozess; bewusste Abwägung Genauigkeit vs. Erklärbarkeit.
+  Bewertungskriterien: zielgruppengerechte Erklärungen, konkreter Widerspruchsweg, geschlossene Lücken.
+  Lernziel: Nachvollziehbarkeit und Betroffenenrechte konkret verankern.

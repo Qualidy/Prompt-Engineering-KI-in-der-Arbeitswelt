@@ -1,16 +1,17 @@
-title: Risiko-Checkliste mit Copilot
+title: Risiko-Register für ein KI-Projekt (Copilot)
 difficulty: 2
 question: |
-  Denke an ein konkretes (fiktives) KI-Projekt und lass **Copilot** eine Risiko-Checkliste erstellen:
-
+  Arbeite **in Copilot** mit einem selbst erzeugten Projekt.
   ```text
-  Erstelle für das KI-Projekt "[Projekt]" eine Risiko-Checkliste (Daten, Ziel,
-  Betrieb, Akzeptanz, Recht) mit je 2 Prüffragen und einer Gegenmaßnahme.
+  Erfinde ein KI-Projekt in einem Unternehmen und beschreibe kurz sein Ziel.
   ```
-
-  Markiere die aus deiner Sicht **zwei größten** Risiken und begründe.
+  Dann:
+  ```text
+  Erstelle ein Risiko-Register (Tabelle): 6 Risiken mit Eintrittswahrscheinlichkeit (hoch/mittel/gering),
+  Auswirkung und Gegenmaßnahme. Denke besonders an Datenprobleme und fehlende Akzeptanz.
+  ```
 tip: |
-  Das größte Risiko liegt oft bei den Daten oder beim Weg in den Regelbetrieb.
+  Die häufigsten KI-Projekt-Killer sind schlechte Daten und mangelnde Akzeptanz – nicht die Technik.
 solution: |
-  Bewertungskriterien: vollständige Checkliste über alle Kategorien; sinnvolle Prüffragen/Gegenmaßnahmen;
-  begründete Auswahl der zwei größten Risiken.
+  Erwartetes Ergebnis: strukturiertes Risiko-Register mit realistischen Risiken und Gegenmaßnahmen. Lernziel:
+  Projektrisiken früh erkennen und einplanen.

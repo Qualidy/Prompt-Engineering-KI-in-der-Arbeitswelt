@@ -1,14 +1,13 @@
-title: Personenbezogen oder nicht?
+title: Personenbezogene Daten mit Copilot erkennen
 difficulty: 1
 question: |
-  Welche Angaben sind personenbezogene Daten?
-
-  1. „Max Mustermann, max@example.com"
-  2. Die durchschnittliche Bestellmenge aller Kunden (anonym aggregiert)
-  3. Eine Kundennummer, die einer realen Person zugeordnet werden kann
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde einen kurzen Beispieltext (z. B. eine Kundenanfrage) und markiere darin alle
+  personenbezogenen Daten. Erkläre je Angabe, warum sie personenbezogen ist.
+  ```
 tip: |
-  Personenbezug = auf eine identifizierbare Person rückführbar.
+  Personenbezogen ist alles, was eine Person identifizierbar macht – auch indirekt (z. B. Kundennummer + Ort).
 solution: |
-  1. Ja (Name + E-Mail)
-  2. Nein (anonym aggregiert)
-  3. Ja (zuordenbar zu einer Person)
+  Erwartetes Ergebnis: korrekt markierte personenbezogene Daten mit Begründung. Lernziel: sensible Daten sicher
+  erkennen – Voraussetzung für Datenschutz.

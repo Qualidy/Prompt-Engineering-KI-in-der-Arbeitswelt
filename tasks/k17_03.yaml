@@ -1,16 +1,27 @@
-title: Reinforcement Learning für ein Optimierungsproblem
+title: RL-Setup für ein Praxisproblem entwerfen (Copilot)
 difficulty: 3
 question: |
-  Ein Lagerroboter soll lernen, Waren möglichst schnell und kollisionsfrei zu transportieren.
+  Entwirf **in Copilot** ein komplettes RL-Setup für ein Problem, das Copilot selbst erfindet.
 
-  1. Definiere die RL-Grundelemente für diesen Fall: **Agent, Umgebung, Zustand, Aktion, Belohnung**.
-  2. Beschreibe das Dilemma **Exploration vs. Exploitation** an diesem Beispiel.
-  3. Formuliere eine **schlecht gewählte Belohnung**, die zu unerwünschtem Verhalten („Reward Hacking") führen würde – und korrigiere sie.
+  **Schritt 1:**
+  ```text
+  Erfinde ein betriebliches Problem, das man sinnvoll mit Reinforcement Learning lösen könnte
+  (z. B. Energiesteuerung, Lagerauffüllung), und beschreibe es.
+  ```
+  **Schritt 2:**
+  ```text
+  Definiere Zustand, mögliche Aktionen, Belohnung und ein Risiko (z. B. Reward Hacking oder
+  gefährliches Ausprobieren im Echtbetrieb).
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Warum ist "Lernen durch Ausprobieren" im echten Betrieb riskant, und wie würde man das absichern
+  (z. B. Simulation)?
+  ```
+
+  Bewerte selbst: Ist RL hier wirklich die beste Methode – oder ginge es einfacher?
 tip: |
-  Die Belohnung steuert alles. Wenn du das Falsche belohnst, optimiert der Agent genau das Falsche.
+  RL glänzt bei sequenziellen Entscheidungen mit klarem Ziel – ist aber aufwendig. Oft reichen einfachere Verfahren.
 solution: |
-  Bewertungskriterien:
-
-  - Alle fünf Grundelemente sind sinnvoll auf den Roboter bezogen.
-  - Exploration/Exploitation ist am Beispiel erklärt (bekannte Route nutzen vs. neue ausprobieren).
-  - Ein plausibles Reward-Hacking-Beispiel (z. B. „nur Tempo belohnen" → riskante Fahrweise) und eine bessere Belohnung (Tempo minus Strafe für Kollisionen) sind genannt.
+  Erwartetes Ergebnis: vollständiges RL-Setup mit Risiken und Absicherung; kritische Prüfung, ob RL angemessen ist.
+  Lernziel: RL einordnen und seine Praxisrisiken erkennen.

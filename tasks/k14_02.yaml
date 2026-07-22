@@ -1,21 +1,24 @@
-title: Vom schwachen zum starken Prompt
+title: Iteratives Nachschärfen und Few-Shot in Copilot
 difficulty: 2
 question: |
-  Nimm den schwachen Prompt „Schreib eine E-Mail an einen Kunden" und verbessere ihn schrittweise,
-  indem du Rolle, Aufgabe, Kontext und Format ergänzt.
+  Übe **in Copilot** zwei Profitechniken.
 
-  Teste **beide** Versionen in **Copilot** und vergleiche die Ergebnisse.
-tip: |
-  Ändere zunächst nur einen Baustein und beobachte die Wirkung.
-solution: |
-  Beispiel eines starken Prompts:
-
+  **Teil 1 – Iteration:** Starte bewusst grob und verbessere in 3 Runden:
   ```text
-  Du bist Kundenbetreuer eines Softwareanbieters. Schreibe eine freundliche
-  E-Mail an einen Bestandskunden, der eine verspätete Lieferung reklamiert hat.
-  Kontext: Verzögerung wegen Lieferengpass, Lösung in 3 Tagen.
-  Format: Sie-Form, max. 120 Wörter, mit Entschuldigung und konkretem Zeitplan.
+  Runde 1: Schreibe einen Werbetext für einen Kaffeevollautomaten.
+  Runde 2: Mach ihn kürzer (max. 40 Wörter) und sprich Büro-Teams an.
+  Runde 3: Ergänze einen Call-to-Action und einen humorvollen Ton.
   ```
 
-  Bewertung: Der starke Prompt liefert eine gezieltere, direkt verwendbare Antwort. Der Unterschied
-  zeigt die Wirkung der vier Bausteine.
+  **Teil 2 – Few-Shot (mit Beispielen steuern):**
+  ```text
+  Formuliere Produktnamen im Stil dieser Beispiele:
+  - Kaffee to go → "BohnenBlitz"
+  - Wasserflasche → "SchluckSpecht"
+  Neues Produkt: Notizbuch →
+  ```
+tip: |
+  Wenige gute Beispiele (Few-Shot) steuern Stil und Format oft besser als lange Erklärungen.
+solution: |
+  Erwartetes Ergebnis: sichtbare Verbesserung über die Iterationen; im Few-Shot übernimmt Copilot den Stil der
+  Beispiele. Lernziel: Iteration und Beispiele als starke Steuerungstechniken beherrschen.

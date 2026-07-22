@@ -1,22 +1,24 @@
-title: Stärken und Grenzen von GPT dokumentieren
+title: Maßgeschneiderten Assistenten per Prompt bauen
 difficulty: 4
 question: |
-  **Szenario:** Ihr sollt eine kurze Orientierungshilfe erstellen: Wofür eignen sich GPT-Modelle
-  (wie Copilot) gut – und wovon sollte man die Finger lassen?
+  Baue **in Copilot** einen spezialisierten Assistenten für eine fiktive Rolle – nur mit Prompting.
 
-  ---
+  **Schritt 1 – Rolle wählen:** Denk dir eine nützliche Assistenzrolle aus (z. B. „Onboarding-Buddy
+  für neue Mitarbeitende", „Meeting-Protokollant", „freundlicher Reklamations-Assistent").
 
-  **Aufgabe (allein oder in der Lerngruppe):**
+  **Schritt 2 – System-Prompt schreiben:** Definiere Aufgabe, Tonfall, feste Antwortstruktur, Grenzen
+  („antworte nicht zu Thema X"). Nutze das Muster aus dem Kapitel.
 
-  1. Sammelt **je 5 Aufgaben**, für die GPT-Modelle gut geeignet bzw. ungeeignet sind.
-  2. Begründet jede Zuordnung mit Bezug auf die Funktionsweise (Wahrscheinlichkeit, Wissensstand, Halluzination).
-  3. Formuliert **3 Faustregeln** für den verantwortungsvollen Einsatz im Unternehmen.
-  4. Testet **zwei** der „gut geeigneten" Aufgaben tatsächlich in Copilot.
-  5. Testet bewusst **eine** „ungeeignete" Aufgabe und dokumentiert, was schiefgeht.
+  **Schritt 3 – Testszenarien:**
+  ```text
+  Erfinde 4 typische Situationen für diesen Assistenten und spiele sie mit ihm durch.
+  ```
 
-  **Deliverables:** Eignungs-Übersicht (gut/ungeeignet mit Begründung) + 3 Faustregeln + 3 dokumentierte Tests.
+  **Schritt 4 – verbessern:** Wo hat der Assistent versagt? Überarbeite den System-Prompt und teste erneut.
+
+  **Deliverable:** der finale System-Prompt + Protokoll der Testläufe (vorher/nachher).
 tip: |
-  „Ungeeignet" sind oft Aufgaben, die exakte, prüfbare Fakten oder Rechtssicherheit ohne Kontrolle verlangen.
+  Gute Assistenten haben klare Grenzen: Sag explizit, was er NICHT tun soll.
 solution: |
-  Bewertungskriterien: sinnvolle Eignungszuordnung mit funktionsbezogener Begründung; praxistaugliche Faustregeln;
-  Tests bestätigen Stärken und zeigen eine reale Grenze (z. B. falsche Fakten).
+  Bewertungskriterien: durchdachter System-Prompt (Aufgabe, Ton, Struktur, Grenzen), 4 Tests, sichtbare
+  Verbesserung nach Überarbeitung. Lernziel: aus einem Allzweck-LLM per Prompt einen Spezialisten machen.

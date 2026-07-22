@@ -1,16 +1,17 @@
-title: Muster in Daten finden mit Copilot
+title: Kundensegmente per Clustering-Idee bilden
 difficulty: 2
 question: |
-  Erstelle eine kleine Beispiel-Verkaufstabelle (oder nutze vorhandene Daten) und lass **Copilot** sie erkunden:
-
+  Arbeite **in Copilot** mit selbst erzeugten Daten.
   ```text
-  Untersuche diese Verkaufsdaten auf Muster: Welche Produkte/Kunden sind auffällig?
-  Nenne 3 Hypothesen, die man mit weiteren Daten prüfen könnte.
+  Erstelle eine Tabelle mit 12 fiktiven Kunden (Alter, Kaufhäufigkeit, durchschnittlicher Bon).
   ```
-
-  Wähle eine Hypothese aus und beschreibe, wie du sie prüfen würdest.
+  Dann:
+  ```text
+  Teile diese Kunden in 3 sinnvolle Gruppen (Segmente) ein, benenne jede Gruppe und beschreibe
+  sie in einem Satz. Erkläre, nach welchen Merkmalen du gruppierst.
+  ```
 tip: |
-  Hypothesen sind noch keine Fakten – überlege, welche Daten die Prüfung ermöglichen.
+  Clustering findet Gruppen ohne Vorgabe. Die Benennung und Interpretation der Gruppen ist deine Aufgabe.
 solution: |
-  Bewertungskriterien: nachvollziehbare Muster/Hypothesen; realistische Prüfidee (welche Daten, welcher Vergleich);
-  Bewusstsein, dass Korrelation nicht Kausalität ist.
+  Erwartetes Ergebnis: 3 nachvollziehbare Segmente mit Beschreibung. Lernziel: das Prinzip Clustering/Segmentierung
+  verstehen und interpretieren.

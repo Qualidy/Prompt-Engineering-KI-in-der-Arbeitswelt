@@ -1,13 +1,13 @@
-title: Strategie-Ebenen ordnen
+title: Strategische KI-Ziele mit Copilot formulieren
 difficulty: 1
 question: |
-  Bringe die Ebenen einer KI-Strategie in die logische Reihenfolge:
-
-  Use-Case-Portfolio · Unternehmensziele · Roadmap · KI-Vision
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde ein Unternehmen mit einem klaren Geschäftsziel (z. B. schnelleres Wachstum). Leite daraus
+  3 strategische KI-Ziele ab, die auf dieses Geschäftsziel einzahlen.
+  ```
 tip: |
-  Vom Übergeordneten zum Konkreten.
+  KI ist kein Selbstzweck – jedes KI-Ziel sollte auf ein übergeordnetes Geschäftsziel einzahlen.
 solution: |
-  1. Unternehmensziele
-  2. KI-Vision
-  3. Use-Case-Portfolio
-  4. Roadmap
+  Erwartetes Ergebnis: 3 KI-Ziele, die klar aus dem Geschäftsziel abgeleitet sind. Lernziel: KI strategisch statt
+  als Spielerei denken.

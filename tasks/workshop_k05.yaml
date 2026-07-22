@@ -1,22 +1,26 @@
-title: Trend-Radar für die Geschäftsführung
+title: Trend-Briefing für die Geschäftsführung in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Du sollst der Geschäftsführung auf einer Seite zeigen, welche KI-Trends beobachtet
-  werden sollten und welche jetzt relevant sind.
+  Erstelle **in Copilot** ein kurzes Trend-Briefing – komplett selbst erarbeitet, ohne externe Quellen.
 
-  ---
+  **Schritt 1 – Rahmen:**
+  ```text
+  Erfinde ein mittelständisches Unternehmen und beschreibe kurz seine Ausgangslage.
+  ```
+  **Schritt 2 – Briefing:**
+  ```text
+  Erstelle ein einseitiges Trend-Briefing für die Geschäftsführung: die 3 wichtigsten KI-Trends
+  für dieses Unternehmen, je mit Nutzen, einem Beispiel und einem Risiko. Ton: sachlich, knapp.
+  ```
+  **Schritt 3 – Nachschärfen:**
+  ```text
+  Ergänze zu jedem Trend eine konkrete Empfehlung: „jetzt starten", „pilotieren" oder „beobachten".
+  ```
+  **Schritt 4 – kritische Prüfung:** Prüfe jede Empfehlung. Wo würdest du Copilot widersprechen? Passe an.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Wähle 5–6 aktuelle KI-Trends aus.
-  2. Ordne sie in ein einfaches **Trend-Radar**: „Jetzt handeln" · „Beobachten" · „Später".
-  3. Begründe je Trend die Einordnung mit Bezug auf ein konkretes Unternehmen.
-  4. Formuliere **eine konkrete Handlungsempfehlung** für den Trend im Feld „Jetzt handeln".
-  5. Nutze **Copilot** für Recherche/Entwurf und dokumentiere, was du korrigiert hast.
-
-  **Deliverables:** Trend-Radar (Übersicht) + begründete Einordnungen + 1 Handlungsempfehlung.
+  **Deliverable:** das fertige Trend-Briefing (1 Seite) aus deiner Copilot-Sitzung.
 tip: |
-  „Jetzt handeln" sollte ein Trend sein, der ein reales Problem löst und mit vertretbarem Aufwand startbar ist – oft generative KI/Copilot.
+  Ein gutes Briefing für Entscheider ist knapp, konkret und ehrlich über Risiken – kein Hype.
 solution: |
-  Bewertungskriterien: sinnvolle Trend-Auswahl; nachvollziehbare Einordnung mit Unternehmensbezug;
-  konkrete, umsetzbare Handlungsempfehlung; kritischer Umgang mit dem Copilot-Entwurf.
+  Bewertungskriterien: 3 relevante Trends mit Nutzen/Beispiel/Risiko, klare Handlungsempfehlungen, kritisch geprüft.
+  Lernziel: aus Trends eine entscheidergerechte, ehrliche Empfehlung machen.

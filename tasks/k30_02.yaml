@@ -1,18 +1,18 @@
-title: Low-Code-Idee mit Copilot planen
+title: Low-Code-App mit Copilot spezifizieren
 difficulty: 2
 question: |
-  Denke an ein kleines Problem in deinem Arbeitsalltag, das eine App/Automatisierung lösen könnte,
-  und lass **Copilot** ein Konzept entwerfen:
-
+  Arbeite **in Copilot** mit einer selbst erdachten Idee.
   ```text
-  Ich möchte mit einer Low-Code-Plattform [Problem] lösen. Beschreibe, welche
-  Funktionen die App/der Flow braucht, welche Daten gespeichert werden und welche
-  2 Risiken (Sicherheit/Datenschutz) ich beachten muss.
+  Erfinde eine einfache App-Idee, die ein Team ohne Programmierkenntnisse brauchen könnte
+  (z. B. eine Urlaubsantrags-App).
   ```
-
-  Bewerte: Wäre das ein sinnvoller Citizen-Development-Fall oder eher Aufgabe der IT?
+  Dann:
+  ```text
+  Spezifiziere sie für ein Low-Code-Tool: welche Eingabefelder, welche Wenn-Dann-Logik, welche
+  Ausgaben/Benachrichtigungen. Stelle es strukturiert dar.
+  ```
 tip: |
-  Kleine, klar abgegrenzte Probleme eignen sich gut; sicherheitskritische Systeme gehören zur IT.
+  Eine gute Spezifikation beschreibt Eingaben, Logik und Ausgaben – dann lässt sich fast alles im Baukasten bauen.
 solution: |
-  Bewertungskriterien: sinnvolles, abgegrenztes Problem; nachvollziehbares Funktions-/Datenkonzept; erkannte
-  Risiken; realistische Einordnung Citizen Development vs. IT.
+  Erwartetes Ergebnis: klare, umsetzbare Low-Code-Spezifikation. Lernziel: eine Automatisierungsidee so
+  beschreiben, dass sie ohne Programmierung baubar ist.

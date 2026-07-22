@@ -1,17 +1,23 @@
-title: Architektur erklären lassen
+title: Datenpipeline in Copilot skizzieren
 difficulty: 2
 question: |
-  Lass dir von **Copilot** eine Big-Data-Architektur für ein Beispiel erklären:
+  Arbeite **in Copilot** mit einem fiktiven Szenario.
 
+  **Schritt 1:**
   ```text
-  Skizziere in Worten eine einfache Big-Data-Architektur für einen Onlineshop,
-  der Klick- und Kaufdaten auswerten will. Erkläre je Baustein die Aufgabe und
-  wo die Datenqualität geprüft werden sollte.
+  Erfinde ein Szenario, in dem laufend Sensordaten entstehen (z. B. Kühlhaus-Überwachung).
   ```
-
-  Markiere in der Antwort den Baustein, in dem die „Operationalisierung" am wichtigsten ist.
+  **Schritt 2:**
+  ```text
+  Skizziere die Datenpipeline in Stufen (Erfassen, Speichern, Aufbereiten, Analysieren, Nutzen)
+  und nenne je Stufe eine konkrete Tätigkeit.
+  ```
+  **Schritt 3 – nachschärfen:**
+  ```text
+  Erkläre, was „Model Drift" ist und wie ich im laufenden Betrieb merke, dass ein Modell schlechter wird.
+  ```
 tip: |
-  Operationalisierung betrifft vor allem den dauerhaften, automatisierten Datenfluss.
+  Die Pipeline ist ein Kreislauf – neue Ereignisse erzeugen wieder Daten. Model Drift = das Modell veraltet, weil sich die Realität ändert.
 solution: |
-  Bewertungskriterien: nachvollziehbare Architektur mit Ingestion, Speicherung, Verarbeitung, Bereitstellung;
-  sinnvolle Verortung der Qualitätsprüfung; Verständnis, dass Operationalisierung den laufenden Betrieb meint.
+  Erwartetes Ergebnis: vollständige Pipeline mit Tätigkeiten; korrektes Verständnis von Model Drift und Monitoring.
+  Lernziel: Datenarbeit als Dauerbetrieb mit Überwachung begreifen.

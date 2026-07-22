@@ -1,15 +1,17 @@
-title: Auf Widerstände reagieren
+title: Veränderungs-Kommunikation mit Copilot entwerfen
 difficulty: 1
 question: |
-  Welche Reaktion passt zum Widerstand?
-
-  Widerstände: (a) „KI nimmt mir den Job", (b) „Zu kompliziert", (c) „Das funktioniert eh nicht"
-
-  Reaktionen: 1) kleine, sichtbare Erfolge zeigen, 2) Weiterbildung und Rolle als Assistenz betonen,
-  3) einfache Schulung und niedrigschwelliger Einstieg
+  Mach das **live in Copilot**:
+  ```text
+  Schreibe eine kurze, motivierende Ankündigung an ein Team, dass ab nächstem Monat Microsoft
+  Copilot eingeführt wird. Betone den Nutzen für die Mitarbeitenden, nicht nur fürs Unternehmen.
+  ```
+  Dann:
+  ```text
+  Formuliere die Ankündigung so um, dass sie auch skeptische Kolleg:innen abholt (Ängste ernst nehmen).
+  ```
 tip: |
-  Jede Reaktion adressiert genau eine Sorge.
+  Menschen fragen zuerst „Was bedeutet das für mich?" – gute Change-Kommunikation beantwortet genau das.
 solution: |
-  - a) → 2) Weiterbildung, Assistenz betonen
-  - b) → 3) einfache Schulung
-  - c) → 1) kleine Erfolge zeigen
+  Erwartetes Ergebnis: eine nutzenorientierte Ankündigung und eine empathischere Variante. Lernziel:
+  Veränderung aus Sicht der Betroffenen kommunizieren.

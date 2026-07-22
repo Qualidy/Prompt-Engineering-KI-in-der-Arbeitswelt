@@ -1,14 +1,13 @@
-title: Wann ist Erklärbarkeit besonders wichtig?
+title: Black Box vs. Erklärbarkeit mit Copilot
 difficulty: 1
 question: |
-  Bei welchen Anwendungen ist Erklärbarkeit besonders wichtig (ja/nein)?
-
-  1. KI lehnt einen Kreditantrag ab.
-  2. KI empfiehlt einen Film zur Unterhaltung.
-  3. KI sortiert Bewerbungen vor.
+  Mach das **live in Copilot**:
+  ```text
+  Erkläre den Unterschied zwischen einer „Black Box"-KI und einer erklärbaren KI an einem Beispiel
+  (z. B. Kreditentscheidung). Warum ist Erklärbarkeit gerade dort wichtig?
+  ```
 tip: |
-  Je stärker Menschen betroffen sind, desto wichtiger die Begründung.
+  Bei Entscheidungen über Menschen (Kredit, Job) reicht „die KI hat das so entschieden" nicht – man muss das Warum kennen.
 solution: |
-  1. Ja (starke Auswirkung, evtl. rechtlich gefordert)
-  2. Weniger kritisch
-  3. Ja (Auswirkung auf Menschen, Bias-Gefahr)
+  Erwartetes Ergebnis: klarer Unterschied Black Box vs. erklärbar und Begründung für die Bedeutung. Lernziel:
+  verstehen, warum Nachvollziehbarkeit oft Pflicht ist.

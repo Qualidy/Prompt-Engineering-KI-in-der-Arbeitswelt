@@ -1,21 +1,26 @@
-title: Nachhaltigkeits-Case mit KI
+title: Nachhaltigkeits-Konzept mit Copilot erstellen
 difficulty: 4
 question: |
-  **Szenario:** Ihr sollt einen KI-gestützten Nachhaltigkeitsansatz für einen Betrieb ausarbeiten und ehrlich bewerten.
+  Erarbeite **in Copilot** ein Nachhaltigkeitskonzept – selbst erzeugt.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen und beschreibe seine 3 größten Umweltbelastungen.
+  ```
+  **Schritt 2:**
+  ```text
+  Ordne jeder Belastung eine KI-gestützte Maßnahme mit messbarem Ziel zu (Tabelle: Belastung,
+  Maßnahme, Kennzahl, erwartete Wirkung).
+  ```
+  **Schritt 3:**
+  ```text
+  Priorisiere die Maßnahmen nach Wirkung und Aufwand.
+  ```
+  **Schritt 4 – Prüfung:** Berücksichtige Rebound-Effekte und den KI-Energieverbrauch. Bleibt die Priorisierung bestehen?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Wählt einen Betrieb und ein Einsatzfeld (Energie, Material, Logistik).
-  2. Beschreibt den **KI-Ansatz** und die benötigten Daten.
-  3. Schätzt den **erwarteten Nutzen** (Einsparung) und die **nötigen Messgrößen** zum Nachweis.
-  4. Berücksichtigt den **Eigen-Ressourcenverbrauch** der KI und bewertet den Netto-Nutzen.
-  5. Nutzt **Copilot** zur Strukturierung; prüft die Zahlen kritisch.
-
-  **Deliverables:** KI-Ansatz + Nutzen-/Messkonzept + ehrliche Netto-Nutzen-Bewertung (inkl. KI-Eigenverbrauch).
+  **Deliverable:** priorisiertes Nachhaltigkeitskonzept mit Kennzahlen.
 tip: |
-  Ein Ansatz ist nur nachhaltig, wenn er unterm Strich mehr spart, als er verbraucht.
+  Ehrliche Nachhaltigkeit rechnet den KI-Aufwand und Rebound mit ein – sonst ist es Greenwashing.
 solution: |
-  Bewertungskriterien: sinnvoller Ansatz mit Datenbasis; nachvollziehbares Mess-/Nachweiskonzept;
-  ehrliche Netto-Betrachtung inklusive KI-Eigenverbrauch.
+  Bewertungskriterien: messbare Maßnahmen, sinnvolle Priorisierung, ehrliche Netto-Betrachtung. Lernziel:
+  glaubwürdiges, messbares Nachhaltigkeitskonzept mit KI entwickeln.

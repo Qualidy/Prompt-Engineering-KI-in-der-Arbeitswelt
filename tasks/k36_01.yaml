@@ -1,14 +1,13 @@
-title: Training oder Inferenz?
+title: Energieverbrauch von KI mit Copilot einordnen
 difficulty: 1
 question: |
-  Handelt es sich um Training oder Inferenz?
-
-  1. Das Modell wird über Wochen mit riesigen Datenmengen gelernt.
-  2. Ein Nutzer stellt Copilot eine Frage und erhält eine Antwort.
-  3. Millionen täglicher Nutzeranfragen summieren sich zu hohem Verbrauch.
+  Mach das **live in Copilot**:
+  ```text
+  Erkläre, wo bei KI eigentlich Energie verbraucht wird (Training vs. Nutzung) und warum das
+  Training großer Modelle so aufwendig ist. Nenne einen anschaulichen Vergleich.
+  ```
 tip: |
-  Training = einmal lernen; Inferenz = jede Nutzung.
+  Das Training großer Modelle ist extrem energieintensiv; die einzelne Nutzung (ein Prompt) ist vergleichsweise klein – summiert sich aber.
 solution: |
-  1. Training
-  2. Inferenz
-  3. Inferenz (in Summe)
+  Erwartetes Ergebnis: klare Trennung Training/Nutzung und ein anschaulicher Vergleich. Lernziel: den Energie-
+  Fußabdruck von KI grob einordnen.

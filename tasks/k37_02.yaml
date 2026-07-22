@@ -1,17 +1,18 @@
-title: Kommunikationsbotschaften mit Copilot
+title: Mit Widerständen und Ängsten umgehen (Copilot)
 difficulty: 2
 question: |
-  Lass **Copilot** Kommunikationsbotschaften für eine KI-Einführung entwerfen:
-
+  Arbeite **in Copilot**.
   ```text
-  Formuliere 4 kurze, ehrliche Botschaften an ein Team zur Einführung von Copilot:
-  je eine zu Ziel, Nutzen, Umgang mit Ängsten und Weiterbildung. Ton: wertschätzend,
-  transparent.
+  Nenne die 5 häufigsten Ängste und Widerstände von Mitarbeitenden bei der Einführung von KI
+  (z. B. "Ich werde ersetzt").
   ```
-
-  Bewerte: Wirken die Botschaften glaubwürdig oder beschönigend? Was würdest du anpassen?
+  Dann:
+  ```text
+  Formuliere zu jeder Angst eine ehrliche, ernstnehmende Antwort für eine Mitarbeiter-FAQ – ohne
+  zu beschönigen.
+  ```
 tip: |
-  Ehrlichkeit schlägt Werbesprache – auch Grenzen und Veränderungen offen ansprechen.
+  Ängste kleinzureden verstärkt sie. Ehrliche, konkrete Antworten schaffen Vertrauen.
 solution: |
-  Bewertungskriterien: glaubwürdige, transparente Botschaften; Ängste werden ernst genommen; erkennbare eigene
-  Anpassung hin zu mehr Ehrlichkeit/Konkretheit.
+  Erwartetes Ergebnis: 5 typische Ängste mit ehrlichen FAQ-Antworten. Lernziel: Widerstände ernst nehmen und
+  konstruktiv adressieren.

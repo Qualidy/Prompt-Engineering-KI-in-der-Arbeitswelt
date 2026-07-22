@@ -1,18 +1,25 @@
-title: Mensch-KI-Aufteilung mit Zeitersparnis-Rechnung
+title: Teil-Automatisierung eines Back-Office-Prozesses (Copilot)
 difficulty: 3
 question: |
-  Nimm den Prozess „Angebot bis Rechnung" (oder einen vergleichbaren aus deinem Bereich).
+  Entwirf **in Copilot** ein Automatisierungskonzept für einen selbst erzeugten Prozess.
 
-  1. Teile **jeden Schritt** klar in **Routine (KI/Copilot)** und **Entscheidung (Mensch)** auf.
-  2. Definiere einen **messbaren KPI** für den Erfolg.
-  3. Erstelle eine kleine **Zeitersparnis-Rechnung**: Annahme vorher/nachher je Vorgang × Anzahl pro Tag = gewonnene Zeit.
-  4. Nenne einen Punkt, an dem du auf **keinen Fall** automatisieren würdest.
+  **Schritt 1:**
+  ```text
+  Erfinde einen Back-Office-Prozess mit hohem manuellem Aufwand (z. B. Angebotserstellung).
+  ```
+  **Schritt 2:**
+  ```text
+  Trenne den Prozess in drei Zonen: (A) voll automatisierbar, (B) Copilot-assistiert mit
+  Mensch-Freigabe, (C) rein menschlich. Begründe jede Zuordnung.
+  ```
+  **Schritt 3:**
+  ```text
+  Beschreibe für Zone B einen konkreten Ablauf: Was macht Copilot, wo prüft der Mensch, wie sieht die Freigabe aus?
+  ```
+
+  Bewerte selbst: Wo entstehen die größten Risiken, wenn der Mensch die Prüfung überspringt?
 tip: |
-  Preise, Konditionen und Freigaben bleiben beim Menschen. Eine konkrete Rechnung macht den Nutzen greifbar.
+  „Mensch im Loop": Gerade bei kundenrelevanten oder rechtlich heiklen Schritten braucht es eine bewusste Freigabe.
 solution: |
-  Bewertungskriterien:
-
-  - Jeder Schritt ist Mensch/KI zugeordnet, Entscheidungen/Freigaben bleiben menschlich.
-  - Der KPI ist messbar.
-  - Die Zeitersparnis-Rechnung ist nachvollziehbar (Zahlen × Menge = Ergebnis).
-  - Der „nicht automatisieren"-Punkt ist sinnvoll (Beziehungspflege, Sonderfälle, Freigaben).
+  Erwartetes Ergebnis: klare Zonentrennung, konkreter assistierter Ablauf, benannte Risiken bei fehlender Prüfung.
+  Lernziel: sinnvolle Arbeitsteilung Mensch–KI im Prozess gestalten.

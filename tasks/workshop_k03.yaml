@@ -1,22 +1,33 @@
-title: KI-Einsatzpotenziale in deinem Unternehmen
+title: KI-Einsatzpotenziale mit Copilot erarbeiten
 difficulty: 4
 question: |
-  **Szenario:** Die Geschäftsführung bittet dich um einen kurzen Vorschlag, wo KI im Unternehmen
-  sinnvoll starten könnte.
+  In diesem Workshop nutzt du **Copilot als Denkpartner** und erarbeitest alles live darin – ohne
+  vorhandene Unternehmensunterlagen. Copilot erfindet das Beispielunternehmen selbst.
 
-  ---
+  **Schritt 1 – Beispielunternehmen erzeugen:**
+  ```text
+  Erfinde ein realistisches mittelständisches Unternehmen (Branche, Größe, 4 Hauptprozesse)
+  und beschreibe es in 5 Sätzen.
+  ```
 
-  **Aufgabe (allein oder in der Lerngruppe):**
+  **Schritt 2 – Potenziale finden:**
+  ```text
+  Nenne für dieses Unternehmen entlang der Wertschöpfungskette 6 KI-Einsatzpotenziale.
+  Ordne jedes einem Wirkhebel zu (Automatisieren, Assistieren, Analysieren).
+  ```
 
-  1. Beschreibe kurz ein reales oder fiktives Unternehmen (Branche, Größe, Hauptprozesse).
-  2. Identifiziere entlang der Wertschöpfungskette **mindestens 5 KI-Einsatzpotenziale**.
-  3. Bewerte jedes Potenzial nach **Nutzen** (hoch/mittel/gering) und **Aufwand** (hoch/mittel/gering).
-  4. Empfiehl **einen** „Quick Win" (hoher Nutzen, geringer Aufwand) und begründe die Wahl.
-  5. Nutze **Copilot** als Sparringspartner und dokumentiere einen hilfreichen Prompt.
+  **Schritt 3 – bewerten und priorisieren:**
+  ```text
+  Bewerte die 6 Potenziale in einer Tabelle nach Nutzen (hoch/mittel/gering) und Aufwand,
+  und markiere den besten Quick Win.
+  ```
 
-  **Deliverables:** Nutzen-Aufwand-Übersicht (Tabelle) + begründete Quick-Win-Empfehlung.
+  **Schritt 4 – kritisch prüfen:** Hinterfrage Copilots Quick-Win-Empfehlung. Stimmst du zu?
+  Ändere den Prompt, wenn die Begründung dünn ist.
+
+  **Deliverable:** die fertige Nutzen-Aufwand-Tabelle + deine eigene, begründete Quick-Win-Entscheidung.
 tip: |
-  Quick Wins sind oft text- und dokumentenlastige Aufgaben, die sich sofort mit Copilot angehen lassen.
+  Lass Copilot nicht nur liefern, sondern hinterfrage: „Warum ist das ein Quick Win? Welche Annahme steckt dahinter?"
 solution: |
-  Bewertungskriterien: mindestens 5 nachvollziehbare Potenziale entlang der Wertschöpfungskette;
-  konsistente Nutzen-/Aufwand-Bewertung; **begründete** Quick-Win-Wahl; sinnvoll eingesetzter Copilot-Prompt.
+  Bewertungskriterien: sinnvolles fiktives Unternehmen; 6 nachvollziehbare Potenziale mit Wirkhebel;
+  konsistente Nutzen-/Aufwand-Tabelle; eigene, kritisch geprüfte Quick-Win-Entscheidung (nicht blind übernommen).

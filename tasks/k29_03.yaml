@@ -1,18 +1,25 @@
-title: Netto-Ökobilanz eines KI-Einsatzes
+title: Nachhaltigkeits-Initiative und Rebound-Effekt (Copilot)
 difficulty: 3
 question: |
-  Ein Unternehmen will KI einsetzen, um Lieferrouten zu optimieren und so Kraftstoff zu sparen.
+  Entwickle **in Copilot** eine Nachhaltigkeitsinitiative für ein selbst erzeugtes Szenario.
 
-  1. Argumentiere, warum man die **Netto-Bilanz** betrachten muss (KI spart Ressourcen, verbraucht aber selbst welche).
-  2. Nenne, welche Faktoren auf der **Verbrauchsseite** der KI stehen (Bezug zu Kapitel 36).
-  3. Skizziere, wie du diesen Use Case in einem **ESG-Bericht** darstellen würdest (2–3 Angaben).
-  4. Worauf musst du bei den Berichtszahlen besonders achten?
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen mit hohem Ressourcenverbrauch und beschreibe den größten Hebel.
+  ```
+  **Schritt 2:**
+  ```text
+  Entwirf eine KI-gestützte Maßnahme mit messbarem Ziel (z. B. -15 % Energie) und benötigten Daten.
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Erkläre den Rebound-Effekt an diesem Beispiel und bedenke außerdem den Energieverbrauch der KI
+  selbst. Bleibt die Maßnahme unterm Strich nachhaltig?
+  ```
+
+  Bewerte selbst: Ist der Netto-Nutzen wirklich positiv?
 tip: |
-  KI ist kein reiner Umweltretter: Training und Betrieb kosten Strom/Wasser. Nachhaltigkeitszahlen sind zunehmend prüfungsrelevant.
+  Rebound: Effizienzgewinne werden oft durch Mehrnutzung „aufgefressen". Und KI selbst verbraucht Energie – beides einrechnen.
 solution: |
-  Bewertungskriterien:
-
-  - Die Netto-Betrachtung (Einsparung vs. Eigenverbrauch) ist verstanden.
-  - Verbrauchsfaktoren der KI sind benannt (Strom, Kühlung/Wasser, Hardware).
-  - Die ESG-Darstellung nennt konkrete Angaben (eingespartes CO2/Kraftstoff, Annahmen).
-  - Es ist erkannt, dass Zahlen belegbar/prüfbar sein müssen.
+  Erwartetes Ergebnis: Maßnahme mit messbarem Ziel plus ehrliche Betrachtung von Rebound und KI-Fußabdruck.
+  Lernziel: Nachhaltigkeit ganzheitlich (netto) bewerten, nicht schöngerechnet.

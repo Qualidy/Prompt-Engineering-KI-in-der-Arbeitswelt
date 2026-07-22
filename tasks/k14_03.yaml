@@ -1,19 +1,21 @@
-title: Few-Shot ausprobieren
+title: Eine wiederverwendbare Prompt-Vorlage bauen und testen
 difficulty: 3
 question: |
-  Nutze das **Few-Shot-Muster** in Copilot: Gib zwei Beispiele für einen gewünschten Stil vor und
-  lass dann einen neuen Text im selben Stil erzeugen.
+  Baue **in Copilot** eine Vorlage, die du immer wieder nutzen kannst.
 
+  **Schritt 1 – Vorlage entwerfen:** Erstelle einen Prompt mit Platzhaltern für die Aufgabe
+  „professionelle Antwort auf eine Anfrage", z. B.:
   ```text
-  Formuliere kurze, freundliche Terminbestätigungen im folgenden Stil.
-  Beispiel 1: "Hallo Frau Meier, Ihr Termin am Di, 10 Uhr steht - wir freuen uns!"
-  Beispiel 2: "Hallo Herr Kaya, alles klar für Do, 14 Uhr - bis dann!"
-  Schreibe nun eine Bestätigung für Herrn Sung, Freitag 9 Uhr.
+  Rolle: [Rolle]. Aufgabe: Antworte auf folgende Anfrage: [ANFRAGE].
+  Ton: [Ton]. Länge: [Länge]. Beziehe dich auf [Punkte].
   ```
-
-  Variiere die Beispiele und beobachte, wie sich der Stil der Ausgabe ändert.
+  **Schritt 2 – Testfälle erzeugen lassen:**
+  ```text
+  Erfinde 3 unterschiedliche fiktive Anfragen (Beschwerde, Terminwunsch, Rückfrage).
+  ```
+  **Schritt 3 – Vorlage anwenden:** Setze die Vorlage für alle 3 Anfragen ein und beurteile: Funktioniert sie überall gleich gut? Wo musst du sie anpassen?
 tip: |
-  Je konsistenter deine Beispiele, desto konsistenter die Ausgabe.
+  Eine gute Vorlage ist robust: Sie liefert bei verschiedenen Eingaben zuverlässig brauchbare Ergebnisse.
 solution: |
-  Bewertungskriterien: Die Ausgabe übernimmt Stil, Länge und Tonfall der Beispiele. Beobachtung: Bereits
-  2 Beispiele steuern den Stil oft stärker als eine lange verbale Beschreibung.
+  Erwartetes Ergebnis: eine funktionierende Vorlage mit Platzhaltern, an 3 Fällen getestet und verfeinert.
+  Lernziel: von Einzel-Prompts zu wiederverwendbaren Vorlagen kommen.

@@ -1,18 +1,26 @@
-title: Inkrementell oder disruptiv?
+title: Innovator's Dilemma in Copilot durchdenken
 difficulty: 3
 question: |
-  Entwickle eine KI-Innovationsidee für deine Branche und analysiere sie:
+  Arbeite **in Copilot** mit einem fiktiven Szenario, das Copilot erzeugt.
 
-  1. Ist die Idee eher **inkrementell** (bestehendes besser) oder **disruptiv** (verdrängend)? Begründe.
-  2. Welche **Innovationsart** liegt vor (Produkt, Prozess, Geschäftsmodell, Service)?
-  3. Wende das **Innovator's Dilemma** an: Warum könnten etablierte Wettbewerber diese Neuerung unterschätzen?
-  4. Welchen ersten **kleinen Schritt** würdest du empfehlen, um die Idee risikoarm zu testen?
+  **Schritt 1:**
+  ```text
+  Erfinde eine Branche und eine disruptive KI-Innovation, die etablierte Anbieter dort bedrohen könnte.
+  ```
+  **Schritt 2:**
+  ```text
+  Wende das Innovator's Dilemma an: Erkläre, warum die etablierten Anbieter diese Neuerung
+  wahrscheinlich unterschätzen. Nenne 3 typische Denkfehler.
+  ```
+  **Schritt 3:**
+  ```text
+  Empfiehl einen kleinen, risikoarmen ersten Schritt, mit dem ein etablierter Anbieter die
+  Neuerung früh testen könnte.
+  ```
+
+  Bewerte selbst: Ist der „erste Schritt" wirklich risikoarm und konkret? Verbessere ihn per Prompt.
 tip: |
-  Disruptive Neuerungen wirken anfangs oft „schlechter oder unrentabler" – genau deshalb werden sie unterschätzt.
+  Disruptive Neuerungen wirken anfangs oft „schlechter oder unrentabler" – deshalb werden sie ignoriert, bis es zu spät ist.
 solution: |
-  Bewertungskriterien:
-
-  - Die Einordnung inkrementell/disruptiv ist plausibel begründet.
-  - Die Innovationsart ist korrekt zugeordnet.
-  - Das Innovator's Dilemma ist sinnvoll auf die Idee angewandt (etablierte fokussieren sich auf Bestandsgeschäft).
-  - Der erste Schritt ist klein, konkret und risikoarm (Pilot/Experiment statt Großprojekt).
+  Erwartetes Ergebnis: plausibles Szenario, sinnvolle Anwendung des Innovator's Dilemma, konkreter kleiner
+  Teststart. Lernziel: früh und im Kleinen experimentieren, statt auf „Perfektion" zu warten.

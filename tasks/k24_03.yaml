@@ -1,20 +1,25 @@
-title: Copilot vs. Spezialsystem in der Produktion
+title: Smart-Factory-Konzept kritisch entwickeln (Copilot)
 difficulty: 3
 question: |
-  In einer Fertigung gibt es vier KI-nahe Aufgaben:
-  (A) fehlerhafte Teile am Band in Millisekunden aussortieren,
-  (B) Schichtprotokolle zu einem Bericht zusammenfassen,
-  (C) Maschinenparameter in Echtzeit nachregeln,
-  (D) mögliche Ursachen zu einem Fehlercode erklären.
+  Entwickle **in Copilot** ein Konzept für eine selbst erzeugte Fertigung.
 
-  1. Ordne jede Aufgabe zu: **Copilot geeignet** oder **Spezialsystem nötig**? Begründe.
-  2. Erkläre, warum bei manchen Aufgaben die **Echtzeit-Anforderung** gegen Copilot spricht.
-  3. Wo liegt die klare **Sicherheitsgrenze** für ein Sprachmodell?
+  **Schritt 1:**
+  ```text
+  Erfinde einen Produktionsbetrieb und beschreibe 3 konkrete Probleme (Ausschuss, Stillstände, Planung).
+  ```
+  **Schritt 2:**
+  ```text
+  Ordne jedem Problem eine passende KI-Anwendung zu, nenne die nötigen Daten und den erwarteten Nutzen.
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Welche Voraussetzungen (Sensorik, Datenqualität, Akzeptanz der Mitarbeitenden) müssen erfüllt sein,
+  damit das funktioniert? Was ist das größte Umsetzungsrisiko?
+  ```
+
+  Bewerte selbst: Welche der 3 KI-Anwendungen würdest du zuerst angehen und warum?
 tip: |
-  Copilot hilft bei Wissen, Kommunikation und Auswertung – nicht bei sicherheitskritischer Echtzeit-Steuerung.
+  Die Technik ist selten das Problem – Datenqualität, Sensorik und Akzeptanz entscheiden über den Erfolg.
 solution: |
-  Bewertungskriterien:
-
-  - B und D werden Copilot zugeordnet, A und C dem Spezialsystem.
-  - Die Echtzeit-/Millisekunden-Anforderung ist als Grund gegen Copilot erkannt.
-  - Die Sicherheitsgrenze ist klar: keine Steuerungsentscheidungen durch ein Sprachmodell.
+  Erwartetes Ergebnis: Problem-Lösungs-Zuordnung mit Datenbedarf, Voraussetzungen und Priorisierung. Lernziel:
+  Produktions-KI realistisch und voraussetzungsbewusst planen.

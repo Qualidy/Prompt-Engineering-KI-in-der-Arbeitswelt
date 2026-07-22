@@ -1,14 +1,13 @@
-title: Wartungsstrategie erkennen
+title: Wartungsstrategien mit Copilot vergleichen
 difficulty: 1
 question: |
-  Welche Wartungsstrategie ist gemeint (reaktiv, präventiv, vorausschauend)?
-
-  1. Die Maschine wird erst repariert, wenn sie stehen bleibt.
-  2. Alle 6 Monate wird gewartet, egal wie der Zustand ist.
-  3. Sensordaten zeigen, dass ein Lager bald ausfällt – es wird rechtzeitig getauscht.
+  Mach das **live in Copilot**:
+  ```text
+  Erkläre an einem Beispiel (z. B. Aufzug) den Unterschied zwischen reaktiver, vorbeugender und
+  vorausschauender Wartung. Nenne je einen Vor- und Nachteil. Als Tabelle.
+  ```
 tip: |
-  Nur eine Strategie nutzt aktuelle Zustandsdaten zur Vorhersage.
+  Vorausschauend = warten, kurz bevor es kaputtgeht (datenbasiert). Vorbeugend = feste Intervalle, egal ob nötig.
 solution: |
-  1. Reaktiv
-  2. Präventiv
-  3. Vorausschauend (Predictive Maintenance)
+  Erwartetes Ergebnis: klare Gegenüberstellung der 3 Strategien mit Vor-/Nachteilen. Lernziel: Predictive
+  Maintenance von anderen Strategien abgrenzen.

@@ -1,17 +1,18 @@
-title: RLHF verstehen
+title: Belohnungsfunktion entwerfen – und Reward Hacking
 difficulty: 2
 question: |
-  Lass dir von **Copilot** RLHF erklären:
-
+  Arbeite **in Copilot** mit einem fiktiven Szenario.
   ```text
-  Erkläre, was RLHF (Reinforcement Learning from Human Feedback) ist und warum es
-  Sprachmodelle wie Copilot hilfreicher und höflicher macht. Nenne einen möglichen
-  Nachteil dieses Verfahrens.
+  Erfinde ein Szenario, in dem eine KI per Reinforcement Learning einen Lieferroboter steuert.
+  Schlage eine Belohnungsfunktion vor (was wird belohnt/bestraft?).
   ```
-
-  Diskutiere: Warum ist menschliches Feedback hier wertvoll – und wo liegt eine Gefahr?
+  Dann provoziere den klassischen Fehler:
+  ```text
+  Wie könnte die KI diese Belohnung "austricksen" (Reward Hacking), ohne das eigentliche Ziel zu
+  erreichen? Nenne 2 Beispiele und wie man die Belohnung besser gestaltet.
+  ```
 tip: |
-  Denke daran: Menschen bewerten subjektiv, das kann auch Verzerrungen einbringen.
+  KI optimiert exakt das, was man belohnt – nicht das, was man meint. Schlecht gewählte Belohnungen führen zu absurdem Verhalten.
 solution: |
-  Bewertungskriterien: korrektes Verständnis von RLHF (Menschen bewerten → Belohnungssignal → Anpassung);
-  Nutzen (hilfreiches Verhalten) und Gefahr (subjektive/verzerrte Bewertungen) benannt.
+  Erwartetes Ergebnis: eine plausible Belohnungsfunktion und 2 Reward-Hacking-Beispiele mit Gegenmaßnahmen.
+  Lernziel: Belohnungen müssen sorgfältig gestaltet werden.

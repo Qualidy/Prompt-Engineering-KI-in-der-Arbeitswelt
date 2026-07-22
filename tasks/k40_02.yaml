@@ -1,15 +1,17 @@
-title: Persönlicher Übungsplan mit Copilot
+title: Eine Mini-Schulung für Kolleg:innen erstellen
 difficulty: 2
 question: |
-  Lass dir von **Copilot** einen persönlichen Plan zum Kompetenzaufbau erstellen:
-
+  Nutze **Copilot**, um dein Wissen weiterzugeben (bester Lerntest: es anderen erklären).
   ```text
-  Erstelle einen 2-Wochen-Plan, mit dem ich meine Prompt-Engineering-Fähigkeiten
-  mit Copilot verbessere. Pro Tag eine kleine, konkrete Übung aus meinem Arbeitsalltag.
+  Erstelle das Konzept für eine 20-minütige Mini-Schulung "Besser prompten mit Copilot" für
+  Kolleg:innen ohne Vorwissen: Ablauf, 3 Kernbotschaften, 1 Live-Übung, 1 typischer Fehler zum Vermeiden.
   ```
-
-  Passe den Plan an deine echten Aufgaben an und wähle die erste Übung für morgen.
+  Dann:
+  ```text
+  Formuliere die Live-Übung so, dass die Teilnehmenden sie ohne eigene Dokumente direkt in Copilot machen können.
+  ```
 tip: |
-  Realistische, kleine tägliche Übungen wirken besser als seltene große Vorsätze.
+  Wer etwas erklären kann, hat es verstanden. Eine gute Übung braucht kein Vorwissen und kein Material.
 solution: |
-  Bewertungskriterien: konkreter, alltagsbezogener Plan; sinnvolle Anpassung an eigene Aufgaben; klare erste Übung.
+  Erwartetes Ergebnis: ein umsetzbares Schulungskonzept mit selbsttragender Live-Übung. Lernziel: das Gelernte
+  didaktisch aufbereiten und weitergeben.

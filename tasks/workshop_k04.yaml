@@ -1,22 +1,27 @@
-title: Vom Ideenpool zur priorisierten Roadmap
+title: Vom Problem zum MVP – Konzept in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ein Team hat in einem Workshop 8 KI-Ideen gesammelt. Du sollst daraus eine
-  begründete Umsetzungsreihenfolge ableiten.
+  Erarbeite **komplett in Copilot** ein KI-Konzept nach CRISP-DM-Logik – für ein fiktives Szenario.
 
-  ---
+  **Schritt 1 – Szenario:**
+  ```text
+  Erfinde ein Problem in einem Handwerksbetrieb, das man mit KI angehen könnte, und beschreibe es.
+  ```
+  **Schritt 2 – Konzept:**
+  ```text
+  Entwickle dazu ein Konzept mit: (1) klarem Ziel, (2) einem messbaren KPI, (3) den benötigten
+  Daten, (4) einem MVP (kleinste sinnvolle erste Version), (5) einem Risiko, das leicht übersehen wird.
+  ```
+  **Schritt 3 – MVP-Plan:**
+  ```text
+  Beschreibe, wie ich das MVP in 2 Wochen mit möglichst wenig Aufwand testen könnte, und woran
+  ich am Ende messe, ob es sich lohnt.
+  ```
+  **Schritt 4 – Reflexion:** Prüfe Copilots KPI kritisch. Ist er wirklich messbar? Verbessere ihn per Prompt.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Sammle (oder erfinde) **8 KI-Ideen** für einen Bereich deiner Wahl.
-  2. Bewerte jede Idee in einer **Nutzen-Machbarkeit-Matrix**.
-  3. Leite eine **priorisierte Roadmap** ab: Quick Wins zuerst, strategische Projekte später.
-  4. Beschreibe die **erste umzusetzende Idee** als kurzen Use-Case-Steckbrief.
-  5. Nutze **Copilot**, um Ideen zu bewerten oder den Steckbrief zu formulieren – prüfe die Vorschläge kritisch.
-
-  **Deliverables:** Matrix + priorisierte Roadmap + Steckbrief der ersten Idee.
+  **Deliverable:** ein einseitiges Konzept (Ziel, KPI, Daten, MVP, Risiko) aus deiner Copilot-Sitzung.
 tip: |
-  Verteilt die Ideensammlung und einigt euch dann gemeinsam auf die Bewertung – so entstehen keine blinden Flecken.
+  „Klein starten": Ein MVP zeigt schnell und günstig, ob eine Idee trägt. Ein guter KPI ist konkret und zählbar.
 solution: |
-  Bewertungskriterien: nachvollziehbare Bewertung aller Ideen; Roadmap folgt sinnvoll aus der Matrix
-  (Quick Wins vorn); vollständiger Steckbrief; Copilot als Hilfsmittel, nicht als Entscheider.
+  Bewertungskriterien: klares Problem, messbarer KPI, realistischer MVP, benanntes Risiko; die Reflexion verbessert
+  den KPI spürbar. Lernziel: strukturiert von der Idee zum testbaren MVP – mit Copilot als Konzept-Partner.

@@ -1,18 +1,18 @@
-title: Aufgabe zerlegen mit Copilot
+title: Copilot erklärt sich selbst
 difficulty: 2
 question: |
-  Wähle eine komplexere Aufgabe (z. B. „Eingehende Bewerbungen vorsortieren"). Lass sie von **Copilot**
-  in KI-Grundfähigkeiten zerlegen:
-
+  Frage **Copilot** live nach seinem eigenen Aufbau:
   ```text
-  Zerlege die Aufgabe "[Aufgabe]" in die benötigten KI-Grundfähigkeiten
-  (Wahrnehmen, Verstehen, Schlussfolgern, Handeln, Lernen). Nenne je Fähigkeit
-  ein konkretes KI-Verfahren oder Werkzeug.
+  Zerlege Microsoft Copilot in die Bausteine Daten, Algorithmen, Rechenleistung, Modell und
+  Anwendung. Nenne je Baustein, wer ihn liefert, und stelle es als Tabelle dar.
   ```
 
-  Prüfe: Ist die Zerlegung vollständig? Welche Fähigkeit ist der „Engpass"?
+  Schärfe nach:
+  ```text
+  Welche Bausteine muss ich als Anwender:in NICHT selbst bauen, und welchen Vorteil hat das für mich?
+  ```
 tip: |
-  Der Engpass ist oft die Fähigkeit, für die die Datenlage am schwierigsten ist.
+  Bei Copilot liefert Microsoft/OpenAI die unteren Bausteine fertig – dein Hebel liegt auf der Anwendungsebene (Prompting).
 solution: |
-  Bewertungskriterien: plausible Zerlegung in Fähigkeiten; sinnvolle Verfahrenszuordnung;
-  begründete Benennung des Engpasses.
+  Erwartetes Ergebnis: Tabelle mit Bausteinen und Zuständigkeiten; Erkenntnis, dass der Anwender-Fokus auf
+  guten Prompts und Prüfung liegt (kein eigenes Training/Infrastruktur nötig).

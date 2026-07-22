@@ -1,22 +1,26 @@
-title: Leitlinie für verantwortungsvollen KI-Einsatz
+title: KI-Ethik-Leitlinie mit Copilot entwerfen
 difficulty: 4
 question: |
-  **Szenario:** Euer Unternehmen braucht eine kurze, verständliche Leitlinie für den verantwortungsvollen
-  Umgang mit KI.
+  Entwirf **in Copilot** eine kompakte KI-Ethik-Leitlinie für ein fiktives Unternehmen.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen und beschreibe, wo es KI einsetzt.
+  ```
+  **Schritt 2:**
+  ```text
+  Formuliere 6 klare ethische Grundsätze für den KI-Einsatz (z. B. Transparenz, Mensch entscheidet,
+  keine Diskriminierung). Jeder Grundsatz mit einem Satz Begründung.
+  ```
+  **Schritt 3:**
+  ```text
+  Mach jeden Grundsatz konkret: Was heißt er im Arbeitsalltag? Nenne je ein Do und ein Don't.
+  ```
+  **Schritt 4 – Prüfung:** Teste die Leitlinie an einem schwierigen Fall. Gibt sie eine klare Orientierung?
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
-
-  1. Sammelt die wichtigsten **Prinzipien** (Fairness, Transparenz, Verantwortlichkeit, Datenschutz, Aufsicht).
-  2. Formuliert je Prinzip **1–2 konkrete Verhaltensregeln** für den Arbeitsalltag mit Copilot & Co.
-  3. Ergänzt **3 „No-Gos"** (was mit KI nicht getan werden darf).
-  4. Erstellt mit **Copilot** einen ersten Entwurf und **schärft ihn kritisch** nach.
-  5. Prüft die Leitlinie an **zwei Beispielfällen** auf Praxistauglichkeit.
-
-  **Deliverables:** Leitlinie (Prinzipien + Regeln + No-Gos) + 2 durchgespielte Beispielfälle.
+  **Deliverable:** 6 Grundsätze mit Do/Don't + ein durchgespielter Testfall.
 tip: |
-  Formuliert Regeln als klare, überprüfbare Sätze („Wir prüfen jede KI-Ausgabe, bevor …").
+  Gute Leitlinien sind konkret und anwendbar – nicht bloß schöne Worte, sondern Do's und Don'ts für den Alltag.
 solution: |
-  Bewertungskriterien: abgedeckte Kernprinzipien; konkrete, praxistaugliche Regeln; sinnvolle No-Gos;
-  Beispielfälle zeigen, dass die Leitlinie im Alltag trägt.
+  Bewertungskriterien: 6 relevante Grundsätze, konkrete Do/Don't, am Testfall bewährte Orientierung. Lernziel:
+  Ethik in praktikable Leitplanken übersetzen.

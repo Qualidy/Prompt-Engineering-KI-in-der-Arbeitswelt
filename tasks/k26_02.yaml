@@ -1,17 +1,17 @@
-title: Datenbedarf mit Copilot klären
+title: Predictive-Maintenance-Konzept skizzieren
 difficulty: 2
 question: |
-  Wähle eine Maschine/Anlage und lass **Copilot** den Datenbedarf für Predictive Maintenance klären:
-
+  Arbeite **in Copilot** mit einem selbst erzeugten Beispiel.
   ```text
-  Ich möchte für [Maschine] vorausschauende Wartung einführen. Welche Sensor- und
-  historischen Daten brauche ich, welche Ausfallarten kann man vorhersagen und
-  welche Voraussetzung ist am kritischsten?
+  Erfinde eine Maschine und beschreibe, welche Sensordaten (z. B. Temperatur, Vibration) sie liefert.
   ```
-
-  Bewerte: Sind die nötigen Daten in einem typischen Betrieb realistisch vorhanden?
+  Dann:
+  ```text
+  Welche Signale könnten einen nahenden Ausfall ankündigen? Skizziere, wie ein KI-System daraus
+  eine Warnung erzeugt und wer wann informiert wird.
+  ```
 tip: |
-  Historische Ausfalldaten sind oft die knappste Ressource.
+  Vorausschauende Wartung braucht historische Daten von Normal- UND Ausfallzuständen, um Muster zu lernen.
 solution: |
-  Bewertungskriterien: sinnvolle Sensor-/Historiendaten; realistische Ausfallarten; Erkenntnis, dass historische
-  Ausfalldaten häufig der Engpass sind.
+  Erwartetes Ergebnis: sinnvolle Sensordaten, Ausfallsignale und ein Warnablauf. Lernziel: das Grundprinzip
+  Predictive Maintenance konkret durchdenken.

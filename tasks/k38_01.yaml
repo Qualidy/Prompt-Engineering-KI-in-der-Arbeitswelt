@@ -1,14 +1,13 @@
-title: Geschäftsmodell-Muster erkennen
+title: KI-Geschäftsmodelle mit Copilot erkunden
 difficulty: 1
 question: |
-  Welches KI-Geschäftsmodell-Muster liegt vor?
-
-  1. Ein Anbieter stellt eine Bilderkennungs-API bereit, die pro Aufruf abgerechnet wird.
-  2. Ein Maschinenhersteller bietet „Wartung als Service" auf Basis von Sensordaten an.
-  3. Ein Fotoprogramm erhält eine neue KI-Retusche-Funktion.
+  Mach das **live in Copilot**:
+  ```text
+  Nenne 5 verschiedene Arten, wie Unternehmen mit KI Geld verdienen (z. B. KI-Feature im Produkt,
+  KI-as-a-Service, Datenveredelung). Je ein reales oder plausibles Beispiel.
+  ```
 tip: |
-  As-a-Service, datenbasierter Service oder Produkt + KI-Feature?
+  KI kann bestehende Produkte verbessern ODER völlig neue Angebote/Erlösmodelle ermöglichen.
 solution: |
-  1. KI-as-a-Service
-  2. Datenbasierter Service
-  3. Produkt + KI-Feature
+  Erwartetes Ergebnis: 5 Geschäftsmodell-Muster mit Beispielen. Lernziel: die Bandbreite KI-basierter Wertschöpfung
+  überblicken.

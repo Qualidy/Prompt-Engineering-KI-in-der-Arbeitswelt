@@ -84,21 +84,22 @@ Das ist der Grund, warum du **eine** Copilot-Oberfläche für Übersetzung, Zusa
 
 ## 13.5 NLP mit Copilot im Alltag
 
-**Beispiel-Prompts für typische NLP-Aufgaben:**
+**Beispiel-Prompts für typische NLP-Aufgaben – zum Selbst-Ausprobieren.** Damit du kein echtes Dokument brauchst, lässt du Copilot das Material jeweils **zuerst selbst erzeugen**:
 
 ```text
-Klassifiziere die Stimmung dieser 5 Kundenbewertungen (positiv/neutral/negativ)
-und begründe je Bewertung in einem Halbsatz: [Bewertungen einfügen]
+Erfinde 5 kurze Kundenbewertungen für ein Restaurant, gemischt positiv und negativ.
+Klassifiziere danach jede als positiv/neutral/negativ und begründe je Bewertung in
+einem Halbsatz.
 ```
 
 ```text
-Extrahiere aus diesem Vertragstext folgende Angaben als Tabelle:
-Vertragspartner, Laufzeit, Kündigungsfrist, monatliche Kosten: [Text einfügen]
+Erfinde einen kurzen fiktiven Mietvertrag als Fließtext und extrahiere anschließend
+folgende Angaben als Tabelle: Vertragspartner, Laufzeit, Kündigungsfrist, monatliche Kosten.
 ```
 
 ```text
-Fasse dieses Protokoll in 5 Stichpunkten zusammen und übersetze die
-Zusammenfassung anschließend ins Englische.
+Erfinde ein kurzes fiktives Meeting-Protokoll, fasse es in 5 Stichpunkten zusammen
+und übersetze die Zusammenfassung anschließend ins Englische.
 ```
 
 !!! warning "Grenzen im Blick behalten"

@@ -1,16 +1,17 @@
-title: Geschäftsmodell-Ideen mit Copilot
+title: Geschäftsmodell-Canvas für eine KI-Idee (Copilot)
 difficulty: 2
 question: |
-  Beschreibe Daten/Fähigkeiten eines (fiktiven) Unternehmens und lass **Copilot** Geschäftsmodell-Ideen entwickeln:
-
+  Arbeite **in Copilot**.
   ```text
-  Ein Unternehmen verfügt über [Daten/Fähigkeiten]. Entwickle 3 KI-basierte
-  Geschäftsmodell-Ideen mit Wertangebot, Zielgruppe, Einnahmequelle und Hauptrisiko.
+  Erfinde eine KI-Produktidee (ein digitales Angebot) und beschreibe sie in 3 Sätzen.
   ```
-
-  Wähle die vielversprechendste Idee und nenne die erste Hürde, die zu klären wäre.
+  Dann:
+  ```text
+  Fülle für diese Idee die Kernfelder eines Geschäftsmodells aus: Kundennutzen, Zielkunde,
+  Erlösmodell, Schlüsselressourcen, größte Kostenblöcke. Als Tabelle.
+  ```
 tip: |
-  Prüfe, ob die nötigen Daten überhaupt (rechtlich) nutzbar sind.
+  Der wichtigste Block ist der Kundennutzen – ohne echtes Problem, das gelöst wird, trägt kein Erlösmodell.
 solution: |
-  Bewertungskriterien: drei plausible Ideen mit vollständigen Bausteinen; begründete Auswahl; realistische erste
-  Hürde (Daten, Recht, Kosten, Nachfrage).
+  Erwartetes Ergebnis: ein ausgefülltes, stimmiges Mini-Canvas. Lernziel: eine KI-Idee als Geschäftsmodell
+  durchdenken.

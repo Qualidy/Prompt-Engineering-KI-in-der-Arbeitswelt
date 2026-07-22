@@ -1,18 +1,27 @@
-title: Business Case für Predictive Maintenance rechnen
+title: PdM-Business-Case mit Fehlalarm-Abwägung (Copilot)
 difficulty: 3
 question: |
-  Eine Maschine verursacht pro Stunde ungeplantem Stillstand Kosten von 4.000 €.
-  Erwartet werden ohne Maßnahme 25 solcher Stunden pro Jahr. Predictive Maintenance könnte
-  davon 80 % vermeiden. Das System (Sensorik + Software) kostet 45.000 € im ersten Jahr.
+  Erarbeite **in Copilot** einen Business Case für ein selbst erzeugtes Szenario.
 
-  1. Berechne die **vermiedenen Kosten** pro Jahr und den **Netto-Nutzen** im ersten Jahr.
-  2. Lohnt sich die Investition? Begründe.
-  3. Nenne **zwei Voraussetzungen** und **eine Grenze**, die die Rechnung relativieren könnten.
+  **Schritt 1:**
+  ```text
+  Erfinde eine teure Maschine, deren ungeplanter Ausfall hohe Kosten verursacht. Nenne Zahlen
+  (Ausfallkosten pro Stunde, Häufigkeit).
+  ```
+  **Schritt 2:**
+  ```text
+  Schätze grob den Nutzen von Predictive Maintenance (weniger Ausfälle) gegen die Kosten (Sensorik,
+  System). Lohnt es sich?
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Was passiert bei zu vielen Fehlalarmen (unnötige Wartung) und bei verpassten Warnungen? Wie
+  wirken beide auf den Nutzen?
+  ```
+
+  Bewerte selbst: Wie belastbar sind deine Annahmen?
 tip: |
-  Vermiedene Kosten = Stunden × Kosten/Stunde × Vermeidungsquote. Vorhersagen sind Wahrscheinlichkeiten, keine Gewissheiten.
+  Zu viele Fehlalarme untergraben das Vertrauen und die Wirtschaftlichkeit – die Trefferqualität ist entscheidend.
 solution: |
-  Bewertungskriterien:
-
-  - Rechnung korrekt: 25 × 4.000 € × 0,8 = 80.000 € vermieden; Netto-Nutzen Jahr 1 = 80.000 − 45.000 = 35.000 €.
-  - Schlussfolgerung „lohnt sich" ist begründet.
-  - Voraussetzungen (genug historische/Ausfalldaten, Sensorik) und eine Grenze (Fehlalarme, seltene Ausfälle schwer lernbar) sind genannt.
+  Erwartetes Ergebnis: grober Business Case mit Nutzen/Kosten und Reflexion über Fehlalarme/verpasste Warnungen.
+  Lernziel: PdM wirtschaftlich UND mit Blick auf Fehlentscheidungen bewerten.

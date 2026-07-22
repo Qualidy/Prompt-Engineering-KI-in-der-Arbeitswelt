@@ -1,18 +1,18 @@
-title: Ethik-Check mit Copilot
+title: Bias in KI-Entscheidungen aufspüren
 difficulty: 2
 question: |
-  Wähle eine KI-Anwendung, die Menschen betrifft (z. B. Bewerbervorauswahl), und lass **Copilot**
-  einen Ethik-Check machen:
-
+  Arbeite **in Copilot** mit einem selbst erzeugten Beispiel.
   ```text
-  Führe einen kurzen Ethik-Check für die KI-Anwendung "[Anwendung]" durch: mögliche
-  Bias-Quellen, Betroffene, Risiken und je eine Gegenmaßnahme. Bewerte, ob ein Mensch
-  die finale Entscheidung treffen sollte.
+  Erfinde ein KI-System, das Bewerbungen vorsortiert, und beschreibe, mit welchen historischen
+  Daten es trainiert wurde.
   ```
-
-  Ergänze eine ethische Frage, die Copilot nicht gestellt hat.
+  Dann:
+  ```text
+  Wie könnte dieses System bestehende Vorurteile (Bias) übernehmen oder verstärken? Nenne 3
+  konkrete Beispiele und je eine Gegenmaßnahme.
+  ```
 tip: |
-  Denke daran, wer von Fehlentscheidungen betroffen ist und wie Betroffene widersprechen können.
+  KI lernt aus der Vergangenheit – enthält diese Vorurteile, werden sie fortgeschrieben oder sogar verstärkt.
 solution: |
-  Bewertungskriterien: erkannte Bias-Quellen und Betroffene; sinnvolle Gegenmaßnahmen; klare Position zur
-  menschlichen Letztentscheidung; eigene, weiterführende ethische Frage.
+  Erwartetes Ergebnis: 3 plausible Bias-Beispiele mit Gegenmaßnahmen. Lernziel: verstehen, wie Verzerrungen
+  entstehen und wie man ihnen begegnet.

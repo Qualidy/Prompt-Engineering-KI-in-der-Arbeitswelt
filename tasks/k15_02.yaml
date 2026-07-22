@@ -1,18 +1,21 @@
-title: Halluzination entlarven
+title: Eine Halluzination provozieren und erkennen
 difficulty: 2
 question: |
-  Stelle **Copilot** bewusst eine Frage zu einem sehr speziellen, schwer prüfbaren Detail
-  (z. B. eine exakte, wenig bekannte Zahl oder Quelle). Prüfe die Antwort anschließend gegen
-  eine verlässliche Quelle.
-
+  Teste **in Copilot** eine wichtige Schwäche von LLMs.
   ```text
-  Nenne mir das genaue Gründungsdatum und den ersten Umsatz von [sehr kleines/
-  unbekanntes Unternehmen]. Gib an, wie sicher du dir bist.
+  Nenne mir drei wissenschaftliche Studien mit Autor, Jahr und Titel zum Thema
+  „Einfluss von Bürofarben auf die Kaffeequalität".
+  ```
+  (Dieses Thema ist absichtlich absurd.)
+
+  Danach:
+  ```text
+  Sind diese Studien echt? Wie sicher bist du dir? Wie könnte ich das überprüfen?
   ```
 
-  Notiere: Hat Copilot auf Unsicherheit hingewiesen? War die Antwort korrekt?
+  Was lernst du daraus für den Umgang mit Fakten und Quellen?
 tip: |
-  Achte darauf, ob das Modell selbst Unsicherheit signalisiert – gute Prompts fragen aktiv danach.
+  LLMs erzeugen oft überzeugend klingende, aber erfundene Fakten („Halluzination") – gerade bei Quellen und Zahlen.
 solution: |
-  Bewertungskriterien: Erkenntnis, dass LLMs bei seltenen Fakten „halluzinieren" können; Wert einer
-  aktiven Unsicherheitsabfrage; Bewusstsein, dass Ausgaben immer geprüft werden müssen.
+  Erwartetes Ergebnis: Copilot erfindet plausibel klingende, aber nicht belegbare Studien. Lernziel: Fakten, Quellen
+  und Zahlen immer selbst prüfen – nie ungeprüft übernehmen.

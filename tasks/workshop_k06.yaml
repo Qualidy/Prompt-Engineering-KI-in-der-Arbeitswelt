@@ -1,21 +1,30 @@
-title: Innovations-Pitch mit KI
+title: Innovations-Workshop mit Copilot (Ideen bis Prototyp)
 difficulty: 4
 question: |
-  **Szenario:** Ihr sollt eine KI-Innovationsidee als kurzen Pitch präsentieren.
+  Führe **in Copilot** einen kompletten Mini-Innovationsprozess durch – alles selbst erzeugt.
 
-  ---
+  **Schritt 1 – Problem:**
+  ```text
+  Erfinde ein konkretes Alltagsproblem in einer Arztpraxis, das man mit KI verbessern könnte.
+  ```
+  **Schritt 2 – Ideen (Divergenz):**
+  ```text
+  Generiere 8 Lösungsideen für dieses Problem.
+  ```
+  **Schritt 3 – Bewerten (Konvergenz):**
+  ```text
+  Bewerte die 8 Ideen nach Nutzen und Aufwand und wähle die vielversprechendste aus.
+  ```
+  **Schritt 4 – Prototyp:**
+  ```text
+  Erstelle für die gewählte Idee einen ersten Text-Prototyp (z. B. Beispiel-Dialog, Musternachricht
+  oder Konzeptbeschreibung), den man im Team vorstellen könnte.
+  ```
+  **Schritt 5 – Reflexion:** Wo hat dir Copilot am meisten geholfen – bei den Ideen oder bei der Auswahl? Warum?
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
-
-  1. Entwickelt gemeinsam **eine** KI-Innovationsidee (Produkt, Prozess oder Geschäftsmodell).
-  2. Beschreibt: Problem, Lösung, Zielgruppe, Nutzen, benötigte Daten/Technik.
-  3. Ordnet die Idee ein (inkrementell/disruptiv) und benennt **ein zentrales Risiko**.
-  4. Erstellt mit **Copilot** einen **Pitch in 5 Folien** (Text/Struktur) und verfeinert ihn.
-  5. Präsentiert den Pitch in 3 Minuten.
-
-  **Deliverables:** Pitch-Struktur (5 Punkte/Folien) + Risiko-Notiz + kurze Reflexion, wie Copilot geholfen hat.
+  **Deliverable:** die gewählte Idee + Text-Prototyp aus deiner Sitzung.
 tip: |
-  Teilt Rollen auf: Idee, Nutzenargumentation, Risiko, Copilot-Bedienung, Präsentation.
+  KI liefert die Ideenbreite; die kritische Auswahl und der Praxisbezug bleiben deine Aufgabe.
 solution: |
-  Bewertungskriterien: klar umrissene Idee mit erkennbarem Mehrwert; korrekte Einordnung; benanntes Risiko;
-  überzeugende, mit Copilot erstellte und **eigenständig verfeinerte** Pitch-Struktur.
+  Bewertungskriterien: klares Problem, viele Ideen, begründete Auswahl, brauchbarer Text-Prototyp, ehrliche Reflexion.
+  Lernziel: den gesamten Innovationsbogen mit Copilot beschleunigen – Entscheidung bleibt beim Menschen.

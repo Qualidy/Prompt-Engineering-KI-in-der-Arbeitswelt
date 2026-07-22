@@ -1,14 +1,14 @@
-title: Regelbasiert oder KI-basiert?
+title: Copilot als Chatbot rollenspielen lassen
 difficulty: 1
 question: |
-  Handelt es sich eher um einen regelbasierten oder einen KI-basierten Chatbot?
-
-  1. Der Bot bietet feste Menü-Buttons: „Rechnung", „Tarif", „Kontakt".
-  2. Der Bot versteht den frei getippten Satz „Warum ist meine Rechnung diesmal so hoch?".
-  3. Der Bot folgt einem starren Frage-Antwort-Baum ohne Abweichung.
+  Mach das **live in Copilot**:
+  ```text
+  Spiele einen Support-Chatbot für einen Online-Shop. Begrüße mich, frage nach meinem Anliegen
+  und antworte kurz und freundlich. Ich beginne jetzt als Kunde.
+  ```
+  Stelle 3 typische Kundenfragen (Lieferstatus, Rückgabe, Rechnung) und beobachte die Antworten.
 tip: |
-  Freie Sprache verstehen können nur KI-basierte Bots.
+  Ein guter Bot-Prompt definiert Rolle, Ton und Gesprächsführung (Fragen stellen, nicht nur antworten).
 solution: |
-  1. Regelbasiert
-  2. KI-basiert
-  3. Regelbasiert
+  Erwartetes Ergebnis: Copilot führt einen plausiblen Support-Dialog. Lernziel: erleben, wie eine klare Rollen-
+  und Verhaltensvorgabe einen brauchbaren Chatbot erzeugt.

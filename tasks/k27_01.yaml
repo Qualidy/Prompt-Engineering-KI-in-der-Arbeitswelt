@@ -1,14 +1,13 @@
-title: Steuerung oder Regelung?
+title: Regelkreis mit Copilot verstehen
 difficulty: 1
 question: |
-  Steuerung oder Regelung?
-
-  1. Die Bewässerung läuft jeden Morgen um 6 Uhr für 10 Minuten.
-  2. Ein Tempomat hält die Geschwindigkeit trotz Steigung konstant.
-  3. Ein Thermostat hält die Raumtemperatur auf 21 °C.
+  Mach das **live in Copilot**:
+  ```text
+  Erkläre an einem Alltagsbeispiel (z. B. Heizungsthermostat) einen Regelkreis: Was sind Sollwert,
+  Istwert, Messung und Stellgröße? Wo könnte KI den Regler verbessern?
+  ```
 tip: |
-  Gibt es eine Rückmeldung (Messung des Ist-Werts)?
+  Ein Regelkreis misst laufend den Ist-Zustand und steuert nach, um einen Sollwert zu halten.
 solution: |
-  1. Steuerung (fester Ablauf, keine Rückmeldung)
-  2. Regelung (Ist-Wert wird gemessen und korrigiert)
-  3. Regelung
+  Erwartetes Ergebnis: klare Erklärung der Regelkreis-Elemente und ein sinnvoller KI-Ansatz. Lernziel: das Prinzip
+  der (KI-gestützten) Prozessregelung verstehen.

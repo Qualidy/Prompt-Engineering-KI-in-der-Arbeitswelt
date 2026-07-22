@@ -1,23 +1,23 @@
-title: Prompt-Bibliothek für den Arbeitsalltag
+title: Deine persönliche Prompt-Bibliothek in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ihr wollt für euer Team eine wiederverwendbare Sammlung erprobter Prompts anlegen.
+  Baue **in Copilot** eine kleine Prompt-Bibliothek mit 5 wiederverwendbaren Vorlagen für
+  häufige Aufgaben – ganz ohne echte Dokumente.
 
-  ---
+  **Schritt 1:** Wähle 5 typische Alltagsaufgaben (z. B. E-Mail beantworten, Text zusammenfassen,
+  Meeting-Agenda erstellen, Ideen sammeln, Text vereinfachen).
 
-  **Aufgabe (allein oder in der Lerngruppe):**
+  **Schritt 2:** Entwirf für jede eine Vorlage nach dem Muster Rolle – Aufgabe – Kontext – Format,
+  mit Platzhaltern in [ECKIGEN KLAMMERN].
 
-  1. Wählt **5 wiederkehrende Aufgaben** aus dem Arbeitsalltag (z. B. E-Mail entwerfen, Meeting zusammenfassen,
-     Text kürzen, Übersetzung, Ideen sammeln).
-  2. Entwickelt zu jeder Aufgabe einen **Vorlagen-Prompt** mit den vier Bausteinen und Platzhaltern
-     (z. B. `[Kunde]`, `[Ziel]`).
-  3. Testet jeden Prompt in **Copilot** und optimiert ihn in mindestens **einer Iteration**.
-  4. Dokumentiert je Prompt: Zweck, Vorlage, Beispielausgabe, Hinweis zur Nutzung.
-  5. Haltet **Regeln zur Qualitätsprüfung** fest (was muss vor Verwendung geprüft werden?).
+  **Schritt 3 – testen:** Lass Copilot je Vorlage einen fiktiven Anwendungsfall erzeugen und
+  wende die Vorlage darauf an.
 
-  **Deliverables:** Prompt-Bibliothek mit 5 dokumentierten, getesteten Vorlagen + Prüf-Regeln.
+  **Schritt 4 – verbessern:** Notiere bei jeder Vorlage einen Tipp, was das Ergebnis noch besser macht.
+
+  **Deliverable:** 5 getestete, dokumentierte Prompt-Vorlagen zum Weiterverwenden.
 tip: |
-  Nutzt Platzhalter in eckigen Klammern, damit die Vorlagen leicht wiederverwendbar sind.
+  Sammle Vorlagen, die sich bewährt haben – so wirst du mit jeder Woche schneller und besser.
 solution: |
-  Bewertungskriterien: 5 durchdachte Vorlagen mit allen Prompt-Bausteinen und Platzhaltern; erkennbare
-  Iteration/Optimierung; saubere Dokumentation; sinnvolle Qualitäts-/Prüfregeln (Fakten, Ton, Freigabe).
+  Bewertungskriterien: 5 klar strukturierte Vorlagen mit Platzhaltern, an Beispielen getestet, mit
+  Verbesserungstipps. Lernziel: Prompting als wiederverwendbare, wachsende Kompetenz aufbauen.

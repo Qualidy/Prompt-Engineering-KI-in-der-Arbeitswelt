@@ -1,21 +1,25 @@
-title: Roadmap zur Smart Factory
+title: KI-Roadmap für die Produktion in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ein Fertigungsbetrieb will schrittweise KI in der Produktion einführen.
+  Erstelle **in Copilot** eine KI-Roadmap für einen fiktiven Produktionsbetrieb.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde einen Produktionsbetrieb (Produkt, Größe, aktueller Digitalisierungsgrad).
+  ```
+  **Schritt 2:**
+  ```text
+  Sammle 6 mögliche KI-Anwendungen und ordne sie nach Nutzen und Umsetzbarkeit.
+  ```
+  **Schritt 3:**
+  ```text
+  Erstelle eine 3-Phasen-Roadmap (kurz-, mittel-, langfristig) mit je 1–2 Maßnahmen und Voraussetzungen.
+  ```
+  **Schritt 4 – Prüfung:** Ist die Reihenfolge realistisch (erst Datenbasis/Quick Wins, dann Komplexes)? Passe an.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Beschreibt den Betrieb (Produkt, Maschinen, aktueller Digitalisierungsgrad).
-  2. Identifiziert **4 KI-Einsatzfelder** und priorisiert sie nach Nutzen/Aufwand.
-  3. Legt fest, welche **Daten und Vernetzung** je Feld nötig sind.
-  4. Entwickelt eine **Stufen-Roadmap** (Was zuerst, was später?).
-  5. Nutzt **Copilot** für Strukturierung und Formulierung; prüft die Vorschläge kritisch.
-
-  **Deliverables:** Einsatzfeld-Priorisierung + Daten-/Vernetzungsanforderungen + Stufen-Roadmap.
+  **Deliverable:** priorisierte KI-Roadmap in 3 Phasen.
 tip: |
-  Startet mit einem Feld, für das bereits Daten vorhanden sind – das liefert schnell sichtbaren Nutzen.
+  Erst die Datenbasis und schnelle Erfolge, dann komplexe Vorhaben wie Predictive Maintenance.
 solution: |
-  Bewertungskriterien: realistische Priorisierung; korrekte Datenanforderungen; schlüssige, stufenweise Roadmap;
-  Copilot als Hilfsmittel eingesetzt.
+  Bewertungskriterien: sinnvolle Priorisierung, realistische Phasen, benannte Voraussetzungen, kritische Prüfung.
+  Lernziel: eine schlüssige, umsetzbare KI-Roadmap entwickeln.

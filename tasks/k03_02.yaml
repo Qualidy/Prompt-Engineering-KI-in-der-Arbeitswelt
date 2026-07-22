@@ -1,18 +1,30 @@
-title: Eine E-Mail mit Copilot bearbeiten
+title: E-Mail bearbeiten und den Prompt nachschärfen
 difficulty: 2
 question: |
-  Nimm eine (fiktive oder anonymisierte) längere E-Mail und bearbeite sie mit **Copilot**:
+  Arbeite **live in Copilot**. Lass die E-Mail zuerst von Copilot erzeugen (keine echten Daten nötig).
 
+  **Schritt 1 – E-Mail erzeugen lassen:**
   ```text
-  Fasse die folgende E-Mail in maximal 4 Stichpunkten zusammen, erkenne offene
-  Aufgaben und formuliere eine freundliche, professionelle Antwort auf Deutsch.
-  E-Mail: [Text einfügen]
+  Schreibe eine lange, leicht unübersichtliche Kunden-E-Mail (ca. 150 Wörter). Der Kunde
+  beschwert sich über eine verspätete Lieferung, stellt nebenbei zwei Fragen (zur Rechnung
+  und zum Ersatztermin) und ist insgesamt noch freundlich.
   ```
 
-  Beurteile das Ergebnis: Stimmt der Ton? Fehlt etwas? Formuliere eine **verbesserte** Version des Prompts.
+  **Schritt 2 – bearbeiten:**
+  ```text
+  Fasse diese E-Mail in 3 Stichpunkten zusammen, liste die offenen Fragen und entwirf eine
+  Antwort.
+  ```
+
+  **Schritt 3 – nachschärfen:** Der erste Entwurf ist meist zu allgemein. Verbessere ihn gezielt:
+  ```text
+  Formuliere die Antwort neu: Sie-Form, max. 120 Wörter, entschuldige die Verspätung,
+  beantworte beide Fragen konkret und schlage einen Ersatztermin nächste Woche vor.
+  ```
+
+  Vergleiche Entwurf 2 mit Entwurf 3. Was hat der präzisere Auftrag verbessert?
 tip: |
-  Achte auf konkrete Vorgaben: Länge, Tonfall (z. B. „förmlich"), Sprache und gewünschtes Format.
+  Der zweite, präzisere Prompt macht den Unterschied. Gib Länge, Ton, Sprache und gewünschte Inhalte konkret vor.
 solution: |
-  Bewertungskriterien: sinnvolle Zusammenfassung, korrekt erkannte Aufgaben, angemessener Ton;
-  der verbesserte Prompt ergänzt fehlende Vorgaben (z. B. „max. 120 Wörter", „Sie-Form",
-  „mit Terminvorschlag"). Kernbotschaft: Präzisere Aufträge → bessere Ergebnisse.
+  Erwartetes Ergebnis: Entwurf 3 ist kürzer, konkreter, im richtigen Ton und beantwortet beide Fragen.
+  Kernbotschaft: Präzisere Aufträge (Rolle, Ziel, Format) führen zu deutlich besseren Ergebnissen – das ist Prompt Engineering.

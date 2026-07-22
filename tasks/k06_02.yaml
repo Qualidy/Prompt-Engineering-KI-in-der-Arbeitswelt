@@ -1,16 +1,23 @@
-title: Ideensturm mit Copilot
+title: Innovation einordnen lassen
 difficulty: 2
 question: |
-  Nutze **Copilot** als Brainstorming-Partner:
+  Arbeite **in Copilot**. Lass es zuerst eine Idee erfinden, dann einordnen.
 
+  **Schritt 1:**
   ```text
-  Erzeuge 10 KI-Innovationsideen für [Bereich]. Sortiere in inkrementell und
-  disruptiv. Nenne zu jeder Idee den erwarteten Nutzen in einem Satz.
+  Erfinde eine konkrete KI-Innovationsidee für einen Buchladen.
   ```
-
-  Wähle danach die aus deiner Sicht **beste inkrementelle** und **beste disruptive** Idee aus und begründe.
+  **Schritt 2:**
+  ```text
+  Ordne diese Idee ein: Ist sie eher inkrementell oder disruptiv? Welche Innovationsart liegt vor
+  (Produkt, Prozess, Geschäftsmodell, Service)? Begründe beides.
+  ```
+  **Schritt 3 – nachschärfen:**
+  ```text
+  Wandle die Idee so ab, dass sie disruptiver wird, und erkläre, was sich dadurch ändert.
+  ```
 tip: |
-  Disruptive Ideen sind riskanter, aber potenziell wertvoller – bewerte beide Dimensionen.
+  Inkrementell = Bestehendes besser machen. Disruptiv = bestehende Spielregeln verdrängen.
 solution: |
-  Bewertungskriterien: zehn Ideen korrekt einsortiert; begründete Auswahl je einer inkrementellen und
-  disruptiven Idee; Nutzen realistisch eingeschätzt.
+  Erwartetes Ergebnis: begründete Einordnung und eine disruptivere Variante. Lernziel: den Unterschied
+  inkrementell/disruptiv sicher erkennen und bewusst gestalten.

@@ -1,26 +1,29 @@
-title: Abschluss-Workshop – Team-Prompt-Bibliothek & KI-Fahrplan
+title: Abschlussprojekt – eine Aufgabe komplett mit Copilot lösen
 difficulty: 4
 question: |
-  **Szenario:** Als Abschluss bündelt ihr das Gelernte in einem praxistauglichen Ergebnis für euer (künftiges) Team.
+  Zeige im Abschlussprojekt, dass du Copilot souverän und verantwortungsvoll einsetzt. Wähle eine
+  realistische, wiederkehrende Aufgabe – **ohne echte Dokumente**: Copilot erzeugt alles nötige Material selbst.
 
-  ---
+  **Schritt 1 – Aufgabe wählen:** Denk dir eine typische Arbeitsaufgabe aus (z. B. „auf Kundenanfragen
+  antworten", „Meeting vorbereiten und nachbereiten", „einen kurzen Bericht erstellen").
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
+  **Schritt 2 – Material erzeugen:**
+  ```text
+  Erfinde eine realistische Ausgangssituation und alle nötigen (fiktiven) Inhalte für diese Aufgabe.
+  ```
+  **Schritt 3 – Lösen mit System:** Bearbeite die Aufgabe in Copilot mit bewusst eingesetzten Techniken
+  (Rolle, Kontext, Format, Few-Shot, Iteration). Dokumentiere deine besten Prompts.
 
-  1. Erstellt eine **Team-Prompt-Bibliothek** mit mindestens **8 erprobten Prompts** aus verschiedenen
-     Kursthemen (E-Mail, Analyse, Zusammenfassung, Ideenfindung, Dokumente …). Je Eintrag: Zweck, Vorlage,
-     Beispielausgabe, Prüf-Hinweise.
-  2. Formuliert **Nutzungsregeln** (Qualität, Datenschutz, Verantwortung) auf Basis von Block 4.
-  3. Wählt **einen konkreten Use Case** aus eurem Arbeitsumfeld und beschreibt ihn end-to-end:
-     Ziel, Daten, KI-/Copilot-Einsatz, Risiken, menschliche Kontrolle.
-  4. Erstellt einen **persönlichen 30-Tage-Fahrplan** zum Kompetenzaufbau.
-  5. Nutzt **Copilot** durchgehend – und dokumentiert an **zwei Stellen**, wo eure kritische Prüfung
-     das KI-Ergebnis verbessert hat.
+  **Schritt 4 – Qualität sichern:** Prüfe das Ergebnis kritisch (Fakten, Ton, Vollständigkeit) und
+  verbessere es in mindestens einer Iteration.
 
-  **Deliverables:** Prompt-Bibliothek (≥8 Einträge) + Nutzungsregeln + 1 durchdachter Use Case + 30-Tage-Fahrplan.
+  **Schritt 5 – Reflexion:** Was hat Copilot gut gemacht, wo musstest DU eingreifen? Wie viel Zeit hast
+  du gespart – und wo lag die Verantwortung klar beim Menschen?
+
+  **Deliverable:** dokumentierte Prompt-Strecke, das finale Ergebnis + eine kurze Reflexion.
 tip: |
-  Dies ist die Synthese des Kurses: Verbindet Prompt-Handwerk (Kapitel 14) mit Verantwortung (Block 4) und
-  strategischem Blick (Block 5).
+  Das Ziel ist nicht „Copilot macht alles", sondern „Ich steuere Copilot souverän und prüfe verantwortungsvoll".
 solution: |
-  Bewertungskriterien: vollständige, brauchbare Prompt-Bibliothek; klare Nutzungsregeln; durchdachter End-to-End-
-  Use-Case mit menschlicher Kontrolle; realistischer Fahrplan; belegte kritische Eigenleistung gegenüber den KI-Ausgaben.
+  Bewertungskriterien: bewusst eingesetzte Prompt-Techniken, dokumentierte Iteration, kritische Qualitätsprüfung,
+  ehrliche Reflexion über Mensch-KI-Arbeitsteilung. Lernziel: alle Kursinhalte in einer realistischen Aufgabe
+  souverän und verantwortungsvoll zusammenführen.

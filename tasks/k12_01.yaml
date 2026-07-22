@@ -1,14 +1,22 @@
-title: Lernart bestimmen
+title: Lernarten mit Copilot unterscheiden
 difficulty: 1
 question: |
-  Welche Lernart passt? (überwacht, unüberwacht, verstärkend)
+  Mach das **live in Copilot**:
+  ```text
+  Erkläre den Unterschied zwischen überwachtem und unüberwachtem Lernen an je einem Beispiel
+  aus dem Marketing.
+  ```
 
-  1. Aus 10.000 mit „Betrug/kein Betrug" markierten Transaktionen lernt ein Modell, Betrug zu erkennen.
-  2. Kunden werden ohne Vorgaben in ähnliche Gruppen eingeteilt.
-  3. Ein Programm lernt durch Belohnung, ein Lager optimal einzuräumen.
+  Teste dein Verständnis:
+  ```text
+  Ich nenne dir 4 Aufgaben, sage mir jeweils die passende Lernart:
+  1) Kunden nach Verhalten in Gruppen einteilen
+  2) Vorhersagen, ob eine Rechnung bezahlt wird
+  3) Auffällige Transaktionen finden
+  4) Den Verkaufspreis einer Immobilie schätzen
+  ```
 tip: |
-  Gibt es vorgegebene „richtige Antworten" (Labels)?
+  Vorhersagen mit bekannter Antwort = überwacht. Strukturen/Gruppen ohne Vorgabe finden = unüberwacht.
 solution: |
-  1. Überwachtes Lernen (Labels vorhanden)
-  2. Unüberwachtes Lernen (keine Vorgaben)
-  3. Verstärkendes Lernen (Belohnung)
+  Erwartetes Ergebnis: 1) unüberwacht (Clustering), 2) überwacht (Klassifikation), 3) unüberwacht (Ausreißer),
+  4) überwacht (Regression). Lernziel: Lernarten sicher zuordnen.

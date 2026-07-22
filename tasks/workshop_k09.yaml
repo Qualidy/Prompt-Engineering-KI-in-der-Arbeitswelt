@@ -1,21 +1,26 @@
-title: Datenbeschaffungsplan
+title: Datenbeschaffungs-Plan in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Für einen KI-Use-Case (z. B. Absatzprognose) müsst ihr die Datenbeschaffung planen.
+  Erstelle **in Copilot** einen Datenbeschaffungs-Plan für einen fiktiven Use Case – selbst erarbeitet.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein produzierendes Unternehmen und einen KI-Use-Case (z. B. Absatzprognose).
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle eine Tabelle aller benötigten Datenquellen mit Spalten: Quelle, intern/extern, Datenart,
+  Verfügbarkeit (leicht/schwer), rechtliche Hürde.
+  ```
+  **Schritt 3:**
+  ```text
+  Priorisiere: Mit welchen Daten würde ich starten, und welche Lücke ist am kritischsten?
+  ```
+  **Schritt 4 – Prüfung:** Prüfe die rechtlichen Hürden kritisch – fehlt etwas Wichtiges (z. B. Einwilligung, Zweckbindung)?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Legt einen konkreten Use Case fest.
-  2. Erstellt eine **Datenlandkarte**: Welche Daten werden gebraucht, wo liegen sie (intern/extern), wer ist verantwortlich?
-  3. Bewertet je Quelle die **Qualität** und benennt Risiken (Lücken, Rechte, Aktualität).
-  4. Entwickelt einen **Beschaffungsplan** mit Schritten und rechtlichen Prüfpunkten.
-  5. Nutzt **Copilot** für Checklisten und Struktur – prüft die Vorschläge kritisch.
-
-  **Deliverables:** Datenlandkarte + Qualitäts-/Risikobewertung + Beschaffungsplan mit rechtlichen Prüfpunkten.
+  **Deliverable:** die Datenquellen-Tabelle + Start-Priorisierung.
 tip: |
-  Klärt früh, welche Daten personenbezogen sind – das entscheidet über den DSGVO-Aufwand.
+  Datenqualität schlägt Datenmenge. Ohne saubere, nutzbare Daten scheitert auch das beste Modell.
 solution: |
-  Bewertungskriterien: vollständige Datenlandkarte mit Verantwortlichkeiten; realistische Qualitäts-/Risikobewertung;
-  umsetzbarer Beschaffungsplan inkl. Rechtsprüfung; Copilot sinnvoll eingesetzt.
+  Bewertungskriterien: vollständige Quellen-Tabelle, sinnvolle Priorisierung, kritische rechtliche Prüfung.
+  Lernziel: Datenbeschaffung strukturiert und rechtssicher planen.

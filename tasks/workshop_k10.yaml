@@ -1,22 +1,26 @@
-title: Von Rohdaten zu analysebereiten Daten
+title: Datenaufbereitung von A bis Z in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ihr erhaltet einen „schmutzigen" Beispieldatensatz (z. B. eine Kunden- oder Verkaufsliste)
-  und sollt ihn analysebereit machen.
+  Durchlaufe **in Copilot** eine komplette Datenaufbereitung – mit selbst erzeugten Daten.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erstelle eine unsaubere Beispiel-Tabelle mit 12 Zeilen Bestelldaten und mindestens 5
+  verschiedenen Datenproblemen. Zeige sie als Tabelle.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle einen Bereinigungsplan: liste jedes Problem, den Bereinigungsschritt und die Reihenfolge.
+  ```
+  **Schritt 3:**
+  ```text
+  Zeige die bereinigte Version der Tabelle und erkläre je Änderung kurz, was du getan hast.
+  ```
+  **Schritt 4 – Prüfung:** Kontrolliere die bereinigte Tabelle. Hat Copilot irgendwo eine berechtigte Zeile fälschlich gelöscht oder einen Wert erfunden?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Erstellt (oder nehmt) eine Tabelle mit typischen Problemen: fehlende Werte, Dubletten, uneinheitliche Formate.
-  2. Dokumentiert einen **Aufbereitungsplan**: Welche Schritte in welcher Reihenfolge?
-  3. Führt die Bereinigung durch (in Excel, gern mit **Copilot**-Unterstützung).
-  4. Bildet mindestens **ein sinnvolles neues Feature** (Feature Engineering) und begründet es.
-  5. Reflektiert: Welche Entscheidung war fachlich heikel und warum?
-
-  **Deliverables:** Aufbereitungsplan + bereinigte Tabelle + 1 neues Feature + kurze Reflexion.
+  **Deliverable:** unsaubere Tabelle, Bereinigungsplan, bereinigte Tabelle + deine Prüfnotizen.
 tip: |
-  Dokumentiert jeden Schritt – Nachvollziehbarkeit ist bei Datenaufbereitung entscheidend.
+  Prüfe das Ergebnis kritisch: Automatische Bereinigung kann Dubletten falsch zusammenführen oder Werte „erfinden".
 solution: |
-  Bewertungskriterien: sinnvolle Schrittreihenfolge; korrekt bereinigte Daten; nachvollziehbares neues Feature;
-  reflektierter Umgang mit heiklen Entscheidungen (z. B. Ersetzen fehlender Werte).
+  Bewertungskriterien: mindestens 5 Probleme, vollständiger Plan, saubere Endtabelle, kritische Prüfung inkl.
+  gefundener Automatik-Fehler. Lernziel: den gesamten Aufbereitungsprozess beherrschen und Ergebnisse prüfen.

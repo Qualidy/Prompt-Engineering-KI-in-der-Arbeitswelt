@@ -1,14 +1,19 @@
-title: Aufbereitungsschritt erkennen
+title: Copilot erzeugt eine fehlerhafte Tabelle
 difficulty: 1
 question: |
-  Welcher Schritt der Datenaufbereitung ist gemeint (Bereinigen, Transformieren, Anreichern)?
+  Mach das **live in Copilot** – keine eigene Datei nötig, Copilot baut die Tabelle selbst.
 
-  1. Alle Datumsangaben werden ins Format TT.MM.JJJJ gebracht.
-  2. Doppelte Kundeneinträge werden zusammengeführt.
-  3. Aus dem Geburtsdatum wird die Spalte „Alter" berechnet.
+  **Schritt 1:**
+  ```text
+  Erstelle eine kleine Beispiel-Kundentabelle (8 Zeilen) mit typischen Datenfehlern: fehlende Werte,
+  uneinheitliche Datumsformate, eine Dublette und einen Ausreißer. Zeige sie als Tabelle.
+  ```
+  **Schritt 2:**
+  ```text
+  Liste jetzt alle Datenprobleme auf, die in dieser Tabelle stecken.
+  ```
 tip: |
-  Anreichern = neue Information hinzufügen.
+  „Garbage in, garbage out": Ohne saubere Daten sind auch Analysen und KI-Ergebnisse wertlos.
 solution: |
-  1. Transformieren
-  2. Bereinigen
-  3. Anreichern (Feature Engineering)
+  Erwartetes Ergebnis: eine Tabelle mit eingebauten Fehlern und deren korrekte Auflistung (fehlende Werte,
+  Formatprobleme, Dublette, Ausreißer). Lernziel: typische Datenprobleme erkennen.

@@ -1,14 +1,18 @@
-title: Verarbeitungsschritt zuordnen
+title: Rechnungsdaten mit Copilot extrahieren
 difficulty: 1
 question: |
-  Welcher Schritt der Dokumentenverarbeitung ist gemeint?
-
-  1. Ein gescanntes Papierdokument wird in bearbeitbaren Text umgewandelt.
-  2. Aus einer Rechnung werden Betrag, Datum und Lieferant herausgezogen.
-  3. Das System erkennt: „Dies ist ein Vertrag, keine Rechnung."
+  Mach das **live in Copilot** – Copilot erzeugt das Dokument selbst.
+  ```text
+  Erstelle den Text einer fiktiven Rechnung (Absender, Rechnungsnummer, Datum, 3 Positionen,
+  Gesamtbetrag, Zahlungsziel).
+  ```
+  Dann:
+  ```text
+  Extrahiere aus dieser Rechnung folgende Felder als Tabelle: Rechnungsnummer, Datum, Gesamtbetrag,
+  Zahlungsziel.
+  ```
 tip: |
-  OCR, Extraktion oder Klassifikation?
+  Dokumentenverarbeitung heißt: aus unstrukturiertem Text strukturierte Felder gewinnen.
 solution: |
-  1. OCR (Texterkennung)
-  2. Extraktion
-  3. Klassifikation
+  Erwartetes Ergebnis: korrekt extrahierte Felder in Tabellenform. Lernziel: das Grundprinzip automatischer
+  Dokumentenextraktion erleben.

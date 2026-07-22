@@ -1,18 +1,26 @@
-title: 5-Why-Ursachenanalyse mit KI-Unterstützung
+title: KI-Sichtprüfung konzipieren und Fehlentscheidungen abwägen
 difficulty: 3
 question: |
-  Nimm ein reales oder plausibles Qualitätsproblem (z. B. „steigende Reklamationsquote bei Produkt X").
+  Konzipiere **in Copilot** eine KI-gestützte Sichtprüfung für ein selbst erzeugtes Szenario.
 
-  1. Wende die **5-Why-Methode** an: Frage fünfmal „Warum?" bis zu einer wahrscheinlichen Grundursache.
-  2. Markiere, an welchen Stellen **Copilot** dich sinnvoll unterstützen kann.
-  3. Markiere, welche Schritte das **QM-Team an echten Daten verifizieren** muss.
-  4. Warum darf ein KI-generierter 8D-/Prüfbericht nicht ungeprüft verwendet werden?
+  **Schritt 1:**
+  ```text
+  Erfinde ein Produkt und eine optische Qualitätsprüfung, die heute manuell erfolgt.
+  ```
+  **Schritt 2:**
+  ```text
+  Beschreibe, wie eine KI-Bildprüfung das übernehmen könnte: Datenbedarf (Beispielbilder gut/schlecht),
+  Ablauf, menschliche Rolle.
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Erkläre den Unterschied zwischen einem falsch-positiven und einem falsch-negativen Fehler bei
+  dieser Prüfung. Welcher ist teurer/gefährlicher – und wie stellt man die KI entsprechend ein?
+  ```
+
+  Bewerte selbst: Wie viel Kontrolle behält der Mensch?
 tip: |
-  Copilot liefert Hypothesen und Struktur. Die Verifikation an echten Daten und Prozessen bleibt beim Menschen.
+  Falsch-negativ (schlechtes Teil durchgelassen) ist meist gefährlicher als falsch-positiv (gutes Teil aussortiert).
 solution: |
-  Bewertungskriterien:
-
-  - Die 5-Why-Kette ist logisch und endet bei einer plausiblen Grundursache.
-  - Copilot ist als Hypothesen-/Struktur-Helfer verortet, nicht als Beweis.
-  - Die Verifikationspunkte sind benannt (Daten prüfen, Ursache bestätigen).
-  - Es ist erkannt, dass QM-Dokumente haftungs-/prüfungsrelevant sind.
+  Erwartetes Ergebnis: Prüfkonzept mit Datenbedarf und klarer Analyse falsch-positiv/negativ inkl. Konsequenz für
+  die Einstellung. Lernziel: KI-Qualitätsprüfung mit Fehlerkosten-Denken auslegen.

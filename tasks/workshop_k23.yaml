@@ -1,22 +1,25 @@
-title: KI-gestützter Entwicklungsablauf
+title: Konstruktions-Briefing mit Copilot erstellen
 difficulty: 4
 question: |
-  **Szenario:** Ihr sollt zeigen, wie KI einen Produktentwicklungsablauf sinnvoll unterstützt –
-  ohne die Ingenieurverantwortung zu ersetzen.
+  Erstelle **in Copilot** ein vollständiges Konstruktions-Briefing – selbst erzeugt.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde eine Konstruktionsaufgabe aus dem Maschinenbau und beschreibe den Einsatzzweck.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle: Anforderungsliste (Muss/Kann, messbar), 2 Lösungsvarianten, Bewertungskriterien.
+  ```
+  **Schritt 3:**
+  ```text
+  Bewerte die Varianten anhand deiner Kriterien in einer Entscheidungsmatrix und empfiehl eine.
+  ```
+  **Schritt 4 – Prüfung:** Prüfe, ob die Empfehlung wirklich aus den Kriterien folgt oder „gefühlt" ist.
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Wählt ein einfaches Produkt/Bauteil.
-  2. Skizziert den **Entwicklungsablauf** von der Idee bis zur Dokumentation.
-  3. Markiert je Phase, **wo KI** hilft (generatives Design, Recherche, Simulation, Doku) und **wo der Mensch** entscheidet.
-  4. Erstellt mit **Copilot** zwei Artefakte, z. B. Anforderungsliste und Prüf-Checkliste.
-  5. Benennt **Risiken** (z. B. nicht fertigbare Entwürfe, ungeprüfte Normen) und Gegenmaßnahmen.
-
-  **Deliverables:** Entwicklungsablauf mit KI-/Mensch-Zuordnung + 2 Copilot-Artefakte + Risiko-Notiz.
+  **Deliverable:** Anforderungsliste + Varianten + Entscheidungsmatrix mit Empfehlung.
 tip: |
-  Trennt sauber: KI erweitert Optionen und beschleunigt – die fachliche Freigabe bleibt beim Menschen.
+  Eine Entscheidungsmatrix macht Konstruktionsentscheidungen nachvollziehbar statt „Bauchgefühl".
 solution: |
-  Bewertungskriterien: nachvollziehbarer Ablauf; sinnvolle KI-/Mensch-Zuordnung; brauchbare Artefakte;
-  realistische Risiken mit Gegenmaßnahmen.
+  Bewertungskriterien: messbare Anforderungen, sinnvolle Varianten, konsistente Matrix, begründete Empfehlung.
+  Lernziel: Copilot als Struktur- und Entscheidungshilfe in der Konstruktion nutzen.

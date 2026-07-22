@@ -1,17 +1,26 @@
-title: Data-Mining-Muster wählen und Trugschluss vermeiden
+title: Mini-Data-Mining plus Korrelationsfalle (Copilot)
 difficulty: 3
 question: |
-  Dein Unternehmen hat Verkaufsdaten (Produkte, Kunden, Zeit, Rabatte).
-  Formuliere **drei Geschäftsfragen** und ordne jeder das passende **Data-Mining-Muster** zu
-  (Klassifikation, Clustering, Assoziation, Ausreißer, Prognose).
+  Führe **in Copilot** eine kleine Data-Mining-Analyse durch – mit selbst erzeugten Daten.
 
-  Wähle anschließend **eine** deiner Fragen und beschreibe eine mögliche **Korrelation**, die man
-  fälschlich für eine **Kausalität** halten könnte – und wie du das prüfen würdest.
+  **Schritt 1:**
+  ```text
+  Erstelle eine Tabelle mit 15 Zeilen Monatsdaten eines Eiscafés: Monat, Außentemperatur,
+  Eisverkäufe, Sonnenbrand-Fälle in der Stadt.
+  ```
+  **Schritt 2:**
+  ```text
+  Analysiere Zusammenhänge zwischen den Spalten und beschreibe die stärksten Muster.
+  ```
+  **Schritt 3 – kritisch:**
+  ```text
+  Eisverkäufe und Sonnenbrände steigen gemeinsam. Bedeutet das, dass Eis Sonnenbrand verursacht?
+  Erkläre den Unterschied zwischen Korrelation und Kausalität.
+  ```
+
+  Bewerte selbst: Welche gefundenen „Muster" sind echt nützlich, welche nur Scheinzusammenhänge?
 tip: |
-  Data-Mining findet Zusammenhänge. Ob dahinter eine echte Ursache steckt, muss fachlich geprüft werden (Eis ≠ Sonnenbrand).
+  Korrelation ≠ Kausalität. Hier ist die Temperatur die versteckte gemeinsame Ursache.
 solution: |
-  Bewertungskriterien:
-
-  - Drei sinnvolle Fragen mit korrekt zugeordneten Mustern.
-  - Ein plausibles Korrelation-vs-Kausalität-Beispiel aus dem eigenen Kontext.
-  - Ein sinnvoller Prüfansatz (weitere Variablen, gemeinsame Ursache suchen, Experiment/Zeitverlauf).
+  Erwartetes Ergebnis: erkannte Zusammenhänge und klare Erklärung von Korrelation vs. Kausalität (Temperatur als
+  Störgröße). Lernziel: Muster kritisch interpretieren statt vorschnell Ursachen zu behaupten.

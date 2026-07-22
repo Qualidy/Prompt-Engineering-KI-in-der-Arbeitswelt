@@ -1,19 +1,24 @@
-title: DSGVO-Fall prüfen und Prompt anonymisieren
+title: Datenschutz beim Copilot-Einsatz durchdenken
 difficulty: 3
 question: |
-  Ein Mitarbeiter will folgende Aufgabe erledigen: „Copilot soll eine Beschwerde-E-Mail von
-  Herrn Thomas Berger (Kundennr. 88231, wohnhaft in ...) analysieren und eine Antwort entwerfen."
+  Analysiere **in Copilot** ein selbst erzeugtes Szenario – mit Fokus auf sicheren Copilot-Einsatz.
 
-  1. Nenne **zwei DSGVO-Aspekte**, die hier zu beachten sind.
-  2. Warum ist entscheidend, **welches** Copilot (freigegebenes M365 vs. privates Tool) genutzt wird?
-  3. Schreibe den Prompt so um, dass er **datensparsam/anonymisiert** ist, aber trotzdem brauchbar bleibt.
-  4. Nenne die **Rechtsgrundlage-Frage**, die vorher geklärt sein muss.
+  **Schritt 1:**
+  ```text
+  Erfinde eine Situation, in der Mitarbeitende Copilot mit sensiblen Informationen nutzen wollen.
+  ```
+  **Schritt 2:**
+  ```text
+  Welche Daten dürfen NICHT einfach in einen KI-Chat eingegeben werden und warum? Nenne 5 Beispiele.
+  ```
+  **Schritt 3:**
+  ```text
+  Formuliere 5 einfache Verhaltensregeln für den datenschutzkonformen Umgang mit Copilot im Alltag.
+  ```
+
+  Bewerte selbst: Worin unterscheidet sich ein geschäftlicher (mit Datenschutz) von einem privaten KI-Zugang?
 tip: |
-  Ersetze echte Namen durch Platzhalter (Kunde A). Für betriebliche Daten nur freigegebene Tools nutzen.
+  Faustregel: Keine personenbezogenen oder vertraulichen Daten in Prompts, wenn der Datenschutz-Rahmen unklar ist. Geschäftliche Tenants bieten mehr Schutz als private Zugänge.
 solution: |
-  Bewertungskriterien:
-
-  - Zwei DSGVO-Aspekte (personenbezogene Daten, Datenminimierung, Zweckbindung) sind benannt.
-  - Der Unterschied freigegebenes M365 (Tenant, kein Training) vs. offenes Tool ist verstanden.
-  - Der umgeschriebene Prompt vermeidet echte Personendaten, bleibt aber sinnvoll.
-  - Die Rechtsgrundlage-Frage ist gestellt.
+  Erwartetes Ergebnis: klare Liste sensibler Daten und 5 praktikable Verhaltensregeln. Lernziel: Copilot im Alltag
+  datenschutzbewusst nutzen.

@@ -1,18 +1,25 @@
-title: Verarbeitungskette für den Rechnungseingang
+title: Dokumenten-Workflow mit Prüfung entwerfen (Copilot)
 difficulty: 3
 question: |
-  Entwirf eine KI-gestützte **Verarbeitungskette** für eingehende Rechnungen:
+  Entwirf **in Copilot** einen Verarbeitungs-Workflow für ein selbst erzeugtes Dokument.
 
-  1. Beschreibe die Schritte von der Erfassung bis zur Weiterleitung (Erfassen, OCR, Klassifizieren, Extrahieren, Prüfen, Weiterleiten).
-  2. Markiere die **Human-in-the-Loop-Punkte**: Wo muss ein Mensch prüfen und warum?
-  3. Formuliere einen **Copilot-Prompt**, der aus einer Rechnung die Kerndaten als Tabelle zieht und Unsicheres markiert.
-  4. Nenne **zwei Fehlerrisiken** und je eine Absicherung.
+  **Schritt 1:**
+  ```text
+  Erstelle den Text eines fiktiven, teils unklaren Lieferscheins (mit einer widersprüchlichen Angabe).
+  ```
+  **Schritt 2:**
+  ```text
+  Extrahiere die relevanten Felder und markiere die widersprüchliche/unsichere Angabe explizit.
+  ```
+  **Schritt 3 – Prozess:**
+  ```text
+  Entwirf den Workflow: erfassen → extrahieren → prüfen → freigeben. An welcher Stelle muss ein
+  Mensch kontrollieren und warum?
+  ```
+
+  Bewerte selbst: Was passiert, wenn man die menschliche Prüfung weglässt?
 tip: |
-  Lass Unsicheres ausdrücklich markieren. Bei geld-/rechtsrelevanten Dokumenten prüft ein Mensch die kritischen Fälle.
+  Automatische Extraktion ist nie 100 % sicher – kritische/mehrdeutige Felder brauchen eine menschliche Freigabe.
 solution: |
-  Bewertungskriterien:
-
-  - Die Kette enthält die Kernschritte in sinnvoller Reihenfolge.
-  - Human-in-the-Loop ist an kritischen Stellen gesetzt (hohe Beträge, unklare Extraktion).
-  - Der Prompt fordert Tabelle + Markierung unsicherer/fehlender Angaben.
-  - Zwei Risiken (Zahlendreher, Halluzination, Vertraulichkeit) mit Absicherung sind genannt.
+  Erwartetes Ergebnis: Extraktion mit markierter Unsicherheit und ein Workflow mit klarem menschlichem Prüfpunkt.
+  Lernziel: Dokumenten-KI mit eingebauter Qualitätskontrolle denken.

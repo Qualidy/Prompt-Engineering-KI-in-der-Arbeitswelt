@@ -1,14 +1,17 @@
-title: Bias erkennen
+title: Ethisches Dilemma mit Copilot durchspielen
 difficulty: 1
 question: |
-  In welchen Situationen droht Bias?
-
-  1. Ein Bewerbungstool wird nur mit Lebensläufen einer Berufsgruppe trainiert.
-  2. Ein Kreditmodell lernt aus Daten, in denen bestimmte Stadtteile benachteiligt wurden.
-  3. Ein Übersetzer wird mit ausgewogenen, vielfältigen Texten trainiert.
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde ein ethisches Dilemma beim Einsatz von KI am Arbeitsplatz (z. B. KI bewertet
+  Mitarbeitende). Beschreibe die Situation und nenne die widerstreitenden Interessen.
+  ```
+  Dann:
+  ```text
+  Nenne 3 Argumente dafür und 3 dagegen und formuliere eine abgewogene Empfehlung.
+  ```
 tip: |
-  Bias entsteht durch einseitige oder historisch verzerrte Daten.
+  Ethische Fragen haben selten eine „richtige" Antwort – wichtig ist, Interessen und Folgen offen abzuwägen.
 solution: |
-  1. Ja, Bias-Gefahr (einseitige Daten)
-  2. Ja, Bias-Gefahr (historische Ungleichheit)
-  3. Geringere Gefahr (ausgewogene Daten)
+  Erwartetes Ergebnis: ein greifbares Dilemma mit ausgewogener Argumentation. Lernziel: ethische Spannungen
+  erkennen und strukturiert abwägen.

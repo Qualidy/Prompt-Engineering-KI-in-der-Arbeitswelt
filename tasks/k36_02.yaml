@@ -1,16 +1,18 @@
-title: Green-AI-Maßnahmen mit Copilot
+title: Wann großes, wann kleines Modell? (Copilot)
 difficulty: 2
 question: |
-  Lass dir von **Copilot** Green-AI-Maßnahmen erarbeiten:
-
+  Arbeite **in Copilot**.
   ```text
-  Nenne 5 Maßnahmen, mit denen ein Unternehmen den Energie- und Ressourcenverbrauch
-  seines KI-Einsatzes senken kann. Ordne jede Maßnahme nach Wirkung und Aufwand.
+  Erfinde 4 Aufgaben unterschiedlicher Komplexität (von „Tippfehler korrigieren" bis „komplexe
+  Analyse").
   ```
-
-  Wähle die aus deiner Sicht wirkungsvollste Maßnahme und begründe.
+  Dann:
+  ```text
+  Ordne jeder Aufgabe zu, ob ein großes, leistungsstarkes Modell nötig ist oder ein kleines/
+  effizientes Modell reicht. Begründe im Sinne von Energie-/Kosteneffizienz.
+  ```
 tip: |
-  „Das passende statt das größte Modell wählen" ist oft wirkungsvoll und günstig.
+  Nicht jede Aufgabe braucht das größte Modell – für Einfaches reicht oft ein kleines, sparsames Modell.
 solution: |
-  Bewertungskriterien: sinnvolle Maßnahmen (Modellwahl, Effizienz, grüner Strom, Bündelung); Wirkung-/Aufwand-
-  Einschätzung; begründete Auswahl der wirkungsvollsten Maßnahme.
+  Erwartetes Ergebnis: sinnvolle Zuordnung Aufgabe → Modellgröße mit Effizienzbegründung. Lernziel: Ressourcen-
+  bewusst das passende Werkzeug wählen.

@@ -1,14 +1,12 @@
-title: Nachhaltigkeits-Einsatzfeld erkennen
+title: KI für Nachhaltigkeit mit Copilot brainstormen
 difficulty: 1
 question: |
-  Welchem Feld ist der KI-Beitrag zuzuordnen (Energie, Material, Logistik)?
-
-  1. Lieferrouten werden so geplant, dass weniger Kilometer anfallen.
-  2. Weniger Ausschuss dank automatischer Qualitätsprüfung.
-  3. Lastspitzen im Stromverbrauch werden geglättet.
+  Mach das **live in Copilot**:
+  ```text
+  Erfinde ein Unternehmen und nenne 5 Ideen, wie KI dort Ressourcen (Energie, Material, Wege)
+  einsparen könnte. Ordne jeder Idee eine messbare Kennzahl zu (z. B. kWh, kg CO2, km).
+  ```
 tip: |
-  Wege, Material oder Strom?
+  Nachhaltigkeit wird erst greifbar, wenn man sie misst – z. B. eingesparte kWh oder Kilometer.
 solution: |
-  1. Logistik
-  2. Material
-  3. Energie
+  Erwartetes Ergebnis: 5 Ideen mit passenden Kennzahlen. Lernziel: KI-Nutzen für Nachhaltigkeit messbar denken.

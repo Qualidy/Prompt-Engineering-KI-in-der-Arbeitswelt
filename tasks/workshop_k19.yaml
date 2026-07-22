@@ -1,22 +1,22 @@
-title: Medienpaket für eine Produkteinführung
+title: Content-Kampagne für einen Produktlaunch in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Für die Einführung eines (fiktiven) Produkts sollt ihr mit KI ein kleines Medienpaket erstellen.
+  Produziere **in Copilot** ein komplettes Content-Paket für einen fiktiven Produktlaunch.
 
-  ---
+  **Schritt 1 – Konzept:**
+  ```text
+  Erfinde ein Produkt, eine Zielgruppe und eine Kernbotschaft für den Launch.
+  ```
+  **Schritt 2 – Assets erstellen:** Lass Copilot erzeugen: 1 Bild-Prompt fürs Hauptmotiv, 3 Social-Posts
+  (verschiedene Kanäle), 1 Newsletter-Text, 5 Hashtags.
 
-  **Aufgabe (in der Lerngruppe empfohlen):**
+  **Schritt 3 – Konsistenz:** Prüfe, ob Tonalität und Botschaft über alle Assets einheitlich sind. Lass Copilot Abweichungen glätten.
 
-  1. Beschreibt Produkt und Zielgruppe.
-  2. Erstellt mit **Copilot** mindestens **drei Medien**: z. B. Infoblatt (Word), Präsentation (PowerPoint),
-     Social-Media-Text, Bildidee.
-  3. Achtet auf **einheitliche Botschaft und Tonalität** über alle Medien hinweg.
-  4. Prüft alle Inhalte auf **Richtigkeit, Rechte und Kennzeichnung**.
-  5. Reflektiert: Wo hat KI stark beschleunigt, wo war eure fachliche Nacharbeit nötig?
+  **Schritt 4 – Verantwortung:** Ergänze eine kurze Checkliste, was vor der Veröffentlichung geprüft werden muss (Fakten, Rechte, Kennzeichnung).
 
-  **Deliverables:** 3 Medien + kurze Konsistenz-/Rechteprüfung + Reflexion.
+  **Deliverable:** das fertige Content-Paket + Veröffentlichungs-Checkliste.
 tip: |
-  Nutzt einen gemeinsamen „Kernbotschaft-Prompt" als Basis, damit alle Medien zusammenpassen.
+  Konsistenz macht Marken stark: Gleiche Tonalität und Botschaft über alle Kanäle hinweg.
 solution: |
-  Bewertungskriterien: drei brauchbare, konsistente Medien; einheitliche Botschaft; dokumentierte Rechte-/Fakten­prüfung;
-  ehrliche Reflexion über KI-Nutzen und Grenzen.
+  Bewertungskriterien: vollständiges, konsistentes Paket, kanalgerechte Texte, sinnvolle Prüf-Checkliste.
+  Lernziel: mit KI schnell ein stimmiges, verantwortungsvoll geprüftes Medienpaket erstellen.

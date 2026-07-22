@@ -1,17 +1,17 @@
-title: Governance-Regeln mit Copilot
+title: KI-SWOT für ein Unternehmen (Copilot)
 difficulty: 2
 question: |
-  Lass dir von **Copilot** Governance-Regeln vorschlagen:
-
+  Arbeite **in Copilot**.
   ```text
-  Nenne 6 wichtige KI-Governance-Regeln für ein Unternehmen (Verantwortlichkeiten,
-  Datenschutz, Ethik, Qualität, Kompetenzaufbau, Freigaben). Formuliere jede Regel
-  als klaren Satz.
+  Erfinde ein Unternehmen und erstelle eine SWOT-Analyse speziell für den Einsatz von KI:
+  Stärken, Schwächen, Chancen, Risiken – je 3 Punkte.
   ```
-
-  Wähle die 3 Regeln aus, die du zuerst einführen würdest, und begründe.
+  Dann:
+  ```text
+  Leite aus der SWOT die 2 wichtigsten strategischen Schritte ab.
+  ```
 tip: |
-  Beginne mit Regeln, die Risiken (Datenschutz, Ethik) und Verantwortlichkeiten klären.
+  Stärken/Schwächen sind intern, Chancen/Risiken extern. Strategie heißt: Stärken für Chancen nutzen.
 solution: |
-  Bewertungskriterien: sinnvolle, klar formulierte Regeln über mehrere Bereiche; begründete Priorisierung der
-  ersten drei Regeln.
+  Erwartetes Ergebnis: schlüssige KI-SWOT und 2 abgeleitete Schritte. Lernziel: die eigene KI-Ausgangslage
+  strukturiert bewerten.

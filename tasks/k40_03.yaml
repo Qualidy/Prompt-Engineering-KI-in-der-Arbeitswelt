@@ -1,15 +1,24 @@
-title: Verantwortung beim Prompten
+title: 30-Tage-Plan zur Prompting-Meisterschaft (Copilot)
 difficulty: 3
 question: |
-  Ein Kollege übernimmt Copilot-Ausgaben ungeprüft und gibt vertrauliche Kundendaten ein.
-  Nenne **drei** konkrete Regeln, die du ihm auf Basis dieses Kurses mitgeben würdest, und begründe jede kurz.
+  Entwickle **mit Copilot** einen persönlichen Plan, um Prompt Engineering dauerhaft zu beherrschen.
+
+  **Schritt 1:**
+  ```text
+  Ich möchte in 30 Tagen deutlich besser im Prompting werden. Erstelle einen realistischen Plan mit
+  kleinen täglichen/wöchentlichen Übungen, die je 10–15 Minuten dauern.
+  ```
+  **Schritt 2 – auf deinen Alltag münzen:** Nenne 3 wiederkehrende Aufgaben aus deinem Beruf und lass
+  Copilot je eine passende Übung in den Plan einbauen (ohne dass du echte Dokumente brauchst – Copilot
+  erzeugt Beispielmaterial).
+  **Schritt 3:**
+  ```text
+  Ergänze, woran ich am Ende merke, dass ich besser geworden bin (konkrete Anzeichen).
+  ```
+
+  Bewerte selbst: Ist der Plan realistisch im Alltag durchzuhalten?
 tip: |
-  Denke an Faktenprüfung, Datenschutz (Kapitel 33) und Verantwortlichkeit (Kapitel 31).
+  Kompetenz entsteht durch kleine, regelmäßige Übung – nicht durch einen großen Einmal-Kraftakt.
 solution: |
-  Beispiele:
-
-  1. **Ausgaben immer prüfen** – LLMs können falsch liegen (Halluzinationen).
-  2. **Keine vertraulichen/personenbezogenen Daten** in nicht freigegebene Tools – DSGVO/Unternehmensrichtlinie.
-  3. **Verantwortung bleibt beim Menschen** – die finale Freigabe triffst du, nicht die KI.
-
-  Bewertung: drei klare, begründete Regeln mit Bezug zu Qualität, Datenschutz und Verantwortung.
+  Erwartetes Ergebnis: ein realistischer, auf den eigenen Alltag zugeschnittener 30-Tage-Übungsplan mit
+  Fortschritts-Anzeichen. Lernziel: Prompting als dauerhafte Gewohnheit etablieren.

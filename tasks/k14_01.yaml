@@ -1,15 +1,23 @@
-title: Prompt-Bausteine erkennen
+title: Vager vs. strukturierter Prompt im direkten Vergleich
 difficulty: 1
 question: |
-  Markiere im folgenden Prompt die vier Bausteine (Rolle, Aufgabe, Kontext, Format):
+  Erlebe **live in Copilot**, wie stark Struktur wirkt. Gib nacheinander ein:
 
-  „Du bist Personalreferentin. Formuliere eine Stellenanzeige für eine IT-Fachkraft.
-  Wir sind ein Handwerksbetrieb mit 30 Mitarbeitenden in München. Gib das Ergebnis
-  als strukturierte Anzeige mit Überschriften und maximal 200 Wörtern aus."
+  **Prompt A (vage):**
+  ```text
+  Schreib was zum Thema Teammeeting.
+  ```
+  **Prompt B (strukturiert):**
+  ```text
+  Rolle: Du bist Teamleiter.
+  Aufgabe: Schreibe eine Einladung zu einem 30-minütigen Team-Meeting über die neue Urlaubsregelung.
+  Kontext: 8 Personen, nächsten Dienstag, Ziel ist eine gemeinsame Entscheidung.
+  Format: freundliche E-Mail, max. 100 Wörter, mit Betreff und Agenda-Stichpunkten.
+  ```
+
+  Vergleiche beide Ergebnisse. Was genau macht Prompt B besser?
 tip: |
-  Ein Baustein pro Teilsatz.
+  Merke dir das Muster Rolle – Aufgabe – Kontext – Format. Es hebt fast jeden Prompt sofort auf ein höheres Niveau.
 solution: |
-  - **Rolle:** „Du bist Personalreferentin."
-  - **Aufgabe:** „Formuliere eine Stellenanzeige für eine IT-Fachkraft."
-  - **Kontext:** „Wir sind ein Handwerksbetrieb mit 30 Mitarbeitenden in München."
-  - **Format:** „strukturierte Anzeige mit Überschriften, max. 200 Wörter."
+  Erwartetes Ergebnis: B ist konkret, zielgerichtet und direkt verwendbar. Lernziel: Struktur (Rolle, Aufgabe,
+  Kontext, Format) ist der Kern guten Promptings.

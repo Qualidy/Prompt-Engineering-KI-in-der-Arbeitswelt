@@ -1,21 +1,30 @@
-title: Business Case für Predictive Maintenance
+title: Predictive-Maintenance-Konzept end-to-end in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Ihr sollt begründen, ob sich vorausschauende Wartung für eine Anlage lohnt.
+  Entwickle **in Copilot** ein vollständiges PdM-Konzept – selbst erzeugt.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde einen Betrieb mit mehreren wartungsintensiven Maschinen und beschreibe die Ausgangslage.
+  ```
+  **Schritt 2:**
+  ```text
+  Wähle die kritischste Maschine, definiere nötige Sensordaten und die Datenbasis fürs Training.
+  ```
+  **Schritt 3:**
+  ```text
+  Beschreibe den Ablauf: von der Datenerfassung über die Warnung bis zur Wartungsentscheidung
+  (wer entscheidet?).
+  ```
+  **Schritt 4:**
+  ```text
+  Nenne 3 Voraussetzungen und 2 Risiken für den Erfolg.
+  ```
+  **Schritt 5 – Prüfung:** Ist PdM für diese Maschine wirklich lohnend, oder reicht vorbeugende Wartung?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Wählt eine Anlage und beschreibt die heutige Wartungsstrategie und deren Probleme.
-  2. Skizziert den **Predictive-Maintenance-Ansatz**: Daten, Modellidee, Meldeweg.
-  3. Stellt einen einfachen **Business Case** auf: Kosten (Sensorik, Aufwand) vs. Nutzen (weniger Stillstand).
-  4. Benennt **Risiken** (fehlende Daten, Fehlalarme) und wie ihr damit umgeht.
-  5. Nutzt **Copilot** zur Strukturierung und für die Argumentation.
-
-  **Deliverables:** Ist-Analyse + PdM-Konzept + einfacher Business Case + Risiko-Notiz.
+  **Deliverable:** PdM-Konzept (Maschine, Daten, Ablauf, Voraussetzungen, Risiken).
 tip: |
-  Rechnet grob: Was kostet eine Stunde ungeplanter Stillstand – und wie oft kommt er vor?
+  PdM lohnt vor allem bei teuren, kritischen Maschinen mit guter Datenlage – nicht überall.
 solution: |
-  Bewertungskriterien: nachvollziehbare Ist-Analyse; realistisches PdM-Konzept; plausible Kosten-Nutzen-Betrachtung;
-  benannte Risiken (Datenmangel, Fehlalarme) mit Umgang.
+  Bewertungskriterien: begründete Maschinenauswahl, sinnvoller Datenbedarf, klarer Ablauf mit Entscheidungsrolle,
+  ehrliche Lohnt-sich-Prüfung. Lernziel: PdM als Gesamtkonzept durchdenken.

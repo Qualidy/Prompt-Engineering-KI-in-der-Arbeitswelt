@@ -1,21 +1,27 @@
-title: Kundensegmentierung fürs Marketing
+title: Data-Mining-Analyse end-to-end in Copilot
 difficulty: 4
 question: |
-  **Szenario:** Die Marketingabteilung möchte Kunden gezielter ansprechen und braucht eine Segmentierung.
+  Führe **in Copilot** eine komplette explorative Analyse durch – mit selbst erzeugten Daten.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erstelle einen fiktiven Datensatz mit 20 Zeilen zu Online-Bestellungen (Kundengruppe, Produkt,
+  Betrag, Uhrzeit, Retoure ja/nein).
+  ```
+  **Schritt 2:**
+  ```text
+  Untersuche den Datensatz: Welche Muster erkennst du (z. B. wer retourniert häufig, welche Produkte
+  zu welcher Zeit)? Stelle 3 Erkenntnisse als Tabelle dar.
+  ```
+  **Schritt 3:**
+  ```text
+  Leite aus jeder Erkenntnis eine konkrete Geschäftsempfehlung ab.
+  ```
+  **Schritt 4 – Prüfung:** Hinterfrage jede Empfehlung: Ist der Zusammenhang belastbar oder nur Zufall bei kleiner Datenmenge?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Erstellt (oder nehmt) einen Kundendatensatz mit Merkmalen wie Kaufhäufigkeit, letztem Kauf und Umsatz.
-  2. Bildet mit einer einfachen Methode (z. B. **RFM**) **3–4 Segmente** und benennt sie.
-  3. Entwickelt je Segment **eine passende Marketingmaßnahme**.
-  4. Formuliert je Segment mit **Copilot** einen **Ansprache-Text** (E-Mail/Anzeige) und verfeinert ihn.
-  5. Prüft: Welche **Datenschutzaspekte** sind bei personalisierter Ansprache zu beachten?
-
-  **Deliverables:** Segmentierung + Maßnahmen je Segment + Ansprache-Texte + Datenschutz-Notiz.
+  **Deliverable:** 3 Erkenntnisse + Empfehlungen + kritische Bewertung.
 tip: |
-  RFM = Recency (letzter Kauf), Frequency (Häufigkeit), Monetary (Umsatz).
+  Bei 20 Zeilen sind „Muster" oft Zufall. Sei vorsichtig mit starken Schlüssen aus kleinen Datenmengen.
 solution: |
-  Bewertungskriterien: sinnvolle Segmente mit klaren Kriterien; passende Maßnahmen; zielgruppengerechte, mit Copilot
-  erstellte Texte; korrekte Datenschutzhinweise (Einwilligung, Zweckbindung).
+  Bewertungskriterien: plausibler Datensatz, nachvollziehbare Erkenntnisse, konkrete Empfehlungen, kritische
+  Reflexion zur Datenmenge. Lernziel: Data-Mining als Kreislauf aus Muster, Empfehlung und Prüfung.

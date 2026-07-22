@@ -1,17 +1,21 @@
-title: Trend-Recherche mit Copilot
+title: Copilot mehrstufig planen lassen (Agenten-Prinzip)
 difficulty: 2
 question: |
-  Recherchiere mit **Copilot** aktuelle KI-Trends für deine Branche:
+  Erlebe das **Agenten-Prinzip** live in Copilot: ein Ziel, das es in Schritte zerlegt.
 
   ```text
-  Nenne 5 aktuelle KI-Trends für die Branche [deine Branche]. Ordne jeden Trend
-  nach möglichem Nutzen (hoch/mittel/gering) für ein mittelständisches Unternehmen
-  und begründe kurz.
+  Ziel: Ich möchte ein 30-minütiges Info-Meeting zum Thema „KI-Trends" für mein Team planen.
+  Zerlege das Ziel in Teilschritte, erstelle eine Agenda mit Zeiten und schlage 3 Diskussionsfragen vor.
   ```
 
-  Bewerte kritisch: Welche zwei Trends sind für dich am relevantesten – und warum?
+  Schärfe dann nach:
+  ```text
+  Kürze die Agenda auf 20 Minuten und mache eine der Diskussionsfragen provokanter.
+  ```
+
+  Beobachte: Wie zerlegt Copilot das Ziel selbstständig in Schritte?
 tip: |
-  Frage bei vagen Antworten nach konkreten Beispielen oder Zahlen.
+  Je klarer das Ziel und die Rahmenbedingungen (Dauer, Zielgruppe), desto brauchbarer die Planung.
 solution: |
-  Bewertungskriterien: fünf branchenrelevante Trends; eigene, begründete Auswahl der zwei relevantesten;
-  kritische Distanz zu allgemeinen oder übertriebenen Aussagen.
+  Erwartetes Ergebnis: Copilot zerlegt das Ziel in sinnvolle Schritte (Agenda, Zeiten, Fragen) und passt sie
+  auf Nachfrage an. Lernziel: Ziel-in-Schritte-Zerlegung als Vorstufe echter KI-Agenten erleben.

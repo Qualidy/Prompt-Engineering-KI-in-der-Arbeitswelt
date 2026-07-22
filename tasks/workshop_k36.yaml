@@ -1,21 +1,29 @@
-title: Ressourcenbewusste KI-Nutzungsrichtlinie
+title: Green-AI-Konzept mit Copilot erstellen
 difficulty: 4
 question: |
-  **Szenario:** Euer Unternehmen will KI nutzen, aber ressourcenbewusst.
+  Erarbeite **in Copilot** ein Green-AI-Konzept für ein fiktives Unternehmen.
 
-  ---
+  **Schritt 1:**
+  ```text
+  Erfinde ein Unternehmen mit wachsender KI-Nutzung und beschreibe die Ausgangslage.
+  ```
+  **Schritt 2:**
+  ```text
+  Erstelle eine Übersicht der größten Energie-/Ressourcentreiber der KI-Nutzung.
+  ```
+  **Schritt 3:**
+  ```text
+  Entwirf Maßnahmen (Modellwahl, Nutzungsregeln, Infrastruktur) mit erwartetem Effekt und Aufwand.
+  ```
+  **Schritt 4:**
+  ```text
+  Definiere 2 Kennzahlen, mit denen man den KI-Fußabdruck laufend beobachtet.
+  ```
+  **Schritt 5 – Prüfung:** Vermeidet das Konzept Greenwashing (echte vs. nur behauptete Einsparung)?
 
-  **Aufgabe (allein oder in der Lerngruppe):**
-
-  1. Beschreibt, wofür KI im Unternehmen genutzt wird.
-  2. Identifiziert, wo **unnötiger Verbrauch** entsteht (z. B. zu große Modelle, Doppelanfragen, Spielerei).
-  3. Formuliert **Richtlinien** für ressourcenbewusste Nutzung (Modellwahl, Bündelung, Zweckprüfung).
-  4. Bewertet für **einen** KI-Use-Case den **Netto-Nutzen** (Einsparung vs. Eigenverbrauch).
-  5. Nutzt **Copilot** für Entwurf/Recherche und prüft die Angaben kritisch.
-
-  **Deliverables:** Verbrauchsanalyse + Nutzungsrichtlinie + Netto-Nutzen-Bewertung eines Use Cases.
+  **Deliverable:** Green-AI-Konzept mit Maßnahmen und 2 Kennzahlen.
 tip: |
-  Ressourcenbewusstsein und Kostenbewusstsein gehen oft Hand in Hand – beides spricht für „passend statt maximal".
+  Was man nicht misst, kann man nicht verbessern – definiere Kennzahlen für den KI-Fußabdruck.
 solution: |
-  Bewertungskriterien: erkannte Verbrauchsquellen; praxistaugliche Richtlinien; nachvollziehbare Netto-Nutzen-Bewertung;
-  kritischer Umgang mit KI-generierten Zahlen.
+  Bewertungskriterien: erkannte Treiber, konkrete Maßnahmen mit Effekt/Aufwand, messbare Kennzahlen, Greenwashing-
+  Check. Lernziel: Nachhaltigkeit der eigenen KI-Nutzung steuerbar machen.

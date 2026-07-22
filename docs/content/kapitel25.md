@@ -78,12 +78,12 @@ Ein großer Teil des QM ist **Dokumentation** – aufwendig, aber pflichtgemäß
 | Prüfanweisung | „Formuliere eine klare Prüfanweisung aus diesen Stichpunkten." |
 | Audit-Vorbereitung | „Erstelle eine Checkliste für ein internes ISO-9001-Audit im Bereich X." |
 
-**Beispiel-Prompt zum Ausprobieren:**
+**Beispiel-Prompt zum Ausprobieren (selbsttragend – Copilot erzeugt die Daten zuerst):**
 
 ```text
-Hier sind Kundenreklamationen der letzten Wochen: [Text]. Gruppiere sie nach
-Fehlerart, nenne die drei häufigsten Probleme und schlage je ein sinnvolles
-erstes Untersuchungsfeld für die Ursachenanalyse vor.
+Erfinde 10 fiktive Kundenreklamationen zu einem Produkt. Gruppiere sie danach nach
+Fehlerart, nenne die drei häufigsten Probleme und schlage je ein sinnvolles erstes
+Untersuchungsfeld für die Ursachenanalyse vor.
 ```
 
 !!! warning "Nachweise müssen stimmen"

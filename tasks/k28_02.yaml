@@ -1,16 +1,18 @@
-title: Dokument mit Copilot auswerten
+title: Dokumente klassifizieren und weiterleiten
 difficulty: 2
 question: |
-  Nimm ein (anonymisiertes) längeres Dokument und lass es von **Copilot** auswerten:
-
+  Arbeite **in Copilot** – lass die Dokumente zuerst erzeugen.
   ```text
-  Fasse dieses Dokument in maximal 6 Stichpunkten zusammen, liste alle Fristen und
-  Verantwortlichkeiten auf und nenne 2 offene Fragen. [Dokument einfügen]
+  Erstelle die Kurztexte von 5 verschiedenen Eingangsdokumenten (z. B. Rechnung, Bewerbung,
+  Beschwerde, Bestellung, Werbung).
   ```
-
-  Prüfe die Ausgabe: Wurde eine Frist übersehen oder falsch erfasst?
+  Dann:
+  ```text
+  Klassifiziere jedes Dokument nach Typ und schlage die zuständige Abteilung vor. Stelle es als
+  Tabelle dar (Dokument, Typ, Abteilung, Begründung).
+  ```
 tip: |
-  Kontrolliere Zahlen und Datumsangaben besonders sorgfältig.
+  Automatische Klassifikation und Weiterleitung ist ein Klassiker: spart das manuelle Sortieren der Eingangspost.
 solution: |
-  Bewertungskriterien: korrekte Zusammenfassung; vollständige Fristen/Verantwortlichkeiten; kritische Prüfung
-  der extrahierten Fakten; Bewusstsein für Vertraulichkeit (nur anonymisierte/freigegebene Dokumente).
+  Erwartetes Ergebnis: korrekte Klassifikation und plausible Weiterleitung. Lernziel: Dokumente automatisch
+  sortieren und routen.

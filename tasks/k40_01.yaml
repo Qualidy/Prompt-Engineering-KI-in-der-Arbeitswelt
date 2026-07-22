@@ -1,10 +1,17 @@
-title: Bausteine der Prompt-Bibliothek
+title: Persönlichen Prompt-Spickzettel bauen
 difficulty: 1
 question: |
-  Welche Felder gehören sinnvollerweise zu einem Eintrag in einer Prompt-Bibliothek?
-  Wähle aus: Zweck, Lieblingsfarbe, Vorlage mit Platzhaltern, Beispielausgabe, Prüf-Hinweise, Wetterbericht
+  Mach das **live in Copilot**:
+  ```text
+  Fasse die wichtigsten Prompt-Techniken (Rolle, Kontext, Format, Beispiele/Few-Shot, iteratives
+  Nachschärfen) auf einem kompakten Spickzettel zusammen – je Technik ein Satz und ein Mini-Beispiel.
+  ```
+  Passe ihn dann an dich an:
+  ```text
+  Ergänze 3 Prompt-Vorlagen für Aufgaben, die in meinem Berufsalltag oft vorkommen.
+  ```
 tip: |
-  Was hilft anderen, den Prompt richtig wiederzuverwenden?
+  Ein persönlicher Spickzettel macht dich schneller – halte fest, was für dich funktioniert.
 solution: |
-  Sinnvoll: Zweck, Vorlage mit Platzhaltern, Beispielausgabe, Prüf-Hinweise.
-  Nicht relevant: Lieblingsfarbe, Wetterbericht.
+  Erwartetes Ergebnis: ein kompakter, personalisierter Prompt-Spickzettel. Lernziel: das Gelernte in ein eigenes,
+  praktisches Werkzeug überführen.

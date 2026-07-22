@@ -1,14 +1,18 @@
-title: Fähigkeit zur Aufgabe
+title: Ein KI-System mit Copilot zerlegen
 difficulty: 1
 question: |
-  Welche KI-Grundfähigkeit steht im Vordergrund? (Wahrnehmen, Verstehen, Schlussfolgern, Handeln, Lernen)
+  Mach das **live in Copilot**:
+  ```text
+  Wähle ein bekanntes KI-System (z. B. einen Spam-Filter) und zerlege es in die Bausteine
+  Daten, Algorithmus, Modell und Anwendung. Erkläre jeden Baustein in einem Satz.
+  ```
 
-  1. Ein System erkennt auf Fotos, ob ein Bauteil beschädigt ist.
-  2. Ein System schlägt anhand vergangener Käufe passende Produkte vor.
-  3. Ein Roboterarm greift ein Werkstück und legt es ab.
+  Frage nach:
+  ```text
+  Was ist der Unterschied zwischen dem Training und der Nutzung dieses Systems?
+  ```
 tip: |
-  Manche Aufgaben brauchen mehrere Fähigkeiten – nenne die wichtigste.
+  Daten = Rohstoff, Modell = gelerntes Wissen, Anwendung = Zugang für Menschen.
 solution: |
-  1. Wahrnehmen (Bilderkennung)
-  2. Schlussfolgern (Empfehlung) – gestützt durch Lernen
-  3. Handeln
+  Erwartetes Ergebnis: saubere Zerlegung in die vier Bausteine und klare Unterscheidung Training (einmalig)
+  vs. Nutzung/Inferenz (laufend).

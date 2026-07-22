@@ -1,18 +1,25 @@
-title: Datenpipeline und Monitoring für ein Szenario
+title: Big-Data-Szenario vollständig durchdenken (Copilot)
 difficulty: 3
 question: |
-  Ein Produktionsbetrieb sammelt laufend Sensordaten (Temperatur, Vibration) von 50 Maschinen.
+  Erarbeite **in Copilot** ein vollständiges Big-Data-Szenario, das Copilot selbst erfindet.
 
-  1. Ordne dem Szenario die **fünf V's** von Big Data zu (je ein Beispiel).
-  2. Skizziere die **Datenpipeline** in Stufen (Erfassen → … → Nutzen).
-  3. Erkläre, was **Model Drift** ist und wie du ihn im laufenden Betrieb **überwachst**.
-  4. Welche Rolle übernimmt **Copilot** in diesem Szenario realistischerweise – und welche nicht?
+  **Schritt 1:**
+  ```text
+  Erfinde ein Szenario mit vielen, schnellen und vielfältigen Daten (z. B. Flottenmanagement).
+  ```
+  **Schritt 2:**
+  ```text
+  Ordne die fünf V's zu (je ein Beispiel), skizziere die Datenpipeline und schlage vor, wie man
+  Model Drift überwacht.
+  ```
+  **Schritt 3:**
+  ```text
+  Wo in dieser Kette arbeitet ein Werkzeug wie Copilot realistischerweise – und wo nicht?
+  ```
+
+  Bewerte selbst: Welche Pipeline-Stufe wird in der Praxis am häufigsten unterschätzt?
 tip: |
-  Der wichtigste V ist „Value": Daten allein sind wertlos. Model Drift = das Modell wird schlechter, weil sich die Realität ändert.
+  Copilot arbeitet am Ende der Kette (Auswertung, Doku), nicht als Echtzeit-Analysesystem an der Maschine.
 solution: |
-  Bewertungskriterien:
-
-  - Die V's sind sinnvoll auf das Szenario bezogen (Volume/Velocity durch viele Echtzeit-Messwerte etc.).
-  - Die Pipeline enthält die Kernstufen und wird als Kreislauf verstanden.
-  - Model Drift ist korrekt erklärt und mit Monitoring/Nachtrainieren beantwortet.
-  - Copilot wird am Ende der Kette (Auswertung/Doku) verortet, nicht als Echtzeit-Analysesystem.
+  Erwartetes Ergebnis: V's, Pipeline und Monitoring stimmig; Copilot korrekt am Kettenende verortet. Lernziel:
+  Big Data als durchgängigen, überwachten Prozess verstehen.
