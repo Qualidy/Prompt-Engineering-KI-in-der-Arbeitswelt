@@ -9,6 +9,7 @@
 - Wie du deine Fähigkeiten vom **Anfänger zum souveränen Anwender** weiterentwickelst
 - Wie du eine persönliche und **teamweite Prompt-Praxis** aufbaust
 - Wie alle Kursinhalte in einer **verantwortungsvollen Nutzung** zusammenlaufen
+- Wie die **fünf Blöcke** des Kurses zusammenhängen (Rückblick auf den Bogen)
 - Wie du am Ball bleibst, während sich die Werkzeuge weiterentwickeln
 </div>
 
@@ -20,6 +21,21 @@ Dieser Kurs begann bei den **Grundlagen der KI** (Block 1), ging über die **Tec
 
 !!! info "Warum das die Schlüsselkompetenz ist"
     Generative KI wird über **natürliche Sprache** bedient (Kap. 15). Nicht mehr Programmierkenntnisse entscheiden über den Nutzen, sondern die Fähigkeit, **klar zu denken und präzise zu formulieren**. Prompt Engineering ist damit eine Kompetenz, die in **fast jedem Beruf** an Bedeutung gewinnt – so grundlegend wie einst der Umgang mit Office oder Internetrecherche.
+
+### Rückblick: die fünf Blöcke im Zusammenhang
+
+Jeder Block hat einen Baustein deiner Kompetenz gelegt – und alle zahlen auf denselben Punkt ein: KI verantwortungsvoll und wirksam einsetzen.
+
+| Block | Thema | Was du mitnimmst |
+|---|---|---|
+| **1 – Grundlagen** | Was KI ist, Herkunft, Einsatz (Kap. 1–8) | KI einordnen, Chancen erkennen |
+| **2 – Technik** | Daten, ML, NLP, LLMs (Kap. 9–20) | verstehen, *warum* KI so „tickt" |
+| **3 – Use Cases** | Prozesse, Produktion, Dokumente (Kap. 21–30) | KI konkret anwenden |
+| **4 – Herausforderungen** | Ethik, Recht, Datenschutz, XAI (Kap. 31–34) | Grenzen und Pflichten kennen |
+| **5 – Erfolgsfaktoren** | Projekte, Change, Strategie (Kap. 35–40) | KI im Unternehmen verankern |
+
+!!! info "Vertiefung: Warum gerade Sprache der Hebel ist"
+    Über Jahrzehnte musste sich der Mensch an die Maschine anpassen – Menüs, Befehle, Programmiersprachen. Generative KI dreht das um: Die Maschine versteht **unsere** Sprache (Kap. 13 – NLP). Damit verschiebt sich der entscheidende Engpass weg von technischem Spezialwissen hin zu einer sehr menschlichen Fähigkeit – **klar denken und sich präzise ausdrücken**. Das ist der Grund, warum Prompt Engineering keine kurzlebige „Tool-Fähigkeit" ist, sondern eine Kompetenz, die auch dann trägt, wenn sich die konkreten Werkzeuge längst geändert haben.
 
 ---
 
@@ -104,12 +120,52 @@ Erinnerung an die wichtigsten Verantwortungs-Regeln.
 
 ---
 
+## 40.6 Wo stehst du – und was jetzt?
+
+Zum Abschluss eine ehrliche Selbsteinschätzung. Sie zeigt dir, wo du stehst und was dein nächster Schritt ist:
+
+| Frage an dich | Wenn „noch nicht" |
+|---|---|
+| Nutze ich bewusst **Rolle, Aufgabe, Kontext, Format**? | Kapitel 14 wiederholen, Gerüst anwenden |
+| **Iteriere** ich, statt neu anzufangen? | erste Antwort nachschärfen üben |
+| **Prüfe** ich Ergebnisse kritisch (Halluzinationen)? | Kapitel 15/34 verinnerlichen |
+| Achte ich auf **Datenschutz und Vertraulichkeit**? | Kapitel 33 als Reflex etablieren |
+| **Teile** ich gute Prompts im Team? | Prompt-Bibliothek starten |
+
+!!! example "Copilot als persönlicher Lernbegleiter"
+    Prompt:
+    ```text
+    Ich habe einen Kurs zu Prompt Engineering und KI in der Arbeitswelt
+    abgeschlossen. Stelle mir 5 kurze Fragen, mit denen ich selbst einschätzen
+    kann, wie souverän ich bereits prompte, und gib mir zu jeder Antwort einen
+    konkreten Tipp zum Besserwerden.
+    ```
+    Beispiel-Antwort (gekürzt):
+    ```text
+    1) Gibst du der KI eine klare Rolle? -> Wenn nicht: beginne mit
+       "Du bist ...".
+    2) Nennst du das gewünschte Format? -> Ergänze Länge, Ton, Struktur.
+    3) Schärfst du Ergebnisse nach? -> Verbessere statt neu zu starten.
+    4) Prüfst du Fakten? -> Behandle jede Antwort als Entwurf, nicht als
+       Wahrheit.
+    5) Sammelst du gute Prompts? -> Lege dir eine kleine Bibliothek an.
+    ```
+
+Du bist mit diesem Kurs von den **Grundlagen** bis zur **Strategie** gegangen – und hast dabei durchgehend die eine Fähigkeit geübt, die alles verbindet. Prompt Engineering ist kein Trick, den man einmal lernt und abhakt, sondern eine **Haltung**: neugierig fragen, präzise formulieren, kritisch prüfen, verantwortungsvoll handeln. Diese Haltung bleibt wertvoll, egal wie sich die Werkzeuge morgen nennen.
+
+!!! tip "Zum Schluss"
+    Du musst nicht alles auf einmal können. Wähle **eine** Sache aus der Tabelle oben und mache sie ab dieser Woche zur Gewohnheit. Aus einzelnen bewussten Schritten wird mit der Zeit echte Souveränität – und aus dir jemand, der KI nicht nur bedient, sondern **klug einsetzt**.
+
+---
+
 ## Zusammenfassung
 
 - **Prompt Engineering** ist die berufsübergreifende Schlüsselkompetenz der KI-Arbeitswelt.
 - Entwicklung in Stufen: **Ausprobieren → Struktur → Iterieren → Systematisieren & Teilen**.
 - Baue eine **persönliche und teamweite Prompt-Praxis** auf (Bibliothek, Austausch, Champions).
 - Können **plus Verantwortung** (prüfen, Datenschutz, Recht, Fairness, Transparenz) macht den reifen Anwender.
+- Die **fünf Blöcke** des Kurses bauen aufeinander auf – von den Grundlagen bis zur Verankerung im Unternehmen.
+- Prompt Engineering ist eine **Haltung**: klar denken, präzise formulieren, kritisch prüfen, verantwortungsvoll handeln.
 - Bleib am Ball: **Prinzipien vor Tricks**, Neugier statt Angst, Lernen als Gewohnheit.
 
 ---

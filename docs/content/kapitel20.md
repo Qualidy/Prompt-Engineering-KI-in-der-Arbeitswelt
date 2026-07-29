@@ -8,6 +8,8 @@
 - Was **Data-Mining** ist und wie es sich von einfacher Statistik unterscheidet
 - Die zentralen **Analysemuster**: Klassifikation, Clustering, Assoziation, Ausreißer, Prognose
 - Ein anschauliches Beispiel: die **Warenkorbanalyse**
+- Wie man Assoziationsregeln mit **Support, Confidence und Lift** liest (durchgerechnet)
+- Der geordnete **Ablauf** eines Data-Mining-Projekts (CRISP-DM)
 - Der Unterschied zwischen **Korrelation und Kausalität**
 - Wie **Copilot in Excel** einfache Data-Mining-Fragen beantwortet – und wo Grenzen sind
 </div>
@@ -62,7 +64,42 @@ Der wichtigste Denkfehler beim Data-Mining: aus einem **Zusammenhang** voreilig 
 
 ---
 
-## 20.5 Data-Mining light mit Copilot in Excel
+## 20.5 Assoziationsregeln lesen: Support, Confidence, Lift
+
+Damit die Warenkorbanalyse aus Abschnitt 20.3 nicht bei einem Bauchgefühl bleibt, misst man jede Regel („Wer A kauft, kauft auch B") mit drei Kennzahlen. Rechnen wir es an einem kleinen Beispiel durch: **1.000 Kassenbons**, davon enthalten 200 **Kaffee**, 150 **Kuchen** und 120 **beides**.
+
+| Kennzahl | Bedeutung | Rechnung | Ergebnis |
+|---|---|---|---|
+| **Support** | Wie oft tritt die Kombi überhaupt auf? | 120 / 1.000 | 12 % |
+| **Confidence** | Wie oft folgt B, wenn A gekauft wird? | 120 / 200 | 60 % |
+| **Lift** | Wie stark hängen A und B wirklich zusammen? | 0,60 / (150/1.000) | 4,0 |
+
+So liest man die Zahlen: Die Regel „Kaffee → Kuchen" kommt in **12 %** aller Einkäufe vor (Support). Wer Kaffee kauft, nimmt in **60 %** der Fälle auch Kuchen (Confidence). Und der **Lift von 4,0** heißt: Kaffee-Käufer greifen **viermal so häufig** zu Kuchen wie ein durchschnittlicher Kunde. Ein Lift über 1 signalisiert einen echten positiven Zusammenhang – genau solche Regeln sind für Platzierung und Angebote interessant.
+
+!!! warning "Häufiges Missverständnis: hohe Confidence ist nicht alles"
+    Eine Confidence von 60 % klingt stark – kann aber täuschen. Wäre Kuchen ohnehin in 60 % **aller** Bons, brächte die Regel keine neue Erkenntnis: Der **Lift** läge bei 1,0 (kein Zusammenhang). Deshalb reicht Confidence allein nicht. Erst der **Lift** verrät, ob A und B wirklich zusammengehören oder ob B einfach nur ein Verkaufsschlager ist. Wer nur auf Confidence schaut, baut Aktionen auf Scheinmustern auf.
+
+---
+
+## 20.6 Der Ablauf eines Data-Mining-Projekts (CRISP-DM)
+
+Data-Mining ist kein Knopfdruck, sondern ein **geordneter Prozess**. Der Industriestandard dafür heißt **CRISP-DM** (*Cross-Industry Standard Process for Data Mining*) und lässt sich in sechs Phasen fassen:
+
+```mermaid
+flowchart LR
+    A([Geschäft verstehen]) --> B([Daten verstehen]) --> C([Daten aufbereiten])
+    C --> D([Modellieren]) --> E([Bewerten]) --> F([Einsetzen])
+    E --> A
+```
+
+Wichtig sind die **Ränder**: Am Anfang steht nicht die Technik, sondern die **Geschäftsfrage** („Was wollen wir wissen und wozu?"). Am Ende steht nicht das Modell, sondern der **produktive Einsatz** und die laufende Überprüfung. Der größte Zeitanteil liegt fast immer in **Datenbeschaffung und -aufbereitung** (Kap. 9 und 10) – die eigentliche Musteranalyse ist oft der kleinere Teil.
+
+!!! info "Vertiefung: Warum der Kreislauf zurückführt"
+    Der Pfeil von „Bewerten" zurück zu „Geschäft verstehen" ist kein Schönheitsfehler: Häufig zeigt die erste Auswertung, dass die Frage geschärft, andere Daten geholt oder das Ziel neu gefasst werden muss. Data-Mining ist damit **iterativ** – ähnlich dem iterativen Nachschärfen beim Prompt Engineering (Kap. 14). Wer nach dem ersten Durchlauf aufhört, verschenkt den größten Teil der Erkenntnis.
+
+---
+
+## 20.7 Data-Mining light mit Copilot in Excel
 
 Für einfache Fragen brauchst du kein Data-Science-Team – **Copilot in Excel** liefert erste Erkenntnisse per Sprache:
 
@@ -91,6 +128,8 @@ nur um eine Korrelation und nicht um eine belegte Ursache handelt.
 - **Data-Mining** entdeckt **unbekannte Muster** in großen Daten – mehr als bloßes Abfragen.
 - Zentrale Muster: **Klassifikation, Clustering, Assoziation, Ausreißer, Prognose**.
 - Die **Warenkorbanalyse** zeigt, wie aus Mustern konkrete Geschäftsaktionen werden.
+- Assoziationsregeln misst man mit **Support, Confidence und Lift** – erst der **Lift** trennt echte Zusammenhänge von Scheinmustern.
+- **CRISP-DM** gibt Data-Mining einen geordneten, iterativen Ablauf – von der Geschäftsfrage bis zum Einsatz.
 - **Korrelation ist nicht Kausalität** – der wichtigste Denkfehler, den es zu vermeiden gilt.
 - **Copilot in Excel** liefert schnelle Hypothesen; für belastbare Aussagen braucht es Fachverfahren.
 

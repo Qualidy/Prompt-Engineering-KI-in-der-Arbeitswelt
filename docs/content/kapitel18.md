@@ -9,6 +9,7 @@
 - Was einen **guten Dialog** ausmacht und wie du Copilot als Gesprächspartner steuerst
 - Die Rolle des **System-Prompts / der Rolle** für konsistentes Verhalten
 - Wie du **mehrstufige Gespräche** führst und Kontext aufbaust
+- Was ein Chatbot wirklich „sieht": **Kontextfenster** statt echtem Gedächtnis
 - Wo Chatbots im Kundenservice **Grenzen** haben
 </div>
 
@@ -110,12 +111,67 @@ Notfallnummer verweisen.
 
 ---
 
+## 18.6 Was ein Chatbot wirklich „sieht"
+
+Der Eindruck, dass sich Copilot an das Gespräch „erinnert", täuscht über die Mechanik hinweg. Tatsächlich hat ein KI-Chatbot **kein Gedächtnis** im menschlichen Sinn. Bei jeder neuen Antwort liest das Modell den **gesamten bisherigen Gesprächsverlauf** noch einmal komplett als Eingabe und sagt darauf aufbauend die nächste Antwort voraus. Der „Kontext" ist also kein gespeichertes Wissen, sondern schlicht der Text, der aktuell mitgeliefert wird.
+
+```mermaid
+flowchart LR
+    A([bisheriger Verlauf + neue Frage]) --> B([Modell liest alles erneut])
+    B --> C([sagt nächste Antwort voraus])
+    C --> D([Antwort wird an Verlauf angehängt])
+    D --> A
+```
+
+Dieser Verlauf hat eine **maximale Länge** – das sogenannte **Kontextfenster**. Ist es voll, „fällt" der Anfang des Gesprächs aus dem Blick des Modells. Das erklärt ein häufiges Praxisphänomen: In sehr langen Chats vergisst Copilot scheinbar früh Gesagtes.
+
+!!! info "Vertiefung: Kontextfenster und Tokens"
+    Sprachmodelle rechnen nicht in Wörtern, sondern in **Tokens** – kleinen Textbausteinen (grob: ein Wort besteht aus einem bis wenigen Tokens). Das Kontextfenster gibt an, wie viele Tokens (Verlauf **plus** neue Antwort) das Modell gleichzeitig verarbeiten kann. Ist die Grenze erreicht, muss Älteres weichen. Praktische Folge: Halte lange Gespräche fokussiert, fasse wichtige Zwischenergebnisse selbst noch einmal zusammen und starte für ein neues Thema lieber einen neuen Chat (siehe auch Kap. 15 – Large Language Models).
+
+---
+
+## 18.7 Dialogmuster für den Alltag
+
+Gute Gesprächsführung folgt wiederkehrenden Mustern. Wer sie kennt, steuert Copilot bewusster:
+
+| Muster | Wozu | Beispiel-Formulierung |
+|---|---|---|
+| Rolle setzen | Ton & Perspektive festlegen | „Du bist erfahrene:r Support-Profi." |
+| Nachschärfen | Ergebnis gezielt verbessern | „Kürzer, konkreter, ein Beispiel dazu." |
+| Perspektivwechsel | blinde Flecken finden | „Was würde ein skeptischer Kunde einwenden?" |
+| Reduktion | Überladenes vereinfachen | „Erkläre es einem Laien in drei Sätzen." |
+| Reset | Themenwechsel sauber trennen | „Vergiss den Fall. Neue Aufgabe: …" |
+
+!!! example "Copilot-Dialog: vom Rohentwurf zur runden Antwort"
+    **Verlauf:**
+    ```text
+    1) Du bist Support-Profi. Erfinde eine typische Kundenbeschwerde über eine
+       fehlerhafte Lieferung und entwirf eine erste, sachliche Antwort.
+    2) Zu technisch. Formuliere es wärmer und ohne Fachjargon.
+    3) Ergänze eine Entschuldigung und einen konkreten nächsten Schritt.
+    ```
+    **Beispiel-Output (Schritt 3, gekürzt):**
+    ```text
+    Guten Tag Herr Muster,
+    es tut uns aufrichtig leid, dass Ihre Lieferung beschädigt ankam – das ärgert
+    uns genauso wie Sie. Wir senden Ihnen heute kostenfrei Ersatz zu und melden uns
+    morgen mit der Sendungsnummer. Vielen Dank für Ihre Geduld.
+    ```
+    Jeder Schritt baute auf dem vorigen auf – ohne den Sachverhalt zu wiederholen. Genau das ist der Mehrwert des Kontexts.
+
+!!! warning "Häufiges Missverständnis: ‚Der Bot kennt mich'"
+    Copilot „erinnert" sich innerhalb eines Chats nur an das, was noch im Kontextfenster steht – nicht an frühere Gespräche und nicht an dich als Person (sofern keine ausdrückliche Speicher-Funktion aktiv ist). Verlasse dich deshalb nicht darauf, dass Angaben von gestern noch „bekannt" sind. Und umgekehrt: Gib keine sensiblen Daten in der Annahme ein, sie seien „nur für diesen Moment" – wohin Eingaben fließen, regelt der Datenschutz (Kap. 33).
+
+---
+
 ## Zusammenfassung
 
 - **KI-Chatbots** verstehen freie Sprache (anders als regelbasierte), können aber überzeugend **falsch** liegen.
 - Gute Dialoge führst du aktiv: **Rolle setzen, schrittweise vertiefen, korrigieren**.
 - Der **System-Prompt** legt Rolle, Ton und Leitplanken fest – wichtig für konsistentes Verhalten.
 - KI-Chatbots **behalten Kontext** – nutze das für mehrstufige Gespräche, setze bei Themenwechsel bewusst zurück.
+- „Gedächtnis" ist in Wahrheit ein **Kontextfenster** begrenzter Länge: In langen Chats fällt der Anfang heraus – Wichtiges selbst zusammenfassen.
+- Bewährte **Dialogmuster** (Rolle setzen, Nachschärfen, Perspektivwechsel, Reduktion, Reset) machen die Steuerung planbar.
 - Grenzen: verbindliche Zusagen, Eskalationen und rechtliche Auskünfte gehören zum **Menschen**.
 
 ---

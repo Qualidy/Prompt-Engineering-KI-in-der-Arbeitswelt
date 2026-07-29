@@ -9,6 +9,7 @@
 - Woher **Widerstände** kommen und wie man ihnen begegnet
 - Bewährte **Modelle** des Wandels (z. B. die 8 Schritte nach Kotter, kompakt)
 - Die Rolle von **Führung, Kommunikation und Beteiligung**
+- Die **emotionalen Phasen** einer Veränderung und die Rolle von **Multiplikatoren**
 - Wie du eine **Copilot-Einführung** menschlich gut gestaltest
 </div>
 
@@ -37,6 +38,9 @@ Widerstand ist **normal** und meist kein böser Wille, sondern eine verständlic
 
 !!! tip "Widerstand ernst nehmen, nicht wegdrücken"
     Widerstand enthält oft **wertvolle Hinweise**: Wer Angst um den Job hat, braucht Klarheit über die eigene Zukunft; wer sich überfordert fühlt, braucht Schulung. Widerstand zu ignorieren verstärkt ihn. Ihn **ernst zu nehmen** ist der erste Schritt, ihn aufzulösen.
+
+!!! info "Vertiefung: Die emotionale Kurve des Wandels"
+    Veränderung verläuft selten geradlinig. Viele Menschen durchlaufen erst einen Einbruch, bevor es aufwärtsgeht – oft als „Tal der Tränen" beschrieben: **Schock/Ablehnung** („Das brauchen wir nicht") → **Frust/Angst** (die alte Routine funktioniert nicht mehr, die neue noch nicht) → **Ausprobieren** (erste kleine Erfolge) → **Akzeptanz** (die neue Arbeitsweise wird normal). Wichtig ist zu wissen: Der Tiefpunkt ist **keine Fehlfunktion**, sondern ein normaler Teil des Prozesses. Führung, die das erwartet, reagiert auf den Frust mit Unterstützung statt mit Druck – und begleitet die Menschen durch das Tal, statt es als Scheitern zu deuten.
 
 ---
 
@@ -105,12 +109,51 @@ und den drei größten zu erwartenden Widerständen samt Gegenmaßnahmen.
 
 ---
 
+## 37.6 Multiplikatoren: Wandel trägt sich über Menschen
+
+Eine Veränderung verbreitet sich nicht per Rundmail, sondern über **Menschen, denen man vertraut**. Solche **Multiplikatoren** (oft „Champions" genannt) sind keine Vorgesetzten, sondern angesehene Kolleg:innen aus dem Fachbereich, die das Werkzeug früh nutzen und ihr Wissen weitergeben.
+
+| Rolle | Wer | Beitrag |
+|---|---|---|
+| **Sponsor** | Führungskraft | gibt Rückendeckung, Ressourcen, Priorität |
+| **Champion/Multiplikator** | angesehene Kolleg:in | zeigt Praxis, beantwortet Alltagsfragen |
+| **Early Adopter** | neugierige Freiwillige | testen zuerst, liefern Feedback |
+| **Skeptiker** | kritische Stimmen | decken echte Schwächen auf – wertvoll! |
+
+Der Trick ist, nicht gegen die Skeptiker zu arbeiten, sondern die **Multiplikatoren sichtbar zu machen**: Wenn eine geschätzte Kollegin zeigt, dass ihr Copilot beim Protokollschreiben täglich 20 Minuten spart, wirkt das stärker als jede Präsentation der Geschäftsführung. So entsteht Sog statt Druck – der Anschluss an die „schnellen Erfolge" aus Abschnitt 37.3.
+
+!!! example "Copilot-Dialog: Kommunikationsbotschaft entwerfen"
+    Prompt:
+    ```text
+    Erfinde eine kurze, ehrliche Ankündigung (max. 120 Wörter) an ein
+    30-köpfiges Team zum Start eines Copilot-Pilotprojekts. Nimm die Angst um
+    Arbeitsplätze ernst, ohne zu beschönigen, und lade zur freiwilligen
+    Teilnahme ein.
+    ```
+    Beispiel-Antwort (gekürzt):
+    ```text
+    Betreff: Wir starten einen Copilot-Pilot - macht ihr mit?
+
+    Liebe Kolleginnen und Kollegen,
+    ab nächster Woche testen wir Microsoft Copilot in unserem Team. Ziel ist,
+    Routinearbeit wie Protokolle und Entwürfe zu erleichtern - nicht, Stellen
+    abzubauen. Wir wollen ehrlich lernen, wo es hilft und wo nicht.
+    Wir suchen 5 Freiwillige, die vier Wochen mitmachen und ihre Erfahrungen
+    teilen. Kein Vorwissen nötig, Schulung inklusive. Fragen und Bedenken sind
+    ausdrücklich willkommen - sprecht mich jederzeit an.
+    ```
+    Beachte: kurz, ehrlich beim Thema Jobs, freiwillig, mit klarem nächstem Schritt – genau die Bausteine aus 37.4.
+
+---
+
 ## Zusammenfassung
 
 - KI-Einführung ist zu großen Teilen **Veränderung von Gewohnheiten** – reine Technik reicht nicht.
 - **Widerstand** ist normal und enthält Hinweise – ernst nehmen statt wegdrücken.
 - Modelle wie **Kotters 8 Schritte** strukturieren den Wandel; **schnelle Erfolge** schaffen Momentum.
 - **Führung (Vorbild), ehrliche Kommunikation und Beteiligung** entscheiden über Akzeptanz.
+- Wandel durchläuft eine **emotionale Kurve** („Tal der Tränen") – der Tiefpunkt ist normal, nicht Scheitern.
+- **Multiplikatoren/Champions** tragen den Wandel glaubwürdiger als jede Ansage von oben.
 - Copilot-Einführung: Pilotgruppe, Schulung, Champions, Austausch, Feedback.
 
 ---

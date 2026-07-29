@@ -7,6 +7,7 @@
 
 - Welche **Medienarten** KI heute erzeugen kann: Text, Bild, Audio, Video, Präsentationen
 - Wie **Bildgeneratoren** grundsätzlich funktionieren und wie man sie promptet
+- Was **hinter der Bilderzeugung** steckt (Diffusion, vereinfacht) und wo ihre Grenzen liegen
 - Wie du mit **Copilot** Präsentationen, Texte und Bildideen erstellst
 - Welche **rechtlichen Fragen** (Urheberrecht, Kennzeichnung) zu beachten sind
 - Wie du KI-Medien **qualitätssicher** und verantwortungsvoll einsetzt
@@ -121,10 +122,67 @@ Richtigkeit prüfen muss.
 
 ---
 
+## 19.6 Vom Rauschen zum Bild: der Diffusionsprozess
+
+In Abschnitt 19.2 hieß es, das Modell setze „aus einem Rauschen schrittweise ein Bild zusammen". Dahinter steckt ein Verfahren namens **Diffusion**. Es lässt sich in zwei Richtungen verstehen:
+
+- **Beim Training** nimmt man echte Bilder und fügt ihnen Schritt für Schritt **Rauschen** hinzu, bis nur noch ein zufälliges Pixelchaos übrig ist. Das Modell lernt dabei, diesen Vorgang **umzukehren**.
+- **Bei der Erzeugung** startet das Modell mit reinem Rauschen und „entrauscht" es Schritt für Schritt – gelenkt durch deinen Text-Prompt, bis ein Bild entsteht, das zur Beschreibung passt.
+
+```mermaid
+flowchart LR
+    A([reines Rauschen]) --> B([Schritt für Schritt entrauschen])
+    B --> C([Prompt lenkt jeden Schritt])
+    C --> D([fertiges Bild])
+```
+
+!!! info "Vertiefung: Warum die Verbindung von Text und Bild funktioniert"
+    Damit ein Prompt das Entrauschen steuern kann, muss das Modell Sprache und Bildinhalte in einen **gemeinsamen Bedeutungsraum** übersetzt haben. Es hat aus Millionen Bild-Text-Paaren gelernt, dass das Wort „Sonnenuntergang" mit bestimmten Farben, Formen und Lichtstimmungen zusammenhängt. Das ist dieselbe Grundidee wie beim Sprachverstehen in Kap. 13 (NLP) – nur über zwei Medien hinweg. Deshalb wirken zusätzliche, konkrete Wörter im Prompt wie „Stellschrauben" für das Ergebnis.
+
+---
+
+## 19.7 Grenzen der Bild-KI und gezielte Feinsteuerung
+
+Bild-KI ist beeindruckend, hat aber typische **Schwachstellen**, die man kennen sollte – sie folgen direkt aus der Funktionsweise (das Modell „malt" Wahrscheinliches, es „versteht" nichts):
+
+| Schwäche | Warum | Umgang |
+|---|---|---|
+| Text im Bild oft fehlerhaft | Buchstaben sind für das Modell nur Formen | Beschriftung nachträglich selbst setzen |
+| Hände, Zähne, Symmetrie | seltene, komplexe Detailmuster | Bild genau prüfen, neu generieren |
+| Logos/Marken verfälscht | keine exakte Reproduktion | echte Logos separat einfügen |
+| „Durchschnittslook" | Modell mittelt Gelerntes | Stil und Details präzise vorgeben |
+
+Zur **Feinsteuerung** hilft es, nicht nur zu sagen, was ins Bild soll, sondern auch, was **nicht** – und Ausgabeparameter wie Format explizit zu nennen.
+
+!!! example "Copilot-Dialog: drei Bildkonzepte vergleichen"
+    **Prompt:**
+    ```text
+    Erfinde ein Titelbild-Motiv für eine Schulung zu Prompt Engineering.
+    Beschreibe drei Varianten, jeweils mit Stil, Motiv, Stimmung und einem
+    Hinweis, was NICHT im Bild sein soll (z. B. Text, Logos).
+    ```
+    **Beispiel-Output (gekürzt):**
+    ```text
+    1) Flat-Illustration: Person am Laptop, Sprechblase mit Zahnrad, ruhige Blautöne,
+       freundlich. Kein Text, keine Markenlogos.
+    2) Fotorealistisch: heller Schreibtisch, Notizzettel mit Pfeilen, Morgenlicht,
+       viel Freiraum oben. Keine lesbaren Buchstaben, keine Gesichter.
+    3) Minimalistisch: einzelnes Glühbirnen-Symbol aus Wortwolke, dunkler Hintergrund,
+       fokussiert. Kein Fließtext, kein Firmenlogo.
+    ```
+    Diese Konzepte kannst du direkt in einen Bildgenerator übernehmen – die „Kein-Text/kein-Logo"-Hinweise beugen den typischen Fehlern vor.
+
+!!! warning "Häufiges Missverständnis: ‚Die KI sucht ein passendes Foto heraus'"
+    Ein Bildgenerator **durchsucht keine Datenbank** und fügt auch keine Bildschnipsel zusammen. Er erzeugt jedes Bild **neu** aus Rauschen. Das erklärt zweierlei: Erstens gibt es keine „Quelle", auf die man sich berufen kann. Zweitens ist das Ergebnis nicht zufällig „von jemandem geklaut" – wohl aber kann es gelernten Stilen ähneln, was die urheber- und persönlichkeitsrechtlichen Fragen aus Abschnitt 19.4 aufwirft.
+
+---
+
 ## Zusammenfassung
 
 - Generative KI erstellt **Text, Bild, Präsentation, Audio, Video** – im Büro v. a. Text, Folien, Bilder.
 - **Bildgeneratoren** brauchen präzise Prompts (Motiv, Stil, Stimmung, Perspektive, Format).
+- Technisch steckt dahinter **Diffusion**: aus Rauschen wird per Prompt schrittweise ein neues Bild – es wird nichts „herausgesucht".
+- Typische **Grenzen** (Text im Bild, Hände, Logos) folgen aus der Funktionsweise – gezielt gegensteuern und prüfen.
 - **Copilot** liefert schnelle Rohentwürfe – der Feinschliff und die Faktenprüfung bleiben bei dir.
 - Beachte **Urheberrecht, Kennzeichnungspflicht (EU AI Act) und Persönlichkeitsrechte**.
 

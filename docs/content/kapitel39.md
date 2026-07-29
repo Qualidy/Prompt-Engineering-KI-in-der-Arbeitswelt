@@ -9,6 +9,7 @@
 - Die zentralen **Bausteine** einer KI-Strategie
 - Wie man Use Cases **priorisiert** und in eine **Roadmap** bringt
 - Die Rolle von **Governance, Kompetenzaufbau und Kultur**
+- Die **Make-or-Buy-Entscheidung**: selbst bauen, kaufen oder anpassen
 - Wie du mit **Copilot** eine erste Strategie-Skizze erstellst
 </div>
 
@@ -42,6 +43,9 @@ flowchart TD
 | **Roadmap** | In welcher Reihenfolge, bis wann? |
 | **Ressourcen** | Daten, Kompetenzen, Budget, Werkzeuge |
 | **Governance** | Regeln, Verantwortung, Ethik (Block 4) |
+
+!!! info "Vertiefung: Vision und Handlungsfelder"
+    Am Anfang steht die **Vision** – ein kurzer, prägnanter Satz, der das Zielbild beschreibt: *„Wir nutzen KI, um unsere Mitarbeitenden von Routinearbeit zu entlasten und schneller auf Kunden zu reagieren."* Eine gute Vision ist konkret genug, um zu leiten, und offen genug, um viele Use Cases zu tragen. Aus ihr leiten sich **Handlungsfelder** ab – thematische Bündel, in denen KI wirken soll, z. B. „Kundenservice", „interne Dokumente", „Produktion" (Kapitel 24). Handlungsfelder sind gröber als einzelne Use Cases: Sie ordnen viele mögliche Anwendungen und verhindern, dass man sich in Einzelideen verzettelt. Erst innerhalb der Handlungsfelder werden konkrete Use Cases gesucht und priorisiert.
 
 ---
 
@@ -98,11 +102,47 @@ der Branche [Branche]. Hilf mir mit: (1) 3 möglichen strategischen Zielen,
 
 ---
 
+## 39.6 Make-or-Buy: selbst bauen, kaufen oder anpassen
+
+Für jeden Use Case stellt sich die Frage: **selbst entwickeln (Make)** oder **fertige Lösung nutzen (Buy)**? Zwischen beiden liegt ein Mittelweg – eine Standardlösung **anpassen** (z. B. Copilot mit eigenen Dokumenten anreichern).
+
+| Option | Wann sinnvoll | Beispiel |
+|---|---|---|
+| **Buy** (kaufen/nutzen) | Standardaufgabe, kein Alleinstellungsmerkmal | Copilot für Office-Arbeit (Kap. 7) |
+| **Adapt** (anpassen) | Standard reicht fast, etwas Kontext fehlt | Copilot mit firmeneigenem Wissen |
+| **Make** (selbst bauen) | Kernkompetenz, einzigartige Daten, echter Vorteil | eigenes Modell auf Spezialdaten (Kap. 12) |
+
+Faustregel: **Kaufen, was andere auch haben; selbst bauen, was einen Vorteil schafft.** Für den Alltag der meisten Unternehmen ist „Buy/Adapt" der richtige Start – eigene Entwicklung lohnt nur dort, wo sie einen echten **Burggraben** (Kapitel 38) begründet und die Daten- und Kompetenzbasis stimmt (Kapitel 7 – KI-Readiness).
+
+!!! example "Copilot bei der Make-or-Buy-Abwägung"
+    Prompt:
+    ```text
+    Erfinde ein mittelständisches Logistikunternehmen mit drei geplanten
+    KI-Use-Cases. Ordne jeden Use Case in Make, Buy oder Adapt ein und begründe
+    die Entscheidung in je einem Satz.
+    ```
+    Beispiel-Antwort (gekürzt):
+    ```text
+    1) Rechnungen automatisch auslesen -> Buy: Standardproblem, viele fertige
+       Werkzeuge vorhanden.
+    2) Copilot mit eigenen Prozesshandbüchern nutzen -> Adapt: Standard plus
+       firmeneigener Kontext.
+    3) Tourenoptimierung auf eigenen Fahrdaten -> Make: einzigartige Daten,
+       echter Wettbewerbsvorteil.
+    ```
+
+!!! warning "Make ist teurer als es aussieht"
+    Ein häufiger Fehler ist, den Aufwand einer Eigenentwicklung zu unterschätzen. „Make" bedeutet nicht nur einmaliges Bauen, sondern **dauerhaften Betrieb**: Daten pflegen, Modelle überwachen, aktualisieren, absichern (Kapitel 35). Ohne diese Ausdauer wird aus dem stolzen Eigenbau schnell ein ungepflegtes Risiko.
+
+---
+
 ## Zusammenfassung
 
 - Eine **KI-Strategie** verbindet KI mit **Geschäftszielen** – gegen Aktionismus und Insellösungen.
 - Bausteine: **Ziele, Vision/Leitplanken, priorisierte Use Cases, Roadmap, Ressourcen, Governance**.
+- Aus der **Vision** leiten sich **Handlungsfelder** ab, in denen konkrete Use Cases gesucht und priorisiert werden.
 - Use Cases nach **Nutzen/Aufwand** priorisieren und in **Wellen** ordnen – Copilot-Einführung ist der ideale Start.
+- **Make-or-Buy**: kaufen, was andere auch haben; selbst bauen nur, wo es einen echten Vorteil schafft.
 - **Governance, Kompetenzaufbau und Kultur** von Anfang an mitplanen – der häufigste Strategiefehler ist, sie zu vergessen.
 - **Copilot** liefert eine gute Strategie-**Skizze**; die Ausarbeitung geschieht im Dialog.
 

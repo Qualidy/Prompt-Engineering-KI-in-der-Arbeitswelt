@@ -7,8 +7,9 @@
 
 - Warum **Ethik** bei KI kein „Beiwerk", sondern geschäftskritisch ist
 - Was **Bias (Verzerrung)** ist, wie er entsteht und welche Folgen er hat
+- Welche **Arten von Bias** es gibt und wo sie im Prozess entstehen
 - Zentrale ethische Prinzipien: **Fairness, Transparenz, Verantwortung, Nicht-Schaden**
-- Die Auswirkungen von KI auf **Arbeit und Gesellschaft**
+- Warum die **Verantwortungsfrage** bei KI besonders heikel ist
 - Wie du im Alltag – auch mit **Copilot** – verantwortungsvoll handelst
 </div>
 
@@ -42,7 +43,26 @@ flowchart LR
 
 ---
 
-## 31.3 Ethische Grundprinzipien
+## 31.3 Wo Bias entsteht: die Arten der Verzerrung
+
+Bias ist kein einzelner Fehler, sondern kann an **mehreren Stellen** im Prozess einsickern. Wer die Arten kennt, erkennt sie leichter.
+
+| Art des Bias | Wo er entsteht | Beispiel |
+|---|---|---|
+| **Daten-Bias** | in den Trainingsdaten selbst | historische Ungleichheit wird gelernt |
+| **Stichproben-Bias** | einseitige Datenauswahl | eine Gruppe ist unterrepräsentiert |
+| **Label-Bias** | subjektive Bewertung der Beispiele | „gut/schlecht" nach Vorurteil vergeben |
+| **Bestätigungs-Bias** | beim Menschen, der das Ergebnis liest | man glaubt der KI, weil sie die eigene Meinung stützt |
+| **Automatisierungs-Bias** | Übervertrauen in die Maschine | Ergebnis wird ungeprüft übernommen |
+
+!!! info "Vertiefung: Der Rückkopplungs-Kreislauf"
+    Besonders tückisch ist, dass sich Bias **selbst verstärken** kann. Empfiehlt eine KI z. B. überwiegend eine Gruppe, entstehen daraus neue Daten, die genau dieses Muster bestätigen – das Modell „lernt" die Verzerrung beim nächsten Training noch stärker. Ohne bewusstes Gegensteuern entsteht so eine Abwärtsspirale. Deshalb reicht es nicht, ein Modell einmal zu prüfen; Fairness muss **laufend** überwacht werden.
+
+Wichtig: Die letzten beiden Arten – Bestätigungs- und Automatisierungs-Bias – liegen **beim Menschen**, nicht in den Daten. Auch die beste Technik schützt nicht davor, dass wir einer flüssigen KI-Antwort zu schnell glauben.
+
+---
+
+## 31.4 Ethische Grundprinzipien
 
 | Prinzip | Bedeutung | Praktische Frage |
 |---|---|---|
@@ -56,7 +76,26 @@ Diese Prinzipien finden sich auch in offiziellen Leitlinien (z. B. der EU) und i
 
 ---
 
-## 31.4 KI, Arbeit und Gesellschaft
+## 31.5 Die Verantwortungsfrage: das „Problem der vielen Hände"
+
+Bei KI ist oft **unklar, wer verantwortlich ist**, wenn etwas schiefgeht. Viele Beteiligte wirken zusammen: Wer die Daten lieferte, wer das Modell baute, wer es einkaufte, wer es bediente.
+
+```mermaid
+flowchart LR
+    A([Datenlieferant]) --> D([KI-Entscheidung])
+    B([Hersteller des Modells]) --> D
+    C([anwendendes Unternehmen]) --> D
+    D --> E([Wer trägt die Verantwortung?])
+```
+
+Diese Diffusion ist gefährlich, weil sich alle hinter „die KI hat entschieden" verstecken könnten. Ethisch – und rechtlich (Kap. 32) – gilt aber klar: **Verantwortung lässt sich nicht an eine Maschine abgeben.** Wer eine KI einsetzt, um eine Entscheidung zu treffen oder vorzubereiten, bleibt für das Ergebnis verantwortlich.
+
+!!! warning "„Die KI war's" ist keine Entschuldigung"
+    Ein verbreitetes Missverständnis ist, dass eine KI Verantwortung „übernehmen" könne. Das kann sie nicht: Sie ist ein Werkzeug. Die Verantwortung bleibt immer bei den **Menschen und Organisationen**, die es einsetzen. Deshalb dürfen bedeutsame Entscheidungen über Menschen nie **allein** einer KI überlassen werden.
+
+---
+
+## 31.6 KI, Arbeit und Gesellschaft
 
 KI verändert die Arbeitswelt – das wirft ehrliche Fragen auf:
 
@@ -72,7 +111,7 @@ KI verändert die Arbeitswelt – das wirft ehrliche Fragen auf:
 
 ---
 
-## 31.5 Verantwortungsvoll handeln mit Copilot
+## 31.7 Verantwortungsvoll handeln mit Copilot
 
 Konkrete Leitplanken für den Alltag:
 
@@ -89,6 +128,29 @@ enthält. Prüfe ihn danach auf mögliche Stereotype oder einseitige Formulierun
 schlage neutralere, ausgewogene Alternativen vor.
 ```
 
+!!! example "Ausgearbeiteter Copilot-Dialog"
+    **Prompt:**
+    ```text
+    Erfinde eine kurze Stellenbeschreibung für eine Pflegekraft, die
+    unbewusst geschlechtsbezogene Stereotype enthält. Analysiere sie danach
+    auf Verzerrungen und schlage eine neutrale, diskriminierungsfreie
+    Formulierung vor.
+    ```
+    **Beispiel-Antwort von Copilot (gekürzt):**
+    ```text
+    Entwurf (mit Stereotypen): "Wir suchen eine einfühlsame Krankenschwester,
+    die als gute Seele der Station mit weiblichem Fingerspitzengefühl ..."
+
+    Verzerrungen:
+    - "Krankenschwester" schließt Männer sprachlich aus.
+    - "weibliches Fingerspitzengefühl" schreibt Eigenschaften einem Geschlecht zu.
+
+    Neutrale Fassung: "Wir suchen eine empathische Pflegefachkraft (m/w/d),
+    die Patient:innen einfühlsam betreut und im Team zuverlässig zusammenarbeitet."
+    ```
+
+Der Dialog zeigt das Muster: Copilot kann Verzerrungen **erkennen und benennen** – aber nur, wenn du es aktiv darum bittest. Die Entscheidung, welche Formulierung veröffentlicht wird, bleibt bei dir.
+
 !!! tip "Ethik ist eine Haltung, kein Häkchen"
     Verantwortungsvolle KI-Nutzung entsteht nicht durch ein einmaliges Regelwerk, sondern durch eine **wache Grundhaltung** bei jeder Anwendung: „Wen betrifft das? Kann das ungerecht wirken? Muss ich das offenlegen?"
 
@@ -98,7 +160,9 @@ schlage neutralere, ausgewogene Alternativen vor.
 
 - KI-Ethik ist **geschäftskritisch** – wegen Recht, Bußgeldern, Reputation und Vertrauen.
 - **Bias** entsteht aus verzerrten Daten; KI ist ein **Spiegel** – auch Copilot ist nicht neutral.
+- Bias hat **viele Arten** (Daten-, Stichproben-, Label-, Bestätigungs-, Automatisierungs-Bias) und kann sich **selbst verstärken**.
 - Leitprinzipien: **Fairness, Transparenz, Verantwortung, Nicht-Schaden, Selbstbestimmung**.
+- **Verantwortung** lässt sich nicht an eine Maschine abgeben – „die KI war's" gilt nicht.
 - KI ersetzt meist **Aufgaben**, nicht Menschen – **Weiterbildung** und Mitnahme der Belegschaft sind zentral.
 - Im Alltag: prüfen, offenlegen, heikle Entscheidungen beim Menschen lassen, Bias entgegenwirken.
 

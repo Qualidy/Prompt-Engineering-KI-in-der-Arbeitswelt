@@ -8,7 +8,8 @@
 - Was **Predictive Maintenance (vorausschauende Wartung)** ist
 - Der Unterschied zu **reaktiver** und **präventiver** Wartung
 - Wie die **Vorhersage von Ausfällen** technisch grob funktioniert
-- Wie man den **wirtschaftlichen Nutzen** (Business Case) berechnet
+- Die zwei Wege **Anomalieerkennung** und **Restlebensdauer-Schätzung (RUL)**
+- Wie man den **wirtschaftlichen Nutzen** (Business Case) durchrechnet
 - Wie **Copilot** bei Wartungsdoku, Analyse und Kommunikation hilft
 </div>
 
@@ -52,7 +53,23 @@ flowchart LR
 
 ---
 
-## 26.3 Der wirtschaftliche Nutzen
+## 26.3 Zwei Wege der Vorhersage
+
+In der Praxis gibt es zwei grundverschiedene Herangehensweisen – sie unterscheiden sich vor allem darin, **wie viele Ausfalldaten** man hat:
+
+| Ansatz | Grundidee | Wann sinnvoll |
+|---|---|---|
+| **Anomalieerkennung** | lernt den „Normalzustand" und schlägt bei Abweichung Alarm | wenige/keine echten Ausfalldaten |
+| **Restlebensdauer (RUL)** | schätzt konkret, wie lange das Teil noch hält | viele dokumentierte Ausfälle vorhanden |
+
+Die **Anomalieerkennung** ist eng mit dem **unüberwachten Lernen** verwandt (Kapitel 12): Das Modell braucht keine markierten Ausfälle, sondern lernt nur, wie „gesund" aussieht, und meldet Auffälligkeiten. Die **Restlebensdauer-Schätzung (Remaining Useful Life)** ist dagegen **überwachtes Lernen**: Sie braucht viele Beispiele, bei denen bekannt ist, wie lange es von einem Zustand bis zum Ausfall dauerte.
+
+!!! info "Vertiefung: Warum echte Ausfalldaten so wertvoll sind"
+    Für eine gute Restlebensdauer-Schätzung braucht das Modell viele Beispiele **echter Ausfälle** – und die sind paradox: Je besser ein Betrieb gewartet ist, desto seltener fällt etwas aus, desto weniger Lerndaten gibt es. Deshalb startet man oft mit **Anomalieerkennung** (die ohne Ausfalldaten auskommt) und wechselt erst später, wenn genug Fälle gesammelt sind, zur präziseren RUL-Schätzung. Das erklärt auch, warum Hersteller Ausfalldaten über viele Anlagen hinweg bündeln.
+
+---
+
+## 26.4 Der wirtschaftliche Nutzen
 
 Predictive Maintenance ist ein Paradebeispiel für einen rechenbaren **Business Case**:
 
@@ -63,12 +80,25 @@ Predictive Maintenance ist ein Paradebeispiel für einen rechenbaren **Business 
 | Bessere Ersatzteilplanung | weniger Lagerkosten, keine Hektik |
 | Längere Maschinenlebensdauer | Investitionen später nötig |
 
-!!! example "Rechnung als Argument"
-    Kostet eine Stunde ungeplanter Stillstand z. B. 5.000 € und verhindert Predictive Maintenance im Jahr 20 solcher Stunden, sind das **100.000 €** vermiedene Kosten. Dem stehen die Kosten für Sensorik und System gegenüber. Genau so baut man einen Business Case – die Methodik gilt für viele KI-Projekte (Kap. 4, 38).
+!!! example "Business Case durchgerechnet"
+    Eine Anlage hat bisher pro Jahr **6 ungeplante Ausfälle**. Predictive Maintenance verhindert davon geschätzt **4** (die anderen 2 sind zu spontan). Kosten pro ungeplantem Ausfall:
+
+    | Position | Betrag pro Ausfall |
+    |---|---|
+    | Stillstand (8 h × 5.000 €/h) | 40.000 € |
+    | Folgeschäden/Reparatur | 15.000 € |
+    | Eilbestellung Ersatzteil | 5.000 € |
+    | **Summe je Ausfall** | **60.000 €** |
+
+    **Vermiedene Kosten:** 4 × 60.000 € = **240.000 €/Jahr**.
+
+    Dem gegenüber stehen die **jährlichen Kosten** der Lösung: Sensorik (Abschreibung) 20.000 € + Softwarelizenz 30.000 € + Betreuung 25.000 € = **75.000 €**.
+
+    **Netto-Nutzen:** 240.000 € − 75.000 € = **165.000 €/Jahr**. Selbst wenn man vorsichtig nur 2 statt 4 verhinderte Ausfälle ansetzt (120.000 €), bleibt der Business Case klar positiv. Genau so baut man ihn auf – die Methodik gilt für viele KI-Projekte (Kapitel 4, 38).
 
 ---
 
-## 26.4 Voraussetzungen und Grenzen
+## 26.5 Voraussetzungen und Grenzen
 
 !!! warning "Kein Selbstläufer"
     - Man braucht **genügend historische Daten** – idealerweise auch echte Ausfalldaten (die selten und wertvoll sind).
@@ -78,7 +108,7 @@ Predictive Maintenance ist ein Paradebeispiel für einen rechenbaren **Business 
 
 ---
 
-## 26.5 Wo Copilot unterstützt
+## 26.6 Wo Copilot unterstützt
 
 Die Vorhersage selbst leistet ein Spezialsystem. **Copilot** hilft rundherum – bei Doku, Auswertung und Kommunikation:
 
@@ -103,7 +133,8 @@ einfache Beispielrechnung, die den möglichen Nutzen vorausschauender Wartung ze
 
 - Drei Strategien: **reaktiv, präventiv, vorausschauend** – Predictive Maintenance wartet **datenbasiert** im optimalen Moment.
 - Modelle erkennen aus **Sensordaten** frühe **Verschleißmuster** und schätzen das Ausfallrisiko.
-- Der Nutzen (weniger Stillstand/Folgeschäden) ist gut als **Business Case** rechenbar.
+- Zwei Wege: **Anomalieerkennung** (ohne Ausfalldaten) und **Restlebensdauer-Schätzung** (mit vielen Ausfalldaten).
+- Der Nutzen (weniger Stillstand/Folgeschäden) ist gut als **Business Case** rechenbar – oft mit sechsstelligem Netto-Nutzen.
 - Voraussetzungen: genug **Daten und Sensorik**; Vorhersagen bleiben **Wahrscheinlichkeiten**.
 - **Copilot** unterstützt bei Doku, Business Case und Kommunikation – nicht bei der Vorhersage selbst.
 

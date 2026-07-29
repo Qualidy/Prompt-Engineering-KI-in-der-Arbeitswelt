@@ -8,6 +8,7 @@
 - Was das **Blackbox-Problem** ist und warum es entsteht
 - Was **Explainable AI (XAI)** bedeutet und warum sie wichtig ist
 - Der Unterschied zwischen **Nachvollziehbarkeit** und **Vertrauen**
+- Warum eine **plausibel klingende** Erklärung keine echte Erklärung sein muss
 - Welche Wege es gibt, KI-Entscheidungen **erklärbarer** zu machen
 - Wie du bei **Copilot** mehr Transparenz einforderst (Quellen, Begründung)
 </div>
@@ -54,9 +55,46 @@ Ein wichtiger Unterschied: Eine **flüssige Erklärung** ist nicht automatisch e
 !!! warning "Die 'plausible Begründung'-Falle"
     Fragst du Copilot „Warum hast du das so beantwortet?", liefert es eine **plausibel klingende** Begründung. Aber Achtung: Das Modell rekonstruiert diese Erklärung im Nachhinein – sie muss **nicht** der tatsächliche innere „Rechenweg" sein. Eine überzeugende Erklärung ist also kein Beweis für Richtigkeit. Vertrauen sollte auf **Prüfung** basieren, nicht auf der Eloquenz der Begründung.
 
+Der Grund liegt in der Funktionsweise (Kap. 12, 15): Ein Sprachmodell sagt Wort für Wort das **wahrscheinlichste nächste Wort** voraus. Fragst du nach einer Begründung, erzeugt es einen **plausiblen Begründungstext** – wieder nach Wahrscheinlichkeit, nicht durch Introspektion in seine eigenen Berechnungen. Die Erklärung ist damit eine nachträgliche Geschichte, kein Protokoll.
+
+!!! example "Ausgearbeiteter Copilot-Dialog: die Falle sichtbar gemacht"
+    **Prompt:**
+    ```text
+    Erfinde eine kurze Rechenaufgabe, bei der du dich absichtlich verrechnest.
+    Nenne das falsche Ergebnis mit einer selbstbewussten Begründung. Erkläre
+    danach, warum die Begründung überzeugend klingt, aber trotzdem falsch ist.
+    ```
+    **Beispiel-Antwort von Copilot (gekürzt):**
+    ```text
+    Aufgabe: "Ein Rabatt von 20 % auf 250 €."
+    (Falsches) Ergebnis: "Der Preis sinkt um 60 €, also auf 190 €."
+    Begründung (klingt gut): "20 % sind rund ein Fünftel, ich habe großzügig
+    gerundet, daher 60 €."
+
+    Warum das täuscht: Die Begründung wirkt souverän und benutzt Fachwörter
+    wie 'ein Fünftel'. Korrekt sind aber 20 % von 250 € = 50 € (Preis 200 €).
+    Der flüssige, sichere Ton ist KEIN Beweis für Richtigkeit.
+    ```
+
+Genau das ist die Kernbotschaft: Der **selbstbewusste Ton** einer Erklärung sagt nichts über ihre Korrektheit. Deine Prüfung – hier eine simple Nachrechnung – ist unverzichtbar.
+
 ---
 
-## 34.4 Wege zu mehr Erklärbarkeit
+## 34.4 Zwei Arten von Erklärbarkeit
+
+Fachlich unterscheidet man, **wann** die Erklärbarkeit entsteht:
+
+| Ansatz | Idee | Beispiel |
+|---|---|---|
+| **Intrinsisch** (eingebaut) | das Modell ist von sich aus verständlich | Entscheidungsbaum, einfache Regeln |
+| **Post-hoc** (nachträglich) | eine Zusatzmethode erklärt eine Blackbox | SHAP, LIME, Quellenangaben |
+
+!!! info "Vertiefung: lokale vs. globale Erklärung"
+    Man unterscheidet außerdem, **wie viel** erklärt wird. Eine **lokale** Erklärung betrifft einen **Einzelfall** („Warum wurde *dieser* Kredit abgelehnt?"). Eine **globale** Erklärung beschreibt das **Verhalten des ganzen Modells** („Welche Faktoren zählen generell am meisten?"). Für Betroffene ist meist die lokale Erklärung entscheidend, für Entwickler und Aufsicht die globale. Bei generativer KI wie Copilot sind beide nur eingeschränkt verfügbar – umso wichtiger ist der praktische Hebel aus dem nächsten Abschnitt: **Quellen verlangen und selbst verifizieren**.
+
+---
+
+## 34.5 Wege zu mehr Erklärbarkeit
 
 | Ansatz | Idee |
 |---|---|
@@ -70,7 +108,7 @@ Bei generativer KI ist der praktikabelste Hebel oft, **Quellen und Belege** zu v
 
 ---
 
-## 34.5 Transparenz bei Copilot einfordern
+## 34.6 Transparenz bei Copilot einfordern
 
 Du kannst Copilot aktiv zu mehr Nachvollziehbarkeit bringen:
 
@@ -98,7 +136,8 @@ hast, (2) wie sicher du dir bist, und (3) welche Angaben ich unbedingt selbst
 
 - Das **Blackbox-Problem**: Bei komplexen Modellen ist das „Warum" von außen kaum nachvollziehbar.
 - **Explainable AI (XAI)** schafft Nachvollziehbarkeit – wichtig für Vertrauen, Fehlersuche, Fairness und Recht.
-- **Nachvollziehbarkeit ≠ Vertrauen:** eine plausible Erklärung ist nicht automatisch korrekt.
+- **Nachvollziehbarkeit ≠ Vertrauen:** eine plausible, selbstbewusst klingende Erklärung ist nicht automatisch korrekt.
+- Erklärbarkeit kann **intrinsisch** (eingebaut) oder **post-hoc** (nachträglich), **lokal** (Einzelfall) oder **global** (Gesamtmodell) sein.
 - Hebel: einfachere Modelle, Erklärmethoden, **Quellenangaben**, Human in the Loop, Doku.
 - Bei **Copilot** aktiv Quellen, Annahmen und Unsicherheiten einfordern – und selbst verifizieren.
 

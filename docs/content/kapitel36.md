@@ -9,6 +9,7 @@
 - Der Unterschied im Verbrauch zwischen **Training** und **Nutzung (Inferenz)**
 - Größenordnungen: Was kostet eine KI-Anfrage die Umwelt (grob)?
 - Wie Anbieter und Nutzer den **Fußabdruck senken** können
+- Warum **Modellgröße** den Verbrauch stark beeinflusst und was **Green AI** bedeutet
 - Wie du als **Copilot-Nutzer:in** bewusst und effizient umgehst
 </div>
 
@@ -47,6 +48,9 @@ flowchart LR
 
 !!! example "Warum beides zählt"
     Das **Training** eines sehr großen Modells kann so viel Energie verbrauchen wie hunderte Haushalte in einem Jahr – aber es passiert nur einmal. Die **Nutzung** kostet pro Prompt wenig, doch bei **weltweit Milliarden** Anfragen täglich summiert sich das zu einem enormen Dauerverbrauch. Beide Phasen sind daher relevant.
+
+!!! info "Vertiefung: Warum Training so teuer ist"
+    Beim Training „liest" ein Modell riesige Textmengen und passt dabei viele Milliarden interner Parameter in unzähligen Rechenschritten immer wieder an (Kapitel 12 – Machine Learning, Kapitel 15 – Large Language Models). Das läuft wochen- bis monatelang auf tausenden spezialisierten Prozessoren (GPUs) parallel. Bei der **Inferenz** (Nutzung) dagegen wird das fertige Modell nur noch einmal „durchgerechnet", um eine Antwort zu erzeugen – ungleich weniger Aufwand pro Anfrage. Genau deshalb gilt: Training ist ein seltener Kraftakt, Nutzung ein häufiger kleiner Verbrauch. Für Anwender:innen ist fast nur die Inferenz-Seite direkt beeinflussbar.
 
 ---
 
@@ -100,12 +104,30 @@ mit denen ich als Nutzer:in den Ressourcenverbrauch gering halte.
 
 ---
 
+## 36.6 Modellgröße und „Green AI"
+
+Nicht jede Aufgabe braucht das größte verfügbare Modell. Die **Modellgröße** (grob: die Zahl der Parameter) ist einer der stärksten Hebel für den Verbrauch: Ein größeres Modell rechnet pro Antwort mehr und zieht mehr Strom. Für viele Alltagsaufgaben genügt ein **kleineres, spezialisiertes Modell** (SLM, Kapitel 5 – KI-Trends) mit einem Bruchteil des Verbrauchs.
+
+| Modelltyp | Typische Nutzung | Verbrauch pro Anfrage |
+|---|---|---|
+| **Großes Allzweckmodell** | komplexe Analyse, Kreatives, Code | hoch |
+| **Kleineres/spezialisiertes Modell** | Klassifizieren, Zusammenfassen, feste Aufgaben | deutlich niedriger |
+| **Klassische Regel/Software** | einfache, klar definierte Logik | minimal |
+
+Der Begriff **Green AI** fasst die Bemühung zusammen, KI so zu entwickeln und zu betreiben, dass Nutzen **im Verhältnis zum Ressourcenverbrauch** steht – im Gegensatz zu „Red AI", bei der immer größere Modelle allein für ein paar Prozent mehr Leistung gebaut werden. Dazu gehören effizientere Architekturen, grüner Strom, gute Auslastung der Hardware und die bewusste Wahl des **kleinsten Modells, das die Aufgabe noch löst**.
+
+!!! warning "Nicht mit Kanonen auf Spatzen"
+    Ein typisches Missverständnis: „Mehr Modell ist immer besser." Für das Zusammenfassen einer kurzen Notiz oder das Sortieren von Stichworten das größte verfügbare Modell zu bemühen, ist wie ein Fernstart-LKW für den Wocheneinkauf – teuer und verschwenderisch. Die passende **Werkzeuggröße zur Aufgabe** zu wählen, spart Kosten *und* Ressourcen.
+
+---
+
 ## Zusammenfassung
 
 - KI verbraucht real **Strom, Wasser und Rohstoffe** – über die Rechenzentren dahinter.
 - **Training** ist einmalig sehr intensiv; **Nutzung** ist pro Anfrage klein, aber milliardenfach.
 - Konkrete Verbrauchszahlen sind unsicher – zur **Sensibilisierung** nutzen, nicht als harte Fakten.
 - Fußabdruck senken: grüne Energie, effiziente/kleine Modelle – und **bewusstes, effizientes Prompten**.
+- Die **Modellgröße** ist ein starker Hebel: das kleinste Modell wählen, das die Aufgabe noch löst (**Green AI**).
 - **Effizientes Prompten** spart Zeit **und** Ressourcen; entscheidend ist die ehrliche Nutzen-Abwägung.
 
 ---

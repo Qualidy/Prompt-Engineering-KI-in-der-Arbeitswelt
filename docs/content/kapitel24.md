@@ -9,6 +9,7 @@
 - Die Rolle von **Sensoren, IoT und Echtzeitdaten**
 - Konkrete Anwendungen: **Qualitätskontrolle, Steuerung, Planung, Wartung**
 - Was ein **digitaler Zwilling** ist
+- Wie die **Automatisierungspyramide** (OT vs. IT) aufgebaut ist und wo KI andockt
 - Wo **Copilot** in der Produktionsumgebung sinnvoll unterstützt – und wo nicht
 </div>
 
@@ -64,7 +65,32 @@ Ein **digitaler Zwilling** ist ein virtuelles Abbild einer realen Maschine oder 
 
 ---
 
-## 24.5 Wo Copilot in der Produktion passt – und wo nicht
+## 24.5 Die Automatisierungspyramide: wo KI andockt
+
+Um zu verstehen, **wo** KI in einer Fabrik überhaupt sitzt, hilft die klassische **Automatisierungspyramide**. Sie beschreibt Ebenen von der Maschine ganz unten bis zur Unternehmensverwaltung ganz oben:
+
+```mermaid
+flowchart TD
+    A([ERP: Unternehmensplanung]) --> B([MES: Fertigungssteuerung])
+    B --> C([SCADA: Überwachung/Visualisierung])
+    C --> D([SPS: Maschinensteuerung])
+    D --> E([Sensoren und Aktoren an der Maschine])
+```
+
+Unten regiert die **OT (Operational Technology)**: speicherprogrammierbare Steuerungen (SPS), die in Millisekunden und hochzuverlässig physische Abläufe steuern. Oben regiert die **IT (Information Technology)**: Planungs- und Auswertungssysteme, die eher in Minuten und Stunden denken.
+
+!!! info "Vertiefung: Warum OT und IT nicht dasselbe sind"
+    In der OT zählt **Determinismus und Sicherheit**: Eine Steuerung muss garantiert und pünktlich reagieren, sonst drohen Schäden. Ein Sprachmodell, das „meistens" richtig liegt und dessen Antwortzeit schwankt, hat auf dieser Ebene nichts verloren. KI wirkt daher überwiegend in den **oberen Ebenen** (MES/ERP) sowie als spezialisierte, geprüfte Modelle nahe der Maschine (z. B. Bilderkennung an einer Kamera). Copilot als allgemeiner Assistent lebt noch eine Etage höher: bei Auswertung, Doku und Kommunikation **über** die Produktionsdaten – nicht in ihr.
+
+| Ebene | Zeithorizont | Rolle von KI/Copilot |
+|---|---|---|
+| ERP / MES | Stunden bis Tage | Planung, Auswertung, Copilot-Berichte |
+| SCADA | Sekunden bis Minuten | Anomalie-Hinweise, Visualisierung |
+| SPS / Sensorik | Millisekunden | keine allgemeine KI, nur geprüfte Spezialmodelle |
+
+---
+
+## 24.6 Wo Copilot in der Produktion passt – und wo nicht
 
 Wichtig zur Einordnung: **Copilot ist kein Maschinensteuerungs-System.** Die eigentliche Produktions-KI (Bilderkennung, Steuerung, Predictive Maintenance) sind Spezialsysteme. Copilot hilft am **Rand** – bei Wissen, Kommunikation und Auswertung:
 
@@ -83,6 +109,19 @@ Fasse danach die häufigsten Störungen zusammen, ordne sie nach Häufigkeit und
 schlage vor, welche zuerst untersucht werden sollten.
 ```
 
+!!! example "So könnte Copilots Antwort aussehen (Auszug)"
+    **Häufigste Störungen der Woche**
+
+    | Störung | Häufigkeit | Zuerst untersuchen? |
+    |---|---|---|
+    | Materialstau Zuführung Linie 2 | 6× | ja (höchste Frequenz) |
+    | Temperaturalarm Ofen | 3× | ja (Sicherheitsbezug) |
+    | Etikettierer fällt aus | 2× | nachrangig |
+
+    **Empfehlung:** Zuerst den Materialstau an Linie 2 analysieren – er tritt am häufigsten auf und blockiert die ganze Linie. Der Temperaturalarm sollte wegen des Sicherheitsbezugs parallel geprüft werden.
+
+    Copilot liefert damit in Sekunden eine **priorisierte Ausgangsbasis** für die Frühschicht-Besprechung – die technische Ursachensuche an der Anlage bleibt Aufgabe des Teams.
+
 !!! warning "Klare Grenze"
     Sicherheitskritische Steuerungsentscheidungen trifft **kein** Sprachmodell. Copilot unterstützt bei **Information und Kommunikation**, nicht bei der Echtzeit-Maschinensteuerung. Diese Trennung ist für die Anlagensicherheit essenziell.
 
@@ -93,6 +132,7 @@ schlage vor, welche zuerst untersucht werden sollten.
 - In der Produktion ist KI das „Gehirn" von **Industrie 4.0** – oft in **Echtzeit** direkt an der Maschine.
 - Grundlage sind **Sensoren/IoT-Daten**; Anwendungen reichen von **Qualitätskontrolle** bis **Planung**.
 - Der **digitale Zwilling** erlaubt gefahrloses Simulieren und Optimieren.
+- Die **Automatisierungspyramide** zeigt: KI wirkt vor allem oben (MES/ERP) und als geprüfte Spezialmodelle – nicht in der zeitkritischen **OT**.
 - **Copilot** unterstützt am Rand (Berichte, Doku, Auswertung) – **nicht** die sicherheitskritische Steuerung.
 
 ---

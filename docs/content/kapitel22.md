@@ -10,6 +10,8 @@
 - Wie du Schritte in **Mensch** und **KI/Automatik** aufteilst
 - Wie **Copilot** in verschiedenen Prozessschritten konkret hilft
 - Wie du den Erfolg mit **Kennzahlen** misst
+- Wie du einen einfachen **Business Case** aufstellst (durchgerechnet)
+- Wie aus einer Insellösung ein **wiederholbarer Standard** wird
 </div>
 
 ---
@@ -98,7 +100,46 @@ Ohne Kennzahlen weiß niemand, ob die Optimierung gewirkt hat. Lege **vorher** f
 
 ---
 
-## 22.5 Stolpersteine in der Praxis
+## 22.5 Der Business Case: die Rechnung dahinter
+
+Kennzahlen zeigen die Wirkung – ein **Business Case** übersetzt sie in Euro und macht die Einführung entscheidungsreif. Rechnen wir das Angebotsbeispiel durch:
+
+| Größe | Annahme |
+|---|---|
+| Zeitersparnis je Angebot | 20 Minuten (45 → 25 min) |
+| Angebote pro Tag | 6 |
+| Arbeitstage pro Monat | 20 |
+| interner Stundensatz | 40 € |
+| Lizenzkosten je Nutzer/Monat | ca. 30 € |
+
+Daraus ergibt sich: 20 min × 6 = **120 min/Tag** ≈ 2 Stunden. Über 20 Tage sind das **40 Stunden im Monat**. Bei 40 € entspricht das **1.600 € gewonnener Kapazität** pro Monat – dem stehen rund **30 € Lizenzkosten** gegenüber. Selbst mit großzügigem Puffer für Einarbeitung und Prüfaufwand bleibt der Nutzen klar positiv.
+
+!!! info "Vertiefung: harter und weicher Nutzen"
+    Nicht jeder Vorteil steht in der Tabelle. **Harter Nutzen** ist messbar (Zeit, Kosten, Fehlerquote). **Weicher Nutzen** wirkt indirekt: schnellere Reaktion auf Kunden, weniger Frust bei Routinearbeit, mehr Zeit für Beratung. Beides gehört in einen ehrlichen Business Case – der harte Teil überzeugt das Controlling, der weiche erklärt, warum das Team mitzieht (siehe auch Kap. 26 und Kap. 38 – Geschäftsmodelle).
+
+!!! warning "Häufiges Missverständnis: gesparte Minuten sind noch kein Geld"
+    Die Rechnung oben ist eine **Potenzialrechnung**. Gesparte Minuten werden erst zu Wert, wenn die frei werdende Zeit **sinnvoll genutzt** wird – für mehr Angebote, bessere Beratung oder Abbau von Rückstand. Verpufft die Zeit in Leerlauf, gibt es keinen echten Gewinn. Formuliere deshalb immer, **wofür** die gewonnene Kapazität eingesetzt wird – sonst bleibt der Business Case eine Milchmädchenrechnung.
+
+---
+
+## 22.6 Von der Insellösung zum wiederholbaren Standard
+
+Ein einzelner gut formulierter Prompt hilft einer Person einmal. Wirkung im Unternehmen entsteht erst, wenn gute Lösungen **wiederholbar** werden. Der Weg dahin:
+
+```mermaid
+flowchart LR
+    A([bewährter Prompt]) --> B([als Vorlage sichern])
+    B --> C([im Team teilen & abstimmen])
+    C --> D([in den Standardablauf einbetten])
+    D --> E([regelmäßig prüfen & verbessern])
+    E --> B
+```
+
+Konkret heißt das: die besten Prompts als **Vorlagen** sammeln (z. B. in OneNote oder einer geteilten Bibliothek, Kap. 14), sie im Team abstimmen und in den offiziellen Prozess aufnehmen. So wird aus dem Können Einzelner eine **organisationale Fähigkeit** – der rote Faden zu Kap. 30 (Low-Code/Citizen Development) und Kap. 40 (Prompt Engineering als Schlüsselkompetenz). Wichtig bleibt die regelmäßige Prüfung: Vorlagen veralten, Prozesse ändern sich.
+
+---
+
+## 22.7 Stolpersteine in der Praxis
 
 !!! warning "Worauf du achten musst"
     - **Vertrauliche Kundendaten** nur in der freigegebenen M365-Umgebung verarbeiten (Kap. 33).
@@ -122,6 +163,8 @@ zwingend eine menschliche Entscheidung brauchen.
 - Jeden Schritt in **Routine** (KI) und **Entscheidung** (Mensch) aufteilen – Preise/Freigaben bleiben menschlich.
 - **Copilot** übernimmt die zeitraubende Formulierungs- und Zusammenfassungsarbeit.
 - Erfolg mit **Kennzahlen** (Durchlaufzeit, Menge, Fehlerquote) messbar machen.
+- Ein **Business Case** übersetzt Zeitersparnis in Euro – gesparte Minuten zählen aber erst, wenn die Zeit sinnvoll genutzt wird.
+- Aus Einzellösungen einen **wiederholbaren Standard** machen (Vorlagen sichern, teilen, einbetten, prüfen).
 - Stolpersteine: Datenschutz, ungeprüfte Entwürfe, Über-Automatisierung, fehlende Akzeptanz.
 
 ---

@@ -9,6 +9,7 @@
 - Die häufigsten **Gründe für das Scheitern** – und wie man sie vermeidet
 - Warum KI-Projekte **iterativ und experimentell** sein müssen
 - Die Rolle von **interdisziplinären Teams** und klaren **Rollen**
+- Warum **Daten und Akzeptanz** über Erfolg oder Scheitern entscheiden
 - Wie **Copilot** bei Planung, Doku und Kommunikation im Projekt hilft
 </div>
 
@@ -65,6 +66,9 @@ flowchart LR
 !!! tip "Das Recht zu scheitern – schnell und günstig"
     Nicht jedes Experiment gelingt – das ist **normal**. Wichtig ist, **schnell und günstig** zu scheitern (kleiner Pilot statt Großprojekt) und daraus zu lernen. Ein früh gestopptes aussichtsloses Projekt ist ein **Erfolg**, kein Versagen.
 
+!!! info "Vertiefung: Warum der Wasserfall bei KI bricht"
+    Klassische Projekte laufen oft im **Wasserfall**: Anforderungen → Umsetzung → Abnahme, sauber nacheinander. Das setzt voraus, dass man das Ergebnis **vorab kennt**. Bei KI ist genau das nicht gegeben – die erreichbare Qualität hängt von Daten ab, die man erst im Tun versteht. Deshalb arbeitet man in **kurzen Schleifen** (agil): kleine Hypothese, schneller Test, Erkenntnis, nächste Schleife. Man plant nicht den ganzen Weg, sondern den **nächsten Lernschritt**. Fixiert man dagegen früh Umfang, Termin und Qualität gleichzeitig, entsteht ein unlösbares Versprechen – eine der Hauptursachen für gescheiterte KI-Vorhaben.
+
 ---
 
 ## 35.4 Team und Rollen
@@ -105,12 +109,72 @@ größten Risiken und den Rollen, die ich im Team brauche.
 
 ---
 
+## 35.6 Daten und Akzeptanz – die zwei stillen Killer
+
+Zwei Faktoren entscheiden früher über Erfolg oder Scheitern, als die meisten Projekte annehmen: die **Datenrealität** und die **Akzeptanz**.
+
+**Datenrealität** heißt: Bevor man ein Modell trainiert oder einen Copilot-Anwendungsfall aufbaut, prüft man ehrlich, ob überhaupt genug Daten in ausreichender Qualität vorliegen (Kapitel 9 – Datenbeschaffung, Kapitel 10 – Datenaufbereitung). Oft zeigt sich: Die Daten sind verstreut, uneinheitlich gepflegt oder rechtlich nicht nutzbar. Ein Projekt, das diese Prüfung überspringt, „entdeckt" das Problem erst nach Monaten – der teuerste Zeitpunkt.
+
+**Akzeptanz** heißt: Die spätere Nutzung durch Menschen wird von Anfang an mitgeplant, nicht am Ende „angehängt". Ein technisch funktionierendes System, das niemand nutzt, ist gescheitert. Deshalb gehören Betroffene früh an den Tisch (Kapitel 37 – Change Management).
+
+| Erfolgsfaktor | Frühe Prüffrage | Wenn ignoriert |
+|---|---|---|
+| **Datenmenge** | Haben wir genug Fälle? | Modell lernt nichts Verlässliches |
+| **Datenqualität** | Sind die Daten sauber und aktuell? | „Müll rein, Müll raus" |
+| **Datenzugang** | Dürfen/können wir die Daten nutzen? | rechtlicher Stopp spät im Projekt |
+| **Akzeptanz** | Wollen die Nutzenden das? | Werkzeug bleibt ungenutzt |
+
+!!! warning "Der Trugschluss vom 'Datenschatz'"
+    Viele glauben, sie säßen auf einem „Datenschatz", weil viel gespeichert wird. Menge ist aber nicht gleich Nutzbarkeit: Daten ohne einheitliche Struktur, ohne verlässliche Beschriftung oder mit Lücken sind für ein KI-Projekt oft **wertlos**. Prüfe die Daten **konkret an einem Muster**, bevor du auf ihrer Basis Zusagen machst.
+
+---
+
+## 35.7 Ein durchgerechnetes Mini-Beispiel
+
+Wie sieht ein sauber aufgesetztes KI-Vorhaben konkret aus? Ein Beispiel für die automatische Vorsortierung eingehender E-Mails im Kundenservice:
+
+| Element | Konkrete Festlegung |
+|---|---|
+| **Problem** | Eingehende Mails werden manuell sortiert – langsam, fehleranfällig |
+| **Hypothese** | KI kann 80 % der Mails korrekt einer Kategorie zuordnen |
+| **KPI** | Trefferquote der Zuordnung; eingesparte Minuten pro Tag |
+| **Baseline (Ist)** | 15 Min./Mitarbeiter/Tag fürs Sortieren, ~5 % Fehlzuordnungen |
+| **Zielwert** | ≥ 80 % Trefferquote im Pilot, dann Entscheidung |
+| **Pilotumfang** | 4 Wochen, eine Abteilung, ~500 Mails |
+| **Stopp-Kriterium** | < 70 % Trefferquote → anpassen oder beenden |
+
+Der entscheidende Punkt: Der **KPI und das Stopp-Kriterium stehen vorher fest**. So wird aus „gefühlt hilft es" eine überprüfbare Aussage – und man weiß am Ende der vier Wochen, ob der Ausbau (Kapitel 21 – Prozessoptimierung) sinnvoll ist.
+
+!!! example "Copilot hilft beim Aufsetzen – mit erfundenem Material"
+    Prompt:
+    ```text
+    Erfinde ein realistisches KI-Pilotprojekt zur E-Mail-Vorsortierung im
+    Kundenservice. Lege einen messbaren KPI, eine Baseline, einen Zielwert und
+    ein Stopp-Kriterium fest und erkläre in zwei Sätzen, warum ein festes
+    Stopp-Kriterium wichtig ist.
+    ```
+    Beispiel-Antwort (gekürzt):
+    ```text
+    KPI: Anteil korrekt zugeordneter E-Mails (Trefferquote).
+    Baseline: manuell ~95 % korrekt, aber 15 Min./Person/Tag Aufwand.
+    Zielwert: >= 80 % Trefferquote bei < 3 Min. Nachkontrolle/Tag.
+    Stopp-Kriterium: < 70 % Trefferquote nach 4 Wochen -> Projekt anpassen
+    oder beenden.
+    Warum: Ohne festes Stopp-Kriterium läuft ein aussichtsloser Pilot aus
+    Prestige-Gründen weiter und bindet Ressourcen, die anderswo mehr Nutzen
+    stiften würden.
+    ```
+
+---
+
 ## Zusammenfassung
 
 - KI-Projekte sind **unsicherer** und **datenabhängiger** als klassische IT-Projekte – iterativ statt linear.
 - Häufige Scheiterngründe: **kein klares Problem, schlechte Daten, kein KPI, fehlende Akzeptanz, kein Betrieb**.
 - Arbeite in **Lernzyklen** (MVP → messen → anpassen); schnelles, günstiges Scheitern ist erlaubt.
 - **Interdisziplinäre Teams** mit starkem **Fachbereich** sind entscheidend.
+- **Datenrealität und Akzeptanz** früh prüfen – nicht Datenmenge, sondern Nutzbarkeit zählt.
+- Ein **fester KPI und ein Stopp-Kriterium** machen aus „gefühltem Nutzen" eine überprüfbare Aussage.
 - **Copilot** hilft bei Struktur, Risiken, Statusberichten und Kommunikation.
 
 ---

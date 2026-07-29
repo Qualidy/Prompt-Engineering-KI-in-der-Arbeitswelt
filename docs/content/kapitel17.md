@@ -8,6 +8,7 @@
 - Was **Reinforcement Learning (RL)** – bestärkendes Lernen – ist
 - Die zentralen Begriffe: **Agent, Umgebung, Aktion, Belohnung, Strategie**
 - Der Unterschied zwischen **Exploration** (Ausprobieren) und **Exploitation** (Ausnutzen)
+- Warum in RL der **Zeithorizont** zählt (verzögerte Belohnung, Diskontierung)
 - Wo RL in der Praxis eingesetzt wird – und wie es hinter Copilot steckt (**RLHF**)
 - Welche **Grenzen und Risiken** RL hat
 </div>
@@ -105,12 +106,61 @@ schlecht gewählte Belohnung zu unerwünschtem Verhalten führen könnte.
 
 ---
 
+## 17.6 Der Zeithorizont: warum RL vorausschauend denkt
+
+Der Kern, der RL von einfachem „Belohne die letzte Aktion" unterscheidet, ist der **Zeithorizont**. Der Agent bewertet eine Aktion nicht nach der Belohnung, die sofort folgt, sondern nach der **gesamten Belohnung, die er danach noch erwarten kann**. Genau das macht RL schwierig – und mächtig: Eine Aktion kann sich kurzfristig schlecht anfühlen und trotzdem der beste Zug sein.
+
+!!! example "Der geopferte Zug im Schach"
+    Ein RL-Agent gibt im Schach freiwillig eine Figur auf (kurzfristig „−1"), weil er drei Züge später Matt setzt (langfristig „+100"). Ein System, das nur die **nächste** Belohnung optimiert, würde diesen Zug nie wählen. RL lernt, **Umwege** zu gehen, wenn sie am Ende den größeren Gewinn bringen.
+
+Damit verbunden ist das sogenannte **Credit-Assignment-Problem**: Wenn der Erfolg (oder Misserfolg) erst am Ende einer langen Handlungskette steht – welche der vielen Aktionen war eigentlich dafür verantwortlich? Der Agent muss lernen, die Belohnung rückwirkend den richtigen Entscheidungen zuzuordnen.
+
+!!! info "Vertiefung: Der Diskontierungsfaktor"
+    Um kurzfristige und langfristige Belohnung gegeneinander abzuwägen, nutzt RL einen **Diskontierungsfaktor** (meist als Zahl zwischen 0 und 1). Er legt fest, wie stark zukünftige Belohnungen gegenüber sofortigen zählen. Ein Wert nahe 0 macht den Agenten „kurzsichtig" (nur das Jetzt zählt), ein Wert nahe 1 „weitsichtig" (die ferne Zukunft zählt fast genauso viel). Das ist dieselbe Idee wie in der Betriebswirtschaft, wo künftige Einnahmen abgezinst werden – ein Euro heute ist mehr wert als ein Euro in zehn Jahren.
+
+---
+
+## 17.7 RL im Vergleich zu den anderen Lernarten
+
+RL ist die dritte Lernart aus Kapitel 12 (Machine Learning). Der entscheidende Unterschied liegt in der **Art der Rückmeldung**, die das System bekommt:
+
+| Lernart | Rückmeldung | Frage, die es beantwortet | Bezug |
+|---|---|---|---|
+| Überwacht | die **richtige** Antwort je Beispiel | „Was ist das?" | Kap. 12 |
+| Unüberwacht | **keine** Antwort, nur die Daten | „Welche Struktur steckt drin?" | Kap. 12 |
+| Bestärkend (RL) | nur eine **Belohnung** nach Aktionen | „Was soll ich tun?" | dieses Kapitel |
+
+Der Merksatz: Überwachtes Lernen bekommt gesagt, **was richtig ist**; RL muss durch Ausprobieren erst herausfinden, **was sich lohnt**. Deshalb eignet sich RL besonders für **Entscheidungsketten** – also überall dort, wo nicht ein einzelnes Etikett, sondern eine kluge **Handlungsstrategie** gefragt ist.
+
+!!! example "Copilot-Dialog: RL greifbar machen"
+    **Prompt:**
+    ```text
+    Erfinde ein einfaches Lager mit 4 Feldern in einer Reihe. Der Roboter startet
+    links, das Ziel ist rechts. Beschreibe kurz, welche Belohnung er in jedem
+    Schritt bekommt und welche Strategie er nach vielen Versuchen lernt.
+    ```
+    **Beispiel-Output (gekürzt):**
+    ```text
+    Felder: [Start] [A] [B] [Ziel]
+    Belohnung: jeder Schritt -1 (Zeitkosten), Ziel erreichen +10, gegen die Wand -5.
+    Anfangs läuft der Roboter zufällig, stößt an die Wand (-5) und trödelt (-1 je Schritt).
+    Nach vielen Durchläufen lernt er die Strategie: "immer nach rechts" –
+    sie sammelt die -1 nur dreimal ein und kassiert schnell die +10.
+    ```
+    Das zeigt in Miniatur, wie aus Belohnungssignalen eine sinnvolle **Strategie** wird – ganz ohne dass jemand die Regel „geh nach rechts" vorgegeben hätte.
+
+!!! warning "Häufiges Missverständnis: RL heißt nicht ‚lernt einfach von allein'"
+    Man hört oft, RL-Systeme „lernen ganz von selbst". Das stimmt nur halb: Ein Mensch muss die **Belohnung sorgfältig definieren** – und schon kleine Fehler dabei führen zu absurdem Verhalten (Reward Hacking). Zweites Missverständnis: RLHF bedeutet **nicht**, dass Copilot live aus deinen Chats mitlernt. Das Feedback fließt in ein **vorheriges Training** ein; das ausgelieferte Modell verändert sich durch dein einzelnes Gespräch nicht (mehr zu diesen Grenzen in Kap. 34 – Explainable AI).
+
+---
+
 ## Zusammenfassung
 
 - **Reinforcement Learning** lernt durch **Ausprobieren und Belohnung** – ohne vorgegebene richtige Antworten.
 - Grundelemente: **Agent, Umgebung, Zustand, Aktion, Belohnung, Strategie**.
 - Kernabwägung: **Exploration** (Neues erkunden) vs. **Exploitation** (Bewährtes nutzen).
-- **RLHF** macht Sprachmodelle wie Copilot hilfreich und sicher – die „Belohnung" ist menschliches Feedback.
+- RL denkt über den **Zeithorizont**: Nicht die sofortige, sondern die **gesamte** erwartete Belohnung zählt (Diskontierung, Credit Assignment).
+- **RLHF** macht Sprachmodelle wie Copilot hilfreich und sicher – die „Belohnung" ist menschliches Feedback; das ausgelieferte Modell lernt aber nicht live aus deinen Chats.
 - Risiken: schwieriges **Belohnungsdesign**, übernommene **Verzerrungen**, hoher Versuchsaufwand.
 
 ---

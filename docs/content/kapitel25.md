@@ -8,6 +8,7 @@
 - Welche Rolle KI im **Qualitätsmanagement (QM)** spielt
 - Der Unterschied zwischen **reaktivem** Prüfen und **vorausschauender** Qualitätssicherung
 - Konkrete Anwendungen: **Fehlererkennung, Ursachenanalyse, Dokumentation**
+- Was **statistische Prozesskontrolle (SPC)** ist und wie KI sie erweitert
 - Wie KI bei **Reklamationen und dem 8D-/Ursache-Wirkungs-Denken** hilft
 - Wie **Copilot** QM-Dokumente, Analysen und Audits unterstützt
 </div>
@@ -50,24 +51,51 @@ flowchart LR
 | **Dokumentation & Audits** | Berichte, Prüfprotokolle, Nachweise erstellen |
 | **Reklamationsbearbeitung** | Beschwerden clustern, Antworten entwerfen |
 
+Die **automatische Fehlererkennung** per Bild-KI ist dabei technisch dieselbe optische Qualitätskontrolle wie in der Produktion (Kapitel 24): Eine Kamera vergleicht jedes Teil mit „gut"-Beispielen und sortiert Abweichungen aus. Der Unterschied zum klassischen QM ist der Übergang von der **Stichprobe** zur **100 %-Prüfung** – jedes einzelne Teil kann geprüft werden, ohne dass Menschen ermüden. Wichtig bleibt die Aufgabenteilung: Die Bild-KI übernimmt die schnelle Massenprüfung, während erfahrene Prüfer:innen die **kniffligen Grenzfälle** beurteilen, bei denen „gut oder Ausschuss?" nicht eindeutig ist.
+
 ---
 
-## 25.4 KI beim Ursache-Wirkungs-Denken
+## 25.4 Statistische Prozesskontrolle: von der Regelkarte zur KI
+
+Das etablierteste Werkzeug im QM ist die **Regelkarte (Control Chart)** aus der statistischen Prozesskontrolle (SPC). Dabei trägt man einen Messwert (z. B. den Durchmesser eines Bauteils) laufend über die Zeit auf und legt **Eingriffsgrenzen** fest. Solange die Werte zufällig um den Mittelwert schwanken, ist alles in Ordnung; verlässt ein Punkt die Grenzen oder zeigt sich ein **Trend**, wird eingegriffen.
+
+| Merkmal | Klassische SPC | KI-gestützte Auswertung |
+|---|---|---|
+| Betrachtete Größen | meist ein Merkmal einzeln | viele Merkmale **gleichzeitig** |
+| Erkennt | Grenzüberschreitung, einfache Trends | komplexe Muster über mehrere Größen |
+| Reaktion | nach Regelverletzung | oft **frühere** Warnung |
+| Grundlage | feste statistische Regeln | gelernte Muster (Kapitel 12) |
+
+!!! info "Vertiefung: Warum KI hier weiterhilft"
+    Eine klassische Regelkarte betrachtet Merkmale meist **einzeln**. Viele reale Fehler entstehen aber erst aus dem **Zusammenspiel** mehrerer Größen – etwa wenn Temperatur, Druck und Materialcharge gemeinsam kippen, jede für sich aber noch „im grünen Bereich" liegt. KI kann solche **mehrdimensionalen Muster** erkennen und früher warnen. Das ist derselbe Gedanke wie beim Data-Mining (Kapitel 20): verborgene Zusammenhänge in vielen Variablen sichtbar machen. Die klassische SPC bleibt trotzdem wertvoll – sie ist transparent, normkonform und leicht erklärbar.
+
+---
+
+## 25.5 KI beim Ursache-Wirkungs-Denken
 
 Ein Kern des QM ist die **systematische Ursachensuche** (z. B. mit dem Ishikawa-/Fischgräten-Diagramm oder der 5-Why-Methode). Hier ist Copilot ein starker **Denkpartner**:
 
 !!! example "5-Why mit Copilot"
     Problem: „Das Bauteil hat Maßabweichungen." Copilot kann helfen, systematisch nachzuhaken:
     ```text
-    Wende die 5-Why-Methode auf folgendes Qualitätsproblem an: [Problem].
-    Stelle bei jedem Schritt eine plausible "Warum"-Frage und mögliche Antworten,
-    bis du bei wahrscheinlichen Grundursachen ankommst.
+    Wende die 5-Why-Methode auf folgendes Qualitätsproblem an: Ein gefrästes
+    Bauteil zeigt seit gestern wiederkehrende Maßabweichungen. Stelle bei jedem
+    Schritt eine plausible "Warum"-Frage samt möglicher Antwort, bis du bei
+    wahrscheinlichen Grundursachen ankommst.
     ```
-    Copilot liefert **Hypothesen** und Struktur – die Verifikation an den echten Daten und Prozessen bleibt beim QM-Team.
+    **So könnte Copilots Antwort aussehen (Auszug):**
+
+    1. *Warum weicht das Maß ab?* → Das Werkzeug schneidet ungenau.
+    2. *Warum schneidet es ungenau?* → Der Fräser ist verschlissen.
+    3. *Warum ist er verschlissen?* → Er wurde über das Standzeitende hinaus genutzt.
+    4. *Warum wurde das nicht bemerkt?* → Es gibt keine dokumentierte Standzeitüberwachung.
+    5. *Warum nicht?* → Der Wechselplan ist nicht im Wartungssystem hinterlegt.
+
+    **Wahrscheinliche Grundursache:** fehlende systematische Standzeitüberwachung. Copilot liefert **Hypothesen** und Struktur – die Verifikation an den echten Daten und Prozessen bleibt beim QM-Team.
 
 ---
 
-## 25.5 QM-Dokumentation mit Copilot
+## 25.6 QM-Dokumentation mit Copilot
 
 Ein großer Teil des QM ist **Dokumentation** – aufwendig, aber pflichtgemäß. Genau hier spart Copilot Zeit:
 
@@ -95,6 +123,7 @@ Untersuchungsfeld für die Ursachenanalyse vor.
 
 - KI hebt QM von **reaktivem Prüfen** zu **vorausschauender** Qualitätssicherung.
 - Anwendungen: **Fehlererkennung (Bild-KI), Ursachenanalyse, Prognose, Doku, Reklamationen**.
+- **SPC/Regelkarten** bleiben die transparente Basis; KI erkennt zusätzlich **mehrdimensionale Muster** und warnt früher.
 - Copilot ist ein starker **Denkpartner** bei der Ursachensuche (5-Why, Ishikawa) und spart Doku-Zeit.
 - QM-Dokumente sind **haftungsrelevant** – Copilot-Entwürfe immer fachlich prüfen und freigeben.
 

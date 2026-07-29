@@ -9,6 +9,7 @@
 - Die zentralen **Muster** KI-basierter Geschäftsmodelle
 - Was ein **Business Model Canvas** ist und wie KI es verändert
 - Die Rolle von **Daten als Wettbewerbsvorteil**
+- Die wichtigsten **Erlösmodelle** und wie ein **Burggraben (Moat)** entsteht
 - Wie du mit **Copilot** Geschäftsmodell-Ideen entwickelst und schärfst
 </div>
 
@@ -41,6 +42,21 @@ flowchart LR
 
 !!! example "Vom Produkt zum Ergebnis (Pay-per-Outcome)"
     Ein Maschinenbauer verkauft nicht mehr nur die Maschine, sondern **garantierte Verfügbarkeit** („99 % Betriebszeit") – möglich durch Predictive Maintenance. Der Kunde zahlt für das **Ergebnis**, nicht das Produkt. Das bindet Kunden enger und schafft laufende Einnahmen. Solche Modelle sind ohne KI kaum denkbar.
+
+### Erlösmodelle: Womit genau verdient man Geld?
+
+Ein Geschäftsmodell braucht ein **Erlösmodell** – die Antwort auf „Wie fließt das Geld?". KI-Angebote nutzen typischerweise diese Muster:
+
+| Erlösmodell | So wird abgerechnet | Passt gut zu |
+|---|---|---|
+| **Abonnement (Subscription)** | feste Gebühr pro Monat/Nutzer | Copilot, Analyse-Services |
+| **Pay-per-Use** | pro Anfrage/Verbrauch | schwankende Nutzung, API-Angebote |
+| **Pay-per-Outcome** | pro erreichtem Ergebnis | garantierte Verfügbarkeit, Vermittlung |
+| **Freemium** | Basis gratis, Premium kostet | breite Nutzergewinnung |
+| **Datenveredelung** | Verkauf aggregierter Einsichten | Branchen-Benchmarks (rechtlich sauber!) |
+
+!!! info "Vertiefung: Fixkosten vorn, geringe Grenzkosten"
+    KI-Angebote haben oft ein besonderes Kostenprofil: Die **Entwicklung und das Training** verschlingen viel Geld vorab (Fixkosten), aber jeder weitere Kunde verursacht vergleichsweise **geringe zusätzliche Kosten** (Grenzkosten – vor allem Rechenzeit, Kapitel 36). Deshalb skalieren digitale KI-Modelle stark: Ab einem bestimmten Punkt wird fast jeder neue Kunde profitabel. Genau das macht **Abo- und Plattformmodelle** so attraktiv – und erklärt, warum Anbieter früh in Wachstum investieren, um diese Schwelle zu erreichen.
 
 ---
 
@@ -94,12 +110,54 @@ Markiere die zwei Bausteine, die über Erfolg oder Misserfolg entscheiden.
 
 ---
 
+## 38.6 Datenschwungrad und Burggraben
+
+In Abschnitt 38.4 haben wir den Datennetzwerkeffekt kennengelernt. Sein Motor ist das **Datenschwungrad (Data Flywheel)**: ein sich selbst verstärkender Kreislauf, der mit jeder Runde schwerer einzuholen ist.
+
+```mermaid
+flowchart LR
+    A([mehr Nutzer]) --> B([mehr Daten])
+    B --> C([bessere KI])
+    C --> D([besseres Angebot])
+    D --> A
+```
+
+Läuft dieses Schwungrad erst einmal, entsteht ein **Burggraben (englisch: Moat)** – ein dauerhafter Vorsprung, den Wettbewerber nur schwer überwinden. Die wichtigsten Burggräben bei KI-Geschäftsmodellen:
+
+| Burggraben | Warum er schützt |
+|---|---|
+| **Einzigartige Daten** | Wettbewerber haben diese Daten schlicht nicht |
+| **Netzwerkeffekt** | mehr Nutzer machen das Angebot für alle besser |
+| **Wechselkosten** | integrierte Lösungen zu tauschen ist teuer/aufwendig |
+| **Lernvorsprung** | frühe Erfahrung + gepflegte Modelle sind schwer kopierbar |
+
+!!! example "Copilot als Sparringspartner für den Burggraben"
+    Prompt:
+    ```text
+    Erfinde ein fiktives KI-Startup, das Wartungsdaten von Aufzügen auswertet.
+    Beschreibe, wie ein Datenschwungrad entsteht und welchen Burggraben es
+    aufbaut. Nenne außerdem eine realistische Gefahr für diesen Vorsprung.
+    ```
+    Beispiel-Antwort (gekürzt):
+    ```text
+    Schwungrad: Mehr angebundene Aufzüge -> mehr Sensordaten -> genauere
+    Ausfallvorhersagen -> Kunden sparen Kosten -> weitere Kunden schließen an.
+    Burggraben: einzigartige, über Jahre gesammelte Wartungsdaten, die
+    Wettbewerber nicht besitzen; hohe Wechselkosten durch tiefe Integration.
+    Gefahr: Ein Aufzughersteller mit direktem Zugang zu allen eigenen Anlagen
+    könnte einen noch größeren, exklusiven Datenpool aufbauen.
+    ```
+
+---
+
 ## Zusammenfassung
 
 - KI ermöglicht über Effizienz hinaus **neue Geschäftsmodelle** – verändert also, **womit** man Geld verdient.
 - Muster: **KI-as-a-Service, Personalisierung, Ergebnis statt Produkt, Plattformen, automatisierter Service**.
 - Das **Business Model Canvas** hilft, KI-Wirkung auf alle Bausteine zu durchdenken.
 - **Daten** sind oft der zentrale, schwer kopierbare Wettbewerbsvorteil (Datennetzwerkeffekt) – aber rechtlich sauber halten.
+- **Erlösmodelle** (Abo, Pay-per-Use, Pay-per-Outcome, Freemium) klären, **womit** konkret Geld fließt; geringe Grenzkosten begünstigen Skalierung.
+- Ein laufendes **Datenschwungrad** baut einen **Burggraben** (Moat) auf – dauerhaften Vorsprung durch Daten, Netzwerkeffekte und Wechselkosten.
 - **Copilot** liefert Ideen; die **kritische Auswahl** bleibt beim Menschen.
 
 ---

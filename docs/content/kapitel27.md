@@ -8,6 +8,7 @@
 - Was mit **Prozessregulierung / Regelung** gemeint ist (Prozesse in einem Sollzustand halten)
 - Der Unterschied zwischen **Steuerung** und **Regelung** (offener vs. geschlossener Regelkreis)
 - Wie KI klassische Regelungen **verbessert** (adaptiv, vorausschauend)
+- Was **PID-Regler**, **modellprädiktive Regelung (MPC)** und **Reinforcement Learning** unterscheidet
 - Beispiele aus **Fertigung, Energie und Gebäudetechnik**
 - Wo **Copilot** bei Analyse, Dokumentation und Compliance hilft
 </div>
@@ -51,7 +52,24 @@ Klassische Regler (z. B. PID-Regler) arbeiten mit festen Formeln und funktionier
 
 ---
 
-## 27.3 Beispiele aus der Praxis
+## 27.3 Drei Stufen der Regelung: PID, MPC und Reinforcement Learning
+
+Um zu verstehen, was KI hier wirklich beiträgt, hilft ein Blick auf drei Ausbaustufen:
+
+| Verfahren | Prinzip | Stärke | Grenze |
+|---|---|---|---|
+| **PID-Regler** | korrigiert die aktuelle Abweichung nach fester Formel | einfach, robust, transparent | rein reaktiv, kein Blick nach vorn |
+| **MPC (modellprädiktiv)** | rechnet mit einem **Prozessmodell** einige Schritte in die Zukunft und wählt die beste Stellaktion | plant voraus, hält Grenzen ein | braucht ein gutes Modell des Prozesses |
+| **Reinforcement Learning** | lernt eine Strategie durch **Ausprobieren und Belohnung** | meistert komplexe, schwer modellierbare Prozesse | Training aufwendig, Verhalten schwer erklärbar |
+
+Der **PID-Regler** ist der Klassiker: Er schaut nur auf die aktuelle Differenz zwischen Soll und Ist. Die **modellprädiktive Regelung (MPC)** ist der erste große Sprung nach vorn – sie nutzt ein Modell des Prozesses, um vorauszurechnen, was passieren wird, und kann so z. B. Grenzwerte aktiv einhalten. **Reinforcement Learning** (Kapitel 17) geht noch weiter und lernt die optimale Strategie selbst, ist dafür aber deutlich schwerer nachzuvollziehen.
+
+!!! info "Vertiefung: Nicht jeder Prozess braucht KI"
+    Ein häufiges Missverständnis ist, dass „moderne" Regelung immer KI bedeuten müsse. Tatsächlich sind viele Prozesse mit einem gut eingestellten PID-Regler **optimal und günstig** bedient – transparent, zertifizierbar und wartungsarm. KI-Verfahren lohnen sich vor allem dort, wo **viele Einflussgrößen zusammenwirken**, sich Bedingungen ständig ändern oder ein klares Prozessmodell fehlt. Die richtige Frage lautet nicht „KI oder nicht?", sondern „Wie komplex ist der Prozess wirklich?".
+
+---
+
+## 27.4 Beispiele aus der Praxis
 
 | Bereich | KI-Regelung |
 |---|---|
@@ -65,7 +83,7 @@ Der gemeinsame Nenner: ein **kontinuierlicher Prozess**, der stabil und effizien
 
 ---
 
-## 27.4 Grenzen und Sicherheit
+## 27.5 Grenzen und Sicherheit
 
 !!! warning "Regelung ist sicherheitskritisch"
     Reguliert eine KI einen physischen Prozess, sind Fehler potenziell **gefährlich** (Überhitzung, Überdruck). Deshalb gelten strenge Prinzipien:
@@ -78,7 +96,7 @@ Der gemeinsame Nenner: ein **kontinuierlicher Prozess**, der stabil und effizien
 
 ---
 
-## 27.5 Wo Copilot hilft
+## 27.6 Wo Copilot hilft
 
 Die eigentliche Regelung übernehmen **Automatisierungs-/Steuerungssysteme**, nicht Copilot. Copilot unterstützt bei den **begleitenden** Aufgaben:
 
@@ -97,12 +115,25 @@ klassischen und einer KI-gestützten, vorausschauenden Regelung. Nenne je zwei
 Vorteile der KI-Variante und ein Sicherheitsrisiko, das ich absichern muss.
 ```
 
+!!! example "So könnte Copilots Antwort aussehen (Auszug)"
+    **Beispiel Bürogebäude – Heizungsregelung**
+
+    - *Klassisch:* Der Regler heizt, sobald die Raumtemperatur unter 21 °C fällt, und stoppt bei 22 °C. Er reagiert nur auf den Ist-Wert.
+    - *KI-gestützt/vorausschauend:* Das System bezieht Wettervorhersage, Belegungsplan und Wärmeträgheit des Gebäudes ein und beginnt z. B. schon morgens vorzuheizen bzw. drosselt vor Feierabend rechtzeitig.
+
+    **Zwei Vorteile der KI-Variante:** (1) geringerer Energieverbrauch durch vorausschauendes Heizen, (2) stabilere, komfortablere Temperatur.
+
+    **Abzusicherndes Sicherheitsrisiko:** Ein Software- oder Sensorfehler darf nicht zu Überhitzung oder Frostschäden führen – deshalb braucht es **unabhängige Grenzwertüberwachung und einen Frostschutz**, die auch ohne die KI funktionieren.
+
+    Beachte, wie Copilot hier ein **Verständnis- und Formulierungswerkzeug** ist – die reale Regelung bleibt beim Automatisierungssystem.
+
 ---
 
 ## Zusammenfassung
 
 - **Prozessregulierung** hält Prozesse per **Rückkopplung** im Sollzustand (Regelung = geschlossener Regelkreis).
 - KI macht Regelungen **adaptiv** und **vorausschauend** – auch für komplexe Prozesse (oft mit RL).
+- Drei Stufen: **PID** (reaktiv), **MPC** (vorausschauend mit Modell), **Reinforcement Learning** (lernt Strategie) – nicht jeder Prozess braucht KI.
 - Anwendungen in **Fertigung, Energie, Gebäudetechnik, Chemie, Rechenzentren**.
 - Regelung ist **sicherheitskritisch**: unabhängige Grenzwerte, Nachvollziehbarkeit, menschlicher Eingriff.
 - **Copilot** hilft bei Verständnis, Auswertung, Doku und Compliance – nicht bei der Echtzeit-Regelung.
