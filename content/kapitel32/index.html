@@ -1,0 +1,1561 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel31/">
+      
+      
+        <link rel="next" href="../kapitel33/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 32 – Rechtliche Aspekte der KI - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-32-rechtliche-aspekte-der-ki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 32 – Rechtliche Aspekte der KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Herausforderungen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Ethik und soziale Verantwortung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Rechtliche Aspekte der KI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Rechtliche Aspekte der KI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#321-ein-uberblick-beruhrte-rechtsgebiete" class="md-nav__link">
+    <span class="md-ellipsis">
+      32.1 Ein Überblick: berührte Rechtsgebiete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#322-der-eu-ai-act" class="md-nav__link">
+    <span class="md-ellipsis">
+      32.2 Der EU AI Act
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#323-urheberrecht-haftung-kennzeichnung" class="md-nav__link">
+    <span class="md-ellipsis">
+      32.3 Urheberrecht, Haftung, Kennzeichnung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="32.3 Urheberrecht, Haftung, Kennzeichnung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#urheberrecht" class="md-nav__link">
+    <span class="md-ellipsis">
+      Urheberrecht
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#haftung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Haftung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kennzeichnung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kennzeichnung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#324-human-in-the-loop-als-rechtliches-prinzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      32.4 „Human in the Loop" als rechtliches Prinzip
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#325-grenzen-copilot-ist-kein-rechtsberater" class="md-nav__link">
+    <span class="md-ellipsis">
+      32.5 Grenzen: Copilot ist kein Rechtsberater
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#326-rechtssicherer-arbeiten-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      32.6 Rechtssicherer arbeiten mit Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel33/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Datenschutz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel34/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Explainable AI: Erklärbarkeit von KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel35/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 35 – Herausforderungen im KI-Projektmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel36/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 36 – Energie- und Ressourcenverbrauch von KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-32-rechtliche-aspekte-der-ki">Kapitel 32 – Rechtliche Aspekte der KI<a class="headerlink" href="#kapitel-32-rechtliche-aspekte-der-ki" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Welche <strong>Rechtsgebiete</strong> beim KI-Einsatz berührt werden</li>
+<li>Was der <strong>EU AI Act</strong> ist und wie sein <strong>risikobasierter Ansatz</strong> funktioniert</li>
+<li>Fragen zu <strong>Urheberrecht, Haftung und Kennzeichnung</strong></li>
+<li>Warum <strong>„der Mensch bleibt verantwortlich"</strong> rechtlich zentral ist</li>
+<li>Wo die <strong>Grenzen</strong> liegen: Copilot ersetzt keine Rechtsberatung</li>
+<li>Wie du im Alltag mit <strong>Copilot</strong> rechtssicher(er) arbeitest</li>
+</ul>
+</div>
+<hr />
+<h2 id="321-ein-uberblick-beruhrte-rechtsgebiete">32.1 Ein Überblick: berührte Rechtsgebiete<a class="headerlink" href="#321-ein-uberblick-beruhrte-rechtsgebiete" title="Permanent link">&para;</a></h2>
+<p>KI ist kein rechtsfreier Raum – im Gegenteil, sie berührt viele Bereiche gleichzeitig:</p>
+<table>
+<thead>
+<tr>
+<th>Rechtsgebiet</th>
+<th>Beispiel-Frage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KI-Regulierung</strong> (EU AI Act)</td>
+<td>Welche Pflichten hat unser KI-System?</td>
+</tr>
+<tr>
+<td><strong>Datenschutz</strong> (DSGVO)</td>
+<td>Dürfen wir diese personenbezogenen Daten nutzen? (Kap. 33)</td>
+</tr>
+<tr>
+<td><strong>Urheberrecht</strong></td>
+<td>Wem gehören Eingaben und Ergebnisse?</td>
+</tr>
+<tr>
+<td><strong>Haftung</strong></td>
+<td>Wer haftet für einen KI-Fehler?</td>
+</tr>
+<tr>
+<td><strong>Arbeitsrecht</strong></td>
+<td>Mitbestimmung bei KI am Arbeitsplatz?</td>
+</tr>
+<tr>
+<td><strong>Wettbewerbs-/Vertragsrecht</strong></td>
+<td>Zusicherungen, Werbung mit KI</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Dieser Kurs ersetzt keine Rechtsberatung</p>
+<p>Die folgenden Punkte schaffen <strong>Orientierung</strong> und Problembewusstsein – im konkreten Fall ist <strong>juristischer Rat</strong> einzuholen. Ziel ist, dass du <strong>weißt, wann</strong> eine rechtliche Prüfung nötig ist.</p>
+</div>
+<hr />
+<h2 id="322-der-eu-ai-act">32.2 Der EU AI Act<a class="headerlink" href="#322-der-eu-ai-act" title="Permanent link">&para;</a></h2>
+<p>Der <strong>EU AI Act</strong> ist das weltweit erste umfassende KI-Gesetz. Sein Kern ist ein <strong>risikobasierter Ansatz</strong>: Je höher das Risiko einer KI-Anwendung, desto strenger die Pflichten.</p>
+<pre class="mermaid"><code>flowchart TD
+    A([Inakzeptables Risiko: verboten]) 
+    B([Hohes Risiko: strenge Auflagen])
+    C([Begrenztes Risiko: Transparenzpflichten])
+    D([Minimales Risiko: kaum Auflagen])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Risikostufe</th>
+<th>Beispiele</th>
+<th>Folge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inakzeptabel</strong></td>
+<td>Social Scoring, manipulative Systeme</td>
+<td><strong>verboten</strong></td>
+</tr>
+<tr>
+<td><strong>Hoch</strong></td>
+<td>KI in Personalauswahl, Kreditvergabe, Medizin</td>
+<td>strenge Pflichten (Doku, Aufsicht, Qualität)</td>
+</tr>
+<tr>
+<td><strong>Begrenzt</strong></td>
+<td>Chatbots, generierte Inhalte</td>
+<td><strong>Transparenz</strong> (Kennzeichnung)</td>
+</tr>
+<tr>
+<td><strong>Minimal</strong></td>
+<td>Spamfilter, Spiele</td>
+<td>kaum Auflagen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Was das praktisch heißt</p>
+<p>Nutzt du Copilot zum Texten von E-Mails, bist du im <strong>minimalen/begrenzten</strong> Bereich. Setzt ein Unternehmen KI für <strong>Einstellungsentscheidungen</strong> ein, ist das <strong>Hochrisiko</strong> – mit umfangreichen Pflichten. Die zentrale Frage lautet also immer: <strong>Wofür</strong> wird die KI genau eingesetzt?</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Das Gesetz gilt gestaffelt – und trifft auch Copilot</p>
+<p>Der EU AI Act tritt <strong>nicht auf einen Schlag</strong> in Kraft, sondern gestuft über mehrere Jahre: zuerst die Verbote, dann die Transparenzpflichten, zuletzt die vollen Hochrisiko-Auflagen. Wichtig ist auch die Einordnung als <strong>Universal-KI</strong> (General Purpose AI): Große Sprachmodelle wie das hinter Copilot fallen als „Allzweck-KI" unter eigene Transparenzpflichten der Anbieter. Für dich als Nutzer:in zählt vor allem: <strong>Kennzeichnung</strong> generierter Inhalte, wo sie nötig ist, und die Einordnung deines konkreten <strong>Einsatzzwecks</strong> in die Risikostufen.</p>
+</div>
+<hr />
+<h2 id="323-urheberrecht-haftung-kennzeichnung">32.3 Urheberrecht, Haftung, Kennzeichnung<a class="headerlink" href="#323-urheberrecht-haftung-kennzeichnung" title="Permanent link">&para;</a></h2>
+<h3 id="urheberrecht">Urheberrecht<a class="headerlink" href="#urheberrecht" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Eingaben:</strong> Fremde geschützte Werke nicht ungefragt hochladen/verarbeiten.</li>
+<li><strong>Ausgaben:</strong> Ob und wem KI-generierte Inhalte urheberrechtlich „gehören", ist teils <strong>ungeklärt</strong> und je nach Land unterschiedlich. Für kommerzielle Nutzung genau prüfen.</li>
+</ul>
+<h3 id="haftung">Haftung<a class="headerlink" href="#haftung" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Die KI haftet nicht</p>
+<p>Ein KI-System ist keine juristische Person – es kann nicht haften. Verantwortlich bleibt immer der <strong>Mensch bzw. das Unternehmen</strong>, das die KI einsetzt. „Die KI hat den Fehler gemacht" ist <strong>keine</strong> Entschuldigung vor Gericht oder Kunden. Deshalb ist die <strong>Prüfung</strong> von KI-Ergebnissen nicht nur Sorgfalt, sondern rechtliche Notwendigkeit.</p>
+</div>
+<h3 id="kennzeichnung">Kennzeichnung<a class="headerlink" href="#kennzeichnung" title="Permanent link">&para;</a></h3>
+<p>Der EU AI Act verlangt zunehmend, dass <strong>KI-generierte oder -manipulierte Inhalte</strong> (Texte, Bilder, „Deepfakes") als solche <strong>gekennzeichnet</strong> werden (Bezug zu Kap. 19).</p>
+<hr />
+<h2 id="324-human-in-the-loop-als-rechtliches-prinzip">32.4 „Human in the Loop" als rechtliches Prinzip<a class="headerlink" href="#324-human-in-the-loop-als-rechtliches-prinzip" title="Permanent link">&para;</a></h2>
+<p>Weil der Mensch verantwortlich bleibt, ist die menschliche Kontrolle (<strong>Human in the Loop</strong>) bei bedeutsamen Entscheidungen nicht nur gute Praxis, sondern rechtlich geboten. Die DSGVO gibt Menschen z. B. ein Recht, <strong>nicht ausschließlich</strong> einer automatisierten Entscheidung unterworfen zu werden (Kap. 33). Die menschliche Kontrolle muss dabei <strong>echt</strong> sein: Ein bloßes „Durchklicken" ohne inhaltliche Prüfung erfüllt das Prinzip nicht.</p>
+<hr />
+<h2 id="325-grenzen-copilot-ist-kein-rechtsberater">32.5 Grenzen: Copilot ist kein Rechtsberater<a class="headerlink" href="#325-grenzen-copilot-ist-kein-rechtsberater" title="Permanent link">&para;</a></h2>
+<p>Copilot kann juristische Themen erklären und Texte entwerfen – aber es <strong>ersetzt keine Rechtsberatung</strong>. Der Grund liegt in der Funktionsweise: Ein Sprachmodell erzeugt <strong>wahrscheinliche Formulierungen</strong>, keine geprüften Rechtsauskünfte.</p>
+<table>
+<thead>
+<tr>
+<th>Copilot kann …</th>
+<th>Copilot kann <strong>nicht</strong> …</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Begriffe und Prinzipien erklären</td>
+<td>verbindlich sagen, ob <em>dein</em> Fall rechtens ist</td>
+</tr>
+<tr>
+<td>Vertrags- oder Textentwürfe liefern</td>
+<td>die Aktualität von Gesetzen garantieren</td>
+</tr>
+<tr>
+<td>Checklisten und Struktur vorschlagen</td>
+<td>für einen Fehler haften</td>
+</tr>
+<tr>
+<td>auf mögliche Prüfpunkte hinweisen</td>
+<td>ein Mandatsverhältnis mit Anwaltsvertraulichkeit ersetzen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Erfundene Paragraphen und Urteile</p>
+<p>Ein besonders gefährlicher Fallstrick: Sprachmodelle können <strong>Paragraphen, Fristen oder Gerichtsurteile schlicht erfinden</strong> – oft in sehr überzeugendem Ton. Es sind bereits reale Fälle bekannt, in denen sich Fachleute auf von einer KI „zitierte", aber nicht existierende Urteile verlassen haben. <strong>Verlasse dich nie</strong> auf konkrete Rechtsverweise aus Copilot, ohne sie in einer verlässlichen Quelle zu verifizieren. Für rechtsverbindliche Fragen führt der Weg zu Fachanwält:innen oder der Rechtsabteilung.</p>
+</div>
+<hr />
+<h2 id="326-rechtssicherer-arbeiten-mit-copilot">32.6 Rechtssicherer arbeiten mit Copilot<a class="headerlink" href="#326-rechtssicherer-arbeiten-mit-copilot" title="Permanent link">&para;</a></h2>
+<p>Praktische Leitplanken:</p>
+<ul>
+<li><strong>Freigegebene Umgebung nutzen:</strong> Microsoft 365 Copilot verarbeitet Daten im geschützten Unternehmensrahmen (Kap. 33).</li>
+<li><strong>Keine fremden geschützten Werke</strong> ungefragt einspeisen.</li>
+<li><strong>Ergebnisse prüfen und verantworten</strong> – besonders bei rechtlich/wirtschaftlich Relevantem.</li>
+<li><strong>Kennzeichnen</strong>, wo KI-Inhalte offengelegt werden müssen.</li>
+<li><strong>Interne Richtlinie</strong> beachten (Was ist erlaubt? Welche Tools?).</li>
+</ul>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den risikobasierten Ansatz des EU AI Act in einfachen Worten und ordne
+drei Beispiele (Spamfilter, Kundenservice-Chatbot, KI in der Personalauswahl)
+den passenden Risikostufen zu. Nenne je eine Pflicht, die daraus folgt.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">Ausgearbeiteter Copilot-Dialog</p>
+<p><strong>Prompt:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein fiktives kleines Unternehmen mit drei KI-Anwendungen. Ordne jede
+einer EU-AI-Act-Risikostufe zu, nenne je eine Pflicht und markiere klar,
+wo ich zusätzlich echte Rechtsberatung brauche.
+</code></pre></div></td></tr></table></div>
+<strong>Beispiel-Antwort von Copilot (gekürzt):</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Fiktiv: &quot;Muster-Logistik GmbH&quot; mit drei KI-Systemen.
+
+1. Spamfilter im Postfach -&gt; minimales Risiko. Pflicht: praktisch keine.
+2. Kundenservice-Chatbot -&gt; begrenztes Risiko. Pflicht: Nutzer erkennbar
+   darauf hinweisen, dass sie mit einer KI sprechen (Transparenz).
+3. KI-gestützte Vorauswahl von Bewerbungen -&gt; HOCHRISIKO. Pflichten:
+   Dokumentation, menschliche Aufsicht, Datenqualität, Diskriminierungsschutz.
+
+Rechtsberatung nötig bei: Ausgestaltung des Bewerbungs-Systems (3) und der
+Betriebsrats-Mitbestimmung. Diese Einordnung ist nur Orientierung, keine
+verbindliche Rechtsauskunft.
+</code></pre></div></td></tr></table></div></p>
+</div>
+<p>Beachte den letzten Satz der KI-Antwort – genau diese <strong>Selbstbegrenzung</strong> solltest du bei rechtlichen Themen immer mitdenken.</p>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI berührt viele Rechtsgebiete: <strong>EU AI Act, DSGVO, Urheberrecht, Haftung, Arbeitsrecht</strong>.</li>
+<li>Der <strong>EU AI Act</strong> arbeitet <strong>risikobasiert</strong> – vom Verbot bis zu minimalen Auflagen; entscheidend ist der <strong>Einsatzzweck</strong>. Er gilt <strong>gestaffelt</strong> und trifft auch Allzweck-KI.</li>
+<li><strong>Die KI haftet nie</strong> – Verantwortung bleibt beim Menschen/Unternehmen; Ergebnisse prüfen ist Pflicht.</li>
+<li><strong>Kennzeichnung</strong> von KI-Inhalten und <strong>Human in the Loop</strong> werden rechtlich zunehmend verlangt – die Kontrolle muss echt sein.</li>
+<li><strong>Copilot ersetzt keine Rechtsberatung</strong> und kann Paragraphen/Urteile erfinden – verbindliche Fragen gehören zu Fachleuten.</li>
+<li>Im Zweifel: <strong>Rechtsberatung</strong> einholen und interne Richtlinien beachten.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> KI-Anwendungen in Risikoklassen einordnen</summary>
+<p>Dein Unternehmen prüft vier geplante KI-Anwendungen. Sie sollen nach EU AI Act eingeordnet werden:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>A) Spamfilter fuer das Firmenpostfach
+B) Chatbot, der Kunden Produktfragen beantwortet
+C) KI, die Bewerbungen vorsortiert und Kandidaten bewertet
+D) System, das Mitarbeitende live per Kamera auf &quot;Emotionen&quot; am Arbeitsplatz bewertet
+</code></pre></div></td></tr></table></div>
+<p>Öffne Copilot und erledige die Einordnung in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ordne diese vier Anwendungen den Risikoklassen des EU AI Act zu (minimal, begrenzt, hoch, verboten)
+und begruende kurz. Nenne bei der hochriskanten Anwendung eine Pflicht, die daraus folgt. Stelle
+es als Tabelle dar (Anwendung, Risikoklasse, Begruendung, Folge/Pflicht).
+[hier A-D einfuegen]
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine begründete Zuordnung, die die vier Anwendungen sinnvoll über die Risikoklassen verteilt und die Konsequenz je Klasse benennt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Je höher das Risiko für Menschen, desto strenger die Pflichten – von „minimal/erlaubt" bis „verboten". Systeme, die über Menschen entscheiden (Bewerbung), sind meist hochriskant; Emotionserkennung am Arbeitsplatz ist weitgehend untersagt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: A minimal, B begrenzt (Transparenz-/Kennzeichnungspflicht: als KI erkennbar), C hoch
+(Bewerberauswahl → strenge Pflichten wie Dokumentation, menschliche Aufsicht), D verboten (Emotionserkennung
+am Arbeitsplatz). Lernziel: den risikobasierten Ansatz der KI-Regulierung verstehen und anwenden.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Pflichten für ein Hochrisiko-System ableiten</summary>
+<p>Ein konkretes System soll eingeführt werden. Die Beschreibung liegt vor:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Eine Bank will eine KI einsetzen, die Kreditantraege automatisch bewertet und eine Empfehlung
+&quot;bewilligen / ablehnen&quot; gibt. Trainiert wurde sie mit historischen Kreditentscheidungen. Die
+Sachbearbeitung soll der Empfehlung &quot;in der Regel folgen&quot;, um Zeit zu sparen.
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot Risikoklasse und Pflichten herleiten:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ordne dieses System einer EU-AI-Act-Risikoklasse zu und begruende. Leite dann die 4 wichtigsten
+rechtlichen Pflichten ab, die daraus folgen (z. B. menschliche Aufsicht, Transparenz, Datenqualitaet,
+Dokumentation). Bewerte, ob die Vorgabe &quot;in der Regel folgen&quot; mit diesen Pflichten vereinbar ist.
+[hier die Beschreibung einfuegen]
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – eine dünne Stelle in der Antwort gezielt nachschärfen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Die Aussage zur &quot;menschlichen Aufsicht&quot; ist noch zu weich. Wie muss echte menschliche Kontrolle
+hier konkret aussehen, damit sie nicht nur ein Abnicken der KI-Empfehlung ist (Automatismus-Falle)?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine korrekte Einordnung als Hochrisiko-System, vier konkrete Pflichten und eine belastbare Aussage, warum „in der Regel folgen" die menschliche Aufsicht aushöhlt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Bonitäts-/Kreditbewertung von Personen gilt als hochriskant. „Menschliche Aufsicht" ist nur echt, wenn der Mensch die KI-Empfehlung auch tatsächlich prüfen und begründet abweichen kann – nicht bloß routinemäßig bestätigt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Einordnung als Hochrisiko, vier plausible Pflichten (menschliche Aufsicht, Transparenz/
+Begründung, Datenqualität/Bias-Kontrolle, Dokumentation) und die klare Erkenntnis, dass „in der Regel folgen" die
+Aufsicht zur Formalie macht. Die nachgeschärfte Antwort konkretisiert echte Kontrolle. Lernziel: aus der
+Risikoklasse konkrete Pflichten ableiten und die Automatismus-Falle erkennen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Rechtlicher Kurz-Check mit klarer Grenzziehung</summary>
+<p>Ein Use Case mit mehreren rechtlichen Baustellen liegt vor. Prüfe ihn strukturiert:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ein Pflegedienst will eine KI-App einsetzen, die aus Sprachnotizen der Pflegekraefte automatisch
+Pflegeberichte erstellt und Auffaelligkeiten (z. B. &quot;Sturzgefahr&quot;) meldet. Die Sprachnotizen
+enthalten Gesundheitsdaten von Patienten. Bei einem Fehlalarm oder uebersehenen Risiko stellt sich
+die Haftungsfrage.
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot einen rechtlichen Kurz-Check erstellen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Fuehre einen rechtlichen Kurz-Check durch. Tabelle mit: Risikoklasse (EU AI Act), Datenschutzbezug
+(welche Datenart?), Haftungsfrage (wer haftet bei Fehlern?), Kennzeichnungs-/Dokumentationspflicht.
+Sag ausserdem klar, wo deine Aussagen enden und echte Rechtsberatung noetig ist.
+[hier den Use Case einfuegen]
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>entscheide selbst über die kritischste Frage und die KI-Grenze</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Welche der vier Fragen ist hier am heikelsten und gehoert zwingend zu Fachleuten (z. B. Anwalt,
+Datenschutzbeauftragte)? Und wo koennte Copilots Einschaetzung falsch oder zu selbstsicher sein,
+sodass man sich keinesfalls allein darauf verlassen darf?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> ein strukturierter Rechts-Check, der die kritischste Frage benennt und klar abgrenzt, wo verbindliche Fachberatung nötig ist.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du selbst mindestens eine Stelle markiert hast, an der du dich NICHT auf Copilot verlassen würdest – denn Copilot ersetzt keine Rechtsberatung. (Vertiefung: Kapitel 33 – Datenschutz.)</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Copilot ist keine Rechtsberatung. Es hilft, die Fragen zu strukturieren – die verbindliche Klärung, gerade bei Gesundheitsdaten und Haftung, machen Fachleute. Selbstsicher klingende KI-Aussagen zu Recht sind besonders trügerisch.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Einordnung (Gesundheitsdaten → besonders sensibel/DSGVO Art. 9, wahrscheinlich hohes Risiko),
+benannte Haftungs- und Dokumentationsfragen und eine klare Grenzziehung zur Fachberatung. Entscheidend ist die
+Eigenentscheidung: Du hast eine Stelle markiert, an der man sich nicht auf die KI verlassen darf (typisch: Haftung
+und Gesundheitsdatenschutz). Lernziel: rechtliche Fragen früh erkennen und die Grenzen der KI respektieren.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Compliance-Freigabe für ein Hochrisiko-KI-Projekt</summary>
+<p><strong>Szenario:</strong> Du bist Projektverantwortliche und sollst die <strong>rechtliche Freigabe-Entscheidung</strong> für ein KI-Vorhaben vorbereiten. Ziel ist hart: eine belastbare Compliance-Checkliste, die klar sagt <strong>einführen / nur mit Auflagen / stoppen</strong> – und die verbindliche Grenzen zur Rechtsberatung zieht. Ausgangslage:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ein Handelsunternehmen will eine KI einfuehren, die im Kundenservice eingehende Reklamationen
+bewertet und automatisch ueber Kulanz (Erstattung bis 500 EUR) entscheidet - ohne menschliche Freigabe.
+Trainiert mit alten Kulanzentscheidungen. Kunden werden nicht informiert, dass eine KI entscheidet.
+Bei Streit ueber eine Ablehnung ist unklar, wer haftet.
+</code></pre></div></td></tr></table></div>
+<p>Arbeite alles in Copilot – aber liefere gegen <strong>klare Anforderungen</strong>. Wichtig: Copilot ersetzt keine Rechtsberatung; markiere, was zwingend zu Fachleuten gehört.</p>
+<p><strong>Runde 1 – Compliance-Check bauen.</strong> Erstelle eine Checkliste mit den wichtigsten rechtlichen Prüfpunkten (Risikoklasse EU AI Act, Datenschutz, Transparenz/Kennzeichnung, menschliche Aufsicht, Haftung, Dokumentation), jeder als Ja/Nein-Frage mit Handlungshinweis bei „Nein".</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Die Checkliste muss <strong>alle</strong> erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:</p>
+<ol>
+<li>jeder Prüfpunkt hat eine klare Ja/Nein-Frage und einen Handlungshinweis</li>
+<li>die automatische Entscheidung ohne menschliche Freigabe ist rechtlich bewertet</li>
+<li>die fehlende Kundeninformation (Transparenz) ist als Problem erfasst</li>
+<li>jede Aussage ist markiert, wo sie durch verbindliche Rechtsberatung zu bestätigen ist</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Die Fachabteilung will das Projekt <strong>nächste Woche live schalten</strong> und drängt: „Die KI entscheidet ja nur über Kulanz, das ist harmlos." Analysiere mit Copilot, warum die vollautomatische Entscheidung ohne Freigabe und ohne Kundeninformation problematisch ist, und überarbeite die Checkliste zu klaren Auflagen (z. B. menschliche Freigabe ab Schwelle, Kennzeichnung).</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Triff die Freigabe-Empfehlung: einführen / nur mit Auflagen / stoppen. Lass dir Pro/Contra geben, entscheide begründet <strong>und widersprich Copilot</strong>, wenn es das Vorhaben als unkritisch einstuft oder eine rechtliche Frage zu selbstsicher beantwortet, die eigentlich zu Fachleuten gehört.</p>
+<p><strong>Deliverable:</strong> finale Compliance-Checkliste (Version 2, mit markierten „Fachberatung nötig"-Punkten) + ausgefüllte Pflichtkriterien-Checkliste + begründete Freigabe-Empfehlung.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, mindestens ein Punkt ausdrücklich der Rechtsberatung vorbehalten ist und deine Freigabe-Empfehlung nicht blind Copilots Risikoeinschätzung übernimmt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Wert entsteht in Runde 3 und 4: „Nur Kulanz, harmlos" ist genau die Beschwichtigung, die Compliance aushebelt – fehlende Transparenz und Haftungsunklarheit sind reale Risiken. Und egal wie souverän Copilot klingt: rechtsverbindliche Fragen gehören zu Fachleuten.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) vollständige Checkliste mit Ja/Nein-Fragen und Handlungshinweisen; (2) alle vier
+Pflichtkriterien erfüllt (klare Fragen, Bewertung der Vollautomatik, Transparenzproblem erfasst, Fachberatung
+markiert); (3) die überarbeitete Version wandelt „harmlos" in konkrete Auflagen (menschliche Freigabe,
+Kennzeichnung); (4) die Freigabe-Empfehlung ist begründet, respektiert die Grenze zur Rechtsberatung und übernimmt
+Copilots Einschätzung nicht blind. Lernziel: rechtliche Sorgfalt in eine handhabbare Freigabe-Routine gießen und
+die Grenzen der KI-Beratung wahren.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel31/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 31 – Ethik und soziale Verantwortung">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 31 – Ethik und soziale Verantwortung
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel33/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 33 – Datenschutz">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 33 – Datenschutz
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

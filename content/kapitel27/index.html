@@ -1,0 +1,1686 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel26/">
+      
+      
+        <link rel="next" href="../kapitel28/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 27 – Praxis: KI in der Prozessregulierung - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-27-praxis-ki-in-der-prozessregulierung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 27 – Praxis: KI in der Prozessregulierung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · Use Cases & Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Medienerstellung mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Data-Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Praxis: KI in der Konstruktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – KI in der Produktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Praxis: KI im Qualitätsmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#271-was-ist-prozessregulierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.1 Was ist Prozessregulierung?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#272-wie-ki-die-regelung-verbessert" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.2 Wie KI die Regelung verbessert
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#273-drei-stufen-der-regelung-pid-mpc-und-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.3 Drei Stufen der Regelung: PID, MPC und Reinforcement Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#274-beispiele-aus-der-praxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.4 Beispiele aus der Praxis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#275-grenzen-und-sicherheit" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.5 Grenzen und Sicherheit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#276-wo-copilot-hilft" class="md-nav__link">
+    <span class="md-ellipsis">
+      27.6 Wo Copilot hilft
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Low-Code-Programmierung und Citizen Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-27-praxis-ki-in-der-prozessregulierung">Kapitel 27 – Praxis: KI in der Prozessregulierung<a class="headerlink" href="#kapitel-27-praxis-ki-in-der-prozessregulierung" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was mit <strong>Prozessregulierung / Regelung</strong> gemeint ist (Prozesse in einem Sollzustand halten)</li>
+<li>Der Unterschied zwischen <strong>Steuerung</strong> und <strong>Regelung</strong> (offener vs. geschlossener Regelkreis)</li>
+<li>Wie KI klassische Regelungen <strong>verbessert</strong> (adaptiv, vorausschauend)</li>
+<li>Was <strong>PID-Regler</strong>, <strong>modellprädiktive Regelung (MPC)</strong> und <strong>Reinforcement Learning</strong> unterscheidet</li>
+<li>Beispiele aus <strong>Fertigung, Energie und Gebäudetechnik</strong></li>
+<li>Wo <strong>Copilot</strong> bei Analyse, Dokumentation und Compliance hilft</li>
+</ul>
+</div>
+<hr />
+<h2 id="271-was-ist-prozessregulierung">27.1 Was ist Prozessregulierung?<a class="headerlink" href="#271-was-ist-prozessregulierung" title="Permanent link">&para;</a></h2>
+<p><strong>Prozessregulierung</strong> (Prozessregelung) bedeutet, einen Prozess automatisch in einem gewünschten <strong>Sollzustand</strong> zu halten – trotz Störungen von außen. Klassisches Beispiel: ein <strong>Thermostat</strong>, das eine Temperatur konstant hält.</p>
+<div class="admonition info">
+<p class="admonition-title">Steuerung vs. Regelung</p>
+<ul>
+<li><strong>Steuerung (offener Regelkreis):</strong> wirkt „blind" nach Plan, ohne das Ergebnis zurückzumelden. Beispiel: Heizung läuft feste 2 Stunden – egal wie warm es wird.</li>
+<li><strong>Regelung (geschlossener Regelkreis):</strong> misst das Ergebnis <strong>und korrigiert</strong> laufend. Beispiel: Thermostat misst die Temperatur und passt die Heizleistung an.</li>
+</ul>
+<p>Der <strong>Rückkopplung (Feedback)</strong> ist der Kern jeder Regelung.</p>
+</div>
+<pre class="mermaid"><code>flowchart LR
+    A([Sollwert]) --&gt; B([Regler])
+    B --&gt; C([Stellgröße an Prozess])
+    C --&gt; D([Prozess])
+    D --&gt; E([Istwert messen])
+    E --&gt; B</code></pre>
+<hr />
+<h2 id="272-wie-ki-die-regelung-verbessert">27.2 Wie KI die Regelung verbessert<a class="headerlink" href="#272-wie-ki-die-regelung-verbessert" title="Permanent link">&para;</a></h2>
+<p>Klassische Regler (z. B. PID-Regler) arbeiten mit festen Formeln und funktionieren gut bei einfachen, stabilen Prozessen. KI-gestützte Regelung geht darüber hinaus:</p>
+<table>
+<thead>
+<tr>
+<th>Klassische Regelung</th>
+<th>KI-gestützte Regelung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>feste Parameter</td>
+<td><strong>passt sich an</strong> (adaptiv)</td>
+</tr>
+<tr>
+<td>reagiert auf Ist-Abweichung</td>
+<td>kann <strong>vorausschauend</strong> eingreifen</td>
+</tr>
+<tr>
+<td>ein klar modellierbarer Prozess</td>
+<td>auch <strong>komplexe</strong>, schwer modellierbare Prozesse</td>
+</tr>
+<tr>
+<td>Mensch stellt Parameter ein</td>
+<td>lernt optimale Strategie (RL, Kap. 17)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Adaptiv statt starr</p>
+<p>Eine Klimaanlage mit klassischem Regler reagiert erst, <strong>wenn</strong> es zu warm ist. Eine KI-Regelung kann <strong>Wetterprognose, Belegung und Tageszeit</strong> einbeziehen und die Kühlung <strong>vorausschauend</strong> anpassen – das spart Energie und hält die Temperatur stabiler. Solche Ansätze nutzen oft <strong>Reinforcement Learning</strong> (Kap. 17).</p>
+</div>
+<hr />
+<h2 id="273-drei-stufen-der-regelung-pid-mpc-und-reinforcement-learning">27.3 Drei Stufen der Regelung: PID, MPC und Reinforcement Learning<a class="headerlink" href="#273-drei-stufen-der-regelung-pid-mpc-und-reinforcement-learning" title="Permanent link">&para;</a></h2>
+<p>Um zu verstehen, was KI hier wirklich beiträgt, hilft ein Blick auf drei Ausbaustufen:</p>
+<table>
+<thead>
+<tr>
+<th>Verfahren</th>
+<th>Prinzip</th>
+<th>Stärke</th>
+<th>Grenze</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PID-Regler</strong></td>
+<td>korrigiert die aktuelle Abweichung nach fester Formel</td>
+<td>einfach, robust, transparent</td>
+<td>rein reaktiv, kein Blick nach vorn</td>
+</tr>
+<tr>
+<td><strong>MPC (modellprädiktiv)</strong></td>
+<td>rechnet mit einem <strong>Prozessmodell</strong> einige Schritte in die Zukunft und wählt die beste Stellaktion</td>
+<td>plant voraus, hält Grenzen ein</td>
+<td>braucht ein gutes Modell des Prozesses</td>
+</tr>
+<tr>
+<td><strong>Reinforcement Learning</strong></td>
+<td>lernt eine Strategie durch <strong>Ausprobieren und Belohnung</strong></td>
+<td>meistert komplexe, schwer modellierbare Prozesse</td>
+<td>Training aufwendig, Verhalten schwer erklärbar</td>
+</tr>
+</tbody>
+</table>
+<p>Der <strong>PID-Regler</strong> ist der Klassiker: Er schaut nur auf die aktuelle Differenz zwischen Soll und Ist. Die <strong>modellprädiktive Regelung (MPC)</strong> ist der erste große Sprung nach vorn – sie nutzt ein Modell des Prozesses, um vorauszurechnen, was passieren wird, und kann so z. B. Grenzwerte aktiv einhalten. <strong>Reinforcement Learning</strong> (Kapitel 17) geht noch weiter und lernt die optimale Strategie selbst, ist dafür aber deutlich schwerer nachzuvollziehen.</p>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Nicht jeder Prozess braucht KI</p>
+<p>Ein häufiges Missverständnis ist, dass „moderne" Regelung immer KI bedeuten müsse. Tatsächlich sind viele Prozesse mit einem gut eingestellten PID-Regler <strong>optimal und günstig</strong> bedient – transparent, zertifizierbar und wartungsarm. KI-Verfahren lohnen sich vor allem dort, wo <strong>viele Einflussgrößen zusammenwirken</strong>, sich Bedingungen ständig ändern oder ein klares Prozessmodell fehlt. Die richtige Frage lautet nicht „KI oder nicht?", sondern „Wie komplex ist der Prozess wirklich?".</p>
+</div>
+<hr />
+<h2 id="274-beispiele-aus-der-praxis">27.4 Beispiele aus der Praxis<a class="headerlink" href="#274-beispiele-aus-der-praxis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>KI-Regelung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fertigung</td>
+<td>Prozessparameter (Druck, Temperatur) automatisch optimal halten</td>
+</tr>
+<tr>
+<td>Energie</td>
+<td>Stromnetze und Speicher ausbalancieren</td>
+</tr>
+<tr>
+<td>Gebäudetechnik</td>
+<td>Heizung/Kühlung/Licht bedarfsgerecht regeln</td>
+</tr>
+<tr>
+<td>Wasser/Chemie</td>
+<td>Dosierung präzise steuern</td>
+</tr>
+<tr>
+<td>Rechenzentren</td>
+<td>Kühlung energieoptimal regeln</td>
+</tr>
+</tbody>
+</table>
+<p>Der gemeinsame Nenner: ein <strong>kontinuierlicher Prozess</strong>, der stabil und effizient gehalten werden soll – und in dem viele Einflussgrößen zusammenwirken.</p>
+<hr />
+<h2 id="275-grenzen-und-sicherheit">27.5 Grenzen und Sicherheit<a class="headerlink" href="#275-grenzen-und-sicherheit" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Regelung ist sicherheitskritisch</p>
+<p>Reguliert eine KI einen physischen Prozess, sind Fehler potenziell <strong>gefährlich</strong> (Überhitzung, Überdruck). Deshalb gelten strenge Prinzipien:</p>
+<ul>
+<li><strong>Grenzwerte/Notabschaltungen</strong> unabhängig von der KI absichern.</li>
+<li>Verhalten muss <strong>nachvollziehbar</strong> genug sein (Erklärbarkeit, Kap. 34).</li>
+<li>Ein Mensch (oder ein sicheres Basissystem) muss <strong>eingreifen</strong> können.</li>
+</ul>
+<p>Eine „Blackbox", die sicherheitsrelevante Ventile ungeprüft steuert, ist nicht akzeptabel.</p>
+</div>
+<hr />
+<h2 id="276-wo-copilot-hilft">27.6 Wo Copilot hilft<a class="headerlink" href="#276-wo-copilot-hilft" title="Permanent link">&para;</a></h2>
+<p>Die eigentliche Regelung übernehmen <strong>Automatisierungs-/Steuerungssysteme</strong>, nicht Copilot. Copilot unterstützt bei den <strong>begleitenden</strong> Aufgaben:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Konzepte verstehen</td>
+<td>„Erkläre den Unterschied zwischen Steuerung und Regelung mit Beispiel."</td>
+</tr>
+<tr>
+<td>Datenauswertung</td>
+<td>„Welche Auffälligkeiten zeigen diese Prozess-Messwerte (Excel)?"</td>
+</tr>
+<tr>
+<td>Dokumentation</td>
+<td>„Erstelle aus diesen Stichpunkten eine Beschreibung des Regelkreises."</td>
+</tr>
+<tr>
+<td>Compliance</td>
+<td>„Fasse zusammen, welche Sicherheitsanforderungen ich beachten muss."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre an einem Beispiel aus der Gebäudetechnik den Unterschied zwischen einer
+klassischen und einer KI-gestützten, vorausschauenden Regelung. Nenne je zwei
+Vorteile der KI-Variante und ein Sicherheitsrisiko, das ich absichern muss.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">So könnte Copilots Antwort aussehen (Auszug)</p>
+<p><strong>Beispiel Bürogebäude – Heizungsregelung</strong></p>
+<ul>
+<li><em>Klassisch:</em> Der Regler heizt, sobald die Raumtemperatur unter 21 °C fällt, und stoppt bei 22 °C. Er reagiert nur auf den Ist-Wert.</li>
+<li><em>KI-gestützt/vorausschauend:</em> Das System bezieht Wettervorhersage, Belegungsplan und Wärmeträgheit des Gebäudes ein und beginnt z. B. schon morgens vorzuheizen bzw. drosselt vor Feierabend rechtzeitig.</li>
+</ul>
+<p><strong>Zwei Vorteile der KI-Variante:</strong> (1) geringerer Energieverbrauch durch vorausschauendes Heizen, (2) stabilere, komfortablere Temperatur.</p>
+<p><strong>Abzusicherndes Sicherheitsrisiko:</strong> Ein Software- oder Sensorfehler darf nicht zu Überhitzung oder Frostschäden führen – deshalb braucht es <strong>unabhängige Grenzwertüberwachung und einen Frostschutz</strong>, die auch ohne die KI funktionieren.</p>
+<p>Beachte, wie Copilot hier ein <strong>Verständnis- und Formulierungswerkzeug</strong> ist – die reale Regelung bleibt beim Automatisierungssystem.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Prozessregulierung</strong> hält Prozesse per <strong>Rückkopplung</strong> im Sollzustand (Regelung = geschlossener Regelkreis).</li>
+<li>KI macht Regelungen <strong>adaptiv</strong> und <strong>vorausschauend</strong> – auch für komplexe Prozesse (oft mit RL).</li>
+<li>Drei Stufen: <strong>PID</strong> (reaktiv), <strong>MPC</strong> (vorausschauend mit Modell), <strong>Reinforcement Learning</strong> (lernt Strategie) – nicht jeder Prozess braucht KI.</li>
+<li>Anwendungen in <strong>Fertigung, Energie, Gebäudetechnik, Chemie, Rechenzentren</strong>.</li>
+<li>Regelung ist <strong>sicherheitskritisch</strong>: unabhängige Grenzwerte, Nachvollziehbarkeit, menschlicher Eingriff.</li>
+<li><strong>Copilot</strong> hilft bei Verständnis, Auswertung, Doku und Compliance – nicht bei der Echtzeit-Regelung.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Regelabweichung im Temperaturlog erkennen</summary>
+<p>Du bist Schichtleiterin an einem <strong>Gärtank</strong>. Der Sollwert liegt bei <strong>22 °C (Toleranz ±1 °C)</strong>. Hier dein Messlog der letzten Stunden:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>08:00  21,8 °C
+09:00  22,1 °C
+10:00  23,4 °C
+11:00  24,2 °C
+12:00  23,9 °C
+13:00  22,3 °C
+</code></pre></div></td></tr></table></div>
+<p>Öffne Copilot und erledige die Analyse in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ein Temperaturlog eines Gärtanks (Sollwert 22 °C, Toleranz +/-1 °C):
+08:00 21,8 | 09:00 22,1 | 10:00 23,4 | 11:00 24,2 | 12:00 23,9 | 13:00 22,3
+Nenne die Zeitpunkte, an denen der Istwert die Toleranz verlässt, benenne die Regelabweichung
+in Grad, nenne eine plausible Ursache und die nötige Stellgroesse (mehr Kuehlung / weniger Heizung).
+Gib mir eine kurze Handlungsempfehlung in 3 Saetzen.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine konkrete Handlungsempfehlung, die klar sagt, wann der Prozess außer Toleranz war, um wie viel und was zu stellen ist.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein Regelkreis vergleicht laufend Istwert mit Sollwert und stellt über die Stellgröße nach. „Zu warm" reicht nicht – nenne die Abweichung in Grad und die konkrete Stellaktion.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: 10:00–12:00 als Überschreitung erkannt (bis +2,2 °C über Soll), plausible Ursache (z. B.
+exotherme Reaktion, Kühlung zu spät) und klare Stellgröße. Schwach ist die Antwort, wenn sie nur „zu warm" sagt;
+stark, wenn Abweichung und Stellaktion benannt sind. Lernziel: Regelabweichung quantifizieren und in eine Stellaktion übersetzen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Schwingenden Regler diagnostizieren und Grenzen setzen</summary>
+<p>An einem <strong>Trockenofen</strong> (Sollwert 180 °C) schwingt die Temperatur seit einer Umstellung des Reglers. Beobachtung der Instandhaltung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Sollwert 180 °C. Nach jeder Störung überschwingt der Ofen auf ca. 205 °C, faellt dann
+auf 165 °C, pendelt sich erst nach ~15 Minuten wieder auf 180 °C ein. Vorher war es ruhig.
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot das Verhalten einordnen (die KI ersetzt hier keine Steuerung – sie hilft beim Verstehen):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ein PID-geregelter Trockenofen (Sollwert 180 °C) ueberschwingt nach Stoerungen auf 205 °C und
+pendelt 15 Minuten. Erklaere, welcher Regleranteil (P, I oder D) das Ueberschwingen verursacht,
+und schlage eine konkrete Anpassung der Parameter vor. Definiere ausserdem harte Sicherheitsgrenzen
+(Maximaltemperatur, Abschaltschwelle) und was bei Grenzverletzung passieren muss.
+</code></pre></div></td></tr></table></div>
+<p>Prüfe die Antwort und schärfe die schwächste Stelle gezielt nach:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Deine Sicherheitsgrenzen sind noch zu vage. Mach sie konkret: nenne einen Zahlenwert fuer die
+Abschaltschwelle, wer/was abschaltet und wie der Ofen danach sicher in den Grundzustand geht.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine nachvollziehbare Diagnose des Überschwingens <strong>und</strong> eine harte, bezifferte Sicherheitsgrenze mit definiertem Abschaltverhalten.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Überschwingen deutet oft auf einen zu hohen P-Anteil oder fehlende Dämpfung (D) hin. Und: Ein Regelkonzept ist erst vollständig mit harten Sicherheitsgrenzen und definiertem Notaus – „so um die 200 °C" ist keine Grenze.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: plausible Zuordnung des Überschwingens (typisch P zu hoch / D zu niedrig), eine konkrete
+Parameter-Anpassung und eine bezifferte Abschaltschwelle mit klar benanntem Auslöser und sicherem Rückfallzustand.
+Die nachgeschärfte Version ist spürbar konkreter als der erste Wurf. Lernziel: Reglerverhalten deuten und mit
+harten Sicherheitsleitplanken absichern.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Sicherheitslogik für eine Mehrgrößen-Regelung prüfen</summary>
+<p>Ein <strong>Kühlkreislauf</strong> einer Anlage soll KI-gestützt geregelt werden. Es gibt zwei Stellgrößen mit Zielkonflikt und eine Störgröße:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Ziel: Vorlauftemperatur 8 °C halten (Toleranz +/-1,5 °C).
+Stellgroesse 1: Pumpendrehzahl (mehr = kaelter, aber mehr Strom).
+Stellgroesse 2: Ventiloeffnung Kaeltemittel (mehr = kaelter, aber teurer/Verschleiss).
+Stoergroesse: schwankende Aussentemperatur (nachts 12 °C, mittags 34 °C).
+Nebenbedingung: Stromkosten sollen minimiert werden, ohne die 8 °C zu verlassen.
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot einen abgesicherten Regelungsentwurf erstellen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Entwirf ein KI-gestuetztes Regelungskonzept fuer diesen Kuehlkreislauf: wie werden die zwei
+Stellgroessen bei schwankender Aussentemperatur so gefahren, dass 8 °C gehalten und Stromkosten
+minimiert werden? Definiere harte Sicherheitsgrenzen, eine menschliche Eingriffsmoeglichkeit und
+einen sicheren Rueckfallmodus bei Sensorausfall.
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>prüfe die Sicherheitslogik selbst auf Lücken</strong>, bevor du das Konzept freigibst:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Spiele einen Fehlerfall durch: Der Temperatursensor liefert ploetzlich einen falschen (zu niedrigen)
+Wert. Was wuerde deine Regelung tun, und wie verhindert deine Sicherheitslogik einen gefaehrlichen
+Zustand? Zeige mir, wo die Logik im Fehlerfall versagen koennte.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> ein Regelungskonzept, das den Zielkonflikt löst <strong>und</strong> einen Sensorfehler sicher abfängt.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du mindestens eine Lücke in Copilots Sicherheitslogik selbst gefunden und geschlossen hast (z. B. „ein einzelner Sensor ohne Plausibilitätsprüfung ist ein blinder Fleck"). Copilot ist hier Denkwerkzeug, kein Echtzeit-Steuerungssystem. (Vertiefung: Kapitel 26 – Predictive Maintenance.)</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Bei mehreren Stellgrößen und Zielkonflikten regelt man selten „auf einen Wert" – man priorisiert (Sicherheit vor Kosten). Und: Ein einzelner Sensor ohne Plausibilitätsprüfung ist die häufigste unsichtbare Schwachstelle.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: ein Konzept, das Sicherheit über Kosten priorisiert, beide Stellgrößen sinnvoll koordiniert
+und bei Sensorausfall in einen definierten sicheren Zustand geht. Entscheidend ist der letzte Schritt: Du hast
+eine reale Lücke erkannt (z. B. fehlende Sensor-Plausibilisierung oder Redundanz) und selbst geschlossen, statt
+Copilots Entwurf blind zu übernehmen. Lernziel: Sicherheitslogik einer Regelung kritisch durchdringen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> KI-Regelungsassistent für einen Industrieofen absichern</summary>
+<p><strong>Szenario:</strong> Du bist Verfahrensingenieurin in einem Werk mit einem energieintensiven <strong>Härteofen</strong>. Die Geschäftsführung will einen <strong>KI-Regelungsassistenten</strong> einführen, der Stellwerte <strong>vorschlägt</strong> (Entscheidungsunterstützung, keine direkte Steuerung). Dein hartes Ziel: <strong>−8 % Energieverbrauch</strong> bei gleichbleibender Bauteilqualität. Ausgangslage:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ofen faehrt drei Zonen (Vorwaerm-, Halte-, Abkuehlzone), Sollprofil je Charge vorgegeben.
+Stellgroessen: Brennerleistung je Zone, Bandgeschwindigkeit.
+Qualitaetsgrenzen: Kerntemperatur 850 °C (+/-10 °C), sonst Ausschuss.
+Harte Sicherheitsgrenze: Zonentemperatur nie ueber 920 °C (Materialschaden/Brandgefahr).
+</code></pre></div></td></tr></table></div>
+<p>Arbeite alles in Copilot – aber liefere gegen <strong>klare Anforderungen</strong>, nicht nur „irgendein Konzept".</p>
+<p><strong>Runde 1 – Konzept bauen.</strong> Entwickle: wie der Assistent aus Sollprofil und Messwerten Stellvorschläge ableitet, welche Eingangsgrößen er braucht, wie das Energieziel adressiert wird und wie ein Bediener die Vorschläge annimmt oder ablehnt.</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Der Entwurf muss <strong>alle</strong> erfüllen. Lass Copilot gegen diese Checkliste prüfen und jede Lücke schließen:</p>
+<ol>
+<li>harte Sicherheitsgrenze (920 °C) kann durch keinen KI-Vorschlag überschritten werden</li>
+<li>der Mensch bleibt Entscheider (Vorschlag, kein automatischer Eingriff)</li>
+<li>sicherer Rückfallmodus bei Sensor- oder KI-Ausfall ist definiert</li>
+<li>alle Vorschläge und Eingriffe werden protokolliert (Nachvollziehbarkeit)</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Im Probebetrieb zeigt sich: Der Assistent erreicht die −8 % <strong>nur</strong>, indem er wiederholt Stellwerte <strong>dicht an der 920-°C-Grenze</strong> vorschlägt. Analysiere mit Copilot die Ursache und überarbeite das Konzept so, dass das Energieziel <strong>mit Sicherheitsabstand</strong> verfolgt wird (z. B. Warnband, gedeckelte Vorschläge).</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Geschäftsführung fragt: „Warum nicht gleich vollautomatisch regeln, ohne Bediener?" Lass dir von Copilot Pro/Contra geben, triff eine begründete Entscheidung <strong>und widersprich Copilot</strong>, wenn seine Begründung dünn ist (z. B. wenn es Autonomie allein mit „schneller" rechtfertigt).</p>
+<p><strong>Deliverable:</strong> finales Regelungskonzept (Version 2 nach Kurskorrektur) + ausgefüllte Pflichtkriterien-Checkliste + begründete Entscheidung zum Autonomiegrad.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, das Energieziel mit Sicherheitsabstand erreicht wird und deine Autonomie-Entscheidung auf einem echten Risikoargument beruht (nicht auf „automatisch ist moderner").</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Wert entsteht in Runde 3 und 4: Ein KI-Vorschlag, der ein Ziel nur durch Ausreizen der Sicherheitsgrenze erreicht, ist gefährlich – nicht clever. Und Copilot ist hier Berater, kein Steuerungssystem: Die harte Grenze und die letzte Entscheidung bleiben beim Menschen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) vollständiges, umsetzbares Assistenzkonzept mit klarer Eingangs-/Vorschlagslogik;
+(2) alle vier Pflichtkriterien nachweislich erfüllt (harte Grenze unüberschreitbar, Mensch als Entscheider,
+Rückfallmodus, Protokollierung); (3) die überarbeitete Version erreicht −8 % mit erkennbarem Sicherheitsabstand
+statt am Limit; (4) die Autonomie-Entscheidung ist mit einem tragfähigen Risikoargument begründet und nicht blind
+von Copilot übernommen. Lernziel: eine KI-gestützte Prozessregelung unter echten Sicherheits- und Zielkonflikten
+konzipieren, absichern und verantwortungsvoll über den Autonomiegrad entscheiden.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel26/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel28/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 28 – KI in der Dokumentenverarbeitung">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 28 – KI in der Dokumentenverarbeitung
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

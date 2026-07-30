@@ -1,0 +1,1502 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel33/">
+      
+      
+        <link rel="next" href="../kapitel35/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 34 – Explainable AI: Erklärbarkeit von KI - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-34-explainable-ai-erklarbarkeit-von-ki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 34 – Explainable AI: Erklärbarkeit von KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Herausforderungen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Ethik und soziale Verantwortung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Rechtliche Aspekte der KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel33/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Datenschutz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Explainable AI: Erklärbarkeit von KI
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Explainable AI: Erklärbarkeit von KI
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#341-das-blackbox-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.1 Das Blackbox-Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#342-warum-erklarbarkeit-wichtig-ist" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.2 Warum Erklärbarkeit wichtig ist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#343-nachvollziehbarkeit-vertrauen" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.3 Nachvollziehbarkeit ≠ Vertrauen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#344-zwei-arten-von-erklarbarkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.4 Zwei Arten von Erklärbarkeit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#345-wege-zu-mehr-erklarbarkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.5 Wege zu mehr Erklärbarkeit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#346-transparenz-bei-copilot-einfordern" class="md-nav__link">
+    <span class="md-ellipsis">
+      34.6 Transparenz bei Copilot einfordern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel35/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 35 – Herausforderungen im KI-Projektmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel36/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 36 – Energie- und Ressourcenverbrauch von KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-34-explainable-ai-erklarbarkeit-von-ki">Kapitel 34 – Explainable AI: Erklärbarkeit von KI<a class="headerlink" href="#kapitel-34-explainable-ai-erklarbarkeit-von-ki" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was das <strong>Blackbox-Problem</strong> ist und warum es entsteht</li>
+<li>Was <strong>Explainable AI (XAI)</strong> bedeutet und warum sie wichtig ist</li>
+<li>Der Unterschied zwischen <strong>Nachvollziehbarkeit</strong> und <strong>Vertrauen</strong></li>
+<li>Warum eine <strong>plausibel klingende</strong> Erklärung keine echte Erklärung sein muss</li>
+<li>Welche Wege es gibt, KI-Entscheidungen <strong>erklärbarer</strong> zu machen</li>
+<li>Wie du bei <strong>Copilot</strong> mehr Transparenz einforderst (Quellen, Begründung)</li>
+</ul>
+</div>
+<hr />
+<h2 id="341-das-blackbox-problem">34.1 Das Blackbox-Problem<a class="headerlink" href="#341-das-blackbox-problem" title="Permanent link">&para;</a></h2>
+<p>Moderne KI-Modelle – besonders tiefe neuronale Netze und LLMs – haben Millionen bis Milliarden interner Parameter. <strong>Warum</strong> genau ein Modell zu einer bestimmten Ausgabe kommt, lässt sich von außen kaum nachvollziehen. Das nennt man das <strong>Blackbox-Problem</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Eingabe]) --&gt; B([Blackbox: Millionen Parameter])
+    B --&gt; C([Ausgabe])
+    B -.-&gt;|Warum genau so?| D([kaum nachvollziehbar])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Warum das entsteht</p>
+<p>Bei klassischer Software kann man die Regel im Code nachlesen. Ein neuronales Netz hat <strong>keine lesbaren Regeln</strong> – sein „Wissen" steckt in unzähligen Zahlenwerten, die gemeinsam wirken. Es gibt keine einzelne Stelle, die man aufschlagen und lesen könnte. Das macht Erklärbarkeit technisch schwierig.</p>
+</div>
+<hr />
+<h2 id="342-warum-erklarbarkeit-wichtig-ist">34.2 Warum Erklärbarkeit wichtig ist<a class="headerlink" href="#342-warum-erklarbarkeit-wichtig-ist" title="Permanent link">&para;</a></h2>
+<p><strong>Explainable AI (XAI)</strong> umfasst Methoden, die KI-Entscheidungen <strong>nachvollziehbar</strong> machen. Das ist aus mehreren Gründen zentral:</p>
+<table>
+<thead>
+<tr>
+<th>Grund</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vertrauen</strong></td>
+<td>Menschen nutzen nur, was sie verstehen</td>
+</tr>
+<tr>
+<td><strong>Fehlersuche</strong></td>
+<td>Warum lag das Modell falsch?</td>
+</tr>
+<tr>
+<td><strong>Fairness</strong></td>
+<td>War die Entscheidung diskriminierend? (Kap. 31)</td>
+</tr>
+<tr>
+<td><strong>Recht</strong></td>
+<td>Betroffene haben teils ein Recht auf Erklärung (Kap. 32/33)</td>
+</tr>
+<tr>
+<td><strong>Verantwortung</strong></td>
+<td>Wer entscheidet, muss begründen können</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Besonders bei Hochrisiko-Anwendungen</p>
+<p>Bei einer abgelehnten Kreditanfrage oder einer aussortierten Bewerbung reicht „die KI hat entschieden" <strong>nicht</strong> – weder rechtlich noch ethisch. Betroffene müssen eine nachvollziehbare Begründung erhalten. Der EU AI Act verlangt für Hochrisiko-KI deshalb ausdrücklich <strong>Transparenz und Nachvollziehbarkeit</strong>.</p>
+</div>
+<hr />
+<h2 id="343-nachvollziehbarkeit-vertrauen">34.3 Nachvollziehbarkeit ≠ Vertrauen<a class="headerlink" href="#343-nachvollziehbarkeit-vertrauen" title="Permanent link">&para;</a></h2>
+<p>Ein wichtiger Unterschied: Eine <strong>flüssige Erklärung</strong> ist nicht automatisch eine <strong>korrekte</strong> Erklärung.</p>
+<div class="admonition warning">
+<p class="admonition-title">Die 'plausible Begründung'-Falle</p>
+<p>Fragst du Copilot „Warum hast du das so beantwortet?", liefert es eine <strong>plausibel klingende</strong> Begründung. Aber Achtung: Das Modell rekonstruiert diese Erklärung im Nachhinein – sie muss <strong>nicht</strong> der tatsächliche innere „Rechenweg" sein. Eine überzeugende Erklärung ist also kein Beweis für Richtigkeit. Vertrauen sollte auf <strong>Prüfung</strong> basieren, nicht auf der Eloquenz der Begründung.</p>
+</div>
+<p>Der Grund liegt in der Funktionsweise (Kap. 12, 15): Ein Sprachmodell sagt Wort für Wort das <strong>wahrscheinlichste nächste Wort</strong> voraus. Fragst du nach einer Begründung, erzeugt es einen <strong>plausiblen Begründungstext</strong> – wieder nach Wahrscheinlichkeit, nicht durch Introspektion in seine eigenen Berechnungen. Die Erklärung ist damit eine nachträgliche Geschichte, kein Protokoll.</p>
+<div class="admonition example">
+<p class="admonition-title">Ausgearbeiteter Copilot-Dialog: die Falle sichtbar gemacht</p>
+<p><strong>Prompt:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde eine kurze Rechenaufgabe, bei der du dich absichtlich verrechnest.
+Nenne das falsche Ergebnis mit einer selbstbewussten Begründung. Erkläre
+danach, warum die Begründung überzeugend klingt, aber trotzdem falsch ist.
+</code></pre></div></td></tr></table></div>
+<strong>Beispiel-Antwort von Copilot (gekürzt):</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Aufgabe: &quot;Ein Rabatt von 20 % auf 250 €.&quot;
+(Falsches) Ergebnis: &quot;Der Preis sinkt um 60 €, also auf 190 €.&quot;
+Begründung (klingt gut): &quot;20 % sind rund ein Fünftel, ich habe großzügig
+gerundet, daher 60 €.&quot;
+
+Warum das täuscht: Die Begründung wirkt souverän und benutzt Fachwörter
+wie &#39;ein Fünftel&#39;. Korrekt sind aber 20 % von 250 € = 50 € (Preis 200 €).
+Der flüssige, sichere Ton ist KEIN Beweis für Richtigkeit.
+</code></pre></div></td></tr></table></div></p>
+</div>
+<p>Genau das ist die Kernbotschaft: Der <strong>selbstbewusste Ton</strong> einer Erklärung sagt nichts über ihre Korrektheit. Deine Prüfung – hier eine simple Nachrechnung – ist unverzichtbar.</p>
+<hr />
+<h2 id="344-zwei-arten-von-erklarbarkeit">34.4 Zwei Arten von Erklärbarkeit<a class="headerlink" href="#344-zwei-arten-von-erklarbarkeit" title="Permanent link">&para;</a></h2>
+<p>Fachlich unterscheidet man, <strong>wann</strong> die Erklärbarkeit entsteht:</p>
+<table>
+<thead>
+<tr>
+<th>Ansatz</th>
+<th>Idee</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Intrinsisch</strong> (eingebaut)</td>
+<td>das Modell ist von sich aus verständlich</td>
+<td>Entscheidungsbaum, einfache Regeln</td>
+</tr>
+<tr>
+<td><strong>Post-hoc</strong> (nachträglich)</td>
+<td>eine Zusatzmethode erklärt eine Blackbox</td>
+<td>SHAP, LIME, Quellenangaben</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: lokale vs. globale Erklärung</p>
+<p>Man unterscheidet außerdem, <strong>wie viel</strong> erklärt wird. Eine <strong>lokale</strong> Erklärung betrifft einen <strong>Einzelfall</strong> („Warum wurde <em>dieser</em> Kredit abgelehnt?"). Eine <strong>globale</strong> Erklärung beschreibt das <strong>Verhalten des ganzen Modells</strong> („Welche Faktoren zählen generell am meisten?"). Für Betroffene ist meist die lokale Erklärung entscheidend, für Entwickler und Aufsicht die globale. Bei generativer KI wie Copilot sind beide nur eingeschränkt verfügbar – umso wichtiger ist der praktische Hebel aus dem nächsten Abschnitt: <strong>Quellen verlangen und selbst verifizieren</strong>.</p>
+</div>
+<hr />
+<h2 id="345-wege-zu-mehr-erklarbarkeit">34.5 Wege zu mehr Erklärbarkeit<a class="headerlink" href="#345-wege-zu-mehr-erklarbarkeit" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ansatz</th>
+<th>Idee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Einfachere Modelle</strong></td>
+<td>wo möglich erklärbare Verfahren (z. B. Entscheidungsbäume) statt Blackbox nutzen</td>
+</tr>
+<tr>
+<td><strong>Erklärmethoden (z. B. SHAP)</strong></td>
+<td>zeigen, welche Eingabemerkmale die Entscheidung beeinflusst haben</td>
+</tr>
+<tr>
+<td><strong>Quellenangaben</strong></td>
+<td>Antworten mit Belegen versehen (RAG, Kap. 5)</td>
+</tr>
+<tr>
+<td><strong>Human in the Loop</strong></td>
+<td>Mensch prüft und verantwortet (Kap. 32)</td>
+</tr>
+<tr>
+<td><strong>Dokumentation</strong></td>
+<td>nachhalten, wie ein System funktioniert und getestet wurde</td>
+</tr>
+</tbody>
+</table>
+<p>Bei generativer KI ist der praktikabelste Hebel oft, <strong>Quellen und Belege</strong> zu verlangen und die Aussagen <strong>selbst zu verifizieren</strong>.</p>
+<hr />
+<h2 id="346-transparenz-bei-copilot-einfordern">34.6 Transparenz bei Copilot einfordern<a class="headerlink" href="#346-transparenz-bei-copilot-einfordern" title="Permanent link">&para;</a></h2>
+<p>Du kannst Copilot aktiv zu mehr Nachvollziehbarkeit bringen:</p>
+<table>
+<thead>
+<tr>
+<th>Ziel</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quellen nennen</td>
+<td>„Nenne für jede Aussage die Quelle bzw. das Dokument."</td>
+</tr>
+<tr>
+<td>Annahmen offenlegen</td>
+<td>„Welche Annahmen hast du bei dieser Antwort getroffen?"</td>
+</tr>
+<tr>
+<td>Unsicherheit zeigen</td>
+<td>„Wie sicher bist du? Was könnte falsch sein?"</td>
+</tr>
+<tr>
+<td>Schritte zeigen</td>
+<td>„Erkläre deinen Gedankengang Schritt für Schritt."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Beantworte meine Frage und nenne anschließend: (1) welche Annahmen du getroffen
+hast, (2) wie sicher du dir bist, und (3) welche Angaben ich unbedingt selbst
+überprüfen sollte. Frage: [deine Frage]
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Merke</p>
+<p>Erklärbarkeit ist bei generativer KI (noch) begrenzt. Umso wichtiger ist deine <strong>prüfende Rolle</strong>: Quellen verlangen, Unsicherheiten sichtbar machen, kritische Aussagen selbst verifizieren. Transparenz ersetzt nicht die Kontrolle – sie erleichtert sie.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Das <strong>Blackbox-Problem</strong>: Bei komplexen Modellen ist das „Warum" von außen kaum nachvollziehbar.</li>
+<li><strong>Explainable AI (XAI)</strong> schafft Nachvollziehbarkeit – wichtig für Vertrauen, Fehlersuche, Fairness und Recht.</li>
+<li><strong>Nachvollziehbarkeit ≠ Vertrauen:</strong> eine plausible, selbstbewusst klingende Erklärung ist nicht automatisch korrekt.</li>
+<li>Erklärbarkeit kann <strong>intrinsisch</strong> (eingebaut) oder <strong>post-hoc</strong> (nachträglich), <strong>lokal</strong> (Einzelfall) oder <strong>global</strong> (Gesamtmodell) sein.</li>
+<li>Hebel: einfachere Modelle, Erklärmethoden, <strong>Quellenangaben</strong>, Human in the Loop, Doku.</li>
+<li>Bei <strong>Copilot</strong> aktiv Quellen, Annahmen und Unsicherheiten einfordern – und selbst verifizieren.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Eine KI-Empfehlung nachvollziehbar machen</summary>
+<p>Deine Abteilung hat von Copilot eine Empfehlung erhalten – aber niemand versteht, warum:</p>
+<blockquote>
+<p><strong>Empfehlung:</strong> „Lehnen Sie den Kreditantrag von Kundin M. ab."
+<strong>Bekannte Fakten:</strong> Einkommen 2.800 €/Monat, seit 6 Jahren fest angestellt, eine laufende Rate (250 €/Monat), keine Zahlungsausfälle, gewünschter Kredit 8.000 €.</p>
+</blockquote>
+<p>Bring die Empfehlung in Copilot zum Sprechen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ist eine KI-Empfehlung und die zugrunde liegenden Fakten:
+Empfehlung: Kreditantrag ablehnen. Fakten: Einkommen 2.800 €/Monat, 6 Jahre fest
+angestellt, eine laufende Rate 250 €/Monat, keine Zahlungsausfälle, Kreditwunsch 8.000 €.
+Erkläre in einfacher Sprache, welche Faktoren FÜR und welche GEGEN eine Ablehnung sprechen.
+Sage am Ende klar, ob die Ablehnung auf Basis dieser Fakten nachvollziehbar ist.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> Du kannst die Entscheidung in zwei, drei Sätzen jemandem erklären, der die Zahlen nicht kennt – und du erkennst, ob die Ablehnung überhaupt zu den Fakten passt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Bei Entscheidungen über Menschen (Kredit, Job) reicht „die KI hat das so entschieden" nicht. Erst wenn du die entscheidenden Faktoren benennen kannst, ist eine Empfehlung nachvollziehbar.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: eine verständliche Pro/Contra-Erklärung und ein klares Urteil zur Nachvollziehbarkeit. Stark
+ist die Antwort, wenn sie auffällt, dass die Fakten eher FÜR eine Bewilligung sprechen und die Ablehnung damit
+fragwürdig ist. Lernziel: verstehen, warum Nachvollziehbarkeit bei Entscheidungen über Menschen Pflicht ist.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Begründung anfordern und ihre Belastbarkeit prüfen</summary>
+<p>Du legst Copilot eine echte Team-Entscheidung vor:</p>
+<blockquote>
+<p><strong>Frage:</strong> Sollen wir den wöchentlichen Status-Call von 60 auf 30 Minuten kürzen?
+<strong>Kontext:</strong> 8-köpfiges Team, viele klagen über zu viele Meetings, zwei Projekte laufen kritisch.</p>
+</blockquote>
+<p>Hol dir zuerst Empfehlung samt Begründung:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Soll ein 8-köpfiges Team seinen wöchentlichen 60-Minuten-Status-Call auf 30 Minuten kürzen?
+Zwei Projekte laufen gerade kritisch. Gib eine klare Empfehlung und erkläre Schritt für Schritt,
+wie du dazu kommst, welche Annahmen du triffst und was dein größter Unsicherheitsfaktor ist.
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – <strong>prüfe, ob die Begründung trägt</strong>, indem du eine Annahme kippst:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Nimm an, meine wichtigste Annahme ist falsch: Die Meetings sind NICHT zu lang, sondern
+schlecht vorbereitet. Ändert das deine Empfehlung? Wenn ja, wie – wenn nein, warum nicht?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> Du erkennst, ob die Begründung auf echten Argumenten steht oder nur plausibel klingt – <strong>Fertig bist du erst, wenn</strong> du benennen kannst, welche eine Annahme die ganze Empfehlung trägt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein Sprachmodell liefert oft eine überzeugend klingende Begründung nach, die nicht dem echten Rechenweg entspricht. Der Belastbarkeits-Test: Kippt die Empfehlung, wenn du eine Kernannahme änderst?</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: eine begründete Empfehlung plus ein Stresstest, der zeigt, wie stark die Empfehlung an einer
+einzelnen Annahme hängt. Lernziel: „plausibel klingend" von „belastbar begründet" unterscheiden.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Erklärungen für drei Zielgruppen und ein Quellen-Check</summary>
+<p>In einer Klinik sortiert ein KI-System eingehende Patientenfälle nach Dringlichkeit vor. Ein Fall wurde als <strong>„nicht dringend"</strong> eingestuft, obwohl die Patientin starke Schmerzen angibt. Drei Gruppen wollen jetzt eine Erklärung – und jede braucht eine andere:</p>
+<ul>
+<li><strong>Patientin:</strong> will wissen, was das für sie heißt</li>
+<li><strong>Ärztin:</strong> will die medizinischen Faktoren nachvollziehen</li>
+<li><strong>Aufsicht/Datenschutz:</strong> will Prüfbarkeit und Verantwortlichkeit</li>
+</ul>
+<p>Erzeuge in Copilot in einem Auftrag drei zielgruppengerechte Erklärungen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ein KI-System hat einen Patientenfall mit starken Schmerzangaben als &quot;nicht dringend&quot; eingestuft.
+Schreibe DREI Erklärungen desselben Sachverhalts: (1) für die Patientin in Klartext, empathisch,
+ohne Fachjargon; (2) für die Ärztin mit den ausschlaggebenden Faktoren; (3) für die Aufsicht mit
+Fokus auf Prüfbarkeit, Protokollierung und Verantwortlichkeit. Je max. 4 Sätze.
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>prüfe die Faktoren-Erklärung kritisch</strong>, bevor du sie weitergibst:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Für jeden Faktor, den du der Ärztin genannt hast: Ist das ein echter medizinischer Grund oder
+könnte es ein Scheinzusammenhang sein (z. B. Alter, Uhrzeit, Postleitzahl)? Markiere Faktoren,
+die man NICHT zur Begründung heranziehen dürfte.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> drei passgenaue Erklärungen – und eine Faktorenliste, die keine unzulässigen Merkmale enthält.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du bei mindestens einem Faktor selbst entschieden hast, ob er als Begründung zulässig ist, statt Copilots Einschätzung ungeprüft zu übernehmen. (Vertiefung: Kapitel 31 – Ethik, Kapitel 33 – Datenschutz.)</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Verschiedene Zielgruppen brauchen verschiedene Erklärungen: Betroffene wollen Klartext, Fachleute wollen Faktoren, Prüfer wollen Nachverfolgbarkeit. Und nicht jeder statistisch wirksame Faktor darf eine Entscheidung über Menschen begründen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: drei klar unterschiedliche, zielgruppengerechte Erklärungen und eine kritische Prüfung der
+Begründungsfaktoren, bei der du mindestens einen fragwürdigen Faktor selbst bewertet hast. Lernziel: Erklärbarkeit
+adressatengerecht gestalten und unzulässige Begründungen erkennen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Erklärbarkeits-Konzept unter Auflagen</summary>
+<p><strong>Szenario:</strong> Du bist verantwortlich für ein KI-System, das bei einem Energieversorger automatisch entscheidet, welche Kund:innen bei Zahlungsverzug eine <strong>Mahnung mit Sperrandrohung</strong> erhalten. Betroffen sind monatlich rund 2.000 Haushalte. Die Aufsichtsbehörde verlangt bis zum Rollout ein <strong>Erklärbarkeits-Konzept</strong>. Dein hartes Ziel: <strong>Jede betroffene Person muss binnen 5 Minuten verstehen können, warum sie die Mahnung erhielt, und Widerspruch einlegen können.</strong> Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.</p>
+<p><strong>Runde 1 – Konzept bauen.</strong> Entwickle: (a) welche Erklärung jede Gruppe erhält (Kundschaft, Sachbearbeitung, Aufsicht) und in welcher Form (Klartext, Faktorenliste, Protokoll); (b) den konkreten Widerspruchsweg mit Recht auf menschliche Prüfung; (c) welche Faktoren die Entscheidung überhaupt begründen dürfen.</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Das Konzept muss <strong>alle</strong> erfüllen. Lass Copilot es gegen diese Checkliste prüfen und jede Lücke schließen:</p>
+<ol>
+<li>Erklärung für Betroffene ist in unter 5 Minuten verständlich, ohne Fachjargon</li>
+<li>keine unzulässigen Begründungsfaktoren (z. B. Wohngegend, Herkunft, Alter)</li>
+<li>klarer, niedrigschwelliger Widerspruchsweg mit menschlicher Prüfung</li>
+<li>lückenlose Protokollierung, damit die Aufsicht jede Einzelentscheidung nachvollziehen kann</li>
+</ol>
+<p><strong>Runde 3 – Komplikation.</strong> Kurz vor dem Rollout meldet die Technik: Das genaueste Modell ist eine <strong>Black Box</strong>, die ihre Faktoren nicht offenlegt; ein erklärbares Modell wäre <strong>spürbar ungenauer</strong>. Lass dir von Copilot beide Optionen mit Pro/Contra darstellen und überarbeite dein Konzept so, dass es die Erklärbarkeits-Pflicht erfüllt – auch wenn das Genauigkeit kostet.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Triff die Entscheidung „Black Box mit nachgelagerter Erklärung" vs. „erklärbares Modell" begründet – und <strong>widersprich Copilot</strong>, wenn es die Genauigkeit über die Betroffenenrechte stellt, ohne das sauber zu begründen.</p>
+<p><strong>Deliverable:</strong> Erklärbarkeits-Konzept (Version 2 nach Komplikation) + ausgefüllte Pflicht-Checkliste + begründete Modell-Entscheidung.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind und deine Modell-Entscheidung die Betroffenenrechte nachweisbar über das letzte Prozent Genauigkeit stellt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Lass Copilot nicht nur ein Konzept schreiben, sondern es gegen deine Kriterien prüfen und an der Genauigkeits-vs-Erklärbarkeits-Komplikation neu denken. Bei Hochrisiko-KI ist Nachvollziehbarkeit keine Kür, sondern Pflicht.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) zielgruppengerechte Erklärungen und konkreter Widerspruchsweg; (2) alle vier
+Pflichtkriterien nachweislich erfüllt, insbesondere keine unzulässigen Faktoren; (3) das überarbeitete Konzept
+löst die Black-Box-Komplikation zugunsten der Erklärbarkeit; (4) die Modell-Entscheidung ist begründet und stellt
+Betroffenenrechte über minimale Genauigkeitsgewinne, statt Copilot blind zu folgen. Lernziel: Nachvollziehbarkeit
+und Betroffenenrechte unter realen Zielkonflikten konkret verankern.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel33/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 33 – Datenschutz">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 33 – Datenschutz
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel35/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 35 – Herausforderungen im KI-Projektmanagement">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 35 – Herausforderungen im KI-Projektmanagement
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

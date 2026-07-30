@@ -1,0 +1,1507 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel37/">
+      
+      
+        <link rel="next" href="../kapitel39/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 38 – Digitale KI-Geschäftsmodelle - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-38-digitale-ki-geschaftsmodelle" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 38 – Digitale KI-Geschäftsmodelle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Block 5 · Erfolgsfaktoren
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel37/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 37 – Change Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 38 – Digitale KI-Geschäftsmodelle
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 38 – Digitale KI-Geschäftsmodelle
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#381-von-der-effizienz-zum-neuen-geschaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      38.1 Von der Effizienz zum neuen Geschäft
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#382-muster-ki-basierter-geschaftsmodelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      38.2 Muster KI-basierter Geschäftsmodelle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="38.2 Muster KI-basierter Geschäftsmodelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erlosmodelle-womit-genau-verdient-man-geld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erlösmodelle: Womit genau verdient man Geld?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#383-das-business-model-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      38.3 Das Business Model Canvas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#384-daten-als-wettbewerbsvorteil" class="md-nav__link">
+    <span class="md-ellipsis">
+      38.4 Daten als Wettbewerbsvorteil
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#385-geschaftsmodelle-mit-copilot-entwickeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      38.5 Geschäftsmodelle mit Copilot entwickeln
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#386-datenschwungrad-und-burggraben" class="md-nav__link">
+    <span class="md-ellipsis">
+      38.6 Datenschwungrad und Burggraben
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel39/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 39 – KI-Strategie und strategisches KI-Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel40/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 40 – Prompt Engineering als Schlüsselkompetenz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-38-digitale-ki-geschaftsmodelle">Kapitel 38 – Digitale KI-Geschäftsmodelle<a class="headerlink" href="#kapitel-38-digitale-ki-geschaftsmodelle" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie KI nicht nur Prozesse verbessert, sondern <strong>neue Geschäftsmodelle</strong> ermöglicht</li>
+<li>Die zentralen <strong>Muster</strong> KI-basierter Geschäftsmodelle</li>
+<li>Was ein <strong>Business Model Canvas</strong> ist und wie KI es verändert</li>
+<li>Die Rolle von <strong>Daten als Wettbewerbsvorteil</strong></li>
+<li>Die wichtigsten <strong>Erlösmodelle</strong> und wie ein <strong>Burggraben (Moat)</strong> entsteht</li>
+<li>Wie du mit <strong>Copilot</strong> Geschäftsmodell-Ideen entwickelst und schärfst</li>
+</ul>
+</div>
+<hr />
+<h2 id="381-von-der-effizienz-zum-neuen-geschaft">38.1 Von der Effizienz zum neuen Geschäft<a class="headerlink" href="#381-von-der-effizienz-zum-neuen-geschaft" title="Permanent link">&para;</a></h2>
+<p>Die meisten Unternehmen nutzen KI zunächst, um <strong>bestehende Prozesse</strong> zu verbessern (Kap. 3, 21). Der nächste Schritt ist größer: KI ermöglicht <strong>ganz neue Angebote und Erlösquellen</strong> – also <strong>Geschäftsmodellinnovation</strong> (Kap. 6).</p>
+<pre class="mermaid"><code>flowchart LR
+    A([KI verbessert Prozesse]) --&gt; B([KI verbessert Produkte])
+    B --&gt; C([KI ermöglicht neue Geschäftsmodelle])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Der Unterschied</p>
+<p>„Wir bearbeiten Angebote schneller" ist Effizienz. „Wir verkaufen unseren Kunden einen KI-gestützten <strong>Vorhersage-Service</strong> als monatliches Abo" ist ein <strong>neues Geschäftsmodell</strong>. Letzteres verändert, <strong>womit</strong> man Geld verdient – und ist oft schwerer kopierbar.</p>
+</div>
+<hr />
+<h2 id="382-muster-ki-basierter-geschaftsmodelle">38.2 Muster KI-basierter Geschäftsmodelle<a class="headerlink" href="#382-muster-ki-basierter-geschaftsmodelle" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Muster</th>
+<th>Idee</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KI-as-a-Service</strong></td>
+<td>KI-Funktion als Abo verkaufen</td>
+<td>Vorhersage-/Analyse-Service</td>
+</tr>
+<tr>
+<td><strong>Personalisierung</strong></td>
+<td>individuelle Angebote in Echtzeit</td>
+<td>Empfehlungen, dynamische Preise</td>
+</tr>
+<tr>
+<td><strong>Ergebnis statt Produkt</strong></td>
+<td>Kunde zahlt für Resultat</td>
+<td>„Betriebszeit garantiert" (Predictive Maintenance, Kap. 26)</td>
+</tr>
+<tr>
+<td><strong>Plattform/Daten</strong></td>
+<td>Vermittlung + Daten als Kern</td>
+<td>Marktplätze mit KI-Matching</td>
+</tr>
+<tr>
+<td><strong>Automatisierter Service</strong></td>
+<td>24/7 ohne Personal skalieren</td>
+<td>KI-Beratung/-Support</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Vom Produkt zum Ergebnis (Pay-per-Outcome)</p>
+<p>Ein Maschinenbauer verkauft nicht mehr nur die Maschine, sondern <strong>garantierte Verfügbarkeit</strong> („99 % Betriebszeit") – möglich durch Predictive Maintenance. Der Kunde zahlt für das <strong>Ergebnis</strong>, nicht das Produkt. Das bindet Kunden enger und schafft laufende Einnahmen. Solche Modelle sind ohne KI kaum denkbar.</p>
+</div>
+<h3 id="erlosmodelle-womit-genau-verdient-man-geld">Erlösmodelle: Womit genau verdient man Geld?<a class="headerlink" href="#erlosmodelle-womit-genau-verdient-man-geld" title="Permanent link">&para;</a></h3>
+<p>Ein Geschäftsmodell braucht ein <strong>Erlösmodell</strong> – die Antwort auf „Wie fließt das Geld?". KI-Angebote nutzen typischerweise diese Muster:</p>
+<table>
+<thead>
+<tr>
+<th>Erlösmodell</th>
+<th>So wird abgerechnet</th>
+<th>Passt gut zu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Abonnement (Subscription)</strong></td>
+<td>feste Gebühr pro Monat/Nutzer</td>
+<td>Copilot, Analyse-Services</td>
+</tr>
+<tr>
+<td><strong>Pay-per-Use</strong></td>
+<td>pro Anfrage/Verbrauch</td>
+<td>schwankende Nutzung, API-Angebote</td>
+</tr>
+<tr>
+<td><strong>Pay-per-Outcome</strong></td>
+<td>pro erreichtem Ergebnis</td>
+<td>garantierte Verfügbarkeit, Vermittlung</td>
+</tr>
+<tr>
+<td><strong>Freemium</strong></td>
+<td>Basis gratis, Premium kostet</td>
+<td>breite Nutzergewinnung</td>
+</tr>
+<tr>
+<td><strong>Datenveredelung</strong></td>
+<td>Verkauf aggregierter Einsichten</td>
+<td>Branchen-Benchmarks (rechtlich sauber!)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Fixkosten vorn, geringe Grenzkosten</p>
+<p>KI-Angebote haben oft ein besonderes Kostenprofil: Die <strong>Entwicklung und das Training</strong> verschlingen viel Geld vorab (Fixkosten), aber jeder weitere Kunde verursacht vergleichsweise <strong>geringe zusätzliche Kosten</strong> (Grenzkosten – vor allem Rechenzeit, Kapitel 36). Deshalb skalieren digitale KI-Modelle stark: Ab einem bestimmten Punkt wird fast jeder neue Kunde profitabel. Genau das macht <strong>Abo- und Plattformmodelle</strong> so attraktiv – und erklärt, warum Anbieter früh in Wachstum investieren, um diese Schwelle zu erreichen.</p>
+</div>
+<hr />
+<h2 id="383-das-business-model-canvas">38.3 Das Business Model Canvas<a class="headerlink" href="#383-das-business-model-canvas" title="Permanent link">&para;</a></h2>
+<p>Das <strong>Business Model Canvas</strong> ist ein einfaches Werkzeug, um ein Geschäftsmodell auf einer Seite darzustellen. KI berührt fast jeden seiner Bausteine:</p>
+<table>
+<thead>
+<tr>
+<th>Baustein</th>
+<th>KI-Wirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wertangebot</td>
+<td>KI-gestützter Nutzen (schneller, personalisiert)</td>
+</tr>
+<tr>
+<td>Kundenbeziehung</td>
+<td>automatisiert, 24/7</td>
+</tr>
+<tr>
+<td>Kanäle</td>
+<td>KI-Empfehlungen, Chatbots</td>
+</tr>
+<tr>
+<td>Schlüsselressourcen</td>
+<td><strong>Daten</strong> und Modelle</td>
+</tr>
+<tr>
+<td>Schlüsselaktivitäten</td>
+<td>Datenanalyse, Modellpflege</td>
+</tr>
+<tr>
+<td>Kostenstruktur</td>
+<td>Rechenkosten (Kap. 36), Datenbeschaffung</td>
+</tr>
+<tr>
+<td>Einnahmequellen</td>
+<td>Abos, Pay-per-Use, Ergebnis-Preise</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="384-daten-als-wettbewerbsvorteil">38.4 Daten als Wettbewerbsvorteil<a class="headerlink" href="#384-daten-als-wettbewerbsvorteil" title="Permanent link">&para;</a></h2>
+<p>Bei KI-Geschäftsmodellen sind <strong>Daten</strong> oft die wichtigste Ressource – und ein schwer kopierbarer Vorteil.</p>
+<div class="admonition info">
+<p class="admonition-title">Der Datenkreislauf (Datennetzwerkeffekt)</p>
+<p>Ein gutes KI-Angebot zieht mehr Nutzer an → mehr Nutzer erzeugen mehr Daten → mehr Daten verbessern die KI → das bessere Angebot zieht noch mehr Nutzer an. Dieser sich selbst verstärkende Kreislauf ist der Grund, warum datenstarke Anbieter ihren Vorsprung ausbauen. Wer früh eigene, einzigartige Daten sammelt, baut einen echten Burggraben.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Aber: rechtlich und ethisch sauber</p>
+<p>Daten als Vorteil zu nutzen, entbindet nicht von <strong>Datenschutz, Zweckbindung und Fairness</strong> (Block 4). Ein Geschäftsmodell, das auf zweifelhaft erhobenen Daten beruht, ist ein Risiko – rechtlich und für die Reputation.</p>
+</div>
+<hr />
+<h2 id="385-geschaftsmodelle-mit-copilot-entwickeln">38.5 Geschäftsmodelle mit Copilot entwickeln<a class="headerlink" href="#385-geschaftsmodelle-mit-copilot-entwickeln" title="Permanent link">&para;</a></h2>
+<p>Copilot ist ein guter <strong>Ideengeber und Sparringspartner</strong> für Geschäftsmodell-Arbeit:</p>
+<p><strong>Beispiel-Prompts:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Unser Unternehmen [Kurzbeschreibung] besitzt Daten über [Datenart]. Entwickle
+5 Ideen für KI-basierte Geschäftsmodelle, ordne sie nach Umsetzbarkeit und
+nenne je das zentrale Wertangebot und die größte Herausforderung.
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Fülle für folgende Geschäftsidee ein Business Model Canvas aus: [Idee].
+Markiere die zwei Bausteine, die über Erfolg oder Misserfolg entscheiden.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Idee ist billig, Umsetzung entscheidet</p>
+<p>Copilot liefert schnell viele Geschäftsmodell-Ideen. Der Wert entsteht bei der <strong>kritischen Prüfung</strong>: Gibt es echten Kundenbedarf? Haben wir die Daten? Ist es rechtlich sauber und wirtschaftlich tragfähig? Nutze Copilot für die Breite (viele Ideen) und dein Urteil für die Tiefe (die richtige auswählen).</p>
+</div>
+<hr />
+<h2 id="386-datenschwungrad-und-burggraben">38.6 Datenschwungrad und Burggraben<a class="headerlink" href="#386-datenschwungrad-und-burggraben" title="Permanent link">&para;</a></h2>
+<p>In Abschnitt 38.4 haben wir den Datennetzwerkeffekt kennengelernt. Sein Motor ist das <strong>Datenschwungrad (Data Flywheel)</strong>: ein sich selbst verstärkender Kreislauf, der mit jeder Runde schwerer einzuholen ist.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([mehr Nutzer]) --&gt; B([mehr Daten])
+    B --&gt; C([bessere KI])
+    C --&gt; D([besseres Angebot])
+    D --&gt; A</code></pre>
+<p>Läuft dieses Schwungrad erst einmal, entsteht ein <strong>Burggraben (englisch: Moat)</strong> – ein dauerhafter Vorsprung, den Wettbewerber nur schwer überwinden. Die wichtigsten Burggräben bei KI-Geschäftsmodellen:</p>
+<table>
+<thead>
+<tr>
+<th>Burggraben</th>
+<th>Warum er schützt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Einzigartige Daten</strong></td>
+<td>Wettbewerber haben diese Daten schlicht nicht</td>
+</tr>
+<tr>
+<td><strong>Netzwerkeffekt</strong></td>
+<td>mehr Nutzer machen das Angebot für alle besser</td>
+</tr>
+<tr>
+<td><strong>Wechselkosten</strong></td>
+<td>integrierte Lösungen zu tauschen ist teuer/aufwendig</td>
+</tr>
+<tr>
+<td><strong>Lernvorsprung</strong></td>
+<td>frühe Erfahrung + gepflegte Modelle sind schwer kopierbar</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Copilot als Sparringspartner für den Burggraben</p>
+<p>Prompt:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein fiktives KI-Startup, das Wartungsdaten von Aufzügen auswertet.
+Beschreibe, wie ein Datenschwungrad entsteht und welchen Burggraben es
+aufbaut. Nenne außerdem eine realistische Gefahr für diesen Vorsprung.
+</code></pre></div></td></tr></table></div>
+Beispiel-Antwort (gekürzt):
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Schwungrad: Mehr angebundene Aufzüge -&gt; mehr Sensordaten -&gt; genauere
+Ausfallvorhersagen -&gt; Kunden sparen Kosten -&gt; weitere Kunden schließen an.
+Burggraben: einzigartige, über Jahre gesammelte Wartungsdaten, die
+Wettbewerber nicht besitzen; hohe Wechselkosten durch tiefe Integration.
+Gefahr: Ein Aufzughersteller mit direktem Zugang zu allen eigenen Anlagen
+könnte einen noch größeren, exklusiven Datenpool aufbauen.
+</code></pre></div></td></tr></table></div></p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI ermöglicht über Effizienz hinaus <strong>neue Geschäftsmodelle</strong> – verändert also, <strong>womit</strong> man Geld verdient.</li>
+<li>Muster: <strong>KI-as-a-Service, Personalisierung, Ergebnis statt Produkt, Plattformen, automatisierter Service</strong>.</li>
+<li>Das <strong>Business Model Canvas</strong> hilft, KI-Wirkung auf alle Bausteine zu durchdenken.</li>
+<li><strong>Daten</strong> sind oft der zentrale, schwer kopierbare Wettbewerbsvorteil (Datennetzwerkeffekt) – aber rechtlich sauber halten.</li>
+<li><strong>Erlösmodelle</strong> (Abo, Pay-per-Use, Pay-per-Outcome, Freemium) klären, <strong>womit</strong> konkret Geld fließt; geringe Grenzkosten begünstigen Skalierung.</li>
+<li>Ein laufendes <strong>Datenschwungrad</strong> baut einen <strong>Burggraben</strong> (Moat) auf – dauerhaften Vorsprung durch Daten, Netzwerkeffekte und Wechselkosten.</li>
+<li><strong>Copilot</strong> liefert Ideen; die <strong>kritische Auswahl</strong> bleibt beim Menschen.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Aus einem Angebot drei KI-Erlösmodelle machen</summary>
+<p>Ein kleiner Anbieter hat ein bestehendes Angebot:</p>
+<blockquote>
+<p><strong>Ausgangslage:</strong> Eine Firma verkauft Software zur Pflanzenpflege für Hobbygärtner (einmaliger Kauf, 40 €). Sie besitzt außerdem eine große Sammlung von Fotos kranker und gesunder Pflanzen mit Diagnosen.</p>
+</blockquote>
+<p>Lass Copilot KI-basierte Wertangebote entwickeln:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ein Anbieter verkauft eine Pflanzenpflege-Software (Einmalkauf 40 €) und besitzt eine große
+Sammlung von Pflanzenfotos mit Krankheitsdiagnosen. Entwickle 3 verschiedene KI-basierte
+Erlösmodelle aus diesem Bestand (z. B. KI-Feature im Produkt, KI-as-a-Service, Datenveredelung).
+Je Modell: das Wertangebot in einem Satz und wie damit Geld verdient wird.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> Du hast drei klar unterscheidbare KI-Erlösmodelle und kannst zu jedem sagen, für wen es welchen Wert schafft.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>KI kann ein bestehendes Produkt verbessern ODER völlig neue Angebote ermöglichen. Ein vorhandener Datenschatz (hier: Fotos mit Diagnosen) ist oft der Schlüssel zum neuen Erlösmodell.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: drei unterscheidbare KI-Erlösmodelle mit klarem Wertangebot. Stark ist die Antwort, wenn sie
+den Datenschatz für ein neues Angebot (z. B. Diagnose-Service) nutzt, nicht nur das Produkt „mit KI" aufhübscht.
+Lernziel: die Bandbreite KI-basierter Wertschöpfung überblicken.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Mini-Canvas für eine KI-Idee – und der Nutzen-Härtetest</summary>
+<p>Diese KI-Idee liegt auf dem Tisch:</p>
+<blockquote>
+<p><strong>„TerminKlar":</strong> Ein KI-Assistent für kleine Handwerksbetriebe, der Kundenanfragen per Telefon und Mail automatisch in Terminvorschläge umwandelt und den Kalender füllt. Preis: 29 €/Monat.</p>
+</blockquote>
+<p>Fülle in Copilot ein Mini-Geschäftsmodell-Canvas:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Fülle für die Idee &quot;TerminKlar&quot; (KI-Terminassistent für Handwerksbetriebe, 29 €/Monat) die
+Kernfelder eines Geschäftsmodells als Tabelle aus: Kundennutzen, Zielkunde, Erlösmodell,
+Schlüsselressourcen, größte Kostenblöcke.
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – <strong>den Kundennutzen einem Härtetest unterziehen</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Prüfe den Kundennutzen kritisch: Ist das für einen Handwerksbetrieb ein &quot;must-have&quot; oder nur
+ein &quot;nice-to-have&quot;? Rechne grob vor, ob 29 €/Monat sich für den Kunden lohnen, und nenne die
+eine Bedingung, unter der er NICHT zahlen würde.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> ein stimmiges Canvas – und eine ehrliche Einschätzung, ob der Kundennutzen das Erlösmodell wirklich trägt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der wichtigste Block ist der Kundennutzen: Ohne echtes Problem, das gelöst wird, trägt kein Erlösmodell. „Nice to have" verkauft sich selten für einen monatlichen Preis.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: ein ausgefülltes, stimmiges Mini-Canvas und ein ehrlicher Nutzen-Härtetest, der must-have von
+nice-to-have unterscheidet. Lernziel: eine KI-Idee als Geschäftsmodell durchdenken und den Nutzen kritisch prüfen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Datenschwungrad und Burggraben kritisch prüfen</summary>
+<p>Ein Start-up pitcht dir dieses datengetriebene Modell:</p>
+<blockquote>
+<p><strong>„RepairIQ":</strong> Eine App, mit der Hobbyschrauber Autoreparaturen dokumentieren. Bei jeder Reparatur sammelt RepairIQ Daten (Automodell, Symptom, Lösung, Erfolg). Je mehr Nutzer, desto besser die KI-Reparaturvorschläge. Geplant: die aggregierten Daten später an Werkstätten und Hersteller verkaufen.</p>
+</blockquote>
+<p>Analysiere in Copilot – erst den Schwungrad-Effekt, dann den Schutz:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre für das Modell &quot;RepairIQ&quot; (App dokumentiert Autoreparaturen, sammelt Symptom-Lösungs-
+Daten) den Datenschwungrad-Effekt: Wie führen mehr Nutzer zu besseren Daten, besseren Vorschlägen
+und noch mehr Nutzern? Erkläre danach, was dieses Modell vor Nachahmern schützt (Burggraben).
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>den Wettbewerbsvorteil und die Risiken hinterfragen</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Prüfe kritisch: Ist der Datenvorsprung wirklich dauerhaft, oder könnte ein großer Anbieter das
+in 12 Monaten aufholen? Nenne außerdem die 2 größten Risiken (besonders Datenschutz beim späteren
+Verkauf der Nutzerdaten) und wie ernst sie den Plan gefährden.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine ehrliche Bewertung, ob der Burggraben echt und dauerhaft ist – nicht nur eine schöne Wachstumsgeschichte.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du selbst entschieden hast, ob du in dieses Modell investieren würdest – mit einem Argument, das über „das Schwungrad klingt gut" hinausgeht (etwa dem Datenschutz-Risiko beim Datenverkauf).</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der stärkste Schutz ist ein sich selbst verstärkender Datenvorteil, den Wettbewerber nicht einfach kopieren können. Aber ein Datenschwungrad ist wertlos, wenn der geplante Datenverkauf am Datenschutz scheitert (Kapitel 33).</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: ein erklärter Schwungrad-Effekt, eine kritische Einschätzung der Dauerhaftigkeit des
+Burggrabens und eine ehrliche Risikobewertung (v. a. Datenschutz), mit eigener Investitionsentscheidung. Lernziel:
+datengetriebene Modelle und ihre Verteidigbarkeit realistisch beurteilen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> KI-Geschäftsmodell bis zum Investoren-Pitch verteidigen</summary>
+<p><strong>Szenario:</strong> Du entwickelst ein KI-Angebot für ein reales Problem:</p>
+<blockquote>
+<p><strong>Problem:</strong> Kleine Steuerkanzleien (2–10 Personen) ertrinken in eingehenden Belegen ihrer Mandanten – unsortiert, in schlechter Qualität, per Foto und E-Mail. Die Vorerfassung frisst teure Fachkraft-Stunden.</p>
+</blockquote>
+<p>Dein hartes Ziel: ein tragfähiges Geschäftsmodell <strong>plus</strong> einen Pitch, der drei kritische Investorenfragen übersteht. Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.</p>
+<p><strong>Runde 1 – Geschäftsmodell bauen.</strong> Entwickle: Nutzenversprechen, Zielkunde, Erlösmodell (inkl. Preislogik), Schlüsselressourcen und Wettbewerbsvorteil – plus einen 60-Sekunden-Pitch für Investoren.</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Das Modell muss <strong>alle</strong> erfüllen. Lass Copilot es gegen diese Checkliste prüfen und jede Lücke schließen:</p>
+<ol>
+<li>das Nutzenversprechen löst ein „must-have"-Problem, nicht ein „nice-to-have"</li>
+<li>das Erlösmodell rechnet sich für den Kunden (grobe Zahl: Ersparnis &gt; Preis)</li>
+<li>der Wettbewerbsvorteil ist mehr als „wir sind schneller/günstiger"</li>
+<li>Datenschutz/Vertraulichkeit sind adressiert (Steuerdaten sind hochsensibel, siehe Kapitel 33)</li>
+</ol>
+<p><strong>Runde 3 – Komplikation.</strong> Beim Testkunden zeigt sich: Die KI erkennt Belege gut, aber die Kanzleien <strong>vertrauen dem Ergebnis nicht</strong> und prüfen jeden Beleg doch von Hand nach – die Zeitersparnis verpufft. Lass Copilot Ursachen und Auswege analysieren und überarbeite das Angebot so, dass es echtes Vertrauen und damit echte Ersparnis erzeugt (z. B. Nachvollziehbarkeit, Haftung, schrittweise Autonomie).</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Ein Investor drängt auf ein <strong>schnelles, aggressives Wachstum</strong> mit vielen Kanzleien gleichzeitig; das gefährdet aber die Datensicherheit und die Qualität. Lass dir Pro/Contra geben, entscheide zwischen „schnell skalieren" und „langsam, aber vertrauenswürdig" – und <strong>widersprich Copilot oder dem Investor</strong>, wenn Wachstum über Datensicherheit gestellt wird, ohne das zu begründen.</p>
+<p><strong>Deliverable:</strong> Geschäftsmodell-Übersicht (Version 2 nach Komplikation) + 60-Sekunden-Pitch + ausgefüllte Pflicht-Checkliste + beantwortete 3 härteste Investorenfragen + begründete Wachstumsentscheidung.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, das überarbeitete Angebot das Vertrauensproblem löst und deine Wachstumsentscheidung die Datensicherheit nicht dem Tempo opfert.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein guter Pitch beantwortet in Sekunden: welches Problem, für wen, warum ihr, wie verdient ihr Geld? Der Wert entsteht in Runde 3 und 4: Ein Angebot spart nur dann Zeit, wenn der Kunde dem Ergebnis vertraut – und Wachstum um jeden Preis kann bei sensiblen Daten alles zerstören.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) klares Nutzenversprechen und tragfähiges Erlösmodell; (2) alle vier Pflichtkriterien
+erfüllt, inkl. Datenschutz; (3) das überarbeitete Angebot adressiert das Vertrauensproblem und stellt die echte
+Ersparnis wieder her; (4) souveräner Umgang mit den harten Investorenfragen und eine Wachstumsentscheidung, die
+Datensicherheit nicht dem Tempo opfert, statt Copilot/Investor blind zu folgen. Lernziel: eine KI-Idee geschäftlich
+denken, gegen echte Einwände verteidigen und verantwortungsvoll skalieren.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel37/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 37 – Change Management">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 37 – Change Management
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel39/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 39 – KI-Strategie und strategisches KI-Management">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 39 – KI-Strategie und strategisches KI-Management
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

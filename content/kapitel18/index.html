@@ -1,0 +1,1663 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel17/">
+      
+      
+        <link rel="next" href="../kapitel19/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-18-chatbots-und-prompt-engineering-fur-die-dialogfuhrung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · Use Cases & Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#181-wie-chatbots-funktionieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.1 Wie Chatbots funktionieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182-was-einen-guten-dialog-ausmacht" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.2 Was einen guten Dialog ausmacht
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#183-der-system-prompt-konsistentes-verhalten" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.3 Der System-Prompt: konsistentes Verhalten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184-mehrstufige-gesprache-fuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.4 Mehrstufige Gespräche führen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#185-grenzen-von-chatbots-im-kundenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.5 Grenzen von Chatbots im Kundenservice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#186-was-ein-chatbot-wirklich-sieht" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.6 Was ein Chatbot wirklich „sieht"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#187-dialogmuster-fur-den-alltag" class="md-nav__link">
+    <span class="md-ellipsis">
+      18.7 Dialogmuster für den Alltag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Medienerstellung mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Data-Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Praxis: KI in der Konstruktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – KI in der Produktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Praxis: KI im Qualitätsmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Low-Code-Programmierung und Citizen Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-18-chatbots-und-prompt-engineering-fur-die-dialogfuhrung">Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung<a class="headerlink" href="#kapitel-18-chatbots-und-prompt-engineering-fur-die-dialogfuhrung" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie <strong>Chatbots</strong> funktionieren und wie sich regelbasierte von KI-Chatbots unterscheiden</li>
+<li>Was einen <strong>guten Dialog</strong> ausmacht und wie du Copilot als Gesprächspartner steuerst</li>
+<li>Die Rolle des <strong>System-Prompts / der Rolle</strong> für konsistentes Verhalten</li>
+<li>Wie du <strong>mehrstufige Gespräche</strong> führst und Kontext aufbaust</li>
+<li>Was ein Chatbot wirklich „sieht": <strong>Kontextfenster</strong> statt echtem Gedächtnis</li>
+<li>Wo Chatbots im Kundenservice <strong>Grenzen</strong> haben</li>
+</ul>
+</div>
+<hr />
+<h2 id="181-wie-chatbots-funktionieren">18.1 Wie Chatbots funktionieren<a class="headerlink" href="#181-wie-chatbots-funktionieren" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>Chatbot</strong> ist ein Programm, das in natürlicher Sprache mit Menschen kommuniziert. Es gibt zwei grundlegend verschiedene Generationen:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Regelbasierter Chatbot</th>
+<th>KI-Chatbot (LLM)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grundlage</td>
+<td>feste Skripte, Schlüsselwörter</td>
+<td>Sprachmodell (Kap. 15)</td>
+</tr>
+<tr>
+<td>Flexibilität</td>
+<td>gering – nur vorgesehene Wege</td>
+<td>hoch – versteht freie Formulierungen</td>
+</tr>
+<tr>
+<td>Pflege</td>
+<td>jede Antwort von Hand</td>
+<td>lernt aus Sprache, per Prompt steuerbar</td>
+</tr>
+<tr>
+<td>Fehlerbild</td>
+<td>„Das habe ich nicht verstanden"</td>
+<td>flüssig, aber ggf. falsch</td>
+</tr>
+<tr>
+<td>Beispiel</td>
+<td>Telefon-Menü, FAQ-Bot</td>
+<td>Copilot, ChatGPT</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Der Sprung</p>
+<p>Regelbasierte Bots scheitern, sobald der Nutzer „vom Skript abweicht". KI-Chatbots verstehen auch ungewöhnliche Formulierungen – dafür können sie <strong>überzeugend falsch</strong> liegen. Der Fehler verlagert sich von „versteht nicht" zu „versteht, aber erfindet". Das verändert, worauf man achten muss.</p>
+</div>
+<hr />
+<h2 id="182-was-einen-guten-dialog-ausmacht">18.2 Was einen guten Dialog ausmacht<a class="headerlink" href="#182-was-einen-guten-dialog-ausmacht" title="Permanent link">&para;</a></h2>
+<p>Ein Gespräch mit Copilot ist kein einmaliger Befehl, sondern ein <strong>Dialog</strong>, den du aktiv führst:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Rolle &amp; Ziel setzen]) --&gt; B([Frage/Auftrag]) --&gt; C([Antwort])
+    C --&gt; D([nachschärfen / vertiefen]) --&gt; C
+    D --&gt; E([Ergebnis übernehmen &amp; prüfen])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Prinzip</th>
+<th>Umsetzung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rolle klären</td>
+<td>„Du bist Support-Mitarbeiter:in für Software X."</td>
+</tr>
+<tr>
+<td>schrittweise vertiefen</td>
+<td>erst grob, dann Details nachfragen</td>
+</tr>
+<tr>
+<td>Kontext aufbauen</td>
+<td>Copilot merkt sich den bisherigen Verlauf</td>
+</tr>
+<tr>
+<td>korrigieren</td>
+<td>„Das war zu technisch, formuliere es einfacher."</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="183-der-system-prompt-konsistentes-verhalten">18.3 Der System-Prompt: konsistentes Verhalten<a class="headerlink" href="#183-der-system-prompt-konsistentes-verhalten" title="Permanent link">&para;</a></h2>
+<p>Damit ein Chatbot <strong>durchgängig</strong> eine bestimmte Rolle und Regeln einhält, gibt man ihm zu Beginn eine feste Anweisung – den <strong>System-Prompt</strong>. Er legt Persönlichkeit, Tonfall und Grenzen fest.</p>
+<div class="admonition example">
+<p class="admonition-title">Beispiel eines System-Prompts</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist der Kundenservice-Assistent der Firma Mustertech. Antworte immer
+freundlich, in der Sie-Form und in maximal 5 Sätzen. Wenn du eine Antwort
+nicht sicher weißt, sage das ehrlich und verweise an support@mustertech.de.
+Gib niemals Rabatte oder Zusagen zu Lieferterminen.
+</code></pre></div></td></tr></table></div>
+Solche Leitplanken verhindern, dass der Bot Dinge zusagt, die er nicht darf – ein häufiges Praxisproblem. In <strong>Copilot Studio</strong> (Kap. 30) lassen sich solche Assistenten ohne Programmierung bauen.</p>
+</div>
+<hr />
+<h2 id="184-mehrstufige-gesprache-fuhren">18.4 Mehrstufige Gespräche führen<a class="headerlink" href="#184-mehrstufige-gesprache-fuhren" title="Permanent link">&para;</a></h2>
+<p>Der große Vorteil von KI-Chatbots: Sie <strong>behalten den Kontext</strong> des Gesprächs. Du kannst aufeinander aufbauen, ohne alles zu wiederholen.</p>
+<p><strong>Beispiel-Dialog (Kundenservice-Entwurf mit Copilot):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>1) Du bist Kundenservice-Profi. Ein Kunde beschwert sich, dass seine
+   Lieferung 5 Tage zu spät ist. Entwirf eine erste, empathische Antwort.
+
+2) Gut. Der Kunde ist Stammkunde – ergänze eine Wertschätzung dafür.
+
+3) Biete als Entschädigung einen 10%-Gutschein an und formuliere höflich,
+   dass wir das Problem intern prüfen.
+</code></pre></div></td></tr></table></div>
+<p>Jeder Schritt verfeinert das Ergebnis. Du musst den Sachverhalt nur <strong>einmal</strong> schildern.</p>
+<div class="admonition tip">
+<p class="admonition-title">Kontext gezielt zurücksetzen</p>
+<p>Wenn du das Thema wechselst, beginne bewusst neu („Vergiss den vorherigen Fall. Neue Aufgabe: …") – sonst vermischt der Bot alten und neuen Kontext.</p>
+</div>
+<hr />
+<h2 id="185-grenzen-von-chatbots-im-kundenservice">18.5 Grenzen von Chatbots im Kundenservice<a class="headerlink" href="#185-grenzen-von-chatbots-im-kundenservice" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Wo Menschen unverzichtbar bleiben</p>
+<ul>
+<li><strong>Verbindliche Zusagen</strong> (Preise, Fristen, Verträge) gehören zum Menschen.</li>
+<li><strong>Emotionale Eskalationen</strong> (verärgerte Kunden, Beschwerden) brauchen Fingerspitzengefühl und Entscheidungsspielraum.</li>
+<li><strong>Rechtlich relevante Auskünfte</strong> dürfen nicht dem Bot überlassen werden.</li>
+<li><strong>Halluzinationen</strong> (Kap. 15): Ein Bot kann falsche Auskünfte selbstbewusst geben – im Kundenkontakt heikel.</li>
+</ul>
+</div>
+<p>Gutes Design nutzt deshalb ein <strong>Eskalationsprinzip</strong>: Der Bot erledigt Standardfälle und <strong>übergibt</strong> klar an einen Menschen, sobald es kritisch wird.</p>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere einen System-Prompt für einen Chatbot, der Terminanfragen für eine
+Zahnarztpraxis entgegennimmt. Er soll freundlich sein, nach Name und Wunschtermin
+fragen, keine medizinischen Auskünfte geben und bei Notfällen sofort auf die
+Notfallnummer verweisen.
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="186-was-ein-chatbot-wirklich-sieht">18.6 Was ein Chatbot wirklich „sieht"<a class="headerlink" href="#186-was-ein-chatbot-wirklich-sieht" title="Permanent link">&para;</a></h2>
+<p>Der Eindruck, dass sich Copilot an das Gespräch „erinnert", täuscht über die Mechanik hinweg. Tatsächlich hat ein KI-Chatbot <strong>kein Gedächtnis</strong> im menschlichen Sinn. Bei jeder neuen Antwort liest das Modell den <strong>gesamten bisherigen Gesprächsverlauf</strong> noch einmal komplett als Eingabe und sagt darauf aufbauend die nächste Antwort voraus. Der „Kontext" ist also kein gespeichertes Wissen, sondern schlicht der Text, der aktuell mitgeliefert wird.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([bisheriger Verlauf + neue Frage]) --&gt; B([Modell liest alles erneut])
+    B --&gt; C([sagt nächste Antwort voraus])
+    C --&gt; D([Antwort wird an Verlauf angehängt])
+    D --&gt; A</code></pre>
+<p>Dieser Verlauf hat eine <strong>maximale Länge</strong> – das sogenannte <strong>Kontextfenster</strong>. Ist es voll, „fällt" der Anfang des Gesprächs aus dem Blick des Modells. Das erklärt ein häufiges Praxisphänomen: In sehr langen Chats vergisst Copilot scheinbar früh Gesagtes.</p>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Kontextfenster und Tokens</p>
+<p>Sprachmodelle rechnen nicht in Wörtern, sondern in <strong>Tokens</strong> – kleinen Textbausteinen (grob: ein Wort besteht aus einem bis wenigen Tokens). Das Kontextfenster gibt an, wie viele Tokens (Verlauf <strong>plus</strong> neue Antwort) das Modell gleichzeitig verarbeiten kann. Ist die Grenze erreicht, muss Älteres weichen. Praktische Folge: Halte lange Gespräche fokussiert, fasse wichtige Zwischenergebnisse selbst noch einmal zusammen und starte für ein neues Thema lieber einen neuen Chat (siehe auch Kap. 15 – Large Language Models).</p>
+</div>
+<hr />
+<h2 id="187-dialogmuster-fur-den-alltag">18.7 Dialogmuster für den Alltag<a class="headerlink" href="#187-dialogmuster-fur-den-alltag" title="Permanent link">&para;</a></h2>
+<p>Gute Gesprächsführung folgt wiederkehrenden Mustern. Wer sie kennt, steuert Copilot bewusster:</p>
+<table>
+<thead>
+<tr>
+<th>Muster</th>
+<th>Wozu</th>
+<th>Beispiel-Formulierung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rolle setzen</td>
+<td>Ton &amp; Perspektive festlegen</td>
+<td>„Du bist erfahrene:r Support-Profi."</td>
+</tr>
+<tr>
+<td>Nachschärfen</td>
+<td>Ergebnis gezielt verbessern</td>
+<td>„Kürzer, konkreter, ein Beispiel dazu."</td>
+</tr>
+<tr>
+<td>Perspektivwechsel</td>
+<td>blinde Flecken finden</td>
+<td>„Was würde ein skeptischer Kunde einwenden?"</td>
+</tr>
+<tr>
+<td>Reduktion</td>
+<td>Überladenes vereinfachen</td>
+<td>„Erkläre es einem Laien in drei Sätzen."</td>
+</tr>
+<tr>
+<td>Reset</td>
+<td>Themenwechsel sauber trennen</td>
+<td>„Vergiss den Fall. Neue Aufgabe: …"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Copilot-Dialog: vom Rohentwurf zur runden Antwort</p>
+<p><strong>Verlauf:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>1) Du bist Support-Profi. Erfinde eine typische Kundenbeschwerde über eine
+   fehlerhafte Lieferung und entwirf eine erste, sachliche Antwort.
+2) Zu technisch. Formuliere es wärmer und ohne Fachjargon.
+3) Ergänze eine Entschuldigung und einen konkreten nächsten Schritt.
+</code></pre></div></td></tr></table></div>
+<strong>Beispiel-Output (Schritt 3, gekürzt):</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Guten Tag Herr Muster,
+es tut uns aufrichtig leid, dass Ihre Lieferung beschädigt ankam – das ärgert
+uns genauso wie Sie. Wir senden Ihnen heute kostenfrei Ersatz zu und melden uns
+morgen mit der Sendungsnummer. Vielen Dank für Ihre Geduld.
+</code></pre></div></td></tr></table></div>
+Jeder Schritt baute auf dem vorigen auf – ohne den Sachverhalt zu wiederholen. Genau das ist der Mehrwert des Kontexts.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Häufiges Missverständnis: ‚Der Bot kennt mich'</p>
+<p>Copilot „erinnert" sich innerhalb eines Chats nur an das, was noch im Kontextfenster steht – nicht an frühere Gespräche und nicht an dich als Person (sofern keine ausdrückliche Speicher-Funktion aktiv ist). Verlasse dich deshalb nicht darauf, dass Angaben von gestern noch „bekannt" sind. Und umgekehrt: Gib keine sensiblen Daten in der Annahme ein, sie seien „nur für diesen Moment" – wohin Eingaben fließen, regelt der Datenschutz (Kap. 33).</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>KI-Chatbots</strong> verstehen freie Sprache (anders als regelbasierte), können aber überzeugend <strong>falsch</strong> liegen.</li>
+<li>Gute Dialoge führst du aktiv: <strong>Rolle setzen, schrittweise vertiefen, korrigieren</strong>.</li>
+<li>Der <strong>System-Prompt</strong> legt Rolle, Ton und Leitplanken fest – wichtig für konsistentes Verhalten.</li>
+<li>KI-Chatbots <strong>behalten Kontext</strong> – nutze das für mehrstufige Gespräche, setze bei Themenwechsel bewusst zurück.</li>
+<li>„Gedächtnis" ist in Wahrheit ein <strong>Kontextfenster</strong> begrenzter Länge: In langen Chats fällt der Anfang heraus – Wichtiges selbst zusammenfassen.</li>
+<li>Bewährte <strong>Dialogmuster</strong> (Rolle setzen, Nachschärfen, Perspektivwechsel, Reduktion, Reset) machen die Steuerung planbar.</li>
+<li>Grenzen: verbindliche Zusagen, Eskalationen und rechtliche Auskünfte gehören zum <strong>Menschen</strong>.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Copilot als Chatbot rollenspielen lassen</summary>
+<p>Mach das <strong>live in Copilot</strong>:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Spiele einen Support-Chatbot für einen Online-Shop. Begrüße mich, frage nach meinem Anliegen
+und antworte kurz und freundlich. Ich beginne jetzt als Kunde.
+</code></pre></div></td></tr></table></div>
+Stelle 3 typische Kundenfragen (Lieferstatus, Rückgabe, Rechnung) und beobachte die Antworten.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein guter Bot-Prompt definiert Rolle, Ton und Gesprächsführung (Fragen stellen, nicht nur antworten).</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Copilot führt einen plausiblen Support-Dialog. Lernziel: erleben, wie eine klare Rollen-
+und Verhaltensvorgabe einen brauchbaren Chatbot erzeugt.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Chatbot mit Fallback und Grenzen bauen</summary>
+<p>Baue <strong>in Copilot</strong> einen robusteren Bot.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist ein Terminbuchungs-Bot für eine Zahnarztpraxis. Regeln: freundlich, max. 3 Sätze pro
+Antwort, frage aktiv nach Wunschtermin und Grund. Wenn du etwas nicht kannst, verweise höflich
+an das Praxisteam. Keine medizinischen Ratschläge geben.
+</code></pre></div></td></tr></table></div>
+Teste dann gezielt die Grenzen:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>(als Nutzer) Ich habe seit Tagen starke Zahnschmerzen, was soll ich einnehmen?
+</code></pre></div></td></tr></table></div>
+Hält der Bot seine Grenze ein?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die Kunst liegt nicht in den Standardfragen, sondern im sauberen Umgang mit Ausnahmen und Grenzen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Der Bot bucht Termine, gibt aber keinen medizinischen Rat und verweist ans Team. Lernziel:
+Fallback und klare Grenzen sind zentral für sichere Chatbots.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> FAQ-Bot spezifizieren und Härtetest in Copilot</summary>
+<p>Entwirf <strong>in Copilot</strong> einen FAQ-Bot und teste ihn unter erschwerten Bedingungen.</p>
+<p><strong>Schritt 1 – Wissen erzeugen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde 6 FAQ-Einträge (Frage + Antwort) für ein Fitnessstudio.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2 – Bot definieren:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Verhalte dich jetzt als FAQ-Bot, der NUR auf Basis dieser 6 Einträge antwortet. Bei allem anderen
+sagst du, dass du das nicht weißt, und verweist ans Team.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3 – Härtetest:</strong> Stelle a) eine abgedeckte Frage, b) eine ähnlich klingende, aber nicht abgedeckte Frage, c) eine völlig fremde Frage. Bleibt der Bot ehrlich?</p>
+<p>Bewerte selbst: Wo neigt der Bot dazu, Antworten zu „erfinden", statt „weiß ich nicht" zu sagen?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die größte Gefahr von FAQ-Bots: Sie halluzinieren Antworten, statt eine Wissenslücke zuzugeben.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Bot antwortet korrekt bei abgedeckten Fragen und gibt Grenzen ehrlich zu. Lernziel:
+Bots auf „nur belegtes Wissen" einschränken und gegen Halluzination testen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Service-Chatbot end-to-end in Copilot</summary>
+<p>Entwickle und teste <strong>in Copilot</strong> einen kompletten Service-Chatbot – ohne echte Daten.</p>
+<p><strong>Schritt 1 – Szenario:</strong> Denk dir ein Unternehmen und einen Anwendungsfall aus (z. B. Bestell-Support).</p>
+<p><strong>Schritt 2 – Wissen erzeugen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde die 8 wichtigsten Infos/FAQs, die dieser Bot kennen muss.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3 – Bot-Prompt:</strong> Schreibe einen vollständigen System-Prompt: Rolle, Ton, Gesprächsführung,
+Grenzen, Eskalation an Menschen.</p>
+<p><strong>Schritt 4 – Testgespräche:</strong> Spiele 3 Dialoge durch: eine einfache Anfrage, eine unzufriedene Kundin,
+eine Frage außerhalb des Wissens.</p>
+<p><strong>Schritt 5 – verbessern:</strong> Überarbeite den Prompt nach den Tests.</p>
+<p><strong>Deliverable:</strong> System-Prompt + 3 Testdialoge + Verbesserungsnotizen.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein guter Bot weiß, wann er an einen Menschen übergeben muss – definiere klare Eskalationsregeln.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: vollständiger System-Prompt, realistische Testdialoge inkl. Eskalation, sichtbare
+Verbesserung. Lernziel: einen einsatzreifen Chatbot-Prompt gestalten und iterativ härten.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel17/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 17 – Reinforcement Learning">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 17 – Reinforcement Learning
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel19/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 19 – Medienerstellung mit KI">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 19 – Medienerstellung mit KI
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1575 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel32/">
+      
+      
+        <link rel="next" href="../kapitel34/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 33 – Datenschutz - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-33-datenschutz" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 33 – Datenschutz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Block 4 · Herausforderungen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 31 – Ethik und soziale Verantwortung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 32 – Rechtliche Aspekte der KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Datenschutz
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 33 – Datenschutz
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#331-personenbezogene-daten" class="md-nav__link">
+    <span class="md-ellipsis">
+      33.1 Personenbezogene Daten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#332-dsgvo-prinzipien-die-fur-ki-zahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      33.2 DSGVO-Prinzipien, die für KI zählen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#333-die-goldene-regel-keine-sensiblen-daten-in-offene-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      33.3 Die goldene Regel: keine sensiblen Daten in offene Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#334-was-gehort-nicht-in-einen-copilot-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      33.4 Was gehört NICHT in einen Copilot-Prompt?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#335-anonymisieren-oder-pseudonymisieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      33.5 Anonymisieren oder Pseudonymisieren?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#336-wie-microsoft-365-copilot-datenschutz-adressiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      33.6 Wie Microsoft 365 Copilot Datenschutz adressiert
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#337-verhaltensregeln-fur-den-alltag" class="md-nav__link">
+    <span class="md-ellipsis">
+      33.7 Verhaltensregeln für den Alltag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel34/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 34 – Explainable AI: Erklärbarkeit von KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel35/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 35 – Herausforderungen im KI-Projektmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel36/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 36 – Energie- und Ressourcenverbrauch von KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-33-datenschutz">Kapitel 33 – Datenschutz<a class="headerlink" href="#kapitel-33-datenschutz" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>personenbezogene Daten</strong> sind und warum sie besonders geschützt sind</li>
+<li>Die <strong>Grundprinzipien der DSGVO</strong>, die für KI besonders relevant sind</li>
+<li>Warum das Prinzip <strong>„keine sensiblen Daten in offene Tools"</strong> so wichtig ist</li>
+<li>Was <strong>konkret nicht</strong> in einen Copilot-Prompt gehört</li>
+<li>Der Unterschied zwischen <strong>Anonymisierung</strong> und <strong>Pseudonymisierung</strong></li>
+<li>Wie <strong>Microsoft 365 Copilot</strong> Datenschutz technisch adressiert</li>
+<li>Konkrete <strong>Verhaltensregeln</strong> für den KI-Alltag</li>
+</ul>
+</div>
+<hr />
+<h2 id="331-personenbezogene-daten">33.1 Personenbezogene Daten<a class="headerlink" href="#331-personenbezogene-daten" title="Permanent link">&para;</a></h2>
+<p><strong>Personenbezogene Daten</strong> sind alle Informationen, die sich auf eine <strong>identifizierbare Person</strong> beziehen: Name, E-Mail, Telefonnummer, Personalnummer, aber auch IP-Adressen oder Kombinationen, die eine Person erkennbar machen.</p>
+<div class="admonition info">
+<p class="admonition-title">Besonders sensible Daten</p>
+<p>Einige Kategorien sind <strong>besonders geschützt</strong>: Gesundheit, Religion, ethnische Herkunft, politische Meinung, Gewerkschaftszugehörigkeit, sexuelle Orientierung. Deren Verarbeitung ist nur unter strengen Voraussetzungen erlaubt. Gerade solche Daten dürfen <strong>niemals</strong> unbedacht in ein KI-Tool gelangen.</p>
+</div>
+<hr />
+<h2 id="332-dsgvo-prinzipien-die-fur-ki-zahlen">33.2 DSGVO-Prinzipien, die für KI zählen<a class="headerlink" href="#332-dsgvo-prinzipien-die-fur-ki-zahlen" title="Permanent link">&para;</a></h2>
+<p>Die <strong>Datenschutz-Grundverordnung (DSGVO)</strong> gilt EU-weit. Für KI besonders relevant:</p>
+<table>
+<thead>
+<tr>
+<th>Prinzip</th>
+<th>Bedeutung</th>
+<th>KI-Bezug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rechtsgrundlage</strong></td>
+<td>Verarbeitung braucht einen legitimen Grund</td>
+<td>Darf ich diese Daten für KI nutzen?</td>
+</tr>
+<tr>
+<td><strong>Zweckbindung</strong></td>
+<td>Daten nur für den erhobenen Zweck</td>
+<td>Trainingsdaten ≠ beliebiger Zweitzweck</td>
+</tr>
+<tr>
+<td><strong>Datenminimierung</strong></td>
+<td>so wenig Daten wie möglich</td>
+<td>nur nötige Daten in Prompts</td>
+</tr>
+<tr>
+<td><strong>Transparenz</strong></td>
+<td>Betroffene informieren</td>
+<td>Wissen Kunden von der KI-Nutzung?</td>
+</tr>
+<tr>
+<td><strong>Betroffenenrechte</strong></td>
+<td>Auskunft, Löschung etc.</td>
+<td>auch bei KI-Daten umsetzbar?</td>
+</tr>
+<tr>
+<td><strong>Keine reine Automatik</strong></td>
+<td>kein Alleinentscheid der KI bei wichtigen Dingen</td>
+<td>Human in the Loop (Kap. 32)</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    A([Personenbezogene Daten]) --&gt; B{Rechtsgrundlage + Zweck?}
+    B --&gt;|ja| C([verarbeiten - minimal &amp; transparent])
+    B --&gt;|nein| D([nicht verwenden])</code></pre>
+<hr />
+<h2 id="333-die-goldene-regel-keine-sensiblen-daten-in-offene-tools">33.3 Die goldene Regel: keine sensiblen Daten in offene Tools<a class="headerlink" href="#333-die-goldene-regel-keine-sensiblen-daten-in-offene-tools" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Der häufigste Datenschutz-Fehler</p>
+<p>Der klassische Fehler: Mitarbeitende geben <strong>vertrauliche oder personenbezogene Daten</strong> in ein <strong>frei zugängliches</strong> KI-Tool ein (z. B. eine private ChatGPT-Nutzung mit echten Kundendaten). Damit verlassen die Daten möglicherweise das Unternehmen und können – je nach Anbieter und Einstellung – zu Trainingszwecken verwendet oder gespeichert werden. Das ist oft ein <strong>klarer DSGVO-Verstoß</strong>.</p>
+</div>
+<p><strong>Merksatz:</strong> Behandle jede Eingabe in ein offenes KI-Tool so, als würdest du sie <strong>öffentlich ins Internet stellen</strong>. Was so nicht raus darf, gehört auch nicht in ein solches Tool.</p>
+<hr />
+<h2 id="334-was-gehort-nicht-in-einen-copilot-prompt">33.4 Was gehört NICHT in einen Copilot-Prompt?<a class="headerlink" href="#334-was-gehort-nicht-in-einen-copilot-prompt" title="Permanent link">&para;</a></h2>
+<p>Der Merksatz wird konkret, wenn man weiß, welche Angaben man <strong>weglassen oder ersetzen</strong> sollte – gerade in offenen oder nicht freigegebenen Tools.</p>
+<table>
+<thead>
+<tr>
+<th>Nicht hineingeben</th>
+<th>Warum</th>
+<th>Besser stattdessen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Echte Namen, Adressen, Personalnummern</td>
+<td>direkter Personenbezug</td>
+<td>Platzhalter „Person A", „Kunde X"</td>
+</tr>
+<tr>
+<td>Gesundheits-, Religions-, Gewerkschaftsdaten</td>
+<td>besonders geschützte Kategorie</td>
+<td>ganz weglassen</td>
+</tr>
+<tr>
+<td>Passwörter, Zugangsdaten, API-Schlüssel</td>
+<td>Sicherheitsrisiko</td>
+<td>niemals eingeben</td>
+</tr>
+<tr>
+<td>Vollständige Verträge/Kundendaten Dritter</td>
+<td>Vertraulichkeit &amp; Urheberrecht (Kap. 32)</td>
+<td>nur das Nötigste, anonymisiert</td>
+</tr>
+<tr>
+<td>Interne Zahlen/Geschäftsgeheimnisse</td>
+<td>Wettbewerbsrisiko</td>
+<td>nur in freigegebener Umgebung</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Das gefährliche Bequemlichkeits-Denken</p>
+<p>Der typische Fehler entsteht aus Bequemlichkeit: „Ich kopiere schnell die ganze Kundenmail rein, dann muss ich nichts kürzen." Genau so gelangen Namen, Kontaktdaten und Vertragsdetails ungefiltert in ein Tool. Nimm dir die <strong>zehn Sekunden</strong>, sensible Stellen durch Platzhalter zu ersetzen – meist wird die Antwort dadurch kein bisschen schlechter.</p>
+</div>
+<hr />
+<h2 id="335-anonymisieren-oder-pseudonymisieren">33.5 Anonymisieren oder Pseudonymisieren?<a class="headerlink" href="#335-anonymisieren-oder-pseudonymisieren" title="Permanent link">&para;</a></h2>
+<p>Datenminimierung gelingt oft durch das Ersetzen echter Angaben. Dabei gibt es zwei Stufen, die man nicht verwechseln sollte:</p>
+<table>
+<thead>
+<tr>
+<th>Verfahren</th>
+<th>Was passiert</th>
+<th>Rückführbar?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pseudonymisierung</strong></td>
+<td>echte Daten durch Kürzel ersetzen, Schlüssel bleibt woanders</td>
+<td>ja, mit Zusatzwissen</td>
+</tr>
+<tr>
+<td><strong>Anonymisierung</strong></td>
+<td>Personenbezug <strong>unwiederbringlich</strong> entfernen</td>
+<td>nein</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Warum der Unterschied zählt</p>
+<p>Pseudonymisierte Daten („Kunde 4711") bleiben <strong>rechtlich personenbezogen</strong>, weil man sie mit einem Schlüssel wieder auflösen kann – die DSGVO gilt weiter. Erst <strong>echte Anonymisierung</strong> (kein Weg zurück zur Person) fällt aus dem Anwendungsbereich der DSGVO. Für den Copilot-Alltag heißt das: Ein Kürzel im Prompt ist gut und richtig, macht die Angabe aber nicht „datenschutzfrei", solange irgendwo eine Zuordnung existiert. Behandle pseudonymisierte Prompts also weiter mit Sorgfalt.</p>
+</div>
+<hr />
+<h2 id="336-wie-microsoft-365-copilot-datenschutz-adressiert">33.6 Wie Microsoft 365 Copilot Datenschutz adressiert<a class="headerlink" href="#336-wie-microsoft-365-copilot-datenschutz-adressiert" title="Permanent link">&para;</a></h2>
+<p>Ein wichtiger Grund, <strong>die freigegebene Unternehmensversion</strong> zu nutzen: Microsoft 365 Copilot ist auf betriebliche Datenschutzanforderungen ausgelegt.</p>
+<table>
+<thead>
+<tr>
+<th>Aspekt</th>
+<th>Microsoft 365 Copilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datenverarbeitung</td>
+<td>innerhalb des Microsoft-365-Mandanten (Tenant)</td>
+</tr>
+<tr>
+<td>Nutzung als Trainingsdaten</td>
+<td>Unternehmensdaten werden <strong>nicht</strong> zum Training der Basismodelle verwendet</td>
+</tr>
+<tr>
+<td>Berechtigungen</td>
+<td>Copilot sieht nur Daten, für die du <strong>berechtigt</strong> bist (Kap. 9)</td>
+</tr>
+<tr>
+<td>Datenschutz-Compliance</td>
+<td>vertraglich (u. a. Auftragsverarbeitung) abgesichert</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Warum der Unterschied so wichtig ist</p>
+<p>Die <strong>private/kostenlose</strong> Nutzung eines KI-Chatbots und die <strong>unternehmensweit freigegebene</strong> Microsoft-365-Version sind datenschutzrechtlich <strong>völlig verschieden</strong>. Für betriebliche Daten ist nur die freigegebene, vertraglich abgesicherte Umgebung zulässig. Kläre im Zweifel mit IT/Datenschutz, <strong>welches</strong> Tool freigegeben ist.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Berechtigungen sind keine Zauberei</p>
+<p>Copilot zeigt dir nur Daten, für die du ohnehin Zugriffsrechte hast. Sind interne Berechtigungen aber <strong>zu großzügig</strong> vergeben (z. B. eine für alle offene Personalliste), kann Copilot diese Daten auffindbar und nutzbar machen. Sauberer Datenschutz beginnt also <strong>vor</strong> Copilot – bei ordentlich gesetzten Zugriffsrechten.</p>
+</div>
+<hr />
+<h2 id="337-verhaltensregeln-fur-den-alltag">33.7 Verhaltensregeln für den Alltag<a class="headerlink" href="#337-verhaltensregeln-fur-den-alltag" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Nur freigegebene Tools</strong> für betriebliche Daten nutzen.</li>
+<li><strong>Datenminimierung:</strong> anonymisieren/pseudonymisieren, wo möglich (Platzhalter statt echter Namen).</li>
+<li><strong>Keine besonders sensiblen Daten</strong> ohne ausdrückliche Rechtsgrundlage.</li>
+<li><strong>Interne Richtlinie &amp; Datenschutzbeauftragte:n</strong> einbeziehen.</li>
+<li><strong>Transparenz</strong> gegenüber Betroffenen, wo erforderlich.</li>
+</ul>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle eine kompakte Checkliste (max. 8 Punkte) mit Datenschutzregeln für
+Mitarbeitende, die im Arbeitsalltag KI-Werkzeuge nutzen. Formuliere sie klar
+und verständlich, ohne Juristendeutsch.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">Ausgearbeiteter Copilot-Dialog</p>
+<p><strong>Prompt:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde eine fiktive Kundenbeschwerde-Mail mit echten wirkenden
+personenbezogenen Daten. Zeige mir danach dieselbe Mail in einer
+datenschutzfreundlichen, anonymisierten Fassung und erkläre, was du
+warum ersetzt hast.
+</code></pre></div></td></tr></table></div>
+<strong>Beispiel-Antwort von Copilot (gekürzt):</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Original (fiktiv): &quot;Sehr geehrte Damen und Herren, ich, Julia Berger,
+Kundennr. 88231, wohnhaft Lindenweg 4, beschwere mich über ...&quot;
+
+Anonymisiert: &quot;Sehr geehrte Damen und Herren, ich (Kundin A) beschwere
+mich über ...&quot;
+
+Ersetzt &amp; warum:
+- Name &quot;Julia Berger&quot; -&gt; &quot;Kundin A&quot; (direkter Personenbezug).
+- Kundennr. 88231 -&gt; entfernt (eindeutige Kennung).
+- Adresse -&gt; entfernt (nicht für die Sachfrage nötig, Datenminimierung).
+</code></pre></div></td></tr></table></div></p>
+</div>
+<p>So übst du gefahrlos: Die Daten sind erfunden, und du siehst zugleich das <strong>Muster</strong>, wie man echte Prompts vor dem Absenden bereinigt.</p>
+<div class="admonition tip">
+<p class="admonition-title">Anonymisieren als einfacher Schutz</p>
+<p>Oft brauchst du für eine gute KI-Antwort gar keine echten Namen. Ersetze „Kunde Herr Meier, Personalnr. 4711" durch „Kunde A". Das Ergebnis ist genauso brauchbar – aber ohne Personenbezug.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Personenbezogene Daten</strong> sind geschützt; <strong>besonders sensible</strong> Kategorien noch strenger.</li>
+<li>Die <strong>DSGVO</strong> verlangt u. a. <strong>Rechtsgrundlage, Zweckbindung, Datenminimierung, Transparenz</strong> und Betroffenenrechte.</li>
+<li><strong>Goldene Regel:</strong> keine vertraulichen/personenbezogenen Daten in <strong>offene</strong> KI-Tools.</li>
+<li><strong>Konkret nicht</strong> in Prompts: echte Namen, sensible Kategorien, Passwörter, fremde Verträge, Geschäftsgeheimnisse.</li>
+<li><strong>Anonymisierung</strong> entfernt den Personenbezug endgültig; <strong>Pseudonymisierung</strong> bleibt rückführbar und weiterhin DSGVO-relevant.</li>
+<li><strong>Microsoft 365 Copilot</strong> verarbeitet Daten im Tenant, nutzt sie <strong>nicht</strong> fürs Modelltraining und wahrt Berechtigungen – die aber sauber gesetzt sein müssen.</li>
+<li>Alltag: freigegebene Tools, <strong>anonymisieren</strong>, Richtlinien und Datenschutzbeauftragte einbeziehen.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Personenbezogene Daten im Text markieren</summary>
+<p>Diese Kundenanfrage liegt in deinem Postfach. Bevor du sie irgendwo weiterverarbeitest, sollst du die personenbezogenen Daten erkennen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Betreff: Reklamation Bestellung 88214
+Hallo, mein Name ist Markus Feldmann, Kundennummer 4471. Die Lieferung an meine Adresse
+Ahornweg 12, 34131 Kassel kam beschaedigt an. Erreichbar bin ich unter 0151 2345678 oder
+m.feldmann@example.de. Ich bin uebrigens seit meiner Herz-OP im Maerz auf puenktliche
+Medikamentenlieferung angewiesen.
+</code></pre></div></td></tr></table></div>
+<p>Öffne Copilot und erledige die Analyse in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Markiere in diesem Text alle personenbezogenen Daten und erklaere je Angabe kurz, warum sie
+personenbezogen ist. Hebe besonders sensible Daten (z. B. Gesundheitsdaten) gesondert hervor.
+[hier den Text einfuegen]
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine vollständige Markierung aller personenbezogenen Daten, in der die besonders sensible Gesundheitsangabe klar als solche hervorgehoben ist.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Personenbezogen ist alles, was eine Person identifizierbar macht – auch indirekt (Kundennummer + Ort). Gesundheitsdaten (Herz-OP, Medikamente) sind besonders sensibel und stärker geschützt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Name, Kundennummer, Adresse, Telefon, E-Mail und Bestellnummer als personenbezogen erkannt;
+die Gesundheitsangabe (Herz-OP, Medikamentenbedarf) als besonders sensible Kategorie hervorgehoben. Lernziel:
+sensible Daten sicher erkennen – die Voraussetzung für Datenschutz.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Datensparsamkeit und Anonymisierung anwenden</summary>
+<p>Die Marketingabteilung will auswerten, in welchen Regionen sich welche Produkte gut verkaufen. Dafür liegt dieser Datensatz vor:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Felder je Kunde: Vorname, Nachname, vollstaendige Adresse, Geburtsdatum, E-Mail, Telefon,
+Kundennummer, gekaufte Produkte, Kaufdatum, Kaufbetrag.
+Auswertungsziel: Welche Produktkategorien verkaufen sich in welcher Region (PLZ-Gebiet) je Quartal?
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot auf Datensparsamkeit prüfen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Welche Felder braucht man fuer dieses Auswertungsziel WIRKLICH und welche kann man weglassen
+(Datensparsamkeit)? Wie liessen sich die verbleibenden Daten so anonymisieren oder pseudonymisieren,
+dass die regionale Auswertung trotzdem moeglich bleibt? Begruende kurz.
+[hier den Datensatz einfuegen]
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – prüfe den Anonymisierungs-Vorschlag auf eine typische Falle:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Kann man aus den von dir behaltenen Feldern (z. B. genaue PLZ + Geburtsdatum + seltene
+Produktkombination) eine Person trotzdem wieder identifizieren? Wenn ja, wie verhinderst du diese
+Re-Identifizierung (z. B. PLZ-Gebiet groeber, Altersgruppen statt Geburtsdatum)?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine auf das Nötige reduzierte Datenbasis und ein Anonymisierungsvorschlag, der auch die Re-Identifizierung über Merkmalskombinationen verhindert.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Datensparsamkeit: nur erheben, was das Ziel wirklich braucht. „Anonym" ist nicht gleich anonym – über die Kombination weniger Merkmale (PLZ + Alter + seltenes Produkt) lassen sich Personen oft wieder identifizieren.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Reduktion auf Produktkategorie, PLZ-Gebiet und Quartal; Weglassen von Name, Adresse, E-Mail,
+Telefon, exaktem Geburtsdatum. Der zweite Schritt erkennt die Re-Identifizierungsgefahr und vergröbert die Daten
+(PLZ-Region statt PLZ, Altersgruppe statt Geburtsdatum). Lernziel: Datenschutz durch Datensparsamkeit und
+wirksame Anonymisierung praktisch umsetzen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Prompt datenschutzkonform bereinigen</summary>
+<p>Eine Kollegin will Copilot um Hilfe bitten und hat diesen Prompt schon getippt – so darf er nicht abgeschickt werden:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>&quot;Formuliere eine freundliche Kuendigungsbestaetigung fuer Frau Sabine Klein (Personalnummer 7789,
+geb. 02.05.1980, wohnhaft Lindenstr. 4, 50667 Koeln). Grund: krankheitsbedingte Fehlzeiten wegen
+ihrer Depression. Ihre private Mail sabine.klein@gmx.de soll in CC.&quot;
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot den Prompt datenschutzkritisch analysieren – und bereinigen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere diesen geplanten Prompt: Welche Angaben gehoeren NICHT in einen KI-Chat und warum
+(nenne besonders sensible Daten gesondert)? Schreibe den Prompt dann so um, dass die Aufgabe
+weiterhin loesbar ist, aber keine personenbezogenen oder sensiblen Daten mehr enthalten sind.
+[hier den Prompt einfuegen]
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>leite selbst eine Regel ab und triff eine Grenzentscheidung</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere aus diesem Fall 5 einfache Verhaltensregeln, welche Daten nie in einen Prompt gehoeren.
+Und: Wuerde sich an deiner Einschaetzung etwas aendern, wenn dies ein geschaeftlicher Copilot-Zugang
+(Firmen-Tenant) statt eines privaten waere? Begruende.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> ein bereinigter, weiterhin lösbarer Prompt, fünf klare Verhaltensregeln und eine begründete Einschätzung zum Unterschied privat vs. geschäftlich.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du selbst entschieden hast, ob die Aufgabe überhaupt in einen KI-Chat gehört – und mindestens eine Angabe benennst, die auch im Firmen-Tenant nichts im Prompt zu suchen hat (z. B. die Gesundheitsangabe „Depression").</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Faustregel: keine personenbezogenen oder vertraulichen Daten in Prompts, wenn der Datenschutz-Rahmen unklar ist. Gesundheitsdaten sind besonders sensibel. Ein Firmen-Tenant bietet mehr Schutz als ein privater Zugang – aber er ist kein Freibrief für sensible Personendaten.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Erkennen, dass Name, Personalnummer, Geburtsdatum, Adresse, private Mail und vor allem die
+Gesundheitsangabe nicht in den Prompt gehören; ein neutraler, mit Platzhaltern arbeitender Prompt; fünf
+praktikable Regeln; und die Einsicht, dass ein Firmen-Tenant zwar mehr schützt, sensible Gesundheitsdaten aber
+trotzdem draußen bleiben. Lernziel: Prompts datenschutzbewusst formulieren und die eigene Grenze ziehen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Datenschutz-Leitfaden für Copilot am Ernstfall härten</summary>
+<p><strong>Szenario:</strong> Du führst für ein Unternehmen einen <strong>Datenschutz-Leitfaden zur täglichen Copilot-Nutzung</strong> ein. Ziel ist hart: ein Leitfaden, bei dem in <strong>jeder Alltagssituation eindeutig</strong> ist, was in einen Prompt darf – und der einen echten Beinahe-Vorfall verhindert hätte. Ausgangslage:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>400 Mitarbeitende nutzen Copilot im Firmen-Tenant fuer Texte, Zusammenfassungen und Auswertungen.
+Typische Nutzungen: Kundenmails zusammenfassen, Bewerbungen sichten, Protokolle erstellen,
+Excel-Daten auswerten.
+Beinahe-Vorfall: Jemand hat eine komplette Kundenliste mit Namen, Adressen und Umsaetzen in einen
+Prompt kopiert, um sie &quot;mal schnell auswerten zu lassen&quot;.
+</code></pre></div></td></tr></table></div>
+<p>Arbeite alles in Copilot – aber liefere gegen <strong>klare Anforderungen</strong>.</p>
+<p><strong>Runde 1 – Leitfaden bauen.</strong> Erstelle eine Ampel-Übersicht: Welche Daten dürfen (grün), nur mit Vorsicht/anonymisiert (gelb) oder nie (rot) in Copilot? Ergänze 6 kurze Verhaltensregeln und 2 typische Fehler, die man vermeiden muss.</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Der Leitfaden muss <strong>alle</strong> erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:</p>
+<ol>
+<li>die Ampel unterscheidet klar zwischen anonymen, personenbezogenen und besonders sensiblen Daten</li>
+<li>der Unterschied privater vs. geschäftlicher (Tenant) Zugang ist erklärt – ohne den Tenant als Freibrief darzustellen</li>
+<li>es gibt eine klare Regel, was man tut, statt sensible Daten einzugeben (z. B. anonymisieren, Platzhalter, gar nicht)</li>
+<li>jede Regel ist so konkret, dass sie im Zweifel eine eindeutige Entscheidung liefert</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Teste den Leitfaden am Beinahe-Vorfall (Kundenliste) und an zwei weiteren Fällen (Bewerbung zusammenfassen; Krankmeldung formulieren). Dabei zeigt sich: Bei „gelb – mit Vorsicht" bleibt unklar, was konkret zu tun ist. Analysiere die Lücke und überarbeite die Gelb-Regeln so, dass sie eine eindeutige Handlung vorgeben.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Fachbereiche klagen, ein strenger Leitfaden mache Copilot „im Alltag nutzlos". Lass dir Pro/Contra geben, entscheide begründet, wie streng der Leitfaden sein muss <strong>und widersprich Copilot</strong>, wenn es aus Bequemlichkeit eine zu lockere Regel für personenbezogene Daten vorschlägt.</p>
+<p><strong>Deliverable:</strong> finaler Leitfaden (Ampel + 6 Regeln + 2 Fehler, Version 2) + ausgefüllte Pflichtkriterien-Checkliste + die dokumentierte Auswertung der 3 Testfälle.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, der Leitfaden den Kundenlisten-Fall eindeutig als „rot" abfängt und deine Strenge-Entscheidung Datenschutz nicht der Bequemlichkeit opfert.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Wert entsteht in Runde 3 und 4: Ampel-Systeme scheitern am „gelb" – wenn unklar bleibt, was Vorsicht konkret heißt. Und ein Firmen-Tenant ist kein Freibrief: Eine ganze Kundenliste in den Prompt zu kopieren bleibt tabu.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) klare Ampel-Logik plus 6 Regeln und 2 Fehler; (2) alle vier Pflichtkriterien erfüllt
+(Datenkategorien unterschieden, privat/geschäftlich erklärt ohne Freibrief, klare Ersatzhandlung, eindeutige
+Regeln); (3) die überarbeiteten Gelb-Regeln geben eine eindeutige Handlung vor und fangen die 3 Testfälle korrekt
+ab; (4) die Strenge-Entscheidung wägt Nutzbarkeit gegen Schutz ab und übernimmt keine zu lockere KI-Empfehlung.
+Lernziel: Datenschutz für die KI-Nutzung alltagstauglich und zugleich belastbar machen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel32/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 32 – Rechtliche Aspekte der KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 32 – Rechtliche Aspekte der KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel34/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 34 – Explainable AI: Erklärbarkeit von KI">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 34 – Explainable AI: Erklärbarkeit von KI
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

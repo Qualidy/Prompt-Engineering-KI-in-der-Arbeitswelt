@@ -1,0 +1,1663 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel25/">
+      
+      
+        <link rel="next" href="../kapitel27/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance) - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-26-vorausschauende-wartung-predictive-maintenance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · Use Cases & Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Medienerstellung mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Data-Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Praxis: KI in der Konstruktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – KI in der Produktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Praxis: KI im Qualitätsmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#261-drei-wartungsstrategien" class="md-nav__link">
+    <span class="md-ellipsis">
+      26.1 Drei Wartungsstrategien
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#262-wie-die-vorhersage-funktioniert" class="md-nav__link">
+    <span class="md-ellipsis">
+      26.2 Wie die Vorhersage funktioniert
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#263-zwei-wege-der-vorhersage" class="md-nav__link">
+    <span class="md-ellipsis">
+      26.3 Zwei Wege der Vorhersage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#264-der-wirtschaftliche-nutzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      26.4 Der wirtschaftliche Nutzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#265-voraussetzungen-und-grenzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      26.5 Voraussetzungen und Grenzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#266-wo-copilot-unterstutzt" class="md-nav__link">
+    <span class="md-ellipsis">
+      26.6 Wo Copilot unterstützt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Low-Code-Programmierung und Citizen Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-26-vorausschauende-wartung-predictive-maintenance">Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)<a class="headerlink" href="#kapitel-26-vorausschauende-wartung-predictive-maintenance" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>Predictive Maintenance (vorausschauende Wartung)</strong> ist</li>
+<li>Der Unterschied zu <strong>reaktiver</strong> und <strong>präventiver</strong> Wartung</li>
+<li>Wie die <strong>Vorhersage von Ausfällen</strong> technisch grob funktioniert</li>
+<li>Die zwei Wege <strong>Anomalieerkennung</strong> und <strong>Restlebensdauer-Schätzung (RUL)</strong></li>
+<li>Wie man den <strong>wirtschaftlichen Nutzen</strong> (Business Case) durchrechnet</li>
+<li>Wie <strong>Copilot</strong> bei Wartungsdoku, Analyse und Kommunikation hilft</li>
+</ul>
+</div>
+<hr />
+<h2 id="261-drei-wartungsstrategien">26.1 Drei Wartungsstrategien<a class="headerlink" href="#261-drei-wartungsstrategien" title="Permanent link">&para;</a></h2>
+<p>Wartung lässt sich auf drei Arten organisieren – vorausschauende Wartung ist die modernste:</p>
+<table>
+<thead>
+<tr>
+<th>Strategie</th>
+<th>Prinzip</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reaktiv</strong></td>
+<td>reparieren, wenn kaputt</td>
+<td>teurer Stillstand, Folgeschäden</td>
+</tr>
+<tr>
+<td><strong>Präventiv</strong></td>
+<td>nach festem Plan (z. B. alle 6 Monate)</td>
+<td>wartet zu früh (Verschwendung) oder zu spät</td>
+</tr>
+<tr>
+<td><strong>Vorausschauend</strong></td>
+<td>wartet <strong>genau dann</strong>, wenn Daten es nahelegen</td>
+<td>braucht Daten &amp; Modelle</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    A([Reaktiv: nach Ausfall]) --&gt; B([hoher Stillstand])
+    C([Präventiv: fester Plan]) --&gt; D([oft unnötig oder zu spät])
+    E([Vorausschauend: datenbasiert]) --&gt; F([Wartung zur richtigen Zeit])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Warum vorausschauend gewinnt</p>
+<p>Präventive Wartung nach starrem Kalender tauscht Teile oft aus, die noch funktionieren (Verschwendung) – oder zu spät (Ausfall). <strong>Predictive Maintenance</strong> nutzt den <strong>tatsächlichen Zustand</strong> der Maschine und wartet <strong>im optimalen Moment</strong>: spät genug, um die Lebensdauer auszunutzen, früh genug, um den Ausfall zu verhindern.</p>
+</div>
+<hr />
+<h2 id="262-wie-die-vorhersage-funktioniert">26.2 Wie die Vorhersage funktioniert<a class="headerlink" href="#262-wie-die-vorhersage-funktioniert" title="Permanent link">&para;</a></h2>
+<p>Sensoren messen laufend den Zustand (Vibration, Temperatur, Geräusch, Stromaufnahme). Ein Modell hat aus <strong>historischen Daten</strong> gelernt, welche Muster einem Ausfall <strong>vorausgehen</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Sensordaten laufend]) --&gt; B([Modell erkennt Verschleißmuster])
+    B --&gt; C([Restlebensdauer / Ausfallrisiko schätzen])
+    C --&gt; D([Wartung rechtzeitig einplanen])</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Das Prinzip anschaulich</p>
+<p>Ein Lager, das bald ausfällt, vibriert oft schon Wochen vorher anders – zu leicht, als dass ein Mensch es bemerkt. Das Modell hat aus vielen früheren Ausfällen gelernt, dieses <strong>Frühwarnmuster</strong> zu erkennen, und meldet: „Lager an Maschine 3 wird in ca. 12 Tagen kritisch." Die Instandhaltung plant die Reparatur in die nächste ohnehin geplante Pause.</p>
+</div>
+<hr />
+<h2 id="263-zwei-wege-der-vorhersage">26.3 Zwei Wege der Vorhersage<a class="headerlink" href="#263-zwei-wege-der-vorhersage" title="Permanent link">&para;</a></h2>
+<p>In der Praxis gibt es zwei grundverschiedene Herangehensweisen – sie unterscheiden sich vor allem darin, <strong>wie viele Ausfalldaten</strong> man hat:</p>
+<table>
+<thead>
+<tr>
+<th>Ansatz</th>
+<th>Grundidee</th>
+<th>Wann sinnvoll</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anomalieerkennung</strong></td>
+<td>lernt den „Normalzustand" und schlägt bei Abweichung Alarm</td>
+<td>wenige/keine echten Ausfalldaten</td>
+</tr>
+<tr>
+<td><strong>Restlebensdauer (RUL)</strong></td>
+<td>schätzt konkret, wie lange das Teil noch hält</td>
+<td>viele dokumentierte Ausfälle vorhanden</td>
+</tr>
+</tbody>
+</table>
+<p>Die <strong>Anomalieerkennung</strong> ist eng mit dem <strong>unüberwachten Lernen</strong> verwandt (Kapitel 12): Das Modell braucht keine markierten Ausfälle, sondern lernt nur, wie „gesund" aussieht, und meldet Auffälligkeiten. Die <strong>Restlebensdauer-Schätzung (Remaining Useful Life)</strong> ist dagegen <strong>überwachtes Lernen</strong>: Sie braucht viele Beispiele, bei denen bekannt ist, wie lange es von einem Zustand bis zum Ausfall dauerte.</p>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Warum echte Ausfalldaten so wertvoll sind</p>
+<p>Für eine gute Restlebensdauer-Schätzung braucht das Modell viele Beispiele <strong>echter Ausfälle</strong> – und die sind paradox: Je besser ein Betrieb gewartet ist, desto seltener fällt etwas aus, desto weniger Lerndaten gibt es. Deshalb startet man oft mit <strong>Anomalieerkennung</strong> (die ohne Ausfalldaten auskommt) und wechselt erst später, wenn genug Fälle gesammelt sind, zur präziseren RUL-Schätzung. Das erklärt auch, warum Hersteller Ausfalldaten über viele Anlagen hinweg bündeln.</p>
+</div>
+<hr />
+<h2 id="264-der-wirtschaftliche-nutzen">26.4 Der wirtschaftliche Nutzen<a class="headerlink" href="#264-der-wirtschaftliche-nutzen" title="Permanent link">&para;</a></h2>
+<p>Predictive Maintenance ist ein Paradebeispiel für einen rechenbaren <strong>Business Case</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Faktor</th>
+<th>Wirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Weniger ungeplante Stillstände</td>
+<td>höhere Verfügbarkeit</td>
+</tr>
+<tr>
+<td>Weniger Folgeschäden</td>
+<td>geringere Reparaturkosten</td>
+</tr>
+<tr>
+<td>Bessere Ersatzteilplanung</td>
+<td>weniger Lagerkosten, keine Hektik</td>
+</tr>
+<tr>
+<td>Längere Maschinenlebensdauer</td>
+<td>Investitionen später nötig</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Business Case durchgerechnet</p>
+<p>Eine Anlage hat bisher pro Jahr <strong>6 ungeplante Ausfälle</strong>. Predictive Maintenance verhindert davon geschätzt <strong>4</strong> (die anderen 2 sind zu spontan). Kosten pro ungeplantem Ausfall:</p>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Betrag pro Ausfall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stillstand (8 h × 5.000 €/h)</td>
+<td>40.000 €</td>
+</tr>
+<tr>
+<td>Folgeschäden/Reparatur</td>
+<td>15.000 €</td>
+</tr>
+<tr>
+<td>Eilbestellung Ersatzteil</td>
+<td>5.000 €</td>
+</tr>
+<tr>
+<td><strong>Summe je Ausfall</strong></td>
+<td><strong>60.000 €</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Vermiedene Kosten:</strong> 4 × 60.000 € = <strong>240.000 €/Jahr</strong>.</p>
+<p>Dem gegenüber stehen die <strong>jährlichen Kosten</strong> der Lösung: Sensorik (Abschreibung) 20.000 € + Softwarelizenz 30.000 € + Betreuung 25.000 € = <strong>75.000 €</strong>.</p>
+<p><strong>Netto-Nutzen:</strong> 240.000 € − 75.000 € = <strong>165.000 €/Jahr</strong>. Selbst wenn man vorsichtig nur 2 statt 4 verhinderte Ausfälle ansetzt (120.000 €), bleibt der Business Case klar positiv. Genau so baut man ihn auf – die Methodik gilt für viele KI-Projekte (Kapitel 4, 38).</p>
+</div>
+<hr />
+<h2 id="265-voraussetzungen-und-grenzen">26.5 Voraussetzungen und Grenzen<a class="headerlink" href="#265-voraussetzungen-und-grenzen" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Kein Selbstläufer</p>
+<ul>
+<li>Man braucht <strong>genügend historische Daten</strong> – idealerweise auch echte Ausfalldaten (die selten und wertvoll sind).</li>
+<li><strong>Sensorik</strong> muss vorhanden oder nachrüstbar sein.</li>
+<li>Für <strong>seltene</strong> Ausfälle ist es schwer, verlässlich zu lernen (wenig Beispiele).</li>
+<li>Vorhersagen sind <strong>Wahrscheinlichkeiten</strong>, keine Gewissheiten – Fehlalarme und verpasste Fälle bleiben möglich.</li>
+</ul>
+</div>
+<hr />
+<h2 id="266-wo-copilot-unterstutzt">26.6 Wo Copilot unterstützt<a class="headerlink" href="#266-wo-copilot-unterstutzt" title="Permanent link">&para;</a></h2>
+<p>Die Vorhersage selbst leistet ein Spezialsystem. <strong>Copilot</strong> hilft rundherum – bei Doku, Auswertung und Kommunikation:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wartungsberichte</td>
+<td>„Fasse diese Wartungshistorie zu den häufigsten Ausfallursachen zusammen."</td>
+</tr>
+<tr>
+<td>Business Case</td>
+<td>„Hilf mir, den Nutzen von Predictive Maintenance für Maschine X zu berechnen."</td>
+</tr>
+<tr>
+<td>Kommunikation</td>
+<td>„Formuliere eine verständliche Info an die Produktion zur geplanten Wartung."</td>
+</tr>
+<tr>
+<td>Analyse</td>
+<td>„Welche Muster zeigt diese Ausfallstatistik (Excel)?"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre mir den Unterschied zwischen reaktiver, präventiver und vorausschauender
+Wartung an einem Beispiel aus einem produzierenden Betrieb. Erstelle dann eine
+einfache Beispielrechnung, die den möglichen Nutzen vorausschauender Wartung zeigt.
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Drei Strategien: <strong>reaktiv, präventiv, vorausschauend</strong> – Predictive Maintenance wartet <strong>datenbasiert</strong> im optimalen Moment.</li>
+<li>Modelle erkennen aus <strong>Sensordaten</strong> frühe <strong>Verschleißmuster</strong> und schätzen das Ausfallrisiko.</li>
+<li>Zwei Wege: <strong>Anomalieerkennung</strong> (ohne Ausfalldaten) und <strong>Restlebensdauer-Schätzung</strong> (mit vielen Ausfalldaten).</li>
+<li>Der Nutzen (weniger Stillstand/Folgeschäden) ist gut als <strong>Business Case</strong> rechenbar – oft mit sechsstelligem Netto-Nutzen.</li>
+<li>Voraussetzungen: genug <strong>Daten und Sensorik</strong>; Vorhersagen bleiben <strong>Wahrscheinlichkeiten</strong>.</li>
+<li><strong>Copilot</strong> unterstützt bei Doku, Business Case und Kommunikation – nicht bei der Vorhersage selbst.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Wartungsstrategie für einen Aufzug wählen</summary>
+<p>Der Betreiber eines Bürogebäudes fragt dich, wie er den Personenaufzug künftig warten soll. Du sollst die drei Strategien vergleichen und eine Empfehlung geben. Der Kontext steht fest:</p>
+<blockquote>
+<p><strong>Aufzug im Bürohaus:</strong> 8 Etagen, ganztägig in Betrieb, ein Ausfall verärgert Mieter und kostet Servicegebühr. Wartungsbudget ist begrenzt.</p>
+</blockquote>
+<p>Öffne Copilot und erledige die Aufgabe in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Vergleiche für diesen Aufzug (8 Etagen, Dauerbetrieb, begrenztes Budget) die reaktive,
+vorbeugende und vorausschauende Wartung in einer Tabelle: je ein Vorteil und ein
+Nachteil. Empfiehl anschließend eine Strategie für genau diesen Fall und begründe.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine klare Empfehlung, die zum Aufzug-Szenario passt – nicht nur eine allgemeine Definition der drei Strategien.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Vorausschauend = warten kurz bevor etwas kaputtgeht (datenbasiert). Vorbeugend = feste Intervalle, egal ob nötig. Reaktiv = erst nach dem Ausfall.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: klare Gegenüberstellung der 3 Strategien mit Vor-/Nachteilen und eine begründete Empfehlung für den
+Aufzug (oft vorbeugend mit Tendenz zu vorausschauend). Lernziel: Predictive Maintenance von anderen Strategien abgrenzen und situativ einordnen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Predictive-Maintenance-Ablauf für eine Pumpe skizzieren</summary>
+<p>Für eine wichtige Pumpe in einer Wasseraufbereitung soll ein einfaches Frühwarnsystem entstehen. Die Sensordaten, die sie liefert, sind bekannt.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Eine Kreiselpumpe liefert diese Sensordaten: Lagertemperatur (°C), Vibration (mm/s),
+Motorstrom (A), Durchfluss (l/min). Welche Signale in diesen Daten könnten einen
+nahenden Ausfall ankündigen? Skizziere dann, wie ein KI-System daraus eine Warnung
+erzeugt und wer wann informiert wird (Ampel: grün/gelb/rot).
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – Grenzwerte allein reichen nicht:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Warum genügt ein einfacher fester Grenzwert (z. B. &quot;Alarm ab 80 °C&quot;) oft nicht, und
+was macht ein lernendes System besser? Nenne ein konkretes Beispiel für dieses Pumpen-Szenario.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> ein nachvollziehbarer Warnablauf plus eine Begründung, warum ein lernendes System dem festen Grenzwert überlegen sein kann.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Vorausschauende Wartung braucht historische Daten von Normal- UND Ausfallzuständen, um Muster (nicht nur Schwellen) zu lernen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: sinnvolle Ausfallsignale (z. B. steigende Vibration bei Lagerschaden), ein Ampel-Warnablauf mit
+Zuständigkeiten und eine gute Begründung für lernende Muster statt fester Grenzwerte (z. B. schleichender Trend, Kombination
+mehrerer Größen). Lernziel: das Grundprinzip Predictive Maintenance konkret durchdenken.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> PdM-Business-Case mit Fehlalarm-Abwägung</summary>
+<p>Für eine teure Maschine sollst du prüfen, ob sich Predictive Maintenance wirtschaftlich lohnt – und dabei die Fehlalarme ehrlich einrechnen. Die Zahlen liegen vor:</p>
+<blockquote>
+<p><strong>CNC-Bearbeitungszentrum:</strong> ungeplanter Ausfall kostet <strong>2.000 € pro Stunde</strong>, im Schnitt <strong>6 ungeplante Ausfälle/Jahr</strong> à ~4 Stunden. Eine PdM-Nachrüstung (Sensorik + System) kostet <strong>35.000 €</strong> einmalig plus <strong>5.000 €/Jahr</strong> Betrieb.</p>
+</blockquote>
+<p><strong>Schritt 1 – grober Business Case:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Rechne einen groben Business Case für Predictive Maintenance an diesem CNC-Zentrum:
+Ausfall 2.000 €/h, 6 Ausfälle/Jahr à 4 h; PdM-Kosten 35.000 € einmalig + 5.000 €/Jahr.
+Wenn PdM die ungeplanten Ausfälle um 60 % senkt: Lohnt es sich, und ab wann?
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2 – Fehlalarme einrechnen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Was passiert bei zu vielen Fehlalarmen (unnötige Wartung, Stillstand) und bei verpassten
+Warnungen? Wie wirken beide auf den berechneten Nutzen? Baue eine grobe Schätzung ein.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Nebenbedingung:</strong> Kennzeichne jede Annahme, die du in die Rechnung steckst.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du selbst beurteilt hast, wie belastbar die 60-%-Annahme ist und was passiert, wenn sie nur 30 % beträgt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Zu viele Fehlalarme untergraben Vertrauen und Wirtschaftlichkeit – die Trefferqualität entscheidet oft mehr als der Bruttonutzen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: nachvollziehbare Rechnung (Bruttonutzen ca. 28.800 €/Jahr minus 5.000 € Betrieb, Amortisation der
+35.000 € nach gut 1,5 Jahren) mit Sensitivität auf die Annahme und eine ehrliche Fehlalarm-Betrachtung. Lernziel: PdM wirtschaftlich
+UND mit Blick auf Fehlentscheidungen bewerten.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> PdM-Konzept end-to-end mit Kurskorrektur</summary>
+<p><strong>Szenario:</strong> Du bist Instandhaltungsleiter(in) einer Abfüllanlage für Getränke (3-Schicht-Betrieb). Drei Anlagenteile machen Ärger: <strong>Füllventil-Einheit</strong>, <strong>Etikettiermaschine</strong> und <strong>Förderband-Antrieb</strong>. Die Geschäftsführung will ein Predictive-Maintenance-Pilotprojekt an <strong>genau einer</strong> Maschine – aber nur, wenn es sich rechnet und die Belegschaft mitzieht. Arbeite alles in Copilot.</p>
+<p><strong>Runde 1 – Konzept aufbauen.</strong> Nutze diese Ausgangslage:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Abfüllanlage, 3-Schicht-Betrieb. Kandidaten für Predictive Maintenance:
+- Füllventil-Einheit: selten Ausfall, aber dann teurer Produktionsstopp; wenig Sensorik
+- Etikettiermaschine: häufige kleine Störungen, gut mit Sensoren ausgestattet
+- Förderband-Antrieb: mittlere Ausfallhäufigkeit, historische Daten vorhanden
+Wähle die kritischste Maschine für ein PdM-Pilotprojekt, definiere die nötigen
+Sensordaten und die Datenbasis fürs Training, und beschreibe den Ablauf von der
+Datenerfassung über die Warnung bis zur Wartungsentscheidung (wer entscheidet?).
+</code></pre></div></td></tr></table></div>
+<p><strong>Runde 2 – Pflichtkriterien.</strong> Dein Konzept muss <strong>alle</strong> erfüllen. Lass Copilot prüfen und Lücken schließen:</p>
+<ol>
+<li>die Maschinenauswahl ist mit Kritikalität UND Datenlage begründet</li>
+<li>nötige Sensordaten und Trainingsdatenbasis sind konkret benannt</li>
+<li>der Ablauf enthält eine klare menschliche Entscheidungsrolle</li>
+<li>3 Voraussetzungen und 2 Risiken sind genannt</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Nach 4 Wochen Pilot meldet die Schicht: Das System erzeugt <strong>zu viele Fehlalarme</strong>, die Belegschaft beginnt, Warnungen zu ignorieren. Überarbeite das Konzept: Wie senkst du die Fehlalarmquote und gewinnst das Vertrauen der Schicht zurück (z. B. Schwellen, Bestätigungsschritt, Feedback-Schleife)?</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Grundsatzfrage: Lohnt PdM für die gewählte Maschine überhaupt, oder reicht <strong>vorbeugende Wartung</strong> in festen Intervallen? Lass dir Pro/Contra geben, entscheide begründet – und <strong>widersprich Copilot</strong>, wenn es PdM empfiehlt, obwohl Datenlage oder Fehlalarmproblem dagegen sprechen.</p>
+<p><strong>Deliverable:</strong> PdM-Konzept (Maschine, Daten, Ablauf, Voraussetzungen, Risiken) in Version 2 nach Kurskorrektur + begründete Entscheidung PdM vs. vorbeugende Wartung.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, das Fehlalarmproblem aus Runde 3 glaubhaft entschärft ist und deine PdM-vs.-vorbeugend-Entscheidung auf einem echten Argument beruht (nicht auf „PdM ist moderner").</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>PdM lohnt vor allem bei teuren, kritischen Maschinen mit guter Datenlage. Der Praxistest kommt in Runde 3: Ein System, dem die Schicht nicht traut, ist wertlos.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) begründete Maschinenauswahl (Kritikalität und Datenlage, oft Förderband-Antrieb wegen vorhandener
+Historie); (2) alle vier Pflichtkriterien erfüllt; (3) das Fehlalarmproblem aus Runde 3 wird mit konkreten Mitteln entschärft
+(Schwellen, Bestätigung, Feedback-Schleife); (4) die PdM-vs.-vorbeugend-Entscheidung ist tragfähig begründet und nicht blind
+übernommen. Lernziel: PdM als Gesamtkonzept durchdenken und wirtschaftlich wie menschlich realistisch bewerten.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel25/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 25 – Praxis: KI im Qualitätsmanagement">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 25 – Praxis: KI im Qualitätsmanagement
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel27/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 27 – Praxis: KI in der Prozessregulierung">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 27 – Praxis: KI in der Prozessregulierung
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

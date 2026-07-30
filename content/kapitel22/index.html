@@ -1,0 +1,1697 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel21/">
+      
+      
+        <link rel="next" href="../kapitel23/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-22-praxis-ki-in-der-geschaftsprozessoptimierung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · Use Cases & Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Medienerstellung mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Data-Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#221-vom-prinzip-zur-praxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.1 Vom Prinzip zur Praxis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-das-fallbeispiel-angebot-bis-rechnung" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.2 Das Fallbeispiel: Angebot bis Rechnung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223-copilot-in-jedem-schritt" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.3 Copilot in jedem Schritt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-erfolg-messen" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.4 Erfolg messen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-der-business-case-die-rechnung-dahinter" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.5 Der Business Case: die Rechnung dahinter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226-von-der-insellosung-zum-wiederholbaren-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.6 Von der Insellösung zum wiederholbaren Standard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#227-stolpersteine-in-der-praxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      22.7 Stolpersteine in der Praxis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Praxis: KI in der Konstruktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – KI in der Produktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Praxis: KI im Qualitätsmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Low-Code-Programmierung und Citizen Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-22-praxis-ki-in-der-geschaftsprozessoptimierung">Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung<a class="headerlink" href="#kapitel-22-praxis-ki-in-der-geschaftsprozessoptimierung" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie du KI <strong>praktisch</strong> in einen konkreten Geschäftsprozess einbindest</li>
+<li>Ein durchgängiges <strong>Fallbeispiel</strong>: der Angebots-/Bestellprozess</li>
+<li>Wie du Schritte in <strong>Mensch</strong> und <strong>KI/Automatik</strong> aufteilst</li>
+<li>Wie <strong>Copilot</strong> in verschiedenen Prozessschritten konkret hilft</li>
+<li>Wie du den Erfolg mit <strong>Kennzahlen</strong> misst</li>
+<li>Wie du einen einfachen <strong>Business Case</strong> aufstellst (durchgerechnet)</li>
+<li>Wie aus einer Insellösung ein <strong>wiederholbarer Standard</strong> wird</li>
+</ul>
+</div>
+<hr />
+<h2 id="221-vom-prinzip-zur-praxis">22.1 Vom Prinzip zur Praxis<a class="headerlink" href="#221-vom-prinzip-zur-praxis" title="Permanent link">&para;</a></h2>
+<p>In Kapitel 21 ging es um die <strong>Prinzipien</strong> der Prozessoptimierung. Jetzt spielen wir sie an einem <strong>durchgängigen Beispiel</strong> durch: dem Weg von der Kundenanfrage bis zur Rechnung. Ziel ist, zu zeigen, <strong>wo genau</strong> KI im Alltag ansetzt – Schritt für Schritt.</p>
+<hr />
+<h2 id="222-das-fallbeispiel-angebot-bis-rechnung">22.2 Das Fallbeispiel: Angebot bis Rechnung<a class="headerlink" href="#222-das-fallbeispiel-angebot-bis-rechnung" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Anfrage eingeht]) --&gt; B([Anfrage verstehen])
+    B --&gt; C([Angebot erstellen])
+    C --&gt; D([Nachfassen])
+    D --&gt; E([Auftrag &amp; Bestätigung])
+    E --&gt; F([Rechnung &amp; Ablage])</code></pre>
+<p>Für jeden Schritt fragen wir: Was ist <strong>Routine</strong> (KI-tauglich) und was braucht <strong>menschliche Entscheidung</strong>?</p>
+<table>
+<thead>
+<tr>
+<th>Schritt</th>
+<th>Routineanteil</th>
+<th>Menschliche Entscheidung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anfrage verstehen</td>
+<td>Kernpunkte extrahieren</td>
+<td>fachliche Machbarkeit</td>
+</tr>
+<tr>
+<td>Angebot erstellen</td>
+<td>Textbausteine, Formulierung</td>
+<td>Preis, Konditionen</td>
+</tr>
+<tr>
+<td>Nachfassen</td>
+<td>Erinnerungsmail entwerfen</td>
+<td>Timing, Beziehung</td>
+</tr>
+<tr>
+<td>Bestätigung</td>
+<td>Standardmail</td>
+<td>Sonderfälle</td>
+</tr>
+<tr>
+<td>Rechnung &amp; Ablage</td>
+<td>Zusammenfassung, Ablagevorschlag</td>
+<td>Freigabe</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="223-copilot-in-jedem-schritt">22.3 Copilot in jedem Schritt<a class="headerlink" href="#223-copilot-in-jedem-schritt" title="Permanent link">&para;</a></h2>
+<p>Probiere die Kette direkt aus. Damit du keine echten Kundendaten brauchst, lässt du Copilot die Anfrage <strong>zuerst selbst erfinden</strong>:</p>
+<p><strong>Schritt 0 – Beispielanfrage erzeugen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde eine realistische Kundenanfrage per E-Mail für eine Sonderanfertigung,
+in der bewusst eine wichtige Angabe (z. B. der Liefertermin) fehlt.
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 1 – Anfrage verstehen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse diese Kundenanfrage in Stichpunkten zusammen: Was genau wird gewünscht,
+welche Mengen/Termine werden genannt, und welche Angaben fehlen noch, um ein
+Angebot zu erstellen?
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 2 – Angebot entwerfen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Entwirf ein Angebotsschreiben (Sie-Form, freundlich, max. 200 Wörter) auf Basis
+der Anfrage. Lasse den Endpreis als Platzhalter [PREIS], den ich selbst einsetze.
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 3 – Nachfassen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Der Kunde hat auf mein Angebot vom [Datum] noch nicht reagiert. Formuliere eine
+höfliche, kurze Erinnerung, die nicht aufdringlich wirkt und eine konkrete
+Rückfrage enthält.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Der Mensch bleibt am Steuer</p>
+<p>Beachte: Preise, Konditionen und Freigaben bleiben in den Beispielen <strong>beim Menschen</strong> (Platzhalter [PREIS]). Copilot übernimmt die <strong>zeitraubende Formulierungsarbeit</strong>, nicht die <strong>Entscheidung</strong>. Genau diese Aufteilung macht den Einsatz sicher und akzeptiert.</p>
+</div>
+<hr />
+<h2 id="224-erfolg-messen">22.4 Erfolg messen<a class="headerlink" href="#224-erfolg-messen" title="Permanent link">&para;</a></h2>
+<p>Ohne Kennzahlen weiß niemand, ob die Optimierung gewirkt hat. Lege <strong>vorher</strong> fest, was du misst:</p>
+<table>
+<thead>
+<tr>
+<th>Kennzahl</th>
+<th>Vorher</th>
+<th>Ziel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Durchlaufzeit je Angebot</td>
+<td>z. B. 45 min</td>
+<td>−40 %</td>
+</tr>
+<tr>
+<td>Zahl der Angebote pro Tag</td>
+<td>z. B. 6</td>
+<td>+50 %</td>
+</tr>
+<tr>
+<td>Fehler-/Nacharbeitsquote</td>
+<td>z. B. 12 %</td>
+<td>&lt; 5 %</td>
+</tr>
+<tr>
+<td>Reaktionszeit auf Anfragen</td>
+<td>z. B. 2 Tage</td>
+<td>&lt; 1 Tag</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Realistischer Effekt</p>
+<p>Angenommen, das Formulieren eines Angebots dauert statt 45 nur 25 Minuten – bei 6 Angeboten pro Tag sind das <strong>2 Stunden</strong> gewonnene Zeit täglich, die in Beratung oder Nachfassen fließen kann. Solche Rechnungen machen den Nutzen greifbar und rechtfertigen die Einführung (Business Case, Kap. 26/38).</p>
+</div>
+<hr />
+<h2 id="225-der-business-case-die-rechnung-dahinter">22.5 Der Business Case: die Rechnung dahinter<a class="headerlink" href="#225-der-business-case-die-rechnung-dahinter" title="Permanent link">&para;</a></h2>
+<p>Kennzahlen zeigen die Wirkung – ein <strong>Business Case</strong> übersetzt sie in Euro und macht die Einführung entscheidungsreif. Rechnen wir das Angebotsbeispiel durch:</p>
+<table>
+<thead>
+<tr>
+<th>Größe</th>
+<th>Annahme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zeitersparnis je Angebot</td>
+<td>20 Minuten (45 → 25 min)</td>
+</tr>
+<tr>
+<td>Angebote pro Tag</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Arbeitstage pro Monat</td>
+<td>20</td>
+</tr>
+<tr>
+<td>interner Stundensatz</td>
+<td>40 €</td>
+</tr>
+<tr>
+<td>Lizenzkosten je Nutzer/Monat</td>
+<td>ca. 30 €</td>
+</tr>
+</tbody>
+</table>
+<p>Daraus ergibt sich: 20 min × 6 = <strong>120 min/Tag</strong> ≈ 2 Stunden. Über 20 Tage sind das <strong>40 Stunden im Monat</strong>. Bei 40 € entspricht das <strong>1.600 € gewonnener Kapazität</strong> pro Monat – dem stehen rund <strong>30 € Lizenzkosten</strong> gegenüber. Selbst mit großzügigem Puffer für Einarbeitung und Prüfaufwand bleibt der Nutzen klar positiv.</p>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: harter und weicher Nutzen</p>
+<p>Nicht jeder Vorteil steht in der Tabelle. <strong>Harter Nutzen</strong> ist messbar (Zeit, Kosten, Fehlerquote). <strong>Weicher Nutzen</strong> wirkt indirekt: schnellere Reaktion auf Kunden, weniger Frust bei Routinearbeit, mehr Zeit für Beratung. Beides gehört in einen ehrlichen Business Case – der harte Teil überzeugt das Controlling, der weiche erklärt, warum das Team mitzieht (siehe auch Kap. 26 und Kap. 38 – Geschäftsmodelle).</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Häufiges Missverständnis: gesparte Minuten sind noch kein Geld</p>
+<p>Die Rechnung oben ist eine <strong>Potenzialrechnung</strong>. Gesparte Minuten werden erst zu Wert, wenn die frei werdende Zeit <strong>sinnvoll genutzt</strong> wird – für mehr Angebote, bessere Beratung oder Abbau von Rückstand. Verpufft die Zeit in Leerlauf, gibt es keinen echten Gewinn. Formuliere deshalb immer, <strong>wofür</strong> die gewonnene Kapazität eingesetzt wird – sonst bleibt der Business Case eine Milchmädchenrechnung.</p>
+</div>
+<hr />
+<h2 id="226-von-der-insellosung-zum-wiederholbaren-standard">22.6 Von der Insellösung zum wiederholbaren Standard<a class="headerlink" href="#226-von-der-insellosung-zum-wiederholbaren-standard" title="Permanent link">&para;</a></h2>
+<p>Ein einzelner gut formulierter Prompt hilft einer Person einmal. Wirkung im Unternehmen entsteht erst, wenn gute Lösungen <strong>wiederholbar</strong> werden. Der Weg dahin:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([bewährter Prompt]) --&gt; B([als Vorlage sichern])
+    B --&gt; C([im Team teilen &amp; abstimmen])
+    C --&gt; D([in den Standardablauf einbetten])
+    D --&gt; E([regelmäßig prüfen &amp; verbessern])
+    E --&gt; B</code></pre>
+<p>Konkret heißt das: die besten Prompts als <strong>Vorlagen</strong> sammeln (z. B. in OneNote oder einer geteilten Bibliothek, Kap. 14), sie im Team abstimmen und in den offiziellen Prozess aufnehmen. So wird aus dem Können Einzelner eine <strong>organisationale Fähigkeit</strong> – der rote Faden zu Kap. 30 (Low-Code/Citizen Development) und Kap. 40 (Prompt Engineering als Schlüsselkompetenz). Wichtig bleibt die regelmäßige Prüfung: Vorlagen veralten, Prozesse ändern sich.</p>
+<hr />
+<h2 id="227-stolpersteine-in-der-praxis">22.7 Stolpersteine in der Praxis<a class="headerlink" href="#227-stolpersteine-in-der-praxis" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Worauf du achten musst</p>
+<ul>
+<li><strong>Vertrauliche Kundendaten</strong> nur in der freigegebenen M365-Umgebung verarbeiten (Kap. 33).</li>
+<li><strong>Copilot-Entwürfe immer gegenlesen</strong> – falscher Ton oder falsche Zahl fällt sonst dem Kunden auf.</li>
+<li><strong>Nicht alles automatisieren wollen:</strong> Beziehungspflege und Sonderfälle bleiben menschlich.</li>
+<li><strong>Team mitnehmen:</strong> Wenn Kolleg:innen den Nutzen nicht sehen, wird das Werkzeug nicht genutzt (Change, Kap. 37).</li>
+</ul>
+</div>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere unseren Angebotsprozess (Anfrage bis Rechnung). Schlage für jeden
+Schritt vor, ob und wie KI helfen kann, und markiere klar, welche Schritte
+zwingend eine menschliche Entscheidung brauchen.
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI-Prozessoptimierung wird konkret, wenn man einen realen Prozess <strong>Schritt für Schritt</strong> durchgeht.</li>
+<li>Jeden Schritt in <strong>Routine</strong> (KI) und <strong>Entscheidung</strong> (Mensch) aufteilen – Preise/Freigaben bleiben menschlich.</li>
+<li><strong>Copilot</strong> übernimmt die zeitraubende Formulierungs- und Zusammenfassungsarbeit.</li>
+<li>Erfolg mit <strong>Kennzahlen</strong> (Durchlaufzeit, Menge, Fehlerquote) messbar machen.</li>
+<li>Ein <strong>Business Case</strong> übersetzt Zeitersparnis in Euro – gesparte Minuten zählen aber erst, wenn die Zeit sinnvoll genutzt wird.</li>
+<li>Aus Einzellösungen einen <strong>wiederholbaren Standard</strong> machen (Vorlagen sichern, teilen, einbetten, prüfen).</li>
+<li>Stolpersteine: Datenschutz, ungeprüfte Entwürfe, Über-Automatisierung, fehlende Akzeptanz.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Automatisierungspotenzial im Statusbericht finden</summary>
+<p>Jede Woche erstellt dein Team denselben Statusbericht – viel Handarbeit. Du sollst herausfinden, wo Copilot den größten Zeithebel hat. Der Ablauf liegt vor.</p>
+<p>Öffne Copilot und erledige die Analyse in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier sind die Schritte eines wöchentlichen Statusberichts. Markiere je Schritt:
+gut automatisierbar, teilweise, oder nur manuell. Sag mir dann, bei welchem einen
+Schritt Copilot am meisten Zeit sparen würde – und warum.
+
+1. Zahlen aus 3 Tabellen zusammensuchen
+2. Zahlen in eine Standardvorlage übertragen
+3. Auffälligkeiten in Worten zusammenfassen
+4. Bericht sprachlich glätten und formatieren
+5. Verteiler anschreiben und Bericht versenden
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine begründete Aussage, welcher Schritt der größte Copilot-Hebel ist – konkret genug, dass dein Team es nächste Woche ausprobieren könnte.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Gut automatisierbar sind meist wiederkehrende, regelbasierte, textlastige Schritte – dort spielt Copilot seine Stärke aus.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Schritte mit Automatisierbarkeits-Einordnung und ein begründeter Copilot-Hebel (typisch Schritt 3
+oder 4, das textlastige Zusammenfassen/Glätten). Lernziel: Automatisierungspotenzial systematisch erkennen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Standardarbeitsanweisung (SOP) mit Copilot-Prompts</summary>
+<p>Im Kundenservice läuft die Bearbeitung von Beschwerden bei jedem anders. Du sollst daraus eine klare Standardarbeitsanweisung (SOP) machen, die jede neue Person ohne Rückfragen ausführen kann. Der grobe Ablauf liegt vor.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Mach aus diesem groben Ablauf eine klare Standardarbeitsanweisung (SOP): nummerierte
+Schritte, Verantwortliche, Zeitvorgabe je Schritt und eine Eskalationsregel. Ergänze
+zu jedem Schritt einen fertigen Copilot-Prompt, den eine Servicekraft direkt nutzen kann.
+
+- Beschwerde geht per Mail ein
+- Sachverhalt verstehen und einordnen
+- Antwort formulieren, ggf. Entschädigung anbieten
+- bei Eskalation an Teamleitung übergeben
+- Fall dokumentieren
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – ein schwieriger Sonderfall:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Ein Kunde droht öffentlich mit einer schlechten Bewertung und einer Anwältin. Ergänze
+die SOP um genau diesen Sonderfall: Ab wann wird eskaliert, wer entscheidet, und was
+darf die Servicekraft NICHT selbst zusagen?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine SOP, die auch den Sonderfall sauber regelt – so klar, dass eine neue Servicekraft nicht ins Straucheln gerät.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Eine gute SOP ist so klar, dass jede neue Person sie ohne Rückfragen ausführen kann – gerade Sonderfälle brauchen eindeutige Grenzen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: strukturierte SOP mit Verantwortlichen, Zeitvorgaben, einsatzbereiten Copilot-Prompts und einer
+klaren Regel für den Eskalations-Sonderfall (Grenzen der Servicekraft). Lernziel: Prozesse standardisieren und mit KI-Unterstützung verzahnen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Angebotserstellung in Automatisierungs-Zonen aufteilen</summary>
+<p>Die Angebotserstellung in einem Vertriebs-Back-Office kostet viel manuelle Zeit. Du sollst ein Automatisierungskonzept entwerfen, das klar regelt, wo der Mensch drinbleibt. Der Prozess liegt vor.</p>
+<p><strong>Schritt 1 – in Zonen aufteilen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Teile diesen Angebotsprozess in drei Zonen: (A) voll automatisierbar, (B) Copilot-
+assistiert mit menschlicher Freigabe, (C) rein menschlich. Begründe jede Zuordnung.
+
+1. Anfrage aus dem Postfach erfassen
+2. Kundendaten und Preisliste heraussuchen
+3. Angebotstext und Positionen formulieren
+4. Rabatt festlegen
+5. Angebot final freigeben und versenden
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2 – Zone B konkretisieren:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Beschreibe für einen Schritt aus Zone B den genauen Ablauf: Was macht Copilot, wo prüft
+der Mensch, wie sieht die Freigabe aus?
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Nebenbedingung:</strong> Rabattentscheidungen und der finale Versand dürfen nicht vollautomatisch laufen – begründe, warum.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du selbst benannt hast, wo das größte Risiko entsteht, falls der Mensch seine Prüfung in Zone B überspringt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>„Mensch im Loop": Gerade bei preis- oder rechtsrelevanten Schritten (Rabatt, Versand) braucht es eine bewusste Freigabe.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: klare Zonentrennung mit Begründung, ein konkret beschriebener assistierter Ablauf in Zone B und ein
+benanntes Hauptrisiko bei fehlender Prüfung (z. B. falscher Rabatt geht raus). Lernziel: sinnvolle Arbeitsteilung Mensch–KI gestalten.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Entscheidungsvorlage mit KPI-Wirkung und Kurskorrektur</summary>
+<p><strong>Szenario:</strong> Du bist Prozessverantwortliche(r) für die Auftragsabwicklung eines B2B-Händlers. Kennzahlen heute: <strong>Durchlaufzeit 6 Tage</strong>, <strong>Fehlerquote 12 %</strong> (falsche Mengen/Preise), <strong>Nacharbeitsquote 20 %</strong>. Die Geschäftsleitung erwartet eine einseitige Entscheidungsvorlage, ob und wie Copilot hier helfen soll. Sie ist skeptisch gegenüber „KI um der KI willen". Arbeite alles in Copilot.</p>
+<p><strong>Runde 1 – Vorlage bauen.</strong> Nutze diese Ausgangslage und entwickle einen Copilot-gestützten Verbesserungsvorschlag mit erwarteter Wirkung auf jede der drei Kennzahlen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Ausgangslage Auftragsabwicklung: Durchlaufzeit 6 Tage, Fehlerquote 12 % (falsche
+Mengen/Preise), Nacharbeitsquote 20 %. Der Prozess: Auftrag per Mail -&gt; manuell ins
+ERP tippen -&gt; Verfügbarkeit prüfen -&gt; Auftragsbestätigung schreiben -&gt; intern freigeben.
+Entwirf eine Copilot-gestützte Verbesserung und schätze, wie sich jede der drei
+Kennzahlen verändern würde.
+</code></pre></div></td></tr></table></div>
+<p><strong>Runde 2 – Pflichtkriterien.</strong> Die Vorlage muss <strong>alle</strong> erfüllen. Lass Copilot prüfen und Lücken schließen:</p>
+<ol>
+<li>Wirkung auf alle drei KPIs ist konkret beziffert (mit Richtung und Größenordnung)</li>
+<li>jede Prognose hat eine offengelegte Annahme</li>
+<li>Aufwand/Kosten der Maßnahme sind grob benannt</li>
+<li>mindestens ein Risiko ist genannt</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Ein erster Testlauf zeigt: Copilot tippt Aufträge zwar schneller ins ERP, aber die <strong>Fehlerquote sinkt kaum</strong>, weil die Fehler schon in den unstrukturierten Kunden-Mails stecken. Überarbeite die Vorlage: Wo im Prozess muss die Maßnahme ansetzen, damit die Fehlerquote wirklich fällt?</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Geschäftsleitung will nur EIN KPI-Ziel priorisieren: (A) Durchlaufzeit oder (B) Fehlerquote. Lass dir Pro/Contra geben, entscheide begründet – und <strong>widersprich Copilot</strong>, wenn es das beeindruckendere, aber weniger werthaltige Ziel empfiehlt.</p>
+<p><strong>Deliverable:</strong> einseitige Entscheidungsvorlage (Problem, Lösung, KPI-Wirkung, Aufwand, Risiko) in Version 2 nach Kurskorrektur + begründete KPI-Priorisierung.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, die Kurskorrektur aus Runde 3 eingearbeitet ist und deine Priorisierung auf echtem Geschäftsnutzen beruht (nicht auf „Zeit klingt besser").</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Entscheider überzeugt man mit Zahlen und ehrlichen Annahmen. Der eigentliche Test kommt in Runde 3: Automatisierung an der falschen Stelle beschleunigt nur den Fehler.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) Wirkung auf alle drei KPIs beziffert mit offengelegten Annahmen; (2) alle vier Pflichtkriterien
+erfüllt; (3) die Kurskorrektur setzt an der Fehlerquelle an (strukturierte Auftragserfassung statt nur schnelleres Tippen);
+(4) die KPI-Priorisierung ist mit Geschäftsnutzen begründet und nicht blind übernommen. Lernziel: Verbesserungen KPI-basiert
+und entscheidungsreif aufbereiten und die richtige Stellschraube finden.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel21/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 21 – Prozessoptimierung">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 21 – Prozessoptimierung
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel23/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 23 – Praxis: KI in der Konstruktion">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 23 – Praxis: KI in der Konstruktion
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

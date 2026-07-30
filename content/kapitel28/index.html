@@ -1,0 +1,1732 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel27/">
+      
+      
+        <link rel="next" href="../kapitel29/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 28 – KI in der Dokumentenverarbeitung - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-28-ki-in-der-dokumentenverarbeitung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 28 – KI in der Dokumentenverarbeitung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · Use Cases & Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Medienerstellung mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Data-Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Praxis: KI in der Konstruktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – KI in der Produktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Praxis: KI im Qualitätsmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#281-warum-dokumente-ein-idealer-ki-fall-sind" class="md-nav__link">
+    <span class="md-ellipsis">
+      28.1 Warum Dokumente ein idealer KI-Fall sind
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#282-die-verarbeitungskette" class="md-nav__link">
+    <span class="md-ellipsis">
+      28.2 Die Verarbeitungskette
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="28.2 Die Verarbeitungskette">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ocr-extraktion-klassifikation-kurz-erklart" class="md-nav__link">
+    <span class="md-ellipsis">
+      OCR, Extraktion, Klassifikation kurz erklärt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#283-drei-arten-von-dokumenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      28.3 Drei Arten von Dokumenten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#284-dokumentenarbeit-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      28.4 Dokumentenarbeit mit Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#285-grounding-antworten-aus-echten-dokumenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      28.5 Grounding: Antworten aus echten Dokumenten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#286-fehlerrisiken-und-absicherung" class="md-nav__link">
+    <span class="md-ellipsis">
+      28.6 Fehlerrisiken und Absicherung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Low-Code-Programmierung und Citizen Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-28-ki-in-der-dokumentenverarbeitung">Kapitel 28 – KI in der Dokumentenverarbeitung<a class="headerlink" href="#kapitel-28-ki-in-der-dokumentenverarbeitung" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum <strong>Dokumentenverarbeitung</strong> eines der stärksten KI-Einsatzfelder im Büro ist</li>
+<li>Die typische <strong>Verarbeitungskette</strong>: erfassen, extrahieren, klassifizieren, prüfen, weiterleiten</li>
+<li>Was <strong>OCR, Extraktion und Klassifikation</strong> bedeuten</li>
+<li>Der Unterschied zwischen <strong>strukturierten, semistrukturierten und unstrukturierten</strong> Dokumenten</li>
+<li>Wie <strong>Copilot</strong> Dokumente zusammenfasst, durchsucht und Daten herauszieht</li>
+<li>Was <strong>Grounding/RAG</strong> bedeutet und warum es Halluzinationen reduziert</li>
+<li>Welche <strong>Fehlerrisiken</strong> bestehen und wie du sie absicherst</li>
+</ul>
+</div>
+<hr />
+<h2 id="281-warum-dokumente-ein-idealer-ki-fall-sind">28.1 Warum Dokumente ein idealer KI-Fall sind<a class="headerlink" href="#281-warum-dokumente-ein-idealer-ki-fall-sind" title="Permanent link">&para;</a></h2>
+<p>Unternehmen ertrinken in Dokumenten: Rechnungen, Verträge, Berichte, E-Mails, Formulare, Protokolle. Vieles davon ist <strong>unstrukturierter Text</strong> (Kap. 9) – genau das, was moderne Sprach-KI besonders gut verarbeitet.</p>
+<div class="admonition info">
+<p class="admonition-title">Der Hebel</p>
+<p>Dokumentenarbeit ist oft <strong>zeitraubend, repetitiv und fehleranfällig</strong>: lesen, verstehen, wichtige Daten heraussuchen, ablegen. Genau diese Kette kann KI stark beschleunigen. Deshalb gehört Dokumentenverarbeitung zu den <strong>schnellsten und lohnendsten</strong> Einsatzfeldern – ein klassischer Quick Win (Kap. 4).</p>
+</div>
+<hr />
+<h2 id="282-die-verarbeitungskette">28.2 Die Verarbeitungskette<a class="headerlink" href="#282-die-verarbeitungskette" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Erfassen: Scan/Datei]) --&gt; B([OCR: Text lesbar machen])
+    B --&gt; C([Klassifizieren: welcher Dokumenttyp?])
+    C --&gt; D([Extrahieren: relevante Daten])
+    D --&gt; E([Prüfen: plausibel/vollständig?])
+    E --&gt; F([Weiterleiten/Ablegen])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Schritt</th>
+<th>Was passiert</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Erfassen</strong></td>
+<td>Dokument digitalisieren</td>
+<td>Rechnung scannen</td>
+</tr>
+<tr>
+<td><strong>OCR</strong></td>
+<td>Bild → maschinenlesbarer Text</td>
+<td>gescanntes PDF wird durchsuchbar</td>
+</tr>
+<tr>
+<td><strong>Klassifizieren</strong></td>
+<td>Dokumententyp bestimmen</td>
+<td>„das ist eine Rechnung"</td>
+</tr>
+<tr>
+<td><strong>Extrahieren</strong></td>
+<td>Kernangaben herausziehen</td>
+<td>Betrag, Datum, Lieferant</td>
+</tr>
+<tr>
+<td><strong>Prüfen</strong></td>
+<td>Plausibilität/Vollständigkeit</td>
+<td>„Betrag fehlt?"</td>
+</tr>
+<tr>
+<td><strong>Weiterleiten</strong></td>
+<td>ins Zielsystem/an Zuständige</td>
+<td>Buchhaltung</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ocr-extraktion-klassifikation-kurz-erklart">OCR, Extraktion, Klassifikation kurz erklärt<a class="headerlink" href="#ocr-extraktion-klassifikation-kurz-erklart" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>OCR (Texterkennung):</strong> wandelt ein <strong>Bild</strong> von Text (Scan, Foto) in <strong>echten Text</strong> um, mit dem man arbeiten kann.</li>
+<li><strong>Klassifikation:</strong> ordnet ein Dokument einer <strong>Kategorie</strong> zu (Rechnung, Angebot, Mahnung …).</li>
+<li><strong>Extraktion:</strong> zieht <strong>gezielt Datenfelder</strong> heraus (Rechnungsnummer, Betrag, Datum).</li>
+</ul>
+<p>Diese Schritte bauen auf der <strong>Sprachverarbeitung (NLP, Kapitel 13)</strong> auf: Erst das Verstehen von Sprache erlaubt es, Betrag, Datum oder Kündigungsfrist zuverlässig als das zu erkennen, was sie bedeuten – und nicht nur als Zeichenkette.</p>
+<hr />
+<h2 id="283-drei-arten-von-dokumenten">28.3 Drei Arten von Dokumenten<a class="headerlink" href="#283-drei-arten-von-dokumenten" title="Permanent link">&para;</a></h2>
+<p>Wie schwer die Verarbeitung ist, hängt stark davon ab, <strong>wie geordnet</strong> ein Dokument aufgebaut ist:</p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Beschreibung</th>
+<th>Beispiele</th>
+<th>Schwierigkeit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strukturiert</strong></td>
+<td>feste Felder an festen Positionen</td>
+<td>ausgefülltes Web-Formular, Datenbank-Export</td>
+<td>gering</td>
+</tr>
+<tr>
+<td><strong>Semistrukturiert</strong></td>
+<td>wiederkehrende Elemente, aber variables Layout</td>
+<td>Rechnungen, Lieferscheine</td>
+<td>mittel</td>
+</tr>
+<tr>
+<td><strong>Unstrukturiert</strong></td>
+<td>freier Fließtext ohne festes Schema</td>
+<td>E-Mails, Verträge, Berichte</td>
+<td>hoch</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Warum gerade unstrukturierte Dokumente der Durchbruch sind</p>
+<p>Strukturierte Dokumente konnte man schon lange automatisch auslesen – die Felder standen ja immer an derselben Stelle. Die eigentliche Revolution moderner Sprach-KI liegt bei den <strong>unstrukturierten</strong> Dokumenten: Ein Sprachmodell kann eine Kündigungsfrist auch dann finden, wenn sie mal in Paragraf 3, mal in einer Fußnote und in unterschiedlichen Formulierungen steht. Genau deshalb ist Copilot so stark bei Verträgen, E-Mails und Berichten – dem größten und bislang am schwersten zu automatisierenden Teil der Büroarbeit. Bei sehr großen, gleichförmigen Mengen (z. B. tausende Rechnungen täglich) lohnen sich dagegen spezialisierte <strong>IDP-Systeme</strong> (Intelligent Document Processing).</p>
+</div>
+<hr />
+<h2 id="284-dokumentenarbeit-mit-copilot">28.4 Dokumentenarbeit mit Copilot<a class="headerlink" href="#284-dokumentenarbeit-mit-copilot" title="Permanent link">&para;</a></h2>
+<p><strong>Copilot</strong> ist im Büroalltag extrem stark bei Text-Dokumenten:</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Beispiel-Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zusammenfassen</td>
+<td>„Fasse dieses 12-seitige Dokument in 7 Kernpunkten zusammen."</td>
+</tr>
+<tr>
+<td>Gezielt fragen</td>
+<td>„Was steht in diesem Vertrag zur Kündigungsfrist?"</td>
+</tr>
+<tr>
+<td>Daten extrahieren</td>
+<td>„Zieh aus dieser Rechnung Nummer, Datum, Betrag, Lieferant als Tabelle."</td>
+</tr>
+<tr>
+<td>Vergleichen</td>
+<td>„Was hat sich zwischen diesen zwei Vertragsversionen geändert?"</td>
+</tr>
+<tr>
+<td>Umformen</td>
+<td>„Mach aus diesem Protokoll eine To-do-Liste mit Verantwortlichen."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel-Prompt zum Ausprobieren (selbsttragend – Copilot erzeugt das Material zuerst):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde einen kurzen, realistischen Dienstleistungsvertrag mit einigen bewusst
+unvollständigen Angaben. Erstelle danach eine Tabelle mit: Vertragspartner,
+Laufzeit, Kündigungsfrist, monatliche Kosten, besondere Klauseln. Markiere alle
+Angaben, die im Text nicht eindeutig zu finden sind.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">So könnte Copilots Antwort aussehen (Auszug)</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Angabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vertragspartner</td>
+<td>Muster GmbH und IT-Service Weber</td>
+</tr>
+<tr>
+<td>Laufzeit</td>
+<td>24 Monate</td>
+</tr>
+<tr>
+<td>Kündigungsfrist</td>
+<td><strong>im Text nicht eindeutig – prüfen</strong></td>
+</tr>
+<tr>
+<td>Monatliche Kosten</td>
+<td>1.200 € netto</td>
+</tr>
+<tr>
+<td>Besondere Klauseln</td>
+<td>automatische Verlängerung um 12 Monate</td>
+</tr>
+</tbody>
+</table>
+<p>Die klar markierte Lücke bei der Kündigungsfrist ist genau der Punkt, den du im Original nachschlagen musst.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Der 'markiere Unsicheres'-Trick</p>
+<p>Die Anweisung, <strong>unsichere oder fehlende Angaben ausdrücklich zu markieren</strong>, ist Gold wert: So siehst du sofort, wo du nachprüfen musst, statt einer scheinbar vollständigen Tabelle blind zu vertrauen.</p>
+</div>
+<hr />
+<h2 id="285-grounding-antworten-aus-echten-dokumenten">28.5 Grounding: Antworten aus echten Dokumenten<a class="headerlink" href="#285-grounding-antworten-aus-echten-dokumenten" title="Permanent link">&para;</a></h2>
+<p>Ein zentraler Grund, warum Copilot im Büro verlässlicher ist als ein reines Chat-Modell, heißt <strong>Grounding</strong> (Verankerung). Dahinter steckt das Prinzip <strong>RAG (Retrieval-Augmented Generation)</strong>: Statt eine Antwort nur aus dem trainierten „Gedächtnis" zu erzeugen, <strong>sucht</strong> das System zuerst die relevanten Stellen in deinen echten Dokumenten (in Microsoft 365) und formuliert die Antwort <strong>auf deren Basis</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Frage]) --&gt; B([Relevante Dokumentstellen suchen])
+    B --&gt; C([Fundstellen an das Sprachmodell geben])
+    C --&gt; D([Antwort mit Bezug zur Quelle])</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Warum Grounding Halluzinationen reduziert</p>
+<p>Ein Sprachmodell ohne Quellen „errät" fehlendes Wissen oft überzeugend, aber falsch (Kapitel 15). Beim Grounding bekommt es die <strong>tatsächlichen Textstellen</strong> mitgeliefert und soll sich darauf stützen – das senkt das Risiko erfundener Inhalte deutlich und erlaubt Copilot, <strong>Quellen anzugeben</strong>. Aufgehoben ist das Risiko damit aber nicht: Das Modell kann relevante Stellen übersehen oder eine gefundene Stelle falsch interpretieren. Deshalb bleibt die Kontrolle wichtiger Werte Pflicht.</p>
+</div>
+<hr />
+<h2 id="286-fehlerrisiken-und-absicherung">28.6 Fehlerrisiken und Absicherung<a class="headerlink" href="#286-fehlerrisiken-und-absicherung" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Wo es schiefgehen kann</p>
+<ul>
+<li><strong>Zahlendreher/Extraktionsfehler:</strong> Ein falsch gelesener Betrag in der Buchhaltung ist teuer – kritische Werte gegen das Original prüfen.</li>
+<li><strong>Halluzinierte Inhalte:</strong> Bei fehlenden Angaben kann das Modell etwas „Plausibles" erfinden (Kap. 15).</li>
+<li><strong>Vertraulichkeit:</strong> Verträge und personenbezogene Dokumente nur in der <strong>freigegebenen</strong> M365-Umgebung verarbeiten (Kap. 33).</li>
+<li><strong>Vollautomatik ohne Kontrolle:</strong> Bei rechts-/geldrelevanten Dokumenten sollte ein Mensch prüfen (Human-in-the-Loop).</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Automatisierung mit Augenmaß</p>
+<p>Ein bewährtes Muster: KI verarbeitet und schlägt vor, ein Mensch <strong>prüft die kritischen Fälle</strong> (z. B. hohe Beträge, unklare Extraktionen). So bekommt man Tempo <strong>und</strong> Sicherheit. Für große Volumina gibt es spezialisierte Systeme (z. B. Azure AI Document Intelligence); für den Alltag genügt oft Copilot.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Dokumentenverarbeitung ist ein <strong>Top-Einsatzfeld</strong> – viel unstrukturierter Text, viel Routine.</li>
+<li>Die Kette: <strong>Erfassen → OCR → Klassifizieren → Extrahieren → Prüfen → Weiterleiten</strong>.</li>
+<li>Dokumente sind <strong>strukturiert, semistrukturiert oder unstrukturiert</strong> – bei unstrukturiertem Text liegt die eigentliche Stärke moderner Sprach-KI.</li>
+<li><strong>Copilot</strong> ist stark beim Zusammenfassen, Durchsuchen, Extrahieren und Vergleichen von Dokumenten.</li>
+<li><strong>Grounding/RAG</strong> verankert Antworten in echten Dokumenten und reduziert Halluzinationen – ersetzt die Prüfung aber nicht.</li>
+<li>Absicherung: <strong>kritische Werte prüfen</strong>, Unsicheres markieren lassen, Vertraulichkeit wahren, Human-in-the-Loop.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Rechnungsfelder aus einer E-Mail extrahieren</summary>
+<p>In der Buchhaltung landet diese Rechnung als Fließtext in einer E-Mail. Du brauchst die Kerndaten sauber in einer Tabelle:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Von: buchhaltung@bueromoebel-nord.de
+Sehr geehrte Damen und Herren, anbei unsere Rechnung Nr. RE-2026-0473 vom 14.03.2026.
+Geliefert: 4x Buerostuhl (je 189,00 EUR), 2x Rollcontainer (je 145,50 EUR).
+Gesamtbetrag: 1047,00 EUR inkl. MwSt. Zahlbar bis 28.03.2026 auf IBAN DE12 3456 7890 1234 5678 90.
+</code></pre></div></td></tr></table></div>
+<p>Öffne Copilot und erledige die Extraktion in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Extrahiere aus diesem Rechnungstext folgende Felder als Tabelle: Rechnungsnummer, Rechnungsdatum,
+Anzahl Positionen, Gesamtbetrag, Zahlungsziel, IBAN. Uebernimm nur, was wirklich im Text steht.
+[hier den Rechnungstext oben einfuegen]
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine korrekte Feldtabelle, in der jeder Wert exakt dem Text entspricht – nichts ergänzt, nichts verändert.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Dokumentenverarbeitung heißt: aus unstrukturiertem Text strukturierte Felder gewinnen. Prüfe die Zahlen gegen den Originaltext – gerade Beträge und Datumsangaben liest KI manchmal falsch.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: RE-2026-0473, 14.03.2026, 2 Positionen (bzw. 6 Stück – beides vertretbar, wenn konsistent),
+1047,00 EUR, 28.03.2026, IBAN korrekt. Stark ist die Antwort, wenn alle Werte exakt aus dem Text stammen.
+Lernziel: das Grundprinzip automatischer Feldextraktion erleben und gegen die Quelle prüfen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Eingangspost klassifizieren und routen</summary>
+<p>Fünf Kurznachrichten aus dem zentralen Postfach eines Unternehmens sollen automatisch der richtigen Abteilung zugeordnet werden:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>1) &quot;Ihre Rechnung RE-889 ist noch offen, bitte um Zahlung bis Freitag.&quot;
+2) &quot;Anbei meine Bewerbung als Industriemechaniker, Zeugnisse im Anhang.&quot;
+3) &quot;Die gelieferte Pumpe ist defekt, ich verlange Ersatz oder Geld zurueck.&quot;
+4) &quot;Koennen Sie mir ein Angebot fuer 20 Kartons Etiketten machen?&quot;
+5) &quot;Nutzen Sie schon unsere KI-Loesung? Jetzt 30 Tage gratis testen!&quot;
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot klassifizieren und routen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Klassifiziere jede der 5 Nachrichten nach Typ (z. B. Zahlungserinnerung, Bewerbung, Beschwerde,
+Angebotsanfrage, Werbung) und schlage die zustaendige Abteilung vor. Tabelle: Nr, Typ, Abteilung,
+kurze Begruendung.
+[hier die 5 Nachrichten einfuegen]
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – eine Nachricht ist <strong>mehrdeutig</strong>. Lass Copilot damit ehrlich umgehen:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Nachricht 3 koennte Beschwerde ODER Retoure/Reklamation sein und beides betrifft andere Abteilungen.
+Wie sollte ein automatisches System mit solchen unsicheren Faellen umgehen, statt zu raten? Schlage
+eine Regel vor (z. B. Konfidenz niedrig -&gt; zur manuellen Sichtung).
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine plausible Klassifikation <strong>und</strong> eine klare Regel, was bei unsicheren Fällen passiert – statt blindem Raten.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Automatisches Routing spart das manuelle Sortieren. Aber der eigentliche Reifegrad zeigt sich im Umgang mit Grenzfällen: Ein gutes System weiß, wann es unsicher ist, und leitet dann an einen Menschen weiter.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: 5 nachvollziehbare Zuordnungen und eine sinnvolle Unsicherheitsregel (niedrige Konfidenz →
+manuelle Sichtung statt Zwangszuordnung). Lernziel: Klassifikation nicht nur durchführen, sondern Grenzfälle bewusst
+behandeln.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Extraktion mit Grounding-Prüfung</summary>
+<p>Ein Lieferschein soll automatisch ausgelesen werden – doch er ist <strong>unvollständig und teils widersprüchlich</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Lieferschein LS-2026-114, Datum: 09.04.2026
+Empfaenger: Werk Sued
+Positionen: 3 Paletten Aluprofil, 1 Palette Dichtungen
+Gesamtgewicht: 1200 kg
+Hinweis im Freitext: &quot;2 der 3 Aluprofil-Paletten wurden bereits am Vortag geliefert.&quot;
+(kein Bestellbezug / keine Bestellnummer angegeben)
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot extrahieren – mit ausdrücklicher <strong>Grounding-Auflage</strong> (nur belegte Werte, keine Erfindungen):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Extrahiere aus diesem Lieferschein: Lieferscheinnummer, Datum, Empfaenger, Positionen, Gesamtgewicht,
+Bestellnummer. Wenn ein Feld nicht im Text steht, schreibe ausdruecklich &quot;nicht angegeben&quot; statt zu
+raten. Markiere ausserdem jede widerspruechliche oder unklare Angabe.
+[hier den Lieferschein einfuegen]
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>prüfe selbst auf Halluzination und logische Fallen</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Pruefe deine eigene Extraktion: Hast du irgendwo eine Bestellnummer, ein fehlendes Feld oder eine
+Liefermenge ergaenzt, die so nicht belegt ist? Und wie ist die tatsaechlich gelieferte Menge zu
+bewerten, wenn 2 von 3 Paletten schon am Vortag kamen?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine belegbare Extraktion, die fehlende Felder ehrlich als „nicht angegeben" ausweist und den Mengen-Widerspruch markiert.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du mindestens eine Stelle selbst geprüft und entschieden hast, ob Copilots Ausgabe wirklich durch den Text gedeckt ist – z. B. ob die tatsächliche Liefermenge korrekt hinterfragt wurde. (Vertiefung: Kapitel 15 – LLM, Halluzinationen.)</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>„Grounding" heißt: Jede Ausgabe muss durch das Quelldokument gedeckt sein. KI neigt dazu, plausible Werte zu ergänzen (z. B. eine erfundene Bestellnummer). Fehlende Felder müssen fehlend bleiben.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Bestellnummer als „nicht angegeben", markierter Widerspruch bei der Liefermenge (nur 1 von 3
+Aluprofil-Paletten neu geliefert) und keine erfundenen Werte. Entscheidend ist die Eigenprüfung: Du hast erkannt,
+wo die KI hätte halluzinieren können, und die tatsächliche Menge korrekt eingeordnet. Lernziel: Extraktion an das
+Quelldokument binden und Halluzinationen aktiv ausschließen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Dokumentenstrecke für die Eingangspost bauen und härten</summary>
+<p><strong>Szenario:</strong> Du baust für den Kundenservice eines Großhändlers eine <strong>automatische Verarbeitungsstrecke</strong> für die Eingangspost auf. Ziel ist hart: <strong>mindestens 80 % der Dokumente vollautomatisch</strong> korrekt einsortiert und extrahiert, der Rest sicher zur manuellen Prüfung. Hier dein Test-Stapel (fiktiv, direkt verwendbar):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>A) &quot;Rechnung RE-5510 ueber 2.340 EUR, faellig 30.04.2026.&quot;
+B) &quot;Reklamation: Lieferung unvollstaendig, es fehlen 5 von 20 Kartons.&quot;
+C) &quot;Bewerbung als Lagerlogistiker, verfuegbar ab sofort.&quot;
+D) &quot;Angebotsanfrage: Preis fuer 500 Kartons Versandtaschen Groesse M?&quot;
+E) &quot;Sehr geehrte..., [Text bricht ab, kein Betrag, kein Anliegen erkennbar]&quot;
+F) &quot;Rechnung, Betrag: EUR, Nr.: , faellig: naechste Woche&quot; (Felder teils leer/unklar)
+</code></pre></div></td></tr></table></div>
+<p>Arbeite alles in Copilot – aber liefere gegen <strong>klare Anforderungen</strong>.</p>
+<p><strong>Runde 1 – Strecke bauen.</strong> Klassifiziere A–F nach Typ, extrahiere je Typ die wichtigsten Felder und leite an die richtige Stelle weiter. Stelle das Ergebnis als Tabelle dar (Dokument, Typ, extrahierte Felder, Zielstelle).</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Die Strecke muss <strong>alle</strong> erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:</p>
+<ol>
+<li>jedes Dokument hat einen definierten Zielort (auch die unklaren)</li>
+<li>fehlende/unsichere Felder werden als „nicht angegeben" markiert, nicht erfunden (Grounding)</li>
+<li>eine klare Regel trennt automatisch von manuell (z. B. Konfidenz oder Vollständigkeit)</li>
+<li>für jeden automatischen Schritt ist nachvollziehbar, warum so entschieden wurde</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Der Fachbereich meldet: Dokument <strong>F</strong> wurde vollautomatisch als gültige Rechnung verbucht – obwohl Betrag und Nummer fehlten. Analysiere mit Copilot, warum die Regel versagt hat, und überarbeite die Trennregel so, dass unvollständige Rechnungen zwingend zur manuellen Prüfung gehen.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Die Leitung will die Automatisierungsquote auf <strong>95 %</strong> hochsetzen, um Personal zu sparen. Lass dir Pro/Contra geben, entscheide begründet <strong>und widersprich Copilot</strong>, wenn es die Quote nur mit „Effizienz" rechtfertigt, ohne das Fehlerrisiko bei Dokumenten wie E und F zu benennen.</p>
+<p><strong>Deliverable:</strong> finale Klassifikations-/Extraktionstabelle (Version 2) + ausgefüllte Pflichtkriterien-Checkliste + begründete Entscheidung zur Automatisierungsquote.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, F sicher in der manuellen Prüfung landet und deine Quoten-Entscheidung das Fehlerrisiko der Grenzfälle ehrlich abwägt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Wert einer Dokumentenstrecke liegt in der Ausnahmebehandlung: 80–90 % automatisch, der unsichere Rest gezielt zur menschlichen Prüfung. Eine hohe Automatisierungsquote ist wertlos, wenn sie durch das Durchwinken unvollständiger Dokumente erkauft wird.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) vollständige, konsistente Klassifikation/Extraktion/Routing für A–F; (2) alle vier
+Pflichtkriterien nachweislich erfüllt (definierter Zielort, Grounding, klare Auto/Manuell-Regel, Nachvollziehbarkeit);
+(3) die überarbeitete Trennregel schickt F und E zuverlässig in die manuelle Prüfung; (4) die Quoten-Entscheidung
+wägt Effizienz gegen Fehlerrisiko ab und wird nicht blind von Copilot übernommen. Lernziel: eine praxisnahe
+Dokumentenstrecke mit Grounding und belastbarer Ausnahmebehandlung entwerfen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel27/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 27 – Praxis: KI in der Prozessregulierung">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 27 – Praxis: KI in der Prozessregulierung
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel29/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

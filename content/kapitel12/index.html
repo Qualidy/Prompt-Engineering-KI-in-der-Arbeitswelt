@@ -1,0 +1,1583 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel11/">
+      
+      
+        <link rel="next" href="../kapitel13/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 12 – Machine Learning - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-12-machine-learning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 12 – Machine Learning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Block 2 · Technische Grundlagen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – KI-Readiness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 8 – Das KI-Periodensystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Datenbeschaffung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Datenaufbereitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Big Data: Operationalisierung und Prozesse
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Machine Learning
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Machine Learning
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#121-was-ist-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.1 Was ist Machine Learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-die-drei-lernarten" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.2 Die drei Lernarten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12.2 Die drei Lernarten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uberwachtes-lernen-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Überwachtes Lernen (Supervised Learning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unuberwachtes-lernen-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unüberwachtes Lernen (Unsupervised Learning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bestarkendes-lernen-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bestärkendes Lernen (Reinforcement Learning)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-grundbegriffe-features-labels-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.3 Grundbegriffe: Features, Labels, Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-overfitting-auswendig-lernen-statt-verstehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4 Overfitting: auswendig lernen statt verstehen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-ml-in-der-praxis-und-in-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.5 ML in der Praxis und in Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – Natural Language Processing (NLP)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Large Language Models und ihre Programmierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – Generative Pre-trained Transformers (GPT)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-12-machine-learning">Kapitel 12 – Machine Learning<a class="headerlink" href="#kapitel-12-machine-learning" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>Machine Learning (ML)</strong> ist und wie es sich vom klassischen Programmieren unterscheidet</li>
+<li>Die drei <strong>Lernarten</strong>: überwachtes, unüberwachtes und bestärkendes Lernen</li>
+<li>Wie ein Modell <strong>trainiert, getestet</strong> und bewertet wird – mit dem Begriff <strong>Overfitting</strong></li>
+<li>Was <strong>Features, Labels, Training/Test-Split</strong> bedeuten</li>
+<li>Wo ML in Copilot steckt und wo die Grenzen der „Blackbox" liegen</li>
+</ul>
+</div>
+<hr />
+<h2 id="121-was-ist-machine-learning">12.1 Was ist Machine Learning?<a class="headerlink" href="#121-was-ist-machine-learning" title="Permanent link">&para;</a></h2>
+<p><strong>Machine Learning</strong> ist das Herzstück moderner KI: Statt Regeln vorzugeben, lernt das System <strong>Muster aus Beispielen</strong>. Man zeigt dem Computer viele Daten, und er leitet selbst eine Regel ab.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Beispieldaten]) --&gt; B([Lernalgorithmus])
+    B --&gt; C([Modell = gelernte Regel])
+    D([neue Daten]) --&gt; C
+    C --&gt; E([Vorhersage])</code></pre>
+<p><strong>Vergleich mit klassischem Programmieren:</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Klassisch</th>
+<th>Machine Learning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eingabe</td>
+<td>Regeln + Daten</td>
+<td>Daten + gewünschte Ergebnisse</td>
+</tr>
+<tr>
+<td>Der Mensch liefert</td>
+<td>die Regel</td>
+<td>die Beispiele</td>
+</tr>
+<tr>
+<td>Ergebnis</td>
+<td>Ausgabe</td>
+<td>die <strong>Regel</strong> (das Modell)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Der Perspektivwechsel</p>
+<p>Beim klassischen Programmieren schreibt der Mensch die Regel und der Computer wendet sie an. Beim ML liefert der Mensch <strong>Beispiele mit Ergebnis</strong>, und der Computer <strong>findet die Regel selbst</strong>. Genau deshalb kann ML Aufgaben lösen, für die niemand eine explizite Regel formulieren könnte (z. B. „Ist auf diesem Foto eine Katze?").</p>
+</div>
+<hr />
+<h2 id="122-die-drei-lernarten">12.2 Die drei Lernarten<a class="headerlink" href="#122-die-drei-lernarten" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A([Machine Learning]) --&gt; B([Überwachtes Lernen])
+    A --&gt; C([Unüberwachtes Lernen])
+    A --&gt; D([Bestärkendes Lernen])</code></pre>
+<h3 id="uberwachtes-lernen-supervised-learning">Überwachtes Lernen (Supervised Learning)<a class="headerlink" href="#uberwachtes-lernen-supervised-learning" title="Permanent link">&para;</a></h3>
+<p>Das System lernt aus Beispielen <strong>mit bekannter Antwort</strong> (Label). Ziel: die richtige Antwort für <strong>neue</strong> Fälle vorhersagen.</p>
+<ul>
+<li><strong>Klassifikation:</strong> Kategorie vorhersagen („Spam / kein Spam", „Kunde kündigt / bleibt")</li>
+<li><strong>Regression:</strong> Zahl vorhersagen (Umsatz, Preis, Temperatur)</li>
+<li>Beispiel: 10.000 als Spam/kein Spam markierte Mails → Modell erkennt neue Spam-Mails</li>
+</ul>
+<h3 id="unuberwachtes-lernen-unsupervised-learning">Unüberwachtes Lernen (Unsupervised Learning)<a class="headerlink" href="#unuberwachtes-lernen-unsupervised-learning" title="Permanent link">&para;</a></h3>
+<p>Das System bekommt Daten <strong>ohne</strong> vorgegebene Antworten und sucht selbst <strong>Strukturen</strong>.</p>
+<ul>
+<li><strong>Clustering:</strong> ähnliche Gruppen finden (z. B. Kundensegmente)</li>
+<li><strong>Ausreißererkennung:</strong> Auffälligkeiten finden (z. B. Betrug)</li>
+<li>Beispiel: Kunden nach Kaufverhalten automatisch in Gruppen einteilen</li>
+</ul>
+<h3 id="bestarkendes-lernen-reinforcement-learning">Bestärkendes Lernen (Reinforcement Learning)<a class="headerlink" href="#bestarkendes-lernen-reinforcement-learning" title="Permanent link">&para;</a></h3>
+<p>Das System lernt durch <strong>Ausprobieren und Belohnung</strong> – Details in Kapitel 17.</p>
+<table>
+<thead>
+<tr>
+<th>Lernart</th>
+<th>Braucht Labels?</th>
+<th>Typische Aufgabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Überwacht</td>
+<td>ja</td>
+<td>Vorhersagen (Klassifikation/Regression)</td>
+</tr>
+<tr>
+<td>Unüberwacht</td>
+<td>nein</td>
+<td>Strukturen/Gruppen finden</td>
+</tr>
+<tr>
+<td>Bestärkend</td>
+<td>Belohnungssignal</td>
+<td>Verhalten/Strategie lernen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="123-grundbegriffe-features-labels-training">12.3 Grundbegriffe: Features, Labels, Training<a class="headerlink" href="#123-grundbegriffe-features-labels-training" title="Permanent link">&para;</a></h2>
+<p>Ein einfaches Beispiel: <strong>Wird ein Kunde kündigen?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Bedeutung</th>
+<th>Im Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Feature</strong> (Merkmal)</td>
+<td>Eingabegröße</td>
+<td>Vertragsdauer, Nutzung, Reklamationen</td>
+</tr>
+<tr>
+<td><strong>Label</strong> (Zielwert)</td>
+<td>gewünschte Antwort</td>
+<td>„gekündigt: ja/nein"</td>
+</tr>
+<tr>
+<td><strong>Trainingsdaten</strong></td>
+<td>Beispiele zum Lernen</td>
+<td>8.000 alte Kundenfälle</td>
+</tr>
+<tr>
+<td><strong>Testdaten</strong></td>
+<td>Beispiele zum Prüfen</td>
+<td>2.000 zurückgehaltene Fälle</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Warum Training UND Test getrennt sein müssen</p>
+<p>Man teilt die Daten auf: Mit den <strong>Trainingsdaten</strong> lernt das Modell, mit den <strong>zurückgehaltenen Testdaten</strong> prüft man, ob es auch bei <strong>unbekannten</strong> Fällen funktioniert. Würde man mit denselben Daten lernen und testen, wäre das wie eine Prüfung, deren Lösungen man vorher gesehen hat – das Ergebnis wäre wertlos.</p>
+</div>
+<hr />
+<h2 id="124-overfitting-auswendig-lernen-statt-verstehen">12.4 Overfitting: auswendig lernen statt verstehen<a class="headerlink" href="#124-overfitting-auswendig-lernen-statt-verstehen" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Modell zu einfach]) --&gt; B([Underfitting: erkennt Muster kaum])
+    C([Modell genau richtig]) --&gt; D([lernt echtes Muster])
+    E([Modell zu komplex]) --&gt; F([Overfitting: lernt Zufall auswendig])</code></pre>
+<p><strong>Overfitting</strong> ist der häufigste Fehler: Das Modell lernt die Trainingsdaten <em>zu gut</em> – inklusive Zufälligkeiten und Rauschen. Es glänzt beim Training, versagt aber bei neuen Daten.</p>
+<div class="admonition example">
+<p class="admonition-title">Analogie</p>
+<p>Ein Schüler, der die Lösungen der Übungsklausur <strong>auswendig</strong> lernt, besteht die Übung glänzend – fällt aber durch die echte Klausur mit neuen Fragen. Genau das ist Overfitting. Deshalb ist die Prüfung an <strong>Testdaten</strong> so wichtig.</p>
+</div>
+<hr />
+<h2 id="125-ml-in-der-praxis-und-in-copilot">12.5 ML in der Praxis und in Copilot<a class="headerlink" href="#125-ml-in-der-praxis-und-in-copilot" title="Permanent link">&para;</a></h2>
+<p>Als Copilot-Nutzer:in trainierst du keine eigenen ML-Modelle – aber das Verständnis hilft dir, Ergebnisse einzuordnen:</p>
+<ul>
+<li><strong>Copilot beruht auf ML</strong> (genauer: Deep Learning, Kap. 15). Es hat aus riesigen Textmengen Muster gelernt.</li>
+<li><strong>Es ist eine Blackbox:</strong> Warum genau eine bestimmte Antwort kommt, ist von außen nicht nachvollziehbar (Erklärbarkeit, Kap. 34).</li>
+<li><strong>Es rät auf Basis von Wahrscheinlichkeiten</strong> – daher können Antworten überzeugend klingen und trotzdem falsch sein.</li>
+</ul>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den Unterschied zwischen überwachtem und unüberwachtem Lernen an einem
+Beispiel aus dem Marketing. Nenne für beide je eine konkrete Geschäftsfrage,
+die sich damit beantworten lässt.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Merke</p>
+<p>ML ist der Grund, warum Copilot flexibel wirkt – und zugleich der Grund, warum es <strong>irren</strong> kann. Wer versteht, dass ein Modell nur <strong>Wahrscheinlichkeiten</strong> aus Mustern zieht, prüft Ergebnisse selbstverständlicher.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Machine Learning</strong> lernt Regeln aus Beispielen, statt sie vorzugeben.</li>
+<li>Drei Lernarten: <strong>überwacht</strong> (mit Labels), <strong>unüberwacht</strong> (Strukturen finden), <strong>bestärkend</strong> (Belohnung).</li>
+<li>Zentrale Begriffe: <strong>Features, Labels, Training-/Test-Split</strong>; getestet wird an <strong>unbekannten</strong> Daten.</li>
+<li><strong>Overfitting</strong> = auswendig lernen statt verstehen – der häufigste Fehler.</li>
+<li>Copilot beruht auf ML, ist eine <strong>Blackbox</strong> und rät nach <strong>Wahrscheinlichkeit</strong> – deshalb prüfen.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Lernarten mit Copilot unterscheiden</summary>
+<p>Mach das <strong>live in Copilot</strong>:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre den Unterschied zwischen überwachtem und unüberwachtem Lernen an je einem Beispiel
+aus dem Marketing.
+</code></pre></div></td></tr></table></div></p>
+<p>Teste dein Verständnis:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich nenne dir 4 Aufgaben, sage mir jeweils die passende Lernart:
+1) Kunden nach Verhalten in Gruppen einteilen
+2) Vorhersagen, ob eine Rechnung bezahlt wird
+3) Auffällige Transaktionen finden
+4) Den Verkaufspreis einer Immobilie schätzen
+</code></pre></div></td></tr></table></div></p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Vorhersagen mit bekannter Antwort = überwacht. Strukturen/Gruppen ohne Vorgabe finden = unüberwacht.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: 1) unüberwacht (Clustering), 2) überwacht (Klassifikation), 3) unüberwacht (Ausreißer),
+4) überwacht (Regression). Lernziel: Lernarten sicher zuordnen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Ein ML-Vorhaben in Copilot durchdenken</summary>
+<p>Arbeite <strong>in Copilot</strong> mit einem fiktiven Vorhaben.</p>
+<p><strong>Schritt 1:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein Vorhersageproblem für einen Online-Shop (z. B. „welche Kunden kaufen wieder?&quot;).
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Bestimme die passende Lernart, nenne mögliche Features (Eingaben) und das Label (Zielwert).
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3 – nachschärfen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre, warum man Daten in Training und Test aufteilt und was Overfitting bedeutet.
+</code></pre></div></td></tr></table></div></p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Getestet wird immer an Daten, die das Modell nie gesehen hat – sonst ist es wie eine Prüfung mit vorher bekannten Lösungen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: passende Lernart, sinnvolle Features/Label, klare Erklärung von Train/Test-Split und Overfitting.
+Lernziel: ML-Vorhaben grundlegend strukturieren.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> ML-Steckbrief erstellen und prüfen (Copilot)</summary>
+<p>Erstelle <strong>in Copilot</strong> einen ML-Steckbrief für ein Problem, das Copilot selbst erfindet.</p>
+<p><strong>Schritt 1:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein konkretes Vorhersageproblem in der Personalabteilung und beschreibe es.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle einen Steckbrief mit: Lernart (+ Begründung), Features, Label, Train/Test-Aufteilung,
+Overfitting-Risiko und wie man es erkennt.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3 – kritisch:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Welche der genannten Features könnten zu Diskriminierung führen und sollten weggelassen werden?
+</code></pre></div></td></tr></table></div></p>
+<p>Bewerte selbst: Ist die Lernart wirklich passend gewählt?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Merkmale wie Geschlecht, Alter oder Herkunft können zu unfairer Diskriminierung führen (Verbindung zu Kapitel 31).</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: vollständiger, begründeter Steckbrief; kritische Reflexion über problematische Features.
+Lernziel: ML methodisch UND ethisch durchdenken.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> ML-Lösungsentwurf in Copilot</summary>
+<p>Entwirf <strong>in Copilot</strong> eine ML-Lösung für ein fiktives Problem – von der Idee bis zur Prüfung.</p>
+<p><strong>Schritt 1:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein Geschäftsproblem, das sich mit Machine Learning lösen ließe, und beschreibe es.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Entwirf die Lösung: Lernart, Datenbedarf, Features, Label, Erfolgskriterium. Als strukturierte Übersicht.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre, wie du Overfitting vermeidest und wie du prüfst, ob das Modell auch bei neuen Daten funktioniert.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 4 – Reflexion:</strong> Wo ist der Übergang zur Praxis am schwierigsten (Daten? Qualität? Akzeptanz?)? Begründe.</p>
+<p><strong>Deliverable:</strong> ML-Lösungsübersicht + Reflexion.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der schwierigste Teil ist selten der Algorithmus, sondern die Datenlage und die spätere Nutzung.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: stimmiger Lösungsentwurf, korrekte Behandlung von Overfitting/Test, realistische Reflexion.
+Lernziel: ML-Vorhaben ganzheitlich durchdenken.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel11/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 11 – Big Data: Operationalisierung und Prozesse">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 11 – Big Data: Operationalisierung und Prozesse
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel13/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 13 – Natural Language Processing (NLP)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 13 – Natural Language Processing (NLP)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1546 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel2/">
+      
+      
+        <link rel="next" href="../kapitel4/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 3 – Einsatz von KI in Unternehmen - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-3-einsatz-von-ki-in-unternehmen" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 3 – Einsatz von KI in Unternehmen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Block 1 · KI-Einführung
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 1 – Überblick Künstliche Intelligenz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 2 – Herkunft und Entwicklung der KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 3 – Einsatz von KI in Unternehmen
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 3 – Einsatz von KI in Unternehmen
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-warum-unternehmen-ki-einsetzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Warum Unternehmen KI einsetzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-die-drei-wirkhebel-von-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Die drei Wirkhebel von KI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-einsatzfelder-entlang-der-wertschopfungskette" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Einsatzfelder entlang der Wertschöpfungskette
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-copilot-im-arbeitsalltag-konkret" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Copilot im Arbeitsalltag – konkret
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Copilot im Arbeitsalltag – konkret">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ein-durchgespieltes-beispiel-zum-selbst-nachmachen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ein durchgespieltes Beispiel – zum Selbst-Nachmachen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-realistische-erwartungen-und-stolpersteine" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Realistische Erwartungen und Stolpersteine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 4 – Entwicklung und Umsetzung von KI-Konzepten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 5 – Aktuelle KI-Trends
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 6 – KI und Innovation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-3-einsatz-von-ki-in-unternehmen">Kapitel 3 – Einsatz von KI in Unternehmen<a class="headerlink" href="#kapitel-3-einsatz-von-ki-in-unternehmen" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum Unternehmen KI einsetzen und welchen <strong>Nutzen</strong> sie sich davon versprechen</li>
+<li>In welchen <strong>Einsatzfeldern</strong> entlang der Wertschöpfungskette KI wirkt</li>
+<li>Die drei <strong>Wirkhebel</strong> von KI: Automatisieren, Assistieren, Analysieren</li>
+<li>Wie du <strong>Microsoft Copilot</strong> konkret im Arbeitsalltag nutzt – mit Beispielen je Office-Anwendung</li>
+<li>Welche typischen <strong>Fehlerwartungen</strong> und Stolpersteine es gibt</li>
+</ul>
+</div>
+<hr />
+<h2 id="31-warum-unternehmen-ki-einsetzen">3.1 Warum Unternehmen KI einsetzen<a class="headerlink" href="#31-warum-unternehmen-ki-einsetzen" title="Permanent link">&para;</a></h2>
+<p>Unternehmen setzen KI nicht „der Technik wegen" ein, sondern um konkrete Ziele zu erreichen:</p>
+<table>
+<thead>
+<tr>
+<th>Ziel</th>
+<th>Beispiel</th>
+<th>Messgröße</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Effizienz</strong> steigern</td>
+<td>Routineaufgaben automatisieren, schneller arbeiten</td>
+<td>Bearbeitungszeit je Vorgang</td>
+</tr>
+<tr>
+<td><strong>Qualität</strong> verbessern</td>
+<td>Fehler früher erkennen, gleichbleibende Ergebnisse</td>
+<td>Fehlerquote, Reklamationen</td>
+</tr>
+<tr>
+<td><strong>Kosten</strong> senken</td>
+<td>Weniger Nacharbeit, bessere Ressourcennutzung</td>
+<td>Kosten je Einheit</td>
+</tr>
+<tr>
+<td><strong>Neue Angebote</strong> schaffen</td>
+<td>KI-gestützte Produkte und Services</td>
+<td>Umsatz mit neuen Angeboten</td>
+</tr>
+<tr>
+<td><strong>Entscheidungen</strong> stützen</td>
+<td>Prognosen und Auswertungen als Grundlage</td>
+<td>Prognosegenauigkeit</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Immer den Nutzen messbar machen</p>
+<p>Ein KI-Vorhaben ohne <strong>Messgröße</strong> ist schwer zu rechtfertigen. Frage früh: „Woran erkennen wir in Zahlen, dass es funktioniert hat?" Das ist auch die Grundlage für Business Cases (Kapitel 26) und Strategie (Kapitel 39).</p>
+</div>
+<hr />
+<h2 id="32-die-drei-wirkhebel-von-ki">3.2 Die drei Wirkhebel von KI<a class="headerlink" href="#32-die-drei-wirkhebel-von-ki" title="Permanent link">&para;</a></h2>
+<p>Bevor man an einzelne Anwendungen denkt, hilft ein Raster, <strong>wie</strong> KI überhaupt Wert schafft:</p>
+<pre class="mermaid"><code>flowchart TD
+    A([KI schafft Wert durch ...]) --&gt; B([Automatisieren: Aufgaben ganz übernehmen])
+    A --&gt; C([Assistieren: Menschen unterstützen])
+    A --&gt; D([Analysieren: aus Daten Erkenntnisse gewinnen])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Hebel</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+<th>Copilot?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatisieren</td>
+<td>KI erledigt Aufgabe selbst</td>
+<td>Rechnung automatisch verbuchen</td>
+<td>teilweise</td>
+</tr>
+<tr>
+<td>Assistieren</td>
+<td>KI liefert Vorschlag, Mensch entscheidet</td>
+<td>Antwortentwurf für E-Mail</td>
+<td><strong>Kernfall</strong></td>
+</tr>
+<tr>
+<td>Analysieren</td>
+<td>KI findet Muster/Prognosen</td>
+<td>Absatz vorhersagen</td>
+<td>teilweise (Excel)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Copilot</strong> ist vor allem ein <strong>Assistenz-Werkzeug</strong>: Es beschleunigt Menschen, ersetzt sie aber nicht. Das ist wichtig für realistische Erwartungen.</p>
+<hr />
+<h2 id="33-einsatzfelder-entlang-der-wertschopfungskette">3.3 Einsatzfelder entlang der Wertschöpfungskette<a class="headerlink" href="#33-einsatzfelder-entlang-der-wertschopfungskette" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([Einkauf]) --&gt; B([Produktion])
+    B --&gt; C([Marketing &amp; Vertrieb])
+    C --&gt; D([Kundenservice])
+    D --&gt; E([Verwaltung])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>Typischer KI-Einsatz</th>
+<th>Wirkhebel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Einkauf</td>
+<td>Bedarfsprognosen, Lieferantenanalyse</td>
+<td>Analysieren</td>
+</tr>
+<tr>
+<td>Produktion</td>
+<td>Qualitätsprüfung, vorausschauende Wartung</td>
+<td>Automatisieren/Analysieren</td>
+</tr>
+<tr>
+<td>Marketing &amp; Vertrieb</td>
+<td>Personalisierung, Textgenerierung, Lead-Scoring</td>
+<td>Assistieren/Analysieren</td>
+</tr>
+<tr>
+<td>Kundenservice</td>
+<td>Chatbots, automatische Ticket-Vorschläge</td>
+<td>Assistieren/Automatisieren</td>
+</tr>
+<tr>
+<td>Verwaltung</td>
+<td>Dokumentenverarbeitung, Zusammenfassungen, Berichte</td>
+<td>Assistieren</td>
+</tr>
+</tbody>
+</table>
+<p>Diese Felder vertiefen wir in <strong>Block 3 (Use Cases)</strong> – jeweils mit Praxisbeispielen.</p>
+<hr />
+<h2 id="34-copilot-im-arbeitsalltag-konkret">3.4 Copilot im Arbeitsalltag – konkret<a class="headerlink" href="#34-copilot-im-arbeitsalltag-konkret" title="Permanent link">&para;</a></h2>
+<p><strong>Microsoft Copilot</strong> ist in viele Office-Anwendungen integriert und übernimmt Aufgaben, die viel Zeit kosten:</p>
+<table>
+<thead>
+<tr>
+<th>Anwendung</th>
+<th>Was Copilot kann</th>
+<th>Beispiel-Prompt (Kurzform)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word</td>
+<td>Entwürfe schreiben, umformulieren, zusammenfassen</td>
+<td>„Schreibe einen Entwurf für …"</td>
+</tr>
+<tr>
+<td>Outlook</td>
+<td>E-Mails entwerfen, Threads zusammenfassen</td>
+<td>„Fasse diesen Verlauf zusammen"</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>Formeln erklären, Daten analysieren, Trends benennen</td>
+<td>„Welche Trends zeigt diese Tabelle?"</td>
+</tr>
+<tr>
+<td>Teams</td>
+<td>Meetings zusammenfassen, To-dos ableiten</td>
+<td>„Liste die Beschlüsse und Aufgaben"</td>
+</tr>
+<tr>
+<td>PowerPoint</td>
+<td>Präsentationen aus Text erzeugen</td>
+<td>„Erstelle 6 Folien zu …"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ein-durchgespieltes-beispiel-zum-selbst-nachmachen">Ein durchgespieltes Beispiel – zum Selbst-Nachmachen<a class="headerlink" href="#ein-durchgespieltes-beispiel-zum-selbst-nachmachen" title="Permanent link">&para;</a></h3>
+<p>Probiere es direkt in Copilot aus. Damit du kein echtes Dokument brauchst, lässt du Copilot den E-Mail-Verlauf zuerst <strong>selbst erzeugen</strong>:</p>
+<p><strong>Schritt 0 – Beispielmaterial erzeugen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde einen längeren, etwas unübersichtlichen E-Mail-Verlauf (3 Nachrichten)
+zwischen einem Kunden und dem Vertrieb über eine verspätete Lieferung, mit zwei
+offenen Fragen und einer Terminbitte.
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 1 – Überblick verschaffen:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse den eben erstellten E-Mail-Verlauf in maximal 4 Stichpunkten zusammen und
+liste alle offenen Aufgaben mit Verantwortlichem auf.
+</code></pre></div></td></tr></table></div>
+<p><strong>Schritt 2 – Handeln:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere eine höfliche Antwort (Sie-Form, max. 120 Wörter), die einen Termin
+für nächste Woche vorschlägt und die offene Frage zur Lieferzeit aufgreift.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">Zeitersparnis – realistisch eingeschätzt</p>
+<p>Statt 10 Minuten Lesen + 10 Minuten Schreiben brauchst du vielleicht 5 Minuten inklusive <strong>Prüfung</strong>. Der Gewinn ist real – aber nur, wenn du das Ergebnis gegenliest. Verlässt du dich blind, riskierst du falsche Termine oder unpassenden Ton.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Grundregel</p>
+<p>Je klarer dein <strong>Auftrag</strong> (Rolle, Ziel, Format, Kontext), desto besser die Ausgabe. Das lernst du systematisch in <strong>Kapitel 14 – Prompt Engineering</strong>.</p>
+</div>
+<hr />
+<h2 id="35-realistische-erwartungen-und-stolpersteine">3.5 Realistische Erwartungen und Stolpersteine<a class="headerlink" href="#35-realistische-erwartungen-und-stolpersteine" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">KI ersetzt nicht das Denken</p>
+<p>Copilot liefert <strong>Entwürfe</strong>, keine geprüften Endergebnisse. Du bleibst verantwortlich für <strong>Fakten, Ton und Freigabe</strong>. KI ist ein <strong>Assistent</strong>, kein Ersatz für Fachwissen.</p>
+</div>
+<p><strong>Typische Stolpersteine beim Einstieg:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stolperstein</th>
+<th>Folge</th>
+<th>Gegenmittel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>„KI löst alles von selbst"</td>
+<td>Enttäuschung</td>
+<td>klein starten, Nutzen messen</td>
+</tr>
+<tr>
+<td>vage Prompts</td>
+<td>schwache Ergebnisse</td>
+<td>Prompt Engineering (Kap. 14)</td>
+</tr>
+<tr>
+<td>Ergebnisse ungeprüft nutzen</td>
+<td>Fehler, Fehlinformation</td>
+<td>immer gegenlesen</td>
+</tr>
+<tr>
+<td>vertrauliche Daten eingeben</td>
+<td>Datenschutzverstoß</td>
+<td>Regeln beachten (Kap. 33)</td>
+</tr>
+<tr>
+<td>kein klares Ziel</td>
+<td>Wildwuchs an Experimenten</td>
+<td>Use Cases priorisieren (Kap. 4)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI dient konkreten Zielen (Effizienz, Qualität, Kosten, neue Angebote, bessere Entscheidungen) – am besten <strong>messbar</strong>.</li>
+<li>Sie wirkt über drei Hebel: <strong>Automatisieren, Assistieren, Analysieren</strong>; Copilot ist vor allem <strong>Assistenz</strong>.</li>
+<li>Einsatzfelder ziehen sich durch die gesamte <strong>Wertschöpfungskette</strong>.</li>
+<li>Der Nutzen ist real, aber an <strong>Prüfung, klare Aufträge und Datenschutz</strong> gebunden.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Copilot fasst zusammen und leitet Aufgaben ab</summary>
+<p>Diese Übung machst du <strong>direkt in Copilot</strong> – ohne eigene Dokumente. Du lässt Copilot das
+Material zuerst selbst erzeugen und arbeitest dann damit.</p>
+<p><strong>Schritt 1 – Material erzeugen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde eine fiktive, etwas unstrukturierte Meeting-Notiz (ca. 120 Wörter) aus einem
+Team-Meeting über die Einführung eines neuen Ablageordners. Baue drei Beschlüsse und
+zwei offene Aufgaben ein.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Schritt 2 – Copilot arbeiten lassen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse die eben erstellte Notiz in maximal 4 Stichpunkten zusammen und liste alle offenen
+Aufgaben mit einem Vorschlag für die verantwortliche Rolle in einer Tabelle auf.
+</code></pre></div></td></tr></table></div></p>
+<p>Welchen <strong>Wirkhebel</strong> (Automatisieren, Assistieren, Analysieren) hat Copilot hier gezeigt?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der „Generate-then-transform"-Trick: Copilot erzeugt erst das Übungsmaterial, dann bearbeitest du es. So brauchst du nie echte Dokumente.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Copilot erzeugt eine plausible Notiz, fasst sie korrekt zusammen und leitet die
+Aufgaben ab. Wirkhebel = <strong>Assistieren</strong> (Copilot unterstützt, die Entscheidung/Freigabe bleibt beim Menschen).</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> E-Mail bearbeiten und den Prompt nachschärfen</summary>
+<p>Arbeite <strong>live in Copilot</strong>. Lass die E-Mail zuerst von Copilot erzeugen (keine echten Daten nötig).</p>
+<p><strong>Schritt 1 – E-Mail erzeugen lassen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Schreibe eine lange, leicht unübersichtliche Kunden-E-Mail (ca. 150 Wörter). Der Kunde
+beschwert sich über eine verspätete Lieferung, stellt nebenbei zwei Fragen (zur Rechnung
+und zum Ersatztermin) und ist insgesamt noch freundlich.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Schritt 2 – bearbeiten:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Fasse diese E-Mail in 3 Stichpunkten zusammen, liste die offenen Fragen und entwirf eine
+Antwort.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Schritt 3 – nachschärfen:</strong> Der erste Entwurf ist meist zu allgemein. Verbessere ihn gezielt:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere die Antwort neu: Sie-Form, max. 120 Wörter, entschuldige die Verspätung,
+beantworte beide Fragen konkret und schlage einen Ersatztermin nächste Woche vor.
+</code></pre></div></td></tr></table></div></p>
+<p>Vergleiche Entwurf 2 mit Entwurf 3. Was hat der präzisere Auftrag verbessert?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der zweite, präzisere Prompt macht den Unterschied. Gib Länge, Ton, Sprache und gewünschte Inhalte konkret vor.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Entwurf 3 ist kürzer, konkreter, im richtigen Ton und beantwortet beide Fragen.
+Kernbotschaft: Präzisere Aufträge (Rolle, Ziel, Format) führen zu deutlich besseren Ergebnissen – das ist Prompt Engineering.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Einen Mini-Prozess in Copilot durchspielen</summary>
+<p>Spiele <strong>komplett in Copilot</strong> den Prozess „Anfrage → Angebot → Nachfassen" durch. Alle Inhalte
+lässt du Copilot erzeugen – du brauchst keine echten Kundendaten.</p>
+<p><strong>Schritt 1:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde eine kurze Kundenanfrage für 200 bedruckte Notizbücher mit Wunschtermin in 3 Wochen.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Entwirf ein freundliches Angebotsschreiben dazu (Sie-Form, max. 150 Wörter). Setze den
+Endpreis als Platzhalter [PREIS], den ich selbst einsetze.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere eine höfliche Erinnerung, falls der Kunde nach einer Woche nicht reagiert hat.
+</code></pre></div></td></tr></table></div></p>
+<p>Notiere anschließend: Welche der drei Schritte könnte Copilot im Alltag übernehmen – und wo
+muss zwingend ein <strong>Mensch</strong> entscheiden? Warum ist [PREIS] ein Platzhalter?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Copilot übernimmt die Formulierungsarbeit. Preise, Konditionen und die finale Freigabe bleiben beim Menschen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Drei brauchbare Entwürfe. Einordnung: Copilot = Formulieren (Assistieren); Mensch =
+Preisentscheidung, Machbarkeit, Freigabe. Der Platzhalter [PREIS] verhindert, dass Copilot eine Zahl „erfindet".</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> KI-Einsatzpotenziale mit Copilot erarbeiten</summary>
+<p>In diesem Workshop nutzt du <strong>Copilot als Denkpartner</strong> und erarbeitest alles live darin – ohne
+vorhandene Unternehmensunterlagen. Copilot erfindet das Beispielunternehmen selbst.</p>
+<p><strong>Schritt 1 – Beispielunternehmen erzeugen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein realistisches mittelständisches Unternehmen (Branche, Größe, 4 Hauptprozesse)
+und beschreibe es in 5 Sätzen.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Schritt 2 – Potenziale finden:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Nenne für dieses Unternehmen entlang der Wertschöpfungskette 6 KI-Einsatzpotenziale.
+Ordne jedes einem Wirkhebel zu (Automatisieren, Assistieren, Analysieren).
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Schritt 3 – bewerten und priorisieren:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Bewerte die 6 Potenziale in einer Tabelle nach Nutzen (hoch/mittel/gering) und Aufwand,
+und markiere den besten Quick Win.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Schritt 4 – kritisch prüfen:</strong> Hinterfrage Copilots Quick-Win-Empfehlung. Stimmst du zu?
+Ändere den Prompt, wenn die Begründung dünn ist.</p>
+<p><strong>Deliverable:</strong> die fertige Nutzen-Aufwand-Tabelle + deine eigene, begründete Quick-Win-Entscheidung.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Lass Copilot nicht nur liefern, sondern hinterfrage: „Warum ist das ein Quick Win? Welche Annahme steckt dahinter?"</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: sinnvolles fiktives Unternehmen; 6 nachvollziehbare Potenziale mit Wirkhebel;
+konsistente Nutzen-/Aufwand-Tabelle; eigene, kritisch geprüfte Quick-Win-Entscheidung (nicht blind übernommen).</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 2 – Herkunft und Entwicklung der KI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 2 – Herkunft und Entwicklung der KI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel4/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 4 – Entwicklung und Umsetzung von KI-Konzepten">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 4 – Entwicklung und Umsetzung von KI-Konzepten
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1728 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel20/">
+      
+      
+        <link rel="next" href="../kapitel22/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 21 – Prozessoptimierung - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-21-prozessoptimierung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 21 – Prozessoptimierung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · Use Cases & Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Medienerstellung mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Data-Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#211-was-ist-prozessoptimierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.1 Was ist Prozessoptimierung?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212-prozesse-analysieren-und-engpasse-finden" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.2 Prozesse analysieren und Engpässe finden
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-ki-hebel-in-prozessen" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.3 KI-Hebel in Prozessen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#214-process-mining-prozesse-aus-daten-sichtbar-machen" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.4 Process Mining: Prozesse aus Daten sichtbar machen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#215-automatisierungsgrade-nicht-alles-oder-nichts" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.5 Automatisierungsgrade: nicht alles oder nichts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#216-aufwand-und-nutzen-welchen-schritt-zuerst" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.6 Aufwand und Nutzen: welchen Schritt zuerst?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#217-prozessarbeit-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      21.7 Prozessarbeit mit Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Praxis: KI in der Konstruktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – KI in der Produktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Praxis: KI im Qualitätsmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Low-Code-Programmierung und Citizen Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-21-prozessoptimierung">Kapitel 21 – Prozessoptimierung<a class="headerlink" href="#kapitel-21-prozessoptimierung" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>Prozessoptimierung</strong> bedeutet und warum sie ein Top-Einsatzfeld für KI ist</li>
+<li>Wie du einen Prozess <strong>analysierst</strong> und <strong>Engpässe</strong> findest</li>
+<li>Welche <strong>Hebel</strong> KI bietet: automatisieren, beschleunigen, Fehler senken</li>
+<li>Welche <strong>Automatisierungsgrade</strong> es gibt – von Assistenz bis autonom</li>
+<li>Wie du Maßnahmen nach <strong>Aufwand und Nutzen</strong> priorisierst</li>
+<li>Was <strong>Process Mining</strong> ist – Prozesse aus Daten sichtbar machen</li>
+<li>Wie du mit <strong>Copilot</strong> Prozesse dokumentierst, analysierst und verbesserst</li>
+</ul>
+</div>
+<hr />
+<h2 id="211-was-ist-prozessoptimierung">21.1 Was ist Prozessoptimierung?<a class="headerlink" href="#211-was-ist-prozessoptimierung" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>Prozess</strong> ist eine wiederkehrende Abfolge von Tätigkeiten mit einem Ergebnis (z. B. „Angebot erstellen", „Rechnung bearbeiten"). <strong>Prozessoptimierung</strong> macht solche Abläufe <strong>schneller, günstiger, fehlerärmer oder angenehmer</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Warum gerade hier KI wirkt</p>
+<p>Viele Prozesse enthalten <strong>repetitive, textlastige Schritte</strong>: Daten übertragen, Dokumente lesen, Standardmails schreiben, zusammenfassen. Genau das kann KI (und speziell Copilot) übernehmen oder beschleunigen. Prozessoptimierung ist deshalb eines der <strong>wirkungsvollsten und schnellsten</strong> KI-Einsatzfelder – oft ein Quick Win (Kap. 4).</p>
+</div>
+<hr />
+<h2 id="212-prozesse-analysieren-und-engpasse-finden">21.2 Prozesse analysieren und Engpässe finden<a class="headerlink" href="#212-prozesse-analysieren-und-engpasse-finden" title="Permanent link">&para;</a></h2>
+<p>Bevor man optimiert, muss man den Prozess <strong>verstehen</strong>. Ein einfaches Vorgehen:</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Prozess aufnehmen]) --&gt; B([Schritte &amp; Zeiten messen]) --&gt; C([Engpässe finden]) --&gt; D([Verbessern]) --&gt; E([Wirkung prüfen])
+    E --&gt; A</code></pre>
+<table>
+<thead>
+<tr>
+<th>Frage</th>
+<th>Ziel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Welche Schritte gibt es?</td>
+<td>Überblick schaffen</td>
+</tr>
+<tr>
+<td>Wo dauert es lange / staut es sich?</td>
+<td><strong>Engpass (Bottleneck)</strong> finden</td>
+</tr>
+<tr>
+<td>Wo entstehen Fehler / Nacharbeit?</td>
+<td>Qualitätsprobleme finden</td>
+</tr>
+<tr>
+<td>Welche Schritte sind reine Routine?</td>
+<td>Automatisierungskandidaten finden</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Am Engpass ansetzen</p>
+<p>Eine Kette ist nur so schnell wie ihr langsamstes Glied. Es bringt wenig, einen Schritt zu beschleunigen, der gar nicht der Engpass ist. Finde zuerst den <strong>echten Flaschenhals</strong> – oft ist es ein manueller, textlastiger Schritt, den KI entlasten kann.</p>
+</div>
+<hr />
+<h2 id="213-ki-hebel-in-prozessen">21.3 KI-Hebel in Prozessen<a class="headerlink" href="#213-ki-hebel-in-prozessen" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Hebel</th>
+<th>Was passiert</th>
+<th>Beispiel mit Copilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automatisieren</strong></td>
+<td>Routineschritt ganz übernehmen</td>
+<td>Standardantworten entwerfen</td>
+</tr>
+<tr>
+<td><strong>Beschleunigen</strong></td>
+<td>Menschen schneller machen</td>
+<td>Zusammenfassungen, Vorlagen</td>
+</tr>
+<tr>
+<td><strong>Fehler senken</strong></td>
+<td>Prüfen, Vollständigkeit sichern</td>
+<td>„Fehlt in diesem Antrag etwas?"</td>
+</tr>
+<tr>
+<td><strong>Wissen bereitstellen</strong></td>
+<td>schneller die richtige Info finden</td>
+<td>interne Doku durchsuchen (RAG)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="214-process-mining-prozesse-aus-daten-sichtbar-machen">21.4 Process Mining: Prozesse aus Daten sichtbar machen<a class="headerlink" href="#214-process-mining-prozesse-aus-daten-sichtbar-machen" title="Permanent link">&para;</a></h2>
+<p><strong>Process Mining</strong> rekonstruiert den <strong>tatsächlichen</strong> Prozessablauf aus den digitalen Spuren in IT-Systemen (z. B. Zeitstempel im ERP). So sieht man, wie ein Prozess <strong>wirklich</strong> läuft – nicht wie er im Handbuch stehen sollte.</p>
+<div class="admonition example">
+<p class="admonition-title">Soll vs. Ist</p>
+<p>Im Handbuch: „Bestellung → Freigabe → Versand." In den echten Daten zeigt Process Mining vielleicht: In 30 % der Fälle geht es „Bestellung → Versand → nachträgliche Freigabe" – ein Kontrollrisiko, das vorher niemand sah. Solche Abweichungen (<strong>Varianten</strong>) sind der Startpunkt für Verbesserungen.</p>
+</div>
+<p>Process Mining ist meist Aufgabe spezialisierter Tools; Copilot hilft bei der <strong>Interpretation</strong> und <strong>Dokumentation</strong> der Ergebnisse.</p>
+<hr />
+<h2 id="215-automatisierungsgrade-nicht-alles-oder-nichts">21.5 Automatisierungsgrade: nicht alles oder nichts<a class="headerlink" href="#215-automatisierungsgrade-nicht-alles-oder-nichts" title="Permanent link">&para;</a></h2>
+<p>„Automatisieren" ist keine Ja/Nein-Frage, sondern eine <strong>Skala</strong>. Für jeden Schritt kannst du entscheiden, <strong>wie viel</strong> die KI übernimmt und wie viel beim Menschen bleibt:</p>
+<table>
+<thead>
+<tr>
+<th>Grad</th>
+<th>Wer entscheidet?</th>
+<th>Rolle der KI</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assistenz</td>
+<td>Mensch</td>
+<td>schlägt vor, Mensch wählt</td>
+<td>Copilot entwirft die Mail, du sendest</td>
+</tr>
+<tr>
+<td>Teilautomatik</td>
+<td>Mensch prüft</td>
+<td>KI erledigt, Mensch gibt frei</td>
+<td>Rechnung wird vorbefüllt, Freigabe per Klick</td>
+</tr>
+<tr>
+<td>Überwachte Automatik</td>
+<td>KI, Mensch kontrolliert Stichproben</td>
+<td>KI läuft selbstständig</td>
+<td>Standardanfragen automatisch beantwortet</td>
+</tr>
+<tr>
+<td>Autonom</td>
+<td>KI</td>
+<td>kein Eingriff im Normalfall</td>
+<td>Routing im Lager ohne Zutun</td>
+</tr>
+</tbody>
+</table>
+<p>Für Copilot im Büroalltag ist meist die Stufe <strong>Assistenz</strong> oder <strong>Teilautomatik</strong> realistisch und sinnvoll: Die KI nimmt die Fleißarbeit ab, die Verantwortung bleibt beim Menschen. Höhere Grade lohnen sich nur bei klar geregelten, risikoarmen Routineschritten.</p>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Human-in-the-loop</p>
+<p>Der Fachbegriff für „Mensch prüft, bevor es zählt" ist <strong>Human-in-the-loop</strong>. Er ist mehr als Vorsicht: Er hält Verantwortung, Haftung und Lernschleife beim Menschen. Gerade bei kundenwirksamen oder rechtlich relevanten Schritten (Kap. 32) ist eine bewusste Freigabestufe Pflicht – nicht Kür. Faustregel: Je größer der mögliche Schaden eines Fehlers, desto niedriger der sinnvolle Automatisierungsgrad.</p>
+</div>
+<hr />
+<h2 id="216-aufwand-und-nutzen-welchen-schritt-zuerst">21.6 Aufwand und Nutzen: welchen Schritt zuerst?<a class="headerlink" href="#216-aufwand-und-nutzen-welchen-schritt-zuerst" title="Permanent link">&para;</a></h2>
+<p>Nicht jede Verbesserung lohnt sich gleich. Bewährt ist eine einfache Einordnung in eine <strong>Aufwand-Nutzen-Matrix</strong>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Geringer Aufwand</th>
+<th>Hoher Aufwand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hoher Nutzen</strong></td>
+<td>Quick Wins – sofort angehen</td>
+<td>Großprojekte – planen</td>
+</tr>
+<tr>
+<td><strong>Geringer Nutzen</strong></td>
+<td>Nebenbei erledigen</td>
+<td>meiden</td>
+</tr>
+</tbody>
+</table>
+<p>Starte mit den <strong>Quick Wins</strong> (hoher Nutzen, geringer Aufwand) – häufig sind das genau die textlastigen Routineschritte, bei denen Copilot ohne Systemumbau hilft. So entstehen schnelle, sichtbare Erfolge, die Akzeptanz schaffen (Change Management, Kap. 37).</p>
+<div class="admonition warning">
+<p class="admonition-title">Häufiges Missverständnis: erst automatisieren, dann nachdenken</p>
+<p>Ein verbreiteter Fehler: einen <strong>schlechten Prozess automatisieren</strong>. Dann läuft der Unsinn nur schneller und in größerer Zahl. Erst <strong>vereinfachen und aufräumen</strong>, dann automatisieren. Und: Automatisierung, die niemand versteht oder der niemand vertraut, wird umgangen. Beziehe die Betroffenen früh ein – sonst scheitert die beste Technik an der Praxis.</p>
+</div>
+<hr />
+<h2 id="217-prozessarbeit-mit-copilot">21.7 Prozessarbeit mit Copilot<a class="headerlink" href="#217-prozessarbeit-mit-copilot" title="Permanent link">&para;</a></h2>
+<p>Alle Prompts sind <strong>selbsttragend</strong> – Copilot erzeugt den Beispielprozess zuerst selbst, du brauchst keine echten Unterlagen.</p>
+<p><strong>Prozess dokumentieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde einen typischen Angebotsprozess in Stichworten. Erstelle daraus eine klare,
+nummerierte Prozessbeschreibung und markiere Schritte, die reine Routine sind und
+sich automatisieren ließen.
+</code></pre></div></td></tr></table></div>
+<p><strong>Engpässe und Ideen finden:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde einen Prozess zur Rechnungsbearbeitung mit typischen Verzögerungen.
+Analysiere ihn: Wo liegen wahrscheinlich Engpässe und Fehlerquellen? Schlage
+5 konkrete Verbesserungen vor und ordne sie nach Aufwand/Nutzen.
+</code></pre></div></td></tr></table></div>
+<p><strong>Prozess visualisieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Wandle diese Prozessbeschreibung in eine übersichtliche Schritt-für-Schritt-
+Liste mit Verantwortlichkeiten (Rolle je Schritt) um.
+</code></pre></div></td></tr></table></div>
+<div class="admonition example">
+<p class="admonition-title">So sieht eine Copilot-Analyse aus (gekürzt)</p>
+<p>Auf den zweiten Prompt (Rechnungsbearbeitung) liefert Copilot etwa:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>Engpässe:
+- Manuelle Prüfung wartet oft auf Rückfragen per Mail (Liegezeit).
+- Freigabe hängt an einer einzelnen Person (Urlaub = Stau).
+Verbesserungen (nach Aufwand/Nutzen):
+1. Standardrechnungen automatisch vorprüfen  (Nutzen hoch / Aufwand gering)
+2. Vertretungsregel für Freigaben           (Nutzen hoch / Aufwand gering)
+3. Rückfragen per Vorlage bündeln            (Nutzen mittel / Aufwand gering)
+...
+</code></pre></div></td></tr></table></div>
+Beachte: Copilot ordnet die Vorschläge bereits nach Aufwand/Nutzen (Abschnitt 21.6) – die fachliche Bewertung triffst aber du.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Copilot kennt euren Prozess nicht von allein</p>
+<p>Copilot kann nur mit den Informationen arbeiten, die du ihm gibst (oder die es via M365-Daten findet). Beschreibe den Prozess <strong>konkret</strong> – je genauer die Eingabe, desto brauchbarer die Analyse. Und: Vorschläge sind Ideen, keine geprüften Maßnahmen. Die fachliche Bewertung bleibt bei dir und den Beteiligten.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Prozessoptimierung</strong> macht wiederkehrende Abläufe besser – ein Top-Einsatzfeld für KI/Copilot.</li>
+<li>Erst <strong>analysieren</strong> und <strong>Engpässe</strong> finden, dann gezielt am Flaschenhals ansetzen.</li>
+<li>KI-Hebel: <strong>automatisieren, beschleunigen, Fehler senken, Wissen bereitstellen</strong>.</li>
+<li>Automatisierung ist eine <strong>Skala</strong> (Assistenz bis autonom); im Büro passt meist <strong>Human-in-the-loop</strong>.</li>
+<li>Nach <strong>Aufwand/Nutzen</strong> priorisieren, mit <strong>Quick Wins</strong> starten – und keinen schlechten Prozess automatisieren.</li>
+<li><strong>Process Mining</strong> zeigt den <strong>tatsächlichen</strong> Ablauf aus Daten (Soll vs. Ist).</li>
+<li><strong>Copilot</strong> hilft beim Dokumentieren, Analysieren und Ideenfinden – konkrete Eingaben sind entscheidend.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Den Engpass im Urlaubsantrag finden</summary>
+<p>In deiner Firma dauert ein genehmigter Urlaubsantrag viel zu lange. Der Ablauf inklusive typischer Dauern liegt vor – finde die Stelle, an der es wirklich klemmt.</p>
+<p>Öffne Copilot und erledige die Analyse in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ist der Urlaubsantrags-Prozess einer Firma mit den typischen Dauern je Schritt.
+Finde den Engpass (den langsamsten Schritt) und erkläre, was mit der Gesamtdauer
+passiert, wenn man NUR diesen einen Schritt beschleunigt.
+
+1. Antrag im Portal ausfüllen – 5 Min
+2. Weiterleitung an Teamleitung – automatisch
+3. Teamleitung prüft und genehmigt – im Schnitt 3 Tage (bleibt oft liegen)
+4. Weiterleitung an HR – automatisch
+5. HR bucht die Urlaubstage – 10 Min
+6. Bestätigung an Mitarbeitende – automatisch
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> der Engpass ist klar benannt und du kannst begründen, ob eine Beschleunigung genau dort den Gesamtprozess spürbar verkürzt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein Prozess ist nur so schnell wie sein Engpass – dort lohnt Optimierung am meisten, an schnellen Schritten kaum.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Schritt 3 als Engpass erkannt und die Einsicht, dass nur dessen Beschleunigung die Gesamtdauer
+senkt. Lernziel: den entscheidenden Engpass erkennen, statt überall gleichzeitig zu optimieren.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Optimierungsideen trennen – KI oder Organisation?</summary>
+<p>Ein Rechnungsfreigabe-Prozess läuft zäh. Du sollst Verbesserungen vorschlagen – aber ehrlich trennen, wo wirklich KI hilft und wo eine simple organisatorische Regel schneller wirkt.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ist ein Rechnungsfreigabe-Prozess mit typischen Verzögerungen. Schlage 3
+Optimierungen vor und markiere je Optimierung, ob sie durch Copilot/KI unterstützt
+wird oder rein organisatorisch (ohne KI) gelöst wird. Begründe kurz.
+
+1. Rechnung geht per Mail ein und landet im Sammelpostfach
+2. Sachbearbeiter ordnet die Rechnung manuell einem Projekt zu – oft Rückfragen
+3. Freigabe durch die Projektleitung – wartet häufig tagelang auf Antwort
+4. Buchhaltung prüft auf Zahlendreher
+5. Zahlung
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der Twist – prüfe deinen eigenen KI-Vorschlag kritisch:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Bei einer meiner drei Optimierungen behaupte ich KI-Nutzen. Prüfe kritisch, ob hier
+eine einfache organisatorische Regel (z. B. feste Frist, klare Zuständigkeit) schneller
+und billiger wirken würde als KI. Empfiehl mir eine Entscheidung.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> drei Optimierungen mit ehrlicher KI-vs.-Organisation-Einordnung und eine bewusst getroffene Entscheidung beim Grenzfall.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Nicht jedes Problem braucht KI – manchmal hilft eine klarere Zuständigkeit oder Frist mehr als jeder Algorithmus.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: 3 Optimierungen mit ehrlicher Trennung „KI-tauglich" vs. „organisatorisch" und eine begründete
+Entscheidung beim Grenzfall. Lernziel: KI gezielt dort einsetzen, wo sie wirklich hilft.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Ist-/Soll-Prozess mit ehrlichem KPI</summary>
+<p>Ein Bestellprozess ist ineffizient und du sollst einen messbaren Verbesserungsvorschlag liefern – ohne die Zahlen schönzurechnen. Der Ist-Zustand mit Zeitangaben liegt vor.</p>
+<p><strong>Schritt 1 – Soll-Prozess entwerfen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier ist ein ineffizienter Bestellprozess (Ist-Zustand) mit Zeitangaben. Entwirf den
+optimierten Soll-Prozess und stelle Ist vs. Soll in einer Tabelle gegenüber (je Schritt:
+Dauer, Verantwortliche, Copilot-Unterstützung ja/nein).
+
+1. Bedarf per Zuruf/Mail melden – 1 Tag Sammeln
+2. Bestellung manuell ins System tippen – 20 Min je Bestellung
+3. Freigabe durch Vorgesetzte – 2 Tage Wartezeit
+4. Bestellung per Mail an Lieferant – 15 Min
+5. Wareneingang manuell abgleichen – 30 Min
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2 – messbar machen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Berechne die Gesamt-Zeitersparnis und nenne EINEN KPI, an dem man den Erfolg misst.
+Kennzeichne jede Annahme, die du für die Ersparnis triffst.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Nebenbedingung:</strong> Keine Ersparnis ohne benannte Annahme.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du geprüft hast, ob die Zeitersparnis realistisch oder schöngerechnet ist – und mindestens eine Zahl selbst nach unten korrigiert oder mit einem Argument verteidigt hast.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ohne Kennzahl (KPI) bleibt „schneller" nur ein Gefühl. Und eine Ersparnis ohne offengelegte Annahme ist Wunschdenken.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Ist/Soll-Tabelle mit Zeitangaben, berechnete Ersparnis, passender KPI und offengelegte Annahmen;
+mindestens eine Zahl wurde selbst geprüft. Lernziel: Prozessoptimierung messbar und ehrlich begründen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Onboarding-Prozess-Sprint mit Kurskorrektur</summary>
+<p><strong>Szenario:</strong> Du bist Teamleitung in einem mittelständischen Unternehmen. Neue Mitarbeitende sind heute erst nach <strong>15 Arbeitstagen</strong> voll arbeitsfähig – viel zu lang. Die Geschäftsführung gibt dir das harte Ziel: <strong>7 Arbeitstage</strong>, ohne die Qualität des Onboardings zu senken. Arbeite alles in Copilot, aber liefere gegen klare Anforderungen.</p>
+<p><strong>Runde 1 – Prozess analysieren.</strong> Füge den Ist-Prozess ein und lass Engpässe, Doppelarbeit und Wartezeiten markieren:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere diesen Onboarding-Prozess auf Engpässe, Doppelarbeit und Wartezeiten.
+Markiere je Schritt das Hauptproblem.
+
+1. Vertrag unterschrieben, Start festgelegt
+2. IT bestellt Hardware – 5 Tage Lieferzeit, Bestellung startet erst am ersten Arbeitstag
+3. Zugänge/Accounts anlegen – verteilt auf 3 Abteilungen, je nach Verfügbarkeit
+4. Einführungsgespräche – werden einzeln terminiert, oft Wartezeit
+5. Pflichtschulungen (Datenschutz, Sicherheit) – Präsenztermine nur alle 2 Wochen
+6. Einarbeitung am Arbeitsplatz durch Pate – Pate oft nicht eingeplant
+7. Erste eigenständige Aufgabe
+</code></pre></div></td></tr></table></div>
+<p><strong>Runde 2 – Pflichtkriterien.</strong> Dein Soll-Prozess muss <strong>alle</strong> erfüllen. Lass Copilot prüfen und Lücken schließen:</p>
+<ol>
+<li>Zielzeit von 7 Arbeitstagen wird plausibel erreicht</li>
+<li>je optimiertem Schritt ist benannt, ob Copilot/KI oder Organisation den Hebel liefert</li>
+<li>keine Qualitätseinbuße (Pflichtschulungen bleiben vollständig)</li>
+<li>jede Zeitangabe hat eine offengelegte Annahme</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Die IT meldet: Der von dir eingeplante automatische Account-Workflow ist aus <strong>Sicherheitsgründen nicht erlaubt</strong> – Accounts müssen manuell durch die IT freigegeben werden. Überarbeite den Soll-Prozess so, dass du das 7-Tage-Ziel trotzdem hältst.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Für den größten verbleibenden Engpass stehen zwei Maßnahmen zur Wahl: (A) feste, wöchentlich getaktete Onboarding-Slots oder (B) ein Copilot-gestützter Self-Service-Guide für Neue. Lass dir Pro/Contra geben, entscheide begründet – und <strong>widersprich Copilot</strong>, wenn seine Empfehlung nur auf „moderner/digitaler" beruht statt auf dem tatsächlichen Zeitgewinn.</p>
+<p><strong>Deliverable:</strong> Ist-/Soll-Prozess (Version 2 nach Kurskorrektur) + ausgefüllte Kriterien-Checkliste + begründete Maßnahmen-Entscheidung.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, die Sicherheitsauflage aus Runde 3 eingearbeitet ist und deine Entscheidung auf einem echten Zeitargument beruht.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Wert entsteht in Runde 3 und 4: Erst wenn eine Randbedingung deinen schönen Plan sprengt, zeigt sich, ob deine Optimierung trägt.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) begründeter Soll-Prozess, der 7 Tage plausibel erreicht (v. a. Hardware/Schulungen vorziehen,
+Accounts parallelisieren); (2) alle vier Pflichtkriterien erfüllt; (3) die Sicherheitsauflage aus Runde 3 ist eingearbeitet,
+ohne das Ziel aufzugeben; (4) die Maßnahmen-Entscheidung ist mit echtem Zeitgewinn begründet und nicht blind übernommen.
+Lernziel: einen Prozess unter realen Randbedingungen messbar optimieren und entscheiden.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel20/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 20 – Data-Mining">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 20 – Data-Mining
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel22/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

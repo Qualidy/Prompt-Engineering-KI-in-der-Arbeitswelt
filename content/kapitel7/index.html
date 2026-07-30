@@ -1,0 +1,1539 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel6/">
+      
+      
+        <link rel="next" href="../kapitel8/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 7 – KI-Readiness - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-7-ki-readiness" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 7 – KI-Readiness
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Block 2 · Technische Grundlagen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – KI-Readiness
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – KI-Readiness
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#71-was-ist-ki-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Was ist KI-Readiness?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-die-funf-dimensionen-der-ki-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Die fünf Dimensionen der KI-Readiness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-reifegrade-einschatzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Reifegrade einschätzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-warum-copilot-der-einfachste-einstieg-ist" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Warum Copilot der einfachste Einstieg ist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-standortbestimmung-durchfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Standortbestimmung durchführen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 8 – Das KI-Periodensystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Datenbeschaffung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Datenaufbereitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Big Data: Operationalisierung und Prozesse
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – Natural Language Processing (NLP)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Large Language Models und ihre Programmierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – Generative Pre-trained Transformers (GPT)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-7-ki-readiness">Kapitel 7 – KI-Readiness<a class="headerlink" href="#kapitel-7-ki-readiness" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was <strong>KI-Readiness</strong> bedeutet und warum sie über Erfolg oder Scheitern entscheidet</li>
+<li>Die <strong>fünf Dimensionen</strong> der Reife: Strategie, Daten, Technik, Kompetenzen, Kultur</li>
+<li>Wie du den <strong>Reifegrad</strong> eines Unternehmens einschätzt</li>
+<li>Warum <strong>Copilot</strong> eine besonders niedrige Einstiegshürde hat</li>
+<li>Wie du eine ehrliche <strong>Standortbestimmung</strong> durchführst</li>
+</ul>
+</div>
+<hr />
+<h2 id="71-was-ist-ki-readiness">7.1 Was ist KI-Readiness?<a class="headerlink" href="#71-was-ist-ki-readiness" title="Permanent link">&para;</a></h2>
+<p><strong>KI-Readiness</strong> beschreibt, wie gut ein Unternehmen darauf <strong>vorbereitet</strong> ist, KI erfolgreich einzusetzen. Viele KI-Projekte scheitern nicht an der Technik, sondern an fehlenden Voraussetzungen: schlechte Daten, unklare Ziele, fehlendes Know-how oder Widerstand in der Belegschaft.</p>
+<div class="admonition info">
+<p class="admonition-title">Die unbequeme Wahrheit</p>
+<p>Studien zeigen seit Jahren dasselbe Muster: Ein großer Teil der KI-Projekte kommt nie über den Pilotstatus hinaus. Der häufigste Grund ist <strong>nicht</strong> die Technik, sondern mangelnde organisatorische Reife – vor allem bei <strong>Daten</strong> und <strong>Menschen</strong>.</p>
+</div>
+<hr />
+<h2 id="72-die-funf-dimensionen-der-ki-readiness">7.2 Die fünf Dimensionen der KI-Readiness<a class="headerlink" href="#72-die-funf-dimensionen-der-ki-readiness" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A([KI-Readiness]) --&gt; B([Strategie &amp; Ziele])
+    A --&gt; C([Daten])
+    A --&gt; D([Technik &amp; Infrastruktur])
+    A --&gt; E([Kompetenzen / Skills])
+    A --&gt; F([Kultur &amp; Change])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Leitfrage</th>
+<th>Typische Lücke</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strategie</strong></td>
+<td>Wissen wir, <em>wozu</em> wir KI wollen?</td>
+<td>KI als Selbstzweck ohne Ziel</td>
+</tr>
+<tr>
+<td><strong>Daten</strong></td>
+<td>Haben wir nutzbare, saubere Daten?</td>
+<td>Daten verstreut, schlechte Qualität</td>
+</tr>
+<tr>
+<td><strong>Technik</strong></td>
+<td>Ist die IT-Infrastruktur bereit?</td>
+<td>Altsysteme, keine Schnittstellen</td>
+</tr>
+<tr>
+<td><strong>Kompetenzen</strong></td>
+<td>Können die Menschen mit KI umgehen?</td>
+<td>fehlendes Prompting-/Datenwissen</td>
+</tr>
+<tr>
+<td><strong>Kultur</strong></td>
+<td>Ist die Belegschaft offen?</td>
+<td>Angst, Widerstand, „haben wir immer so gemacht"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Die schwächste Dimension entscheidet</p>
+<p>KI-Readiness ist wie eine Kette: Die <strong>schwächste</strong> Dimension bestimmt das Ergebnis. Perfekte Daten nützen nichts, wenn niemand die Werkzeuge bedienen kann – und beste Werkzeuge nützen nichts ohne Akzeptanz (Kap. 37).</p>
+</div>
+<hr />
+<h2 id="73-reifegrade-einschatzen">7.3 Reifegrade einschätzen<a class="headerlink" href="#73-reifegrade-einschatzen" title="Permanent link">&para;</a></h2>
+<p>Ein einfaches Stufenmodell hilft bei der Standortbestimmung:</p>
+<table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 – <strong>Anfang</strong></td>
+<td>Kein klarer KI-Einsatz, vereinzelte Experimente</td>
+</tr>
+<tr>
+<td>2 – <strong>Erprobung</strong></td>
+<td>Erste Piloten, Copilot wird ausprobiert</td>
+</tr>
+<tr>
+<td>3 – <strong>Etabliert</strong></td>
+<td>KI in einzelnen Prozessen fest verankert</td>
+</tr>
+<tr>
+<td>4 – <strong>Skaliert</strong></td>
+<td>KI bereichsübergreifend, Prozesse angepasst</td>
+</tr>
+<tr>
+<td>5 – <strong>Transformiert</strong></td>
+<td>KI ist Teil der Geschäftsstrategie und -kultur</td>
+</tr>
+</tbody>
+</table>
+<p>Die meisten Unternehmen stehen auf <strong>Stufe 1–2</strong>. Werkzeuge wie Copilot helfen, schnell auf Stufe 2–3 zu kommen, weil sie <strong>keine eigene Infrastruktur</strong> erfordern.</p>
+<hr />
+<h2 id="74-warum-copilot-der-einfachste-einstieg-ist">7.4 Warum Copilot der einfachste Einstieg ist<a class="headerlink" href="#74-warum-copilot-der-einfachste-einstieg-ist" title="Permanent link">&para;</a></h2>
+<p>Klassische KI-Projekte brauchen Daten, Modelle, Server und Fachleute. <strong>Microsoft Copilot</strong> senkt die Einstiegshürde drastisch:</p>
+<table>
+<thead>
+<tr>
+<th>Anforderung</th>
+<th>Klassisches KI-Projekt</th>
+<th>Copilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eigene Daten aufbereiten</td>
+<td>ja, aufwendig</td>
+<td>nein (nutzt vorhandene M365-Daten)</td>
+</tr>
+<tr>
+<td>Modelle trainieren</td>
+<td>ja</td>
+<td>nein (fertig)</td>
+</tr>
+<tr>
+<td>Infrastruktur</td>
+<td>Server/Cloud</td>
+<td>vorhanden (M365)</td>
+</tr>
+<tr>
+<td>Spezial-Know-how</td>
+<td>Data Science</td>
+<td><strong>Prompting</strong> genügt</td>
+</tr>
+<tr>
+<td>Zeit bis Nutzen</td>
+<td>Monate</td>
+<td>sofort</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Realistischer Startpunkt</p>
+<p>Ein Unternehmen mit Microsoft 365 kann in <strong>Tagen</strong> produktiv mit Copilot arbeiten – ohne ein einziges Modell zu trainieren. Genau deshalb ist die zentrale Readiness-Frage für viele nicht „Haben wir Data Scientists?", sondern „Können unsere Leute gut <strong>prompten</strong> und gehen sie <strong>verantwortungsvoll</strong> mit Ergebnissen um?"</p>
+</div>
+<hr />
+<h2 id="75-standortbestimmung-durchfuhren">7.5 Standortbestimmung durchführen<a class="headerlink" href="#75-standortbestimmung-durchfuhren" title="Permanent link">&para;</a></h2>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle einen Selbsttest mit 10 Fragen, mit dem ein mittelständisches
+Unternehmen seine KI-Readiness in den Dimensionen Strategie, Daten, Technik,
+Kompetenzen und Kultur einschätzen kann. Nutze eine Skala von 1–5 und gib
+je Ergebnisbereich eine kurze Handlungsempfehlung.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Ehrlichkeit vor Schönfärberei</p>
+<p>Eine Standortbestimmung nützt nur, wenn sie <strong>ehrlich</strong> ist. Es geht nicht darum, gut dazustehen, sondern die <strong>echten Lücken</strong> zu finden – denn genau die entscheiden über den späteren Erfolg. Bewertet man sich zu gut, plant man Projekte, für die die Basis fehlt.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>KI-Readiness</strong> = Vorbereitung entlang von fünf Dimensionen: Strategie, Daten, Technik, Kompetenzen, Kultur.</li>
+<li>Die <strong>schwächste</strong> Dimension begrenzt den Erfolg – oft sind es Daten oder Menschen, nicht die Technik.</li>
+<li>Ein <strong>Reifegradmodell</strong> hilft, den Standort zu bestimmen; die meisten stehen auf Stufe 1–2.</li>
+<li><strong>Copilot</strong> senkt die Einstiegshürde enorm – Prompting-Kompetenz wird wichtiger als Data-Science-Know-how.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Readiness-Selbsttest mit Copilot erstellen</summary>
+<p>Mach das <strong>live in Copilot</strong>:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle einen kurzen Selbsttest mit 5 Ja/Nein-Fragen, mit dem ein Unternehmen einschätzen
+kann, ob es bereit für den Einsatz von Microsoft Copilot ist.
+</code></pre></div></td></tr></table></div></p>
+<p>Beantworte die Fragen dann für ein fiktives Unternehmen (denk es dir aus) und frage Copilot:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier meine Antworten [Antworten nennen]. Wie schätzt du die Copilot-Readiness ein und was
+wäre der erste Schritt?
+</code></pre></div></td></tr></table></div></p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Copilot braucht keine eigene KI-Infrastruktur – wichtiger sind Prompting-Kompetenz und verantwortungsvoller Umgang.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: sinnvoller Selbsttest und eine plausible Einschätzung mit erstem Schritt. Lernziel:
+Readiness ist mehr Organisation/Kompetenz als Technik.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Fünf Readiness-Dimensionen in Copilot bewerten</summary>
+<p>Arbeite <strong>in Copilot</strong> mit einem fiktiven Unternehmen.</p>
+<p><strong>Schritt 1:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein mittelständisches Unternehmen und beschreibe es in 4 Sätzen (Branche, Größe,
+Digitalisierungsgrad).
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Bewerte dieses Unternehmen in den fünf KI-Readiness-Dimensionen (Strategie, Daten, Technik,
+Kompetenzen, Kultur) auf einer Skala 1–5 und begründe jede Note kurz.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3 – nachschärfen:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Welche Dimension ist die schwächste, und warum begrenzt gerade sie den Erfolg?
+</code></pre></div></td></tr></table></div></p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Die schwächste Dimension entscheidet – wie das schwächste Glied einer Kette.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: begründete Bewertung aller 5 Dimensionen und Identifikation der schwächsten. Lernziel:
+Reife ganzheitlich denken, nicht nur „haben wir Technik?".</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Readiness-Analyse mit Maßnahmenplan in Copilot</summary>
+<p>Erarbeite <strong>in Copilot</strong> eine vollständige Readiness-Analyse für ein fiktives Unternehmen.</p>
+<p><strong>Schritt 1:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein Unternehmen und bewerte es in den fünf Readiness-Dimensionen (1–5) mit Begründung.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Ordne das Unternehmen einer Reifegradstufe 1–5 zu und begründe.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Schlage für die zwei schwächsten Dimensionen je eine konkrete, umsetzbare Maßnahme vor.
+</code></pre></div></td></tr></table></div></p>
+<p>Bewerte selbst: Sind die Maßnahmen konkret genug, oder zu allgemein? Fordere per Prompt konkretere Schritte ein.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Gute Maßnahmen sind konkret („Prompting-Schulung für 10 Mitarbeitende in Q1"), nicht vage („mehr schulen").</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: begründete Bewertung, Reifegrad, konkrete Maßnahmen für die Schwachstellen. Lernziel:
+ehrliche Standortbestimmung in gezielte Maßnahmen übersetzen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Readiness-Check und Fahrplan in Copilot</summary>
+<p>Erstelle <strong>in Copilot</strong> einen kompletten Readiness-Check inklusive Fahrplan – selbst erarbeitet.</p>
+<p><strong>Schritt 1 – Assessment-Werkzeug:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle einen Fragebogen mit je 2 Fragen pro Readiness-Dimension (Strategie, Daten, Technik,
+Kompetenzen, Kultur), Skala 1–5.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 2 – Anwenden:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde ein Unternehmen und fülle den Fragebogen plausibel aus. Berechne einen Durchschnitt je Dimension.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 3 – Fahrplan:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Leite aus den Ergebnissen einen 6-Monats-Fahrplan ab: Was zuerst, was später, jeweils mit Begründung.
+</code></pre></div></td></tr></table></div>
+<strong>Schritt 4 – Prüfung:</strong> Prüfe den Fahrplan kritisch – ist die Reihenfolge sinnvoll? Passe per Prompt an.</p>
+<p><strong>Deliverable:</strong> Fragebogen + ausgefülltes Ergebnis + 6-Monats-Fahrplan.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein guter Fahrplan startet bei der schwächsten Dimension und plant schnelle, sichtbare Erfolge ein.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: vollständiger Fragebogen, plausible Auswertung, begründeter Fahrplan, kritische Prüfung.
+Lernziel: Readiness messen und in einen priorisierten Fahrplan überführen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel6/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 6 – KI und Innovation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 6 – KI und Innovation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel8/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 8 – Das KI-Periodensystem">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 8 – Das KI-Periodensystem
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

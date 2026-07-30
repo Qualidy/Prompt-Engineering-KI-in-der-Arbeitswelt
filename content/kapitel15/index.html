@@ -1,0 +1,1517 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel14/">
+      
+      
+        <link rel="next" href="../kapitel16/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 15 – Large Language Models und ihre Programmierung - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-15-large-language-models-und-ihre-programmierung" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 15 – Large Language Models und ihre Programmierung
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Block 2 · Technische Grundlagen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 7 – KI-Readiness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 8 – Das KI-Periodensystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 9 – Datenbeschaffung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 10 – Datenaufbereitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 11 – Big Data: Operationalisierung und Prozesse
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 12 – Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 13 – Natural Language Processing (NLP)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Large Language Models und ihre Programmierung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 15 – Large Language Models und ihre Programmierung
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#151-was-ist-ein-large-language-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      15.1 Was ist ein Large Language Model?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#152-das-kernprinzip-das-nachste-wort-vorhersagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      15.2 Das Kernprinzip: das nächste Wort vorhersagen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#153-wichtige-begriffe-verstehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      15.3 Wichtige Begriffe verstehen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15.3 Wichtige Begriffe verstehen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#das-kontextfenster-eine-wichtige-grenze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Das Kontextfenster – eine wichtige Grenze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wissensstichtag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wissensstichtag
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#154-warum-llms-halluzinieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      15.4 Warum LLMs halluzinieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#155-llms-programmieren-mit-sprache" class="md-nav__link">
+    <span class="md-ellipsis">
+      15.5 LLMs „programmieren" – mit Sprache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 16 – Generative Pre-trained Transformers (GPT)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 17 – Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-15-large-language-models-und-ihre-programmierung">Kapitel 15 – Large Language Models und ihre Programmierung<a class="headerlink" href="#kapitel-15-large-language-models-und-ihre-programmierung" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Was ein <strong>Large Language Model (LLM)</strong> ist und wie es im Kern funktioniert</li>
+<li>Warum ein LLM „nur das nächste Wort vorhersagt" – und wieso das so mächtig ist</li>
+<li>Was <strong>Parameter, Kontextfenster, Tokens und Temperatur</strong> bedeuten</li>
+<li>Warum LLMs <strong>halluzinieren</strong> und was das für die Praxis heißt</li>
+<li>Wie man LLMs „programmiert" – nämlich mit <strong>Sprache (Prompts)</strong> statt Code</li>
+</ul>
+</div>
+<hr />
+<h2 id="151-was-ist-ein-large-language-model">15.1 Was ist ein Large Language Model?<a class="headerlink" href="#151-was-ist-ein-large-language-model" title="Permanent link">&para;</a></h2>
+<p>Ein <strong>Large Language Model</strong> ist ein sehr großes, mit riesigen Textmengen trainiertes neuronales Netz, das menschliche Sprache verstehen und erzeugen kann. „Large" bezieht sich auf die enorme Zahl an <strong>Parametern</strong> (Milliarden interner Stellschrauben) und die gewaltigen <strong>Trainingsdaten</strong> (großer Teil des öffentlichen Internets, Bücher, Code …).</p>
+<p>Die Modelle hinter <strong>Microsoft Copilot</strong> (aus der GPT-Familie, Kap. 16) sind solche LLMs.</p>
+<hr />
+<h2 id="152-das-kernprinzip-das-nachste-wort-vorhersagen">15.2 Das Kernprinzip: das nächste Wort vorhersagen<a class="headerlink" href="#152-das-kernprinzip-das-nachste-wort-vorhersagen" title="Permanent link">&para;</a></h2>
+<p>So verblüffend die Ergebnisse wirken – im Kern macht ein LLM <strong>eine</strong> Sache: Es sagt das <strong>wahrscheinlichste nächste Wort</strong> (genauer: Token) voraus, immer und immer wieder.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Der Himmel ist ...]) --&gt; B([Modell berechnet Wahrscheinlichkeiten])
+    B --&gt; C([blau: 71% · bewölkt: 12% · hoch: 4% ...])
+    C --&gt; D([wählt Wort]) --&gt; E([hängt es an, wiederholt])</code></pre>
+<p>Das Modell erzeugt Text <strong>Wort für Wort</strong>: Es nimmt den bisherigen Text, berechnet für alle möglichen nächsten Wörter eine Wahrscheinlichkeit, wählt eines aus, hängt es an – und beginnt von vorn.</p>
+<div class="admonition info">
+<p class="admonition-title">Warum das ausreicht für 'Intelligenz'</p>
+<p>Man könnte meinen, „nur das nächste Wort raten" sei trivial. Aber um verlässlich das <em>richtige</em> nächste Wort zu wählen, muss das Modell Grammatik, Fakten, Logik und Stil <strong>implizit</strong> aus den Trainingsdaten gelernt haben. Aus dieser einen einfachen Aufgabe – konsequent im Riesenmaßstab – entstehen die erstaunlichen Fähigkeiten. Es ist <strong>statistische Mustervorhersage</strong>, kein Denken.</p>
+</div>
+<hr />
+<h2 id="153-wichtige-begriffe-verstehen">15.3 Wichtige Begriffe verstehen<a class="headerlink" href="#153-wichtige-begriffe-verstehen" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Bedeutung</th>
+<th>Praktische Auswirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Token</strong></td>
+<td>Wortbaustein (ca. 0,75 Wörter)</td>
+<td>Länge/Kosten werden in Tokens gemessen</td>
+</tr>
+<tr>
+<td><strong>Parameter</strong></td>
+<td>gelernte interne Stellschrauben</td>
+<td>mehr = i. d. R. leistungsfähiger</td>
+</tr>
+<tr>
+<td><strong>Kontextfenster</strong></td>
+<td>wie viel Text das Modell „gleichzeitig sieht"</td>
+<td>begrenzt, wie viel du eingeben kannst</td>
+</tr>
+<tr>
+<td><strong>Temperatur</strong></td>
+<td>Grad an Zufall/Kreativität</td>
+<td>niedrig = präzise, hoch = kreativ</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>einmaliges Lernen aus Daten</td>
+<td>danach ist Wissen „eingefroren"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="das-kontextfenster-eine-wichtige-grenze">Das Kontextfenster – eine wichtige Grenze<a class="headerlink" href="#das-kontextfenster-eine-wichtige-grenze" title="Permanent link">&para;</a></h3>
+<p>Ein LLM kann nur eine <strong>begrenzte Menge Text</strong> auf einmal berücksichtigen (das Kontextfenster). Alles, was darüber hinausgeht, „vergisst" es.</p>
+<div class="admonition example">
+<p class="admonition-title">Praktische Folge</p>
+<p>Gibst du Copilot ein sehr langes Dokument, kann es sein, dass frühe Passagen weniger Gewicht bekommen. Abhilfe: in <strong>Abschnitte</strong> aufteilen, gezielt fragen, oder erst zusammenfassen lassen und dann auf der Zusammenfassung weiterarbeiten.</p>
+</div>
+<h3 id="wissensstichtag">Wissensstichtag<a class="headerlink" href="#wissensstichtag" title="Permanent link">&para;</a></h3>
+<p>Das Wissen eines LLM ist zum Zeitpunkt des Trainings <strong>eingefroren</strong>. Neuere Ereignisse kennt es nur, wenn es (wie Copilot per Websuche oder RAG, Kap. 5) zusätzliche, aktuelle Quellen bekommt.</p>
+<hr />
+<h2 id="154-warum-llms-halluzinieren">15.4 Warum LLMs halluzinieren<a class="headerlink" href="#154-warum-llms-halluzinieren" title="Permanent link">&para;</a></h2>
+<p>Weil ein LLM immer das <strong>plausibelste</strong> nächste Wort wählt, kann es Inhalte erzeugen, die <strong>flüssig und überzeugend</strong> klingen, aber <strong>sachlich falsch</strong> sind. Das nennt man <strong>Halluzination</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Der zentrale Merksatz</p>
+<p>Ein LLM optimiert auf <strong>Plausibilität</strong>, nicht auf <strong>Wahrheit</strong>. Es „weiß" nicht, ob etwas stimmt – es erzeugt, was statistisch am besten passt. Erfundene Quellen, falsche Zahlen oder nicht existierende Paragraphen sind typische Halluzinationen. Deshalb gilt ausnahmslos: <strong>Fakten prüfen.</strong></p>
+</div>
+<p>Halluzinationen werden wahrscheinlicher, wenn:</p>
+<ul>
+<li>nach sehr spezifischen Fakten/Zahlen gefragt wird, die selten im Training vorkamen,</li>
+<li>die Frage außerhalb des Trainingswissens liegt (zu neu, zu speziell),</li>
+<li>der Prompt vage ist und das Modell „auffüllen" muss.</li>
+</ul>
+<p>Gegenmittel: <strong>Quellen mitgeben</strong> (RAG/Dokument-Upload), um <strong>Belege bitten</strong>, Ergebnisse <strong>gegenprüfen</strong>.</p>
+<hr />
+<h2 id="155-llms-programmieren-mit-sprache">15.5 LLMs „programmieren" – mit Sprache<a class="headerlink" href="#155-llms-programmieren-mit-sprache" title="Permanent link">&para;</a></h2>
+<p>Der große Bruch: Man steuert LLMs nicht mit Programmcode, sondern mit <strong>natürlicher Sprache</strong>. Der Prompt <strong>ist</strong> das Programm.</p>
+<table>
+<thead>
+<tr>
+<th>Klassische Programmierung</th>
+<th>LLM „programmieren"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code in einer Programmiersprache</td>
+<td>Anweisung in natürlicher Sprache</td>
+</tr>
+<tr>
+<td>exakte, feste Logik</td>
+<td>flexible, statistische Antwort</td>
+</tr>
+<tr>
+<td>Entwickler:innen nötig</td>
+<td>jede:r kann es</td>
+</tr>
+</tbody>
+</table>
+<p>Genau deshalb ist <strong>Prompt Engineering</strong> (Kap. 14) die entscheidende Fähigkeit: Es ist die „Programmiersprache" der LLMs.</p>
+<p><strong>Copilot-Prompt zum Ausprobieren:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre in einfachen Worten, warum ein Sprachmodell manchmal falsche, aber
+überzeugend klingende Antworten gibt. Nenne anschließend drei konkrete
+Maßnahmen, mit denen ich als Nutzer:in dieses Risiko verringere.
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ein <strong>LLM</strong> ist ein riesiges, aus Textmengen trainiertes Netz; Copilot beruht auf GPT-LLMs.</li>
+<li>Es sagt im Kern nur das <strong>nächste Wort</strong> voraus – daraus entstehen im Großmaßstab erstaunliche Fähigkeiten.</li>
+<li>Wichtige Begriffe: <strong>Token, Parameter, Kontextfenster, Temperatur</strong>; Wissen ist zum Training <strong>eingefroren</strong>.</li>
+<li>LLMs <strong>halluzinieren</strong>, weil sie auf <strong>Plausibilität statt Wahrheit</strong> optimieren – deshalb prüfen.</li>
+<li>Man „programmiert" LLMs mit <strong>Sprache</strong> – deshalb ist Prompt Engineering die Schlüsselkompetenz.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Nächstes-Wort-Prinzip live erleben</summary>
+<p>Erlebe <strong>in Copilot</strong>, wie ein Sprachmodell arbeitet.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Vervollständige diesen Satz auf 5 verschiedene Arten: „Am Montagmorgen im Büro ...&quot;
+</code></pre></div></td></tr></table></div>
+Dann:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erkläre mir in einfachen Worten: Wie „entscheidest&quot; du eigentlich, welches Wort als Nächstes kommt?
+</code></pre></div></td></tr></table></div></p>
+<p>Überlege: Warum können bei gleicher Eingabe unterschiedliche Antworten entstehen?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein LLM berechnet Wahrscheinlichkeiten für das nächste Wort – es „weiß" nichts, es rechnet.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: 5 Varianten und eine verständliche Erklärung des Wahrscheinlichkeitsprinzips. Lernziel:
+LLMs erzeugen Text durch statistische Vorhersage, nicht durch „Verstehen".</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Eine Halluzination provozieren und erkennen</summary>
+<p>Teste <strong>in Copilot</strong> eine wichtige Schwäche von LLMs.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Nenne mir drei wissenschaftliche Studien mit Autor, Jahr und Titel zum Thema
+„Einfluss von Bürofarben auf die Kaffeequalität&quot;.
+</code></pre></div></td></tr></table></div>
+(Dieses Thema ist absichtlich absurd.)</p>
+<p>Danach:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Sind diese Studien echt? Wie sicher bist du dir? Wie könnte ich das überprüfen?
+</code></pre></div></td></tr></table></div></p>
+<p>Was lernst du daraus für den Umgang mit Fakten und Quellen?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>LLMs erzeugen oft überzeugend klingende, aber erfundene Fakten („Halluzination") – gerade bei Quellen und Zahlen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Copilot erfindet plausibel klingende, aber nicht belegbare Studien. Lernziel: Fakten, Quellen
+und Zahlen immer selbst prüfen – nie ungeprüft übernehmen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Kontextfenster und Grenzen austesten</summary>
+<p>Untersuche <strong>in Copilot</strong>, warum ein Modell „vergisst" und wie kreativ es sein kann.</p>
+<p><strong>Teil 1 – Kontext:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Merke dir das Codewort &quot;TULPE42&quot;. Ich stelle dir jetzt mehrere unabhängige Fragen und frage
+am Ende nach dem Codewort.
+</code></pre></div></td></tr></table></div>
+Stelle 3–4 lange, themenfremde Fragen und frage dann: „Wie lautete das Codewort?"</p>
+<p><strong>Teil 2 – Kreativität steuern:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Gib mir a) eine möglichst sachliche und b) eine möglichst kreative Version eines Slogans für
+eine Bäckerei. Erkläre, was du jeweils anders machst.
+</code></pre></div></td></tr></table></div></p>
+<p>Notiere: Wann verliert Copilot Kontext? Wie beeinflusst die Aufgabenstellung die „Kreativität"?</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Modelle haben ein begrenztes Kontextfenster – sehr lange Gespräche „verdrängen" frühere Inhalte.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Erfahrung mit Kontextgrenzen und mit dem Steuern von Sachlichkeit vs. Kreativität.
+Lernziel: die praktischen Grenzen und Stellschrauben von LLMs kennen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Stärken-Schwächen-Landkarte von Copilot erstellen</summary>
+<p>Erstelle <strong>in Copilot</strong> durch systematisches Testen eine ehrliche Stärken-Schwächen-Landkarte.</p>
+<p><strong>Schritt 1 – Testreihe:</strong> Stelle Copilot bewusst 6 unterschiedliche Aufgaben, je 2 aus den Bereichen:
+- Sprache/Text (z. B. umformulieren)
+- Fakten/Zahlen (z. B. eine Rechenaufgabe, eine Jahreszahl)
+- Logik (z. B. ein kleines Rätsel)</p>
+<p><strong>Schritt 2 – bewerten:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle eine Tabelle: Aufgabe, Ergebnis (gut/mittel/schlecht), Grund. Sei ehrlich zu deinen eigenen Grenzen.
+</code></pre></div></td></tr></table></div></p>
+<p><strong>Schritt 3 – Regeln ableiten:</strong> Formuliere 5 persönliche Regeln, wofür du Copilot einsetzt und wofür nicht.</p>
+<p><strong>Deliverable:</strong> die Stärken-Schwächen-Tabelle + 5 persönliche Einsatzregeln.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Testet immer selbst: LLMs sind stark bei Sprache, oft schwach bei exakter Mathematik und aktuellen Fakten.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: aussagekräftige Testreihe, ehrliche Bewertung, 5 sinnvolle Einsatzregeln. Lernziel:
+ein realistisches Bild der LLM-Fähigkeiten entwickeln – aus eigener Erfahrung.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel14/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 14 – Prompt Engineering: Grundlagen und Best Practices
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel16/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 16 – Generative Pre-trained Transformers (GPT)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 16 – Generative Pre-trained Transformers (GPT)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

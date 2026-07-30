@@ -1,0 +1,1528 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel39/">
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 40 – Prompt Engineering als Schlüsselkompetenz - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-40-prompt-engineering-als-schlusselkompetenz" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 40 – Prompt Engineering als Schlüsselkompetenz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel18/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Block 5 · Erfolgsfaktoren
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel37/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 37 – Change Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel38/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 38 – Digitale KI-Geschäftsmodelle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel39/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 39 – KI-Strategie und strategisches KI-Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 40 – Prompt Engineering als Schlüsselkompetenz
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 40 – Prompt Engineering als Schlüsselkompetenz
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#401-der-rote-faden-dieses-kurses" class="md-nav__link">
+    <span class="md-ellipsis">
+      40.1 Der rote Faden dieses Kurses
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="40.1 Der rote Faden dieses Kurses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ruckblick-die-funf-blocke-im-zusammenhang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rückblick: die fünf Blöcke im Zusammenhang
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#402-die-entwicklungsstufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      40.2 Die Entwicklungsstufen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#403-eine-prompt-praxis-aufbauen" class="md-nav__link">
+    <span class="md-ellipsis">
+      40.3 Eine Prompt-Praxis aufbauen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="40.3 Eine Prompt-Praxis aufbauen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personlich" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persönlich
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#im-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Im Team
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#404-verantwortung-alles-lauft-zusammen" class="md-nav__link">
+    <span class="md-ellipsis">
+      40.4 Verantwortung – alles läuft zusammen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#405-am-ball-bleiben" class="md-nav__link">
+    <span class="md-ellipsis">
+      40.5 Am Ball bleiben
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#406-wo-stehst-du-und-was-jetzt" class="md-nav__link">
+    <span class="md-ellipsis">
+      40.6 Wo stehst du – und was jetzt?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-40-prompt-engineering-als-schlusselkompetenz">Kapitel 40 – Prompt Engineering als Schlüsselkompetenz<a class="headerlink" href="#kapitel-40-prompt-engineering-als-schlusselkompetenz" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Warum <strong>Prompt Engineering</strong> die zentrale Zukunftskompetenz in der KI-Arbeitswelt ist</li>
+<li>Wie du deine Fähigkeiten vom <strong>Anfänger zum souveränen Anwender</strong> weiterentwickelst</li>
+<li>Wie du eine persönliche und <strong>teamweite Prompt-Praxis</strong> aufbaust</li>
+<li>Wie alle Kursinhalte in einer <strong>verantwortungsvollen Nutzung</strong> zusammenlaufen</li>
+<li>Wie die <strong>fünf Blöcke</strong> des Kurses zusammenhängen (Rückblick auf den Bogen)</li>
+<li>Wie du am Ball bleibst, während sich die Werkzeuge weiterentwickeln</li>
+</ul>
+</div>
+<hr />
+<h2 id="401-der-rote-faden-dieses-kurses">40.1 Der rote Faden dieses Kurses<a class="headerlink" href="#401-der-rote-faden-dieses-kurses" title="Permanent link">&para;</a></h2>
+<p>Dieser Kurs begann bei den <strong>Grundlagen der KI</strong> (Block 1), ging über die <strong>Technik</strong> (Block 2), die <strong>Use Cases</strong> (Block 3) und die <strong>Herausforderungen</strong> (Block 4) bis zu den <strong>Erfolgsfaktoren</strong> (Block 5). Eine Fähigkeit zog sich durch alles: <strong>Prompt Engineering</strong> – die Kunst, KI durch Sprache präzise zu steuern.</p>
+<div class="admonition info">
+<p class="admonition-title">Warum das die Schlüsselkompetenz ist</p>
+<p>Generative KI wird über <strong>natürliche Sprache</strong> bedient (Kap. 15). Nicht mehr Programmierkenntnisse entscheiden über den Nutzen, sondern die Fähigkeit, <strong>klar zu denken und präzise zu formulieren</strong>. Prompt Engineering ist damit eine Kompetenz, die in <strong>fast jedem Beruf</strong> an Bedeutung gewinnt – so grundlegend wie einst der Umgang mit Office oder Internetrecherche.</p>
+</div>
+<h3 id="ruckblick-die-funf-blocke-im-zusammenhang">Rückblick: die fünf Blöcke im Zusammenhang<a class="headerlink" href="#ruckblick-die-funf-blocke-im-zusammenhang" title="Permanent link">&para;</a></h3>
+<p>Jeder Block hat einen Baustein deiner Kompetenz gelegt – und alle zahlen auf denselben Punkt ein: KI verantwortungsvoll und wirksam einsetzen.</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Thema</th>
+<th>Was du mitnimmst</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 – Grundlagen</strong></td>
+<td>Was KI ist, Herkunft, Einsatz (Kap. 1–8)</td>
+<td>KI einordnen, Chancen erkennen</td>
+</tr>
+<tr>
+<td><strong>2 – Technik</strong></td>
+<td>Daten, ML, NLP, LLMs (Kap. 9–20)</td>
+<td>verstehen, <em>warum</em> KI so „tickt"</td>
+</tr>
+<tr>
+<td><strong>3 – Use Cases</strong></td>
+<td>Prozesse, Produktion, Dokumente (Kap. 21–30)</td>
+<td>KI konkret anwenden</td>
+</tr>
+<tr>
+<td><strong>4 – Herausforderungen</strong></td>
+<td>Ethik, Recht, Datenschutz, XAI (Kap. 31–34)</td>
+<td>Grenzen und Pflichten kennen</td>
+</tr>
+<tr>
+<td><strong>5 – Erfolgsfaktoren</strong></td>
+<td>Projekte, Change, Strategie (Kap. 35–40)</td>
+<td>KI im Unternehmen verankern</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Warum gerade Sprache der Hebel ist</p>
+<p>Über Jahrzehnte musste sich der Mensch an die Maschine anpassen – Menüs, Befehle, Programmiersprachen. Generative KI dreht das um: Die Maschine versteht <strong>unsere</strong> Sprache (Kap. 13 – NLP). Damit verschiebt sich der entscheidende Engpass weg von technischem Spezialwissen hin zu einer sehr menschlichen Fähigkeit – <strong>klar denken und sich präzise ausdrücken</strong>. Das ist der Grund, warum Prompt Engineering keine kurzlebige „Tool-Fähigkeit" ist, sondern eine Kompetenz, die auch dann trägt, wenn sich die konkreten Werkzeuge längst geändert haben.</p>
+</div>
+<hr />
+<h2 id="402-die-entwicklungsstufen">40.2 Die Entwicklungsstufen<a class="headerlink" href="#402-die-entwicklungsstufen" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A([1 Ausprobieren]) --&gt; B([2 Struktur nutzen])
+    B --&gt; C([3 Iterieren &amp; verketten])
+    C --&gt; D([4 Systematisieren &amp; teilen])</code></pre>
+<table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Kennzeichen</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 – Ausprobieren</strong></td>
+<td>einfache Fragen, Trial &amp; Error</td>
+<td>„Schreib mir eine E-Mail"</td>
+</tr>
+<tr>
+<td><strong>2 – Struktur nutzen</strong></td>
+<td>Rolle, Kontext, Format bewusst einsetzen (Kap. 14)</td>
+<td>vollständiges Prompt-Gerüst</td>
+</tr>
+<tr>
+<td><strong>3 – Iterieren &amp; verketten</strong></td>
+<td>nachschärfen, mehrstufig arbeiten</td>
+<td>Entwurf → kürzen → Ton anpassen</td>
+</tr>
+<tr>
+<td><strong>4 – Systematisieren &amp; teilen</strong></td>
+<td>Prompt-Bibliothek, Standards im Team</td>
+<td>wiederverwendbare Vorlagen</td>
+</tr>
+</tbody>
+</table>
+<p>Ziel dieses Kurses ist, dich mindestens auf <strong>Stufe 3</strong> zu bringen – und dir den Weg zu <strong>Stufe 4</strong> zu zeigen.</p>
+<hr />
+<h2 id="403-eine-prompt-praxis-aufbauen">40.3 Eine Prompt-Praxis aufbauen<a class="headerlink" href="#403-eine-prompt-praxis-aufbauen" title="Permanent link">&para;</a></h2>
+<h3 id="personlich">Persönlich<a class="headerlink" href="#personlich" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Prompt-Bibliothek</strong> anlegen: bewährte Prompts sammeln (z. B. in OneNote), benennen, verbessern.</li>
+<li><strong>Muster erkennen:</strong> Welche Formulierungen funktionieren bei dir zuverlässig?</li>
+<li><strong>Reflektieren:</strong> Bei schlechtem Ergebnis fragen – lag es am Prompt? Wie hätte ich präziser gefragt?</li>
+</ul>
+<h3 id="im-team">Im Team<a class="headerlink" href="#im-team" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Vom Einzelkönnen zur Team-Fähigkeit</p>
+<p>Der größte Hebel entsteht, wenn Prompt-Wissen <strong>geteilt</strong> wird: eine gemeinsame Prompt-Bibliothek, regelmäßiger Austausch guter Beispiele, interne <strong>Champions</strong> (Kap. 37) als Ansprechpartner. So wird aus vielen Einzelkönnern eine <strong>organisationale Kompetenz</strong> – genau das, was eine KI-Strategie (Kap. 39) beim Kompetenzaufbau meint.</p>
+</div>
+<pre class="mermaid"><code>flowchart LR
+    A([Einzelne lernen Prompting]) --&gt; B([Prompts teilen &amp; sammeln])
+    B --&gt; C([Standards &amp; Bibliothek])
+    C --&gt; D([Team wird schneller &amp; konsistenter])</code></pre>
+<hr />
+<h2 id="404-verantwortung-alles-lauft-zusammen">40.4 Verantwortung – alles läuft zusammen<a class="headerlink" href="#404-verantwortung-alles-lauft-zusammen" title="Permanent link">&para;</a></h2>
+<p>Prompt Engineering ist nur die halbe Kompetenz. Die andere Hälfte ist <strong>verantwortungsvolle Nutzung</strong> – die Summe aus Block 4:</p>
+<table>
+<thead>
+<tr>
+<th>Prinzip</th>
+<th>Aus Kapitel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ergebnisse <strong>prüfen</strong> (Halluzinationen)</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>Datenschutz</strong> wahren</td>
+<td>33</td>
+</tr>
+<tr>
+<td><strong>rechtliche</strong> Grenzen beachten</td>
+<td>32</td>
+</tr>
+<tr>
+<td><strong>Bias/Fairness</strong> im Blick behalten</td>
+<td>31</td>
+</tr>
+<tr>
+<td><strong>Transparenz</strong> einfordern</td>
+<td>34</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Der reife Anwender</p>
+<p>Ein souveräner KI-Anwender ist <strong>nicht</strong> der, der die trickreichsten Prompts kennt – sondern der, der <strong>gute Prompts mit kritischem Urteil</strong> verbindet: schnell zu einem guten Entwurf kommen <strong>und</strong> wissen, was zu prüfen ist, was vertraulich bleibt und wo der Mensch entscheiden muss. Können ohne Verantwortung ist gefährlich; Verantwortung ohne Können ist ineffektiv. Beides zusammen macht dich wertvoll.</p>
+</div>
+<hr />
+<h2 id="405-am-ball-bleiben">40.5 Am Ball bleiben<a class="headerlink" href="#405-am-ball-bleiben" title="Permanent link">&para;</a></h2>
+<p>Die Werkzeuge entwickeln sich rasant (Kap. 5). Was heute gilt, kann morgen erweitert sein. Beständig bleibt aber das <strong>Prinzip</strong>: klar denken, präzise formulieren, kritisch prüfen.</p>
+<ul>
+<li><strong>Neugier statt Angst:</strong> Neues ausprobieren, aber besonnen.</li>
+<li><strong>Prinzipien vor Tricks:</strong> Grundlagen (dieser Kurs) tragen länger als einzelne „Hacks".</li>
+<li><strong>Lernen als Gewohnheit:</strong> kleine, regelmäßige Experimente statt seltener großer Sprünge.</li>
+</ul>
+<p><strong>Copilot-Prompt zum Abschluss:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich habe eine Weiterbildung zu Prompt Engineering und KI in der Arbeitswelt
+abgeschlossen. Erstelle mir einen persönlichen 4-Wochen-Plan, um das Gelernte
+im Arbeitsalltag zu festigen – mit je einer konkreten Übung pro Woche und einer
+Erinnerung an die wichtigsten Verantwortungs-Regeln.
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Dein nächster Schritt</p>
+<p>Wende <strong>ab morgen</strong> eine Sache konkret an: einen echten Arbeitsvorgang mit einem strukturierten Prompt lösen – und das Ergebnis bewusst prüfen. Kompetenz entsteht durch <strong>Anwenden</strong>, nicht durch Zuhören.</p>
+</div>
+<hr />
+<h2 id="406-wo-stehst-du-und-was-jetzt">40.6 Wo stehst du – und was jetzt?<a class="headerlink" href="#406-wo-stehst-du-und-was-jetzt" title="Permanent link">&para;</a></h2>
+<p>Zum Abschluss eine ehrliche Selbsteinschätzung. Sie zeigt dir, wo du stehst und was dein nächster Schritt ist:</p>
+<table>
+<thead>
+<tr>
+<th>Frage an dich</th>
+<th>Wenn „noch nicht"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nutze ich bewusst <strong>Rolle, Aufgabe, Kontext, Format</strong>?</td>
+<td>Kapitel 14 wiederholen, Gerüst anwenden</td>
+</tr>
+<tr>
+<td><strong>Iteriere</strong> ich, statt neu anzufangen?</td>
+<td>erste Antwort nachschärfen üben</td>
+</tr>
+<tr>
+<td><strong>Prüfe</strong> ich Ergebnisse kritisch (Halluzinationen)?</td>
+<td>Kapitel 15/34 verinnerlichen</td>
+</tr>
+<tr>
+<td>Achte ich auf <strong>Datenschutz und Vertraulichkeit</strong>?</td>
+<td>Kapitel 33 als Reflex etablieren</td>
+</tr>
+<tr>
+<td><strong>Teile</strong> ich gute Prompts im Team?</td>
+<td>Prompt-Bibliothek starten</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Copilot als persönlicher Lernbegleiter</p>
+<p>Prompt:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Ich habe einen Kurs zu Prompt Engineering und KI in der Arbeitswelt
+abgeschlossen. Stelle mir 5 kurze Fragen, mit denen ich selbst einschätzen
+kann, wie souverän ich bereits prompte, und gib mir zu jeder Antwort einen
+konkreten Tipp zum Besserwerden.
+</code></pre></div></td></tr></table></div>
+Beispiel-Antwort (gekürzt):
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>1) Gibst du der KI eine klare Rolle? -&gt; Wenn nicht: beginne mit
+   &quot;Du bist ...&quot;.
+2) Nennst du das gewünschte Format? -&gt; Ergänze Länge, Ton, Struktur.
+3) Schärfst du Ergebnisse nach? -&gt; Verbessere statt neu zu starten.
+4) Prüfst du Fakten? -&gt; Behandle jede Antwort als Entwurf, nicht als
+   Wahrheit.
+5) Sammelst du gute Prompts? -&gt; Lege dir eine kleine Bibliothek an.
+</code></pre></div></td></tr></table></div></p>
+</div>
+<p>Du bist mit diesem Kurs von den <strong>Grundlagen</strong> bis zur <strong>Strategie</strong> gegangen – und hast dabei durchgehend die eine Fähigkeit geübt, die alles verbindet. Prompt Engineering ist kein Trick, den man einmal lernt und abhakt, sondern eine <strong>Haltung</strong>: neugierig fragen, präzise formulieren, kritisch prüfen, verantwortungsvoll handeln. Diese Haltung bleibt wertvoll, egal wie sich die Werkzeuge morgen nennen.</p>
+<div class="admonition tip">
+<p class="admonition-title">Zum Schluss</p>
+<p>Du musst nicht alles auf einmal können. Wähle <strong>eine</strong> Sache aus der Tabelle oben und mache sie ab dieser Woche zur Gewohnheit. Aus einzelnen bewussten Schritten wird mit der Zeit echte Souveränität – und aus dir jemand, der KI nicht nur bedient, sondern <strong>klug einsetzt</strong>.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Prompt Engineering</strong> ist die berufsübergreifende Schlüsselkompetenz der KI-Arbeitswelt.</li>
+<li>Entwicklung in Stufen: <strong>Ausprobieren → Struktur → Iterieren → Systematisieren &amp; Teilen</strong>.</li>
+<li>Baue eine <strong>persönliche und teamweite Prompt-Praxis</strong> auf (Bibliothek, Austausch, Champions).</li>
+<li>Können <strong>plus Verantwortung</strong> (prüfen, Datenschutz, Recht, Fairness, Transparenz) macht den reifen Anwender.</li>
+<li>Die <strong>fünf Blöcke</strong> des Kurses bauen aufeinander auf – von den Grundlagen bis zur Verankerung im Unternehmen.</li>
+<li>Prompt Engineering ist eine <strong>Haltung</strong>: klar denken, präzise formulieren, kritisch prüfen, verantwortungsvoll handeln.</li>
+<li>Bleib am Ball: <strong>Prinzipien vor Tricks</strong>, Neugier statt Angst, Lernen als Gewohnheit.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Einen schwachen Prompt mit allen Techniken aufwerten</summary>
+<p>Hier ein typischer, viel zu dünner Prompt, wie ihn viele im Alltag schreiben:</p>
+<blockquote>
+<p>„Schreib mir was zu unserem neuen Produkt für die Website."</p>
+</blockquote>
+<p>Werte ihn in Copilot bewusst mit den Kurstechniken auf:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Verbessere diesen schwachen Prompt: &quot;Schreib mir was zu unserem neuen Produkt für die Website.&quot;
+Baue die Techniken Rolle, Kontext, Format und ein Qualitätskriterium ein. Zeig mir den
+fertigen, starken Prompt und markiere in Klammern, welche Technik in welchem Teil steckt.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> ein einsatzfertiger, starker Prompt, bei dem du zu jedem Bestandteil sagen kannst, welche Technik dahintersteckt und warum sie das Ergebnis verbessert.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Ein guter Prompt nennt Rolle („Du bist…"), Kontext (Produkt, Zielgruppe, Zweck), Format (Länge, Struktur) und ein Qualitätskriterium. „Schreib mir was" lässt Copilot raten – und raten führt zu Beliebigkeit.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: ein deutlich stärkerer Prompt mit sichtbar eingebauten Techniken (Rolle, Kontext, Format,
+Qualitätskriterium) und einer Begründung je Baustein. Lernziel: die zentralen Prompt-Techniken bewusst und
+benennbar einsetzen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Eine Aufgabe per Iteration von brauchbar zu gut treiben</summary>
+<p>Du hast eine konkrete Aufgabe mit fertigem Material:</p>
+<blockquote>
+<p><strong>Aufgabe:</strong> Antworte auf diese Kundenbeschwerde.
+<strong>Kundenmail:</strong> „Ich habe mein Paket vor 10 Tagen bestellt, bezahlt und noch immer nichts erhalten. Auf zwei E-Mails kam keine Antwort. Ich bin kurz davor, das Geld zurückzufordern und woanders zu kaufen."</p>
+</blockquote>
+<p>Erste Runde in Copilot – bewusst mit Rolle, Kontext, Format:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Du bist erfahrener Kundenservice-Mitarbeiter. Formuliere eine Antwort auf diese Beschwerde:
+[Kundenmail oben einfügen]
+Ton: verständnisvoll und lösungsorientiert. Format: max. 120 Wörter, mit einem konkreten
+nächsten Schritt und einer angemessenen Geste.
+</code></pre></div></td></tr></table></div>
+<p>Jetzt die gezielte Iteration – <strong>selbst prüfen, dann nachschärfen</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Lies deine Antwort kritisch: Entschuldigt sie sich ehrlich, ohne hohle Floskeln? Nennt sie einen
+überprüfbaren nächsten Schritt mit Zeitangabe? Überarbeite sie und mach genau diese zwei Punkte
+stärker.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine Antwort, die du <strong>ohne Nacharbeit</strong> so absenden würdest – ehrlich, konkret, mit klarem nächsten Schritt.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der erste Wurf ist selten der beste. Iteration heißt: Ergebnis kritisch lesen, das schwächste Element benennen und gezielt nachschärfen – nicht alles neu würfeln.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: eine brauchbare erste Antwort und eine spürbar bessere zweite Version nach gezielter Iteration
+(ehrliche Entschuldigung, überprüfbarer nächster Schritt). Lernziel: Ergebnisse durch bewusste Iteration von
+„okay" auf „absendefertig" heben.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Few-Shot-Prompt bauen und einer Falschauskunft widersprechen</summary>
+<p>Du sollst eingehende Anfragen automatisch in einen einheitlichen Stil bringen. Zwei Musterbeispiele (dein „Stil") liegen fertig vor:</p>
+<blockquote>
+<p><strong>Beispiel 1 – Eingang:</strong> „wann kommt meine bestellung??" → <strong>Stil:</strong> „Guten Tag, gerne prüfe ich den Status Ihrer Bestellung. Können Sie mir bitte Ihre Bestellnummer nennen?"
+<strong>Beispiel 2 – Eingang:</strong> „rechnung ist falsch" → <strong>Stil:</strong> „Guten Tag, das tut mir leid. Damit ich die Rechnung prüfen kann, senden Sie mir bitte die Rechnungsnummer."</p>
+</blockquote>
+<p>Baue in Copilot einen Few-Shot-Prompt, der diesen Stil auf neue Anfragen überträgt:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier sind zwei Beispiele für unseren Antwortstil:
+[Beispiel 1 und 2 oben einfügen]
+Übernimm exakt diesen Stil (höflich, kurz, mit gezielter Rückfrage) und formuliere Antworten
+für diese drei neuen Eingänge:
+a) &quot;storno geht nicht&quot;  b) &quot;liefert ihr auch nach österreich?&quot;  c) &quot;ware kaputt angekommen&quot;
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>eine riskante Aussage abfangen</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Prüfe deine drei Antworten: Hast du irgendwo eine inhaltliche Zusage gemacht (z. B. &quot;Storno ist
+jederzeit möglich&quot; oder &quot;wir liefern nach Österreich&quot;), die du gar nicht kennst? Markiere jede
+solche Stelle und ersetze sie durch eine ehrliche Rückfrage statt einer erfundenen Zusage.
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> drei stilkonforme Antworten, die keine erfundenen Fakten oder Zusagen enthalten.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du selbst mindestens eine Copilot-Antwort korrigiert hast, weil sie eine Aussage getroffen hat, die im Beispielmaterial gar nicht gedeckt ist.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Few-Shot heißt: dem Modell 2–3 Beispiele geben, damit es Muster und Stil übernimmt. Aber Achtung – Copilot füllt Wissenslücken gern mit plausibel klingenden Erfindungen. Inhaltliche Zusagen musst du prüfen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: drei stilkonsistente Antworten per Few-Shot und eine kritische Prüfung, bei der du mindestens
+eine erfundene inhaltliche Zusage durch eine ehrliche Rückfrage ersetzt hast. Lernziel: Few-Shot-Prompting nutzen
+und Halluzinationen im Ergebnis selbst abfangen.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Capstone – eine echte Arbeitsaufgabe souverän mit Copilot lösen</summary>
+<p><strong>Szenario (Capstone):</strong> Du führst hier alles aus dem Kurs zusammen. Deine Rolle und dein Auftrag stehen fest – kein „Erfinde erst etwas", du legst sofort los:</p>
+<blockquote>
+<p><strong>Rolle:</strong> Du bist Teamleitung im Kundenservice eines Software-Anbieters.
+<strong>Auftrag:</strong> Ein wichtiger Geschäftskunde droht in dieser Mail mit Kündigung. Du sollst (a) eine überzeugende Antwortmail und (b) eine interne Kurz-Analyse mit Handlungsempfehlung erstellen.
+<strong>Kundenmail:</strong> „Seit dem letzten Update stürzt Ihre Software zweimal täglich ab. Mein Team verliert Arbeitszeit, der Support vertröstet uns seit zwei Wochen. Wenn bis Ende der Woche keine Lösung da ist, kündigen wir den Vertrag über 50 Lizenzen."</p>
+</blockquote>
+<p>Dein hartes Ziel: ein Deliverable, das die Kündigung realistisch abwenden kann und intern eine klare Entscheidung ermöglicht. Setze bewusst die Prompt-Techniken des Kurses ein (Rolle, Kontext, Format, Few-Shot/Beispiel, Iteration) und dokumentiere deine besten Prompts.</p>
+<p><strong>Runde 1 – Erstellen mit System.</strong> Erzeuge (a) die Antwortmail an den Kunden und (b) eine interne Analyse: was ist passiert, wie dringend, welche 2–3 Handlungsoptionen. Nutze bewusst Rolle + Kontext + Format im Prompt.</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Das Deliverable muss <strong>alle</strong> erfüllen. Lass Copilot es gegen diese Checkliste prüfen und jede Lücke schließen:</p>
+<ol>
+<li>die Antwortmail nimmt den Ärger ernst und macht einen konkreten, terminierten nächsten Schritt</li>
+<li>keine erfundenen Zusagen oder Fakten, die du nicht kennst (Halluzinations-Check)</li>
+<li>die interne Analyse trennt Sofortmaßnahme von Ursachenbehebung</li>
+<li>Ton und Format sind für den jeweiligen Empfänger passend (Kunde vs. intern)</li>
+</ol>
+<p><strong>Runde 3 – Komplikation.</strong> Neue Information trifft ein: Die Entwicklung sagt, ein echter Fix dauert <strong>mindestens drei Wochen</strong> – die vom Kunden gesetzte Frist (Ende der Woche) ist nicht zu halten. Überarbeite die Antwortmail so, dass sie ehrlich bleibt, den Kunden trotzdem hält (Zwischenlösung, Eskalationsweg) und nichts verspricht, was nicht machbar ist.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Copilot empfiehlt in der internen Analyse, dem Kunden zur Beschwichtigung einen <strong>hohen Rabatt</strong> anzubieten. Wäge Pro/Contra ab (Kosten, Präzedenzfall, Wirkung), triff deine Empfehlung – und <strong>widersprich Copilot</strong>, wenn der Rabatt nur ein teures Pflaster ist, das das eigentliche Problem (die Abstürze) nicht löst.</p>
+<p><strong>Deliverable:</strong> finale Antwortmail (Version 2 nach Komplikation) + interne Analyse mit Handlungsempfehlung + deine dokumentierte Prompt-Strecke + ausgefüllte Pflicht-Checkliste + eine kurze Reflexion: Wo hat Copilot geholfen, wo musstest DU eingreifen und Verantwortung übernehmen?</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, die überarbeitete Mail trotz nicht haltbarer Frist ehrlich und kundenbindend ist und deine Rabatt-Entscheidung auf einem echten Argument beruht – nicht auf „Copilot hat es vorgeschlagen".</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Das Ziel ist nicht „Copilot macht alles", sondern „Ich steuere Copilot souverän und prüfe verantwortungsvoll". Der Wert entsteht in Runde 3 und 4: ehrlich bleiben, wenn die Frist nicht haltbar ist, und einer bequemen Empfehlung widersprechen, wenn sie das Problem nicht löst.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) bewusst und dokumentiert eingesetzte Prompt-Techniken; (2) alle vier Pflichtkriterien
+erfüllt, insbesondere keine erfundenen Zusagen; (3) die überarbeitete Mail löst die Frist-Komplikation ehrlich und
+kundenbindend; (4) die Rabatt-Entscheidung ist begründet abgewogen und widerspricht Copilot, wenn dessen Vorschlag
+das Kernproblem nicht adressiert; (5) ehrliche Reflexion über die Mensch-KI-Arbeitsteilung. Lernziel: alle
+Kursinhalte – Techniken, kritische Prüfung, Entscheidung unter Unsicherheit – in einer realistischen Aufgabe
+souverän und verantwortungsvoll zusammenführen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel39/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 39 – KI-Strategie und strategisches KI-Management">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 39 – KI-Strategie und strategisches KI-Management
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

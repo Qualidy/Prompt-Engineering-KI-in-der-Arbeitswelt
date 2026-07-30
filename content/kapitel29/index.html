@@ -1,0 +1,1659 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kapitel28/">
+      
+      
+        <link rel="next" href="../kapitel30/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz - Prompt Engineering: KI in der Arbeitswelt</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-29-ki-fur-nachhaltigkeit-und-ressourceneffizienz" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-header__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering: KI in der Arbeitswelt
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Übersicht
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 1 · KI-Einführung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 2 · Technische Grundlagen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kapitel18/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 3 · Use Cases & Praxis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel31/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 4 · Herausforderungen
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../kapitel37/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Block 5 · Erfolgsfaktoren
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prompt Engineering: KI in der Arbeitswelt" class="md-nav__button md-logo" aria-label="Prompt Engineering: KI in der Arbeitswelt" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Prompt Engineering: KI in der Arbeitswelt
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 1 · KI-Einführung
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel7/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 2 · Technische Grundlagen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Block 3 · Use Cases & Praxis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block 3 · Use Cases & Praxis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 18 – Chatbots und Prompt Engineering für die Dialogführung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 19 – Medienerstellung mit KI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 20 – Data-Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 21 – Prozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 22 – Praxis: KI in der Geschäftsprozessoptimierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 23 – Praxis: KI in der Konstruktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 24 – KI in der Produktion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 25 – Praxis: KI im Qualitätsmanagement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 26 – Vorausschauende Wartung (Predictive Maintenance)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 27 – Praxis: KI in der Prozessregulierung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 28 – KI in der Dokumentenverarbeitung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-du-in-diesem-kapitel-lernst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was du in diesem Kapitel lernst
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#291-ki-als-werkzeug-fur-nachhaltigkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.1 KI als Werkzeug für Nachhaltigkeit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#292-konkrete-anwendungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.2 Konkrete Anwendungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#293-das-spannungsfeld-ki-verbraucht-selbst-ressourcen" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.3 Das Spannungsfeld: KI verbraucht selbst Ressourcen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#294-der-rebound-effekt-effizienz-allein-reicht-nicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.4 Der Rebound-Effekt: Effizienz allein reicht nicht
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#295-ki-und-esg-berichterstattung" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.5 KI und ESG-Berichterstattung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#296-nachhaltigkeitsarbeit-mit-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      29.6 Nachhaltigkeitsarbeit mit Copilot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kurzübungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workshop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kapitel30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 30 – Low-Code-Programmierung und Citizen Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel31/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 4 · Herausforderungen
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../kapitel37/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Block 5 · Erfolgsfaktoren
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kapitel-29-ki-fur-nachhaltigkeit-und-ressourceneffizienz">Kapitel 29 – KI für Nachhaltigkeit und Ressourceneffizienz<a class="headerlink" href="#kapitel-29-ki-fur-nachhaltigkeit-und-ressourceneffizienz" title="Permanent link">&para;</a></h1>
+<div class="kurs-progress">
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step done"></div>
+  <div class="step active"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+  <div class="step"></div>
+</div>
+
+<div class="lernziele">
+<h3 id="was-du-in-diesem-kapitel-lernst">Was du in diesem Kapitel lernst<a class="headerlink" href="#was-du-in-diesem-kapitel-lernst" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wie KI zu <strong>Nachhaltigkeit</strong> und <strong>Ressourceneffizienz</strong> beitragen kann</li>
+<li>Konkrete Anwendungen: <strong>Energie, Material, Logistik, Kreislaufwirtschaft</strong></li>
+<li>Das <strong>Spannungsfeld</strong>: KI spart Ressourcen – verbraucht aber selbst welche</li>
+<li>Was der <strong>Rebound-Effekt</strong> ist und warum Effizienz allein nicht reicht</li>
+<li>Was <strong>ESG-Berichterstattung</strong> ist und wie KI dabei hilft</li>
+<li>Wie <strong>Copilot</strong> bei Analyse und Nachhaltigkeitsdokumentation unterstützt</li>
+</ul>
+</div>
+<hr />
+<h2 id="291-ki-als-werkzeug-fur-nachhaltigkeit">29.1 KI als Werkzeug für Nachhaltigkeit<a class="headerlink" href="#291-ki-als-werkzeug-fur-nachhaltigkeit" title="Permanent link">&para;</a></h2>
+<p>Nachhaltigkeit heißt, mit <strong>Ressourcen</strong> (Energie, Material, Zeit) sparsam umzugehen. KI ist dafür gut geeignet, weil sie in großen Datenmengen <strong>Einsparpotenziale</strong> findet, die Menschen übersehen, und Prozesse <strong>feiner optimiert</strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([Daten: Energie, Material, Prozesse]) --&gt; B([KI findet Muster &amp; Optima])
+    B --&gt; C([Empfehlung/Steuerung])
+    C --&gt; D([weniger Verbrauch / weniger Abfall])</code></pre>
+<p>Der Kern ist immer derselbe: KI verwandelt <strong>Messdaten in bessere Entscheidungen</strong>. Wo früher grobe Faustregeln oder Durchschnittswerte galten, kann ein Modell den tatsächlichen Bedarf im Einzelfall abschätzen – und genau das ist der Hebel für Ressourceneffizienz.</p>
+<hr />
+<h2 id="292-konkrete-anwendungen">29.2 Konkrete Anwendungen<a class="headerlink" href="#292-konkrete-anwendungen" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>KI-Anwendung</th>
+<th>Effekt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energie</strong></td>
+<td>Verbrauch vorhersagen, Anlagen effizient regeln</td>
+<td>weniger Strom/Wärme</td>
+</tr>
+<tr>
+<td><strong>Material</strong></td>
+<td>Ausschuss senken, Zuschnitt optimieren</td>
+<td>weniger Abfall</td>
+</tr>
+<tr>
+<td><strong>Logistik</strong></td>
+<td>Routen und Auslastung optimieren</td>
+<td>weniger Leerfahrten/CO₂</td>
+</tr>
+<tr>
+<td><strong>Landwirtschaft</strong></td>
+<td>Wasser/Dünger präzise dosieren</td>
+<td>Ressourcen schonen</td>
+</tr>
+<tr>
+<td><strong>Kreislaufwirtschaft</strong></td>
+<td>Materialien sortieren/wiederverwerten</td>
+<td>Recyclingquote steigt</td>
+</tr>
+<tr>
+<td><strong>Gebäude</strong></td>
+<td>Heizung/Kühlung bedarfsgerecht (Kap. 27)</td>
+<td>Energie sparen</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Präzision spart Ressourcen</p>
+<p>Statt ein ganzes Feld gleichmäßig zu düngen, ermittelt KI aus Sensordaten, <strong>welche Teilfläche wie viel</strong> braucht (Precision Farming). Ergebnis: gleicher Ertrag mit weniger Dünger und Wasser. Dasselbe Prinzip – „genau so viel wie nötig" – wirkt auch bei Energie und Material.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Vertiefung: Warum Vorhersage der Schlüssel ist</p>
+<p>Viele Ressourcen werden verschwendet, weil Menschen <strong>auf Vorrat</strong> handeln: Man heizt lieber zu viel als zu wenig, produziert lieber einen Puffer als eine Fehlmenge, fährt lieber die volle Route als das Risiko einer Lücke. Diese Sicherheitszuschläge kosten Energie und Material. KI reduziert die Unsicherheit durch bessere <strong>Prognosen</strong> (Kap. 26 – Predictive Maintenance, Kap. 21 – Prozessoptimierung). Je genauer man den Bedarf <strong>kennt</strong>, desto kleiner darf der Puffer sein – das ist die eigentliche Quelle der Einsparung.</p>
+</div>
+<hr />
+<h2 id="293-das-spannungsfeld-ki-verbraucht-selbst-ressourcen">29.3 Das Spannungsfeld: KI verbraucht selbst Ressourcen<a class="headerlink" href="#293-das-spannungsfeld-ki-verbraucht-selbst-ressourcen" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Ehrliche Bilanz nötig</p>
+<p>KI ist <strong>kein reiner Umweltretter</strong>. Das <strong>Training</strong> großer Modelle und ihr laufender Betrieb verbrauchen viel <strong>Strom und Wasser</strong> (Kühlung der Rechenzentren) – mehr dazu in Kapitel 36. Eine seriöse Bewertung fragt: Spart der KI-Einsatz <strong>mehr</strong> Ressourcen, als er selbst verbraucht? Nur dann ist er auch ökologisch sinnvoll.</p>
+</div>
+<p>Für <strong>Nutzer:innen von Copilot</strong> ist der eigene Verbrauch pro Anfrage klein, summiert sich aber über Millionen Anfragen. Bewusster Einsatz (keine sinnlosen Massen-Prompts, keine zehn Varianten „zum Spaß") ist Teil verantwortungsvoller Nutzung. Eine faire Bilanz betrachtet immer den <strong>gesamten Lebenszyklus</strong>: Training, Betrieb und die Frage, ob die eingesparte Ressource den Aufwand rechtfertigt.</p>
+<hr />
+<h2 id="294-der-rebound-effekt-effizienz-allein-reicht-nicht">29.4 Der Rebound-Effekt: Effizienz allein reicht nicht<a class="headerlink" href="#294-der-rebound-effekt-effizienz-allein-reicht-nicht" title="Permanent link">&para;</a></h2>
+<p>Ein häufig übersehener Fallstrick ist der <strong>Rebound-Effekt</strong>: Wenn etwas effizienter (und damit billiger) wird, nutzt man oft <strong>mehr</strong> davon – und ein Teil der Einsparung verpufft.</p>
+<pre class="mermaid"><code>flowchart LR
+    A([KI macht Prozess effizienter]) --&gt; B([Kosten pro Einheit sinken])
+    B --&gt; C([Nutzung steigt])
+    C --&gt; D([Teil der Einsparung verpufft])</code></pre>
+<p>Ein klassisches Beispiel außerhalb der KI: Ein sparsameres Auto verbraucht pro Kilometer weniger – aber weil Fahren billiger wird, fährt man mehr. Übertragen auf KI: Wenn das Erstellen von Texten, Bildern oder Auswertungen fast nichts mehr kostet, produziert man plötzlich <strong>viel mehr</strong> davon. Der Nettoeffekt für die Umwelt kann dann sogar negativ sein.</p>
+<div class="admonition warning">
+<p class="admonition-title">Effizienz ist nicht gleich Nachhaltigkeit</p>
+<p>Ein verbreitetes Missverständnis lautet: „KI macht alles effizienter, also ist KI automatisch nachhaltig." Das stimmt nicht. Effizienz senkt den Verbrauch <strong>pro Einheit</strong>, sagt aber nichts über die <strong>Gesamtmenge</strong> aus. Nachhaltig wird der Einsatz erst, wenn die Effizienzgewinne nicht vollständig durch Mehrnutzung aufgefressen werden. Deshalb gehört zu jeder KI-Nachhaltigkeitsmaßnahme die Frage: „Was passiert mit der eingesparten Ressource?"</p>
+</div>
+<p>Der <strong>KI-Fußabdruck</strong> eines Unternehmens umfasst also nicht nur den Strom eines einzelnen Modells, sondern auch das durch KI <strong>zusätzlich ausgelöste</strong> Verhalten (mehr Inhalte, mehr Rechenläufe, mehr Geräte). Nachhaltige Governance setzt hier bewusst Grenzen und Prioritäten.</p>
+<hr />
+<h2 id="295-ki-und-esg-berichterstattung">29.5 KI und ESG-Berichterstattung<a class="headerlink" href="#295-ki-und-esg-berichterstattung" title="Permanent link">&para;</a></h2>
+<p>Unternehmen müssen zunehmend über <strong>Nachhaltigkeit berichten</strong> – Stichwort <strong>ESG</strong> (Environmental, Social, Governance) und EU-Vorgaben (z. B. CSRD). Das bedeutet viel <strong>Datensammlung und Textarbeit</strong> – ein gutes Feld für Copilot.</p>
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Wie KI hilft</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Daten zusammentragen</td>
+<td>verstreute Angaben bündeln</td>
+</tr>
+<tr>
+<td>Kennzahlen erklären</td>
+<td>komplexe Werte verständlich aufbereiten</td>
+</tr>
+<tr>
+<td>Berichte entwerfen</td>
+<td>Textbausteine, Struktur, Zusammenfassungen</td>
+</tr>
+<tr>
+<td>Lücken finden</td>
+<td>„Welche Angaben fehlen für Standard X?"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">ESG-Zahlen sind prüfungsrelevant</p>
+<p>Nachhaltigkeitsangaben werden zunehmend geprüft und dürfen nicht beschönigt werden – schöngefärbte Berichte gelten als <strong>Greenwashing</strong> und sind ein rechtliches wie reputatives Risiko (Kap. 31 – Ethik, Kap. 32 – Recht). Copilot darf hier <strong>formulieren und strukturieren</strong>, aber niemals Zahlen „erfinden" oder glätten. Jede Kennzahl im Bericht muss auf eine belegbare Quelle zurückführbar sein.</p>
+</div>
+<hr />
+<h2 id="296-nachhaltigkeitsarbeit-mit-copilot">29.6 Nachhaltigkeitsarbeit mit Copilot<a class="headerlink" href="#296-nachhaltigkeitsarbeit-mit-copilot" title="Permanent link">&para;</a></h2>
+<p><strong>Beispiel-Prompts:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere diese monatlichen Stromverbrauchsdaten (Excel): Nenne Trends,
+Auffälligkeiten und drei konkrete Ansatzpunkte, um Energie einzusparen.
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Erstelle das Gliederungsgerüst für einen Nachhaltigkeitsbericht eines
+mittelständischen Produktionsbetriebs entlang der ESG-Dimensionen. Markiere
+je Abschnitt, welche Daten ich dafür beschaffen muss.
+</code></pre></div></td></tr></table></div>
+<p>Damit du das gefahrlos üben kannst, lässt du Copilot die Datenbasis <strong>selbst erfinden</strong> – so brauchst du keine echten Betriebsdaten hochzuladen:</p>
+<div class="admonition example">
+<p class="admonition-title">Ausgearbeiteter Copilot-Dialog</p>
+<p><strong>Prompt:</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Erfinde eine fiktive Tabelle mit dem monatlichen Stromverbrauch (kWh) eines
+kleinen Produktionsbetriebs über 12 Monate, inklusive eines auffälligen
+Ausreißers. Analysiere sie danach: Nenne den Trend, den Ausreißer und drei
+konkrete Einsparansätze. Sag ehrlich, welche Annahmen du triffst.
+</code></pre></div></td></tr></table></div>
+<strong>Beispiel-Antwort von Copilot (gekürzt):</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>Fiktive Daten (kWh): Jan 12.400 · Feb 11.900 · Mär 12.100 · Apr 10.800
+· Mai 10.200 · Jun 9.800 · Jul 15.600 · Aug 9.500 · Sep 10.100 ...
+
+Trend: Verbrauch sinkt im Frühjahr/Sommer – plausibel durch weniger Heizung.
+Ausreißer: Juli (15.600 kWh) liegt ~55 % über dem Nachbarmonat.
+Ansätze:
+1. Ursache des Juli-Peaks prüfen (Klimatisierung? Sonderschicht?).
+2. Grundlast nachts messen – Standby-Verbräuche senken.
+3. Lastspitzen glätten, um teure Spitzentarife zu vermeiden.
+
+Annahme: Werte sind erfunden; realer Nutzen entsteht erst mit echten Zählern.
+</code></pre></div></td></tr></table></div></p>
+</div>
+<p>Der letzte Satz ist entscheidend: Copilot liefert eine <strong>plausible Struktur und Denkrichtung</strong>, aber die Zahlen sind fiktiv. Der Wert liegt im <strong>Analyseraster</strong>, das du dann auf echte, geprüfte Daten anwendest.</p>
+<div class="admonition tip">
+<p class="admonition-title">Von der Idee zur Maßnahme</p>
+<p>Copilot ist gut darin, aus Daten <strong>Einsparideen</strong> und aus Vorgaben <strong>Berichtsstrukturen</strong> zu erzeugen. Die <strong>Umsetzung und Verifikation</strong> (stimmen die Zahlen? ist die Maßnahme realistisch?) bleibt beim Team. Achte bei Berichtsangaben besonders auf Faktenprüfung – Nachhaltigkeitszahlen sind zunehmend prüfungsrelevant.</p>
+</div>
+<hr />
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">&para;</a></h2>
+<ul>
+<li>KI findet <strong>Einsparpotenziale</strong> bei Energie, Material, Logistik, Landwirtschaft und im Kreislauf.</li>
+<li>Das Prinzip ist <strong>Präzision</strong>: „genau so viel wie nötig" statt pauschal – gute <strong>Prognosen</strong> verkleinern Sicherheitspuffer.</li>
+<li><strong>Spannungsfeld:</strong> KI verbraucht selbst Ressourcen (Kap. 36) – der Nettoeffekt muss positiv sein.</li>
+<li><strong>Rebound-Effekt:</strong> Effizienz allein reicht nicht, wenn die Mehrnutzung die Einsparung auffrisst; der <strong>KI-Fußabdruck</strong> umfasst auch das ausgelöste Verhalten.</li>
+<li>Bei <strong>ESG-Berichten</strong> hilft Copilot beim Bündeln, Erklären und Entwerfen – Zahlen bleiben prüfpflichtig, Greenwashing ist tabu.</li>
+</ul>
+<hr />
+<h2 id="kurzubungen">Kurzübungen<a class="headerlink" href="#kurzubungen" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--1">Grundlagen</span> Einsparpotenziale aus einem Verbrauchsprofil ableiten</summary>
+<p>Du bist im Nachhaltigkeitsteam eines Logistikbetriebs. Der Standort meldet diese Verbrauchskennzahlen pro Monat:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Strom Lagerbeleuchtung: 8.200 kWh (Beleuchtung laeuft 24/7, auch nachts ohne Betrieb)
+Diesel Lieferflotte: 12.000 Liter (viele Leerfahrten)
+Heizung Halle: 15.000 kWh (Tore stehen im Winter oft offen)
+Papierverbrauch Buero: 45.000 Blatt (viel wird gedruckt und nie gelesen)
+</code></pre></div></td></tr></table></div>
+<p>Öffne Copilot und erledige die Analyse in einem Auftrag:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Hier vier Verbrauchsposten eines Logistikstandorts mit Hinweisen zur Ursache. Nenne je Posten eine
+konkrete KI- oder Automatisierungsmassnahme zur Einsparung und ordne jeder eine messbare Kennzahl zu
+(z. B. eingesparte kWh, Liter, kg CO2, Blatt). Gib eine grobe Groessenordnung der Einsparung an.
+[hier die vier Posten einfuegen]
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> vier Maßnahmen, jede mit einer messbaren Kennzahl und grober Einsparungsgröße – nichts bleibt bei „irgendwie sparsamer".</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Nachhaltigkeit wird erst greifbar, wenn man sie misst. Eine Maßnahme ohne Kennzahl (kWh, Liter, kg CO2) lässt sich weder priorisieren noch nachweisen.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: vier plausible Maßnahmen (z. B. Bewegungssensor-/Zeitsteuerung Beleuchtung, KI-Tourenplanung
+gegen Leerfahrten, Torsteuerung/Wärmeschleier, Druck-Reduktion) mit je einer messbaren Kennzahl und Größenordnung.
+Lernziel: KI-Nutzen für Ressourceneffizienz messbar denken.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--2">Fortgeschritten</span> Stromlastgang auswerten und Maßnahme schärfen</summary>
+<p>Hier der monatliche Stromverbrauch einer fiktiven Fertigung (in MWh). Du sollst die Auffälligkeiten finden:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Jan 210 | Feb 205 | Mrz 215 | Apr 208 | Mai 220 | Jun 350 | Jul 360 | Aug 215 | Sep 212 | Okt 218 | Nov 225 | Dez 300
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot die Daten auswerten:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Analysiere diese Monatswerte des Stromverbrauchs (MWh) einer Fertigung. Nenne die auffaelligen Monate,
+schaetze die Mehrverbraeuche gegenueber dem Normalniveau, nenne je Auffaelligkeit eine plausible Ursache
+und eine konkrete Einsparmassnahme mit Kennzahl.
+Jan 210 | Feb 205 | Mrz 215 | Apr 208 | Mai 220 | Jun 350 | Jul 360 | Aug 215 | Sep 212 | Okt 218 | Nov 225 | Dez 300
+</code></pre></div></td></tr></table></div>
+<p>Nimm dann die <strong>schwächste</strong> Maßnahme und schärfe sie gezielt nach:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Deine Massnahme fuer die Sommerspitze (Jun/Jul) ist noch zu allgemein. Mach sie konkret: was genau
+wird umgesetzt, welche Daten braucht man dafuer, und wie viel MWh liessen sich realistisch einsparen?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> die Sommerspitze (Jun/Jul, mutmaßlich Kühlung/Klima) und die Dezember-Auffälligkeit erkannt, mit je einer bezifferten, umsetzbaren Maßnahme.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Auffällige Ausschläge sind oft der schnellste Hebel: erst verstehen, warum (Kühllast im Sommer? Zusatzschichten im Dezember?), dann gezielt handeln – nicht pauschal „überall sparen".</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: Jun/Jul (+~140 MWh, wahrscheinlich Kühlung/Klimatisierung) und Dez (+~85 MWh) als
+Auffälligkeiten erkannt, mit plausiblen Ursachen und konkreten Maßnahmen. Die nachgeschärfte Maßnahme ist
+spürbar konkreter und beziffert. Lernziel: Verbrauchsdaten auswerten und in messbare Einsparungen übersetzen.</p>
+</details>
+</details>
+<details class="question">
+<summary><span class="task-level task-level--3">Experte</span> Netto-Nachhaltigkeit einer KI-Maßnahme prüfen</summary>
+<p>Ein Versandhändler will mit KI nachhaltiger werden. Die vorgeschlagene Maßnahme steht schon:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Massnahme: KI-gestuetzte Verpackungsoptimierung waehlt je Bestellung die kleinstmoegliche Kartongroesse.
+Erwartung: -20 % Kartonmaterial, -12 % Transportvolumen.
+Rahmen: Die KI laeuft dauerhaft in der Cloud und wertet jede der taeglich 40.000 Bestellungen aus.
+Nebeneffekt-Idee im Team: &quot;Wenn Versand billiger wird, koennen wir aggressiver mit Gratisversand werben.&quot;
+</code></pre></div></td></tr></table></div>
+<p>Lass Copilot die Maßnahme zunächst ausarbeiten und dann <strong>kritisch gegenrechnen</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Bewerte diese KI-Verpackungsoptimierung ganzheitlich. Nenne den erwarteten Nutzen mit Kennzahlen.
+Erklaere dann den Rebound-Effekt an genau diesem Beispiel (Gratisversand-Idee) und beziehe den
+Energie-/CO2-Fussabdruck der KI selbst mit ein (Cloud-Betrieb, 40.000 Auswertungen/Tag). Bleibt die
+Massnahme unterm Strich netto nachhaltig?
+</code></pre></div></td></tr></table></div>
+<p>Jetzt der anspruchsvolle Teil – <strong>triff selbst eine begründete Entscheidung</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Formuliere zwei Bedingungen, unter denen die Massnahme netto nachhaltig bleibt, und eine Bedingung,
+unter der sie ins Negative kippt. Auf welche Zahl wuerdest du persoenlich am genauesten schauen,
+bevor du gruenes Licht gibst?
+</code></pre></div></td></tr></table></div>
+<p><strong>Ziel:</strong> eine ehrliche Netto-Bilanz, die Rebound und KI-Fußabdruck einrechnet – nicht schöngerechnet.</p>
+<p><strong>Fertig bist du erst, wenn</strong> du selbst entschieden hast, ob der Netto-Nutzen positiv ist, und mindestens eine von Copilots optimistischen Annahmen hinterfragt hast (z. B. „−20 % Material" ohne Berücksichtigung des Rebound durch mehr Bestellungen).</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Rebound: Effizienzgewinne werden oft durch Mehrnutzung „aufgefressen" – billiger Versand kann mehr Bestellungen und Retouren auslösen. Und KI verbraucht selbst Energie. Ehrliche Nachhaltigkeit rechnet beides ein, sonst ist es Greenwashing.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Erwartetes Ergebnis: benannter Nutzen mit Kennzahlen, saubere Erklärung des Rebound am Gratisversand-Beispiel,
+Einbezug des KI-Fußabdrucks und eine klare Netto-Aussage mit Bedingungen. Entscheidend ist die Eigenentscheidung:
+Du hast eine optimistische Annahme hinterfragt und die kritische Kennzahl benannt. Lernziel: Nachhaltigkeit netto
+bewerten statt nur den Brutto-Effekt zu feiern.</p>
+</details>
+</details>
+<hr />
+<h2 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary><span class="task-level task-level--4">Workshop</span> Nachhaltigkeitsprogramm mit ehrlicher Netto-Bilanz</summary>
+<p><strong>Szenario:</strong> Du erstellst für einen mittelständischen Lebensmittelproduzenten ein <strong>KI-gestütztes Nachhaltigkeitsprogramm</strong>. Die Geschäftsführung will ein hartes Ziel öffentlich zusagen: <strong>−15 % CO2 in 12 Monaten</strong> – aber glaubwürdig, ohne Greenwashing-Vorwurf. Ausgangslage:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>Groesste Belastungen: Kuehlung/Kaeltekette (hoher Stromverbrauch), Fuhrpark (Auslieferung),
+Lebensmittelabfall durch Ueberproduktion.
+Randbedingung: Budget begrenzt, jede Massnahme braucht eine messbare Kennzahl.
+Warnung des Betriebsrats: &quot;Keine Zahlen schoenrechnen, die spaeter zerpflueckt werden.&quot;
+</code></pre></div></td></tr></table></div>
+<p>Arbeite alles in Copilot – aber liefere gegen <strong>klare Anforderungen</strong>.</p>
+<p><strong>Runde 1 – Programm bauen.</strong> Ordne den drei Belastungen je eine KI-gestützte Maßnahme mit messbarem Ziel zu (Tabelle: Belastung, Maßnahme, Kennzahl, erwartete CO2-Wirkung) und priorisiere nach Wirkung/Aufwand.</p>
+<p><strong>Runde 2 – Qualitäts-Check gegen Pflichtkriterien.</strong> Das Programm muss <strong>alle</strong> erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:</p>
+<ol>
+<li>jede Maßnahme hat eine messbare Kennzahl und eine Baseline (Ausgangswert)</li>
+<li>Rebound-Effekte sind je Maßnahme benannt und eingerechnet</li>
+<li>der Energie-/CO2-Fußabdruck der eingesetzten KI ist berücksichtigt</li>
+<li>die Summe der Maßnahmen erreicht das −15-%-Ziel nachrechenbar (keine Luftbuchung)</li>
+</ol>
+<p><strong>Runde 3 – Kurskorrektur (Komplikation).</strong> Beim Nachrechnen zeigt sich: Die CO2-Zahlen erreichen die −15 % <strong>nur</strong>, wenn man den Rebound bei der Kältekette ignoriert und Ökostrom-Zertifikate großzügig anrechnet. Analysiere mit Copilot, wo die Bilanz geschönt ist, und überarbeite das Programm zu einer <strong>ehrlichen</strong> Rechnung – auch wenn das Ziel dann knapper wird.</p>
+<p><strong>Runde 4 – Entscheidung unter Abwägung.</strong> Marketing will trotzdem „−15 % CO2" plakativ bewerben. Lass dir Pro/Contra geben, entscheide begründet, welche Aussage du öffentlich verantworten kannst <strong>und widersprich Copilot</strong>, wenn es eine kommunikativ starke, aber sachlich dünne Formulierung empfiehlt.</p>
+<p><strong>Deliverable:</strong> priorisiertes Nachhaltigkeitsprogramm (Version 2, ehrlich gerechnet) + ausgefüllte Pflichtkriterien-Checkliste + eine öffentlich verantwortbare Kommunikationsaussage.</p>
+<p><strong>Fertig bist du erst, wenn</strong> alle vier Pflichtkriterien erfüllt sind, die Bilanz Rebound und KI-Fußabdruck einrechnet und deine Kommunikationsaussage der Nachrechnung standhält.</p>
+<details class="info">
+<summary>Tipp</summary>
+<p>Der Wert entsteht in Runde 3 und 4: Eine Nachhaltigkeitszahl, die nur durch Weglassen von Rebound und KI-Aufwand entsteht, ist Greenwashing – und fliegt später auf. Lieber ein ehrliches −11 % als ein zerpflücktes −15 %.</p>
+</details>
+<details class="success">
+<summary>Lösung</summary>
+<p>Bewertungskriterien: (1) vollständiges, priorisiertes Programm mit messbaren Maßnahmen; (2) alle vier
+Pflichtkriterien erfüllt (Kennzahl+Baseline, Rebound, KI-Fußabdruck, nachrechenbare Zielerreichung); (3) die
+überarbeitete Bilanz ist ehrlich gerechnet, auch wenn das Ziel knapper wird; (4) die Kommunikationsaussage ist
+sachlich belastbar und nicht blind von Copilots Marketing-Vorschlag übernommen. Lernziel: ein glaubwürdiges,
+messbares Nachhaltigkeitsprogramm bauen und der Versuchung des Schönrechnens widerstehen.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kapitel28/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kapitel 28 – KI in der Dokumentenverarbeitung">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 28 – KI in der Dokumentenverarbeitung
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kapitel30/" class="md-footer__link md-footer__link--next" aria-label="Next: Kapitel 30 – Low-Code-Programmierung und Citizen Development">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kapitel 30 – Low-Code-Programmierung und Citizen Development
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "navigation.prune", "navigation.indexes", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
