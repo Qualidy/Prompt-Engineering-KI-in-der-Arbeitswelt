@@ -1,25 +1,39 @@
-title: QM-Verbesserungskonzept mit Copilot
+title: QM-Verbesserungskonzept mit Kurskorrektur
 difficulty: 4
 question: |
-  Erarbeite **in Copilot** ein Qualitätsmanagement-Konzept – mit selbst erzeugten Daten.
+  **Szenario:** Du bist QM-Verantwortliche(r) in einer Elektronikfertigung. Die Reklamationsquote ist zuletzt gestiegen, ein Großkunde droht mit Lieferantenwechsel. Die Geschäftsführung will ein datenbasiertes Maßnahmenpaket – und keine teure KI-Lösung „auf Verdacht". Arbeite alles in Copilot.
 
-  **Schritt 1:**
-  ```text
-  Erfinde einen Fertigungsbetrieb mit einem Qualitätsproblem und erzeuge eine Fehlerdaten-Tabelle (10 Zeilen).
-  ```
-  **Schritt 2:**
-  ```text
-  Analysiere die Daten (Häufigkeiten, Pareto) und benenne die 2 wichtigsten Fehlerquellen.
-  ```
-  **Schritt 3:**
-  ```text
-  Entwirf ein Maßnahmenpaket: 1 organisatorische, 1 KI-gestützte Maßnahme, je mit erwartetem Effekt.
-  ```
-  **Schritt 4 – Prüfung:** Prüfe, ob die KI-Maßnahme angemessen ist oder ob eine einfache Lösung reicht.
+  **Runde 1 – Daten auswerten.** Füge die Fehlerdaten ein und lass die wichtigsten Fehlerquellen bestimmen:
 
-  **Deliverable:** Datenauswertung + priorisiertes Maßnahmenpaket.
+  ```text
+  Werte diese Fehlerdaten eines Monats aus (Häufigkeit und Anteil) und benenne die
+  2 wichtigsten Fehlerquellen.
+
+  Fehlerart | Anzahl | Ursache-Hinweis
+  Kalte Lötstelle | 95 | Handlötplatz, Schicht spät
+  Falsches Bauteil bestückt | 70 | Rüstfehler bei Serienwechsel
+  Kratzer Gehäuse | 40 | Transport intern
+  Firmware-Fehler | 22 | Prüfsoftware veraltet
+  Verpackungsfehler | 15 | Versand
+  ```
+
+  **Runde 2 – Pflichtkriterien.** Dein Maßnahmenpaket muss **alle** erfüllen. Lass Copilot prüfen und Lücken schließen:
+
+  1. die 2 Hauptfehlerquellen sind mit Zahlen belegt
+  2. es gibt genau 1 organisatorische und 1 KI-gestützte Maßnahme, je mit erwartetem Effekt
+  3. je Maßnahme ist der Aufwand grob benannt
+  4. Annahmen sind gekennzeichnet
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Neue Info: Die häufigsten Fehler (kalte Lötstellen) treten fast nur in der **Spätschicht** und **kurz nach Serienwechseln** auf – ein Muster, das für eine teure KI-Bildprüfung gar nicht der richtige Hebel wäre. Überarbeite das Paket so, dass die Maßnahme an dieser echten Ursache ansetzt.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Es gibt Budget für **eine** Maßnahme zuerst: (A) KI-gestützte Lötstellen-Bildprüfung oder (B) organisatorische Maßnahme (Schulung/Prüfplan für Spätschicht und Serienwechsel). Lass dir Pro/Contra geben, entscheide begründet – und **widersprich Copilot**, wenn es reflexartig die KI-Lösung empfiehlt, obwohl die einfachere Maßnahme die Ursache besser trifft.
+
+  **Deliverable:** Datenauswertung + priorisiertes Maßnahmenpaket (Version 2 nach Kurskorrektur) + begründete Erst-Entscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die Ursache aus Runde 3 adressiert ist und deine Entscheidung die Ursache trifft (nicht nur „modern" ist).
 tip: |
-  Nicht jedes Qualitätsproblem braucht KI – manchmal ist eine bessere Arbeitsanweisung wirksamer und billiger.
+  Nicht jedes Qualitätsproblem braucht KI – manchmal wirkt eine bessere Arbeitsanweisung schneller und billiger. Runde 3 zeigt, ob du die echte Ursache triffst.
 solution: |
-  Bewertungskriterien: saubere Datenauswertung, priorisierte Fehlerquellen, ausgewogenes Maßnahmenpaket, kritische
-  Prüfung. Lernziel: QM datenbasiert verbessern und KI angemessen einsetzen.
+  Bewertungskriterien: (1) belegte Hauptfehlerquellen; (2) alle vier Pflichtkriterien erfüllt; (3) die Maßnahme setzt an der
+  in Runde 3 aufgedeckten Ursache an (Spätschicht/Serienwechsel); (4) die Erst-Entscheidung trifft die Ursache und wird nicht
+  reflexartig zugunsten der KI getroffen. Lernziel: QM datenbasiert verbessern und KI angemessen statt reflexhaft einsetzen.

@@ -1,25 +1,30 @@
-title: Teil-Automatisierung eines Back-Office-Prozesses (Copilot)
+title: Angebotserstellung in Automatisierungs-Zonen aufteilen
 difficulty: 3
 question: |
-  Entwirf **in Copilot** ein Automatisierungskonzept für einen selbst erzeugten Prozess.
+  Die Angebotserstellung in einem Vertriebs-Back-Office kostet viel manuelle Zeit. Du sollst ein Automatisierungskonzept entwerfen, das klar regelt, wo der Mensch drinbleibt. Der Prozess liegt vor.
 
-  **Schritt 1:**
+  **Schritt 1 – in Zonen aufteilen:**
   ```text
-  Erfinde einen Back-Office-Prozess mit hohem manuellem Aufwand (z. B. Angebotserstellung).
+  Teile diesen Angebotsprozess in drei Zonen: (A) voll automatisierbar, (B) Copilot-
+  assistiert mit menschlicher Freigabe, (C) rein menschlich. Begründe jede Zuordnung.
+
+  1. Anfrage aus dem Postfach erfassen
+  2. Kundendaten und Preisliste heraussuchen
+  3. Angebotstext und Positionen formulieren
+  4. Rabatt festlegen
+  5. Angebot final freigeben und versenden
   ```
-  **Schritt 2:**
+  **Schritt 2 – Zone B konkretisieren:**
   ```text
-  Trenne den Prozess in drei Zonen: (A) voll automatisierbar, (B) Copilot-assistiert mit
-  Mensch-Freigabe, (C) rein menschlich. Begründe jede Zuordnung.
-  ```
-  **Schritt 3:**
-  ```text
-  Beschreibe für Zone B einen konkreten Ablauf: Was macht Copilot, wo prüft der Mensch, wie sieht die Freigabe aus?
+  Beschreibe für einen Schritt aus Zone B den genauen Ablauf: Was macht Copilot, wo prüft
+  der Mensch, wie sieht die Freigabe aus?
   ```
 
-  Bewerte selbst: Wo entstehen die größten Risiken, wenn der Mensch die Prüfung überspringt?
+  **Nebenbedingung:** Rabattentscheidungen und der finale Versand dürfen nicht vollautomatisch laufen – begründe, warum.
+
+  **Fertig bist du erst, wenn** du selbst benannt hast, wo das größte Risiko entsteht, falls der Mensch seine Prüfung in Zone B überspringt.
 tip: |
-  „Mensch im Loop": Gerade bei kundenrelevanten oder rechtlich heiklen Schritten braucht es eine bewusste Freigabe.
+  „Mensch im Loop": Gerade bei preis- oder rechtsrelevanten Schritten (Rabatt, Versand) braucht es eine bewusste Freigabe.
 solution: |
-  Erwartetes Ergebnis: klare Zonentrennung, konkreter assistierter Ablauf, benannte Risiken bei fehlender Prüfung.
-  Lernziel: sinnvolle Arbeitsteilung Mensch–KI im Prozess gestalten.
+  Erwartetes Ergebnis: klare Zonentrennung mit Begründung, ein konkret beschriebener assistierter Ablauf in Zone B und ein
+  benanntes Hauptrisiko bei fehlender Prüfung (z. B. falscher Rabatt geht raus). Lernziel: sinnvolle Arbeitsteilung Mensch–KI gestalten.

@@ -1,13 +1,23 @@
-title: KI-Geschäftsmodelle mit Copilot erkunden
+title: Aus einem Angebot drei KI-Erlösmodelle machen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Ein kleiner Anbieter hat ein bestehendes Angebot:
+
+  > **Ausgangslage:** Eine Firma verkauft Software zur Pflanzenpflege für Hobbygärtner (einmaliger Kauf, 40 €). Sie besitzt außerdem eine große Sammlung von Fotos kranker und gesunder Pflanzen mit Diagnosen.
+
+  Lass Copilot KI-basierte Wertangebote entwickeln:
+
   ```text
-  Nenne 5 verschiedene Arten, wie Unternehmen mit KI Geld verdienen (z. B. KI-Feature im Produkt,
-  KI-as-a-Service, Datenveredelung). Je ein reales oder plausibles Beispiel.
+  Ein Anbieter verkauft eine Pflanzenpflege-Software (Einmalkauf 40 €) und besitzt eine große
+  Sammlung von Pflanzenfotos mit Krankheitsdiagnosen. Entwickle 3 verschiedene KI-basierte
+  Erlösmodelle aus diesem Bestand (z. B. KI-Feature im Produkt, KI-as-a-Service, Datenveredelung).
+  Je Modell: das Wertangebot in einem Satz und wie damit Geld verdient wird.
   ```
+
+  **Ziel:** Du hast drei klar unterscheidbare KI-Erlösmodelle und kannst zu jedem sagen, für wen es welchen Wert schafft.
 tip: |
-  KI kann bestehende Produkte verbessern ODER völlig neue Angebote/Erlösmodelle ermöglichen.
+  KI kann ein bestehendes Produkt verbessern ODER völlig neue Angebote ermöglichen. Ein vorhandener Datenschatz (hier: Fotos mit Diagnosen) ist oft der Schlüssel zum neuen Erlösmodell.
 solution: |
-  Erwartetes Ergebnis: 5 Geschäftsmodell-Muster mit Beispielen. Lernziel: die Bandbreite KI-basierter Wertschöpfung
-  überblicken.
+  Erwartetes Ergebnis: drei unterscheidbare KI-Erlösmodelle mit klarem Wertangebot. Stark ist die Antwort, wenn sie
+  den Datenschatz für ein neues Angebot (z. B. Diagnose-Service) nutzt, nicht nur das Produkt „mit KI" aufhübscht.
+  Lernziel: die Bandbreite KI-basierter Wertschöpfung überblicken.

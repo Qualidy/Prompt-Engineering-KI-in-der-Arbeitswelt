@@ -1,26 +1,29 @@
-title: Change-Management-Plan für eine KI-Einführung
+title: Change-Programm steuern, wenn die Adoption stockt
 difficulty: 4
 question: |
-  Erstelle **in Copilot** einen kompletten Change-Plan für eine fiktive Copilot-Einführung.
+  **Szenario:** Du verantwortest die unternehmensweite Copilot-Einführung bei einem Versicherer (600 Mitarbeitende, viele langjährig, drei Standorte). Budget und Lizenzen stehen, die Technik läuft. Dein hartes Ziel: **nach 90 Tagen nutzen mindestens 60 % der Mitarbeitenden Copilot regelmäßig (wöchentlich) und produktiv** – nicht nur „einmal ausprobiert". Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.
 
-  **Schritt 1:**
-  ```text
-  Erfinde ein Unternehmen und die geplante KI-/Copilot-Einführung.
-  ```
-  **Schritt 2:**
-  ```text
-  Erstelle den Plan: Ziele, Stakeholder (mit Haltung), Kommunikationsmaßnahmen, Schulungskonzept,
-  Umgang mit Widerständen, Erfolgsmessung.
-  ```
-  **Schritt 3:**
-  ```text
-  Entwirf einen 90-Tage-Fahrplan mit den wichtigsten Meilensteinen.
-  ```
-  **Schritt 4 – Prüfung:** Ist der Plan realistisch und menschenzentriert – oder nur „Technik ausrollen"? Verbessere.
+  **Runde 1 – Change-Plan bauen.** Entwickle: Ziele, Stakeholder mit Haltung (Fürsprecher/Skeptiker), Kommunikationsmaßnahmen, Schulungskonzept, Umgang mit Widerständen, Erfolgsmessung – und einen 90-Tage-Fahrplan mit Meilensteinen.
 
-  **Deliverable:** Change-Plan + 90-Tage-Fahrplan.
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Der Plan muss **alle** erfüllen. Lass Copilot ihn gegen diese Checkliste prüfen und jede Lücke schließen:
+
+  1. Kommunikation beantwortet klar „Was habe ich davon?" für verschiedene Rollen
+  2. Multiplikatoren/Frühanwender sind konkret benannt und aktiviert (nicht nur „wir suchen welche")
+  3. Erfolg wird über echte Nutzung gemessen (regelmäßig + produktiv), nicht über Schulungsteilnahme
+  4. es gibt einen konkreten Umgang mit den lautesten Skeptikern, statt sie zu ignorieren
+
+  **Runde 3 – Komplikation.** Nach 45 Tagen zeigt die Auswertung: 85 % haben Copilot **einmal** geöffnet, aber nur 20 % nutzen es wöchentlich. In einem Standort kursiert das Gerücht, die Nutzung werde „zur Leistungskontrolle mitgeschnitten". Lass Copilot mögliche Ursachen des Adoptions-Knicks trennen (Nutzen unklar? Gewohnheit? Angst/Misstrauen?) und überarbeite den Plan mit gezielten Kurskorrekturen inklusive einer klaren Reaktion auf das Gerücht.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Der Vorstand schlägt vor, die Nutzung **verpflichtend** zu machen und Nichtnutzung zu sanktionieren, um die 60 % zu erzwingen. Lass dir Pro/Contra geben, triff eine begründete Entscheidung (Zwang vs. Freiwilligkeit/Anreiz) – und **widersprich Copilot** oder dem Vorstand, wenn der Zwangsansatz die Akzeptanz langfristig beschädigt, ohne dass das benannt wird.
+
+  **Deliverable:** Change-Plan + 90-Tage-Fahrplan (Version 2 nach Komplikation) + ausgefüllte Pflicht-Checkliste + begründete Entscheidung zur Zwang-Frage.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die Kurskorrektur das Vertrauensproblem adressiert und deine Zwang-Entscheidung die langfristige Akzeptanz gegen den kurzfristigen Quoten-Druck abwägt.
 tip: |
-  Technikeinführung ≠ Change Management. Der Erfolg hängt an Kommunikation, Befähigung und Vertrauen.
+  Technikeinführung ≠ Change Management. „Einmal ausprobiert" ist keine Adoption. Der Wert entsteht in Runde 3 und 4: den Adoptions-Knick verstehen und der Versuchung widerstehen, Akzeptanz per Zwang zu erzwingen.
 solution: |
-  Bewertungskriterien: klare Ziele, Stakeholder-Analyse, Kommunikation/Schulung, Widerstands- und Erfolgsmanagement,
-  realistischer Fahrplan. Lernziel: eine KI-Einführung als Veränderungsprozess gestalten.
+  Bewertungskriterien: (1) vollständiger, menschenzentrierter Plan mit realistischem Fahrplan; (2) alle vier
+  Pflichtkriterien erfüllt, Erfolg über echte Nutzung gemessen; (3) die Kurskorrektur trennt die Ursachen des
+  Adoptions-Knicks und reagiert glaubwürdig auf das Kontroll-Gerücht; (4) die Zwang-Entscheidung wägt kurzfristige
+  Quote gegen langfristige Akzeptanz ab und folgt nicht blind Copilot oder dem Vorstand. Lernziel: eine KI-Einführung
+  als Veränderungsprozess steuern, wenn die Adoption ins Stocken gerät.

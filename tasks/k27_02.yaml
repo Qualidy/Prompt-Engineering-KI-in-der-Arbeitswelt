@@ -1,18 +1,34 @@
-title: KI-Regelung mit Sicherheitsgrenzen entwerfen
+title: Schwingenden Regler diagnostizieren und Grenzen setzen
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit einem selbst erzeugten Prozess.
+  An einem **Trockenofen** (Sollwert 180 °C) schwingt die Temperatur seit einer Umstellung des Reglers. Beobachtung der Instandhaltung:
+
   ```text
-  Erfinde einen kontinuierlichen Prozess, der geregelt werden muss (z. B. Temperatur in einem
-  Gärtank). Beschreibe Sollwert und Störgrößen.
+  Sollwert 180 °C. Nach jeder Störung überschwingt der Ofen auf ca. 205 °C, faellt dann
+  auf 165 °C, pendelt sich erst nach ~15 Minuten wieder auf 180 °C ein. Vorher war es ruhig.
   ```
-  Dann:
+
+  Lass Copilot das Verhalten einordnen (die KI ersetzt hier keine Steuerung – sie hilft beim Verstehen):
+
   ```text
-  Entwirf, wie eine KI die Stellgröße automatisch anpasst. Definiere feste Sicherheitsgrenzen, die
-  die KI niemals überschreiten darf, und was bei Grenzverletzung passiert.
+  Ein PID-geregelter Trockenofen (Sollwert 180 °C) ueberschwingt nach Stoerungen auf 205 °C und
+  pendelt 15 Minuten. Erklaere, welcher Regleranteil (P, I oder D) das Ueberschwingen verursacht,
+  und schlage eine konkrete Anpassung der Parameter vor. Definiere ausserdem harte Sicherheitsgrenzen
+  (Maximaltemperatur, Abschaltschwelle) und was bei Grenzverletzung passieren muss.
   ```
+
+  Prüfe die Antwort und schärfe die schwächste Stelle gezielt nach:
+
+  ```text
+  Deine Sicherheitsgrenzen sind noch zu vage. Mach sie konkret: nenne einen Zahlenwert fuer die
+  Abschaltschwelle, wer/was abschaltet und wie der Ofen danach sicher in den Grundzustand geht.
+  ```
+
+  **Ziel:** eine nachvollziehbare Diagnose des Überschwingens **und** eine harte, bezifferte Sicherheitsgrenze mit definiertem Abschaltverhalten.
 tip: |
-  KI-Regelungen brauchen harte Sicherheitsgrenzen und einen Notaus – die KI darf nie „frei experimentieren".
+  Überschwingen deutet oft auf einen zu hohen P-Anteil oder fehlende Dämpfung (D) hin. Und: Ein Regelkonzept ist erst vollständig mit harten Sicherheitsgrenzen und definiertem Notaus – „so um die 200 °C" ist keine Grenze.
 solution: |
-  Erwartetes Ergebnis: KI-Regelungskonzept mit klaren, unverrückbaren Sicherheitsgrenzen und Notfallverhalten.
-  Lernziel: Automatisierung immer mit Sicherheitsleitplanken denken.
+  Erwartetes Ergebnis: plausible Zuordnung des Überschwingens (typisch P zu hoch / D zu niedrig), eine konkrete
+  Parameter-Anpassung und eine bezifferte Abschaltschwelle mit klar benanntem Auslöser und sicherem Rückfallzustand.
+  Die nachgeschärfte Version ist spürbar konkreter als der erste Wurf. Lernziel: Reglerverhalten deuten und mit
+  harten Sicherheitsleitplanken absichern.

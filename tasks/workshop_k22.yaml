@@ -1,29 +1,36 @@
-title: Prozess-Verbesserungsvorschlag mit KPIs in Copilot
+title: Entscheidungsvorlage mit KPI-Wirkung und Kurskorrektur
 difficulty: 4
 question: |
-  Erarbeite **in Copilot** einen entscheidungsreifen Verbesserungsvorschlag – selbst erzeugt.
+  **Szenario:** Du bist Prozessverantwortliche(r) für die Auftragsabwicklung eines B2B-Händlers. Kennzahlen heute: **Durchlaufzeit 6 Tage**, **Fehlerquote 12 %** (falsche Mengen/Preise), **Nacharbeitsquote 20 %**. Die Geschäftsleitung erwartet eine einseitige Entscheidungsvorlage, ob und wie Copilot hier helfen soll. Sie ist skeptisch gegenüber „KI um der KI willen". Arbeite alles in Copilot.
 
-  **Schritt 1:**
-  ```text
-  Erfinde einen Geschäftsprozess mit klaren Problemen (lange Durchlaufzeit, Fehler, Nacharbeit).
-  ```
-  **Schritt 2:**
-  ```text
-  Definiere 3 KPIs, an denen man den heutigen Zustand misst (z. B. Durchlaufzeit, Fehlerquote).
-  ```
-  **Schritt 3:**
-  ```text
-  Entwirf die Copilot-gestützte Verbesserung und schätze, wie sich jeder KPI verändern würde.
-  ```
-  **Schritt 4:**
-  ```text
-  Fasse alles in einer einseitigen Vorlage für die Leitung zusammen (Problem, Lösung, KPI-Wirkung, Aufwand).
-  ```
-  **Schritt 5 – Prüfung:** Sind die KPI-Prognosen belegbar oder Wunschdenken? Kennzeichne Annahmen.
+  **Runde 1 – Vorlage bauen.** Nutze diese Ausgangslage und entwickle einen Copilot-gestützten Verbesserungsvorschlag mit erwarteter Wirkung auf jede der drei Kennzahlen:
 
-  **Deliverable:** einseitige Entscheidungsvorlage mit KPI-Wirkung.
+  ```text
+  Ausgangslage Auftragsabwicklung: Durchlaufzeit 6 Tage, Fehlerquote 12 % (falsche
+  Mengen/Preise), Nacharbeitsquote 20 %. Der Prozess: Auftrag per Mail -> manuell ins
+  ERP tippen -> Verfügbarkeit prüfen -> Auftragsbestätigung schreiben -> intern freigeben.
+  Entwirf eine Copilot-gestützte Verbesserung und schätze, wie sich jede der drei
+  Kennzahlen verändern würde.
+  ```
+
+  **Runde 2 – Pflichtkriterien.** Die Vorlage muss **alle** erfüllen. Lass Copilot prüfen und Lücken schließen:
+
+  1. Wirkung auf alle drei KPIs ist konkret beziffert (mit Richtung und Größenordnung)
+  2. jede Prognose hat eine offengelegte Annahme
+  3. Aufwand/Kosten der Maßnahme sind grob benannt
+  4. mindestens ein Risiko ist genannt
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Ein erster Testlauf zeigt: Copilot tippt Aufträge zwar schneller ins ERP, aber die **Fehlerquote sinkt kaum**, weil die Fehler schon in den unstrukturierten Kunden-Mails stecken. Überarbeite die Vorlage: Wo im Prozess muss die Maßnahme ansetzen, damit die Fehlerquote wirklich fällt?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsleitung will nur EIN KPI-Ziel priorisieren: (A) Durchlaufzeit oder (B) Fehlerquote. Lass dir Pro/Contra geben, entscheide begründet – und **widersprich Copilot**, wenn es das beeindruckendere, aber weniger werthaltige Ziel empfiehlt.
+
+  **Deliverable:** einseitige Entscheidungsvorlage (Problem, Lösung, KPI-Wirkung, Aufwand, Risiko) in Version 2 nach Kurskorrektur + begründete KPI-Priorisierung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die Kurskorrektur aus Runde 3 eingearbeitet ist und deine Priorisierung auf echtem Geschäftsnutzen beruht (nicht auf „Zeit klingt besser").
 tip: |
-  Entscheider überzeugt man mit Zahlen: Zeige den erwarteten Effekt auf konkrete Kennzahlen – und mach Annahmen transparent.
+  Entscheider überzeugt man mit Zahlen und ehrlichen Annahmen. Der eigentliche Test kommt in Runde 3: Automatisierung an der falschen Stelle beschleunigt nur den Fehler.
 solution: |
-  Bewertungskriterien: 3 messbare KPIs, plausible Wirkungsabschätzung, klare Vorlage, transparente Annahmen.
-  Lernziel: Verbesserungen KPI-basiert und entscheidungsreif aufbereiten.
+  Bewertungskriterien: (1) Wirkung auf alle drei KPIs beziffert mit offengelegten Annahmen; (2) alle vier Pflichtkriterien
+  erfüllt; (3) die Kurskorrektur setzt an der Fehlerquelle an (strukturierte Auftragserfassung statt nur schnelleres Tippen);
+  (4) die KPI-Priorisierung ist mit Geschäftsnutzen begründet und nicht blind übernommen. Lernziel: Verbesserungen KPI-basiert
+  und entscheidungsreif aufbereiten und die richtige Stellschraube finden.

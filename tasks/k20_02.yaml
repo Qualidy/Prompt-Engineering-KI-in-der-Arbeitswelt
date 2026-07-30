@@ -1,17 +1,40 @@
-title: Kundensegmente per Clustering-Idee bilden
+title: Kundensegmente bilden und einen Grenzfall einordnen
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit selbst erzeugten Daten.
+  Das Marketing eines Onlineshops will die Kundschaft in sinnvolle Gruppen einteilen, um Angebote gezielter auszuspielen. Die Kundendaten liegen vor.
+
+  Lass Copilot segmentieren:
+
   ```text
-  Erstelle eine Tabelle mit 12 fiktiven Kunden (Alter, Kaufhäufigkeit, durchschnittlicher Bon).
+  Teile die folgenden 12 Kunden in 3 sinnvolle Segmente ein. Benenne jedes Segment,
+  beschreibe es in einem Satz und nenne das wichtigste Merkmal, nach dem du trennst.
+
+  Kunde | Alter | Käufe/Jahr | Ø-Bon (€)
+  K01 | 24 | 42 | 25
+  K02 | 63 | 6 | 150
+  K03 | 31 | 38 | 30
+  K04 | 58 | 8 | 130
+  K05 | 27 | 45 | 22
+  K06 | 44 | 20 | 70
+  K07 | 66 | 5 | 165
+  K08 | 22 | 50 | 18
+  K09 | 47 | 18 | 65
+  K10 | 61 | 7 | 140
+  K11 | 35 | 25 | 55
+  K12 | 29 | 40 | 28
   ```
-  Dann:
+
+  Jetzt der Twist – ein Neukunde passt nicht sauber ins Raster:
+
   ```text
-  Teile diese Kunden in 3 sinnvolle Gruppen (Segmente) ein, benenne jede Gruppe und beschreibe
-  sie in einem Satz. Erkläre, nach welchen Merkmalen du gruppierst.
+  Ein neuer Kunde kommt dazu: 39 Jahre, 30 Käufe/Jahr, Ø-Bon 60 €. In welches deiner
+  Segmente gehört er – und wackelt deine Einteilung dadurch? Passe die Segmentgrenzen
+  bei Bedarf an und begründe.
   ```
+
+  **Ziel:** drei klar benannte Segmente plus eine begründete Entscheidung, wohin der Grenzfall gehört.
 tip: |
-  Clustering findet Gruppen ohne Vorgabe. Die Benennung und Interpretation der Gruppen ist deine Aufgabe.
+  Clustering findet Gruppen ohne Vorgabe. Die Kunst liegt im Benennen und im Umgang mit Grenzfällen – nicht jeder Kunde passt sauber in eine Schublade.
 solution: |
-  Erwartetes Ergebnis: 3 nachvollziehbare Segmente mit Beschreibung. Lernziel: das Prinzip Clustering/Segmentierung
-  verstehen und interpretieren.
+  Erwartetes Ergebnis: 3 nachvollziehbare Segmente (z. B. junge Vielkäufer mit kleinem Bon, mittlere Gelegenheitskäufer,
+  ältere Selten-, aber Großkäufer) und eine begründete Einordnung des Grenzfalls. Lernziel: Segmentierung anwenden und ihre Grenzen erkennen.

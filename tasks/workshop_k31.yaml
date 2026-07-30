@@ -1,26 +1,39 @@
-title: KI-Ethik-Leitlinie mit Copilot entwerfen
+title: KI-Ethik-Leitlinie am Ernstfall erproben
 difficulty: 4
 question: |
-  Entwirf **in Copilot** eine kompakte KI-Ethik-Leitlinie für ein fiktives Unternehmen.
+  **Szenario:** Du sollst für ein Versicherungsunternehmen eine **KI-Ethik-Leitlinie** entwickeln, die im Alltag wirklich trägt. Ziel ist hart: eine Leitlinie, die einen **echten Streitfall** eindeutig entscheidet – nicht bloß schöne Grundsätze. Ausgangslage:
 
-  **Schritt 1:**
   ```text
-  Erfinde ein Unternehmen und beschreibe, wo es KI einsetzt.
+  Das Unternehmen setzt KI ein bei: Schadensbewertung, Betrugserkennung, Tarifberechnung und
+  im Kundenservice-Chatbot.
+  Aktueller Streitfall: Die Betrugs-KI markiert einen Kunden als "wahrscheinlich betruegerisch"
+  und die Auszahlung wird verzoegert - aber niemand kann erklaeren, warum die KI so entschied.
+  Der Kunde beschwert sich, die Fachabteilung beruft sich auf "die KI sagt das".
   ```
-  **Schritt 2:**
-  ```text
-  Formuliere 6 klare ethische Grundsätze für den KI-Einsatz (z. B. Transparenz, Mensch entscheidet,
-  keine Diskriminierung). Jeder Grundsatz mit einem Satz Begründung.
-  ```
-  **Schritt 3:**
-  ```text
-  Mach jeden Grundsatz konkret: Was heißt er im Arbeitsalltag? Nenne je ein Do und ein Don't.
-  ```
-  **Schritt 4 – Prüfung:** Teste die Leitlinie an einem schwierigen Fall. Gibt sie eine klare Orientierung?
 
-  **Deliverable:** 6 Grundsätze mit Do/Don't + ein durchgespielter Testfall.
+  Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**.
+
+  **Runde 1 – Leitlinie bauen.** Formuliere 6 klare ethische Grundsätze für den KI-Einsatz (z. B. Transparenz, Mensch entscheidet, keine Diskriminierung, Widerspruchsrecht), jeder mit einem Satz Begründung und je einem Do und einem Don't für den Arbeitsalltag.
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Die Leitlinie muss **alle** erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:
+
+  1. jeder Grundsatz ist konkret genug, um im Streitfall eine klare Handlung vorzugeben
+  2. es gibt eine Regel für Nachvollziehbarkeit/Erklärbarkeit von KI-Entscheidungen
+  3. Betroffene haben ein Widerspruchs- und Korrekturrecht
+  4. für jede kritische KI-Entscheidung ist eine verantwortliche Person (nicht „die KI") benannt
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Wende die Leitlinie auf den konkreten Betrugsfall an – und stelle fest: Der Grundsatz „Transparenz" bleibt zu vage, um den Fall zu entscheiden (die KI ist eine Blackbox). Analysiere mit Copilot die Lücke und überarbeite die betroffenen Grundsätze so, dass klar wird, was bei einer nicht erklärbaren KI-Entscheidung zu tun ist.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Fachabteilung will die Betrugs-KI weiter nutzen, weil sie viel Geld spart. Lass dir Pro/Contra geben, entscheide begründet, ob und unter welchen Auflagen sie weiterläuft **und widersprich Copilot**, wenn es die Erklärbarkeit gegen die Ersparnis zu leichtfertig abwägt.
+
+  **Deliverable:** finale Leitlinie (6 Grundsätze mit Do/Don't, Version 2) + ausgefüllte Pflichtkriterien-Checkliste + die dokumentierte Entscheidung zum Betrugsfall.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die Leitlinie den Betrugsfall eindeutig entscheidet und deine Entscheidung Erklärbarkeit nicht der Kostenersparnis opfert.
 tip: |
-  Gute Leitlinien sind konkret und anwendbar – nicht bloß schöne Worte, sondern Do's und Don'ts für den Alltag.
+  Der Wert entsteht in Runde 3 und 4: Eine Ethik-Leitlinie beweist sich erst am schwierigen Fall. „Die KI sagt das" ist keine Verantwortung – hinter jeder kritischen Entscheidung muss ein Mensch stehen. (Vertiefung: Kapitel 34 – Explainable AI.)
 solution: |
-  Bewertungskriterien: 6 relevante Grundsätze, konkrete Do/Don't, am Testfall bewährte Orientierung. Lernziel:
-  Ethik in praktikable Leitplanken übersetzen.
+  Bewertungskriterien: (1) 6 relevante, konkrete Grundsätze mit Do/Don't; (2) alle vier Pflichtkriterien erfüllt
+  (handlungsleitend, Erklärbarkeitsregel, Widerspruchsrecht, benannte Verantwortliche); (3) die überarbeiteten
+  Grundsätze entscheiden den Betrugsfall eindeutig; (4) die Weiterbetriebs-Entscheidung wägt Erklärbarkeit gegen
+  Ersparnis sauber ab und übernimmt Copilots Abwägung nicht blind. Lernziel: Ethik in praktikable, am Ernstfall
+  erprobte Leitplanken übersetzen.

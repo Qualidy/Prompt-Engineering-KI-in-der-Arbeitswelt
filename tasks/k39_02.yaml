@@ -1,17 +1,32 @@
-title: KI-SWOT für ein Unternehmen (Copilot)
+title: KI-SWOT und eine Build-or-Buy-Entscheidung
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  Diese Ausgangslage ist gegeben:
+
+  > **Unternehmen:** Mittelständischer Fensterhersteller, 200 Mitarbeitende. Starke Fachexpertise, aber veraltete IT, kaum digitalisierte Daten, kein Data-Science-Personal. Wettbewerber werben bereits mit „KI-optimierter Fertigung".
+
+  Erstelle in Copilot eine KI-SWOT:
+
   ```text
-  Erfinde ein Unternehmen und erstelle eine SWOT-Analyse speziell für den Einsatz von KI:
-  Stärken, Schwächen, Chancen, Risiken – je 3 Punkte.
+  Erstelle eine SWOT-Analyse speziell für den KI-Einsatz dieses Unternehmens:
+  Fensterhersteller, 200 Mitarbeitende, starke Fachexpertise, aber veraltete IT, wenig
+  digitalisierte Daten, kein Data-Science-Personal, Wettbewerber werben mit KI.
+  Je 3 Punkte für Stärken, Schwächen, Chancen, Risiken. Leite die 2 wichtigsten strategischen
+  Schritte ab.
   ```
-  Dann:
+
+  Jetzt der Twist – **eine konkrete Build-or-Buy-Frage entscheiden lassen**:
+
   ```text
-  Leite aus der SWOT die 2 wichtigsten strategischen Schritte ab.
+  Für den ersten KI-Anwendungsfall: Sollte dieses Unternehmen angesichts von fehlendem Personal
+  und veralteter IT eine Lösung selbst entwickeln (Build) oder einkaufen (Buy)? Gib eine klare
+  Empfehlung mit den 2 stärksten Argumenten.
   ```
+
+  **Ziel:** eine schlüssige SWOT und eine begründete Build-or-Buy-Empfehlung, die zur schwachen IT-/Personallage des Unternehmens passt.
 tip: |
-  Stärken/Schwächen sind intern, Chancen/Risiken extern. Strategie heißt: Stärken für Chancen nutzen.
+  Stärken/Schwächen sind intern, Chancen/Risiken extern. Ohne eigenes Data-Science-Team und mit veralteter IT ist „selbst bauen" oft der falsche erste Schritt – Einkaufen bringt schneller Ergebnisse.
 solution: |
-  Erwartetes Ergebnis: schlüssige KI-SWOT und 2 abgeleitete Schritte. Lernziel: die eigene KI-Ausgangslage
-  strukturiert bewerten.
+  Erwartetes Ergebnis: eine schlüssige KI-SWOT, 2 abgeleitete Schritte und eine begründete Build-or-Buy-Empfehlung,
+  die die schwache Ausgangslage berücksichtigt (tendenziell Buy). Lernziel: die eigene KI-Ausgangslage bewerten und
+  eine grundlegende Umsetzungsentscheidung treffen.

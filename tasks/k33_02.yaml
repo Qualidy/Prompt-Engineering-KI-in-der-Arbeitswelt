@@ -1,18 +1,36 @@
-title: Datensparsamkeit und Anonymisierung üben
+title: Datensparsamkeit und Anonymisierung anwenden
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  Die Marketingabteilung will auswerten, in welchen Regionen sich welche Produkte gut verkaufen. Dafür liegt dieser Datensatz vor:
+
   ```text
-  Erfinde einen Datensatz, den ein Unternehmen für eine Auswertung nutzen will (mit einigen
-  personenbezogenen Feldern).
+  Felder je Kunde: Vorname, Nachname, vollstaendige Adresse, Geburtsdatum, E-Mail, Telefon,
+  Kundennummer, gekaufte Produkte, Kaufdatum, Kaufbetrag.
+  Auswertungsziel: Welche Produktkategorien verkaufen sich in welcher Region (PLZ-Gebiet) je Quartal?
   ```
-  Dann:
+
+  Lass Copilot auf Datensparsamkeit prüfen:
+
   ```text
-  Welche Felder braucht man für die Auswertung wirklich, welche kann man weglassen (Datensparsamkeit)?
-  Wie könnte man die verbleibenden Daten anonymisieren oder pseudonymisieren?
+  Welche Felder braucht man fuer dieses Auswertungsziel WIRKLICH und welche kann man weglassen
+  (Datensparsamkeit)? Wie liessen sich die verbleibenden Daten so anonymisieren oder pseudonymisieren,
+  dass die regionale Auswertung trotzdem moeglich bleibt? Begruende kurz.
+  [hier den Datensatz einfuegen]
   ```
+
+  Jetzt der Twist – prüfe den Anonymisierungs-Vorschlag auf eine typische Falle:
+
+  ```text
+  Kann man aus den von dir behaltenen Feldern (z. B. genaue PLZ + Geburtsdatum + seltene
+  Produktkombination) eine Person trotzdem wieder identifizieren? Wenn ja, wie verhinderst du diese
+  Re-Identifizierung (z. B. PLZ-Gebiet groeber, Altersgruppen statt Geburtsdatum)?
+  ```
+
+  **Ziel:** eine auf das Nötige reduzierte Datenbasis und ein Anonymisierungsvorschlag, der auch die Re-Identifizierung über Merkmalskombinationen verhindert.
 tip: |
-  Datensparsamkeit: nur erheben, was wirklich nötig ist. Anonyme Daten sind datenschutzrechtlich unkritisch.
+  Datensparsamkeit: nur erheben, was das Ziel wirklich braucht. „Anonym" ist nicht gleich anonym – über die Kombination weniger Merkmale (PLZ + Alter + seltenes Produkt) lassen sich Personen oft wieder identifizieren.
 solution: |
-  Erwartetes Ergebnis: sinnvolle Reduktion auf nötige Felder und ein Anonymisierungs-/Pseudonymisierungsvorschlag.
-  Lernziel: Datenschutz durch Datensparsamkeit und Anonymisierung praktisch umsetzen.
+  Erwartetes Ergebnis: Reduktion auf Produktkategorie, PLZ-Gebiet und Quartal; Weglassen von Name, Adresse, E-Mail,
+  Telefon, exaktem Geburtsdatum. Der zweite Schritt erkennt die Re-Identifizierungsgefahr und vergröbert die Daten
+  (PLZ-Region statt PLZ, Altersgruppe statt Geburtsdatum). Lernziel: Datenschutz durch Datensparsamkeit und
+  wirksame Anonymisierung praktisch umsetzen.

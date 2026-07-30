@@ -1,25 +1,34 @@
-title: KI-Strategie mit Priorisierung entwerfen (Copilot)
+title: KI-Roadmap priorisieren und Fokus erzwingen
 difficulty: 3
 question: |
-  Entwirf **in Copilot** eine KI-Strategie für ein selbst erzeugtes Unternehmen.
+  Ein Vorstand hat in einem Workshop fünf KI-Handlungsfelder gesammelt – jetzt sollen sie in eine Roadmap:
 
-  **Schritt 1:**
+  > **Unternehmen:** Online-Modehändler, 150 Mitarbeitende, solide Datenlage, begrenztes Budget.
+  > Kandidaten: (A) Größenberatung per KI gegen Retouren; (B) automatisierte Produkttexte; (C) Nachfrageprognose fürs Lager; (D) KI-Chatbot im Kundenservice; (E) personalisierte Newsletter.
+
+  Priorisiere in Copilot mit einer klaren Logik:
+
   ```text
-  Erfinde ein Unternehmen (Branche, Ziele, Ausgangslage).
-  ```
-  **Schritt 2:**
-  ```text
-  Entwirf eine KI-Strategie mit: Vision, 3 Handlungsfeldern, je einer Make-or-Buy-Entscheidung und
-  einem Erfolgs-KPI.
-  ```
-  **Schritt 3 – priorisieren:**
-  ```text
-  Priorisiere die 3 Handlungsfelder nach strategischem Wert und Umsetzbarkeit und begründe die Reihenfolge.
+  Priorisiere diese 5 KI-Handlungsfelder eines Online-Modehändlers (solide Daten, begrenztes Budget)
+  nach strategischem Wert UND Umsetzbarkeit:
+  A) Größenberatung gegen Retouren  B) automatisierte Produkttexte  C) Nachfrageprognose fürs Lager
+  D) KI-Chatbot im Service  E) personalisierte Newsletter
+  Bring sie in eine begründete Reihenfolge und ordne je einen Erfolgs-KPI zu.
   ```
 
-  Bewerte selbst: Ist die Strategie fokussiert oder will sie „alles auf einmal"?
+  Jetzt der anspruchsvolle Teil – **Fokus erzwingen und Copilot herausfordern**:
+
+  ```text
+  Das Budget reicht nur für 2 der 5 Felder in diesem Jahr. Streiche die anderen 3 begründet.
+  Nenne das Feld, das am ehesten wie eine gute Idee aussieht, aber strategisch verzichtbar ist.
+  ```
+
+  **Ziel:** eine fokussierte Roadmap mit genau 2 Feldern fürs erste Jahr – und einer klaren Begründung, warum die anderen warten.
+
+  **Fertig bist du erst, wenn** du selbst entschieden hast, ob du Copilots Top-2 zustimmst – oder ob du ein Feld anders einordnest und begründest, warum (z. B. weil Retouren die größte Kostenstelle sind).
 tip: |
-  Gute Strategie heißt Fokus: lieber wenige Handlungsfelder konsequent, als überall ein bisschen.
+  Gute Strategie heißt Fokus: lieber zwei Handlungsfelder konsequent umsetzen als bei fünf überall ein bisschen. Das schwerste an Priorisierung ist das begründete Weglassen.
 solution: |
-  Erwartetes Ergebnis: fokussierte Strategie mit Vision, priorisierten Handlungsfeldern, Make/Buy und KPIs.
-  Lernziel: KI strategisch planen und bewusst priorisieren.
+  Erwartetes Ergebnis: eine begründete Rangfolge mit KPIs, eine harte Fokussierung auf 2 Felder und eine eigene
+  Entscheidung, bei der du Copilots Priorisierung geprüft und ggf. korrigiert hast. Lernziel: KI-Vorhaben nach Wert
+  und Machbarkeit priorisieren und bewusst weglassen.

@@ -1,17 +1,26 @@
-title: Anforderungen für ein Bauteil mit Copilot sammeln
+title: Anforderungsliste für eine Monitor-Wandhalterung
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Du sollst eine Wandhalterung für einen Büromonitor neu konstruieren lassen und brauchst zuerst eine saubere Anforderungsliste. Das Briefing steht schon:
+
+  - **Monitor:** 27 Zoll, ca. 7 kg
+  - **Wand:** Gipskarton (Rigips) im Büro
+  - **Wunsch:** höhenverstellbar, neigbar
+  - **Budget:** ca. 40 € pro Stück, 20 Stück
+  - **Umgebung:** Innenraum, klimatisiert
+
+  Öffne Copilot und erledige beides in einem Auftrag:
+
   ```text
-  Ich will ein Bauteil neu konstruieren: eine Wandhalterung für einen Monitor. Stelle mir 8 Fragen,
-  die ich vorher klären muss (Last, Material, Maße, Umgebung, Kosten ...).
+  Erstelle aus diesem Briefing eine strukturierte Anforderungsliste (Muss- und Kann-
+  Anforderungen) für eine Monitor-Wandhalterung: Monitor 27 Zoll / 7 kg, Rigipswand,
+  höhenverstellbar und neigbar, ca. 40 € pro Stück (20 Stück), Innenraum. Markiere am
+  Ende 3 Punkte, die vor der Konstruktion unbedingt noch geklärt werden müssen.
   ```
-  Dann:
-  ```text
-  Fasse meine (erfundenen) Antworten in einer kurzen Anforderungsliste zusammen.
-  ```
+
+  **Ziel:** eine Anforderungsliste, die klar zwischen Muss und Kann trennt und deren offene Punkte du gezielt klären könntest.
 tip: |
-  KI im Konstruktionsumfeld beginnt selten mit dem Bauteil selbst, sondern mit klaren Anforderungen.
+  KI im Konstruktionsumfeld beginnt selten mit dem Bauteil selbst, sondern mit klaren, vollständigen Anforderungen.
 solution: |
-  Erwartetes Ergebnis: sinnvolle Klärungsfragen und eine strukturierte Anforderungsliste. Lernziel: Copilot als
-  Denkhilfe in der frühen Konstruktionsphase nutzen.
+  Erwartetes Ergebnis: strukturierte Muss-/Kann-Liste plus 3 sinnvolle offene Punkte (z. B. Tragfähigkeit der Rigipswand,
+  VESA-Norm, Kabelführung). Lernziel: Copilot als Denkhilfe in der frühen Konstruktionsphase nutzen.

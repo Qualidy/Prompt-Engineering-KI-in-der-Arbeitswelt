@@ -1,26 +1,28 @@
-title: Design-Zielkonflikte mit Copilot durchdenken
+title: Zielkonflikt leicht/stabil/günstig durchdenken
 difficulty: 3
 question: |
-  Nutze **in Copilot** ein selbst erzeugtes Konstruktionsszenario.
+  Für ein neues Bauteil sollst du eine Auslegungsentscheidung vorbereiten. Es kollidieren drei Wünsche. Das Bauteil ist beschrieben:
 
-  **Schritt 1:**
+  > **Tragarm für eine mobile Werkstattlampe:** soll leicht sein (wird oft umgesetzt), stabil (hält eine 2-kg-Lampe auch bei Erschütterung), und günstig (Serie von 500 Stück).
+
+  **Schritt 1 – Konflikte und Varianten:**
   ```text
-  Erfinde ein Bauteil, das gleichzeitig leicht, stabil und günstig sein soll, und beschreibe es.
+  Erkläre für diesen Tragarm die Zielkonflikte zwischen leicht, stabil und günstig. Zeige
+  dann 3 Auslegungsvarianten (z. B. Material/Querschnitt) mit ihren Vor- und Nachteilen
+  in einer Tabelle.
   ```
-  **Schritt 2:**
+  **Schritt 2 – Werkzeuge einordnen:**
   ```text
-  Erkläre die Zielkonflikte (leicht vs. stabil vs. günstig) und zeige 3 Auslegungsvarianten mit
-  ihren Vor-/Nachteilen in einer Tabelle.
-  ```
-  **Schritt 3 – Einordnung:**
-  ```text
-  Wo würde spezialisierte generative-Design-Software helfen, und wo hilft ein Werkzeug wie Copilot
-  (Ideen, Anforderungen, Doku) und wo nicht?
+  Wo würde in diesem Fall eine spezialisierte CAD-/Simulations- oder Generative-Design-
+  Software helfen, und wo hilft ein Werkzeug wie Copilot (Anforderungen, Varianten,
+  Doku) – und wo eben nicht?
   ```
 
-  Bewerte selbst: Welche Variante würdest du wählen und warum?
+  **Nebenbedingung:** Wähle am Ende genau eine Variante aus.
+
+  **Fertig bist du erst, wenn** du deine Variantenwahl mit einem konkreten Argument aus der Tabelle begründet hast – nicht mit „Bauchgefühl".
 tip: |
   Copilot ersetzt keine CAD-/Simulationssoftware, ist aber stark beim Strukturieren von Anforderungen, Varianten und Doku.
 solution: |
-  Erwartetes Ergebnis: klar benannte Zielkonflikte, 3 Varianten mit Abwägung, realistische Einordnung der
-  Werkzeuge. Lernziel: KI-Rollen in der Konstruktion richtig einschätzen.
+  Erwartetes Ergebnis: klar benannte Zielkonflikte, 3 abgewogene Varianten, eine realistische Werkzeug-Einordnung und eine
+  begründete Variantenwahl. Lernziel: KI-Rollen in der Konstruktion richtig einschätzen und eine Auslegung begründen.

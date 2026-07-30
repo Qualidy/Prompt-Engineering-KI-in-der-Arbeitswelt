@@ -1,26 +1,39 @@
-title: Compliance-Checkliste für KI in Copilot
+title: Compliance-Freigabe für ein Hochrisiko-KI-Projekt
 difficulty: 4
 question: |
-  Erstelle **in Copilot** eine praktische Compliance-Checkliste – für ein fiktives Unternehmen.
+  **Szenario:** Du bist Projektverantwortliche und sollst die **rechtliche Freigabe-Entscheidung** für ein KI-Vorhaben vorbereiten. Ziel ist hart: eine belastbare Compliance-Checkliste, die klar sagt **einführen / nur mit Auflagen / stoppen** – und die verbindliche Grenzen zur Rechtsberatung zieht. Ausgangslage:
 
-  **Schritt 1:**
   ```text
-  Erfinde ein Unternehmen, das mehrere KI-Anwendungen einführen will.
+  Ein Handelsunternehmen will eine KI einfuehren, die im Kundenservice eingehende Reklamationen
+  bewertet und automatisch ueber Kulanz (Erstattung bis 500 EUR) entscheidet - ohne menschliche Freigabe.
+  Trainiert mit alten Kulanzentscheidungen. Kunden werden nicht informiert, dass eine KI entscheidet.
+  Bei Streit ueber eine Ablehnung ist unklar, wer haftet.
   ```
-  **Schritt 2:**
-  ```text
-  Erstelle eine Checkliste mit den wichtigsten rechtlichen Prüfpunkten vor dem Einsatz einer
-  KI-Anwendung (Risikoklasse, Datenschutz, Transparenz, Haftung, Dokumentation).
-  ```
-  **Schritt 3:**
-  ```text
-  Formuliere jeden Punkt als Ja/Nein-Frage mit einem Hinweis, was bei „Nein" zu tun ist.
-  ```
-  **Schritt 4 – Prüfung:** Teste die Checkliste an einer Hochrisiko-Anwendung. Deckt sie das Wesentliche ab?
 
-  **Deliverable:** anwendbare Compliance-Checkliste (Ja/Nein-Fragen mit Handlungshinweisen).
+  Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**. Wichtig: Copilot ersetzt keine Rechtsberatung; markiere, was zwingend zu Fachleuten gehört.
+
+  **Runde 1 – Compliance-Check bauen.** Erstelle eine Checkliste mit den wichtigsten rechtlichen Prüfpunkten (Risikoklasse EU AI Act, Datenschutz, Transparenz/Kennzeichnung, menschliche Aufsicht, Haftung, Dokumentation), jeder als Ja/Nein-Frage mit Handlungshinweis bei „Nein".
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Die Checkliste muss **alle** erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:
+
+  1. jeder Prüfpunkt hat eine klare Ja/Nein-Frage und einen Handlungshinweis
+  2. die automatische Entscheidung ohne menschliche Freigabe ist rechtlich bewertet
+  3. die fehlende Kundeninformation (Transparenz) ist als Problem erfasst
+  4. jede Aussage ist markiert, wo sie durch verbindliche Rechtsberatung zu bestätigen ist
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Die Fachabteilung will das Projekt **nächste Woche live schalten** und drängt: „Die KI entscheidet ja nur über Kulanz, das ist harmlos." Analysiere mit Copilot, warum die vollautomatische Entscheidung ohne Freigabe und ohne Kundeninformation problematisch ist, und überarbeite die Checkliste zu klaren Auflagen (z. B. menschliche Freigabe ab Schwelle, Kennzeichnung).
+
+  **Runde 4 – Entscheidung unter Abwägung.** Triff die Freigabe-Empfehlung: einführen / nur mit Auflagen / stoppen. Lass dir Pro/Contra geben, entscheide begründet **und widersprich Copilot**, wenn es das Vorhaben als unkritisch einstuft oder eine rechtliche Frage zu selbstsicher beantwortet, die eigentlich zu Fachleuten gehört.
+
+  **Deliverable:** finale Compliance-Checkliste (Version 2, mit markierten „Fachberatung nötig"-Punkten) + ausgefüllte Pflichtkriterien-Checkliste + begründete Freigabe-Empfehlung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, mindestens ein Punkt ausdrücklich der Rechtsberatung vorbehalten ist und deine Freigabe-Empfehlung nicht blind Copilots Risikoeinschätzung übernimmt.
 tip: |
-  Eine gute Checkliste zwingt zum bewussten Prüfen – „Haben wir an Datenschutz gedacht?" darf nicht untergehen.
+  Der Wert entsteht in Runde 3 und 4: „Nur Kulanz, harmlos" ist genau die Beschwichtigung, die Compliance aushebelt – fehlende Transparenz und Haftungsunklarheit sind reale Risiken. Und egal wie souverän Copilot klingt: rechtsverbindliche Fragen gehören zu Fachleuten.
 solution: |
-  Bewertungskriterien: relevante Prüfpunkte, klare Ja/Nein-Fragen mit Handlungshinweis, an einem Fall getestet.
-  Lernziel: rechtliche Sorgfalt in eine handhabbare Routine gießen.
+  Bewertungskriterien: (1) vollständige Checkliste mit Ja/Nein-Fragen und Handlungshinweisen; (2) alle vier
+  Pflichtkriterien erfüllt (klare Fragen, Bewertung der Vollautomatik, Transparenzproblem erfasst, Fachberatung
+  markiert); (3) die überarbeitete Version wandelt „harmlos" in konkrete Auflagen (menschliche Freigabe,
+  Kennzeichnung); (4) die Freigabe-Empfehlung ist begründet, respektiert die Grenze zur Rechtsberatung und übernimmt
+  Copilots Einschätzung nicht blind. Lernziel: rechtliche Sorgfalt in eine handhabbare Freigabe-Routine gießen und
+  die Grenzen der KI-Beratung wahren.

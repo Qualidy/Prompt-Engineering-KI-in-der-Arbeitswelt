@@ -1,18 +1,37 @@
-title: Low-Code-App mit Copilot spezifizieren
+title: Low-Code-App spezifizieren und robust machen
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit einer selbst erdachten Idee.
+  Ein Team ohne Programmierkenntnisse braucht eine kleine App. Das Briefing steht:
+
   ```text
-  Erfinde eine einfache App-Idee, die ein Team ohne Programmierkenntnisse brauchen könnte
-  (z. B. eine Urlaubsantrags-App).
+  App-Idee: Materialbestellung im Werkstatt-Team.
+  Wer: 8 Mitarbeitende koennen Bestellwuensche einreichen.
+  Was: Artikel, Menge, Kostenstelle, Dringlichkeit angeben.
+  Regel: Bestellungen ueber 200 EUR muessen von der Teamleitung freigegeben werden.
+  Ergebnis: Freigegebene Bestellungen landen in einer Liste und die Einreichenden werden benachrichtigt.
   ```
-  Dann:
+
+  Lass Copilot die App für ein Low-Code-Tool spezifizieren:
+
   ```text
-  Spezifiziere sie für ein Low-Code-Tool: welche Eingabefelder, welche Wenn-Dann-Logik, welche
-  Ausgaben/Benachrichtigungen. Stelle es strukturiert dar.
+  Spezifiziere diese Materialbestell-App fuer ein Low-Code-Tool: Eingabefelder (mit Typ),
+  Wenn-Dann-Logik (inkl. der 200-EUR-Freigaberegel), Ausgaben/Benachrichtigungen. Stelle es
+  strukturiert dar.
+  [hier das Briefing einfuegen]
   ```
+
+  Jetzt der Twist – eine neue Anforderung kommt dazu, die die Logik verkompliziert:
+
+  ```text
+  Neue Anforderung: Ist die Teamleitung im Urlaub, soll die Freigabe automatisch an die Stellvertretung
+  gehen; reagiert auch die nicht innerhalb von 2 Tagen, geht eine Erinnerung raus. Erweitere die
+  Spezifikation um diese Eskalationslogik, ohne dass die App unuebersichtlich wird.
+  ```
+
+  **Ziel:** eine umsetzbare Low-Code-Spezifikation, die auch den Vertretungs- und Eskalationsfall sauber abbildet.
 tip: |
-  Eine gute Spezifikation beschreibt Eingaben, Logik und Ausgaben – dann lässt sich fast alles im Baukasten bauen.
+  Eine gute Spezifikation beschreibt Eingaben, Logik und Ausgaben so klar, dass man sie im Baukasten nachbauen kann. Der Praxistest kommt bei den Sonderfällen: Vertretung, Fristen, Eskalation.
 solution: |
-  Erwartetes Ergebnis: klare, umsetzbare Low-Code-Spezifikation. Lernziel: eine Automatisierungsidee so
-  beschreiben, dass sie ohne Programmierung baubar ist.
+  Erwartetes Ergebnis: klare Felder mit Typen, korrekte 200-EUR-Freigabelogik, definierte Benachrichtigungen und eine
+  saubere Eskalationskette (Vertretung → Erinnerung nach 2 Tagen), ohne die App zu überfrachten. Lernziel: eine
+  Automatisierungsidee inklusive Sonderfälle so beschreiben, dass sie ohne Programmierung baubar ist.

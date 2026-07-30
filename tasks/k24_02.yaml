@@ -1,17 +1,25 @@
 title: Konzept für KI-gestützte Produktionsplanung
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit einem selbst erzeugten Szenario.
+  Eine Möbelfertigung kämpft mit schwankender Nachfrage und ungleicher Maschinenauslastung. Du sollst ein Konzept entwerfen, wie KI die Planung unterstützt – und wer am Ende entscheidet. Die Ausgangslage liegt vor.
+
   ```text
-  Erfinde ein Produktionsplanungs-Problem (z. B. schwankende Nachfrage, Maschinenauslastung).
+  Ausgangslage: Eine Möbelfertigung hat stark schwankende Nachfrage (Saison, kurzfristige
+  Aufträge) und ungleich ausgelastete Maschinen (Sägerei überlastet, Lackiererei oft leer).
+  Entwirf ein Konzept, wie KI die Produktionsplanung unterstützt: Welche Daten braucht es,
+  was sagt die KI voraus, welchen Vorschlag macht sie, und wer trifft die finale Entscheidung?
   ```
-  Dann:
+
+  Jetzt der Twist – Grenzen prüfen:
+
   ```text
-  Entwirf ein Konzept, wie KI hier unterstützen könnte: Welche Daten braucht es, was sagt die KI
-  voraus, wer entscheidet am Ende?
+  Nenne 2 Situationen, in denen man dem KI-Planungsvorschlag NICHT einfach folgen sollte,
+  und begründe, warum der Mensch dort übersteuern muss.
   ```
+
+  **Ziel:** ein Konzept mit klarem Datenbedarf, KI-Aufgabe und menschlicher Entscheidungsrolle – inklusive benannter Grenzen.
 tip: |
-  KI liefert Prognosen und Vorschläge – die Planungsentscheidung und Verantwortung bleiben beim Menschen.
+  KI liefert Prognosen und Vorschläge – die Planungsentscheidung und Verantwortung bleiben beim Menschen, besonders bei Sonderlagen.
 solution: |
-  Erwartetes Ergebnis: Konzept mit Datenbedarf, KI-Aufgabe und klarer menschlicher Entscheidungsrolle. Lernziel:
-  KI als Entscheidungsunterstützung in der Produktion einordnen.
+  Erwartetes Ergebnis: Konzept mit Datenbedarf, KI-Vorschlag, menschlicher Entscheidungsrolle und 2 begründeten Grenzfällen
+  (z. B. Großkunde mit Sonderwunsch, Datenlage unklar). Lernziel: KI als Entscheidungsunterstützung in der Produktion einordnen.

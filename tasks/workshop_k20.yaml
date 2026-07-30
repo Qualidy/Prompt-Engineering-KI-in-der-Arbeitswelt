@@ -1,27 +1,55 @@
-title: Data-Mining-Analyse end-to-end in Copilot
+title: Retouren-Analyse mit Kurskorrektur
 difficulty: 4
 question: |
-  Führe **in Copilot** eine komplette explorative Analyse durch – mit selbst erzeugten Daten.
+  **Szenario:** Du bist Data Analyst beim Onlineshop „Wohnwelt" (Möbel & Deko). Die Retourenquote liegt bei **18 %**, die Geschäftsführung will sie binnen eines Quartals unter **12 %** drücken und finanziert dafür **genau eine** Maßnahme. Deine Analyse entscheidet, welche. Arbeite alles in Copilot – aber liefere gegen klare Anforderungen, nicht nur „ein paar Auffälligkeiten".
 
-  **Schritt 1:**
-  ```text
-  Erstelle einen fiktiven Datensatz mit 20 Zeilen zu Online-Bestellungen (Kundengruppe, Produkt,
-  Betrag, Uhrzeit, Retoure ja/nein).
-  ```
-  **Schritt 2:**
-  ```text
-  Untersuche den Datensatz: Welche Muster erkennst du (z. B. wer retourniert häufig, welche Produkte
-  zu welcher Zeit)? Stelle 3 Erkenntnisse als Tabelle dar.
-  ```
-  **Schritt 3:**
-  ```text
-  Leite aus jeder Erkenntnis eine konkrete Geschäftsempfehlung ab.
-  ```
-  **Schritt 4 – Prüfung:** Hinterfrage jede Empfehlung: Ist der Zusammenhang belastbar oder nur Zufall bei kleiner Datenmenge?
+  **Runde 1 – Daten analysieren.** Füge den Datensatz ein und lass die stärksten Retouren-Muster herausarbeiten:
 
-  **Deliverable:** 3 Erkenntnisse + Empfehlungen + kritische Bewertung.
+  ```text
+  Analysiere diese 20 Bestellungen auf Muster bei Retouren (Retoure = ja/nein).
+  Welche Faktoren gehen mit Retouren einher?
+
+  ID | Kategorie | Betrag € | Kanal | Lieferzeit Tage | Retoure
+  1 | Sofa | 890 | App | 9 | ja
+  2 | Deko | 35 | Web | 3 | nein
+  3 | Stuhl | 150 | App | 8 | ja
+  4 | Lampe | 70 | Web | 2 | nein
+  5 | Sofa | 1200 | App | 11 | ja
+  6 | Deko | 25 | Web | 3 | nein
+  7 | Stuhl | 140 | Web | 4 | nein
+  8 | Sofa | 950 | App | 10 | ja
+  9 | Lampe | 60 | App | 7 | ja
+  10 | Deko | 40 | Web | 2 | nein
+  11 | Stuhl | 160 | App | 9 | ja
+  12 | Tisch | 400 | Web | 5 | nein
+  13 | Sofa | 1050 | App | 12 | ja
+  14 | Deko | 30 | Web | 3 | nein
+  15 | Tisch | 380 | App | 8 | ja
+  16 | Lampe | 65 | Web | 2 | nein
+  17 | Stuhl | 155 | Web | 4 | nein
+  18 | Sofa | 990 | App | 10 | ja
+  19 | Deko | 28 | Web | 3 | nein
+  20 | Tisch | 420 | Web | 5 | nein
+  ```
+
+  **Runde 2 – Pflichtkriterien.** Deine Analyse muss **alle** erfüllen. Lass Copilot sie dagegen prüfen und jede Lücke schließen:
+
+  1. jede Erkenntnis ist mit konkreten Zahlen aus den Daten belegt
+  2. es wird zwischen wahrscheinlicher Ursache und bloßer Begleiterscheinung getrennt
+  3. jede Erkenntnis mündet in eine mögliche Maßnahme
+  4. die kleine Datenmenge (20 Zeilen) wird als Unsicherheit ausgewiesen
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Die Fachabteilung meldet: Zwei Faktoren – **hoher Betrag** und **langer Versand über die App** – treten fast immer gemeinsam auf. Deine Analyse kann sie nicht sauber trennen. Lass Copilot erklären, welcher der beiden der eigentliche Treiber sein könnte und welche Zusatzdaten man bräuchte, um das zu entscheiden.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Es gibt Budget für **eine** Maßnahme: (A) Versand beschleunigen oder (B) bessere Produktfotos und genaue Maße bei teuren Möbeln. Lass dir Pro/Contra je Option geben, triff eine begründete Wahl – und **widersprich Copilot**, wenn seine Begründung dünn ist oder Ursache und Begleiterscheinung verwechselt.
+
+  **Deliverable:** belegte Retouren-Erkenntnisse + ausgefüllte Kriterien-Checkliste + Analyse des verkoppelten Faktors + begründete Maßnahmen-Entscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind und deine Maßnahmen-Entscheidung auf einem belastbaren Argument beruht (nicht auf „teure Sofas werden halt öfter zurückgeschickt").
 tip: |
-  Bei 20 Zeilen sind „Muster" oft Zufall. Sei vorsichtig mit starken Schlüssen aus kleinen Datenmengen.
+  Der Wert steckt in Runde 3 und 4: Wenn zwei Faktoren gekoppelt sind, verrät die Analyse allein nicht, welcher der Treiber ist – da brauchst du ein Argument, keine Bauchentscheidung.
 solution: |
-  Bewertungskriterien: plausibler Datensatz, nachvollziehbare Erkenntnisse, konkrete Empfehlungen, kritische
-  Reflexion zur Datenmenge. Lernziel: Data-Mining als Kreislauf aus Muster, Empfehlung und Prüfung.
+  Bewertungskriterien: (1) Erkenntnisse mit Zahlen belegt (Retouren v. a. bei teuren App-Bestellungen mit langer Lieferzeit);
+  (2) alle vier Pflichtkriterien nachweislich erfüllt; (3) das Kopplungsproblem aus Runde 3 wird benannt und ein Weg zur
+  Entflechtung vorgeschlagen (Zusatzdaten); (4) die Maßnahmen-Entscheidung ist tragfähig begründet und nicht blind von
+  Copilot übernommen. Lernziel: aus Daten belastbare Erkenntnisse ziehen, Scheinzusammenhänge erkennen und unter Unsicherheit entscheiden.

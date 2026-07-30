@@ -1,17 +1,27 @@
-title: Automatisierbaren Ablauf mit Copilot planen
+title: Manuellen Ablauf als Automatisierung zerlegen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  In deiner Abteilung läuft dieser wiederkehrende Ablauf noch komplett manuell:
+
   ```text
-  Erfinde eine kleine, wiederkehrende Aufgabe im Büro (z. B. „neue Anfrage kommt per Formular →
-  Bestätigungsmail → Eintrag in Liste"). Beschreibe sie als Wenn-Dann-Ablauf in nummerierten Schritten.
+  Eine neue Urlaubsanfrage kommt per E-Mail. Die Teamleitung liest sie, prueft im Kalender, ob
+  jemand anderes schon frei hat, antwortet mit "genehmigt" oder "abgelehnt", traegt genehmigte Tage
+  in eine Excel-Liste ein und informiert die Personalabteilung.
   ```
-  Dann:
+
+  Öffne Copilot und erledige beides in einem Auftrag:
+
   ```text
-  Welche dieser Schritte könnte man mit einem Low-Code-Tool (ohne Programmierung) automatisieren?
+  Zerlege diesen manuellen Ablauf in nummerierte Wenn-Dann-Schritte (Ausloeser, Bedingungen, Aktionen).
+  Markiere danach je Schritt, ob er sich mit einem Low-Code-Tool ohne Programmierung automatisieren
+  liesse (ja / teilweise / nein) und warum.
+  [hier den Ablauf oben einfuegen]
   ```
+
+  **Ziel:** ein sauberer Wenn-Dann-Ablauf, in dem klar markiert ist, welche Schritte automatisierbar sind und wo ein Mensch entscheiden muss.
 tip: |
-  Low-Code baut Abläufe per Baukasten (Wenn-Dann) zusammen – ideal für einfache, wiederkehrende Aufgaben.
+  Low-Code baut Abläufe per Baukasten (Auslöser → Bedingung → Aktion) zusammen. Ideal für Routine; die eigentliche Entscheidung („genehmigt?") bleibt oft beim Menschen.
 solution: |
-  Erwartetes Ergebnis: klarer Wenn-Dann-Ablauf und Einschätzung der Automatisierbarkeit. Lernziel: Automatisierungs-
-  logik in Schritten denken.
+  Erwartetes Ergebnis: klar nummerierte Schritte mit Auslöser/Bedingung/Aktion und eine ehrliche Einschätzung, dass
+  Erfassen, Kalenderabgleich, Eintrag und Benachrichtigung automatisierbar sind, die Genehmigungsentscheidung aber
+  ein menschlicher (oder regelbasierter) Schritt bleibt. Lernziel: Automatisierungslogik in Schritten denken.

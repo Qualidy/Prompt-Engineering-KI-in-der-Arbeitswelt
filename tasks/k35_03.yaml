@@ -1,24 +1,31 @@
-title: Ein gescheitertes KI-Projekt obduzieren (Copilot)
+title: Post-Mortem eines gescheiterten Projekts mit Wurzelanalyse
 difficulty: 3
 question: |
-  Analysiere **in Copilot** ein selbst erzeugtes Scheitern – eine „Post-Mortem"-Übung.
+  Ein KI-Projekt ist geplatzt. Hier der nüchterne Rückblick, den du auf den Tisch bekommst:
 
-  **Schritt 1:**
+  > **Projekt „SmartForecast":** Eine Absatzprognose-KI sollte die Lagerhaltung optimieren. Nach 9 Monaten und 180.000 € gestoppt. Beobachtungen: Das Modell war technisch präzise. Die Einkaufsabteilung nutzte es nie und plante weiter „nach Bauchgefühl". Die Verkaufsdaten aus drei Ländern waren unterschiedlich strukturiert und mussten monatelang manuell bereinigt werden. Ein klares Ziel („Was heißt Erfolg?") wurde nie festgelegt.
+
+  Analysiere in Copilot – erst strukturieren, dann kategorisieren:
+
   ```text
-  Erfinde ein KI-Projekt, das gescheitert ist, und beschreibe, was schiefgelaufen ist (mind. 3 Ursachen).
-  ```
-  **Schritt 2:**
-  ```text
-  Ordne jede Ursache einer Kategorie zu: Daten, Technik, Menschen/Akzeptanz, Management, unklare Ziele.
-  ```
-  **Schritt 3:**
-  ```text
-  Formuliere für jede Ursache eine konkrete Maßnahme, die das Scheitern verhindert hätte.
+  Hier ist ein gescheitertes KI-Projekt: [Beschreibung oben einfügen]. Extrahiere die einzelnen
+  Ursachen des Scheiterns und ordne jede einer Kategorie zu: Daten, Technik, Menschen/Akzeptanz,
+  Management, unklare Ziele. Formuliere zu jeder Ursache eine Gegenmaßnahme, die sie verhindert hätte.
   ```
 
-  Bewerte selbst: Welche Ursache war die eigentliche Wurzel – und welche nur Symptom?
+  Jetzt der anspruchsvolle Teil – **Wurzel von Symptom trennen und Copilot herausfordern**:
+
+  ```text
+  Welche EINE Ursache war die eigentliche Wurzel, aus der die anderen folgten – und welche waren
+  nur Symptome? Begründe. Nenne dann die eine Maßnahme, die das Projekt am ehesten gerettet hätte.
+  ```
+
+  **Ziel:** eine Ursachenanalyse, die nicht bei „die Daten waren schlecht" stehen bleibt, sondern die eigentliche Wurzel benennt.
+
+  **Fertig bist du erst, wenn** du Copilots Wurzel-Diagnose selbst geprüft und entweder bestätigt oder mit eigenem Argument korrigiert hast (z. B. „Die fehlende Zieldefinition war die Wurzel, nicht die Datenqualität").
 tip: |
-  Oft ist die technische Ursache nur ein Symptom – die Wurzel liegt bei unklaren Zielen oder fehlender Einbindung der Menschen.
+  Die technische Ursache ist oft nur ein Symptom. Die Wurzel liegt häufig bei unklaren Zielen oder fehlender Einbindung der Menschen, die das Ergebnis nutzen sollen.
 solution: |
-  Erwartetes Ergebnis: strukturierte Ursachenanalyse mit Präventivmaßnahmen und Wurzel-vs-Symptom-Unterscheidung.
-  Lernziel: aus typischen Fehlern lernen, bevor sie passieren.
+  Erwartetes Ergebnis: eine kategorisierte Ursachenanalyse mit Gegenmaßnahmen und eine begründete Wurzel-vs-Symptom-
+  Unterscheidung, bei der du Copilots Diagnose selbst geprüft hast. Lernziel: aus typischen Fehlern lernen und die
+  eigentliche Ursache von ihren Folgen unterscheiden.

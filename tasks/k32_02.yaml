@@ -1,17 +1,35 @@
-title: KI-Systeme in Risikoklassen einordnen
+title: Pflichten für ein Hochrisiko-System ableiten
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  Ein konkretes System soll eingeführt werden. Die Beschreibung liegt vor:
+
   ```text
-  Erfinde 5 unterschiedliche KI-Anwendungen (vom Spamfilter bis zur Bewerberauswahl).
+  Eine Bank will eine KI einsetzen, die Kreditantraege automatisch bewertet und eine Empfehlung
+  "bewilligen / ablehnen" gibt. Trainiert wurde sie mit historischen Kreditentscheidungen. Die
+  Sachbearbeitung soll der Empfehlung "in der Regel folgen", um Zeit zu sparen.
   ```
-  Dann:
+
+  Lass Copilot Risikoklasse und Pflichten herleiten:
+
   ```text
-  Ordne jede einer EU-AI-Act-Risikoklasse zu und begründe. Nenne bei den „hochriskanten" je eine
-  Pflicht, die daraus folgt.
+  Ordne dieses System einer EU-AI-Act-Risikoklasse zu und begruende. Leite dann die 4 wichtigsten
+  rechtlichen Pflichten ab, die daraus folgen (z. B. menschliche Aufsicht, Transparenz, Datenqualitaet,
+  Dokumentation). Bewerte, ob die Vorgabe "in der Regel folgen" mit diesen Pflichten vereinbar ist.
+  [hier die Beschreibung einfuegen]
   ```
+
+  Jetzt der Twist – eine dünne Stelle in der Antwort gezielt nachschärfen:
+
+  ```text
+  Die Aussage zur "menschlichen Aufsicht" ist noch zu weich. Wie muss echte menschliche Kontrolle
+  hier konkret aussehen, damit sie nicht nur ein Abnicken der KI-Empfehlung ist (Automatismus-Falle)?
+  ```
+
+  **Ziel:** eine korrekte Einordnung als Hochrisiko-System, vier konkrete Pflichten und eine belastbare Aussage, warum „in der Regel folgen" die menschliche Aufsicht aushöhlt.
 tip: |
-  Systeme, die über Menschen entscheiden (Job, Kredit, Bildung), sind meist „hochriskant" und streng reguliert.
+  Bonitäts-/Kreditbewertung von Personen gilt als hochriskant. „Menschliche Aufsicht" ist nur echt, wenn der Mensch die KI-Empfehlung auch tatsächlich prüfen und begründet abweichen kann – nicht bloß routinemäßig bestätigt.
 solution: |
-  Erwartetes Ergebnis: begründete Einordnung und Pflichten für Hochrisiko-Systeme. Lernziel: Anwendungen rechtlich
-  einschätzen lernen.
+  Erwartetes Ergebnis: Einordnung als Hochrisiko, vier plausible Pflichten (menschliche Aufsicht, Transparenz/
+  Begründung, Datenqualität/Bias-Kontrolle, Dokumentation) und die klare Erkenntnis, dass „in der Regel folgen" die
+  Aufsicht zur Formalie macht. Die nachgeschärfte Antwort konkretisiert echte Kontrolle. Lernziel: aus der
+  Risikoklasse konkrete Pflichten ableiten und die Automatismus-Falle erkennen.

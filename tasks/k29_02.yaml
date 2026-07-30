@@ -1,18 +1,32 @@
-title: Energiedaten mit Copilot auswerten
+title: Stromlastgang auswerten und Maßnahme schärfen
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit selbst erzeugten Daten.
+  Hier der monatliche Stromverbrauch einer fiktiven Fertigung (in MWh). Du sollst die Auffälligkeiten finden:
+
   ```text
-  Erstelle eine Tabelle mit dem monatlichen Stromverbrauch (12 Monate) einer fiktiven Produktion,
-  inkl. einiger auffälliger Ausschläge.
+  Jan 210 | Feb 205 | Mrz 215 | Apr 208 | Mai 220 | Jun 350 | Jul 360 | Aug 215 | Sep 212 | Okt 218 | Nov 225 | Dez 300
   ```
-  Dann:
+
+  Lass Copilot die Daten auswerten:
+
   ```text
-  Analysiere die Daten: Wann ist der Verbrauch auffällig hoch? Nenne 3 mögliche Ursachen und
-  3 konkrete Einsparmaßnahmen.
+  Analysiere diese Monatswerte des Stromverbrauchs (MWh) einer Fertigung. Nenne die auffaelligen Monate,
+  schaetze die Mehrverbraeuche gegenueber dem Normalniveau, nenne je Auffaelligkeit eine plausible Ursache
+  und eine konkrete Einsparmassnahme mit Kennzahl.
+  Jan 210 | Feb 205 | Mrz 215 | Apr 208 | Mai 220 | Jun 350 | Jul 360 | Aug 215 | Sep 212 | Okt 218 | Nov 225 | Dez 300
   ```
+
+  Nimm dann die **schwächste** Maßnahme und schärfe sie gezielt nach:
+
+  ```text
+  Deine Massnahme fuer die Sommerspitze (Jun/Jul) ist noch zu allgemein. Mach sie konkret: was genau
+  wird umgesetzt, welche Daten braucht man dafuer, und wie viel MWh liessen sich realistisch einsparen?
+  ```
+
+  **Ziel:** die Sommerspitze (Jun/Jul, mutmaßlich Kühlung/Klima) und die Dezember-Auffälligkeit erkannt, mit je einer bezifferten, umsetzbaren Maßnahme.
 tip: |
-  Auffällige Ausschläge sind oft der schnellste Hebel – erst verstehen, warum, dann handeln.
+  Auffällige Ausschläge sind oft der schnellste Hebel: erst verstehen, warum (Kühllast im Sommer? Zusatzschichten im Dezember?), dann gezielt handeln – nicht pauschal „überall sparen".
 solution: |
-  Erwartetes Ergebnis: erkannte Auffälligkeiten, plausible Ursachen und konkrete Maßnahmen. Lernziel: Verbrauchsdaten
-  auswerten und in Einsparungen übersetzen.
+  Erwartetes Ergebnis: Jun/Jul (+~140 MWh, wahrscheinlich Kühlung/Klimatisierung) und Dez (+~85 MWh) als
+  Auffälligkeiten erkannt, mit plausiblen Ursachen und konkreten Maßnahmen. Die nachgeschärfte Maßnahme ist
+  spürbar konkreter und beziffert. Lernziel: Verbrauchsdaten auswerten und in messbare Einsparungen übersetzen.

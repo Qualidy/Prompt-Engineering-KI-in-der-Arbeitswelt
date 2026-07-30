@@ -1,17 +1,35 @@
-title: Fehlerdaten auswerten (Pareto) mit Copilot
+title: Fehlerdaten auswerten – Pareto plus Kostenblick
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit selbst erzeugten Daten.
+  Ein Monat Fehlerdaten aus der Endkontrolle liegt vor. Du sollst herausfinden, worauf sich die Qualitätsarbeit zuerst konzentrieren soll. Die Daten sind schon da.
+
   ```text
-  Erstelle eine Tabelle mit 8 Fehlerarten und ihrer Häufigkeit (fiktive Zahlen) für einen Monat.
+  Führe für diese Fehlerdaten eine Pareto-Analyse durch: Welche wenigen Fehlerarten
+  verursachen die meisten Fälle? Sortiere und zeige den kumulierten Anteil.
+
+  Fehlerart | Anzahl/Monat
+  Kratzer | 120
+  Farbabweichung | 60
+  Lackläufer | 40
+  Maßabweichung | 25
+  Logo verschoben | 18
+  Delle | 12
+  Grat | 8
+  Verunreinigung | 5
   ```
-  Dann:
+
+  Jetzt der Twist – Häufigkeit ist nicht alles:
+
   ```text
-  Führe eine Pareto-Analyse durch: Welche wenigen Fehlerarten verursachen die meisten Fälle?
-  Formuliere, worauf man sich zuerst konzentrieren sollte.
+  Ergänze eine Spalte "Nacharbeitskosten pro Fall": Kratzer 5 €, Farbabweichung 40 €,
+  Lackläufer 30 €, Maßabweichung 80 €, Logo 10 €, Delle 60 €, Grat 15 €, Verunreinigung 3 €.
+  An welcher Fehlerart sollte man zuerst arbeiten, wenn man nach GESAMTKOSTEN statt nach
+  Häufigkeit priorisiert? Vergleiche beide Sichtweisen.
   ```
+
+  **Ziel:** eine begründete Priorisierung – und eine klare Aussage, ob Häufigkeit oder Gesamtkosten die bessere Steuerungsgröße ist.
 tip: |
-  Pareto-Prinzip: Oft verursachen ~20 % der Fehlerarten ~80 % der Probleme. Dort ansetzen.
+  Pareto-Prinzip: Oft verursachen wenige Fehlerarten die meisten Fälle. Aber der häufigste Fehler ist nicht immer der teuerste.
 solution: |
-  Erwartetes Ergebnis: Pareto-Auswertung mit klarer Priorisierung der wichtigsten Fehlerarten. Lernziel:
-  Qualitätsdaten auswerten und Verbesserung fokussieren.
+  Erwartetes Ergebnis: Pareto-Auswertung nach Häufigkeit, dann nach Gesamtkosten (Anzahl x Kosten), und die Erkenntnis, dass
+  sich die Priorität verschiebt (z. B. Maßabweichung/Delle teurer als gedacht). Lernziel: Qualitätsdaten mehrdimensional priorisieren.

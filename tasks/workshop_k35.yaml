@@ -1,26 +1,29 @@
-title: Projektauftrag für ein KI-Vorhaben in Copilot
+title: KI-Piloten aufsetzen und durch eine Krise steuern
 difficulty: 4
 question: |
-  Erstelle **in Copilot** einen kompakten Projektauftrag (Charter) für ein fiktives KI-Vorhaben.
+  **Szenario:** Du leitest den ersten KI-Piloten eines mittelständischen Maschinenbauers (120 Mitarbeitende). Die Geschäftsführung gibt dir **3 Monate, 40.000 € und ein 4-köpfiges Kernteam**. Der Auftrag: „Zeigt, dass KI uns wirklich hilft." Dein hartes Ziel: ein Pilot mit **einem messbaren KPI**, der am Ende eine belastbare Go/No-Go-Empfehlung für den breiten Rollout erlaubt. Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.
 
-  **Schritt 1:**
-  ```text
-  Erfinde ein KI-Vorhaben und beschreibe den Anlass/das Problem.
-  ```
-  **Schritt 2:**
-  ```text
-  Erstelle den Projektauftrag mit: Ziel + Erfolgskriterium (KPI), Umfang (was NICHT dazugehört),
-  benötigte Ressourcen/Daten, Meilensteine, Top-3-Risiken, beteiligte Rollen.
-  ```
-  **Schritt 3:**
-  ```text
-  Ergänze einen Plan, wie du die betroffenen Mitarbeitenden früh einbindest (Akzeptanz).
-  ```
-  **Schritt 4 – Prüfung:** Ist das Ziel wirklich messbar und der Umfang klar abgegrenzt? Schärfe nach.
+  **Runde 1 – Projektauftrag bauen.** Entwickle einen einseitigen Charter: Anlass/Problem, Ziel mit **messbarem KPI**, Umfang (ausdrücklich, was NICHT dazugehört), benötigte Daten/Ressourcen, 3 Meilensteine, Top-3-Risiken, Rollen – plus einen Plan, wie du die betroffenen Mitarbeitenden früh einbindest.
 
-  **Deliverable:** einseitiger Projektauftrag inkl. Akzeptanzplan.
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Der Charter muss **alle** erfüllen. Lass Copilot ihn gegen diese Checkliste prüfen und jede Lücke schließen:
+
+  1. Ziel ist mit einer konkreten Zahl und einem Stichtag messbar
+  2. Umfang ist klar abgegrenzt (steht drin, was NICHT dazugehört – Schutz vor Scope Creep)
+  3. Datenverfügbarkeit ist realistisch geprüft, nicht nur angenommen
+  4. Akzeptanzplan bindet die späteren Nutzer aktiv ein, statt sie nur zu informieren
+
+  **Runde 3 – Komplikation.** Nach 6 Wochen: Der KPI bewegt sich kaum, und zwei erfahrene Mitarbeiter torpedieren den Piloten offen („Das haben wir immer ohne KI geschafft"). Lass Copilot mögliche Ursachen trennen (liegt es an Daten, am Use-Case-Zuschnitt oder an der Akzeptanz?) und überarbeite den Plan mit konkreten Kurskorrekturen.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Am Meilenstein steht die Frage: **verlängern, anpassen oder abbrechen?** Lass dir Pro/Contra je Option geben, triff eine begründete Go/No-Go-Empfehlung an die Geschäftsführung – und **widersprich Copilot**, wenn es ohne tragfähiges Argument zum Weitermachen rät (Sunk-Cost-Falle).
+
+  **Deliverable:** Projektauftrag (Version 2 nach Komplikation) + ausgefüllte Pflicht-Checkliste + begründete Go/No-Go-Empfehlung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind und deine Go/No-Go-Empfehlung auf dem KPI und einem echten Argument beruht – nicht auf „wir haben schon so viel investiert".
 tip: |
-  „Scope Creep" (ständig wachsender Umfang) killt Projekte – definiere klar, was NICHT dazugehört.
+  Der Wert entsteht in Runde 3 und 4: Ein Pilot beweist sich nicht daran, dass er reibungslos läuft, sondern daran, dass er dir eine ehrliche Go/No-Go-Entscheidung ermöglicht. „Scope Creep" und die Sunk-Cost-Falle sind die klassischen Killer.
 solution: |
-  Bewertungskriterien: messbares Ziel, klar abgegrenzter Umfang, realistische Meilensteine/Risiken, Akzeptanzplan.
-  Lernziel: ein KI-Vorhaben sauber aufsetzen.
+  Bewertungskriterien: (1) vollständiger Charter mit messbarem KPI und abgegrenztem Umfang; (2) alle vier
+  Pflichtkriterien nachweislich erfüllt; (3) die Kurskorrektur trennt Daten-, Zuschnitt- und Akzeptanzursachen und
+  reagiert gezielt; (4) die Go/No-Go-Empfehlung ist datenbasiert begründet und widersteht der Sunk-Cost-Falle,
+  statt Copilot blind zu folgen. Lernziel: einen KI-Piloten sauber aufsetzen, durch eine Krise steuern und unter
+  Unsicherheit entscheiden.

@@ -1,29 +1,39 @@
-title: Low-Code-Lösung samt Governance in Copilot
+title: Citizen-Development-Programm mit Leitplanken aufsetzen
 difficulty: 4
 question: |
-  Entwirf **in Copilot** eine komplette Low-Code-Lösung – selbst erzeugt.
+  **Szenario:** Du sollst als Digitalisierungsverantwortliche ein **Citizen-Development-Programm** einführen: Fachabteilungen dürfen mit einem Low-Code-Tool eigene Apps bauen. Ziel ist hart: **in 6 Monaten 10 sinnvolle, wartbare Apps** – ohne neue Schatten-IT und ohne Datenschutzvorfall. Ausgangslage:
 
-  **Schritt 1:**
   ```text
-  Erfinde einen manuellen, nervigen Büroprozess, der sich per Low-Code automatisieren ließe.
+  200 Mitarbeitende, bisher keine Regeln fuer Eigenentwicklungen.
+  Es gibt bereits ~35 unregistrierte Apps (Schatten-IT), teils mit Kundendaten.
+  Die IT ist knapp besetzt und will nicht jede App einzeln freigeben muessen.
+  Die Fachbereiche sind motiviert, aber genervt von langen IT-Prozessen.
   ```
-  **Schritt 2:**
-  ```text
-  Spezifiziere die Lösung: Auslöser, Eingaben, Wenn-Dann-Logik, Ausgaben/Benachrichtigungen, beteiligte Systeme.
-  ```
-  **Schritt 3:**
-  ```text
-  Beschreibe, wo KI/Copilot in der Lösung mitwirken könnte (z. B. Texte erzeugen, Anfragen einordnen).
-  ```
-  **Schritt 4:**
-  ```text
-  Ergänze 3 Governance-Regeln (Datenschutz, Zuständigkeit/Wartung, Freigabe).
-  ```
-  **Schritt 5 – Prüfung:** Was passiert, wenn die „Erbauerin" das Unternehmen verlässt? Ist die Lösung wartbar?
 
-  **Deliverable:** Low-Code-Spezifikation + KI-Anteil + Governance-Regeln.
+  Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**.
+
+  **Runde 1 – Programm bauen.** Entwirf: einen einfachen Weg von der Idee zur App (Antrag/Registrierung, Rollen, Freigabestufen), Kriterien welche App-Ideen erlaubt sind, und wie die 35 Bestands-Apps in die neue Ordnung überführt werden.
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Das Programm muss **alle** erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:
+
+  1. jede App hat eine benannte verantwortliche Person und eine Vertretung (Wartbarkeit)
+  2. Apps mit personenbezogenen Daten durchlaufen eine verpflichtende Datenschutz-Prüfung
+  3. eine risikobasierte Freigabe (harmlos = leicht, sensibel = geprüft) statt Freigabe-Stau für alles
+  4. Außenkommunikation (Mails/Nachrichten an Kunden) ist gesondert freigabepflichtig
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Nach 8 Wochen die Realität: Die Fachbereiche empfinden die Freigabe als **zu bürokratisch** und bauen wieder heimlich – die Schatten-IT wächst. Analysiere mit Copilot die Ursache und überarbeite das Programm so, dass harmlose Apps **schneller** durchlaufen und nur echte Risiken geprüft werden.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die IT-Leitung fordert, **alle** Apps zentral von der IT freigeben zu lassen (maximale Kontrolle). Lass dir Pro/Contra geben, entscheide begründet **und widersprich Copilot oder der IT-Forderung**, wenn maximale Kontrolle das Programm faktisch abwürgt.
+
+  **Deliverable:** finales Programm-Konzept (Version 2 nach Kurskorrektur) + ausgefüllte Pflichtkriterien-Checkliste + begründete Entscheidung zum Freigabemodell.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, das Freigabemodell schnell genug ist, dass niemand mehr heimlich baut, und deine Kontroll-Entscheidung Ermöglichung und Absicherung ausbalanciert.
 tip: |
-  Denke an Nachhaltigkeit: Wer wartet die Lösung, wenn die Person, die sie gebaut hat, weg ist?
+  Der Wert entsteht in Runde 3 und 4: Governance, die zu langsam ist, produziert die Schatten-IT, die sie verhindern soll. Und maximale zentrale Kontrolle klingt sicher, tötet aber das Programm. Die Kunst ist die risikobasierte Abstufung.
 solution: |
-  Bewertungskriterien: umsetzbare Spezifikation, sinnvoller KI-Anteil, praktikable Governance, Wartbarkeit bedacht.
-  Lernziel: eine echte Low-Code-Lösung durchdenken – inklusive Betrieb und Absicherung.
+  Bewertungskriterien: (1) vollständiges, umsetzbares Programm mit klarem Weg von Idee zu App und Überführung der
+  Bestands-Apps; (2) alle vier Pflichtkriterien erfüllt (Verantwortliche+Vertretung, Datenschutz-Prüfung,
+  risikobasierte Freigabe, Freigabe für Außenkommunikation); (3) die überarbeitete Version beschleunigt harmlose Apps
+  spürbar und stoppt so das heimliche Bauen; (4) die Freigabe-Entscheidung balanciert Kontrolle und Ermöglichung und
+  übernimmt nicht blind die „alles zentral"-Forderung. Lernziel: Citizen Development skalieren, ohne in Schatten-IT
+  oder Bürokratie zu kippen.

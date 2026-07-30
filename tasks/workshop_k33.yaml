@@ -1,26 +1,39 @@
-title: Datenschutz-Leitfaden für Copilot-Nutzung
+title: Datenschutz-Leitfaden für Copilot am Ernstfall härten
 difficulty: 4
 question: |
-  Erstelle **in Copilot** einen praxisnahen Datenschutz-Leitfaden für die tägliche KI-Nutzung.
+  **Szenario:** Du führst für ein Unternehmen einen **Datenschutz-Leitfaden zur täglichen Copilot-Nutzung** ein. Ziel ist hart: ein Leitfaden, bei dem in **jeder Alltagssituation eindeutig** ist, was in einen Prompt darf – und der einen echten Beinahe-Vorfall verhindert hätte. Ausgangslage:
 
-  **Schritt 1:**
   ```text
-  Erfinde ein Unternehmen, das Copilot breit einführen will, und beschreibe typische Nutzungssituationen.
+  400 Mitarbeitende nutzen Copilot im Firmen-Tenant fuer Texte, Zusammenfassungen und Auswertungen.
+  Typische Nutzungen: Kundenmails zusammenfassen, Bewerbungen sichten, Protokolle erstellen,
+  Excel-Daten auswerten.
+  Beinahe-Vorfall: Jemand hat eine komplette Kundenliste mit Namen, Adressen und Umsaetzen in einen
+  Prompt kopiert, um sie "mal schnell auswerten zu lassen".
   ```
-  **Schritt 2:**
-  ```text
-  Erstelle eine Ampel-Übersicht: Welche Daten dürfen (grün), nur mit Vorsicht (gelb) oder nie (rot)
-  in Copilot eingegeben werden? Mit Beispielen.
-  ```
-  **Schritt 3:**
-  ```text
-  Formuliere 6 kurze Verhaltensregeln und 2 typische Fehler, die man vermeiden muss.
-  ```
-  **Schritt 4 – Prüfung:** Teste den Leitfaden an 3 Alltagssituationen. Ist immer klar, was erlaubt ist?
 
-  **Deliverable:** Ampel-Übersicht + Verhaltensregeln, an 3 Fällen erprobt.
+  Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**.
+
+  **Runde 1 – Leitfaden bauen.** Erstelle eine Ampel-Übersicht: Welche Daten dürfen (grün), nur mit Vorsicht/anonymisiert (gelb) oder nie (rot) in Copilot? Ergänze 6 kurze Verhaltensregeln und 2 typische Fehler, die man vermeiden muss.
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Der Leitfaden muss **alle** erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:
+
+  1. die Ampel unterscheidet klar zwischen anonymen, personenbezogenen und besonders sensiblen Daten
+  2. der Unterschied privater vs. geschäftlicher (Tenant) Zugang ist erklärt – ohne den Tenant als Freibrief darzustellen
+  3. es gibt eine klare Regel, was man tut, statt sensible Daten einzugeben (z. B. anonymisieren, Platzhalter, gar nicht)
+  4. jede Regel ist so konkret, dass sie im Zweifel eine eindeutige Entscheidung liefert
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Teste den Leitfaden am Beinahe-Vorfall (Kundenliste) und an zwei weiteren Fällen (Bewerbung zusammenfassen; Krankmeldung formulieren). Dabei zeigt sich: Bei „gelb – mit Vorsicht" bleibt unklar, was konkret zu tun ist. Analysiere die Lücke und überarbeite die Gelb-Regeln so, dass sie eine eindeutige Handlung vorgeben.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Fachbereiche klagen, ein strenger Leitfaden mache Copilot „im Alltag nutzlos". Lass dir Pro/Contra geben, entscheide begründet, wie streng der Leitfaden sein muss **und widersprich Copilot**, wenn es aus Bequemlichkeit eine zu lockere Regel für personenbezogene Daten vorschlägt.
+
+  **Deliverable:** finaler Leitfaden (Ampel + 6 Regeln + 2 Fehler, Version 2) + ausgefüllte Pflichtkriterien-Checkliste + die dokumentierte Auswertung der 3 Testfälle.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, der Leitfaden den Kundenlisten-Fall eindeutig als „rot" abfängt und deine Strenge-Entscheidung Datenschutz nicht der Bequemlichkeit opfert.
 tip: |
-  Ampel-Systeme (grün/gelb/rot) sind im Alltag leichter zu befolgen als lange Paragraphen.
+  Der Wert entsteht in Runde 3 und 4: Ampel-Systeme scheitern am „gelb" – wenn unklar bleibt, was Vorsicht konkret heißt. Und ein Firmen-Tenant ist kein Freibrief: Eine ganze Kundenliste in den Prompt zu kopieren bleibt tabu.
 solution: |
-  Bewertungskriterien: klare Ampel-Logik, praktikable Regeln, an Fällen bewährt. Lernziel: Datenschutz für die
-  KI-Nutzung alltagstauglich machen.
+  Bewertungskriterien: (1) klare Ampel-Logik plus 6 Regeln und 2 Fehler; (2) alle vier Pflichtkriterien erfüllt
+  (Datenkategorien unterschieden, privat/geschäftlich erklärt ohne Freibrief, klare Ersatzhandlung, eindeutige
+  Regeln); (3) die überarbeiteten Gelb-Regeln geben eine eindeutige Handlung vor und fangen die 3 Testfälle korrekt
+  ab; (4) die Strenge-Entscheidung wägt Nutzbarkeit gegen Schutz ab und übernimmt keine zu lockere KI-Empfehlung.
+  Lernziel: Datenschutz für die KI-Nutzung alltagstauglich und zugleich belastbar machen.

@@ -1,17 +1,31 @@
-title: Optimierungsideen und KI-Potenzial mit Copilot
+title: Optimierungsideen trennen – KI oder Organisation?
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit einem selbst erzeugten Prozess.
+  Ein Rechnungsfreigabe-Prozess läuft zäh. Du sollst Verbesserungen vorschlagen – aber ehrlich trennen, wo wirklich KI hilft und wo eine simple organisatorische Regel schneller wirkt.
+
   ```text
-  Erfinde einen Rechnungsfreigabe-Prozess mit 7 Schritten inkl. typischer Verzögerungen.
+  Hier ist ein Rechnungsfreigabe-Prozess mit typischen Verzögerungen. Schlage 3
+  Optimierungen vor und markiere je Optimierung, ob sie durch Copilot/KI unterstützt
+  wird oder rein organisatorisch (ohne KI) gelöst wird. Begründe kurz.
+
+  1. Rechnung geht per Mail ein und landet im Sammelpostfach
+  2. Sachbearbeiter ordnet die Rechnung manuell einem Projekt zu – oft Rückfragen
+  3. Freigabe durch die Projektleitung – wartet häufig tagelang auf Antwort
+  4. Buchhaltung prüft auf Zahlendreher
+  5. Zahlung
   ```
-  Dann:
+
+  Jetzt der Twist – prüfe deinen eigenen KI-Vorschlag kritisch:
+
   ```text
-  Schlage 3 Optimierungen vor und markiere, welche davon durch KI/Copilot unterstützt werden könnten
-  und welche organisatorisch (ohne KI) gelöst werden. Begründe.
+  Bei einer meiner drei Optimierungen behaupte ich KI-Nutzen. Prüfe kritisch, ob hier
+  eine einfache organisatorische Regel (z. B. feste Frist, klare Zuständigkeit) schneller
+  und billiger wirken würde als KI. Empfiehl mir eine Entscheidung.
   ```
+
+  **Ziel:** drei Optimierungen mit ehrlicher KI-vs.-Organisation-Einordnung und eine bewusst getroffene Entscheidung beim Grenzfall.
 tip: |
-  Nicht jedes Problem braucht KI – manchmal hilft eine klarere Zuständigkeit mehr als ein Algorithmus.
+  Nicht jedes Problem braucht KI – manchmal hilft eine klarere Zuständigkeit oder Frist mehr als jeder Algorithmus.
 solution: |
-  Erwartetes Ergebnis: 3 Optimierungen mit ehrlicher Trennung „KI-tauglich" vs. „organisatorisch". Lernziel:
-  KI gezielt dort einsetzen, wo sie wirklich hilft.
+  Erwartetes Ergebnis: 3 Optimierungen mit ehrlicher Trennung „KI-tauglich" vs. „organisatorisch" und eine begründete
+  Entscheidung beim Grenzfall. Lernziel: KI gezielt dort einsetzen, wo sie wirklich hilft.

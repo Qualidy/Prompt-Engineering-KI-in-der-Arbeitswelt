@@ -1,17 +1,26 @@
-title: Ethisches Dilemma mit Copilot durchspielen
+title: Ethisches Dilemma abwägen und empfehlen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  In deinem Unternehmen steht eine Entscheidung an. Die Situation liegt konkret vor:
+
   ```text
-  Erfinde ein ethisches Dilemma beim Einsatz von KI am Arbeitsplatz (z. B. KI bewertet
-  Mitarbeitende). Beschreibe die Situation und nenne die widerstreitenden Interessen.
+  Die Personalabteilung will eine KI einfuehren, die die Tastatur- und Mausaktivitaet im Homeoffice
+  misst, um "Produktivitaet" zu bewerten. Die Fuehrung verspricht sich fairere Leistungsbeurteilung.
+  Der Betriebsrat warnt vor Ueberwachungsdruck und Fehlmessung (Denkarbeit sieht nach "inaktiv" aus).
   ```
-  Dann:
+
+  Öffne Copilot und erledige die Abwägung in einem Auftrag:
+
   ```text
-  Nenne 3 Argumente dafür und 3 dagegen und formuliere eine abgewogene Empfehlung.
+  Analysiere dieses Vorhaben: Nenne die widerstreitenden Interessen, dann 3 Argumente dafuer und
+  3 dagegen. Schliesse mit einer abgewogenen Empfehlung in 2-3 Saetzen, die klar Position bezieht.
+  [hier die Situation einfuegen]
   ```
+
+  **Ziel:** eine ausgewogene Argumentation, die in einer klaren, begründeten Empfehlung mündet – nicht bei „es kommt darauf an" stehen bleibt.
 tip: |
-  Ethische Fragen haben selten eine „richtige" Antwort – wichtig ist, Interessen und Folgen offen abzuwägen.
+  Ethische Fragen haben selten eine „richtige" Antwort, aber eine gut begründete. Wichtig ist, Interessen und Folgen offen abzuwägen und am Ende Position zu beziehen.
 solution: |
-  Erwartetes Ergebnis: ein greifbares Dilemma mit ausgewogener Argumentation. Lernziel: ethische Spannungen
-  erkennen und strukturiert abwägen.
+  Erwartetes Ergebnis: benannte Interessen (Führung vs. Beschäftigte/Betriebsrat), je 3 tragfähige Pro- und
+  Contra-Argumente und eine klare Empfehlung (häufig: Aktivitätsmessung als Leistungsmaß ist ungeeignet und
+  überwachungskritisch). Lernziel: ethische Spannungen erkennen und zu einer begründeten Haltung führen.

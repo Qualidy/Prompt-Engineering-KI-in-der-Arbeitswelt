@@ -1,25 +1,40 @@
-title: Citizen Development mit Governance (Copilot)
+title: Schatten-IT-Risiko bewerten und Governance setzen
 difficulty: 3
 question: |
-  Durchdenke **in Copilot** ein Citizen-Development-Szenario, das Copilot selbst erzeugt.
+  In einem Unternehmen ist Citizen Development außer Kontrolle geraten. Die Bestandsaufnahme:
 
-  **Schritt 1:**
   ```text
-  Erfinde eine Situation, in der Fachabteilungen selbst kleine Apps/Automatisierungen bauen
-  (Citizen Development). Beschreibe den Nutzen.
-  ```
-  **Schritt 2:**
-  ```text
-  Nenne die 3 größten Risiken (z. B. Schatten-IT, Datenschutz, keine Wartung) mit je einem Beispiel.
-  ```
-  **Schritt 3:**
-  ```text
-  Entwirf 5 einfache Governance-Regeln, die den Nutzen erhalten, aber die Risiken begrenzen.
+  In den letzten 12 Monaten sind ~35 selbstgebaute Low-Code-Apps entstanden.
+  - Eine App im Vertrieb speichert Kundendaten in einer privaten Cloud-Tabelle.
+  - Zwei Apps wurden von Mitarbeitenden gebaut, die das Unternehmen inzwischen verlassen haben; niemand kennt die Logik.
+  - Eine App verschickt automatisch Mails an Kunden, ohne dass jemand die Textvorlagen freigegeben hat.
+  - Die IT weiss von den meisten Apps nichts (Schatten-IT).
   ```
 
-  Bewerte selbst: Sind deine Regeln praktikabel oder ersticken sie die Eigeninitiative?
+  Lass Copilot die Lage bewerten – und dann eine ermöglichende Governance entwerfen:
+
+  ```text
+  Bewerte die 3 groessten Risiken dieser Situation (z. B. Datenschutz, Wartbarkeit/Verwaisung,
+  unkontrollierte Aussenkommunikation) mit je einem konkreten Schadensbeispiel. Entwirf danach
+  5 einfache Governance-Regeln, die die Eigeninitiative erhalten, aber die Risiken begrenzen.
+  [hier die Bestandsaufnahme einfuegen]
+  ```
+
+  Jetzt der anspruchsvolle Teil – **prüfe deine eigenen Regeln kritisch**:
+
+  ```text
+  Pruefe jede deiner 5 Regeln: Erstickt sie die Eigeninitiative (dann bauen die Leute wieder heimlich)
+  oder ist sie praktikabel? Nenne die Regel, die am ehesten umgangen wuerde, und entschaerfe sie so,
+  dass sie akzeptiert und trotzdem eingehalten wird.
+  ```
+
+  **Ziel:** fünf praktikable Governance-Regeln, die die vier konkreten Risiken adressieren, ohne die Fachbereiche in die Heimlichkeit zu treiben.
+
+  **Fertig bist du erst, wenn** du mindestens eine deiner Regeln selbst als „zu streng / würde umgangen" erkannt und praktikabler gemacht hast. (Vertiefung: Kapitel 33 – Datenschutz.)
 tip: |
-  Governance soll ermöglichen, nicht verbieten: klare Leitplanken statt kompletter Kontrolle.
+  Governance soll ermöglichen, nicht verbieten. Zu strenge Regeln erzeugen genau die Schatten-IT, die sie verhindern sollen – die Leute bauen dann heimlich weiter. Klare Leitplanken schlagen komplette Kontrolle.
 solution: |
-  Erwartetes Ergebnis: Nutzen, konkrete Risiken und 5 praktikable Governance-Regeln. Lernziel: Citizen Development
-  fördern und gleichzeitig absichern.
+  Erwartetes Ergebnis: benannte Risiken mit Schadensbeispielen (verwaiste Apps, Kundendaten in privater Cloud,
+  ungeprüfte Außenkommunikation) und 5 praktikable Regeln (z. B. Registrierungspflicht, benannte Verantwortliche,
+  Freigabe für Kundenkommunikation, Datenspeicher-Vorgaben). Entscheidend ist die selbstkritische Überarbeitung
+  mindestens einer zu strengen Regel. Lernziel: Citizen Development fördern und zugleich absichern.

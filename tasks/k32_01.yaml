@@ -1,13 +1,28 @@
-title: Risikoklassen des EU AI Act mit Copilot
+title: KI-Anwendungen in Risikoklassen einordnen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Dein Unternehmen prüft vier geplante KI-Anwendungen. Sie sollen nach EU AI Act eingeordnet werden:
+
   ```text
-  Erkläre die vier Risikoklassen des EU AI Act (verboten, hoch, begrenzt, minimal) mit je einem
-  Beispiel aus der Arbeitswelt. Als Tabelle.
+  A) Spamfilter fuer das Firmenpostfach
+  B) Chatbot, der Kunden Produktfragen beantwortet
+  C) KI, die Bewerbungen vorsortiert und Kandidaten bewertet
+  D) System, das Mitarbeitende live per Kamera auf "Emotionen" am Arbeitsplatz bewertet
   ```
+
+  Öffne Copilot und erledige die Einordnung in einem Auftrag:
+
+  ```text
+  Ordne diese vier Anwendungen den Risikoklassen des EU AI Act zu (minimal, begrenzt, hoch, verboten)
+  und begruende kurz. Nenne bei der hochriskanten Anwendung eine Pflicht, die daraus folgt. Stelle
+  es als Tabelle dar (Anwendung, Risikoklasse, Begruendung, Folge/Pflicht).
+  [hier A-D einfuegen]
+  ```
+
+  **Ziel:** eine begründete Zuordnung, die die vier Anwendungen sinnvoll über die Risikoklassen verteilt und die Konsequenz je Klasse benennt.
 tip: |
-  Je höher das Risiko für Menschen, desto strenger die Pflichten – von „erlaubt" bis „verboten".
+  Je höher das Risiko für Menschen, desto strenger die Pflichten – von „minimal/erlaubt" bis „verboten". Systeme, die über Menschen entscheiden (Bewerbung), sind meist hochriskant; Emotionserkennung am Arbeitsplatz ist weitgehend untersagt.
 solution: |
-  Erwartetes Ergebnis: die 4 Risikoklassen mit passenden Beispielen. Lernziel: den risikobasierten Ansatz der
-  KI-Regulierung verstehen.
+  Erwartetes Ergebnis: A minimal, B begrenzt (Transparenz-/Kennzeichnungspflicht: als KI erkennbar), C hoch
+  (Bewerberauswahl → strenge Pflichten wie Dokumentation, menschliche Aufsicht), D verboten (Emotionserkennung
+  am Arbeitsplatz). Lernziel: den risikobasierten Ansatz der KI-Regulierung verstehen und anwenden.

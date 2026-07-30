@@ -1,18 +1,32 @@
-title: Mit Widerständen und Ängsten umgehen (Copilot)
+title: Ehrliche Antworten auf echte Widerstände
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  In der internen Fragerunde zur Copilot-Einführung sind diese drei O-Töne gefallen:
+
+  > 1. „Wenn Copilot meine Mails schreibt, wozu braucht man mich dann noch?"
+  > 2. „Ich habe keine Zeit, auch noch ein neues Tool zu lernen – mein Tag ist schon voll."
+  > 3. „Was passiert mit den Daten, die ich da eingebe? Liest das jemand mit?"
+
+  Formuliere in Copilot eine ehrliche FAQ:
+
   ```text
-  Nenne die 5 häufigsten Ängste und Widerstände von Mitarbeitenden bei der Einführung von KI
-  (z. B. "Ich werde ersetzt").
+  Beantworte diese drei Mitarbeiter-Sorgen zur Copilot-Einführung für eine interne FAQ – ehrlich,
+  ernstnehmend, ohne zu beschönigen, je 3-4 Sätze:
+  1) "Wozu braucht man mich dann noch?"
+  2) "Ich habe keine Zeit, ein neues Tool zu lernen."
+  3) "Was passiert mit meinen eingegebenen Daten?"
   ```
-  Dann:
+
+  Jetzt die gezielte Verbesserungsrunde – **die schwächste Antwort härten**:
+
   ```text
-  Formuliere zu jeder Angst eine ehrliche, ernstnehmende Antwort für eine Mitarbeiter-FAQ – ohne
-  zu beschönigen.
+  Nimm die Antwort, die am ehesten wie eine Beschwichtigung klingt, und schreibe sie so um, dass
+  sie ein konkretes Zugeständnis oder eine überprüfbare Zusage enthält statt bloßer Beruhigung.
   ```
+
+  **Ziel:** drei FAQ-Antworten, die ein skeptischer Mensch als ehrlich empfindet – nicht als PR.
 tip: |
-  Ängste kleinzureden verstärkt sie. Ehrliche, konkrete Antworten schaffen Vertrauen.
+  Ängste kleinzureden verstärkt sie. Ehrliche Antworten mit konkreten Zusagen (statt „keine Sorge, alles gut") schaffen Vertrauen. Bei der Datenfrage hilft ein Verweis auf Datenschutz (Kapitel 33).
 solution: |
-  Erwartetes Ergebnis: 5 typische Ängste mit ehrlichen FAQ-Antworten. Lernziel: Widerstände ernst nehmen und
-  konstruktiv adressieren.
+  Erwartetes Ergebnis: drei ehrliche FAQ-Antworten und eine nachgeschärfte Version, die statt Beschwichtigung eine
+  überprüfbare Zusage macht. Lernziel: Widerstände ernst nehmen und glaubwürdig statt beschönigend adressieren.

@@ -1,30 +1,38 @@
-title: Predictive-Maintenance-Konzept end-to-end in Copilot
+title: PdM-Konzept end-to-end mit Kurskorrektur
 difficulty: 4
 question: |
-  Entwickle **in Copilot** ein vollständiges PdM-Konzept – selbst erzeugt.
+  **Szenario:** Du bist Instandhaltungsleiter(in) einer Abfüllanlage für Getränke (3-Schicht-Betrieb). Drei Anlagenteile machen Ärger: **Füllventil-Einheit**, **Etikettiermaschine** und **Förderband-Antrieb**. Die Geschäftsführung will ein Predictive-Maintenance-Pilotprojekt an **genau einer** Maschine – aber nur, wenn es sich rechnet und die Belegschaft mitzieht. Arbeite alles in Copilot.
 
-  **Schritt 1:**
-  ```text
-  Erfinde einen Betrieb mit mehreren wartungsintensiven Maschinen und beschreibe die Ausgangslage.
-  ```
-  **Schritt 2:**
-  ```text
-  Wähle die kritischste Maschine, definiere nötige Sensordaten und die Datenbasis fürs Training.
-  ```
-  **Schritt 3:**
-  ```text
-  Beschreibe den Ablauf: von der Datenerfassung über die Warnung bis zur Wartungsentscheidung
-  (wer entscheidet?).
-  ```
-  **Schritt 4:**
-  ```text
-  Nenne 3 Voraussetzungen und 2 Risiken für den Erfolg.
-  ```
-  **Schritt 5 – Prüfung:** Ist PdM für diese Maschine wirklich lohnend, oder reicht vorbeugende Wartung?
+  **Runde 1 – Konzept aufbauen.** Nutze diese Ausgangslage:
 
-  **Deliverable:** PdM-Konzept (Maschine, Daten, Ablauf, Voraussetzungen, Risiken).
+  ```text
+  Abfüllanlage, 3-Schicht-Betrieb. Kandidaten für Predictive Maintenance:
+  - Füllventil-Einheit: selten Ausfall, aber dann teurer Produktionsstopp; wenig Sensorik
+  - Etikettiermaschine: häufige kleine Störungen, gut mit Sensoren ausgestattet
+  - Förderband-Antrieb: mittlere Ausfallhäufigkeit, historische Daten vorhanden
+  Wähle die kritischste Maschine für ein PdM-Pilotprojekt, definiere die nötigen
+  Sensordaten und die Datenbasis fürs Training, und beschreibe den Ablauf von der
+  Datenerfassung über die Warnung bis zur Wartungsentscheidung (wer entscheidet?).
+  ```
+
+  **Runde 2 – Pflichtkriterien.** Dein Konzept muss **alle** erfüllen. Lass Copilot prüfen und Lücken schließen:
+
+  1. die Maschinenauswahl ist mit Kritikalität UND Datenlage begründet
+  2. nötige Sensordaten und Trainingsdatenbasis sind konkret benannt
+  3. der Ablauf enthält eine klare menschliche Entscheidungsrolle
+  4. 3 Voraussetzungen und 2 Risiken sind genannt
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Nach 4 Wochen Pilot meldet die Schicht: Das System erzeugt **zu viele Fehlalarme**, die Belegschaft beginnt, Warnungen zu ignorieren. Überarbeite das Konzept: Wie senkst du die Fehlalarmquote und gewinnst das Vertrauen der Schicht zurück (z. B. Schwellen, Bestätigungsschritt, Feedback-Schleife)?
+
+  **Runde 4 – Entscheidung unter Abwägung.** Grundsatzfrage: Lohnt PdM für die gewählte Maschine überhaupt, oder reicht **vorbeugende Wartung** in festen Intervallen? Lass dir Pro/Contra geben, entscheide begründet – und **widersprich Copilot**, wenn es PdM empfiehlt, obwohl Datenlage oder Fehlalarmproblem dagegen sprechen.
+
+  **Deliverable:** PdM-Konzept (Maschine, Daten, Ablauf, Voraussetzungen, Risiken) in Version 2 nach Kurskorrektur + begründete Entscheidung PdM vs. vorbeugende Wartung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, das Fehlalarmproblem aus Runde 3 glaubhaft entschärft ist und deine PdM-vs.-vorbeugend-Entscheidung auf einem echten Argument beruht (nicht auf „PdM ist moderner").
 tip: |
-  PdM lohnt vor allem bei teuren, kritischen Maschinen mit guter Datenlage – nicht überall.
+  PdM lohnt vor allem bei teuren, kritischen Maschinen mit guter Datenlage. Der Praxistest kommt in Runde 3: Ein System, dem die Schicht nicht traut, ist wertlos.
 solution: |
-  Bewertungskriterien: begründete Maschinenauswahl, sinnvoller Datenbedarf, klarer Ablauf mit Entscheidungsrolle,
-  ehrliche Lohnt-sich-Prüfung. Lernziel: PdM als Gesamtkonzept durchdenken.
+  Bewertungskriterien: (1) begründete Maschinenauswahl (Kritikalität und Datenlage, oft Förderband-Antrieb wegen vorhandener
+  Historie); (2) alle vier Pflichtkriterien erfüllt; (3) das Fehlalarmproblem aus Runde 3 wird mit konkreten Mitteln entschärft
+  (Schwellen, Bestätigung, Feedback-Schleife); (4) die PdM-vs.-vorbeugend-Entscheidung ist tragfähig begründet und nicht blind
+  übernommen. Lernziel: PdM als Gesamtkonzept durchdenken und wirtschaftlich wie menschlich realistisch bewerten.

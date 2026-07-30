@@ -1,25 +1,39 @@
-title: Rechtlicher Kurz-Check eines Use Case (Copilot)
+title: Rechtlicher Kurz-Check mit klarer Grenzziehung
 difficulty: 3
 question: |
-  Führe **in Copilot** einen rechtlichen Kurz-Check für ein selbst erzeugtes Szenario durch.
+  Ein Use Case mit mehreren rechtlichen Baustellen liegt vor. Prüfe ihn strukturiert:
 
-  **Schritt 1:**
   ```text
-  Erfinde einen konkreten KI-Use-Case mit rechtlicher Relevanz und beschreibe ihn.
-  ```
-  **Schritt 2:**
-  ```text
-  Prüfe: Risikoklasse (EU AI Act), Datenschutzbezug, Haftungsfrage (wer haftet bei Fehlern?),
-  Kennzeichnungspflicht. Fasse als Tabelle zusammen.
-  ```
-  **Schritt 3 – Grenzen:**
-  ```text
-  Wo endet das, was du (Copilot) hier leisten kannst, und wann ist echte Rechtsberatung nötig?
+  Ein Pflegedienst will eine KI-App einsetzen, die aus Sprachnotizen der Pflegekraefte automatisch
+  Pflegeberichte erstellt und Auffaelligkeiten (z. B. "Sturzgefahr") meldet. Die Sprachnotizen
+  enthalten Gesundheitsdaten von Patienten. Bei einem Fehlalarm oder uebersehenen Risiko stellt sich
+  die Haftungsfrage.
   ```
 
-  Bewerte selbst: Welche Frage ist am heikelsten und gehört zwingend zu Fachleuten?
+  Lass Copilot einen rechtlichen Kurz-Check erstellen:
+
+  ```text
+  Fuehre einen rechtlichen Kurz-Check durch. Tabelle mit: Risikoklasse (EU AI Act), Datenschutzbezug
+  (welche Datenart?), Haftungsfrage (wer haftet bei Fehlern?), Kennzeichnungs-/Dokumentationspflicht.
+  Sag ausserdem klar, wo deine Aussagen enden und echte Rechtsberatung noetig ist.
+  [hier den Use Case einfuegen]
+  ```
+
+  Jetzt der anspruchsvolle Teil – **entscheide selbst über die kritischste Frage und die KI-Grenze**:
+
+  ```text
+  Welche der vier Fragen ist hier am heikelsten und gehoert zwingend zu Fachleuten (z. B. Anwalt,
+  Datenschutzbeauftragte)? Und wo koennte Copilots Einschaetzung falsch oder zu selbstsicher sein,
+  sodass man sich keinesfalls allein darauf verlassen darf?
+  ```
+
+  **Ziel:** ein strukturierter Rechts-Check, der die kritischste Frage benennt und klar abgrenzt, wo verbindliche Fachberatung nötig ist.
+
+  **Fertig bist du erst, wenn** du selbst mindestens eine Stelle markiert hast, an der du dich NICHT auf Copilot verlassen würdest – denn Copilot ersetzt keine Rechtsberatung. (Vertiefung: Kapitel 33 – Datenschutz.)
 tip: |
-  Copilot ist keine Rechtsberatung. Es hilft beim Strukturieren der Fragen – die verbindliche Klärung machen Fachleute.
+  Copilot ist keine Rechtsberatung. Es hilft, die Fragen zu strukturieren – die verbindliche Klärung, gerade bei Gesundheitsdaten und Haftung, machen Fachleute. Selbstsicher klingende KI-Aussagen zu Recht sind besonders trügerisch.
 solution: |
-  Erwartetes Ergebnis: strukturierter Rechts-Check mit klarer Abgrenzung, wo Fachberatung nötig ist. Lernziel:
-  rechtliche Fragen früh erkennen und Grenzen der KI respektieren.
+  Erwartetes Ergebnis: Einordnung (Gesundheitsdaten → besonders sensibel/DSGVO Art. 9, wahrscheinlich hohes Risiko),
+  benannte Haftungs- und Dokumentationsfragen und eine klare Grenzziehung zur Fachberatung. Entscheidend ist die
+  Eigenentscheidung: Du hast eine Stelle markiert, an der man sich nicht auf die KI verlassen darf (typisch: Haftung
+  und Gesundheitsdatenschutz). Lernziel: rechtliche Fragen früh erkennen und die Grenzen der KI respektieren.

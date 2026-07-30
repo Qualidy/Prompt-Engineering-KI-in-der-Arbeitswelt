@@ -1,17 +1,29 @@
-title: Geschäftsmodell-Canvas für eine KI-Idee (Copilot)
+title: Mini-Canvas für eine KI-Idee – und der Nutzen-Härtetest
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  Diese KI-Idee liegt auf dem Tisch:
+
+  > **„TerminKlar":** Ein KI-Assistent für kleine Handwerksbetriebe, der Kundenanfragen per Telefon und Mail automatisch in Terminvorschläge umwandelt und den Kalender füllt. Preis: 29 €/Monat.
+
+  Fülle in Copilot ein Mini-Geschäftsmodell-Canvas:
+
   ```text
-  Erfinde eine KI-Produktidee (ein digitales Angebot) und beschreibe sie in 3 Sätzen.
+  Fülle für die Idee "TerminKlar" (KI-Terminassistent für Handwerksbetriebe, 29 €/Monat) die
+  Kernfelder eines Geschäftsmodells als Tabelle aus: Kundennutzen, Zielkunde, Erlösmodell,
+  Schlüsselressourcen, größte Kostenblöcke.
   ```
-  Dann:
+
+  Jetzt der Twist – **den Kundennutzen einem Härtetest unterziehen**:
+
   ```text
-  Fülle für diese Idee die Kernfelder eines Geschäftsmodells aus: Kundennutzen, Zielkunde,
-  Erlösmodell, Schlüsselressourcen, größte Kostenblöcke. Als Tabelle.
+  Prüfe den Kundennutzen kritisch: Ist das für einen Handwerksbetrieb ein "must-have" oder nur
+  ein "nice-to-have"? Rechne grob vor, ob 29 €/Monat sich für den Kunden lohnen, und nenne die
+  eine Bedingung, unter der er NICHT zahlen würde.
   ```
+
+  **Ziel:** ein stimmiges Canvas – und eine ehrliche Einschätzung, ob der Kundennutzen das Erlösmodell wirklich trägt.
 tip: |
-  Der wichtigste Block ist der Kundennutzen – ohne echtes Problem, das gelöst wird, trägt kein Erlösmodell.
+  Der wichtigste Block ist der Kundennutzen: Ohne echtes Problem, das gelöst wird, trägt kein Erlösmodell. „Nice to have" verkauft sich selten für einen monatlichen Preis.
 solution: |
-  Erwartetes Ergebnis: ein ausgefülltes, stimmiges Mini-Canvas. Lernziel: eine KI-Idee als Geschäftsmodell
-  durchdenken.
+  Erwartetes Ergebnis: ein ausgefülltes, stimmiges Mini-Canvas und ein ehrlicher Nutzen-Härtetest, der must-have von
+  nice-to-have unterscheidet. Lernziel: eine KI-Idee als Geschäftsmodell durchdenken und den Nutzen kritisch prüfen.

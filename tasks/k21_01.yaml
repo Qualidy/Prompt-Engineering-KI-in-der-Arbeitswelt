@@ -1,17 +1,26 @@
-title: Einen Prozess mit Copilot zerlegen und Engpass finden
+title: Den Engpass im Urlaubsantrag finden
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  In deiner Firma dauert ein genehmigter Urlaubsantrag viel zu lange. Der Ablauf inklusive typischer Dauern liegt vor – finde die Stelle, an der es wirklich klemmt.
+
+  Öffne Copilot und erledige die Analyse in einem Auftrag:
+
   ```text
-  Erfinde einen typischen Büroprozess (z. B. Urlaubsantrag) und zerlege ihn in 6–8 Einzelschritte.
-  Markiere den Schritt, der wahrscheinlich am längsten dauert (den Engpass).
+  Hier ist der Urlaubsantrags-Prozess einer Firma mit den typischen Dauern je Schritt.
+  Finde den Engpass (den langsamsten Schritt) und erkläre, was mit der Gesamtdauer
+  passiert, wenn man NUR diesen einen Schritt beschleunigt.
+
+  1. Antrag im Portal ausfüllen – 5 Min
+  2. Weiterleitung an Teamleitung – automatisch
+  3. Teamleitung prüft und genehmigt – im Schnitt 3 Tage (bleibt oft liegen)
+  4. Weiterleitung an HR – automatisch
+  5. HR bucht die Urlaubstage – 10 Min
+  6. Bestätigung an Mitarbeitende – automatisch
   ```
-  Dann:
-  ```text
-  Warum ist gerade dieser Schritt der Engpass, und was würde passieren, wenn man nur ihn beschleunigt?
-  ```
+
+  **Ziel:** der Engpass ist klar benannt und du kannst begründen, ob eine Beschleunigung genau dort den Gesamtprozess spürbar verkürzt.
 tip: |
-  Ein Prozess ist nur so schnell wie sein Engpass – dort lohnt Optimierung am meisten.
+  Ein Prozess ist nur so schnell wie sein Engpass – dort lohnt Optimierung am meisten, an schnellen Schritten kaum.
 solution: |
-  Erwartetes Ergebnis: sauber zerlegter Prozess mit plausibel begründetem Engpass. Lernziel: den entscheidenden
-  Engpass erkennen, statt überall gleichzeitig zu optimieren.
+  Erwartetes Ergebnis: Schritt 3 als Engpass erkannt und die Einsicht, dass nur dessen Beschleunigung die Gesamtdauer
+  senkt. Lernziel: den entscheidenden Engpass erkennen, statt überall gleichzeitig zu optimieren.

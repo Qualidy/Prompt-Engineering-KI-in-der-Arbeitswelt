@@ -1,18 +1,37 @@
-title: Bias in KI-Entscheidungen aufspüren
+title: Bias im Bewerbungsfilter aufdecken und entschärfen
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit einem selbst erzeugten Beispiel.
+  Ein KI-Tool zur Vorauswahl von Bewerbungen ist im Einsatz. So wurde es beschrieben:
+
   ```text
-  Erfinde ein KI-System, das Bewerbungen vorsortiert, und beschreibe, mit welchen historischen
-  Daten es trainiert wurde.
+  Das System wurde mit den Einstellungsdaten der letzten 10 Jahre trainiert und soll Bewerbungen
+  nach "Passung" sortieren. Auffaellig: In dieser Firma waren fuehrende Rollen historisch fast nur
+  mit Maennern besetzt, und "Passung" wurde am Profil bisheriger Top-Performer gemessen. Das Tool
+  bevorzugt zudem Bewerbungen ohne Luecken im Lebenslauf.
   ```
-  Dann:
+
+  Lass Copilot die Verzerrungen aufdecken:
+
   ```text
-  Wie könnte dieses System bestehende Vorurteile (Bias) übernehmen oder verstärken? Nenne 3
-  konkrete Beispiele und je eine Gegenmaßnahme.
+  Analysiere, wie dieses System bestehende Vorurteile (Bias) uebernehmen oder verstaerken koennte.
+  Nenne 3 konkrete Bias-Mechanismen (z. B. Geschlecht, Lebenslaufluecken durch Elternzeit/Krankheit)
+  und je eine konkrete Gegenmassnahme.
+  [hier die Beschreibung einfuegen]
   ```
+
+  Nimm dann die **schwächste** Gegenmaßnahme und schärfe sie nach:
+
+  ```text
+  Deine Gegenmassnahme gegen den Geschlechter-Bias ist noch zu allgemein ("mehr Vielfalt achten").
+  Mach sie konkret und ueberpruefbar: Was genau aendert man an Daten, Merkmalen oder Prozess, und
+  woran misst man, ob der Bias gesunken ist?
+  ```
+
+  **Ziel:** drei benannte Bias-Mechanismen mit je einer konkreten, überprüfbaren Gegenmaßnahme.
 tip: |
-  KI lernt aus der Vergangenheit – enthält diese Vorurteile, werden sie fortgeschrieben oder sogar verstärkt.
+  KI lernt aus der Vergangenheit – enthält diese Vorurteile, schreibt sie sie fort oder verstärkt sie sogar. „Lücken im Lebenslauf" bestrafen trifft oft Menschen mit Elternzeit, Pflege oder Krankheit systematisch.
 solution: |
-  Erwartetes Ergebnis: 3 plausible Bias-Beispiele mit Gegenmaßnahmen. Lernziel: verstehen, wie Verzerrungen
-  entstehen und wie man ihnen begegnet.
+  Erwartetes Ergebnis: 3 plausible Bias-Mechanismen (historische Geschlechterverteilung, Proxy-Merkmale,
+  Lebenslauflücken) mit konkreten Gegenmaßnahmen (z. B. sensible Merkmale entfernen, Zielgrößen prüfen, Lücken
+  neutralisieren) und eine spürbar konkretere, messbare nachgeschärfte Maßnahme. Lernziel: verstehen, wie
+  Verzerrungen entstehen und wie man ihnen überprüfbar begegnet.

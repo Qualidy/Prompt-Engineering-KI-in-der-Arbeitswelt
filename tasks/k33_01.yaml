@@ -1,13 +1,28 @@
-title: Personenbezogene Daten mit Copilot erkennen
+title: Personenbezogene Daten im Text markieren
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Diese Kundenanfrage liegt in deinem Postfach. Bevor du sie irgendwo weiterverarbeitest, sollst du die personenbezogenen Daten erkennen:
+
   ```text
-  Erfinde einen kurzen Beispieltext (z. B. eine Kundenanfrage) und markiere darin alle
-  personenbezogenen Daten. Erkläre je Angabe, warum sie personenbezogen ist.
+  Betreff: Reklamation Bestellung 88214
+  Hallo, mein Name ist Markus Feldmann, Kundennummer 4471. Die Lieferung an meine Adresse
+  Ahornweg 12, 34131 Kassel kam beschaedigt an. Erreichbar bin ich unter 0151 2345678 oder
+  m.feldmann@example.de. Ich bin uebrigens seit meiner Herz-OP im Maerz auf puenktliche
+  Medikamentenlieferung angewiesen.
   ```
+
+  Öffne Copilot und erledige die Analyse in einem Auftrag:
+
+  ```text
+  Markiere in diesem Text alle personenbezogenen Daten und erklaere je Angabe kurz, warum sie
+  personenbezogen ist. Hebe besonders sensible Daten (z. B. Gesundheitsdaten) gesondert hervor.
+  [hier den Text einfuegen]
+  ```
+
+  **Ziel:** eine vollständige Markierung aller personenbezogenen Daten, in der die besonders sensible Gesundheitsangabe klar als solche hervorgehoben ist.
 tip: |
-  Personenbezogen ist alles, was eine Person identifizierbar macht – auch indirekt (z. B. Kundennummer + Ort).
+  Personenbezogen ist alles, was eine Person identifizierbar macht – auch indirekt (Kundennummer + Ort). Gesundheitsdaten (Herz-OP, Medikamente) sind besonders sensibel und stärker geschützt.
 solution: |
-  Erwartetes Ergebnis: korrekt markierte personenbezogene Daten mit Begründung. Lernziel: sensible Daten sicher
-  erkennen – Voraussetzung für Datenschutz.
+  Erwartetes Ergebnis: Name, Kundennummer, Adresse, Telefon, E-Mail und Bestellnummer als personenbezogen erkannt;
+  die Gesundheitsangabe (Herz-OP, Medikamentenbedarf) als besonders sensible Kategorie hervorgehoben. Lernziel:
+  sensible Daten sicher erkennen – die Voraussetzung für Datenschutz.

@@ -1,13 +1,27 @@
-title: Energieverbrauch von KI mit Copilot einordnen
+title: Kostentreiber einer KI-Nutzung identifizieren
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Ein Team beschreibt seine monatliche KI-Nutzung so:
+
+  > - täglich ~500 kurze Zusammenfassungen von E-Mails
+  > - 20 Mitarbeitende lassen ständig lange PDF-Berichte (je 40 Seiten) komplett analysieren
+  > - einmal pro Woche wird ein Bild für einen Newsletter generiert
+  > - ein Kollege testet gern das größte, teuerste Modell „für alles, sicher ist sicher"
+
+  Lass Copilot die Energie- und Kostentreiber sortieren:
+
   ```text
-  Erkläre, wo bei KI eigentlich Energie verbraucht wird (Training vs. Nutzung) und warum das
-  Training großer Modelle so aufwendig ist. Nenne einen anschaulichen Vergleich.
+  Hier ist die monatliche KI-Nutzung eines Teams:
+  [Liste oben einfügen]
+  Ordne diese vier Nutzungsarten danach, welche am meisten Energie/Rechenleistung verbraucht –
+  vom größten zum kleinsten Treiber. Begründe kurz und nenne die eine Nutzung mit dem klarsten
+  Sparpotenzial ohne Qualitätsverlust.
   ```
+
+  **Ziel:** Du kannst benennen, welche Nutzung der größte Treiber ist und wo man am leichtesten sparen könnte, ohne dass jemand einen Nachteil merkt.
 tip: |
-  Das Training großer Modelle ist extrem energieintensiv; die einzelne Nutzung (ein Prompt) ist vergleichsweise klein – summiert sich aber.
+  Große Kontexte (lange PDFs) und das reflexhafte Nutzen des größten Modells treiben Verbrauch und Kosten stärker als viele kurze Anfragen. Bildgenerierung ist pro Stück teuer, hier aber selten.
 solution: |
-  Erwartetes Ergebnis: klare Trennung Training/Nutzung und ein anschaulicher Vergleich. Lernziel: den Energie-
-  Fußabdruck von KI grob einordnen.
+  Erwartetes Ergebnis: eine nachvollziehbare Rangfolge der Treiber und ein klarer Sparhinweis. Stark ist die Antwort,
+  wenn sie die Analyse langer PDFs und das „größtes Modell für alles" als Haupttreiber erkennt. Lernziel: Kostentreiber
+  der eigenen KI-Nutzung grob einordnen.

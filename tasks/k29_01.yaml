@@ -1,12 +1,28 @@
-title: KI für Nachhaltigkeit mit Copilot brainstormen
+title: Einsparpotenziale aus einem Verbrauchsprofil ableiten
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Du bist im Nachhaltigkeitsteam eines Logistikbetriebs. Der Standort meldet diese Verbrauchskennzahlen pro Monat:
+
   ```text
-  Erfinde ein Unternehmen und nenne 5 Ideen, wie KI dort Ressourcen (Energie, Material, Wege)
-  einsparen könnte. Ordne jeder Idee eine messbare Kennzahl zu (z. B. kWh, kg CO2, km).
+  Strom Lagerbeleuchtung: 8.200 kWh (Beleuchtung laeuft 24/7, auch nachts ohne Betrieb)
+  Diesel Lieferflotte: 12.000 Liter (viele Leerfahrten)
+  Heizung Halle: 15.000 kWh (Tore stehen im Winter oft offen)
+  Papierverbrauch Buero: 45.000 Blatt (viel wird gedruckt und nie gelesen)
   ```
+
+  Öffne Copilot und erledige die Analyse in einem Auftrag:
+
+  ```text
+  Hier vier Verbrauchsposten eines Logistikstandorts mit Hinweisen zur Ursache. Nenne je Posten eine
+  konkrete KI- oder Automatisierungsmassnahme zur Einsparung und ordne jeder eine messbare Kennzahl zu
+  (z. B. eingesparte kWh, Liter, kg CO2, Blatt). Gib eine grobe Groessenordnung der Einsparung an.
+  [hier die vier Posten einfuegen]
+  ```
+
+  **Ziel:** vier Maßnahmen, jede mit einer messbaren Kennzahl und grober Einsparungsgröße – nichts bleibt bei „irgendwie sparsamer".
 tip: |
-  Nachhaltigkeit wird erst greifbar, wenn man sie misst – z. B. eingesparte kWh oder Kilometer.
+  Nachhaltigkeit wird erst greifbar, wenn man sie misst. Eine Maßnahme ohne Kennzahl (kWh, Liter, kg CO2) lässt sich weder priorisieren noch nachweisen.
 solution: |
-  Erwartetes Ergebnis: 5 Ideen mit passenden Kennzahlen. Lernziel: KI-Nutzen für Nachhaltigkeit messbar denken.
+  Erwartetes Ergebnis: vier plausible Maßnahmen (z. B. Bewegungssensor-/Zeitsteuerung Beleuchtung, KI-Tourenplanung
+  gegen Leerfahrten, Torsteuerung/Wärmeschleier, Druck-Reduktion) mit je einer messbaren Kennzahl und Größenordnung.
+  Lernziel: KI-Nutzen für Ressourceneffizienz messbar denken.

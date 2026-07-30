@@ -1,13 +1,21 @@
-title: Strategische KI-Ziele mit Copilot formulieren
+title: Geschäftsziel in strategische KI-Ziele übersetzen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Die Geschäftsführung hat ein klares Ziel ausgegeben:
+
+  > **Unternehmen:** Regionaler Getränkelogistiker, 80 Mitarbeitende. **Geschäftsziel für dieses Jahr:** Lieferzuverlässigkeit von 92 % auf 98 % steigern, ohne die Kosten zu erhöhen.
+
+  Leite in Copilot passende KI-Ziele ab:
+
   ```text
-  Erfinde ein Unternehmen mit einem klaren Geschäftsziel (z. B. schnelleres Wachstum). Leite daraus
-  3 strategische KI-Ziele ab, die auf dieses Geschäftsziel einzahlen.
+  Ein Getränkelogistiker will seine Lieferzuverlässigkeit von 92% auf 98% steigern, ohne
+  Mehrkosten. Leite daraus 3 strategische KI-Ziele ab, die direkt auf dieses Geschäftsziel
+  einzahlen. Formuliere jedes so, dass klar wird, wie es zur Lieferzuverlässigkeit beiträgt.
   ```
+
+  **Ziel:** drei KI-Ziele, bei denen du zu jedem in einem Satz die Verbindung zum 98-%-Ziel erklären kannst – keine allgemeinen „wir nutzen mehr KI"-Floskeln.
 tip: |
-  KI ist kein Selbstzweck – jedes KI-Ziel sollte auf ein übergeordnetes Geschäftsziel einzahlen.
+  KI ist kein Selbstzweck. Jedes KI-Ziel sollte auf ein übergeordnetes Geschäftsziel einzahlen – wenn du die Verbindung nicht in einem Satz erklären kannst, ist es keine Strategie, sondern Spielerei.
 solution: |
-  Erwartetes Ergebnis: 3 KI-Ziele, die klar aus dem Geschäftsziel abgeleitet sind. Lernziel: KI strategisch statt
-  als Spielerei denken.
+  Erwartetes Ergebnis: drei KI-Ziele mit klarer, benennbarer Verbindung zum Geschäftsziel (z. B. Routenoptimierung,
+  Ausfallprognose, Nachfragevorhersage). Lernziel: KI strategisch aus dem Geschäftsziel ableiten statt als Spielerei.

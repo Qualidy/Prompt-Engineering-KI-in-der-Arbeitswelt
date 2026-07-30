@@ -1,17 +1,25 @@
-title: Automatisierungspotenzial eines Prozesses finden
+title: Automatisierungspotenzial im Statusbericht finden
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Jede Woche erstellt dein Team denselben Statusbericht – viel Handarbeit. Du sollst herausfinden, wo Copilot den größten Zeithebel hat. Der Ablauf liegt vor.
+
+  Öffne Copilot und erledige die Analyse in einem Auftrag:
+
   ```text
-  Erfinde einen wiederkehrenden Büroprozess (z. B. wöchentlicher Statusbericht) und liste die
-  Einzelschritte. Markiere je Schritt: gut automatisierbar, teils, oder nur manuell.
+  Hier sind die Schritte eines wöchentlichen Statusberichts. Markiere je Schritt:
+  gut automatisierbar, teilweise, oder nur manuell. Sag mir dann, bei welchem einen
+  Schritt Copilot am meisten Zeit sparen würde – und warum.
+
+  1. Zahlen aus 3 Tabellen zusammensuchen
+  2. Zahlen in eine Standardvorlage übertragen
+  3. Auffälligkeiten in Worten zusammenfassen
+  4. Bericht sprachlich glätten und formatieren
+  5. Verteiler anschreiben und Bericht versenden
   ```
-  Dann:
-  ```text
-  Bei welchem Schritt würde Copilot am meisten Zeit sparen – und warum?
-  ```
+
+  **Ziel:** eine begründete Aussage, welcher Schritt der größte Copilot-Hebel ist – konkret genug, dass dein Team es nächste Woche ausprobieren könnte.
 tip: |
-  Gut automatisierbar sind meist wiederkehrende, regelbasierte, textlastige Schritte.
+  Gut automatisierbar sind meist wiederkehrende, regelbasierte, textlastige Schritte – dort spielt Copilot seine Stärke aus.
 solution: |
-  Erwartetes Ergebnis: Prozessschritte mit Automatisierbarkeits-Einordnung und begründetem Copilot-Hebel. Lernziel:
-  Automatisierungspotenzial systematisch erkennen.
+  Erwartetes Ergebnis: Schritte mit Automatisierbarkeits-Einordnung und ein begründeter Copilot-Hebel (typisch Schritt 3
+  oder 4, das textlastige Zusammenfassen/Glätten). Lernziel: Automatisierungspotenzial systematisch erkennen.

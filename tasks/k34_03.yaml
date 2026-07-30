@@ -1,26 +1,35 @@
-title: Erklärbarkeits-Anforderungen festlegen (Copilot)
+title: Erklärungen für drei Zielgruppen und ein Quellen-Check
 difficulty: 3
 question: |
-  Definiere **in Copilot** Erklärbarkeits-Anforderungen für ein selbst erzeugtes Szenario.
+  In einer Klinik sortiert ein KI-System eingehende Patientenfälle nach Dringlichkeit vor. Ein Fall wurde als **„nicht dringend"** eingestuft, obwohl die Patientin starke Schmerzen angibt. Drei Gruppen wollen jetzt eine Erklärung – und jede braucht eine andere:
 
-  **Schritt 1:**
+  - **Patientin:** will wissen, was das für sie heißt
+  - **Ärztin:** will die medizinischen Faktoren nachvollziehen
+  - **Aufsicht/Datenschutz:** will Prüfbarkeit und Verantwortlichkeit
+
+  Erzeuge in Copilot in einem Auftrag drei zielgruppengerechte Erklärungen:
+
   ```text
-  Erfinde einen risikoreichen KI-Einsatz, bei dem Menschen die Entscheidungen verstehen müssen
-  (z. B. medizinische Vorsortierung).
-  ```
-  **Schritt 2:**
-  ```text
-  Wer muss hier was verstehen? Unterscheide die Bedürfnisse von Betroffenen, Fachleuten und Prüfern
-  und leite je eine Erklärbarkeits-Anforderung ab.
-  ```
-  **Schritt 3:**
-  ```text
-  Was passiert im Konflikt „hohe Genauigkeit (Black Box) vs. gute Erklärbarkeit"? Wie entscheidest du hier?
+  Ein KI-System hat einen Patientenfall mit starken Schmerzangaben als "nicht dringend" eingestuft.
+  Schreibe DREI Erklärungen desselben Sachverhalts: (1) für die Patientin in Klartext, empathisch,
+  ohne Fachjargon; (2) für die Ärztin mit den ausschlaggebenden Faktoren; (3) für die Aufsicht mit
+  Fokus auf Prüfbarkeit, Protokollierung und Verantwortlichkeit. Je max. 4 Sätze.
   ```
 
-  Bewerte selbst: Wann ist ein etwas schlechteres, aber erklärbares Modell die bessere Wahl?
+  Jetzt der anspruchsvolle Teil – **prüfe die Faktoren-Erklärung kritisch**, bevor du sie weitergibst:
+
+  ```text
+  Für jeden Faktor, den du der Ärztin genannt hast: Ist das ein echter medizinischer Grund oder
+  könnte es ein Scheinzusammenhang sein (z. B. Alter, Uhrzeit, Postleitzahl)? Markiere Faktoren,
+  die man NICHT zur Begründung heranziehen dürfte.
+  ```
+
+  **Ziel:** drei passgenaue Erklärungen – und eine Faktorenliste, die keine unzulässigen Merkmale enthält.
+
+  **Fertig bist du erst, wenn** du bei mindestens einem Faktor selbst entschieden hast, ob er als Begründung zulässig ist, statt Copilots Einschätzung ungeprüft zu übernehmen. (Vertiefung: Kapitel 31 – Ethik, Kapitel 33 – Datenschutz.)
 tip: |
-  Verschiedene Zielgruppen brauchen verschiedene Erklärungen. Und manchmal ist Nachvollziehbarkeit wichtiger als das letzte Prozent Genauigkeit.
+  Verschiedene Zielgruppen brauchen verschiedene Erklärungen: Betroffene wollen Klartext, Fachleute wollen Faktoren, Prüfer wollen Nachverfolgbarkeit. Und nicht jeder statistisch wirksame Faktor darf eine Entscheidung über Menschen begründen.
 solution: |
-  Erwartetes Ergebnis: zielgruppengerechte Erklärbarkeits-Anforderungen und eine begründete Abwägung
-  Genauigkeit vs. Erklärbarkeit. Lernziel: Erklärbarkeit als Anforderung bewusst gestalten.
+  Erwartetes Ergebnis: drei klar unterschiedliche, zielgruppengerechte Erklärungen und eine kritische Prüfung der
+  Begründungsfaktoren, bei der du mindestens einen fragwürdigen Faktor selbst bewertet hast. Lernziel: Erklärbarkeit
+  adressatengerecht gestalten und unzulässige Begründungen erkennen.

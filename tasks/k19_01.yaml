@@ -1,18 +1,24 @@
-title: Bild-Prompt und Social-Post mit Copilot
+title: Werbebild-Prompt aus einem Briefing
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Du sollst für eine neue Bio-Limonade **„Zitrus Fresh"** Werbematerial liefern. Das Briefing steht schon:
+
+  - **Zielgruppe:** junge Berufstätige (25–35)
+  - **Stimmung:** frisch, sommerlich, hochwertig
+  - **Kanal:** Instagram
+
+  Öffne Copilot und erledige beides in einem Auftrag:
+
   ```text
-  Schreibe einen detaillierten Bildgenerierungs-Prompt für ein Werbebild einer neuen
-  Bio-Limonade: Motiv, Stil, Farben, Stimmung, Bildausschnitt.
+  Schreibe einen detaillierten Bildgenerierungs-Prompt für ein Werbebild der Bio-Limonade
+  "Zitrus Fresh" (Zielgruppe 25–35, Stimmung frisch/sommerlich/hochwertig). Beschreibe Motiv,
+  Stil, Farben, Licht und Bildausschnitt. Danach: eine Instagram-Caption (max. 3 Sätze) und
+  5 passende Hashtags.
   ```
-  Dann:
-  ```text
-  Schreibe dazu einen kurzen Instagram-Post (max. 3 Sätze) mit 3 passenden Hashtags.
-  ```
-  (Wenn deine Copilot-Version Bilder erzeugen kann, teste den Bild-Prompt direkt.)
+
+  **Ziel:** Der Bild-Prompt ist so konkret, dass sich zwei Menschen ungefähr dasselbe Bild vorstellen. Wenn deine Copilot-Version Bilder erzeugt, teste ihn direkt.
 tip: |
-  Ein guter Bild-Prompt beschreibt Motiv, Stil, Farben, Stimmung und Perspektive – je konkreter, desto besser.
+  Ein guter Bild-Prompt nennt Motiv, Stil, Farben, Licht und Perspektive. „Schönes Bild" reicht nicht – je konkreter, desto treffsicherer.
 solution: |
-  Erwartetes Ergebnis: ein präziser Bild-Prompt und ein passender Social-Post. Lernziel: KI für Medien- und
-  Content-Erstellung gezielt ansteuern.
+  Erwartetes Ergebnis: ein präziser, umsetzbarer Bild-Prompt und ein postfertiger Caption-Text. Schwach ist der
+  Prompt, wenn er vage bleibt („modern, cool"); stark, wenn man das Bild klar vor sich sieht.

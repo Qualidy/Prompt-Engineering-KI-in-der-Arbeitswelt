@@ -1,26 +1,32 @@
-title: Einseitige KI-Strategie in Copilot
+title: KI-Strategie-One-Pager unter Budgetdruck verteidigen
 difficulty: 4
 question: |
-  Erstelle **in Copilot** eine einseitige KI-Strategie („One-Pager") für ein fiktives Unternehmen.
+  **Szenario:** Du erarbeitest die KI-Strategie für einen regionalen Energieversorger:
 
-  **Schritt 1:**
-  ```text
-  Erfinde ein Unternehmen und beschreibe Geschäftsziele und Ausgangslage.
-  ```
-  **Schritt 2:**
-  ```text
-  Erstelle den Strategie-One-Pager: Vision, 3 Handlungsfelder mit Maßnahmen, benötigte Ressourcen/
-  Kompetenzen, Zeithorizont, Erfolgs-KPIs, Top-Risiken.
-  ```
-  **Schritt 3:**
-  ```text
-  Formuliere einen einprägsamen Leitsatz, der die KI-Strategie auf den Punkt bringt.
-  ```
-  **Schritt 4 – Prüfung:** Zahlt jedes Handlungsfeld klar auf ein Geschäftsziel ein? Streiche, was nur „nice to have" ist.
+  > **Unternehmen:** 500 Mitarbeitende, gute Datenbasis (Zähler, Netz, Kundschaft), aber geringe KI-Erfahrung. **Geschäftsziele:** Netzstabilität sichern, Servicekosten senken, neue datenbasierte Angebote aufbauen. **Vorgabe der Geschäftsführung:** eine Strategie auf einer Seite, in 12 Monaten sichtbare Ergebnisse.
 
-  **Deliverable:** KI-Strategie-One-Pager mit Leitsatz.
+  Dein hartes Ziel: ein One-Pager, in dem **jedes Handlungsfeld nachweislich auf ein Geschäftsziel einzahlt** und der einen Budget-Schnitt übersteht. Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.
+
+  **Runde 1 – One-Pager bauen.** Entwickle: Vision, 3 Handlungsfelder mit Maßnahmen und je einer Build-or-Buy-Entscheidung, benötigte Ressourcen/Kompetenzen, Zeithorizont, Erfolgs-KPIs, Top-Risiken – plus einen einprägsamen Leitsatz.
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Der One-Pager muss **alle** erfüllen. Lass Copilot ihn gegen diese Checkliste prüfen und jede Lücke schließen:
+
+  1. jedes Handlungsfeld zahlt klar und benennbar auf ein Geschäftsziel ein
+  2. jedes Feld hat einen messbaren KPI mit Zeithorizont
+  3. Build-or-Buy ist je Feld realistisch zur geringen KI-Erfahrung entschieden
+  4. die Strategie ist fokussiert (kein „alles auf einmal"), Risiken sind benannt
+
+  **Runde 3 – Komplikation.** Die Geschäftsführung kürzt das Budget kurzfristig um **40 %** und verlangt: „Streicht ein Handlungsfeld komplett und liefert trotzdem sichtbare Ergebnisse." Lass Copilot die Felder gegeneinander abwägen und überarbeite den One-Pager auf 2 Felder – ohne dass die Strategie beliebig wird.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Copilot empfiehlt, das ambitionierte, aber riskante Feld „neue datenbasierte Angebote" zu streichen und auf sichere Effizienz-Projekte zu setzen. Lass dir Pro/Contra geben, triff deine Entscheidung – und **widersprich Copilot**, wenn seine Empfehlung nur den bequemen, aber strategisch schwächeren Weg wählt, ohne das zu begründen.
+
+  **Deliverable:** KI-Strategie-One-Pager (Version 2 nach Budget-Schnitt) + Leitsatz + ausgefüllte Pflicht-Checkliste + begründete Streich-Entscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die gekürzte Strategie fokussiert und schlüssig bleibt und deine Streich-Entscheidung auf strategischem Wert beruht – nicht bloß darauf, was am einfachsten wegzulassen ist.
 tip: |
-  Eine Strategie, die auf eine Seite passt, ist meist klarer und wird eher umgesetzt als ein 50-Seiten-Papier.
+  Eine Strategie, die auf eine Seite passt, wird eher umgesetzt als ein 50-Seiten-Papier. Der Wert entsteht in Runde 3 und 4: Unter Budgetdruck zeigt sich, ob deine Priorisierung strategisch ist – oder nur eine Wunschliste.
 solution: |
-  Bewertungskriterien: klare Vision, fokussierte Handlungsfelder mit Geschäftsbezug, KPIs/Risiken, prägnanter
-  Leitsatz. Lernziel: eine kommunizierbare, fokussierte KI-Strategie formulieren.
+  Bewertungskriterien: (1) klare Vision und fokussierte Handlungsfelder mit Geschäftsbezug; (2) alle vier
+  Pflichtkriterien erfüllt, jedes Feld mit KPI und Build/Buy; (3) die auf 2 Felder gekürzte Strategie bleibt
+  fokussiert und schlüssig; (4) die Streich-Entscheidung beruht auf strategischem Wert und folgt Copilot nicht blind
+  in den bequemen Weg. Lernziel: eine kommunizierbare, fokussierte KI-Strategie formulieren und unter Druck verteidigen.

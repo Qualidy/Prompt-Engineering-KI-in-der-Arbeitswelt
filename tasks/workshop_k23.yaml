@@ -1,25 +1,35 @@
-title: Konstruktions-Briefing mit Copilot erstellen
+title: Konstruktions-Briefing mit Entscheidungsmatrix und Kurskorrektur
 difficulty: 4
 question: |
-  Erstelle **in Copilot** ein vollständiges Konstruktions-Briefing – selbst erzeugt.
+  **Szenario:** Du bist Konstrukteur(in) in einem Maschinenbau-Betrieb. Für eine Verpackungslinie wird eine **Greifer-Halterung** gebraucht, die leichte Kartons (bis 3 kg) im **2-Sekunden-Takt** aufnimmt und absetzt. Randbedingungen: 3-Schicht-Betrieb, Wartung durch angelerntes Personal, Serie von 200 Stück, Lieferfähigkeit in 8 Wochen. Copilot ist dein Struktur- und Entscheidungswerkzeug – kein CAD. Arbeite alles in Copilot.
 
-  **Schritt 1:**
-  ```text
-  Erfinde eine Konstruktionsaufgabe aus dem Maschinenbau und beschreibe den Einsatzzweck.
-  ```
-  **Schritt 2:**
-  ```text
-  Erstelle: Anforderungsliste (Muss/Kann, messbar), 2 Lösungsvarianten, Bewertungskriterien.
-  ```
-  **Schritt 3:**
-  ```text
-  Bewerte die Varianten anhand deiner Kriterien in einer Entscheidungsmatrix und empfiehl eine.
-  ```
-  **Schritt 4 – Prüfung:** Prüfe, ob die Empfehlung wirklich aus den Kriterien folgt oder „gefühlt" ist.
+  **Runde 1 – Briefing bauen.** Nutze das Szenario und erstelle Anforderungsliste (Muss/Kann, messbar), 2 Lösungsvarianten und Bewertungskriterien:
 
-  **Deliverable:** Anforderungsliste + Varianten + Entscheidungsmatrix mit Empfehlung.
+  ```text
+  Konstruktionsaufgabe: Greifer-Halterung für eine Verpackungslinie, Kartons bis 3 kg,
+  2-Sekunden-Takt, 3-Schicht-Betrieb, Wartung durch angelerntes Personal, Serie 200 Stück,
+  lieferbar in 8 Wochen. Erstelle eine messbare Anforderungsliste (Muss/Kann), 2 sinnvoll
+  unterschiedliche Lösungsvarianten und 4 Bewertungskriterien.
+  ```
+
+  **Runde 2 – Pflichtkriterien.** Dein Briefing muss **alle** erfüllen. Lass Copilot prüfen und Lücken schließen:
+
+  1. jede Muss-Anforderung ist messbar formuliert (Zahl/Grenzwert/Norm)
+  2. die 2 Varianten unterscheiden sich in einem echten Auslegungsprinzip (nicht nur Farbe/Detail)
+  3. die Bewertungskriterien decken Funktion, Wartung, Kosten und Termin ab
+  4. Annahmen sind gekennzeichnet
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Rückmeldung aus der Instandhaltung: Deine bevorzugte Variante braucht **Spezialwerkzeug zur Wartung** – im 3-Schicht-Betrieb inakzeptabel. Überarbeite die Varianten/Anforderungen so, dass Wartung durch angelerntes Personal ohne Spezialwerkzeug möglich ist, ohne den 2-Sekunden-Takt zu verlieren.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Bewerte beide Varianten in einer **Entscheidungsmatrix** (Kriterien gewichten, Punkte vergeben) und empfiehl eine. **Widersprich Copilot**, wenn die Empfehlung nicht sauber aus den gewichteten Kriterien folgt, sondern „gefühlt" wirkt.
+
+  **Deliverable:** messbare Anforderungsliste + 2 Varianten (Version 2 nach Kurskorrektur) + Entscheidungsmatrix mit begründeter Empfehlung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die Wartungsauflage aus Runde 3 eingearbeitet ist und die Empfehlung nachweislich aus der Matrix folgt.
 tip: |
-  Eine Entscheidungsmatrix macht Konstruktionsentscheidungen nachvollziehbar statt „Bauchgefühl".
+  Eine Entscheidungsmatrix macht Konstruktionsentscheidungen nachvollziehbar statt „Bauchgefühl". Die Kurskorrektur zeigt, ob deine Kriterien die Realität (Wartbarkeit) wirklich abbilden.
 solution: |
-  Bewertungskriterien: messbare Anforderungen, sinnvolle Varianten, konsistente Matrix, begründete Empfehlung.
-  Lernziel: Copilot als Struktur- und Entscheidungshilfe in der Konstruktion nutzen.
+  Bewertungskriterien: (1) messbare Anforderungen; (2) zwei prinzipiell unterschiedliche Varianten; (3) alle vier
+  Pflichtkriterien erfüllt und die Wartungsauflage aus Runde 3 eingearbeitet; (4) konsistente Entscheidungsmatrix, aus der
+  die Empfehlung tatsächlich folgt und die nicht blind übernommen wurde. Lernziel: Copilot als Struktur- und Entscheidungshilfe
+  in der Konstruktion nutzen und unter Randbedingungen begründet entscheiden.

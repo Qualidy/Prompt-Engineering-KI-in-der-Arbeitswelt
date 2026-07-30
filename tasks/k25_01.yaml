@@ -1,13 +1,21 @@
-title: Fehlerkatalog mit Copilot erstellen
+title: Fehlerkatalog mit KI-Erkennbarkeit
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  In einer Fertigung für lackierte Metallgehäuse soll überlegt werden, welche Qualitätsfehler eine Kamera-KI später prüfen könnte. Das Produkt steht fest:
+
+  > **Produkt:** lackiertes Metallgehäuse für Elektrogeräte (glatte Oberfläche, definierte Maße, aufgedrucktes Logo).
+
+  Öffne Copilot und erledige die Aufgabe in einem Auftrag:
+
   ```text
-  Erfinde ein Produkt und erstelle einen Fehlerkatalog: 6 typische Qualitätsfehler mit kurzer
-  Beschreibung und der Frage, ob eine Kamera/KI sie erkennen könnte (ja/schwierig).
+  Erstelle für ein lackiertes Metallgehäuse einen Fehlerkatalog mit 6 typischen
+  Qualitätsfehlern. Je Fehler: kurze Beschreibung und Einschätzung, ob eine Kamera-KI
+  ihn erkennen könnte (gut / schwierig) mit kurzer Begründung. Als Tabelle.
   ```
+
+  **Ziel:** ein Fehlerkatalog, aus dem klar hervorgeht, welche Prüfungen sich für eine Bild-KI eignen und welche nicht.
 tip: |
-  Optische Fehler (Kratzer, Farbabweichung) erkennt KI gut; funktionale Fehler oft schwerer.
+  Optische Fehler (Kratzer, Farbabweichung, Lackläufer) erkennt eine Bild-KI meist gut; verdeckte oder funktionale Fehler oft nur schwer.
 solution: |
-  Erwartetes Ergebnis: Fehlerkatalog mit realistischer Einschätzung der KI-Erkennbarkeit. Lernziel: einschätzen,
-  welche Qualitätsprüfungen sich für Bild-KI eignen.
+  Erwartetes Ergebnis: 6 Fehler mit realistischer Einschätzung der KI-Erkennbarkeit (optisch gut, verdeckt/funktional schwierig).
+  Lernziel: einschätzen, welche Qualitätsprüfungen sich für Bild-KI eignen.

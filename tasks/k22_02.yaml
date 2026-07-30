@@ -1,18 +1,31 @@
-title: Standardarbeitsanweisung mit Copilot erstellen
+title: Standardarbeitsanweisung (SOP) mit Copilot-Prompts
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  Im Kundenservice läuft die Bearbeitung von Beschwerden bei jedem anders. Du sollst daraus eine klare Standardarbeitsanweisung (SOP) machen, die jede neue Person ohne Rückfragen ausführen kann. Der grobe Ablauf liegt vor.
+
   ```text
-  Erfinde einen Kundenbeschwerde-Prozess und erstelle daraus eine klare Standardarbeitsanweisung
-  (SOP): nummerierte Schritte, Verantwortliche, Zeitvorgaben, Eskalationsregel.
+  Mach aus diesem groben Ablauf eine klare Standardarbeitsanweisung (SOP): nummerierte
+  Schritte, Verantwortliche, Zeitvorgabe je Schritt und eine Eskalationsregel. Ergänze
+  zu jedem Schritt einen fertigen Copilot-Prompt, den eine Servicekraft direkt nutzen kann.
+
+  - Beschwerde geht per Mail ein
+  - Sachverhalt verstehen und einordnen
+  - Antwort formulieren, ggf. Entschädigung anbieten
+  - bei Eskalation an Teamleitung übergeben
+  - Fall dokumentieren
   ```
-  Dann verfeinere:
+
+  Jetzt der Twist – ein schwieriger Sonderfall:
+
   ```text
-  Ergänze zu jedem Schritt einen passenden Copilot-Prompt, den ein Mitarbeiter direkt nutzen könnte
-  (z. B. für die Antwort-E-Mail).
+  Ein Kunde droht öffentlich mit einer schlechten Bewertung und einer Anwältin. Ergänze
+  die SOP um genau diesen Sonderfall: Ab wann wird eskaliert, wer entscheidet, und was
+  darf die Servicekraft NICHT selbst zusagen?
   ```
+
+  **Ziel:** eine SOP, die auch den Sonderfall sauber regelt – so klar, dass eine neue Servicekraft nicht ins Straucheln gerät.
 tip: |
-  Eine gute SOP ist so klar, dass jede neue Person sie ohne Rückfragen ausführen kann.
+  Eine gute SOP ist so klar, dass jede neue Person sie ohne Rückfragen ausführen kann – gerade Sonderfälle brauchen eindeutige Grenzen.
 solution: |
-  Erwartetes Ergebnis: strukturierte SOP mit einsatzbereiten Copilot-Prompts je Schritt. Lernziel: Prozesse
-  standardisieren und direkt mit KI-Unterstützung verzahnen.
+  Erwartetes Ergebnis: strukturierte SOP mit Verantwortlichen, Zeitvorgaben, einsatzbereiten Copilot-Prompts und einer
+  klaren Regel für den Eskalations-Sonderfall (Grenzen der Servicekraft). Lernziel: Prozesse standardisieren und mit KI-Unterstützung verzahnen.

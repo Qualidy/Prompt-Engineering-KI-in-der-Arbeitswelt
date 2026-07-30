@@ -1,26 +1,38 @@
-title: Nachhaltigkeits-Konzept mit Copilot erstellen
+title: Nachhaltigkeitsprogramm mit ehrlicher Netto-Bilanz
 difficulty: 4
 question: |
-  Erarbeite **in Copilot** ein Nachhaltigkeitskonzept – selbst erzeugt.
+  **Szenario:** Du erstellst für einen mittelständischen Lebensmittelproduzenten ein **KI-gestütztes Nachhaltigkeitsprogramm**. Die Geschäftsführung will ein hartes Ziel öffentlich zusagen: **−15 % CO2 in 12 Monaten** – aber glaubwürdig, ohne Greenwashing-Vorwurf. Ausgangslage:
 
-  **Schritt 1:**
   ```text
-  Erfinde ein Unternehmen und beschreibe seine 3 größten Umweltbelastungen.
+  Groesste Belastungen: Kuehlung/Kaeltekette (hoher Stromverbrauch), Fuhrpark (Auslieferung),
+  Lebensmittelabfall durch Ueberproduktion.
+  Randbedingung: Budget begrenzt, jede Massnahme braucht eine messbare Kennzahl.
+  Warnung des Betriebsrats: "Keine Zahlen schoenrechnen, die spaeter zerpflueckt werden."
   ```
-  **Schritt 2:**
-  ```text
-  Ordne jeder Belastung eine KI-gestützte Maßnahme mit messbarem Ziel zu (Tabelle: Belastung,
-  Maßnahme, Kennzahl, erwartete Wirkung).
-  ```
-  **Schritt 3:**
-  ```text
-  Priorisiere die Maßnahmen nach Wirkung und Aufwand.
-  ```
-  **Schritt 4 – Prüfung:** Berücksichtige Rebound-Effekte und den KI-Energieverbrauch. Bleibt die Priorisierung bestehen?
 
-  **Deliverable:** priorisiertes Nachhaltigkeitskonzept mit Kennzahlen.
+  Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**.
+
+  **Runde 1 – Programm bauen.** Ordne den drei Belastungen je eine KI-gestützte Maßnahme mit messbarem Ziel zu (Tabelle: Belastung, Maßnahme, Kennzahl, erwartete CO2-Wirkung) und priorisiere nach Wirkung/Aufwand.
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Das Programm muss **alle** erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:
+
+  1. jede Maßnahme hat eine messbare Kennzahl und eine Baseline (Ausgangswert)
+  2. Rebound-Effekte sind je Maßnahme benannt und eingerechnet
+  3. der Energie-/CO2-Fußabdruck der eingesetzten KI ist berücksichtigt
+  4. die Summe der Maßnahmen erreicht das −15-%-Ziel nachrechenbar (keine Luftbuchung)
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Beim Nachrechnen zeigt sich: Die CO2-Zahlen erreichen die −15 % **nur**, wenn man den Rebound bei der Kältekette ignoriert und Ökostrom-Zertifikate großzügig anrechnet. Analysiere mit Copilot, wo die Bilanz geschönt ist, und überarbeite das Programm zu einer **ehrlichen** Rechnung – auch wenn das Ziel dann knapper wird.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Marketing will trotzdem „−15 % CO2" plakativ bewerben. Lass dir Pro/Contra geben, entscheide begründet, welche Aussage du öffentlich verantworten kannst **und widersprich Copilot**, wenn es eine kommunikativ starke, aber sachlich dünne Formulierung empfiehlt.
+
+  **Deliverable:** priorisiertes Nachhaltigkeitsprogramm (Version 2, ehrlich gerechnet) + ausgefüllte Pflichtkriterien-Checkliste + eine öffentlich verantwortbare Kommunikationsaussage.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die Bilanz Rebound und KI-Fußabdruck einrechnet und deine Kommunikationsaussage der Nachrechnung standhält.
 tip: |
-  Ehrliche Nachhaltigkeit rechnet den KI-Aufwand und Rebound mit ein – sonst ist es Greenwashing.
+  Der Wert entsteht in Runde 3 und 4: Eine Nachhaltigkeitszahl, die nur durch Weglassen von Rebound und KI-Aufwand entsteht, ist Greenwashing – und fliegt später auf. Lieber ein ehrliches −11 % als ein zerpflücktes −15 %.
 solution: |
-  Bewertungskriterien: messbare Maßnahmen, sinnvolle Priorisierung, ehrliche Netto-Betrachtung. Lernziel:
-  glaubwürdiges, messbares Nachhaltigkeitskonzept mit KI entwickeln.
+  Bewertungskriterien: (1) vollständiges, priorisiertes Programm mit messbaren Maßnahmen; (2) alle vier
+  Pflichtkriterien erfüllt (Kennzahl+Baseline, Rebound, KI-Fußabdruck, nachrechenbare Zielerreichung); (3) die
+  überarbeitete Bilanz ist ehrlich gerechnet, auch wenn das Ziel knapper wird; (4) die Kommunikationsaussage ist
+  sachlich belastbar und nicht blind von Copilots Marketing-Vorschlag übernommen. Lernziel: ein glaubwürdiges,
+  messbares Nachhaltigkeitsprogramm bauen und der Versuchung des Schönrechnens widerstehen.

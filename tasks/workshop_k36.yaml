@@ -1,29 +1,28 @@
-title: Green-AI-Konzept mit Copilot erstellen
+title: Green-AI-Konzept mit Zielkonflikt und Greenwashing-Test
 difficulty: 4
 question: |
-  Erarbeite **in Copilot** ein Green-AI-Konzept für ein fiktives Unternehmen.
+  **Szenario:** Du bist Nachhaltigkeitsbeauftragte:r eines Online-Händlers (400 Mitarbeitende). KI ist überall im Einsatz: Produktbeschreibungen, Kundenservice-Antworten, Bildgenerierung, Absatzprognosen. Die Geschäftsführung will mit „Green AI" werben – dein hartes Ziel: **die Energie-/Kostenintensität der KI-Nutzung um 25 % senken, ohne dass Kundschaft oder Team eine Qualitätsverschlechterung bemerken.** Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.
 
-  **Schritt 1:**
-  ```text
-  Erfinde ein Unternehmen mit wachsender KI-Nutzung und beschreibe die Ausgangslage.
-  ```
-  **Schritt 2:**
-  ```text
-  Erstelle eine Übersicht der größten Energie-/Ressourcentreiber der KI-Nutzung.
-  ```
-  **Schritt 3:**
-  ```text
-  Entwirf Maßnahmen (Modellwahl, Nutzungsregeln, Infrastruktur) mit erwartetem Effekt und Aufwand.
-  ```
-  **Schritt 4:**
-  ```text
-  Definiere 2 Kennzahlen, mit denen man den KI-Fußabdruck laufend beobachtet.
-  ```
-  **Schritt 5 – Prüfung:** Vermeidet das Konzept Greenwashing (echte vs. nur behauptete Einsparung)?
+  **Runde 1 – Konzept bauen.** Entwickle: (a) eine Übersicht der größten Energie-/Ressourcentreiber; (b) Maßnahmen entlang Modellwahl, Nutzungsregeln und Infrastruktur mit erwartetem Effekt und Aufwand; (c) 2 Kennzahlen, mit denen ihr den KI-Fußabdruck laufend beobachtet.
 
-  **Deliverable:** Green-AI-Konzept mit Maßnahmen und 2 Kennzahlen.
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Das Konzept muss **alle** erfüllen. Lass Copilot es gegen diese Checkliste prüfen und jede Lücke schließen:
+
+  1. die Maßnahmen erreichen plausibel das 25-%-Ziel (nicht nur „hilft irgendwie")
+  2. keine Maßnahme senkt spürbar die Qualität für Kundschaft oder Team
+  3. die 2 Kennzahlen sind wirklich messbar (Datenquelle benannt), nicht nur wohlklingend
+  4. das Konzept unterscheidet echte Einsparung von bloß behaupteter (Greenwashing-Test)
+
+  **Runde 3 – Komplikation.** Das Marketing verlangt kurzfristig eine **prominente „100 % Green AI"-Kampagne** – obwohl deine tatsächlichen Einsparungen bei realistisch 25 % liegen und ein Teil des Stroms nicht grün ist. Lass Copilot die Kampagnen-Aussage auf Greenwashing prüfen und überarbeite die kommunizierbaren Aussagen so, dass sie ehrlich und trotzdem werbewirksam sind.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Eine Maßnahme bringt die größte Einsparung, verschlechtert aber die Antwortqualität im Kundenservice leicht. Lass dir Pro/Contra geben, entscheide, ob du sie umsetzt – und **widersprich Copilot**, wenn es Einsparung über Qualität stellt (oder umgekehrt), ohne das sauber zu begründen.
+
+  **Deliverable:** Green-AI-Konzept (Version 2 nach Komplikation) + ausgefüllte Pflicht-Checkliste + ehrliche, freigegebene Kommunikationsaussagen + begründete Entscheidung zur Grenzfall-Maßnahme.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, keine Kommunikationsaussage den Greenwashing-Test verletzt und deine Grenzfall-Entscheidung auf einem echten Argument beruht.
 tip: |
-  Was man nicht misst, kann man nicht verbessern – definiere Kennzahlen für den KI-Fußabdruck.
+  Was man nicht misst, kann man nicht verbessern – und was man übertreibt, wird zum Reputationsrisiko. Der Wert entsteht in Runde 3 und 4: ehrlich kommunizieren und den Zielkonflikt Einsparung vs. Qualität bewusst entscheiden.
 solution: |
-  Bewertungskriterien: erkannte Treiber, konkrete Maßnahmen mit Effekt/Aufwand, messbare Kennzahlen, Greenwashing-
-  Check. Lernziel: Nachhaltigkeit der eigenen KI-Nutzung steuerbar machen.
+  Bewertungskriterien: (1) erkannte Treiber und konkrete Maßnahmen mit Effekt/Aufwand; (2) alle vier Pflichtkriterien
+  erfüllt, inkl. messbarer Kennzahlen mit Datenquelle; (3) die überarbeiteten Kommunikationsaussagen bestehen den
+  Greenwashing-Test und bleiben ehrlich; (4) die Grenzfall-Entscheidung wägt Einsparung gegen Qualität begründet ab,
+  statt Copilot blind zu folgen. Lernziel: Nachhaltigkeit der KI-Nutzung steuerbar und ehrlich kommunizierbar machen.

@@ -1,17 +1,24 @@
-title: Veränderungs-Kommunikation mit Copilot entwerfen
+title: Eine Change-Ankündigung, die auch Skeptiker abholt
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Diese Rundmail liegt im Entwurf vor – technisch korrekt, aber kalt:
+
+  > „Ab dem 1. des kommenden Monats wird Microsoft Copilot unternehmensweit eingeführt. Bitte nehmen Sie an der verpflichtenden Schulung teil. Die Nutzung wird erwartet."
+
+  Verbessere sie in Copilot in einem Auftrag:
+
   ```text
-  Schreibe eine kurze, motivierende Ankündigung an ein Team, dass ab nächstem Monat Microsoft
-  Copilot eingeführt wird. Betone den Nutzen für die Mitarbeitenden, nicht nur fürs Unternehmen.
+  Schreibe diese Team-Ankündigung neu, damit sie motiviert statt anordnet:
+  "Ab dem 1. kommenden Monats wird Microsoft Copilot eingeführt. Bitte an der Pflichtschulung
+  teilnehmen. Die Nutzung wird erwartet."
+  Betone den konkreten Nutzen für die Mitarbeitenden selbst und nimm die Sorge "Werde ich
+  ersetzt?" ausdrücklich ernst. Ton: nahbar, ehrlich, kein Werbe-Sprech. Max. 150 Wörter.
   ```
-  Dann:
-  ```text
-  Formuliere die Ankündigung so um, dass sie auch skeptische Kolleg:innen abholt (Ängste ernst nehmen).
-  ```
+
+  **Ziel:** eine Ankündigung, die die typische Frage „Was bedeutet das für mich?" beantwortet – und die du ohne Bauchschmerzen an ein skeptisches Team schicken würdest.
 tip: |
-  Menschen fragen zuerst „Was bedeutet das für mich?" – gute Change-Kommunikation beantwortet genau das.
+  Menschen fragen bei Veränderung zuerst „Was bedeutet das für mich?". Gute Change-Kommunikation beantwortet genau das – und redet Ängste nicht klein, sondern nimmt sie ernst.
 solution: |
-  Erwartetes Ergebnis: eine nutzenorientierte Ankündigung und eine empathischere Variante. Lernziel:
+  Erwartetes Ergebnis: eine nutzenorientierte, empathische Ankündigung, die die Ersetzungs-Angst offen adressiert.
+  Schwach ist ein reiner Anordnungston; stark ist ein Text, der Nutzen fürs Team und Ehrlichkeit verbindet. Lernziel:
   Veränderung aus Sicht der Betroffenen kommunizieren.

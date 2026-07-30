@@ -1,17 +1,26 @@
-title: Predictive-Maintenance-Konzept skizzieren
+title: Predictive-Maintenance-Ablauf für eine Pumpe skizzieren
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit einem selbst erzeugten Beispiel.
+  Für eine wichtige Pumpe in einer Wasseraufbereitung soll ein einfaches Frühwarnsystem entstehen. Die Sensordaten, die sie liefert, sind bekannt.
+
   ```text
-  Erfinde eine Maschine und beschreibe, welche Sensordaten (z. B. Temperatur, Vibration) sie liefert.
+  Eine Kreiselpumpe liefert diese Sensordaten: Lagertemperatur (°C), Vibration (mm/s),
+  Motorstrom (A), Durchfluss (l/min). Welche Signale in diesen Daten könnten einen
+  nahenden Ausfall ankündigen? Skizziere dann, wie ein KI-System daraus eine Warnung
+  erzeugt und wer wann informiert wird (Ampel: grün/gelb/rot).
   ```
-  Dann:
+
+  Jetzt der Twist – Grenzwerte allein reichen nicht:
+
   ```text
-  Welche Signale könnten einen nahenden Ausfall ankündigen? Skizziere, wie ein KI-System daraus
-  eine Warnung erzeugt und wer wann informiert wird.
+  Warum genügt ein einfacher fester Grenzwert (z. B. "Alarm ab 80 °C") oft nicht, und
+  was macht ein lernendes System besser? Nenne ein konkretes Beispiel für dieses Pumpen-Szenario.
   ```
+
+  **Ziel:** ein nachvollziehbarer Warnablauf plus eine Begründung, warum ein lernendes System dem festen Grenzwert überlegen sein kann.
 tip: |
-  Vorausschauende Wartung braucht historische Daten von Normal- UND Ausfallzuständen, um Muster zu lernen.
+  Vorausschauende Wartung braucht historische Daten von Normal- UND Ausfallzuständen, um Muster (nicht nur Schwellen) zu lernen.
 solution: |
-  Erwartetes Ergebnis: sinnvolle Sensordaten, Ausfallsignale und ein Warnablauf. Lernziel: das Grundprinzip
-  Predictive Maintenance konkret durchdenken.
+  Erwartetes Ergebnis: sinnvolle Ausfallsignale (z. B. steigende Vibration bei Lagerschaden), ein Ampel-Warnablauf mit
+  Zuständigkeiten und eine gute Begründung für lernende Muster statt fester Grenzwerte (z. B. schleichender Trend, Kombination
+  mehrerer Größen). Lernziel: das Grundprinzip Predictive Maintenance konkret durchdenken.

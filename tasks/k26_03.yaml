@@ -1,27 +1,28 @@
-title: PdM-Business-Case mit Fehlalarm-Abwägung (Copilot)
+title: PdM-Business-Case mit Fehlalarm-Abwägung
 difficulty: 3
 question: |
-  Erarbeite **in Copilot** einen Business Case für ein selbst erzeugtes Szenario.
+  Für eine teure Maschine sollst du prüfen, ob sich Predictive Maintenance wirtschaftlich lohnt – und dabei die Fehlalarme ehrlich einrechnen. Die Zahlen liegen vor:
 
-  **Schritt 1:**
+  > **CNC-Bearbeitungszentrum:** ungeplanter Ausfall kostet **2.000 € pro Stunde**, im Schnitt **6 ungeplante Ausfälle/Jahr** à ~4 Stunden. Eine PdM-Nachrüstung (Sensorik + System) kostet **35.000 €** einmalig plus **5.000 €/Jahr** Betrieb.
+
+  **Schritt 1 – grober Business Case:**
   ```text
-  Erfinde eine teure Maschine, deren ungeplanter Ausfall hohe Kosten verursacht. Nenne Zahlen
-  (Ausfallkosten pro Stunde, Häufigkeit).
+  Rechne einen groben Business Case für Predictive Maintenance an diesem CNC-Zentrum:
+  Ausfall 2.000 €/h, 6 Ausfälle/Jahr à 4 h; PdM-Kosten 35.000 € einmalig + 5.000 €/Jahr.
+  Wenn PdM die ungeplanten Ausfälle um 60 % senkt: Lohnt es sich, und ab wann?
   ```
-  **Schritt 2:**
+  **Schritt 2 – Fehlalarme einrechnen:**
   ```text
-  Schätze grob den Nutzen von Predictive Maintenance (weniger Ausfälle) gegen die Kosten (Sensorik,
-  System). Lohnt es sich?
-  ```
-  **Schritt 3 – kritisch:**
-  ```text
-  Was passiert bei zu vielen Fehlalarmen (unnötige Wartung) und bei verpassten Warnungen? Wie
-  wirken beide auf den Nutzen?
+  Was passiert bei zu vielen Fehlalarmen (unnötige Wartung, Stillstand) und bei verpassten
+  Warnungen? Wie wirken beide auf den berechneten Nutzen? Baue eine grobe Schätzung ein.
   ```
 
-  Bewerte selbst: Wie belastbar sind deine Annahmen?
+  **Nebenbedingung:** Kennzeichne jede Annahme, die du in die Rechnung steckst.
+
+  **Fertig bist du erst, wenn** du selbst beurteilt hast, wie belastbar die 60-%-Annahme ist und was passiert, wenn sie nur 30 % beträgt.
 tip: |
-  Zu viele Fehlalarme untergraben das Vertrauen und die Wirtschaftlichkeit – die Trefferqualität ist entscheidend.
+  Zu viele Fehlalarme untergraben Vertrauen und Wirtschaftlichkeit – die Trefferqualität entscheidet oft mehr als der Bruttonutzen.
 solution: |
-  Erwartetes Ergebnis: grober Business Case mit Nutzen/Kosten und Reflexion über Fehlalarme/verpasste Warnungen.
-  Lernziel: PdM wirtschaftlich UND mit Blick auf Fehlentscheidungen bewerten.
+  Erwartetes Ergebnis: nachvollziehbare Rechnung (Bruttonutzen ca. 28.800 €/Jahr minus 5.000 € Betrieb, Amortisation der
+  35.000 € nach gut 1,5 Jahren) mit Sensitivität auf die Annahme und eine ehrliche Fehlalarm-Betrachtung. Lernziel: PdM wirtschaftlich
+  UND mit Blick auf Fehlentscheidungen bewerten.

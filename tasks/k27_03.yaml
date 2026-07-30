@@ -1,25 +1,40 @@
-title: Autonome Prozessregelung kritisch bewerten (Copilot)
+title: Sicherheitslogik für eine Mehrgrößen-Regelung prüfen
 difficulty: 3
 question: |
-  Untersuche **in Copilot** ein selbst erzeugtes Szenario zur autonomen Regelung.
+  Ein **Kühlkreislauf** einer Anlage soll KI-gestützt geregelt werden. Es gibt zwei Stellgrößen mit Zielkonflikt und eine Störgröße:
 
-  **Schritt 1:**
   ```text
-  Erfinde einen Prozess, den eine KI weitgehend selbstständig regeln soll, und beschreibe die Ziele.
-  ```
-  **Schritt 2:**
-  ```text
-  Beschreibe Nutzen und die 3 größten Risiken der Autonomie (z. B. Fehlregelung, fehlende
-  Nachvollziehbarkeit, Sensorausfall).
-  ```
-  **Schritt 3 – Absicherung:**
-  ```text
-  Entwirf ein Sicherheitskonzept: Grenzen, menschliche Überwachung, Eingriffsmöglichkeit, Protokollierung.
+  Ziel: Vorlauftemperatur 8 °C halten (Toleranz +/-1,5 °C).
+  Stellgroesse 1: Pumpendrehzahl (mehr = kaelter, aber mehr Strom).
+  Stellgroesse 2: Ventiloeffnung Kaeltemittel (mehr = kaelter, aber teurer/Verschleiss).
+  Stoergroesse: schwankende Aussentemperatur (nachts 12 °C, mittags 34 °C).
+  Nebenbedingung: Stromkosten sollen minimiert werden, ohne die 8 °C zu verlassen.
   ```
 
-  Bewerte selbst: Wie viel Autonomie ist hier verantwortbar?
+  Lass Copilot einen abgesicherten Regelungsentwurf erstellen:
+
+  ```text
+  Entwirf ein KI-gestuetztes Regelungskonzept fuer diesen Kuehlkreislauf: wie werden die zwei
+  Stellgroessen bei schwankender Aussentemperatur so gefahren, dass 8 °C gehalten und Stromkosten
+  minimiert werden? Definiere harte Sicherheitsgrenzen, eine menschliche Eingriffsmoeglichkeit und
+  einen sicheren Rueckfallmodus bei Sensorausfall.
+  ```
+
+  Jetzt der anspruchsvolle Teil – **prüfe die Sicherheitslogik selbst auf Lücken**, bevor du das Konzept freigibst:
+
+  ```text
+  Spiele einen Fehlerfall durch: Der Temperatursensor liefert ploetzlich einen falschen (zu niedrigen)
+  Wert. Was wuerde deine Regelung tun, und wie verhindert deine Sicherheitslogik einen gefaehrlichen
+  Zustand? Zeige mir, wo die Logik im Fehlerfall versagen koennte.
+  ```
+
+  **Ziel:** ein Regelungskonzept, das den Zielkonflikt löst **und** einen Sensorfehler sicher abfängt.
+
+  **Fertig bist du erst, wenn** du mindestens eine Lücke in Copilots Sicherheitslogik selbst gefunden und geschlossen hast (z. B. „ein einzelner Sensor ohne Plausibilitätsprüfung ist ein blinder Fleck"). Copilot ist hier Denkwerkzeug, kein Echtzeit-Steuerungssystem. (Vertiefung: Kapitel 26 – Predictive Maintenance.)
 tip: |
-  Je autonomer die Regelung, desto wichtiger sind Überwachung, Nachvollziehbarkeit und ein sicherer Rückfallmodus.
+  Bei mehreren Stellgrößen und Zielkonflikten regelt man selten „auf einen Wert" – man priorisiert (Sicherheit vor Kosten). Und: Ein einzelner Sensor ohne Plausibilitätsprüfung ist die häufigste unsichtbare Schwachstelle.
 solution: |
-  Erwartetes Ergebnis: Nutzen/Risiken plus konkretes Sicherheitskonzept mit menschlicher Eingriffsmöglichkeit.
-  Lernziel: Autonomiegrad verantwortungsvoll festlegen.
+  Erwartetes Ergebnis: ein Konzept, das Sicherheit über Kosten priorisiert, beide Stellgrößen sinnvoll koordiniert
+  und bei Sensorausfall in einen definierten sicheren Zustand geht. Entscheidend ist der letzte Schritt: Du hast
+  eine reale Lücke erkannt (z. B. fehlende Sensor-Plausibilisierung oder Redundanz) und selbst geschlossen, statt
+  Copilots Entwurf blind zu übernehmen. Lernziel: Sicherheitslogik einer Regelung kritisch durchdringen.

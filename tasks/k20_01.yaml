@@ -1,17 +1,30 @@
-title: Muster in Daten mit Copilot entdecken
+title: Warenkorbanalyse für die Regalplanung
 difficulty: 1
 question: |
-  Mach das **live in Copilot** – Copilot erzeugt die Daten selbst.
+  Du arbeitest in der Filialsteuerung eines Supermarkts und sollst herausfinden, welche Artikel oft **gemeinsam** im Warenkorb landen – damit man sie klüger platziert. Die Kassendaten von 10 Einkäufen liegen schon vor.
+
+  Öffne Copilot und erledige die Analyse in einem Auftrag:
+
   ```text
-  Erstelle eine kleine Beispiel-Tabelle mit 10 Einkäufen in einem Supermarkt (Artikel je Einkauf).
+  Hier sind 10 Einkäufe aus einem Supermarkt. Finde heraus, welche Artikelpaare
+  besonders häufig zusammen gekauft werden, und leite daraus eine konkrete Empfehlung
+  fürs Regal-Layout ab.
+
+  1: Brot, Butter, Kaffee
+  2: Nudeln, Tomatensauce, Parmesan
+  3: Brot, Butter, Marmelade
+  4: Nudeln, Tomatensauce, Rotwein
+  5: Windeln, Bier, Chips
+  6: Brot, Kaffee, Milch
+  7: Nudeln, Parmesan, Rotwein
+  8: Windeln, Bier, Feuchttücher
+  9: Brot, Butter, Milch
+  10: Chips, Cola, Bier
   ```
-  Dann:
-  ```text
-  Finde Muster: Welche Artikel werden häufig zusammen gekauft? Formuliere daraus eine
-  Handlungsempfehlung fürs Regal-Layout.
-  ```
+
+  **Ziel:** eine begründete Empfehlung, welche zwei Artikel du nebeneinander platzierst – so konkret, dass die Filialleitung sie ohne Rückfrage umsetzen könnte.
 tip: |
-  Data-Mining sucht Muster in Daten – „wer X kauft, kauft oft auch Y" ist eine klassische Warenkorbanalyse.
+  Data-Mining sucht Muster in Daten – „wer X kauft, kauft oft auch Y" ist eine klassische Warenkorbanalyse (Assoziationsregel).
 solution: |
-  Erwartetes Ergebnis: erkannte Kombinationen und eine sinnvolle Empfehlung. Lernziel: das Grundprinzip
-  Warenkorbanalyse (Assoziationsregeln) erleben.
+  Erwartetes Ergebnis: die häufigen Paare (z. B. Brot+Butter, Nudeln+Tomatensauce, Windeln+Bier) und eine umsetzbare
+  Regal-Empfehlung. Schwach ist die Antwort, wenn sie nur Artikel aufzählt; stark, wenn sie ein konkretes Paar mit Begründung nennt.

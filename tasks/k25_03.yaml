@@ -1,26 +1,27 @@
-title: KI-Sichtprüfung konzipieren und Fehlentscheidungen abwägen
+title: KI-Sichtprüfung und die Kosten von Fehlentscheidungen
 difficulty: 3
 question: |
-  Konzipiere **in Copilot** eine KI-gestützte Sichtprüfung für ein selbst erzeugtes Szenario.
+  Eine heute manuelle Sichtprüfung soll durch eine KI-Bildprüfung unterstützt werden. Du sollst das Konzept skizzieren und – wichtiger – die richtigen Fehlentscheidungen abwägen. Der Fall ist beschrieben:
 
-  **Schritt 1:**
+  > **Produkt:** Bremsscheiben aus Guss. Heute prüft eine Person jede Scheibe von Hand auf Risse und Lunker (Hohlräume). Ein durchgelassener Riss kann im Einsatz gefährlich werden.
+
+  **Schritt 1 – Konzept:**
   ```text
-  Erfinde ein Produkt und eine optische Qualitätsprüfung, die heute manuell erfolgt.
+  Beschreibe, wie eine KI-Bildprüfung diese Sichtprüfung für Bremsscheiben übernehmen
+  könnte: Datenbedarf (Beispielbilder gut/schlecht), Ablauf, Rolle des Menschen.
   ```
-  **Schritt 2:**
+  **Schritt 2 – Fehlentscheidungen abwägen:**
   ```text
-  Beschreibe, wie eine KI-Bildprüfung das übernehmen könnte: Datenbedarf (Beispielbilder gut/schlecht),
-  Ablauf, menschliche Rolle.
-  ```
-  **Schritt 3 – kritisch:**
-  ```text
-  Erkläre den Unterschied zwischen einem falsch-positiven und einem falsch-negativen Fehler bei
-  dieser Prüfung. Welcher ist teurer/gefährlicher – und wie stellt man die KI entsprechend ein?
+  Erkläre für diese Prüfung den Unterschied zwischen falsch-positiv (gute Scheibe wird
+  aussortiert) und falsch-negativ (Scheibe mit Riss wird durchgelassen). Welcher Fehler
+  ist hier teurer bzw. gefährlicher – und wie stellt man die KI entsprechend ein?
   ```
 
-  Bewerte selbst: Wie viel Kontrolle behält der Mensch?
+  **Nebenbedingung:** Berücksichtige, dass es hier um ein sicherheitskritisches Bauteil geht.
+
+  **Fertig bist du erst, wenn** du selbst entschieden hast, wie viel Kontrolle der Mensch behält, und das mit dem Sicherheitsrisiko begründet hast.
 tip: |
-  Falsch-negativ (schlechtes Teil durchgelassen) ist meist gefährlicher als falsch-positiv (gutes Teil aussortiert).
+  Ein falsch-negativer Fehler (schlechtes Teil durchgelassen) ist bei sicherheitskritischen Bauteilen meist weit gefährlicher als ein falsch-positiver.
 solution: |
-  Erwartetes Ergebnis: Prüfkonzept mit Datenbedarf und klarer Analyse falsch-positiv/negativ inkl. Konsequenz für
-  die Einstellung. Lernziel: KI-Qualitätsprüfung mit Fehlerkosten-Denken auslegen.
+  Erwartetes Ergebnis: Prüfkonzept mit Datenbedarf und Ablauf plus klare Analyse falsch-positiv/negativ mit der Konsequenz,
+  die KI eher „übervorsichtig" einzustellen und den Menschen als Kontrolle zu behalten. Lernziel: KI-Qualitätsprüfung mit Fehlerkosten-Denken auslegen.

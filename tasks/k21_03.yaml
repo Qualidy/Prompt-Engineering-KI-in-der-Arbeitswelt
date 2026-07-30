@@ -1,25 +1,31 @@
-title: Ist-/Soll-Prozess mit Kennzahlen (Copilot)
+title: Ist-/Soll-Prozess mit ehrlichem KPI
 difficulty: 3
 question: |
-  Analysiere **in Copilot** einen Prozess von Ist zu Soll – für ein selbst erzeugtes Szenario.
+  Ein Bestellprozess ist ineffizient und du sollst einen messbaren Verbesserungsvorschlag liefern – ohne die Zahlen schönzurechnen. Der Ist-Zustand mit Zeitangaben liegt vor.
 
-  **Schritt 1:**
+  **Schritt 1 – Soll-Prozess entwerfen:**
   ```text
-  Erfinde einen ineffizienten Bestellprozess (Ist-Zustand) mit Zeitangaben je Schritt.
+  Hier ist ein ineffizienter Bestellprozess (Ist-Zustand) mit Zeitangaben. Entwirf den
+  optimierten Soll-Prozess und stelle Ist vs. Soll in einer Tabelle gegenüber (je Schritt:
+  Dauer, Verantwortliche, Copilot-Unterstützung ja/nein).
+
+  1. Bedarf per Zuruf/Mail melden – 1 Tag Sammeln
+  2. Bestellung manuell ins System tippen – 20 Min je Bestellung
+  3. Freigabe durch Vorgesetzte – 2 Tage Wartezeit
+  4. Bestellung per Mail an Lieferant – 15 Min
+  5. Wareneingang manuell abgleichen – 30 Min
   ```
-  **Schritt 2:**
+  **Schritt 2 – messbar machen:**
   ```text
-  Entwirf den optimierten Soll-Prozess. Zeige in einer Tabelle Ist vs. Soll je Schritt (Dauer,
-  Verantwortliche, KI-Unterstützung).
-  ```
-  **Schritt 3:**
-  ```text
-  Berechne die Gesamt-Zeitersparnis und nenne einen KPI, an dem man den Erfolg misst.
+  Berechne die Gesamt-Zeitersparnis und nenne EINEN KPI, an dem man den Erfolg misst.
+  Kennzeichne jede Annahme, die du für die Ersparnis triffst.
   ```
 
-  Bewerte selbst: Ist die Zeitersparnis realistisch, oder schöngerechnet?
+  **Nebenbedingung:** Keine Ersparnis ohne benannte Annahme.
+
+  **Fertig bist du erst, wenn** du geprüft hast, ob die Zeitersparnis realistisch oder schöngerechnet ist – und mindestens eine Zahl selbst nach unten korrigiert oder mit einem Argument verteidigt hast.
 tip: |
-  Ohne Kennzahl (KPI) bleibt „schneller" nur ein Gefühl. Mach den Nutzen messbar.
+  Ohne Kennzahl (KPI) bleibt „schneller" nur ein Gefühl. Und eine Ersparnis ohne offengelegte Annahme ist Wunschdenken.
 solution: |
-  Erwartetes Ergebnis: Ist/Soll-Vergleich mit Zeitangaben, messbare Ersparnis, passender KPI; kritische Prüfung der
-  Annahmen. Lernziel: Prozessoptimierung messbar und ehrlich begründen.
+  Erwartetes Ergebnis: Ist/Soll-Tabelle mit Zeitangaben, berechnete Ersparnis, passender KPI und offengelegte Annahmen;
+  mindestens eine Zahl wurde selbst geprüft. Lernziel: Prozessoptimierung messbar und ehrlich begründen.

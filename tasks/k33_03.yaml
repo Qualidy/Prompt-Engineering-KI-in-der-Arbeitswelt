@@ -1,24 +1,38 @@
-title: Datenschutz beim Copilot-Einsatz durchdenken
+title: Prompt datenschutzkonform bereinigen
 difficulty: 3
 question: |
-  Analysiere **in Copilot** ein selbst erzeugtes Szenario – mit Fokus auf sicheren Copilot-Einsatz.
+  Eine Kollegin will Copilot um Hilfe bitten und hat diesen Prompt schon getippt – so darf er nicht abgeschickt werden:
 
-  **Schritt 1:**
   ```text
-  Erfinde eine Situation, in der Mitarbeitende Copilot mit sensiblen Informationen nutzen wollen.
-  ```
-  **Schritt 2:**
-  ```text
-  Welche Daten dürfen NICHT einfach in einen KI-Chat eingegeben werden und warum? Nenne 5 Beispiele.
-  ```
-  **Schritt 3:**
-  ```text
-  Formuliere 5 einfache Verhaltensregeln für den datenschutzkonformen Umgang mit Copilot im Alltag.
+  "Formuliere eine freundliche Kuendigungsbestaetigung fuer Frau Sabine Klein (Personalnummer 7789,
+  geb. 02.05.1980, wohnhaft Lindenstr. 4, 50667 Koeln). Grund: krankheitsbedingte Fehlzeiten wegen
+  ihrer Depression. Ihre private Mail sabine.klein@gmx.de soll in CC."
   ```
 
-  Bewerte selbst: Worin unterscheidet sich ein geschäftlicher (mit Datenschutz) von einem privaten KI-Zugang?
+  Lass Copilot den Prompt datenschutzkritisch analysieren – und bereinigen:
+
+  ```text
+  Analysiere diesen geplanten Prompt: Welche Angaben gehoeren NICHT in einen KI-Chat und warum
+  (nenne besonders sensible Daten gesondert)? Schreibe den Prompt dann so um, dass die Aufgabe
+  weiterhin loesbar ist, aber keine personenbezogenen oder sensiblen Daten mehr enthalten sind.
+  [hier den Prompt einfuegen]
+  ```
+
+  Jetzt der anspruchsvolle Teil – **leite selbst eine Regel ab und triff eine Grenzentscheidung**:
+
+  ```text
+  Formuliere aus diesem Fall 5 einfache Verhaltensregeln, welche Daten nie in einen Prompt gehoeren.
+  Und: Wuerde sich an deiner Einschaetzung etwas aendern, wenn dies ein geschaeftlicher Copilot-Zugang
+  (Firmen-Tenant) statt eines privaten waere? Begruende.
+  ```
+
+  **Ziel:** ein bereinigter, weiterhin lösbarer Prompt, fünf klare Verhaltensregeln und eine begründete Einschätzung zum Unterschied privat vs. geschäftlich.
+
+  **Fertig bist du erst, wenn** du selbst entschieden hast, ob die Aufgabe überhaupt in einen KI-Chat gehört – und mindestens eine Angabe benennst, die auch im Firmen-Tenant nichts im Prompt zu suchen hat (z. B. die Gesundheitsangabe „Depression").
 tip: |
-  Faustregel: Keine personenbezogenen oder vertraulichen Daten in Prompts, wenn der Datenschutz-Rahmen unklar ist. Geschäftliche Tenants bieten mehr Schutz als private Zugänge.
+  Faustregel: keine personenbezogenen oder vertraulichen Daten in Prompts, wenn der Datenschutz-Rahmen unklar ist. Gesundheitsdaten sind besonders sensibel. Ein Firmen-Tenant bietet mehr Schutz als ein privater Zugang – aber er ist kein Freibrief für sensible Personendaten.
 solution: |
-  Erwartetes Ergebnis: klare Liste sensibler Daten und 5 praktikable Verhaltensregeln. Lernziel: Copilot im Alltag
-  datenschutzbewusst nutzen.
+  Erwartetes Ergebnis: Erkennen, dass Name, Personalnummer, Geburtsdatum, Adresse, private Mail und vor allem die
+  Gesundheitsangabe nicht in den Prompt gehören; ein neutraler, mit Platzhaltern arbeitender Prompt; fünf
+  praktikable Regeln; und die Einsicht, dass ein Firmen-Tenant zwar mehr schützt, sensible Gesundheitsdaten aber
+  trotzdem draußen bleiben. Lernziel: Prompts datenschutzbewusst formulieren und die eigene Grenze ziehen.

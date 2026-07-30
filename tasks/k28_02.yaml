@@ -1,18 +1,37 @@
-title: Dokumente klassifizieren und weiterleiten
+title: Eingangspost klassifizieren und routen
 difficulty: 2
 question: |
-  Arbeite **in Copilot** – lass die Dokumente zuerst erzeugen.
+  Fünf Kurznachrichten aus dem zentralen Postfach eines Unternehmens sollen automatisch der richtigen Abteilung zugeordnet werden:
+
   ```text
-  Erstelle die Kurztexte von 5 verschiedenen Eingangsdokumenten (z. B. Rechnung, Bewerbung,
-  Beschwerde, Bestellung, Werbung).
+  1) "Ihre Rechnung RE-889 ist noch offen, bitte um Zahlung bis Freitag."
+  2) "Anbei meine Bewerbung als Industriemechaniker, Zeugnisse im Anhang."
+  3) "Die gelieferte Pumpe ist defekt, ich verlange Ersatz oder Geld zurueck."
+  4) "Koennen Sie mir ein Angebot fuer 20 Kartons Etiketten machen?"
+  5) "Nutzen Sie schon unsere KI-Loesung? Jetzt 30 Tage gratis testen!"
   ```
-  Dann:
+
+  Lass Copilot klassifizieren und routen:
+
   ```text
-  Klassifiziere jedes Dokument nach Typ und schlage die zuständige Abteilung vor. Stelle es als
-  Tabelle dar (Dokument, Typ, Abteilung, Begründung).
+  Klassifiziere jede der 5 Nachrichten nach Typ (z. B. Zahlungserinnerung, Bewerbung, Beschwerde,
+  Angebotsanfrage, Werbung) und schlage die zustaendige Abteilung vor. Tabelle: Nr, Typ, Abteilung,
+  kurze Begruendung.
+  [hier die 5 Nachrichten einfuegen]
   ```
+
+  Jetzt der Twist – eine Nachricht ist **mehrdeutig**. Lass Copilot damit ehrlich umgehen:
+
+  ```text
+  Nachricht 3 koennte Beschwerde ODER Retoure/Reklamation sein und beides betrifft andere Abteilungen.
+  Wie sollte ein automatisches System mit solchen unsicheren Faellen umgehen, statt zu raten? Schlage
+  eine Regel vor (z. B. Konfidenz niedrig -> zur manuellen Sichtung).
+  ```
+
+  **Ziel:** eine plausible Klassifikation **und** eine klare Regel, was bei unsicheren Fällen passiert – statt blindem Raten.
 tip: |
-  Automatische Klassifikation und Weiterleitung ist ein Klassiker: spart das manuelle Sortieren der Eingangspost.
+  Automatisches Routing spart das manuelle Sortieren. Aber der eigentliche Reifegrad zeigt sich im Umgang mit Grenzfällen: Ein gutes System weiß, wann es unsicher ist, und leitet dann an einen Menschen weiter.
 solution: |
-  Erwartetes Ergebnis: korrekte Klassifikation und plausible Weiterleitung. Lernziel: Dokumente automatisch
-  sortieren und routen.
+  Erwartetes Ergebnis: 5 nachvollziehbare Zuordnungen und eine sinnvolle Unsicherheitsregel (niedrige Konfidenz →
+  manuelle Sichtung statt Zwangszuordnung). Lernziel: Klassifikation nicht nur durchführen, sondern Grenzfälle bewusst
+  behandeln.

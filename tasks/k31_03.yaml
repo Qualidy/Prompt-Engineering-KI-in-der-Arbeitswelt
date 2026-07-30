@@ -1,25 +1,38 @@
-title: Ethik-Check für einen Use Case (Copilot)
+title: Ethik-Check mit eigener Verantwortungsentscheidung
 difficulty: 3
 question: |
-  Führe **in Copilot** einen strukturierten Ethik-Check für ein selbst erzeugtes Szenario durch.
+  Ein Vorschlag mit ethischer Sprengkraft liegt auf dem Tisch. Prüfe ihn strukturiert:
 
-  **Schritt 1:**
   ```text
-  Erfinde einen KI-Use-Case mit ethischer Sprengkraft (z. B. Verhaltensanalyse von Kunden).
-  ```
-  **Schritt 2:**
-  ```text
-  Prüfe ihn entlang von: Fairness, Transparenz, Selbstbestimmung, mögliche Schäden, Verantwortung.
-  Bewerte jeden Punkt (unkritisch/bedenklich/kritisch) mit Begründung.
-  ```
-  **Schritt 3:**
-  ```text
-  Formuliere Auflagen, unter denen der Einsatz vertretbar wäre – oder begründe, warum man es lassen sollte.
+  Ein Einzelhaendler will eine KI einsetzen, die aus Kaufhistorie und Bewegungsdaten (App-Standort)
+  vorhersagt, welche Kunden "abwanderungsgefaehrdet" sind, um ihnen gezielt Rabatte zu schicken.
+  Nebeneffekt: Das System erkennt auch finanzielle Notlagen und koennte diese fuer Preisgestaltung nutzen.
   ```
 
-  Bewerte selbst: Würdest du diesen Use Case verantworten? Warum (nicht)?
+  Lass Copilot einen strukturierten Ethik-Check durchführen:
+
+  ```text
+  Pruefe diesen Use Case entlang von: Fairness, Transparenz, Selbstbestimmung, moegliche Schaeden,
+  Verantwortung. Bewerte jeden Punkt (unkritisch / bedenklich / kritisch) mit Begruendung. Formuliere
+  danach Auflagen, unter denen der Einsatz vertretbar waere - oder begruende, warum man ihn lassen sollte.
+  [hier den Use Case einfuegen]
+  ```
+
+  Jetzt der anspruchsvolle Teil – **triff selbst eine Verantwortungsentscheidung und widersprich ggf.**:
+
+  ```text
+  Angenommen, du wuerdest diesen Einsatz verantworten. Bei welchem der fuenf Punkte ist Copilots
+  Bewertung deiner Meinung nach zu milde? Begruende, wo du strenger urteilst, und entscheide klar:
+  umsetzen mit Auflagen oder nicht umsetzen.
+  ```
+
+  **Ziel:** eine strukturierte Bewertung entlang der fünf Kriterien und eine klare, begründete eigene Entscheidung.
+
+  **Fertig bist du erst, wenn** du bei mindestens einem Kriterium Copilots Einschätzung selbst hinterfragt (und ggf. verschärft) hast – z. B. die Nutzung erkannter Notlagen für die Preisgestaltung als „kritisch/nicht vertretbar" eingestuft hast.
 tip: |
-  „Technisch möglich" heißt nicht „ethisch vertretbar". Ein guter Check endet manchmal mit „nicht umsetzen".
+  „Technisch möglich" heißt nicht „ethisch vertretbar". KI-Tools urteilen manchmal zu milde über kommerziell attraktive, aber grenzwertige Anwendungen. Ein guter Check endet manchmal mit „nicht umsetzen".
 solution: |
-  Erwartetes Ergebnis: strukturierte Bewertung entlang der Kriterien und eine klare, begründete Haltung.
-  Lernziel: Ethik als bewusste Entscheidung statt Bauchgefühl.
+  Erwartetes Ergebnis: eine differenzierte Bewertung der fünf Kriterien, benannte Auflagen und eine klare Haltung.
+  Entscheidend ist die Eigenentscheidung: Du hast mindestens eine zu milde KI-Einschätzung verschärft (besonders die
+  Ausnutzung finanzieller Notlagen). Lernziel: Ethik als bewusste Verantwortungsentscheidung, nicht als Bauchgefühl
+  oder blindes Übernehmen der KI-Bewertung.

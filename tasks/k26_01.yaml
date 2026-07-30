@@ -1,13 +1,21 @@
-title: Wartungsstrategien mit Copilot vergleichen
+title: Wartungsstrategie für einen Aufzug wählen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Der Betreiber eines Bürogebäudes fragt dich, wie er den Personenaufzug künftig warten soll. Du sollst die drei Strategien vergleichen und eine Empfehlung geben. Der Kontext steht fest:
+
+  > **Aufzug im Bürohaus:** 8 Etagen, ganztägig in Betrieb, ein Ausfall verärgert Mieter und kostet Servicegebühr. Wartungsbudget ist begrenzt.
+
+  Öffne Copilot und erledige die Aufgabe in einem Auftrag:
+
   ```text
-  Erkläre an einem Beispiel (z. B. Aufzug) den Unterschied zwischen reaktiver, vorbeugender und
-  vorausschauender Wartung. Nenne je einen Vor- und Nachteil. Als Tabelle.
+  Vergleiche für diesen Aufzug (8 Etagen, Dauerbetrieb, begrenztes Budget) die reaktive,
+  vorbeugende und vorausschauende Wartung in einer Tabelle: je ein Vorteil und ein
+  Nachteil. Empfiehl anschließend eine Strategie für genau diesen Fall und begründe.
   ```
+
+  **Ziel:** eine klare Empfehlung, die zum Aufzug-Szenario passt – nicht nur eine allgemeine Definition der drei Strategien.
 tip: |
-  Vorausschauend = warten, kurz bevor es kaputtgeht (datenbasiert). Vorbeugend = feste Intervalle, egal ob nötig.
+  Vorausschauend = warten kurz bevor etwas kaputtgeht (datenbasiert). Vorbeugend = feste Intervalle, egal ob nötig. Reaktiv = erst nach dem Ausfall.
 solution: |
-  Erwartetes Ergebnis: klare Gegenüberstellung der 3 Strategien mit Vor-/Nachteilen. Lernziel: Predictive
-  Maintenance von anderen Strategien abgrenzen.
+  Erwartetes Ergebnis: klare Gegenüberstellung der 3 Strategien mit Vor-/Nachteilen und eine begründete Empfehlung für den
+  Aufzug (oft vorbeugend mit Tendenz zu vorausschauend). Lernziel: Predictive Maintenance von anderen Strategien abgrenzen und situativ einordnen.

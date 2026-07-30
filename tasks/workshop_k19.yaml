@@ -1,22 +1,28 @@
-title: Content-Kampagne für einen Produktlaunch in Copilot
+title: Kampagnen-Sprint mit Kurskorrektur
 difficulty: 4
 question: |
-  Produziere **in Copilot** ein komplettes Content-Paket für einen fiktiven Produktlaunch.
+  **Szenario:** Du verantwortest den Launch von „Zitrus Fresh". Das Werbebudget ist knapp, du hast **eine Woche**, und dein Ziel ist hart: **500 Erstbestellungen** über einen Rabattcode. Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**, nicht nur „irgendeinen Text".
 
-  **Schritt 1 – Konzept:**
-  ```text
-  Erfinde ein Produkt, eine Zielgruppe und eine Kernbotschaft für den Launch.
-  ```
-  **Schritt 2 – Assets erstellen:** Lass Copilot erzeugen: 1 Bild-Prompt fürs Hauptmotiv, 3 Social-Posts
-  (verschiedene Kanäle), 1 Newsletter-Text, 5 Hashtags.
+  **Runde 1 – Kampagne bauen.** Entwickle ein Content-Paket: Positionierung in einem Satz, 3 Instagram-Posts, 1 LinkedIn-Post, 1 Newsletter, 1 Bild-Prompt fürs Hauptmotiv und die Mechanik des Rabattcodes.
 
-  **Schritt 3 – Konsistenz:** Prüfe, ob Tonalität und Botschaft über alle Assets einheitlich sind. Lass Copilot Abweichungen glätten.
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Das Paket muss **alle** erfüllen. Lass Copilot das Paket gegen diese Checkliste prüfen und jede Lücke schließen:
 
-  **Schritt 4 – Verantwortung:** Ergänze eine kurze Checkliste, was vor der Veröffentlichung geprüft werden muss (Fakten, Rechte, Kennzeichnung).
+  1. einheitliche Tonalität über alle Assets
+  2. klarer Call-to-Action **mit Rabattcode in jedem Asset**
+  3. keine unzulässigen Health-Claims (siehe Kapitel 32)
+  4. je Kanal passende Länge und Form
 
-  **Deliverable:** das fertige Content-Paket + Veröffentlichungs-Checkliste.
+  **Runde 3 – Kurskorrektur (Komplikation).** Nach zwei Tagen die Realität: Die Instagram-Posts bekommen **Reichweite, aber kaum Klicks** auf den Code. Analysiere mit Copilot mögliche Ursachen und überarbeite die 3 Posts mit einer **neuen Hook-Strategie**.
+
+  **Runde 4 – Entscheidung unter Druck.** Das Restbudget reicht nur für **einen** Kanal. Lass dir Pro/Contra je Kanal geben, triff eine begründete Wahl – und **widersprich Copilot**, wenn die Begründung dünn ist.
+
+  **Deliverable:** finales Content-Paket (Version 2 nach Kurskorrektur) + ausgefüllte Qualitäts-Checkliste + begründete Budget-Entscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind und deine Budget-Entscheidung auf einem echten Argument beruht (nicht auf „Instagram ist halt beliebt").
 tip: |
-  Konsistenz macht Marken stark: Gleiche Tonalität und Botschaft über alle Kanäle hinweg.
+  Lass Copilot nicht nur produzieren, sondern gegen deine Kriterien prüfen und nach der Komplikation neu denken. Der Wert entsteht in Runde 3 und 4, nicht in Runde 1.
 solution: |
-  Bewertungskriterien: vollständiges, konsistentes Paket, kanalgerechte Texte, sinnvolle Prüf-Checkliste.
-  Lernziel: mit KI schnell ein stimmiges, verantwortungsvoll geprüftes Medienpaket erstellen.
+  Bewertungskriterien: (1) vollständiges, konsistentes Paket; (2) alle vier Pflichtkriterien nachweislich erfüllt;
+  (3) die überarbeiteten Posts adressieren das Klick-Problem mit erkennbar neuer Hook-Logik; (4) die Budget-Entscheidung
+  ist mit einem tragfähigen Argument begründet und nicht blind von Copilot übernommen. Lernziel: eine Kampagne unter
+  echten Randbedingungen steuern, Qualität sichern und unter Unsicherheit entscheiden.

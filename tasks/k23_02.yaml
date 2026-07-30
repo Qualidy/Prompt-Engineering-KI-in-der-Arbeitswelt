@@ -1,17 +1,28 @@
-title: Kurz-Lastenheft mit Copilot erstellen
+title: Kurz-Lastenheft mit messbaren Anforderungen
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  Für ein rollbares Transportgestell in einer Werkstatt soll ein kurzes Lastenheft entstehen. Die Eckdaten liegen vor – deine Aufgabe ist, daraus überprüfbare Anforderungen zu machen.
+
   ```text
-  Erfinde ein technisches Produkt (z. B. ein Transportgestell) und erstelle ein kurzes Lastenheft:
-  Zweck, Muss-Anforderungen, Kann-Anforderungen, Randbedingungen.
+  Erstelle aus diesen Eckdaten ein kurzes Lastenheft (Zweck, Muss-Anforderungen, Kann-
+  Anforderungen, Randbedingungen) für ein rollbares Transportgestell:
+  - transportiert Werkstücke bis 80 kg
+  - passt durch eine Standard-Werkstatttür
+  - von einer Person allein bewegbar
+  - feststellbare Rollen
+  - Einsatz in einer Metallwerkstatt (Späne, Öl)
   ```
-  Verfeinere dann:
+
+  Jetzt der Twist – mach die Anforderungen prüfbar:
+
   ```text
-  Formuliere jede Muss-Anforderung überprüfbar (messbar), z. B. „trägt mindestens 50 kg" statt „ist stabil".
+  Formuliere jede Muss-Anforderung messbar und überprüfbar, z. B. "trägt mindestens 80 kg"
+  statt "ist stabil" oder "Durchfahrtsbreite max. 80 cm" statt "passt durch die Tür".
   ```
+
+  **Ziel:** ein Lastenheft, dessen Muss-Anforderungen sich später eindeutig mit Ja/Nein abnehmen lassen.
 tip: |
-  Gute Anforderungen sind messbar und prüfbar – „stabil" ist Auslegungssache, „trägt 50 kg" nicht.
+  Gute Anforderungen sind messbar und prüfbar – „stabil" ist Auslegungssache, „trägt 80 kg" nicht.
 solution: |
-  Erwartetes Ergebnis: strukturiertes Lastenheft mit messbaren Muss-Anforderungen. Lernziel: Anforderungen präzise
-  und prüfbar formulieren – die Basis für (generatives) Design.
+  Erwartetes Ergebnis: strukturiertes Lastenheft mit messbaren Muss-Anforderungen (Zahlen, Grenzwerte, Normen). Lernziel:
+  Anforderungen präzise und prüfbar formulieren – die Basis für eine belastbare Konstruktion.

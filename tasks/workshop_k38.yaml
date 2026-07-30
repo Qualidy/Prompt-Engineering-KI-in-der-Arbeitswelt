@@ -1,26 +1,33 @@
-title: KI-Geschäftsmodell pitchen (Copilot)
+title: KI-Geschäftsmodell bis zum Investoren-Pitch verteidigen
 difficulty: 4
 question: |
-  Entwickle **in Copilot** ein KI-Geschäftsmodell bis zum kurzen Pitch – selbst erzeugt.
+  **Szenario:** Du entwickelst ein KI-Angebot für ein reales Problem:
 
-  **Schritt 1:**
-  ```text
-  Erfinde ein Problem eines Kundensegments, das man mit einem KI-Angebot lösen könnte.
-  ```
-  **Schritt 2:**
-  ```text
-  Entwickle das Geschäftsmodell: Nutzenversprechen, Zielkunde, Erlösmodell, Schlüsselressourcen,
-  Wettbewerbsvorteil.
-  ```
-  **Schritt 3:**
-  ```text
-  Formuliere einen 60-Sekunden-Pitch für Investoren.
-  ```
-  **Schritt 4 – kritische Fragen:** Lass Copilot die 3 härtesten Investorenfragen stellen und beantworte sie selbst.
+  > **Problem:** Kleine Steuerkanzleien (2–10 Personen) ertrinken in eingehenden Belegen ihrer Mandanten – unsortiert, in schlechter Qualität, per Foto und E-Mail. Die Vorerfassung frisst teure Fachkraft-Stunden.
 
-  **Deliverable:** Geschäftsmodell-Übersicht + 60-Sekunden-Pitch + Antworten auf die harten Fragen.
+  Dein hartes Ziel: ein tragfähiges Geschäftsmodell **plus** einen Pitch, der drei kritische Investorenfragen übersteht. Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.
+
+  **Runde 1 – Geschäftsmodell bauen.** Entwickle: Nutzenversprechen, Zielkunde, Erlösmodell (inkl. Preislogik), Schlüsselressourcen und Wettbewerbsvorteil – plus einen 60-Sekunden-Pitch für Investoren.
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Das Modell muss **alle** erfüllen. Lass Copilot es gegen diese Checkliste prüfen und jede Lücke schließen:
+
+  1. das Nutzenversprechen löst ein „must-have"-Problem, nicht ein „nice-to-have"
+  2. das Erlösmodell rechnet sich für den Kunden (grobe Zahl: Ersparnis > Preis)
+  3. der Wettbewerbsvorteil ist mehr als „wir sind schneller/günstiger"
+  4. Datenschutz/Vertraulichkeit sind adressiert (Steuerdaten sind hochsensibel, siehe Kapitel 33)
+
+  **Runde 3 – Komplikation.** Beim Testkunden zeigt sich: Die KI erkennt Belege gut, aber die Kanzleien **vertrauen dem Ergebnis nicht** und prüfen jeden Beleg doch von Hand nach – die Zeitersparnis verpufft. Lass Copilot Ursachen und Auswege analysieren und überarbeite das Angebot so, dass es echtes Vertrauen und damit echte Ersparnis erzeugt (z. B. Nachvollziehbarkeit, Haftung, schrittweise Autonomie).
+
+  **Runde 4 – Entscheidung unter Abwägung.** Ein Investor drängt auf ein **schnelles, aggressives Wachstum** mit vielen Kanzleien gleichzeitig; das gefährdet aber die Datensicherheit und die Qualität. Lass dir Pro/Contra geben, entscheide zwischen „schnell skalieren" und „langsam, aber vertrauenswürdig" – und **widersprich Copilot oder dem Investor**, wenn Wachstum über Datensicherheit gestellt wird, ohne das zu begründen.
+
+  **Deliverable:** Geschäftsmodell-Übersicht (Version 2 nach Komplikation) + 60-Sekunden-Pitch + ausgefüllte Pflicht-Checkliste + beantwortete 3 härteste Investorenfragen + begründete Wachstumsentscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, das überarbeitete Angebot das Vertrauensproblem löst und deine Wachstumsentscheidung die Datensicherheit nicht dem Tempo opfert.
 tip: |
-  Ein guter Pitch beantwortet in Sekunden: Welches Problem, für wen, warum ihr, wie verdient ihr Geld?
+  Ein guter Pitch beantwortet in Sekunden: welches Problem, für wen, warum ihr, wie verdient ihr Geld? Der Wert entsteht in Runde 3 und 4: Ein Angebot spart nur dann Zeit, wenn der Kunde dem Ergebnis vertraut – und Wachstum um jeden Preis kann bei sensiblen Daten alles zerstören.
 solution: |
-  Bewertungskriterien: klares Nutzenversprechen, tragfähiges Erlösmodell, überzeugender Pitch, souveräner Umgang
-  mit kritischen Fragen. Lernziel: eine KI-Idee geschäftlich denken und verteidigen.
+  Bewertungskriterien: (1) klares Nutzenversprechen und tragfähiges Erlösmodell; (2) alle vier Pflichtkriterien
+  erfüllt, inkl. Datenschutz; (3) das überarbeitete Angebot adressiert das Vertrauensproblem und stellt die echte
+  Ersparnis wieder her; (4) souveräner Umgang mit den harten Investorenfragen und eine Wachstumsentscheidung, die
+  Datensicherheit nicht dem Tempo opfert, statt Copilot/Investor blind zu folgen. Lernziel: eine KI-Idee geschäftlich
+  denken, gegen echte Einwände verteidigen und verantwortungsvoll skalieren.

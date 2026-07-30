@@ -1,17 +1,22 @@
-title: Persönlichen Prompt-Spickzettel bauen
+title: Einen schwachen Prompt mit allen Techniken aufwerten
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Hier ein typischer, viel zu dünner Prompt, wie ihn viele im Alltag schreiben:
+
+  > „Schreib mir was zu unserem neuen Produkt für die Website."
+
+  Werte ihn in Copilot bewusst mit den Kurstechniken auf:
+
   ```text
-  Fasse die wichtigsten Prompt-Techniken (Rolle, Kontext, Format, Beispiele/Few-Shot, iteratives
-  Nachschärfen) auf einem kompakten Spickzettel zusammen – je Technik ein Satz und ein Mini-Beispiel.
+  Verbessere diesen schwachen Prompt: "Schreib mir was zu unserem neuen Produkt für die Website."
+  Baue die Techniken Rolle, Kontext, Format und ein Qualitätskriterium ein. Zeig mir den
+  fertigen, starken Prompt und markiere in Klammern, welche Technik in welchem Teil steckt.
   ```
-  Passe ihn dann an dich an:
-  ```text
-  Ergänze 3 Prompt-Vorlagen für Aufgaben, die in meinem Berufsalltag oft vorkommen.
-  ```
+
+  **Ziel:** ein einsatzfertiger, starker Prompt, bei dem du zu jedem Bestandteil sagen kannst, welche Technik dahintersteckt und warum sie das Ergebnis verbessert.
 tip: |
-  Ein persönlicher Spickzettel macht dich schneller – halte fest, was für dich funktioniert.
+  Ein guter Prompt nennt Rolle („Du bist…"), Kontext (Produkt, Zielgruppe, Zweck), Format (Länge, Struktur) und ein Qualitätskriterium. „Schreib mir was" lässt Copilot raten – und raten führt zu Beliebigkeit.
 solution: |
-  Erwartetes Ergebnis: ein kompakter, personalisierter Prompt-Spickzettel. Lernziel: das Gelernte in ein eigenes,
-  praktisches Werkzeug überführen.
+  Erwartetes Ergebnis: ein deutlich stärkerer Prompt mit sichtbar eingebauten Techniken (Rolle, Kontext, Format,
+  Qualitätskriterium) und einer Begründung je Baustein. Lernziel: die zentralen Prompt-Techniken bewusst und
+  benennbar einsetzen.

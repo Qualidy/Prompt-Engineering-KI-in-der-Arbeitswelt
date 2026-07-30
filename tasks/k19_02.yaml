@@ -1,17 +1,29 @@
-title: Kreatives Briefing iterativ verfeinern
+title: Eine Botschaft, drei Kanäle
 difficulty: 2
 question: |
-  Arbeite **in Copilot** an einem fiktiven Kampagnentext.
+  Deine Kernbotschaft steht fest:
+
+  > **„Zitrus Fresh – 30 % weniger Zucker, 100 % Bio."**
+
+  Mach in Copilot in einem Auftrag drei **kanalgerechte** Versionen:
+
   ```text
-  Erfinde ein neues Produkt und schreibe einen Werbeslogan dafür.
+  Formuliere aus der Kernbotschaft "Zitrus Fresh – 30% weniger Zucker, 100% Bio" drei Versionen:
+  (1) LinkedIn-Post, sachlich, für Einkäufer im Handel
+  (2) Instagram-Caption, locker, mit Emojis
+  (3) Plakat-Slogan, maximal 6 Wörter
   ```
-  Verfeinere dann gezielt in Varianten:
+
+  Nimm dann die **schwächste** Version und schärfe gezielt nach:
+
   ```text
-  Gib mir 3 Varianten des Slogans: a) seriös, b) humorvoll, c) emotional.
-  Erkläre kurz, für welche Zielgruppe sich welche Variante eignet.
+  Version [Nummer] überzeugt noch nicht. Mach sie [knackiger / konkreter / emotionaler] und gib
+  mir 2 alternative Formulierungen zur Auswahl.
   ```
+
+  **Ziel:** drei Varianten, die du **ohne Nacharbeit** veröffentlichen könntest.
 tip: |
-  Lass dir bewusst Varianten für unterschiedliche Zielgruppen/Tonlagen geben – Vergleichen schärft die Wahl.
+  Dieselbe Botschaft klingt je Kanal anders: LinkedIn nüchtern, Instagram nahbar, Plakat radikal kurz. Ein Text für alle Kanäle passt nirgends richtig.
 solution: |
-  Erwartetes Ergebnis: 3 unterschiedliche Slogan-Varianten mit Zielgruppen-Einordnung. Lernziel: kreative
-  Vielfalt erzeugen und zielgruppengerecht auswählen.
+  Erwartetes Ergebnis: drei deutlich unterschiedliche, kanalgerechte Varianten; die überarbeitete Version ist
+  spürbar besser als der erste Wurf. Lernziel: eine Botschaft zielgerichtet für Kanäle zuschneiden.

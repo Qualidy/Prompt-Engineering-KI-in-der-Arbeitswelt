@@ -1,25 +1,33 @@
-title: KI-Roadmap für die Produktion in Copilot
+title: KI-Roadmap für die Produktion mit Kurskorrektur
 difficulty: 4
 question: |
-  Erstelle **in Copilot** eine KI-Roadmap für einen fiktiven Produktionsbetrieb.
+  **Szenario:** Du bist Werkleiter(in) eines mittelständischen Metallverarbeiters (120 Mitarbeitende, 3 Fertigungslinien). Der Digitalisierungsgrad ist niedrig: Maschinendaten werden kaum erfasst, Planung läuft über Excel. Die Geschäftsführung gibt dir **200.000 € über 2 Jahre** und erwartet eine realistische KI-Roadmap – keine Wunschliste. Arbeite alles in Copilot.
 
-  **Schritt 1:**
-  ```text
-  Erfinde einen Produktionsbetrieb (Produkt, Größe, aktueller Digitalisierungsgrad).
-  ```
-  **Schritt 2:**
-  ```text
-  Sammle 6 mögliche KI-Anwendungen und ordne sie nach Nutzen und Umsetzbarkeit.
-  ```
-  **Schritt 3:**
-  ```text
-  Erstelle eine 3-Phasen-Roadmap (kurz-, mittel-, langfristig) mit je 1–2 Maßnahmen und Voraussetzungen.
-  ```
-  **Schritt 4 – Prüfung:** Ist die Reihenfolge realistisch (erst Datenbasis/Quick Wins, dann Komplexes)? Passe an.
+  **Runde 1 – Ideen sammeln und ordnen.** Nutze die Ausgangslage:
 
-  **Deliverable:** priorisierte KI-Roadmap in 3 Phasen.
+  ```text
+  Betrieb: Metallverarbeiter, 120 Mitarbeitende, 3 Fertigungslinien, niedriger
+  Digitalisierungsgrad (kaum Maschinendaten, Planung per Excel). Sammle 6 mögliche
+  KI-Anwendungen und ordne sie in einer Tabelle nach Nutzen und Umsetzbarkeit.
+  ```
+
+  **Runde 2 – Pflichtkriterien.** Deine Roadmap muss **alle** erfüllen. Lass Copilot prüfen und Lücken schließen:
+
+  1. 3 Phasen (kurz-, mittel-, langfristig) mit je 1–2 Maßnahmen
+  2. jede Maßnahme hat benannte Voraussetzungen (Daten, Technik, Kompetenz)
+  3. die Reihenfolge ist logisch (erst Datenbasis/Quick Wins, dann Komplexes)
+  4. grobe Kostenschätzung passt ins Budget von 200.000 €
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Bei genauem Hinsehen zeigt sich: Für die attraktivste Anwendung (Predictive Maintenance, siehe Kapitel 26) fehlt die **Datenbasis komplett** – es gibt keine historischen Maschinendaten. Überarbeite die Roadmap so, dass Phase 1 erst die Datengrundlage schafft, ohne den Gesamtplan zu sprengen.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung drängt, mit dem „spektakulären" Predictive-Maintenance-Projekt **sofort** zu starten. Lass dir Pro/Contra geben, triff eine begründete Reihenfolge-Entscheidung – und **widersprich Copilot bzw. der Geschäftsführung**, wenn der frühe Start ohne Datenbasis fachlich nicht trägt.
+
+  **Deliverable:** priorisierte KI-Roadmap in 3 Phasen (Version 2 nach Kurskorrektur) + Kostenrahmen + begründete Start-Entscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die fehlende Datenbasis aus Runde 3 in Phase 1 adressiert ist und deine Start-Entscheidung fachlich (nicht politisch) begründet ist.
 tip: |
-  Erst die Datenbasis und schnelle Erfolge, dann komplexe Vorhaben wie Predictive Maintenance.
+  Erst die Datenbasis und schnelle Erfolge, dann komplexe Vorhaben. Der Test kommt in Runde 4: dem Wunsch nach dem „spektakulären" Projekt sachlich standhalten.
 solution: |
-  Bewertungskriterien: sinnvolle Priorisierung, realistische Phasen, benannte Voraussetzungen, kritische Prüfung.
-  Lernziel: eine schlüssige, umsetzbare KI-Roadmap entwickeln.
+  Bewertungskriterien: (1) sinnvoll priorisierte Ideen; (2) alle vier Pflichtkriterien erfüllt; (3) Phase 1 schafft die
+  in Runde 3 fehlende Datenbasis; (4) die Start-Entscheidung ist fachlich begründet (kein PdM ohne Daten) und hält dem Druck
+  stand. Lernziel: eine schlüssige, umsetzbare KI-Roadmap entwickeln und Prioritäten gegen Erwartungsdruck verteidigen.

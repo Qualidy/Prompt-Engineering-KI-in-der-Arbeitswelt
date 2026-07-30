@@ -1,13 +1,25 @@
-title: Black Box vs. Erklärbarkeit mit Copilot
+title: Eine KI-Empfehlung nachvollziehbar machen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Deine Abteilung hat von Copilot eine Empfehlung erhalten – aber niemand versteht, warum:
+
+  > **Empfehlung:** „Lehnen Sie den Kreditantrag von Kundin M. ab."
+  > **Bekannte Fakten:** Einkommen 2.800 €/Monat, seit 6 Jahren fest angestellt, eine laufende Rate (250 €/Monat), keine Zahlungsausfälle, gewünschter Kredit 8.000 €.
+
+  Bring die Empfehlung in Copilot zum Sprechen:
+
   ```text
-  Erkläre den Unterschied zwischen einer „Black Box"-KI und einer erklärbaren KI an einem Beispiel
-  (z. B. Kreditentscheidung). Warum ist Erklärbarkeit gerade dort wichtig?
+  Hier ist eine KI-Empfehlung und die zugrunde liegenden Fakten:
+  Empfehlung: Kreditantrag ablehnen. Fakten: Einkommen 2.800 €/Monat, 6 Jahre fest
+  angestellt, eine laufende Rate 250 €/Monat, keine Zahlungsausfälle, Kreditwunsch 8.000 €.
+  Erkläre in einfacher Sprache, welche Faktoren FÜR und welche GEGEN eine Ablehnung sprechen.
+  Sage am Ende klar, ob die Ablehnung auf Basis dieser Fakten nachvollziehbar ist.
   ```
+
+  **Ziel:** Du kannst die Entscheidung in zwei, drei Sätzen jemandem erklären, der die Zahlen nicht kennt – und du erkennst, ob die Ablehnung überhaupt zu den Fakten passt.
 tip: |
-  Bei Entscheidungen über Menschen (Kredit, Job) reicht „die KI hat das so entschieden" nicht – man muss das Warum kennen.
+  Bei Entscheidungen über Menschen (Kredit, Job) reicht „die KI hat das so entschieden" nicht. Erst wenn du die entscheidenden Faktoren benennen kannst, ist eine Empfehlung nachvollziehbar.
 solution: |
-  Erwartetes Ergebnis: klarer Unterschied Black Box vs. erklärbar und Begründung für die Bedeutung. Lernziel:
-  verstehen, warum Nachvollziehbarkeit oft Pflicht ist.
+  Erwartetes Ergebnis: eine verständliche Pro/Contra-Erklärung und ein klares Urteil zur Nachvollziehbarkeit. Stark
+  ist die Antwort, wenn sie auffällt, dass die Fakten eher FÜR eine Bewilligung sprechen und die Ablehnung damit
+  fragwürdig ist. Lernziel: verstehen, warum Nachvollziehbarkeit bei Entscheidungen über Menschen Pflicht ist.

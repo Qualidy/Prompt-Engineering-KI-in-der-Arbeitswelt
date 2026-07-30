@@ -1,25 +1,39 @@
-title: Nachhaltigkeits-Initiative und Rebound-Effekt (Copilot)
+title: Netto-Nachhaltigkeit einer KI-Maßnahme prüfen
 difficulty: 3
 question: |
-  Entwickle **in Copilot** eine Nachhaltigkeitsinitiative für ein selbst erzeugtes Szenario.
+  Ein Versandhändler will mit KI nachhaltiger werden. Die vorgeschlagene Maßnahme steht schon:
 
-  **Schritt 1:**
   ```text
-  Erfinde ein Unternehmen mit hohem Ressourcenverbrauch und beschreibe den größten Hebel.
-  ```
-  **Schritt 2:**
-  ```text
-  Entwirf eine KI-gestützte Maßnahme mit messbarem Ziel (z. B. -15 % Energie) und benötigten Daten.
-  ```
-  **Schritt 3 – kritisch:**
-  ```text
-  Erkläre den Rebound-Effekt an diesem Beispiel und bedenke außerdem den Energieverbrauch der KI
-  selbst. Bleibt die Maßnahme unterm Strich nachhaltig?
+  Massnahme: KI-gestuetzte Verpackungsoptimierung waehlt je Bestellung die kleinstmoegliche Kartongroesse.
+  Erwartung: -20 % Kartonmaterial, -12 % Transportvolumen.
+  Rahmen: Die KI laeuft dauerhaft in der Cloud und wertet jede der taeglich 40.000 Bestellungen aus.
+  Nebeneffekt-Idee im Team: "Wenn Versand billiger wird, koennen wir aggressiver mit Gratisversand werben."
   ```
 
-  Bewerte selbst: Ist der Netto-Nutzen wirklich positiv?
+  Lass Copilot die Maßnahme zunächst ausarbeiten und dann **kritisch gegenrechnen**:
+
+  ```text
+  Bewerte diese KI-Verpackungsoptimierung ganzheitlich. Nenne den erwarteten Nutzen mit Kennzahlen.
+  Erklaere dann den Rebound-Effekt an genau diesem Beispiel (Gratisversand-Idee) und beziehe den
+  Energie-/CO2-Fussabdruck der KI selbst mit ein (Cloud-Betrieb, 40.000 Auswertungen/Tag). Bleibt die
+  Massnahme unterm Strich netto nachhaltig?
+  ```
+
+  Jetzt der anspruchsvolle Teil – **triff selbst eine begründete Entscheidung**:
+
+  ```text
+  Formuliere zwei Bedingungen, unter denen die Massnahme netto nachhaltig bleibt, und eine Bedingung,
+  unter der sie ins Negative kippt. Auf welche Zahl wuerdest du persoenlich am genauesten schauen,
+  bevor du gruenes Licht gibst?
+  ```
+
+  **Ziel:** eine ehrliche Netto-Bilanz, die Rebound und KI-Fußabdruck einrechnet – nicht schöngerechnet.
+
+  **Fertig bist du erst, wenn** du selbst entschieden hast, ob der Netto-Nutzen positiv ist, und mindestens eine von Copilots optimistischen Annahmen hinterfragt hast (z. B. „−20 % Material" ohne Berücksichtigung des Rebound durch mehr Bestellungen).
 tip: |
-  Rebound: Effizienzgewinne werden oft durch Mehrnutzung „aufgefressen". Und KI selbst verbraucht Energie – beides einrechnen.
+  Rebound: Effizienzgewinne werden oft durch Mehrnutzung „aufgefressen" – billiger Versand kann mehr Bestellungen und Retouren auslösen. Und KI verbraucht selbst Energie. Ehrliche Nachhaltigkeit rechnet beides ein, sonst ist es Greenwashing.
 solution: |
-  Erwartetes Ergebnis: Maßnahme mit messbarem Ziel plus ehrliche Betrachtung von Rebound und KI-Fußabdruck.
-  Lernziel: Nachhaltigkeit ganzheitlich (netto) bewerten, nicht schöngerechnet.
+  Erwartetes Ergebnis: benannter Nutzen mit Kennzahlen, saubere Erklärung des Rebound am Gratisversand-Beispiel,
+  Einbezug des KI-Fußabdrucks und eine klare Netto-Aussage mit Bedingungen. Entscheidend ist die Eigenentscheidung:
+  Du hast eine optimistische Annahme hinterfragt und die kritische Kennzahl benannt. Lernziel: Nachhaltigkeit netto
+  bewerten statt nur den Brutto-Effekt zu feiern.

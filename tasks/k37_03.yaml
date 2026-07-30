@@ -1,25 +1,33 @@
-title: Change-Plan für ein schwieriges Szenario (Copilot)
+title: Change-Plan für eine widerständige Belegschaft
 difficulty: 3
 question: |
-  Entwirf **in Copilot** einen Change-Plan für ein selbst erzeugtes, schwieriges Szenario.
+  Die Ausgangslage ist heikel:
 
-  **Schritt 1:**
+  > **Buchhaltung eines Familienunternehmens:** 6 Mitarbeitende, Altersdurchschnitt 52, im Schnitt 20 Jahre im Betrieb. Copilot soll künftig Rechnungen vorerfassen und Zahlungen abgleichen. Stimmung: „Das haben wir immer selbst gemacht und nie einen Fehler produziert." Zwei Personen gelten als informelle Meinungsführer und sind offen skeptisch.
+
+  Entwirf in Copilot einen Change-Plan nach dem Phasenmodell:
+
   ```text
-  Erfinde eine Situation mit starkem Widerstand gegen eine KI-Einführung (z. B. erfahrene Belegschaft,
-  Sorge um Arbeitsplätze).
-  ```
-  **Schritt 2:**
-  ```text
-  Entwirf einen Plan nach den Phasen "Auftauen – Verändern – Verfestigen": konkrete Maßnahmen je Phase.
-  ```
-  **Schritt 3:**
-  ```text
-  Wie gewinnst du Multiplikatoren/Frühanwender und feierst erste Erfolge sichtbar?
+  Entwirf einen Change-Plan für diese Situation:
+  [Ausgangslage oben einfügen]
+  Struktur nach "Auftauen – Verändern – Verfestigen", je Phase 2-3 konkrete Maßnahmen. Berücksichtige
+  ausdrücklich die langjährige Erfahrung des Teams als Wert, nicht als Hindernis, und wie du die zwei
+  skeptischen Meinungsführer einbindest, statt sie zu übergehen.
   ```
 
-  Bewerte selbst: An welchem Punkt könnte der Change trotzdem kippen – und wie beugst du vor?
+  Jetzt der anspruchsvolle Teil – **das Kipp-Risiko selbst benennen und Copilot fordern**:
+
+  ```text
+  An welchem konkreten Punkt könnte dieser Change trotz Plan kippen? Nenne das eine wahrscheinlichste
+  Scheiter-Szenario und eine Vorbeugung. Sei ehrlich, auch wenn das den Plan angreifbar macht.
+  ```
+
+  **Ziel:** ein Phasenplan, der die Erfahrung des Teams als Stärke nutzt und die Meinungsführer zu Fürsprechern machen will.
+
+  **Fertig bist du erst, wenn** du selbst entschieden hast, ob Copilots Kipp-Szenario das wirklich gefährlichste ist – oder ob du ein anderes für riskanter hältst und begründest, warum.
 tip: |
-  Frühe, sichtbare Erfolge und respektierte Kolleg:innen als Fürsprecher sind stärker als jede Top-down-Ansage.
+  Frühe, sichtbare Erfolge und respektierte Kolleg:innen als Fürsprecher wirken stärker als jede Top-down-Ansage. Erfahrene Skeptiker gewinnt man, indem man ihre Erfahrung ernst nimmt – nicht, indem man sie überredet.
 solution: |
-  Erwartetes Ergebnis: Phasenplan mit konkreten Maßnahmen, Multiplikatoren-Strategie und Risikobetrachtung.
-  Lernziel: Veränderung strukturiert und menschenzentriert steuern.
+  Erwartetes Ergebnis: ein Phasenplan mit konkreten Maßnahmen, einer Multiplikatoren-Strategie und einer ehrlichen
+  Risikobetrachtung, bei der du das gefährlichste Kipp-Szenario selbst bewertet hast. Lernziel: Veränderung
+  strukturiert und menschenzentriert steuern.

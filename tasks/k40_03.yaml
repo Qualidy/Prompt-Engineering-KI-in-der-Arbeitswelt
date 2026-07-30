@@ -1,24 +1,35 @@
-title: 30-Tage-Plan zur Prompting-Meisterschaft (Copilot)
+title: Few-Shot-Prompt bauen und einer Falschauskunft widersprechen
 difficulty: 3
 question: |
-  Entwickle **mit Copilot** einen persönlichen Plan, um Prompt Engineering dauerhaft zu beherrschen.
+  Du sollst eingehende Anfragen automatisch in einen einheitlichen Stil bringen. Zwei Musterbeispiele (dein „Stil") liegen fertig vor:
 
-  **Schritt 1:**
+  > **Beispiel 1 – Eingang:** „wann kommt meine bestellung??" → **Stil:** „Guten Tag, gerne prüfe ich den Status Ihrer Bestellung. Können Sie mir bitte Ihre Bestellnummer nennen?"
+  > **Beispiel 2 – Eingang:** „rechnung ist falsch" → **Stil:** „Guten Tag, das tut mir leid. Damit ich die Rechnung prüfen kann, senden Sie mir bitte die Rechnungsnummer."
+
+  Baue in Copilot einen Few-Shot-Prompt, der diesen Stil auf neue Anfragen überträgt:
+
   ```text
-  Ich möchte in 30 Tagen deutlich besser im Prompting werden. Erstelle einen realistischen Plan mit
-  kleinen täglichen/wöchentlichen Übungen, die je 10–15 Minuten dauern.
-  ```
-  **Schritt 2 – auf deinen Alltag münzen:** Nenne 3 wiederkehrende Aufgaben aus deinem Beruf und lass
-  Copilot je eine passende Übung in den Plan einbauen (ohne dass du echte Dokumente brauchst – Copilot
-  erzeugt Beispielmaterial).
-  **Schritt 3:**
-  ```text
-  Ergänze, woran ich am Ende merke, dass ich besser geworden bin (konkrete Anzeichen).
+  Hier sind zwei Beispiele für unseren Antwortstil:
+  [Beispiel 1 und 2 oben einfügen]
+  Übernimm exakt diesen Stil (höflich, kurz, mit gezielter Rückfrage) und formuliere Antworten
+  für diese drei neuen Eingänge:
+  a) "storno geht nicht"  b) "liefert ihr auch nach österreich?"  c) "ware kaputt angekommen"
   ```
 
-  Bewerte selbst: Ist der Plan realistisch im Alltag durchzuhalten?
+  Jetzt der anspruchsvolle Teil – **eine riskante Aussage abfangen**:
+
+  ```text
+  Prüfe deine drei Antworten: Hast du irgendwo eine inhaltliche Zusage gemacht (z. B. "Storno ist
+  jederzeit möglich" oder "wir liefern nach Österreich"), die du gar nicht kennst? Markiere jede
+  solche Stelle und ersetze sie durch eine ehrliche Rückfrage statt einer erfundenen Zusage.
+  ```
+
+  **Ziel:** drei stilkonforme Antworten, die keine erfundenen Fakten oder Zusagen enthalten.
+
+  **Fertig bist du erst, wenn** du selbst mindestens eine Copilot-Antwort korrigiert hast, weil sie eine Aussage getroffen hat, die im Beispielmaterial gar nicht gedeckt ist.
 tip: |
-  Kompetenz entsteht durch kleine, regelmäßige Übung – nicht durch einen großen Einmal-Kraftakt.
+  Few-Shot heißt: dem Modell 2–3 Beispiele geben, damit es Muster und Stil übernimmt. Aber Achtung – Copilot füllt Wissenslücken gern mit plausibel klingenden Erfindungen. Inhaltliche Zusagen musst du prüfen.
 solution: |
-  Erwartetes Ergebnis: ein realistischer, auf den eigenen Alltag zugeschnittener 30-Tage-Übungsplan mit
-  Fortschritts-Anzeichen. Lernziel: Prompting als dauerhafte Gewohnheit etablieren.
+  Erwartetes Ergebnis: drei stilkonsistente Antworten per Few-Shot und eine kritische Prüfung, bei der du mindestens
+  eine erfundene inhaltliche Zusage durch eine ehrliche Rückfrage ersetzt hast. Lernziel: Few-Shot-Prompting nutzen
+  und Halluzinationen im Ergebnis selbst abfangen.

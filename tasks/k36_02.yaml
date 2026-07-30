@@ -1,18 +1,35 @@
-title: Wann großes, wann kleines Modell? (Copilot)
+title: Modellwahl nach Aufgabe – und ein Grenzfall
 difficulty: 2
 question: |
-  Arbeite **in Copilot**.
+  Vier typische Aufgaben aus dem Büroalltag liegen vor dir:
+
+  > 1. Tippfehler in einer kurzen Notiz korrigieren
+  > 2. Einen Termin aus einer E-Mail extrahieren
+  > 3. Einen 30-seitigen Vertrag auf Risiken prüfen und rechtlich einordnen
+  > 4. Einen Standard-Antwortsatz für eine Kundenmail formulieren
+
+  Lass Copilot begründet zuordnen:
+
   ```text
-  Erfinde 4 Aufgaben unterschiedlicher Komplexität (von „Tippfehler korrigieren" bis „komplexe
-  Analyse").
+  Ordne jeder dieser vier Aufgaben zu, ob ein großes, leistungsstarkes Modell wirklich nötig ist
+  oder ein kleines/effizientes Modell reicht. Begründe jeweils im Sinne von Energie- und Kosten-
+  effizienz:
+  1) Tippfehler korrigieren  2) Termin aus E-Mail extrahieren
+  3) 30-Seiten-Vertrag auf Risiken prüfen  4) Standard-Antwortsatz formulieren
   ```
-  Dann:
+
+  Jetzt der Twist – **prüfe den Grenzfall kritisch**:
+
   ```text
-  Ordne jeder Aufgabe zu, ob ein großes, leistungsstarkes Modell nötig ist oder ein kleines/
-  effizientes Modell reicht. Begründe im Sinne von Energie-/Kosteneffizienz.
+  Bei Aufgabe 3 (Vertrag prüfen): Wo genau liegt die Grenze, ab der Sparen am kleinen Modell
+  gefährlich wird? Nenne ein konkretes Szenario, in dem ein zu kleines Modell echten Schaden
+  anrichten würde.
   ```
+
+  **Ziel:** eine begründete Zuordnung – und ein klares Gespür dafür, wann Effizienz sinnvoll ist und wann Sparen am falschen Ende teuer wird.
 tip: |
-  Nicht jede Aufgabe braucht das größte Modell – für Einfaches reicht oft ein kleines, sparsames Modell.
+  Nicht jede Aufgabe braucht das größte Modell – für Einfaches reicht oft ein kleines, sparsames. Aber bei riskanten, folgenreichen Aufgaben ist das kleinere Modell keine Ersparnis, sondern ein Risiko.
 solution: |
-  Erwartetes Ergebnis: sinnvolle Zuordnung Aufgabe → Modellgröße mit Effizienzbegründung. Lernziel: Ressourcen-
-  bewusst das passende Werkzeug wählen.
+  Erwartetes Ergebnis: eine sinnvolle Zuordnung Aufgabe → Modellgröße mit Effizienzbegründung und die Erkenntnis,
+  dass bei folgenreichen Aufgaben (Vertragsprüfung) Sparsamkeit an Grenzen stößt. Lernziel: ressourcenbewusst das
+  passende Werkzeug wählen, ohne bei riskanten Aufgaben zu sparen.

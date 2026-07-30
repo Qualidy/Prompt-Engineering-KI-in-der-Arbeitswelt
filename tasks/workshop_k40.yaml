@@ -1,29 +1,36 @@
-title: Abschlussprojekt – eine Aufgabe komplett mit Copilot lösen
+title: Capstone – eine echte Arbeitsaufgabe souverän mit Copilot lösen
 difficulty: 4
 question: |
-  Zeige im Abschlussprojekt, dass du Copilot souverän und verantwortungsvoll einsetzt. Wähle eine
-  realistische, wiederkehrende Aufgabe – **ohne echte Dokumente**: Copilot erzeugt alles nötige Material selbst.
+  **Szenario (Capstone):** Du führst hier alles aus dem Kurs zusammen. Deine Rolle und dein Auftrag stehen fest – kein „Erfinde erst etwas", du legst sofort los:
 
-  **Schritt 1 – Aufgabe wählen:** Denk dir eine typische Arbeitsaufgabe aus (z. B. „auf Kundenanfragen
-  antworten", „Meeting vorbereiten und nachbereiten", „einen kurzen Bericht erstellen").
+  > **Rolle:** Du bist Teamleitung im Kundenservice eines Software-Anbieters.
+  > **Auftrag:** Ein wichtiger Geschäftskunde droht in dieser Mail mit Kündigung. Du sollst (a) eine überzeugende Antwortmail und (b) eine interne Kurz-Analyse mit Handlungsempfehlung erstellen.
+  > **Kundenmail:** „Seit dem letzten Update stürzt Ihre Software zweimal täglich ab. Mein Team verliert Arbeitszeit, der Support vertröstet uns seit zwei Wochen. Wenn bis Ende der Woche keine Lösung da ist, kündigen wir den Vertrag über 50 Lizenzen."
 
-  **Schritt 2 – Material erzeugen:**
-  ```text
-  Erfinde eine realistische Ausgangssituation und alle nötigen (fiktiven) Inhalte für diese Aufgabe.
-  ```
-  **Schritt 3 – Lösen mit System:** Bearbeite die Aufgabe in Copilot mit bewusst eingesetzten Techniken
-  (Rolle, Kontext, Format, Few-Shot, Iteration). Dokumentiere deine besten Prompts.
+  Dein hartes Ziel: ein Deliverable, das die Kündigung realistisch abwenden kann und intern eine klare Entscheidung ermöglicht. Setze bewusst die Prompt-Techniken des Kurses ein (Rolle, Kontext, Format, Few-Shot/Beispiel, Iteration) und dokumentiere deine besten Prompts.
 
-  **Schritt 4 – Qualität sichern:** Prüfe das Ergebnis kritisch (Fakten, Ton, Vollständigkeit) und
-  verbessere es in mindestens einer Iteration.
+  **Runde 1 – Erstellen mit System.** Erzeuge (a) die Antwortmail an den Kunden und (b) eine interne Analyse: was ist passiert, wie dringend, welche 2–3 Handlungsoptionen. Nutze bewusst Rolle + Kontext + Format im Prompt.
 
-  **Schritt 5 – Reflexion:** Was hat Copilot gut gemacht, wo musstest DU eingreifen? Wie viel Zeit hast
-  du gespart – und wo lag die Verantwortung klar beim Menschen?
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Das Deliverable muss **alle** erfüllen. Lass Copilot es gegen diese Checkliste prüfen und jede Lücke schließen:
 
-  **Deliverable:** dokumentierte Prompt-Strecke, das finale Ergebnis + eine kurze Reflexion.
+  1. die Antwortmail nimmt den Ärger ernst und macht einen konkreten, terminierten nächsten Schritt
+  2. keine erfundenen Zusagen oder Fakten, die du nicht kennst (Halluzinations-Check)
+  3. die interne Analyse trennt Sofortmaßnahme von Ursachenbehebung
+  4. Ton und Format sind für den jeweiligen Empfänger passend (Kunde vs. intern)
+
+  **Runde 3 – Komplikation.** Neue Information trifft ein: Die Entwicklung sagt, ein echter Fix dauert **mindestens drei Wochen** – die vom Kunden gesetzte Frist (Ende der Woche) ist nicht zu halten. Überarbeite die Antwortmail so, dass sie ehrlich bleibt, den Kunden trotzdem hält (Zwischenlösung, Eskalationsweg) und nichts verspricht, was nicht machbar ist.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Copilot empfiehlt in der internen Analyse, dem Kunden zur Beschwichtigung einen **hohen Rabatt** anzubieten. Wäge Pro/Contra ab (Kosten, Präzedenzfall, Wirkung), triff deine Empfehlung – und **widersprich Copilot**, wenn der Rabatt nur ein teures Pflaster ist, das das eigentliche Problem (die Abstürze) nicht löst.
+
+  **Deliverable:** finale Antwortmail (Version 2 nach Komplikation) + interne Analyse mit Handlungsempfehlung + deine dokumentierte Prompt-Strecke + ausgefüllte Pflicht-Checkliste + eine kurze Reflexion: Wo hat Copilot geholfen, wo musstest DU eingreifen und Verantwortung übernehmen?
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die überarbeitete Mail trotz nicht haltbarer Frist ehrlich und kundenbindend ist und deine Rabatt-Entscheidung auf einem echten Argument beruht – nicht auf „Copilot hat es vorgeschlagen".
 tip: |
-  Das Ziel ist nicht „Copilot macht alles", sondern „Ich steuere Copilot souverän und prüfe verantwortungsvoll".
+  Das Ziel ist nicht „Copilot macht alles", sondern „Ich steuere Copilot souverän und prüfe verantwortungsvoll". Der Wert entsteht in Runde 3 und 4: ehrlich bleiben, wenn die Frist nicht haltbar ist, und einer bequemen Empfehlung widersprechen, wenn sie das Problem nicht löst.
 solution: |
-  Bewertungskriterien: bewusst eingesetzte Prompt-Techniken, dokumentierte Iteration, kritische Qualitätsprüfung,
-  ehrliche Reflexion über Mensch-KI-Arbeitsteilung. Lernziel: alle Kursinhalte in einer realistischen Aufgabe
+  Bewertungskriterien: (1) bewusst und dokumentiert eingesetzte Prompt-Techniken; (2) alle vier Pflichtkriterien
+  erfüllt, insbesondere keine erfundenen Zusagen; (3) die überarbeitete Mail löst die Frist-Komplikation ehrlich und
+  kundenbindend; (4) die Rabatt-Entscheidung ist begründet abgewogen und widerspricht Copilot, wenn dessen Vorschlag
+  das Kernproblem nicht adressiert; (5) ehrliche Reflexion über die Mensch-KI-Arbeitsteilung. Lernziel: alle
+  Kursinhalte – Techniken, kritische Prüfung, Entscheidung unter Unsicherheit – in einer realistischen Aufgabe
   souverän und verantwortungsvoll zusammenführen.

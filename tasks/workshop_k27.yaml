@@ -1,30 +1,39 @@
-title: KI-gestützte Prozessregelung konzipieren (Copilot)
+title: KI-Regelungsassistent für einen Industrieofen absichern
 difficulty: 4
 question: |
-  Konzipiere **in Copilot** eine KI-gestützte Prozessregelung – selbst erzeugt.
+  **Szenario:** Du bist Verfahrensingenieurin in einem Werk mit einem energieintensiven **Härteofen**. Die Geschäftsführung will einen **KI-Regelungsassistenten** einführen, der Stellwerte **vorschlägt** (Entscheidungsunterstützung, keine direkte Steuerung). Dein hartes Ziel: **−8 % Energieverbrauch** bei gleichbleibender Bauteilqualität. Ausgangslage:
 
-  **Schritt 1:**
   ```text
-  Erfinde einen industriellen Prozess mit mehreren Stellgrößen und Zielkonflikten (z. B. Qualität
-  vs. Energieverbrauch).
+  Ofen faehrt drei Zonen (Vorwaerm-, Halte-, Abkuehlzone), Sollprofil je Charge vorgegeben.
+  Stellgroessen: Brennerleistung je Zone, Bandgeschwindigkeit.
+  Qualitaetsgrenzen: Kerntemperatur 850 °C (+/-10 °C), sonst Ausschuss.
+  Harte Sicherheitsgrenze: Zonentemperatur nie ueber 920 °C (Materialschaden/Brandgefahr).
   ```
-  **Schritt 2:**
-  ```text
-  Beschreibe, wie KI die Regelung optimiert: Eingangsgrößen, Ziel(e), Stellgrößen.
-  ```
-  **Schritt 3:**
-  ```text
-  Definiere Sicherheitsgrenzen, Überwachung und den menschlichen Eingriffspunkt.
-  ```
-  **Schritt 4:**
-  ```text
-  Beschreibe, wie man den Regler zuerst risikoarm testet (z. B. Simulation, Parallelbetrieb).
-  ```
-  **Schritt 5 – Prüfung:** Ist der Testansatz wirklich risikoarm? Verbessere ihn.
 
-  **Deliverable:** Regelungskonzept + Sicherheits- und Testkonzept.
+  Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**, nicht nur „irgendein Konzept".
+
+  **Runde 1 – Konzept bauen.** Entwickle: wie der Assistent aus Sollprofil und Messwerten Stellvorschläge ableitet, welche Eingangsgrößen er braucht, wie das Energieziel adressiert wird und wie ein Bediener die Vorschläge annimmt oder ablehnt.
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Der Entwurf muss **alle** erfüllen. Lass Copilot gegen diese Checkliste prüfen und jede Lücke schließen:
+
+  1. harte Sicherheitsgrenze (920 °C) kann durch keinen KI-Vorschlag überschritten werden
+  2. der Mensch bleibt Entscheider (Vorschlag, kein automatischer Eingriff)
+  3. sicherer Rückfallmodus bei Sensor- oder KI-Ausfall ist definiert
+  4. alle Vorschläge und Eingriffe werden protokolliert (Nachvollziehbarkeit)
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Im Probebetrieb zeigt sich: Der Assistent erreicht die −8 % **nur**, indem er wiederholt Stellwerte **dicht an der 920-°C-Grenze** vorschlägt. Analysiere mit Copilot die Ursache und überarbeite das Konzept so, dass das Energieziel **mit Sicherheitsabstand** verfolgt wird (z. B. Warnband, gedeckelte Vorschläge).
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Geschäftsführung fragt: „Warum nicht gleich vollautomatisch regeln, ohne Bediener?" Lass dir von Copilot Pro/Contra geben, triff eine begründete Entscheidung **und widersprich Copilot**, wenn seine Begründung dünn ist (z. B. wenn es Autonomie allein mit „schneller" rechtfertigt).
+
+  **Deliverable:** finales Regelungskonzept (Version 2 nach Kurskorrektur) + ausgefüllte Pflichtkriterien-Checkliste + begründete Entscheidung zum Autonomiegrad.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, das Energieziel mit Sicherheitsabstand erreicht wird und deine Autonomie-Entscheidung auf einem echten Risikoargument beruht (nicht auf „automatisch ist moderner").
 tip: |
-  Neue Regler nie sofort scharf schalten – erst simulieren oder parallel mitlaufen lassen und vergleichen.
+  Der Wert entsteht in Runde 3 und 4: Ein KI-Vorschlag, der ein Ziel nur durch Ausreizen der Sicherheitsgrenze erreicht, ist gefährlich – nicht clever. Und Copilot ist hier Berater, kein Steuerungssystem: Die harte Grenze und die letzte Entscheidung bleiben beim Menschen.
 solution: |
-  Bewertungskriterien: klares Regelungsziel, Sicherheitsgrenzen, menschliche Kontrolle, risikoarmer Test.
-  Lernziel: KI-Regelung sicher einführen.
+  Bewertungskriterien: (1) vollständiges, umsetzbares Assistenzkonzept mit klarer Eingangs-/Vorschlagslogik;
+  (2) alle vier Pflichtkriterien nachweislich erfüllt (harte Grenze unüberschreitbar, Mensch als Entscheider,
+  Rückfallmodus, Protokollierung); (3) die überarbeitete Version erreicht −8 % mit erkennbarem Sicherheitsabstand
+  statt am Limit; (4) die Autonomie-Entscheidung ist mit einem tragfähigen Risikoargument begründet und nicht blind
+  von Copilot übernommen. Lernziel: eine KI-gestützte Prozessregelung unter echten Sicherheits- und Zielkonflikten
+  konzipieren, absichern und verantwortungsvoll über den Autonomiegrad entscheiden.

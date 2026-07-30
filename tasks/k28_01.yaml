@@ -1,18 +1,27 @@
-title: Rechnungsdaten mit Copilot extrahieren
+title: Rechnungsfelder aus einer E-Mail extrahieren
 difficulty: 1
 question: |
-  Mach das **live in Copilot** – Copilot erzeugt das Dokument selbst.
+  In der Buchhaltung landet diese Rechnung als Fließtext in einer E-Mail. Du brauchst die Kerndaten sauber in einer Tabelle:
+
   ```text
-  Erstelle den Text einer fiktiven Rechnung (Absender, Rechnungsnummer, Datum, 3 Positionen,
-  Gesamtbetrag, Zahlungsziel).
+  Von: buchhaltung@bueromoebel-nord.de
+  Sehr geehrte Damen und Herren, anbei unsere Rechnung Nr. RE-2026-0473 vom 14.03.2026.
+  Geliefert: 4x Buerostuhl (je 189,00 EUR), 2x Rollcontainer (je 145,50 EUR).
+  Gesamtbetrag: 1047,00 EUR inkl. MwSt. Zahlbar bis 28.03.2026 auf IBAN DE12 3456 7890 1234 5678 90.
   ```
-  Dann:
+
+  Öffne Copilot und erledige die Extraktion in einem Auftrag:
+
   ```text
-  Extrahiere aus dieser Rechnung folgende Felder als Tabelle: Rechnungsnummer, Datum, Gesamtbetrag,
-  Zahlungsziel.
+  Extrahiere aus diesem Rechnungstext folgende Felder als Tabelle: Rechnungsnummer, Rechnungsdatum,
+  Anzahl Positionen, Gesamtbetrag, Zahlungsziel, IBAN. Uebernimm nur, was wirklich im Text steht.
+  [hier den Rechnungstext oben einfuegen]
   ```
+
+  **Ziel:** eine korrekte Feldtabelle, in der jeder Wert exakt dem Text entspricht – nichts ergänzt, nichts verändert.
 tip: |
-  Dokumentenverarbeitung heißt: aus unstrukturiertem Text strukturierte Felder gewinnen.
+  Dokumentenverarbeitung heißt: aus unstrukturiertem Text strukturierte Felder gewinnen. Prüfe die Zahlen gegen den Originaltext – gerade Beträge und Datumsangaben liest KI manchmal falsch.
 solution: |
-  Erwartetes Ergebnis: korrekt extrahierte Felder in Tabellenform. Lernziel: das Grundprinzip automatischer
-  Dokumentenextraktion erleben.
+  Erwartetes Ergebnis: RE-2026-0473, 14.03.2026, 2 Positionen (bzw. 6 Stück – beides vertretbar, wenn konsistent),
+  1047,00 EUR, 28.03.2026, IBAN korrekt. Stark ist die Antwort, wenn alle Werte exakt aus dem Text stammen.
+  Lernziel: das Grundprinzip automatischer Feldextraktion erleben und gegen die Quelle prüfen.

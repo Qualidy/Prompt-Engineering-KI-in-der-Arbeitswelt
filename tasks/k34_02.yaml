@@ -1,18 +1,29 @@
-title: Copilot seine eigene Antwort erklären lassen
+title: Begründung anfordern und ihre Belastbarkeit prüfen
 difficulty: 2
 question: |
-  Teste **in Copilot** Erklärbarkeit direkt.
+  Du legst Copilot eine echte Team-Entscheidung vor:
+
+  > **Frage:** Sollen wir den wöchentlichen Status-Call von 60 auf 30 Minuten kürzen?
+  > **Kontext:** 8-köpfiges Team, viele klagen über zu viele Meetings, zwei Projekte laufen kritisch.
+
+  Hol dir zuerst Empfehlung samt Begründung:
+
   ```text
-  Bewerte diese fiktive Situation: Soll ein Team eine 4-Tage-Woche einführen? Gib eine klare Empfehlung.
+  Soll ein 8-köpfiges Team seinen wöchentlichen 60-Minuten-Status-Call auf 30 Minuten kürzen?
+  Zwei Projekte laufen gerade kritisch. Gib eine klare Empfehlung und erkläre Schritt für Schritt,
+  wie du dazu kommst, welche Annahmen du triffst und was dein größter Unsicherheitsfaktor ist.
   ```
-  Dann verlange die Begründung:
+
+  Jetzt der Twist – **prüfe, ob die Begründung trägt**, indem du eine Annahme kippst:
+
   ```text
-  Erkläre Schritt für Schritt, wie du zu dieser Empfehlung gekommen bist, welche Annahmen du
-  getroffen hast und was dein größter Unsicherheitsfaktor ist.
+  Nimm an, meine wichtigste Annahme ist falsch: Die Meetings sind NICHT zu lang, sondern
+  schlecht vorbereitet. Ändert das deine Empfehlung? Wenn ja, wie – wenn nein, warum nicht?
   ```
-  Beurteile: Wie nachvollziehbar ist die Erklärung wirklich – oder klingt sie nur plausibel?
+
+  **Ziel:** Du erkennst, ob die Begründung auf echten Argumenten steht oder nur plausibel klingt – **Fertig bist du erst, wenn** du benennen kannst, welche eine Annahme die ganze Empfehlung trägt.
 tip: |
-  Vorsicht: Ein LLM kann eine überzeugende Erklärung „nachliefern", die nicht unbedingt dem echten Rechenweg entspricht.
+  Ein Sprachmodell liefert oft eine überzeugend klingende Begründung nach, die nicht dem echten Rechenweg entspricht. Der Belastbarkeits-Test: Kippt die Empfehlung, wenn du eine Kernannahme änderst?
 solution: |
-  Erwartetes Ergebnis: eine Empfehlung mit nachgereichter Begründung und eine kritische Einschätzung ihrer
-  Verlässlichkeit. Lernziel: „plausibel klingend" ist nicht dasselbe wie „echte Erklärbarkeit".
+  Erwartetes Ergebnis: eine begründete Empfehlung plus ein Stresstest, der zeigt, wie stark die Empfehlung an einer
+  einzelnen Annahme hängt. Lernziel: „plausibel klingend" von „belastbar begründet" unterscheiden.

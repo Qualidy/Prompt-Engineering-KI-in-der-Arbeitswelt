@@ -1,26 +1,26 @@
-title: Content-Paket erstellen und Rechte prüfen (Copilot)
+title: Content-Serie mit Compliance-Check
 difficulty: 3
 question: |
-  Erstelle **in Copilot** ein kleines Medienpaket für eine fiktive Kampagne.
+  Plane eine **4-teilige Instagram-Serie** zum Launch von „Zitrus Fresh". Roter Faden: *„weniger Zucker, voller Geschmack"*.
 
-  **Schritt 1:**
   ```text
-  Erfinde ein Produkt und eine Zielgruppe für eine kleine Marketingkampagne.
-  ```
-  **Schritt 2:**
-  ```text
-  Erstelle: 1 Bild-Prompt, 1 Slogan, 1 kurzen Social-Post, 1 E-Mail-Betreff. Alles konsistent im
-  gleichen Stil.
-  ```
-  **Schritt 3 – kritisch:**
-  ```text
-  Welche rechtlichen/ethischen Punkte muss ich bei KI-generierten Medien beachten (Urheberrecht,
-  Kennzeichnung, Persönlichkeitsrechte)? Nenne 3.
+  Entwirf eine 4-teilige Instagram-Serie für den Launch von "Zitrus Fresh". Je Teil: eine Hook
+  (erster Satz), Kerntext (max. 2 Sätze) und eine Bildidee. Die vier Teile bauen aufeinander auf.
   ```
 
-  Bewerte selbst: Ist das Paket wirklich „aus einem Guss"? Was würdest du vor Veröffentlichung prüfen?
+  Jetzt der anspruchsvolle Teil – **prüfe selbst auf Werberecht**, bevor irgendetwas online geht:
+
+  ```text
+  Prüfe jeden der vier Teile auf gesundheitsbezogene Aussagen, die rechtlich heikel sein könnten
+  (z. B. "macht schlank", "gesund", "beugt X vor"). Markiere Problemstellen und schlage jeweils
+  eine zulässige Formulierung vor.
+  ```
+
+  **Ziel:** eine postfertige Serie mit klarem roten Faden – **ohne** riskante Health-Claims.
+
+  **Fertig bist du erst, wenn** du bei mindestens einer Formulierung selbst entschieden hast, ob Copilots „zulässige" Alternative wirklich unbedenklich ist. (Vertiefung: Kapitel 32 – Rechtliche Aspekte.)
 tip: |
-  KI-generierte Medien werfen Fragen zu Urheberrecht, Kennzeichnungspflicht und Persönlichkeitsrechten auf – mitdenken!
+  Gesundheitsbezogene Werbeaussagen sind streng reguliert. Copilot erkennt viele, aber nicht alle Fallstricke – die letzte Prüfung bleibt bei dir.
 solution: |
-  Erwartetes Ergebnis: stimmiges Content-Paket und 3 relevante rechtliche Punkte. Lernziel: Medien-KI produktiv,
-  aber verantwortungsbewusst einsetzen.
+  Erwartetes Ergebnis: eine zusammenhängende 4-teilige Serie und eine kritische Compliance-Prüfung, bei der
+  du mindestens eine KI-Empfehlung selbst hinterfragt hast. Lernziel: kreative Produktion mit rechtlichem Blick verbinden.

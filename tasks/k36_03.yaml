@@ -1,25 +1,38 @@
-title: Green-AI-Strategie entwerfen (Copilot)
+title: Green-AI-Maßnahmen mit ehrlicher Wirkungsabwägung
 difficulty: 3
 question: |
-  Entwirf **in Copilot** eine Strategie zur Reduktion des KI-Fußabdrucks für ein selbst erzeugtes Szenario.
+  Eine Marketingagentur hat ihren KI-Verbrauch grob erfasst:
 
-  **Schritt 1:**
+  > - 30 Mitarbeitende nutzen KI täglich für Texte, Recherche, Bildideen
+  > - Standardeinstellung: immer das größte verfügbare Modell
+  > - dieselben Recherchefragen werden oft mehrfach am Tag neu gestellt
+  > - für jeden Social-Post werden 5–10 Bildvarianten generiert, eine wird genutzt
+  > - Idee der Geschäftsführung: „Wir trainieren ein eigenes KI-Modell auf unseren Texten"
+
+  Entwickle in Copilot einen Maßnahmenplan:
+
   ```text
-  Erfinde ein Unternehmen, das KI intensiv nutzt, und beschreibe wo (Nutzung, evtl. Training).
-  ```
-  **Schritt 2:**
-  ```text
-  Schlage 5 Maßnahmen vor, um den Energie-/Ressourcenverbrauch zu senken (z. B. passende Modellgröße,
-  Caching, fertige Modelle statt Eigen-Training, grüner Strom).
-  ```
-  **Schritt 3 – ehrlich abwägen:**
-  ```text
-  Wo steht Effizienz im Konflikt mit Qualität oder Komfort? Wo lohnt der Kompromiss?
+  Hier ist die KI-Nutzung einer Marketingagentur:
+  [Liste oben einfügen]
+  Schlage 5 Maßnahmen vor, um Energie und Kosten zu senken (z. B. passende Modellgröße, Caching
+  wiederkehrender Anfragen, weniger Bildvarianten, fertige Modelle statt Eigen-Training). Gib je
+  Maßnahme erwarteten Effekt (hoch/mittel/gering) und Aufwand an.
   ```
 
-  Bewerte selbst: Welche Maßnahme bringt am meisten bei geringstem Nachteil?
+  Jetzt der anspruchsvolle Teil – **abwägen und die Eigen-Training-Idee kritisch prüfen**:
+
+  ```text
+  Wo steht Effizienz im Konflikt mit Qualität oder Komfort, und wo lohnt der Kompromiss trotzdem?
+  Bewerte außerdem ehrlich die Idee "eigenes Modell trainieren": Rechnet sich der Energie- und
+  Kostenaufwand hier – oder ist das der größte Ressourcenfehler von allen?
+  ```
+
+  **Ziel:** 5 priorisierte Maßnahmen und eine klare Haltung zur Eigen-Training-Idee.
+
+  **Fertig bist du erst, wenn** du selbst entschieden hast, welche eine Maßnahme den größten Effekt bei kleinstem Nachteil bringt – und ob du der Eigen-Training-Idee zustimmst oder von ihr abrätst.
 tip: |
-  Der größte Hebel ist oft, KEIN eigenes Modell zu trainieren, sondern effiziente, fertige Modelle passend einzusetzen.
+  Der größte Hebel ist oft, KEIN eigenes Modell zu trainieren, sondern effiziente fertige Modelle passend einzusetzen und Wiederholungen zu vermeiden. Ein Eigen-Training verschlingt gewaltige Ressourcen und lohnt sich nur selten.
 solution: |
-  Erwartetes Ergebnis: 5 konkrete Maßnahmen mit ehrlicher Abwägung und Priorisierung. Lernziel: KI ressourcen-
-  bewusst und dennoch nutzbringend einsetzen.
+  Erwartetes Ergebnis: 5 konkrete Maßnahmen mit Effekt/Aufwand, eine ehrliche Abwägung Effizienz vs. Qualität und
+  eine begründete Empfehlung gegen (oder in Ausnahmen für) das Eigen-Training. Lernziel: KI ressourcenbewusst
+  einsetzen und den größten Kostentreiber vermeiden.

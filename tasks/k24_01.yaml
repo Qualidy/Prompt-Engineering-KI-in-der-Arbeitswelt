@@ -1,13 +1,22 @@
-title: KI-Einsatzfelder in der Produktion finden
+title: KI-Einsatzfelder in einer Fertigung finden
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Du berätst eine kleine Fertigung und sollst schnell zeigen, wo KI konkret helfen könnte. Der Betrieb ist beschrieben:
+
+  > **Fahrradrahmen-Fertigung:** Rohre zuschneiden, schweißen, lackieren, Endmontage, Endkontrolle. 40 Rahmen pro Tag, wiederkehrende Lack- und Schweißfehler, Termindruck.
+
+  Öffne Copilot und erledige die Aufgabe in einem Auftrag:
+
   ```text
-  Erfinde eine kleine Fertigung (was wird produziert?) und nenne 5 Stellen im Produktionsablauf,
-  an denen KI helfen könnte. Ordne jeder einen Nutzen zu (Qualität, Tempo, Kosten, Sicherheit).
+  Für diese Fahrradrahmen-Fertigung (Zuschnitt, Schweißen, Lackieren, Montage,
+  Endkontrolle; 40 Rahmen/Tag; wiederkehrende Lack- und Schweißfehler): Nenne 5 konkrete
+  Stellen im Ablauf, an denen KI helfen könnte, und ordne jeder einen Hauptnutzen zu
+  (Qualität, Tempo, Kosten oder Sicherheit).
   ```
+
+  **Ziel:** 5 nachvollziehbare Einsatzfelder mit klarem Nutzen – so konkret, dass der Betrieb eines davon als Erstes angehen könnte.
 tip: |
-  KI in der Produktion heißt oft: Sensordaten auswerten, Qualität prüfen, Ausfälle vorhersagen, Abläufe planen.
+  KI in der Produktion heißt oft: Sensordaten auswerten, Qualität per Bild prüfen, Ausfälle vorhersagen, Abläufe planen.
 solution: |
-  Erwartetes Ergebnis: 5 plausible Einsatzfelder mit Nutzenzuordnung. Lernziel: den Produktionsablauf systematisch
-  nach KI-Potenzialen absuchen.
+  Erwartetes Ergebnis: 5 plausible Einsatzfelder mit Nutzenzuordnung (z. B. Bildprüfung der Lackierung -> Qualität).
+  Lernziel: einen Produktionsablauf systematisch nach KI-Potenzialen absuchen.

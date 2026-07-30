@@ -1,29 +1,41 @@
-title: Prozessoptimierung mit Copilot durchführen
+title: Onboarding-Prozess-Sprint mit Kurskorrektur
 difficulty: 4
 question: |
-  Optimiere **in Copilot** einen kompletten Prozess – selbst erzeugt, ohne echte Unterlagen.
+  **Szenario:** Du bist Teamleitung in einem mittelständischen Unternehmen. Neue Mitarbeitende sind heute erst nach **15 Arbeitstagen** voll arbeitsfähig – viel zu lang. Die Geschäftsführung gibt dir das harte Ziel: **7 Arbeitstage**, ohne die Qualität des Onboardings zu senken. Arbeite alles in Copilot, aber liefere gegen klare Anforderungen.
 
-  **Schritt 1:**
-  ```text
-  Erfinde einen abteilungsübergreifenden Prozess (z. B. Einstellung neuer Mitarbeitender) mit 10 Schritten.
-  ```
-  **Schritt 2:**
-  ```text
-  Analysiere: Wo sind Engpässe, Doppelarbeit, Wartezeiten? Markiere sie.
-  ```
-  **Schritt 3:**
-  ```text
-  Entwirf den optimierten Prozess und markiere je Schritt, ob/wie Copilot unterstützen kann.
-  ```
-  **Schritt 4 – Business Case:**
-  ```text
-  Fasse Nutzen, Aufwand und Risiken in einer kurzen Entscheidungsvorlage zusammen.
-  ```
-  **Schritt 5 – Prüfung:** Hinterfrage: Sind die KI-Einsätze wirklich sinnvoll oder nur „nice to have"?
+  **Runde 1 – Prozess analysieren.** Füge den Ist-Prozess ein und lass Engpässe, Doppelarbeit und Wartezeiten markieren:
 
-  **Deliverable:** Ist-/Soll-Prozess + Entscheidungsvorlage.
+  ```text
+  Analysiere diesen Onboarding-Prozess auf Engpässe, Doppelarbeit und Wartezeiten.
+  Markiere je Schritt das Hauptproblem.
+
+  1. Vertrag unterschrieben, Start festgelegt
+  2. IT bestellt Hardware – 5 Tage Lieferzeit, Bestellung startet erst am ersten Arbeitstag
+  3. Zugänge/Accounts anlegen – verteilt auf 3 Abteilungen, je nach Verfügbarkeit
+  4. Einführungsgespräche – werden einzeln terminiert, oft Wartezeit
+  5. Pflichtschulungen (Datenschutz, Sicherheit) – Präsenztermine nur alle 2 Wochen
+  6. Einarbeitung am Arbeitsplatz durch Pate – Pate oft nicht eingeplant
+  7. Erste eigenständige Aufgabe
+  ```
+
+  **Runde 2 – Pflichtkriterien.** Dein Soll-Prozess muss **alle** erfüllen. Lass Copilot prüfen und Lücken schließen:
+
+  1. Zielzeit von 7 Arbeitstagen wird plausibel erreicht
+  2. je optimiertem Schritt ist benannt, ob Copilot/KI oder Organisation den Hebel liefert
+  3. keine Qualitätseinbuße (Pflichtschulungen bleiben vollständig)
+  4. jede Zeitangabe hat eine offengelegte Annahme
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Die IT meldet: Der von dir eingeplante automatische Account-Workflow ist aus **Sicherheitsgründen nicht erlaubt** – Accounts müssen manuell durch die IT freigegeben werden. Überarbeite den Soll-Prozess so, dass du das 7-Tage-Ziel trotzdem hältst.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Für den größten verbleibenden Engpass stehen zwei Maßnahmen zur Wahl: (A) feste, wöchentlich getaktete Onboarding-Slots oder (B) ein Copilot-gestützter Self-Service-Guide für Neue. Lass dir Pro/Contra geben, entscheide begründet – und **widersprich Copilot**, wenn seine Empfehlung nur auf „moderner/digitaler" beruht statt auf dem tatsächlichen Zeitgewinn.
+
+  **Deliverable:** Ist-/Soll-Prozess (Version 2 nach Kurskorrektur) + ausgefüllte Kriterien-Checkliste + begründete Maßnahmen-Entscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, die Sicherheitsauflage aus Runde 3 eingearbeitet ist und deine Entscheidung auf einem echten Zeitargument beruht.
 tip: |
-  Automatisiere keine schlechten Prozesse – erst verbessern, dann (teilweise) automatisieren.
+  Der Wert entsteht in Runde 3 und 4: Erst wenn eine Randbedingung deinen schönen Plan sprengt, zeigt sich, ob deine Optimierung trägt.
 solution: |
-  Bewertungskriterien: erkannte Schwachstellen, sinnvoller Soll-Prozess, ehrlicher Business Case, kritische Prüfung.
-  Lernziel: Prozessoptimierung strukturiert und entscheidungsreif aufbereiten.
+  Bewertungskriterien: (1) begründeter Soll-Prozess, der 7 Tage plausibel erreicht (v. a. Hardware/Schulungen vorziehen,
+  Accounts parallelisieren); (2) alle vier Pflichtkriterien erfüllt; (3) die Sicherheitsauflage aus Runde 3 ist eingearbeitet,
+  ohne das Ziel aufzugeben; (4) die Maßnahmen-Entscheidung ist mit echtem Zeitgewinn begründet und nicht blind übernommen.
+  Lernziel: einen Prozess unter realen Randbedingungen messbar optimieren und entscheiden.

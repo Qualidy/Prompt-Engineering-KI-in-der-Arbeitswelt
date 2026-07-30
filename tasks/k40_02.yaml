@@ -1,17 +1,32 @@
-title: Eine Mini-Schulung für Kolleg:innen erstellen
+title: Eine Aufgabe per Iteration von brauchbar zu gut treiben
 difficulty: 2
 question: |
-  Nutze **Copilot**, um dein Wissen weiterzugeben (bester Lerntest: es anderen erklären).
+  Du hast eine konkrete Aufgabe mit fertigem Material:
+
+  > **Aufgabe:** Antworte auf diese Kundenbeschwerde.
+  > **Kundenmail:** „Ich habe mein Paket vor 10 Tagen bestellt, bezahlt und noch immer nichts erhalten. Auf zwei E-Mails kam keine Antwort. Ich bin kurz davor, das Geld zurückzufordern und woanders zu kaufen."
+
+  Erste Runde in Copilot – bewusst mit Rolle, Kontext, Format:
+
   ```text
-  Erstelle das Konzept für eine 20-minütige Mini-Schulung "Besser prompten mit Copilot" für
-  Kolleg:innen ohne Vorwissen: Ablauf, 3 Kernbotschaften, 1 Live-Übung, 1 typischer Fehler zum Vermeiden.
+  Du bist erfahrener Kundenservice-Mitarbeiter. Formuliere eine Antwort auf diese Beschwerde:
+  [Kundenmail oben einfügen]
+  Ton: verständnisvoll und lösungsorientiert. Format: max. 120 Wörter, mit einem konkreten
+  nächsten Schritt und einer angemessenen Geste.
   ```
-  Dann:
+
+  Jetzt die gezielte Iteration – **selbst prüfen, dann nachschärfen**:
+
   ```text
-  Formuliere die Live-Übung so, dass die Teilnehmenden sie ohne eigene Dokumente direkt in Copilot machen können.
+  Lies deine Antwort kritisch: Entschuldigt sie sich ehrlich, ohne hohle Floskeln? Nennt sie einen
+  überprüfbaren nächsten Schritt mit Zeitangabe? Überarbeite sie und mach genau diese zwei Punkte
+  stärker.
   ```
+
+  **Ziel:** eine Antwort, die du **ohne Nacharbeit** so absenden würdest – ehrlich, konkret, mit klarem nächsten Schritt.
 tip: |
-  Wer etwas erklären kann, hat es verstanden. Eine gute Übung braucht kein Vorwissen und kein Material.
+  Der erste Wurf ist selten der beste. Iteration heißt: Ergebnis kritisch lesen, das schwächste Element benennen und gezielt nachschärfen – nicht alles neu würfeln.
 solution: |
-  Erwartetes Ergebnis: ein umsetzbares Schulungskonzept mit selbsttragender Live-Übung. Lernziel: das Gelernte
-  didaktisch aufbereiten und weitergeben.
+  Erwartetes Ergebnis: eine brauchbare erste Antwort und eine spürbar bessere zweite Version nach gezielter Iteration
+  (ehrliche Entschuldigung, überprüfbarer nächster Schritt). Lernziel: Ergebnisse durch bewusste Iteration von
+  „okay" auf „absendefertig" heben.

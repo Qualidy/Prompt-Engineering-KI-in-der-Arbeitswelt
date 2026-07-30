@@ -1,26 +1,32 @@
-title: Datengetriebenes Geschäftsmodell mit Burggraben (Copilot)
+title: Datenschwungrad und Burggraben kritisch prüfen
 difficulty: 3
 question: |
-  Entwirf **in Copilot** ein datengetriebenes Geschäftsmodell für eine selbst erzeugte Idee.
+  Ein Start-up pitcht dir dieses datengetriebene Modell:
 
-  **Schritt 1:**
+  > **„RepairIQ":** Eine App, mit der Hobbyschrauber Autoreparaturen dokumentieren. Bei jeder Reparatur sammelt RepairIQ Daten (Automodell, Symptom, Lösung, Erfolg). Je mehr Nutzer, desto besser die KI-Reparaturvorschläge. Geplant: die aggregierten Daten später an Werkstätten und Hersteller verkaufen.
+
+  Analysiere in Copilot – erst den Schwungrad-Effekt, dann den Schutz:
+
   ```text
-  Erfinde ein Geschäftsmodell, das auf einem einzigartigen Datenschatz beruht, und beschreibe es.
-  ```
-  **Schritt 2:**
-  ```text
-  Erkläre den "Datenschwungrad"-Effekt: Wie führen mehr Nutzer zu besseren Daten, besseren Diensten
-  und noch mehr Nutzern?
-  ```
-  **Schritt 3 – kritisch:**
-  ```text
-  Was schützt dieses Modell vor Nachahmern (Burggraben)? Und welche 2 größten Risiken (Datenschutz,
-  Abhängigkeit) drohen?
+  Erkläre für das Modell "RepairIQ" (App dokumentiert Autoreparaturen, sammelt Symptom-Lösungs-
+  Daten) den Datenschwungrad-Effekt: Wie führen mehr Nutzer zu besseren Daten, besseren Vorschlägen
+  und noch mehr Nutzern? Erkläre danach, was dieses Modell vor Nachahmern schützt (Burggraben).
   ```
 
-  Bewerte selbst: Ist der Wettbewerbsvorteil echt und dauerhaft?
+  Jetzt der anspruchsvolle Teil – **den Wettbewerbsvorteil und die Risiken hinterfragen**:
+
+  ```text
+  Prüfe kritisch: Ist der Datenvorsprung wirklich dauerhaft, oder könnte ein großer Anbieter das
+  in 12 Monaten aufholen? Nenne außerdem die 2 größten Risiken (besonders Datenschutz beim späteren
+  Verkauf der Nutzerdaten) und wie ernst sie den Plan gefährden.
+  ```
+
+  **Ziel:** eine ehrliche Bewertung, ob der Burggraben echt und dauerhaft ist – nicht nur eine schöne Wachstumsgeschichte.
+
+  **Fertig bist du erst, wenn** du selbst entschieden hast, ob du in dieses Modell investieren würdest – mit einem Argument, das über „das Schwungrad klingt gut" hinausgeht (etwa dem Datenschutz-Risiko beim Datenverkauf).
 tip: |
-  Der stärkste Schutz ist oft ein sich selbst verstärkender Datenvorteil, den Wettbewerber nicht einfach kopieren können.
+  Der stärkste Schutz ist ein sich selbst verstärkender Datenvorteil, den Wettbewerber nicht einfach kopieren können. Aber ein Datenschwungrad ist wertlos, wenn der geplante Datenverkauf am Datenschutz scheitert (Kapitel 33).
 solution: |
-  Erwartetes Ergebnis: Modell mit erklärtem Schwungrad-Effekt, Burggraben und Risiken; kritische Einschätzung der
-  Dauerhaftigkeit. Lernziel: datengetriebene Modelle und ihre Verteidigbarkeit verstehen.
+  Erwartetes Ergebnis: ein erklärter Schwungrad-Effekt, eine kritische Einschätzung der Dauerhaftigkeit des
+  Burggrabens und eine ehrliche Risikobewertung (v. a. Datenschutz), mit eigener Investitionsentscheidung. Lernziel:
+  datengetriebene Modelle und ihre Verteidigbarkeit realistisch beurteilen.

@@ -1,17 +1,30 @@
-title: Risiko-Register für ein KI-Projekt (Copilot)
+title: Risiko-Register für einen KI-Piloten und eine Nachschärfung
 difficulty: 2
 question: |
-  Arbeite **in Copilot** mit einem selbst erzeugten Projekt.
+  Der Pilot ist entschieden:
+
+  > **Pilot:** Copilot erstellt Entwürfe für Standard-Kundenmails. Ziel: −30 % Bearbeitungszeit in 3 Monaten. Team: 5 Personen im Service, bislang keine KI-Erfahrung.
+
+  Erstelle in Copilot ein belastbares Risiko-Register:
+
   ```text
-  Erfinde ein KI-Projekt in einem Unternehmen und beschreibe kurz sein Ziel.
+  Erstelle ein Risiko-Register als Tabelle für diesen KI-Piloten: Copilot entwirft Standard-
+  Kundenmails, Ziel -30% Bearbeitungszeit in 3 Monaten, 5-köpfiges Team ohne KI-Erfahrung.
+  6 Risiken mit Spalten: Risiko, Eintrittswahrscheinlichkeit (hoch/mittel/gering), Auswirkung,
+  Gegenmaßnahme. Denke besonders an Datenqualität und fehlende Akzeptanz.
   ```
-  Dann:
+
+  Jetzt die gezielte Verbesserungsrunde – **die weichen Gegenmaßnahmen härten**:
+
   ```text
-  Erstelle ein Risiko-Register (Tabelle): 6 Risiken mit Eintrittswahrscheinlichkeit (hoch/mittel/gering),
-  Auswirkung und Gegenmaßnahme. Denke besonders an Datenprobleme und fehlende Akzeptanz.
+  Die Gegenmaßnahmen "Schulung anbieten" und "Team informieren" sind zu vage. Formuliere sie so
+  um, dass jede eine konkrete Handlung, eine verantwortliche Rolle und einen Zeitpunkt enthält.
   ```
+
+  **Ziel:** ein Risiko-Register, dessen Gegenmaßnahmen man am Montag umsetzen könnte – nicht bloß gut gemeinte Absichten.
 tip: |
-  Die häufigsten KI-Projekt-Killer sind schlechte Daten und mangelnde Akzeptanz – nicht die Technik.
+  Die häufigsten KI-Projekt-Killer sind schlechte Daten und mangelnde Akzeptanz, nicht die Technik. Eine Gegenmaßnahme ohne „wer, was, wann" ist nur ein Wunsch.
 solution: |
-  Erwartetes Ergebnis: strukturiertes Risiko-Register mit realistischen Risiken und Gegenmaßnahmen. Lernziel:
-  Projektrisiken früh erkennen und einplanen.
+  Erwartetes Ergebnis: ein strukturiertes Risiko-Register mit realistischen Risiken und – nach der Nachschärfung –
+  konkret umsetzbaren Gegenmaßnahmen (Handlung, Rolle, Zeitpunkt). Lernziel: Projektrisiken früh erkennen und in
+  handfeste Maßnahmen übersetzen.

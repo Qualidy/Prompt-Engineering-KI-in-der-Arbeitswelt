@@ -1,13 +1,27 @@
-title: KI-Projektphasen mit Copilot planen
+title: Use-Case-Ideen bewerten und eine Pilotwahl treffen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Für die Einführung von KI im Kundenservice liegen drei Use-Case-Ideen auf dem Tisch:
+
+  - **A:** Copilot beantwortet Standard-Kundenmails im Entwurf vor (täglich ~200 Mails, klare Muster)
+  - **B:** KI prognostiziert Kündigungen sechs Monate im Voraus (Daten verstreut, noch nie erhoben)
+  - **C:** Chatbot löst komplexe Reklamationen vollautomatisch (rechtlich heikel, hohe Erwartung)
+
+  Lass Copilot die drei als Pilot bewerten:
+
   ```text
-  Erfinde ein kleines KI-Projekt und plane es in Phasen (z. B. Idee, Daten, Prototyp/MVP, Test,
-  Rollout). Nenne je Phase das wichtigste Ziel und ein typisches Risiko.
+  Bewerte diese drei KI-Use-Cases für einen ersten Pilot im Kundenservice nach Nutzen und
+  Umsetzbarkeit (je hoch/mittel/gering):
+  A) Kundenmails im Entwurf vorbeantworten (200/Tag, klare Muster)
+  B) Kündigungen 6 Monate im Voraus prognostizieren (Daten verstreut, noch nie erhoben)
+  C) Chatbot löst komplexe Reklamationen vollautomatisch (rechtlich heikel)
+  Empfiehl EINEN als ersten Piloten und begründe in 3 Sätzen.
   ```
+
+  **Ziel:** Du hast einen begründeten Pilot-Favoriten – und kannst in einem Satz sagen, warum die anderen beiden als Einstieg riskanter sind.
 tip: |
-  KI-Projekte sind selten „einmal bauen, fertig" – sie sind iterativ und datengetrieben.
+  Der beste erste Pilot ist selten der ehrgeizigste. Guter Einstieg = hoher Nutzen bei realistischer Umsetzbarkeit und verfügbaren Daten.
 solution: |
-  Erwartetes Ergebnis: sinnvolle Phasen mit Zielen und Risiken. Lernziel: den typischen Ablauf eines KI-Projekts
-  verstehen.
+  Erwartetes Ergebnis: eine Nutzen/Umsetzbarkeit-Einordnung und eine begründete Pilotwahl. Stark ist die Antwort,
+  wenn sie A als datenreichen, risikoarmen Schnellstart erkennt und B (fehlende Daten) sowie C (Recht/Autonomie)
+  als riskant einordnet. Lernziel: Use-Cases nach Nutzen und Machbarkeit priorisieren.

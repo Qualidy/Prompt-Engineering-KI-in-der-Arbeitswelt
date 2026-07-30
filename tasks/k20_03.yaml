@@ -1,26 +1,40 @@
-title: Mini-Data-Mining plus Korrelationsfalle (Copilot)
+title: Muster prüfen – Korrelation oder Kausalität?
 difficulty: 3
 question: |
-  Führe **in Copilot** eine kleine Data-Mining-Analyse durch – mit selbst erzeugten Daten.
+  Du wertest für ein Eiscafé ein Jahr Betriebsdaten aus und sollst daraus **eine belastbare Maßnahme** ableiten. Vorsicht: Nicht jeder Zusammenhang taugt als Handlungsgrundlage.
 
-  **Schritt 1:**
+  **Schritt 1 – Muster finden:**
   ```text
-  Erstelle eine Tabelle mit 15 Zeilen Monatsdaten eines Eiscafés: Monat, Außentemperatur,
-  Eisverkäufe, Sonnenbrand-Fälle in der Stadt.
+  Hier sind 12 Monate Daten eines Eiscafés. Finde die stärksten Zusammenhänge zwischen
+  den Spalten und beschreibe sie.
+
+  Monat | Ø-Temp (°C) | Eisverkäufe | Sonnenbrand-Fälle (Stadt) | Beschwerden Wartezeit
+  Jan | 2 | 210 | 2 | 1
+  Feb | 4 | 240 | 3 | 1
+  Mär | 9 | 380 | 6 | 2
+  Apr | 14 | 620 | 12 | 4
+  Mai | 19 | 910 | 20 | 7
+  Jun | 24 | 1350 | 33 | 12
+  Jul | 27 | 1600 | 41 | 15
+  Aug | 26 | 1520 | 38 | 14
+  Sep | 20 | 980 | 22 | 8
+  Okt | 13 | 560 | 10 | 3
+  Nov | 7 | 300 | 4 | 2
+  Dez | 3 | 250 | 3 | 1
   ```
-  **Schritt 2:**
+  **Schritt 2 – kritisch prüfen:**
   ```text
-  Analysiere Zusammenhänge zwischen den Spalten und beschreibe die stärksten Muster.
-  ```
-  **Schritt 3 – kritisch:**
-  ```text
-  Eisverkäufe und Sonnenbrände steigen gemeinsam. Bedeutet das, dass Eis Sonnenbrand verursacht?
-  Erkläre den Unterschied zwischen Korrelation und Kausalität.
+  Eisverkäufe, Sonnenbrand-Fälle und Wartezeit-Beschwerden steigen gemeinsam. Welcher
+  dieser Zusammenhänge ist echte Ursache-Wirkung, welcher nur Scheinkorrelation über
+  eine versteckte gemeinsame Größe? Begründe jeden Fall einzeln.
   ```
 
-  Bewerte selbst: Welche gefundenen „Muster" sind echt nützlich, welche nur Scheinzusammenhänge?
+  **Nebenbedingung:** Leite am Ende genau EINE Maßnahme ab, die auf einem echten kausalen Zusammenhang beruht – nicht auf einer Scheinkorrelation.
+
+  **Fertig bist du erst, wenn** du mindestens eine von Copilots Einordnungen selbst überprüft und, falls nötig, korrigiert hast. (Vertiefung: Kapitel 12 – Machine Learning.)
 tip: |
-  Korrelation ≠ Kausalität. Hier ist die Temperatur die versteckte gemeinsame Ursache.
+  Korrelation ist nicht gleich Kausalität. Hier ist die Temperatur die versteckte gemeinsame Ursache – Eis verursacht keinen Sonnenbrand.
 solution: |
-  Erwartetes Ergebnis: erkannte Zusammenhänge und klare Erklärung von Korrelation vs. Kausalität (Temperatur als
-  Störgröße). Lernziel: Muster kritisch interpretieren statt vorschnell Ursachen zu behaupten.
+  Erwartetes Ergebnis: erkannte Zusammenhänge, saubere Trennung von echter Kausalität (Temperatur -> Eisverkäufe -> Wartezeit)
+  und Scheinkorrelation (Eis und Sonnenbrand), plus eine kausal begründete Maßnahme (z. B. mehr Personal an heißen Tagen).
+  Lernziel: Muster kritisch interpretieren statt vorschnell Ursachen zu behaupten.

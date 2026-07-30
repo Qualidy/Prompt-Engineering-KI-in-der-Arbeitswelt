@@ -1,26 +1,40 @@
-title: Dokumenten-Verarbeitungsstrecke in Copilot bauen
+title: Dokumentenstrecke für die Eingangspost bauen und härten
 difficulty: 4
 question: |
-  Baue **in Copilot** eine komplette Verarbeitungsstrecke – alle Dokumente selbst erzeugt.
+  **Szenario:** Du baust für den Kundenservice eines Großhändlers eine **automatische Verarbeitungsstrecke** für die Eingangspost auf. Ziel ist hart: **mindestens 80 % der Dokumente vollautomatisch** korrekt einsortiert und extrahiert, der Rest sicher zur manuellen Prüfung. Hier dein Test-Stapel (fiktiv, direkt verwendbar):
 
-  **Schritt 1:**
   ```text
-  Erstelle die Texte von 6 gemischten Eingangsdokumenten eines Unternehmens.
+  A) "Rechnung RE-5510 ueber 2.340 EUR, faellig 30.04.2026."
+  B) "Reklamation: Lieferung unvollstaendig, es fehlen 5 von 20 Kartons."
+  C) "Bewerbung als Lagerlogistiker, verfuegbar ab sofort."
+  D) "Angebotsanfrage: Preis fuer 500 Kartons Versandtaschen Groesse M?"
+  E) "Sehr geehrte..., [Text bricht ab, kein Betrag, kein Anliegen erkennbar]"
+  F) "Rechnung, Betrag: EUR, Nr.: , faellig: naechste Woche" (Felder teils leer/unklar)
   ```
-  **Schritt 2:**
-  ```text
-  Klassifiziere alle, extrahiere je Typ die wichtigsten Felder und leite sie an die richtige Stelle weiter.
-  Stelle das Ergebnis als Tabelle dar.
-  ```
-  **Schritt 3:**
-  ```text
-  Definiere Prüfregeln: Wann darf automatisch verarbeitet werden, wann muss ein Mensch prüfen?
-  ```
-  **Schritt 4 – Prüfung:** Schleuse bewusst ein schwieriges Dokument (unklar/unvollständig) ein. Erkennt die Strecke, dass es geprüft werden muss?
 
-  **Deliverable:** Klassifikations-/Extraktionstabelle + Prüfregeln.
+  Arbeite alles in Copilot – aber liefere gegen **klare Anforderungen**.
+
+  **Runde 1 – Strecke bauen.** Klassifiziere A–F nach Typ, extrahiere je Typ die wichtigsten Felder und leite an die richtige Stelle weiter. Stelle das Ergebnis als Tabelle dar (Dokument, Typ, extrahierte Felder, Zielstelle).
+
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Die Strecke muss **alle** erfüllen. Lass Copilot dagegen prüfen und Lücken schließen:
+
+  1. jedes Dokument hat einen definierten Zielort (auch die unklaren)
+  2. fehlende/unsichere Felder werden als „nicht angegeben" markiert, nicht erfunden (Grounding)
+  3. eine klare Regel trennt automatisch von manuell (z. B. Konfidenz oder Vollständigkeit)
+  4. für jeden automatischen Schritt ist nachvollziehbar, warum so entschieden wurde
+
+  **Runde 3 – Kurskorrektur (Komplikation).** Der Fachbereich meldet: Dokument **F** wurde vollautomatisch als gültige Rechnung verbucht – obwohl Betrag und Nummer fehlten. Analysiere mit Copilot, warum die Regel versagt hat, und überarbeite die Trennregel so, dass unvollständige Rechnungen zwingend zur manuellen Prüfung gehen.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Die Leitung will die Automatisierungsquote auf **95 %** hochsetzen, um Personal zu sparen. Lass dir Pro/Contra geben, entscheide begründet **und widersprich Copilot**, wenn es die Quote nur mit „Effizienz" rechtfertigt, ohne das Fehlerrisiko bei Dokumenten wie E und F zu benennen.
+
+  **Deliverable:** finale Klassifikations-/Extraktionstabelle (Version 2) + ausgefüllte Pflichtkriterien-Checkliste + begründete Entscheidung zur Automatisierungsquote.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind, F sicher in der manuellen Prüfung landet und deine Quoten-Entscheidung das Fehlerrisiko der Grenzfälle ehrlich abwägt.
 tip: |
-  Der Wert liegt in der Ausnahmebehandlung: 90 % automatisch, 10 % gezielt zur menschlichen Prüfung.
+  Der Wert einer Dokumentenstrecke liegt in der Ausnahmebehandlung: 80–90 % automatisch, der unsichere Rest gezielt zur menschlichen Prüfung. Eine hohe Automatisierungsquote ist wertlos, wenn sie durch das Durchwinken unvollständiger Dokumente erkauft wird.
 solution: |
-  Bewertungskriterien: korrekte Klassifikation/Extraktion/Routing, sinnvolle Prüfregeln, richtiger Umgang mit dem
-  Problemfall. Lernziel: eine praxisnahe Dokumentenstrecke mit Qualitätskontrolle entwerfen.
+  Bewertungskriterien: (1) vollständige, konsistente Klassifikation/Extraktion/Routing für A–F; (2) alle vier
+  Pflichtkriterien nachweislich erfüllt (definierter Zielort, Grounding, klare Auto/Manuell-Regel, Nachvollziehbarkeit);
+  (3) die überarbeitete Trennregel schickt F und E zuverlässig in die manuelle Prüfung; (4) die Quoten-Entscheidung
+  wägt Effizienz gegen Fehlerrisiko ab und wird nicht blind von Copilot übernommen. Lernziel: eine praxisnahe
+  Dokumentenstrecke mit Grounding und belastbarer Ausnahmebehandlung entwerfen.

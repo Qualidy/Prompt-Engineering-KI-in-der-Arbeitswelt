@@ -1,13 +1,31 @@
-title: Regelkreis mit Copilot verstehen
+title: Regelabweichung im Temperaturlog erkennen
 difficulty: 1
 question: |
-  Mach das **live in Copilot**:
+  Du bist Schichtleiterin an einem **Gärtank**. Der Sollwert liegt bei **22 °C (Toleranz ±1 °C)**. Hier dein Messlog der letzten Stunden:
+
   ```text
-  Erkläre an einem Alltagsbeispiel (z. B. Heizungsthermostat) einen Regelkreis: Was sind Sollwert,
-  Istwert, Messung und Stellgröße? Wo könnte KI den Regler verbessern?
+  08:00  21,8 °C
+  09:00  22,1 °C
+  10:00  23,4 °C
+  11:00  24,2 °C
+  12:00  23,9 °C
+  13:00  22,3 °C
   ```
+
+  Öffne Copilot und erledige die Analyse in einem Auftrag:
+
+  ```text
+  Hier ein Temperaturlog eines Gärtanks (Sollwert 22 °C, Toleranz +/-1 °C):
+  08:00 21,8 | 09:00 22,1 | 10:00 23,4 | 11:00 24,2 | 12:00 23,9 | 13:00 22,3
+  Nenne die Zeitpunkte, an denen der Istwert die Toleranz verlässt, benenne die Regelabweichung
+  in Grad, nenne eine plausible Ursache und die nötige Stellgroesse (mehr Kuehlung / weniger Heizung).
+  Gib mir eine kurze Handlungsempfehlung in 3 Saetzen.
+  ```
+
+  **Ziel:** eine konkrete Handlungsempfehlung, die klar sagt, wann der Prozess außer Toleranz war, um wie viel und was zu stellen ist.
 tip: |
-  Ein Regelkreis misst laufend den Ist-Zustand und steuert nach, um einen Sollwert zu halten.
+  Ein Regelkreis vergleicht laufend Istwert mit Sollwert und stellt über die Stellgröße nach. „Zu warm" reicht nicht – nenne die Abweichung in Grad und die konkrete Stellaktion.
 solution: |
-  Erwartetes Ergebnis: klare Erklärung der Regelkreis-Elemente und ein sinnvoller KI-Ansatz. Lernziel: das Prinzip
-  der (KI-gestützten) Prozessregelung verstehen.
+  Erwartetes Ergebnis: 10:00–12:00 als Überschreitung erkannt (bis +2,2 °C über Soll), plausible Ursache (z. B.
+  exotherme Reaktion, Kühlung zu spät) und klare Stellgröße. Schwach ist die Antwort, wenn sie nur „zu warm" sagt;
+  stark, wenn Abweichung und Stellaktion benannt sind. Lernziel: Regelabweichung quantifizieren und in eine Stellaktion übersetzen.

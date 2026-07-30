@@ -1,25 +1,41 @@
-title: Dokumenten-Workflow mit Prüfung entwerfen (Copilot)
+title: Extraktion mit Grounding-Prüfung
 difficulty: 3
 question: |
-  Entwirf **in Copilot** einen Verarbeitungs-Workflow für ein selbst erzeugtes Dokument.
+  Ein Lieferschein soll automatisch ausgelesen werden – doch er ist **unvollständig und teils widersprüchlich**:
 
-  **Schritt 1:**
   ```text
-  Erstelle den Text eines fiktiven, teils unklaren Lieferscheins (mit einer widersprüchlichen Angabe).
-  ```
-  **Schritt 2:**
-  ```text
-  Extrahiere die relevanten Felder und markiere die widersprüchliche/unsichere Angabe explizit.
-  ```
-  **Schritt 3 – Prozess:**
-  ```text
-  Entwirf den Workflow: erfassen → extrahieren → prüfen → freigeben. An welcher Stelle muss ein
-  Mensch kontrollieren und warum?
+  Lieferschein LS-2026-114, Datum: 09.04.2026
+  Empfaenger: Werk Sued
+  Positionen: 3 Paletten Aluprofil, 1 Palette Dichtungen
+  Gesamtgewicht: 1200 kg
+  Hinweis im Freitext: "2 der 3 Aluprofil-Paletten wurden bereits am Vortag geliefert."
+  (kein Bestellbezug / keine Bestellnummer angegeben)
   ```
 
-  Bewerte selbst: Was passiert, wenn man die menschliche Prüfung weglässt?
+  Lass Copilot extrahieren – mit ausdrücklicher **Grounding-Auflage** (nur belegte Werte, keine Erfindungen):
+
+  ```text
+  Extrahiere aus diesem Lieferschein: Lieferscheinnummer, Datum, Empfaenger, Positionen, Gesamtgewicht,
+  Bestellnummer. Wenn ein Feld nicht im Text steht, schreibe ausdruecklich "nicht angegeben" statt zu
+  raten. Markiere ausserdem jede widerspruechliche oder unklare Angabe.
+  [hier den Lieferschein einfuegen]
+  ```
+
+  Jetzt der anspruchsvolle Teil – **prüfe selbst auf Halluzination und logische Fallen**:
+
+  ```text
+  Pruefe deine eigene Extraktion: Hast du irgendwo eine Bestellnummer, ein fehlendes Feld oder eine
+  Liefermenge ergaenzt, die so nicht belegt ist? Und wie ist die tatsaechlich gelieferte Menge zu
+  bewerten, wenn 2 von 3 Paletten schon am Vortag kamen?
+  ```
+
+  **Ziel:** eine belegbare Extraktion, die fehlende Felder ehrlich als „nicht angegeben" ausweist und den Mengen-Widerspruch markiert.
+
+  **Fertig bist du erst, wenn** du mindestens eine Stelle selbst geprüft und entschieden hast, ob Copilots Ausgabe wirklich durch den Text gedeckt ist – z. B. ob die tatsächliche Liefermenge korrekt hinterfragt wurde. (Vertiefung: Kapitel 15 – LLM, Halluzinationen.)
 tip: |
-  Automatische Extraktion ist nie 100 % sicher – kritische/mehrdeutige Felder brauchen eine menschliche Freigabe.
+  „Grounding" heißt: Jede Ausgabe muss durch das Quelldokument gedeckt sein. KI neigt dazu, plausible Werte zu ergänzen (z. B. eine erfundene Bestellnummer). Fehlende Felder müssen fehlend bleiben.
 solution: |
-  Erwartetes Ergebnis: Extraktion mit markierter Unsicherheit und ein Workflow mit klarem menschlichem Prüfpunkt.
-  Lernziel: Dokumenten-KI mit eingebauter Qualitätskontrolle denken.
+  Erwartetes Ergebnis: Bestellnummer als „nicht angegeben", markierter Widerspruch bei der Liefermenge (nur 1 von 3
+  Aluprofil-Paletten neu geliefert) und keine erfundenen Werte. Entscheidend ist die Eigenprüfung: Du hast erkannt,
+  wo die KI hätte halluzinieren können, und die tatsächliche Menge korrekt eingeordnet. Lernziel: Extraktion an das
+  Quelldokument binden und Halluzinationen aktiv ausschließen.

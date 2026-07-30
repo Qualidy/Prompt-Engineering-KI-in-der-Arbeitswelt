@@ -1,26 +1,29 @@
-title: Erklärbarkeits-Konzept mit Copilot
+title: Erklärbarkeits-Konzept unter Auflagen
 difficulty: 4
 question: |
-  Entwirf **in Copilot** ein Erklärbarkeits-Konzept für ein fiktives KI-System.
+  **Szenario:** Du bist verantwortlich für ein KI-System, das bei einem Energieversorger automatisch entscheidet, welche Kund:innen bei Zahlungsverzug eine **Mahnung mit Sperrandrohung** erhalten. Betroffen sind monatlich rund 2.000 Haushalte. Die Aufsichtsbehörde verlangt bis zum Rollout ein **Erklärbarkeits-Konzept**. Dein hartes Ziel: **Jede betroffene Person muss binnen 5 Minuten verstehen können, warum sie die Mahnung erhielt, und Widerspruch einlegen können.** Arbeite alles in Copilot – aber liefere gegen klare Anforderungen.
 
-  **Schritt 1:**
-  ```text
-  Erfinde ein KI-System, das automatisch Entscheidungen über Menschen trifft, und beschreibe es.
-  ```
-  **Schritt 2:**
-  ```text
-  Definiere, welche Erklärung jede betroffene Gruppe erhält (Kunde, Sachbearbeiter, Aufsicht) und
-  in welcher Form (Klartext, Faktorenliste, Protokoll).
-  ```
-  **Schritt 3:**
-  ```text
-  Beschreibe, wie eine Person Widerspruch einlegen und eine menschliche Prüfung verlangen kann.
-  ```
-  **Schritt 4 – Prüfung:** Reicht das, damit sich niemand einer „unerklärlichen Maschine" ausgeliefert fühlt? Ergänze Lücken.
+  **Runde 1 – Konzept bauen.** Entwickle: (a) welche Erklärung jede Gruppe erhält (Kundschaft, Sachbearbeitung, Aufsicht) und in welcher Form (Klartext, Faktorenliste, Protokoll); (b) den konkreten Widerspruchsweg mit Recht auf menschliche Prüfung; (c) welche Faktoren die Entscheidung überhaupt begründen dürfen.
 
-  **Deliverable:** Erklärbarkeits-Konzept (Zielgruppen, Erklärformen, Widerspruchsweg).
+  **Runde 2 – Qualitäts-Check gegen Pflichtkriterien.** Das Konzept muss **alle** erfüllen. Lass Copilot es gegen diese Checkliste prüfen und jede Lücke schließen:
+
+  1. Erklärung für Betroffene ist in unter 5 Minuten verständlich, ohne Fachjargon
+  2. keine unzulässigen Begründungsfaktoren (z. B. Wohngegend, Herkunft, Alter)
+  3. klarer, niedrigschwelliger Widerspruchsweg mit menschlicher Prüfung
+  4. lückenlose Protokollierung, damit die Aufsicht jede Einzelentscheidung nachvollziehen kann
+
+  **Runde 3 – Komplikation.** Kurz vor dem Rollout meldet die Technik: Das genaueste Modell ist eine **Black Box**, die ihre Faktoren nicht offenlegt; ein erklärbares Modell wäre **spürbar ungenauer**. Lass dir von Copilot beide Optionen mit Pro/Contra darstellen und überarbeite dein Konzept so, dass es die Erklärbarkeits-Pflicht erfüllt – auch wenn das Genauigkeit kostet.
+
+  **Runde 4 – Entscheidung unter Abwägung.** Triff die Entscheidung „Black Box mit nachgelagerter Erklärung" vs. „erklärbares Modell" begründet – und **widersprich Copilot**, wenn es die Genauigkeit über die Betroffenenrechte stellt, ohne das sauber zu begründen.
+
+  **Deliverable:** Erklärbarkeits-Konzept (Version 2 nach Komplikation) + ausgefüllte Pflicht-Checkliste + begründete Modell-Entscheidung.
+
+  **Fertig bist du erst, wenn** alle vier Pflichtkriterien erfüllt sind und deine Modell-Entscheidung die Betroffenenrechte nachweisbar über das letzte Prozent Genauigkeit stellt.
 tip: |
-  Erklärbarkeit schafft Vertrauen und ist bei Hochrisiko-KI oft gesetzlich verlangt – inkl. Recht auf menschliche Prüfung.
+  Lass Copilot nicht nur ein Konzept schreiben, sondern es gegen deine Kriterien prüfen und an der Genauigkeits-vs-Erklärbarkeits-Komplikation neu denken. Bei Hochrisiko-KI ist Nachvollziehbarkeit keine Kür, sondern Pflicht.
 solution: |
-  Bewertungskriterien: zielgruppengerechte Erklärungen, konkreter Widerspruchsweg, geschlossene Lücken.
-  Lernziel: Nachvollziehbarkeit und Betroffenenrechte konkret verankern.
+  Bewertungskriterien: (1) zielgruppengerechte Erklärungen und konkreter Widerspruchsweg; (2) alle vier
+  Pflichtkriterien nachweislich erfüllt, insbesondere keine unzulässigen Faktoren; (3) das überarbeitete Konzept
+  löst die Black-Box-Komplikation zugunsten der Erklärbarkeit; (4) die Modell-Entscheidung ist begründet und stellt
+  Betroffenenrechte über minimale Genauigkeitsgewinne, statt Copilot blind zu folgen. Lernziel: Nachvollziehbarkeit
+  und Betroffenenrechte unter realen Zielkonflikten konkret verankern.
